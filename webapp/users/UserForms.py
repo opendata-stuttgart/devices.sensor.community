@@ -51,6 +51,28 @@ class LoginForm(FlaskForm):
   remember_me = BooleanField( 'Eingeloggt bleiben', default = False)
   submit = SubmitField('login')
 
+class MinimalRegisterForm(FlaskForm):
+  email = TextField(
+    'E-Mail Adresse',
+    [
+      validators.Required(
+        message='Bitte geben Sie eine E-Mail-Adresse an'
+      ),
+      validators.Email(
+        message='Bitte geben Sie eine korrekte Mailadresse an.'
+      )
+    ]
+  )
+  privacy = BooleanField(
+    'Ich stimme den <a href="/datenschutz">Datenschutzbestimmungen</a> zu',
+    [
+      validators.Required(
+        message='Bitte stimmen Sie den Datenschutzbestimmungen zu.'
+      )
+    ]
+  )
+  submit = SubmitField('registrieren')
+
 class RecoverForm(FlaskForm):
   email = TextField(
     'E-Mail Adresse',

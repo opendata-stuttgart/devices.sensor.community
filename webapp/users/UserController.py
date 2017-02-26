@@ -36,9 +36,18 @@ def login():
       if not external_nodes.email_exists(form.email.data):
         return render_template('invalid-email.html')
       else:
-        User.send_recover_mail(form.email.data, True)
-        return render_template('register-existing-wait-for-mail.html')
+        return redirect('/register-minimal?email=%s' % (form.email.data))
   return render_template('login.html', form=form)
+
+@users.route('/register-minimal', methods=['GET', 'POST'])
+def register_minimal():
+  form = MinimalRegisterForm()
+  form.email.data = request.args.get('email', '')
+  if form.validate_on_submit():
+    User.send_recover_mail(form.email.data, True, True)
+    return render_template('register-existing-wait-for-mail.html')
+  return render_template('register-minimal.html', form=form)
+
 
 @users.route('/login-with-password', methods=['GET', 'POST'])
 def login_with_password():

@@ -37,6 +37,7 @@ class User(db.Model, UserMixin):
   last_name = db.Column(db.String(255), unique=True)
   _password = db.Column('password', db.String(UserConstants.PW_STRING_LEN), nullable=False)
   active = db.Column(db.Boolean, default=False)
+  privacy = db.Column(db.Boolean, default=False)
   created = db.Column(db.DateTime, nullable=False, default = get_current_time)
   updated = db.Column(db.DateTime, nullable=False, default = get_current_time)
 
@@ -89,7 +90,7 @@ class User(db.Model, UserMixin):
         return 0
   
   @classmethod
-  def send_recover_mail(cls, email, create_user):
+  def send_recover_mail(cls, email, create_user, privacy=False):
     if create_user:
       user = User()
       user.email = email
@@ -100,6 +101,8 @@ class User(db.Model, UserMixin):
       if user.count() != 1:
         return False
       user = user.first()
+    if privacy:
+      user.privacy = True
     db.session.add(user)
     db.session.commit()
     recover_serializer = URLSafeTimedSerializer(current_app.config['SECRET_KEY'])
