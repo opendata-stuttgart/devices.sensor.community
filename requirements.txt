@@ -6,3 +6,5 @@ Flask-Mail
 Flask-SQLAlchemy
 Flask-Migrate
 pymysql
+passlib
+bcrypt

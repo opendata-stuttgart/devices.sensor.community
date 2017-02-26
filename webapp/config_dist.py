@@ -46,6 +46,8 @@ class DefaultConfig(object):
   EXTERNAL_DATABASE_DATABASE = ''
   
   MAPBOX_TOKEN = ''
+  PIWIK_HOST = ''
+  PIWIK_ID = ''
 
 
 class LocalConfig(DefaultConfig):
