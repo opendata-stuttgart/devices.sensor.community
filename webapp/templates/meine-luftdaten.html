@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<meta name="robots" content="noindex">
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-12">
+    <h1>Meine Luftdaten</h1>
+    <p>Ihr persönlicher Bereich.</p>
+    <h2><a href="/meine-einstellungen">Einstellungen</a></h2>
+    <p>Daten, Benachrichtigungseinstellungen und Passwörter einsehen und verändern.</p>
+    <h2><a href="/meine-sensoren">Sensoren</a></h2>
+    <p>Daten und Einstellungen der Sensoren einsehen und verändern.</p>
+  </div>
+</div>
+{% endblock %}

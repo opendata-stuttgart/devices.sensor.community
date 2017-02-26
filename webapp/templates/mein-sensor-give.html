@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<meta name="robots" content="noindex">
+{% endblock %}
+
+{% block content %}
+<form method="POST" action="/mein-sensor/{{ node.id }}/give">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Sensor {{ node.uid }} übergeben</h1>
+      <p>Hiermit können Sie Sensoren an einen anderen Menschen übergeben. Dies ist besonders dann hilfreich, wenn Sie einen Sensor für eine Freundin oder einen Freund mitbestellt haben und diesen nun an ihr oder ihn übertragen wollen.</p>
+      <p><strong>Achtung! Nach der Übergabe haben Sie natürlich keine Kontrolle mehr über den Sensor.</strong></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{ form.email.label }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6{% if form.email.errors %} error{% endif %}">
+      {{ form.email(class="form-control") }}
+    </div>
+    <div>
+      {% if form.email.errors %}
+        {% for error in form.email.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      {{ form.submit(class="form-control") }}
+      <p><a href="/meine-sensoren">Zurück zu meinen Sensoren</a></p>
+    </div>
+  </div>
+  {{ form.csrf_token }}
+</form>
+{% endblock %}

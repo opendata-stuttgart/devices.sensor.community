@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<meta name="robots" content="noindex">
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-12">
+    <h1>Meine Sensoren</h1>
+    <p>Alle Ihrem Account zugeordneten Sensoren können Sie in dieser Übersicht finden.</p>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th class="hidden-sm-down">Sensor UID</th>
+          <th>Name</th>
+          <th class="hidden-md-down">Letztes Update</th>
+          <th>Funktionen</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for node in nodes %}
+        <tr>
+          <td>{{ node.id }}</td>
+          <td class="hidden-sm-down">{{ node.uid }}</td>
+          <td>{{ node.name }}</td>
+          <td class="hidden-md-down">{{ node.modified }}</td>
+          <td>
+            <div class="dropdown">
+              <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdown-{{ node.id }}" data-toggle="dropdown">Aktionen <span class="caret"></span></button>
+              <div class="dropdown-menu" aria-labelledby="dropdown-{{ node.id }}">
+                <a class="dropdown-item" href="/mein-sensor/{{ node.id }}/daten">Daten</a>
+                <a class="dropdown-item" href="/mein-sensor/{{ node.id }}/einstellungen">Einstellungen</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/mein-sensor/{{ node.id }}/give">Sensor übergeben</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,163 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<meta name="robots" content="noindex">
+{% endblock %}
+
+{% block content %}
+<form method="POST" action="/mein-sensor/{{ node.id }}/einstellungen" id="sensor-setting-form">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Einstellungen von Node {{ node.uid }}</h1>
+      <p>Mit diesem Formular können Sie die Daten des Sensors aktuell halten. Bitte beachten Sie dabei, dass nur präzise Daten zu präzisen Auswertungen führen können, mit denen wir auch politisch argumentieren können. Es ist also wichtig, dass die Sensor-Basisdaten immer aktuell gehalten werden.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{ form.name.label }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6{% if form.name.errors %} error{% endif %}">
+      {{ form.name(class="form-control") }}
+    </div>
+    <div>
+      {% if form.name.errors %}
+        {% for error in form.name.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{ form.street_name.label }} und {{ form.street_number.label }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4{% if form.street_name.errors or form.street_number.errors %} error{% endif %}">
+      {{ form.street_name(class="form-control") }}
+    </div>
+    <div class="col-md-2{% if form.street_number.errors or form.street_name.errors %} error{% endif %}">
+      {{ form.street_number(class="form-control") }}
+    </div>
+    <div class="col-md-6">
+      {% if form.street_name.errors %}
+        {% for error in form.street_name.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+      {% if form.street_number.errors %}
+        {% for error in form.street_number.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{ form.postalcode.label }} und {{ form.city.label }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2{% if form.postalcode.errors or form.city.errors %} error{% endif %}">
+      {{ form.postalcode(class="form-control") }}
+    </div>
+    <div class="col-md-4{% if form.postalcode.errors or form.city.errors %} error{% endif %}">
+      {{ form.city(class="form-control") }}
+    </div>
+    <div class="col-md-6">
+      {% if form.postalcode.errors %}
+        {% for error in form.street_name.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+      {% if form.city.errors %}
+        {% for error in form.street_number.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{ form.node_height.label }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6{% if form.node_height.errors %} error{% endif %}">
+      {{ form.node_height(class="form-control") }}
+    </div>
+    <div>
+      {% if form.node_height.errors %}
+        {% for error in form.node_height.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{ form.description.label }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12{% if form.description.errors %} error{% endif %}">
+      {{ form.description(class="form-control") }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      {{ form.submit(class="form-control") }}
+    </div>
+    <div class="col-md-6"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <button type="button" class="btn btn-default" id="sensor-setting-use-address">Suche Adresse</button>
+      <button type="button" class="btn btn-default" id="sensor-setting-switch-style" data-style="streets">Satelliten-Karte</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div id="sensor-settings-map"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p>Für Interessierte: die aus der Karte resultierenden Geokoordinaten.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      {{ form.lat(class="form-control") }}
+    </div>
+    <div class="col-md-3">
+      {{ form.lon(class="form-control") }}
+    </div>
+    <div class="col-md-6">
+      {% if form.lat.errors %}
+        {% for error in form.lat.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+      {% if form.lon.errors %}
+        {% for error in form.lon.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  {{ form.csrf_token }}
+</form>
+{% endblock %}
+
+{% block scripts %}
+<script>
+var luftdaten_config = {
+  mapbox_token: "{{ config['MAPBOX_TOKEN'] }}"
+}
+</script>
+{{ super() }}
+{% endblock %}

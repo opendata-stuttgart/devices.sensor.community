@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<meta name="robots" content="noindex">
+{% endblock %}
+
+{% block content %}
+<form method="POST" action="/login">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Login</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{ form.email.label }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6{% if form.email.errors %} error{% endif %}">
+      {{ form.email(class="form-control") }}
+    </div>
+    <div>
+      {% if form.email.errors %}
+        {% for error in form.email.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      {{ form.submit(class="form-control") }}
+    </div>
+  </div>
+  {{ form.csrf_token }}
+</form>
+{% endblock %}

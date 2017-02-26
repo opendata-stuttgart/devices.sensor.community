@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}luftdaten.org{% endblock %}</title>
+    {% block head %}
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="{% block meta_description %}{% endblock %}" />
+    <meta name="publisher" content="binary-butterfly.de" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta property="og:title" content="luftdaten.org" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://luftdaten.org/" />
+    <meta property="og:image" content="https://luftdaten.org/static/images/og.png" />
+    <meta property="og:description" content="Das richtige Sharing-Car oder -Bike finden - plus Fahrradständer und Parkplätze." />
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/static/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/static/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    {% endblock %}
+
+    {% block styles %}
+    <link rel="stylesheet" href="/static/css/webapp.min.css?v={{ config['PROJECT_VERSION'] }}">
+    {% endblock %}
+  </head>
+  <body class="{% block bodyclass %}default{% endblock %}">
+    {% block header %}
+    <div id="header" class="container">
+      <h1><a href="/">meine luftdaten</a></h1>
+    </div>
+    <div id="menu" class="container">
+      <nav class="navbar navbar-toggleable-md navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-header">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Start</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/" id="responsiveNavbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Informationen</a>
+              <div class="dropdown-menu" aria-labelledby="responsiveNavbarDropdown">
+                <a class="dropdown-item" href="/informationen/projekt">Das Projekt</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/" id="responsiveNavbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Meine Luftdaten</a>
+              <div class="dropdown-menu" aria-labelledby="responsiveNavbarDropdown">
+                {% if not current_user.is_authenticated %}<a class="dropdown-item" href="/login">Login</a>{% endif %}
+                {% if current_user.is_authenticated %}<a class="dropdown-item" href="/meine-einstellungen">Einstellungen</a>{% endif %}
+                {% if current_user.is_authenticated %}<a class="dropdown-item" href="/meine-sensoren">Meine Sensoren</a>{% endif %}
+                {% if current_user.is_authenticated %}<a class="dropdown-item" href="/logout">Logout</a>{% endif %}
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/datenschutz">Datenschutz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/impressum#">Impressum</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    {% endblock %}
+    <div id="content" class="container">
+      {% include "messages.html" %}
+    {% block content %}
+    {% endblock %}
+    </div>
+    
+    {% block footer %}
+    <div id="footer" class="container">
+      meine luftdaten ist ein Kooperationsprojekt betrieben vom <a href="https://ruhrmobil-e.de">ruhrmobil-E e.V.</a> in Zusammenarbeit <a href="http://luftdaten.info">mit dem OK Lab Stuttgart</a>.
+    </div>
+    {% endblock %}
+
+    {% block scripts %}
+    <script type="text/javascript" src="/static/js/webapp.min.js?v={{ config['PROJECT_VERSION'] }}"></script>
+    {% endblock %}
+    {% if config.PIWIK_HOST and config.PIWIK_ID %}
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["setDomains", ["*.{{ config.APP_DOMAIN }}"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//{{ config.PIWIK_HOST }}/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', {{ config.PIWIK_ID }}]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//{{ config.PIWIK_HOST }}/piwik.php?idsite={{ config.PIWIK_ID }}" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+    {% endif %}
+  </body>
+</html>

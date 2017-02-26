@@ -1,0 +1,57 @@
+/* basic layout */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: url('/static/images/cloud.jpg') repeat top left;
+}
+
+#header, #menu, #content, #footer {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+#menu, #content, #footer {
+  margin-top: 20px;
+}
+
+#content, #footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#header {
+  padding: 10px 30px;
+}
+
+#header a, #header a:hover {
+  color: #292b2c;
+  text-decoration: none;
+}
+
+#footer {
+  text-align: center;
+}
+
+#sensor-settings-map {
+  height: 400px;
+}
+
+#marker-circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  background-color: #000000;
+}
+
+#flash-messages {
+  list-style: none;
+  padding: 0;
+}
+
+#flash-messages li {
+  text-align: center;
+}
+
+#home-iframe {
+  width: 100%;
+  border: 0;
+  height: 600px;
+}

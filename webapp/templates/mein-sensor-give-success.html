@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<meta name="robots" content="noindex">
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-12">
+    <h1>Sensor {{ node.uid }} wurde übergeben</h1>
+    <p>Es wurde eine E-Mail an den neuen Besitzer gesendet</p>
+    <p><a href="/meine-sensoren">Zurück zu meinen Sensoren</a></p>
+  </div>
+</div>
+{% endblock %}
