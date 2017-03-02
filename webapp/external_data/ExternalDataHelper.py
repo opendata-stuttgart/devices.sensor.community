@@ -11,65 +11,193 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 """
 
 import pymysql
+import re
 from flask import (current_app)
 
 class ExternalNodes():
   
   def __init__(self):
-    """
     self.connection = pymysql.connect(
       host = current_app.config['EXTERNAL_DATABASE_HOST'],
-      user = current_app.config['EXTERNAL_DATABASE_HOST'],
-      password=current_app.config['EXTERNAL_DATABASE_HOST'],
+      user = current_app.config['EXTERNAL_DATABASE_USER'],
+      password=current_app.config['EXTERNAL_DATABASE_PASSWORD'],
       db = current_app.config['EXTERNAL_DATABASE_DATABASE'],
       charset = 'utf8',
       cursorclass = pymysql.cursors.DictCursor
     )
-    """
-    pass
+  
+  def __del__(self):
+    self.connection.close()
+  
+  def transform_email(self):
+    with self.connection.cursor() as cursor:
+      sql = "SELECT id, description FROM sensors_node"
+      cursor.execute(sql)
+      
+      self.connection.commit()
+      nodes = cursor.fetchall()
+      for node in nodes:
+        email = re.search(r'[\w\.-]+@[\w\.-]+', node['description'])
+        if email:
+          email = email.group(0).lower()
+          sql = "UPDATE sensors_node SET email = %s WHERE ID = %s" % (self.connection.escape(email), node['id'])
+          cursor.execute(sql)
+          self.connection.commit()
+        
   
   def email_exists(self, email):
-    return True
+    result = False
+    try:
+      with self.connection.cursor() as cursor:
+        sql = "SELECT COUNT(*) as count FROM sensors_node WHERE email = %s"
+        cursor.execute(sql, (email.lower()))
+        
+        self.connection.commit()
+        result = cursor.fetchone()
+    except:
+      return -1
+    if result == False or result == None:
+      return -1
+    return result['count']
   
   def get_nodes_by_email(self, email):
-    return [
-      {
-        'id': 1,
-        'uid': 'esp8266-12345',
-        'description': 'same krams',
-        'email': 'mail@ernestoruge.de',
-        'modified': '2017-01-11T10:10:05'
-      },
-      {
-        'id': 2,
-        'uid': 'esp8266-542321',
-        'description': 'same other krams',
-        'email': 'mail@ernestoruge.de',
-        'modified': '2017-01-01T10:10:05'
-      }
-    ]
+    result = False
+    try:
+      with self.connection.cursor() as cursor:
+        sql = "SELECT * FROM sensors_node LEFT JOIN sensors_sensorlocation ON sensors_node.location_id = sensors_sensorlocation.id WHERE sensors_node.email = %s"
+        cursor.execute(sql, (email.lower()))
+        
+        self.connection.commit()
+        result = cursor.fetchall()
+    except:
+      return -1
+    if result == False or result == None:
+      return -1
+    return result
   
   def get_node_by_id(self, id, email):
-    return {
-        'id': 1,
-        'uid': 'esp8266-12345',
-        'description': 'same krams',
-        'email': 'mail@ernestoruge.de',
-        'modified': '2017-01-11T10:10:05'
-      }
+    result = False
+    try:
+      with self.connection.cursor() as cursor:
+        sql = "SELECT * FROM sensors_node LEFT JOIN sensors_sensorlocation ON sensors_node.location_id = sensors_sensorlocation.id WHERE sensors_node.id = %s AND sensors_node.email = %s"
+        cursor.execute(sql, (int(id), email.lower()))
+        
+        self.connection.commit()
+        result = cursor.fetchone()
+        if 'latitude' in result:
+          result['lat'] = result['latitude']
+          del(result['latitude'])
+        if 'longitude' in result:
+          result['lon'] = result['longitude']
+          del(result['longitude'])
+    except:
+      return -1
+    if result == False or result == None:
+      return -1
+    return result
   
   def get_sensors(self, id, email):
-    return [
-      {
-        'id': 1,
-        'sensor_type_id': '1',
-        'pin': 'weeee',
-        'description': 'some sensor krams'
-      }
-    ]
+    result = False
+    try:
+      with self.connection.cursor() as cursor:
+        sql = "SELECT sensors_sensor.*  FROM sensors_sensor LEFT JOIN sensors_node ON sensors_sensor.node_id = sensors_node.id WHERE node_id = %s AND sensors_node.email = %s"
+        cursor.execute(sql, (int(id), email.lower()))
+        
+        self.connection.commit()
+        result = cursor.fetchall()
+    except:
+      return -1
+    if result == False:
+      return -1
+    return result
   
   def update_email(self, id, current_email, new_email):
+    result = False
+    #try:
+    if 1:
+      with self.connection.cursor() as cursor:
+        sql = "UPDATE sensors_node SET email = %s WHERE id = %s AND email = %s"
+        cursor.execute(sql, (new_email.lower(), int(id), current_email.lower()))
+        self.connection.commit()
+    #except:
+    #  return -1
     return True
   
-  def update_meta(self, id, email):
-    return True
+  def update_node_meta(self,
+                       id,
+                       email,
+                       name=None,
+                       description=None,
+                       description_internal=None,
+                       height=None,
+                       traffic_in_area=None,
+                       industry_in_area=None,
+                       oven_in_area=None,
+                       street_name=None,
+                       street_number=None,
+                       postalcode=None,
+                       city=None,
+                       country=None,
+                       lat=None,
+                       lon=None):
+    result = False
+    check = self.get_node_by_id(id, email)
+    try:
+      with self.connection.cursor() as cursor:
+        # check if id + email exists
+        if check != -1:
+          # check if location is used two times
+          sql = "SELECT location_id, COUNT(*) AS count FROM sensors_node WHERE location_id = %s" % check['location_id']
+          cursor.execute(sql)
+          self.connection.commit()
+          num_location_used = cursor.fetchone()['count']
+          
+          sql_list = []
+          # insert new sensors_node
+          if num_location_used > 1:
+            sub_sql = "INSERT INTO sensors_sensorlocation SET created = %, modified = %s, timestamp = %s, owner_id = 17"
+            cursor.execute(sub_sql)
+            self.connection.commit()
+            sql_list.append("location_id = %s" % (cursor.lastrowid))
+          
+          # update node
+          if name != None:
+            sql_list.append("name = %s" % (self.connection.escape(name)))
+          if description != None:
+            sql_list.append("description = %s" % (self.connection.escape(description)))
+          if description_internal != None:
+            sql_list.append("description_internal = %s" % (self.connection.escape(description_internal)))
+          if height != None:
+            sql_list.append("height = %s " % (self.connection.escape(height)))
+          sql = "UPDATE sensors_node SET %s WHERE id = %s AND email = %s" % (', '.join(sql_list), int(id), self.connection.escape(email.lower()))
+          cursor.execute(sql)
+          self.connection.commit()
+          
+          # update location
+          sql_list = []
+          if traffic_in_area != None:
+            sql_list.append("traffic_in_area = %s" % (self.connection.escape(traffic_in_area)))
+          if industry_in_area != None:
+            sql_list.append("industry_in_area = %s" % (self.connection.escape(industry_in_area)))
+          if oven_in_area != None:
+            sql_list.append("oven_in_area = %s" % (self.connection.escape(oven_in_area)))
+          if street_name != None:
+            sql_list.append("street_name = %s" % (self.connection.escape(street_name)))
+          if street_number != None:
+            sql_list.append("street_number = %s" % (self.connection.escape(street_number)))
+          if postalcode != None:
+            sql_list.append("postalcode = %s" % (self.connection.escape(postalcode)))
+          if city != None:
+            sql_list.append("city = %s" % (self.connection.escape(city)))
+          if country != None:
+            sql_list.append("country = %s" % (self.connection.escape(country)))
+          sql = "UPDATE sensors_sensorlocation SET %s WHERE id = %s" % (', '.join(sql_list), check['location_id'])
+          print(sql)
+          cursor.execute(sql)
+          self.connection.commit()
+          
+          return True
+    except:
+      return -1
+    return -1
+  

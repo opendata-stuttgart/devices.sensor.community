@@ -48,6 +48,15 @@ class SensorSettingsForm(FlaskForm):
       )
     ]
   )
+  country = TextField(
+    'Staat',
+    [
+      validators.Required(
+        message='Bitte geben Sie einen Staat an.'
+      )
+    ],
+    default='Deutschland'
+  )
   lat = TextField(
     'Geographischer Längengrad',
     [
@@ -64,11 +73,50 @@ class SensorSettingsForm(FlaskForm):
       )
     ]
   )
-  node_height = IntegerField(
+  height = IntegerField(
     'Höhe des Sensors über dem Boden (in cm)',
     [
       validators.Required(
         message='Bitte geben Sie die Höhe des Sensors über dem Boden an.'
+      )
+    ]
+  )
+  industry_in_area = IntegerField(
+    'Wie viel verarbeitende Industrie (also keine Büroflächen, sondern potentielle Feinstaubproduzenten) befinden sich in 100 m Radius? 1 = sehr wenig, 10 = sehr viel.',
+    [
+      validators.Required(
+        message='Bitte geben Sie eine Einschätzung an.'
+      ),
+      validators.NumberRange(
+        min = 1,
+        max = 10,
+        message='Bitte geben Sie einen Wert von 1 bis 10 an'
+      )
+    ]
+  )
+  oven_in_area = IntegerField(
+    'Wie viele private Öfen oder Kamine befinden sich in 100 m Radius? Riecht es in Ihrem Wohngebiet sehr nach solchem Rauch? 1 = sehr wenig, 10 = sehr viel.',
+    [
+      validators.Required(
+        message='Bitte geben Sie eine Einschätzung an.'
+      ),
+      validators.NumberRange(
+        min = 1,
+        max = 10,
+        message='Bitte geben Sie einen Wert von 1 bis 10 an'
+      )
+    ]
+  )
+  traffic_in_area = IntegerField(
+    'Wie stark befahren sind die Straßen in 100 m Radius? Wie nah dran sind solche Straßen? 1 = sehr wenig weiter weg, 10 = sehr viel Verkehr direkt vor der Haustür.',
+    [
+      validators.Required(
+        message='Bitte geben Sie eine Einschätzung an.'
+      ),
+      validators.NumberRange(
+        min = 1,
+        max = 10,
+        message='Bitte geben Sie einen Wert von 1 bis 10 an'
       )
     ]
   )

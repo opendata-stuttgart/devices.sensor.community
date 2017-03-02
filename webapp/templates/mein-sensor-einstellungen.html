@@ -19,10 +19,10 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6{% if form.name.errors %} error{% endif %}">
+    <div class="form-group col-md-6{% if form.name.errors %} has-danger{% endif %}">
       {{ form.name(class="form-control") }}
     </div>
-    <div>
+    <div class="col-md-6">
       {% if form.name.errors %}
         {% for error in form.name.errors %}
           {{ error }}
@@ -36,10 +36,10 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-4{% if form.street_name.errors or form.street_number.errors %} error{% endif %}">
+    <div class="form-group col-md-4{% if form.street_name.errors %} has-danger{% endif %}">
       {{ form.street_name(class="form-control") }}
     </div>
-    <div class="col-md-2{% if form.street_number.errors or form.street_name.errors %} error{% endif %}">
+    <div class="form-group col-md-2{% if form.street_number.errors %} has-danger{% endif %}">
       {{ form.street_number(class="form-control") }}
     </div>
     <div class="col-md-6">
@@ -61,20 +61,20 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-2{% if form.postalcode.errors or form.city.errors %} error{% endif %}">
+    <div class="form-group col-md-2{% if form.postalcode.errors or form.city.errors %} has-danger{% endif %}">
       {{ form.postalcode(class="form-control") }}
     </div>
-    <div class="col-md-4{% if form.postalcode.errors or form.city.errors %} error{% endif %}">
+    <div class="form-group col-md-4{% if form.city.errors or form.city.errors %} has-danger{% endif %}">
       {{ form.city(class="form-control") }}
     </div>
     <div class="col-md-6">
       {% if form.postalcode.errors %}
-        {% for error in form.street_name.errors %}
+        {% for error in form.postalcode.errors %}
           {{ error }}
         {% endfor %}
       {% endif %}
       {% if form.city.errors %}
-        {% for error in form.street_number.errors %}
+        {% for error in form.city.errors %}
           {{ error }}
         {% endfor %}
       {% endif %}
@@ -82,16 +82,84 @@
   </div>
   <div class="row">
     <div class="col-md-12">
-      {{ form.node_height.label }}
+      {{ form.country.label }}
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6{% if form.node_height.errors %} error{% endif %}">
-      {{ form.node_height(class="form-control") }}
+    <div class="form-group col-md-6{% if form.country.errors %} has-danger{% endif %}">
+      {{ form.country(class="form-control") }}
     </div>
-    <div>
-      {% if form.node_height.errors %}
-        {% for error in form.node_height.errors %}
+    <div class="col-md-6">
+      {% if form.country.errors %}
+        {% for error in form.country.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{ form.height.label }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-md-6{% if form.height.errors %} has-danger{% endif %}">
+      {{ form.height(class="form-control") }}
+    </div>
+    <div class="col-md-6">
+      {% if form.height.errors %}
+        {% for error in form.height.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{ form.industry_in_area.label }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-md-6{% if form.industry_in_area.errors %} has-danger{% endif %}">
+      {{ form.industry_in_area(class="form-control") }}
+    </div>
+    <div class="col-md-6">
+      {% if form.industry_in_area.errors %}
+        {% for error in form.industry_in_area.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{ form.oven_in_area.label }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-md-6{% if form.oven_in_area.errors %} has-danger{% endif %}">
+      {{ form.oven_in_area(class="form-control") }}
+    </div>
+    <div class="col-md-6">
+      {% if form.oven_in_area.errors %}
+        {% for error in form.oven_in_area.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{ form.traffic_in_area.label }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-md-6{% if form.traffic_in_area.errors %} has-danger{% endif %}">
+      {{ form.traffic_in_area(class="form-control") }}
+    </div>
+    <div class="col-md-6">
+      {% if form.traffic_in_area.errors %}
+        {% for error in form.traffic_in_area.errors %}
           {{ error }}
         {% endfor %}
       {% endif %}
@@ -103,7 +171,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12{% if form.description.errors %} error{% endif %}">
+    <div class="col-md-12{% if form.description.errors %} has-danger{% endif %}">
       {{ form.description(class="form-control") }}
     </div>
   </div>

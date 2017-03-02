@@ -17,6 +17,7 @@ from webapp.extensions import db
 import webapp.models as Models
 from webapp.config import DefaultConfig
 from flask_migrate import Migrate, MigrateCommand
+from webapp.external_data import ExternalNodes
 import os
 
 app = launch()
@@ -48,6 +49,11 @@ def initdb():
   
   db.session.add(user)
   db.session.commit()
+
+@manager.command
+def sql_fill_email():
+  external_nodes = ExternalNodes()
+  external_nodes.transform_email()
 
 if __name__ == "__main__":
   manager.run()

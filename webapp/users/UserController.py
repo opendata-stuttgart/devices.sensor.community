@@ -60,9 +60,10 @@ def login_with_password():
         login_user(user, remember=form.remember_me.data)
         return redirect('/meine-luftdaten')
       else:
-        flash('Das Passwort ist nicht korrekt.', 'error')
+        print("wee")
+        flash('Das Passwort ist nicht korrekt.', 'danger')
     else:
-      flash('Das Passwort ist nicht korrekt.', 'error')
+      flash('Das Passwort ist nicht korrekt.', 'danger')
   return render_template('login-with-password.html', form=form)
 
 
@@ -73,7 +74,7 @@ def recover():
   if form.validate_on_submit():
     email_status = User.get_mail_status(form.email.data)
     if email_status == 0:
-      flash('Diesen Account gibt es nicht.', 'error')
+      flash('Diesen Account gibt es nicht.', 'danger')
     elif email_status == 0:
       return redirect('/confirm?email=%s' % (form.email.data))
     else:
