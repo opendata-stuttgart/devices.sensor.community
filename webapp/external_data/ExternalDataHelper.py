@@ -12,7 +12,9 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 import pymysql
 import re
+import datetime
 from flask import (current_app)
+from . import ExternalDataConstants
 
 class ExternalNodes():
   
@@ -113,14 +115,13 @@ class ExternalNodes():
   
   def update_email(self, id, current_email, new_email):
     result = False
-    #try:
-    if 1:
+    try:
       with self.connection.cursor() as cursor:
         sql = "UPDATE sensors_node SET email = %s WHERE id = %s AND email = %s"
         cursor.execute(sql, (new_email.lower(), int(id), current_email.lower()))
         self.connection.commit()
-    #except:
-    #  return -1
+    except:
+      return -1
     return True
   
   def update_node_meta(self,
@@ -155,8 +156,13 @@ class ExternalNodes():
           sql_list = []
           # insert new sensors_node
           if num_location_used > 1:
-            sub_sql = "INSERT INTO sensors_sensorlocation SET created = %, modified = %s, timestamp = %s, owner_id = 17"
-            cursor.execute(sub_sql)
+            sql_list = []
+            sql_list.append("created = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+            sql_list.append("modified = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+            sql_list.append("timestamp = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+            sql_list.append("indoor = 0")
+            sql = "INSERT INTO sensors_sensorlocation SET %s" % (', '.join(sql_list))
+            cursor.execute(sql)
             self.connection.commit()
             sql_list.append("location_id = %s" % (cursor.lastrowid))
           
@@ -169,6 +175,7 @@ class ExternalNodes():
             sql_list.append("description_internal = %s" % (self.connection.escape(description_internal)))
           if height != None:
             sql_list.append("height = %s " % (self.connection.escape(height)))
+          sql_list.append("modified = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
           sql = "UPDATE sensors_node SET %s WHERE id = %s AND email = %s" % (', '.join(sql_list), int(id), self.connection.escape(email.lower()))
           cursor.execute(sql)
           self.connection.commit()
@@ -191,6 +198,7 @@ class ExternalNodes():
             sql_list.append("city = %s" % (self.connection.escape(city)))
           if country != None:
             sql_list.append("country = %s" % (self.connection.escape(country)))
+          sql_list.append("modified = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
           sql = "UPDATE sensors_sensorlocation SET %s WHERE id = %s" % (', '.join(sql_list), check['location_id'])
           print(sql)
           cursor.execute(sql)
@@ -201,3 +209,55 @@ class ExternalNodes():
       return -1
     return -1
   
+  def insert_new_node_with_sensors(self, uid=None, email=None):
+    try:
+      with self.connection.cursor() as cursor:
+        sql_list = []
+        sql_list.append("created = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+        sql_list.append("modified = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+        sql_list.append("timestamp = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+        sql_list.append("indoor = 0")
+        sql = "INSERT INTO sensors_sensorlocation SET %s" % (', '.join(sql_list))
+        cursor.execute(sql)
+        self.connection.commit()
+        location_id = cursor.lastrowid
+        
+        sql_list = []
+        sql_list.append("created = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+        sql_list.append("modified = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+        sql_list.append("location_id = %s" % (location_id))
+        sql_list.append("owner_id = %s" % (ExternalDataConstants.OWNER_ID))
+        sql_list.append("uid = %s" % (self.connection.escape(uid)))
+        if email:
+          sql_list.append("email = %s" % (self.connection.escape(email)))
+        sql = "INSERT INTO sensors_node SET %s" % (', '.join(sql_list))
+        print(sql)
+        cursor.execute(sql)
+        self.connection.commit()
+        node_id = cursor.lastrowid
+        
+        sql_list = []
+        sql_list.append("created = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+        sql_list.append("modified = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+        sql_list.append("node_id = %s" % (node_id))
+        sql_list.append("public = 0")
+        sql_list.append("sensor_type_id = %s" % (ExternalDataConstants.DEFAULT_SENSOR_TYPE_1))
+        sql_list.append("pin = %s" % (ExternalDataConstants.DEFAULT_SENSOR_PIN_1))
+        sql = "INSERT INTO sensors_sensor SET %s" % (', '.join(sql_list))
+        cursor.execute(sql)
+        self.connection.commit()
+        
+        sql_list = []
+        sql_list.append("created = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+        sql_list.append("modified = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+        sql_list.append("node_id = %s" % (node_id))
+        sql_list.append("public = 0")
+        sql_list.append("sensor_type_id = %s" % (ExternalDataConstants.DEFAULT_SENSOR_TYPE_2))
+        sql_list.append("pin = %s" % (ExternalDataConstants.DEFAULT_SENSOR_PIN_2))
+        sql = "INSERT INTO sensors_sensor SET %s" % (', '.join(sql_list))
+        cursor.execute(sql)
+        self.connection.commit()
+        node_id = cursor.lastrowid
+    except:
+      return -1
+    return -1

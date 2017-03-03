@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<meta name="robots" content="noindex">
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-12">
+    <h1>Sensonren-Massenimport: Status</h1>
+    <p>Alle noch laufenden Importe können Sie in dieser Übersicht sehen.</p>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Daten (Beginn)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for task_item in task_items %}
+        <tr>
+          <td>{{ task_item.id }}</td>
+          <td>{{ task_item.first_line }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

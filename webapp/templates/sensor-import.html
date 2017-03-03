@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block head %}
+{{ super() }}
+<meta name="robots" content="noindex">
+{% endblock %}
+
+{% block content %}
+<form method="POST" action="/admin/sensor-import">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Sensor-Massenimport</h1>
+      <p>Mit diesem Formular können neue Nodes massenhaft importiert werden. Pro Zeile wird ein Node erwartet, und zwar in folgendem Format:</p>
+      <p><code>123456 info@ruhrmobil-e.de</code></p>
+      <p>123456 ist hierbei die ID des ESP8266-Boards, die E-Mail ist die Adresse des zukünftigen Besitzers. Falls diese nicht feststeht, kann auch nur die Node-ID angegeben werden, die E-Mail muss dann nachträglich ergänzt werden.</p>
+      <p>Wenn eine E-Mail-Adresse angegeben wurde, wird der Besitzer mit einer E-Mail über seinen neuen Sensor informiert.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{ form.data_field.label }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{ form.data_field(class="form-control") }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      {{ form.submit(class="form-control") }}
+    </div>
+  </div>
+  {{ form.csrf_token }}
+</form>
+{% endblock %}

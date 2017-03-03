@@ -19,15 +19,17 @@ from .common import constants as COMMON_CONSTANTS
 from .frontend import frontend
 from .personal import personal
 from .users import users
+from .admin import admin
 from .models import User
-from .extensions import db, login_manager, csrf, mail
+from .extensions import db, login_manager, csrf, mail, celery
 
 __all__ = ['launch']
 
 DEFAULT_BLUEPRINTS = [
   frontend,
   personal,
-  users
+  users,
+  admin
 ]
 
 def launch(config=None, app_name=None, blueprints=None):
@@ -87,6 +89,9 @@ def configure_extensions(app):
   
   # flask-mail
   mail.init_app(app)
+  
+  #celery
+  celery.init_app(app)
 
 def configure_blueprints(app, blueprints):
   for blueprint in blueprints:

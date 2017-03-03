@@ -60,7 +60,6 @@ def login_with_password():
         login_user(user, remember=form.remember_me.data)
         return redirect('/meine-luftdaten')
       else:
-        print("wee")
         flash('Das Passwort ist nicht korrekt.', 'danger')
     else:
       flash('Das Passwort ist nicht korrekt.', 'danger')

@@ -10,56 +10,25 @@ Redistribution and use in source and binary forms, with or without modification,
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
-from flask_script import Manager, Shell, Server
-from flask import current_app
-from webapp import launch
-from webapp.extensions import db, celery
-import webapp.models as Models
-from webapp.config import DefaultConfig
-from flask_migrate import Migrate, MigrateCommand
-from webapp.external_data import ExternalNodes
-import os
+from flask import (Flask, Blueprint, render_template, current_app, request, flash, url_for, redirect, session, abort, jsonify, send_from_directory)
+from flask_login import current_user, login_required
+from ..external_data import ExternalNodes
+from ..extensions import celery
+from flask_celery import single_instance
+import time
 
-app = launch()
-
-manager = Manager(app)
-migrate = Migrate(app, db)
-
-manager.add_command('db', MigrateCommand)
-
-@manager.shell
-def make_shell_context():
-  return dict(app=current_app, db=db, models=Models)
-
-@manager.command
-def initdb():
-  db.drop_all(bind=None)
-  db.create_all(bind=None)
-
-  role = Models.Role()
-  role.name = 'Administratoren'
-  db.session.add(role)
-  db.session.commit()
-  
-  user = Models.User()
-  user.first_name='Ernesto',
-  user.last_name='Ruge',
-  user.password='password',
-  user.email="mail@ernestoruge.de"
-  
-  db.session.add(user)
-  db.session.commit()
-
-@manager.command
-def sql_fill_email():
+@celery.task(bind=True)
+@single_instance
+def sensor_import_worker(new_sensors):
   external_nodes = ExternalNodes()
-  external_nodes.transform_email()
-
-@manager.command
-def celery_worker():
-  celery_args = ['celery', 'worker', '-n', 'worker', '-C', '--autoscale=10,1', '--without-gossip']
-  with app.app_context():
-    return celery(celery_args)
-    
-if __name__ == "__main__":
-  manager.run()
+  for new_sensor in new_sensors:
+    new_sensor = new_sensor.split(' ')
+    if len(new_sensor) > 0:
+      sensor_id = new_sensor[0]
+      sensor_email = None
+      if len(new_sensor) > 1:
+        sensor_email = new_sensor[1]
+      external_nodes.insert_new_node_with_sensors(
+        uid='esp8266-' + sensor_id,
+        email=sensor_email
+      )

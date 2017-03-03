@@ -41,7 +41,7 @@ class User(db.Model, UserMixin):
   created = db.Column(db.DateTime, nullable=False, default = get_current_time)
   updated = db.Column(db.DateTime, nullable=False, default = get_current_time)
 
-  #roles = db.relationship('Role', secondary=roles_users, backref=db.backref('users', lazy='dynamic'))
+  roles = db.relationship('Role', secondary=roles_users, backref=db.backref('users', lazy='dynamic'))
   
   def __init__(self):
     pass
@@ -62,6 +62,12 @@ class User(db.Model, UserMixin):
     if self.password is None:
       return False
     return bcrypt.verify(password, self.password)
+
+  def has_role(self, role_to_check):
+    for role in self.roles:
+      if role.name == role_to_check:
+        return True
+    return False
 
   @classmethod
   def authenticate(cls, email, password):
@@ -118,6 +124,7 @@ class User(db.Model, UserMixin):
     )
     mail.send(msg)
     return True
+
 
 class Role(db.Model):
   __tablename__ = 'role'

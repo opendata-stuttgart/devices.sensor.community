@@ -8,3 +8,6 @@ Flask-Migrate
 pymysql
 passlib
 bcrypt
+celery
+redis
+Flask-Celery-Helper
