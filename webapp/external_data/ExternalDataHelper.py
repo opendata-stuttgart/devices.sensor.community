@@ -143,7 +143,8 @@ class ExternalNodes():
                        lon=None):
     result = False
     check = self.get_node_by_id(id, email)
-    try:
+    #try:
+    if 1:
       with self.connection.cursor() as cursor:
         # check if id + email exists
         if check != -1:
@@ -198,14 +199,18 @@ class ExternalNodes():
             sql_list.append("city = %s" % (self.connection.escape(city)))
           if country != None:
             sql_list.append("country = %s" % (self.connection.escape(country)))
+          if lat != None:
+            sql_list.append("latitude = %s" % (self.connection.escape(round(float(lat), 11))))
+          if lon != None:
+            sql_list.append("longitude = %s" % (self.connection.escape(round(float(lon), 11))))
           sql_list.append("modified = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
           sql = "UPDATE sensors_sensorlocation SET %s WHERE id = %s" % (', '.join(sql_list), check['location_id'])
           cursor.execute(sql)
           self.connection.commit()
           
           return True
-    except:
-      return -1
+    #except:
+    #  return -1
     return -1
   
   def insert_new_node_with_sensors(self, uid=None, email=None):
