@@ -50,8 +50,10 @@
               <a class="nav-link dropdown-toggle" href="/" id="responsiveNavbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Meine Luftdaten</a>
               <div class="dropdown-menu" aria-labelledby="responsiveNavbarDropdown">
                 {% if not current_user.is_authenticated %}<a class="dropdown-item" href="/login">Login</a>{% endif %}
-                {% if current_user.is_authenticated %}<a class="dropdown-item" href="/meine-einstellungen">Einstellungen</a>{% endif %}
+                {% if current_user.is_authenticated %}<a class="dropdown-item" href="/meine-luftdaten">Übersicht</a>{% endif %}
                 {% if current_user.is_authenticated %}<a class="dropdown-item" href="/meine-sensoren">Meine Sensoren</a>{% endif %}
+                {% if current_user.is_authenticated %}<a class="dropdown-item" href="/meine-einstellungen">Einstellungen</a>{% endif %}
+                {% if current_user.is_authenticated %}<a class="dropdown-item" href="/mein-passwort">Passwort ändern</a>{% endif %}
                 {% if current_user.is_authenticated %}<a class="dropdown-item" href="/logout">Logout</a>{% endif %}
               </div>
             </li>
