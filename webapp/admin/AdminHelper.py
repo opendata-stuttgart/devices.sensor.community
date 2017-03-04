@@ -13,9 +13,10 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 from flask import (Flask, Blueprint, render_template, current_app, request, flash, url_for, redirect, session, abort, jsonify, send_from_directory)
 from flask_login import current_user, login_required
 from ..external_data import ExternalNodes
-from ..extensions import celery
+from ..extensions import celery, mail
 from flask_celery import single_instance
 import time
+from flask_mail import Message
 
 @celery.task(bind=True)
 @single_instance
@@ -32,3 +33,12 @@ def sensor_import_worker(new_sensors):
         uid='esp8266-' + sensor_id,
         email=sensor_email
       )
+      if sensor_email:
+        msg = Message(
+          "Ihr Feinstaubsensor wurde registriert",
+          sender = current_app.config['MAILS_FROM'],
+          recipients = [  sensor_email ],
+          body = render_template('emails/sensor-registered.txt', login_url="%s/login" % (current_app.config['PROJECT_URL']))
+        )
+        mail.send(msg)
+      

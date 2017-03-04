@@ -37,11 +37,12 @@ def admin_sensor_import_status():
     abort(403)
   task_items_raw = celery.control.inspect().active()
   task_items = []
-  task_items_raw = next (iter (task_items_raw.values()))
-  for task_item_raw in task_items_raw:
-    if task_item_raw['type'] == 'webapp.admin.AdminHelper.sensor_import_worker':
-      task_items.append({
-        'first_line': task_item_raw['args'] if len(task_item_raw['args']) < 30 else task_item_raw['args'][0:30] + '...',
-        'id': task_item_raw['id']
-      })
+  if task_items_raw:
+    task_items_raw = next (iter (task_items_raw.values()))
+    for task_item_raw in task_items_raw:
+      if task_item_raw['type'] == 'webapp.admin.AdminHelper.sensor_import_worker':
+        task_items.append({
+          'first_line': task_item_raw['args'] if len(task_item_raw['args']) < 30 else task_item_raw['args'][0:30] + '...',
+          'id': task_item_raw['id']
+        })
   return render_template('sensor-import-status.html', task_items=task_items)

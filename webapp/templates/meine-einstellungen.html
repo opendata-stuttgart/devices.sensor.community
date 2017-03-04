@@ -6,10 +6,53 @@
 {% endblock %}
 
 {% block content %}
-<div class="row">
-  <div class="col-md-12">
-    <h1>Einstellungen</h1>
-    <p>Hier können Sie Ihre Einstellungen ändern.</p>
+<form method="POST" action="/meine-einstellungen">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Einstellungen</h1>
+      <p>Hier können Sie Ihre Einstellungen ändern.</p>
+    </div>
   </div>
-</div>
+  <div class="row">
+    <div class="col-md-12">
+      {{ form.first_name.label }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6{% if form.first_name.errors %} error{% endif %}">
+      {{ form.first_name(class="form-control") }}
+    </div>
+    <div>
+      {% if form.first_name.errors %}
+        {% for error in form.first_name.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{ form.last_name.label }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6{% if form.last_name.errors %} error{% endif %}">
+      {{ form.last_name(class="form-control") }}
+    </div>
+    <div>
+      {% if form.last_name.errors %}
+        {% for error in form.last_name.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      {{ form.submit(class="form-control") }}
+      <p><a href="/meine-sensoren">Zurück zu meinen Sensoren</a></p>
+    </div>
+  </div>
+  {{ form.csrf_token }}
+</form>
 {% endblock %}

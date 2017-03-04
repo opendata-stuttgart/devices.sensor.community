@@ -107,7 +107,7 @@ class RecoverSetForm(FlaskForm):
       validators.Required(
         message='Bitte geben Sie ein Passwort ein.'
       ),
-      validators.EqualTo('password', message='Passwörter müssen identisch sein')
+      validators.EqualTo('password', message='Passwörter müssen identisch sein.')
     ]
   )
   remember_me = BooleanField( 'Anschließend eingeloggt bleiben', default = False)
@@ -116,30 +116,27 @@ class RecoverSetForm(FlaskForm):
 class UserDataForm(FlaskForm):
   first_name = TextField( 'Vorname' )
   last_name = TextField( 'Nachname' )
-  email = TextField( 'E-Mail Adresse', 
-    [
-      validators.Required(
-        message='Bitte geben Sie eine E-Mail-Adresse an'
-      ),
-      validators.Email(
-        message='Bitte geben Sie eine korrekte Mailadresse an.'
-      )
-    ]
+  submit = SubmitField('Nutzerdaten speichern')
+
+class UserPasswordForm(FlaskForm):
+  old_password = PasswordField(
+    'Altes Passwort'
   )
-  password = PasswordField(
+  new_password = PasswordField(
     'Neues Passwort', 
     [
       validators.Length(
         min=UserConstants.MIN_PASSWORD_LEN,
-        max=UserConstants.MAX_PASSWORD_LEN
+        max=UserConstants.MAX_PASSWORD_LEN,
+        message='Passwort muss aus mindestens %s Buchstaben bestehen.' % (UserConstants.MIN_PASSWORD_LEN)
       )
     ]
   )
   confirm = PasswordField(
     'Neues Passwort (Wiederholung)',
     [
-      validators.Required(),
-      validators.EqualTo('password', message='Passwords must match')
+      validators.Required(message='Bitte geben Sie ein Passwort ein.'),
+      validators.EqualTo('new_password', message='Passwörter müssen identisch sein.')
     ]
   )
-  
+  submit = SubmitField('Passwort speichern')

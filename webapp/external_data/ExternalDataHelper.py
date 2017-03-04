@@ -200,7 +200,6 @@ class ExternalNodes():
             sql_list.append("country = %s" % (self.connection.escape(country)))
           sql_list.append("modified = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
           sql = "UPDATE sensors_sensorlocation SET %s WHERE id = %s" % (', '.join(sql_list), check['location_id'])
-          print(sql)
           cursor.execute(sql)
           self.connection.commit()
           
@@ -231,7 +230,6 @@ class ExternalNodes():
         if email:
           sql_list.append("email = %s" % (self.connection.escape(email)))
         sql = "INSERT INTO sensors_node SET %s" % (', '.join(sql_list))
-        print(sql)
         cursor.execute(sql)
         self.connection.commit()
         node_id = cursor.lastrowid

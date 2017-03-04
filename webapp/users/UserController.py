@@ -81,6 +81,7 @@ def recover():
       return render_template('recover-mail-sent.html')
   return render_template('recover.html', form=form)
 
+
 @users.route('/recover-check', methods=['GET', 'POST'])
 def recover_check():
   serialized_data = request.args.get('id', '')
@@ -123,3 +124,30 @@ def logout():
   session.pop('login', None)
   logout_user()
   return redirect('/')
+
+@users.route('/meine-einstellungen', methods=['GET', 'POST'])
+@login_required
+def meine_daten():
+  form = UserDataForm(request.form, obj=current_user)
+  if form.validate_on_submit():
+    form.populate_obj(current_user)
+    db.session.add(current_user)
+    db.session.commit()
+    flash('Nutzerdaten gespeichert', 'success')
+    return redirect('/meine-luftdaten')
+  return render_template('meine-einstellungen.html', form=form)
+
+@users.route('/mein-passwort', methods=['GET', 'POST'])
+@login_required
+def mein_passwort():
+  form = UserPasswordForm()
+  if form.validate_on_submit():
+    if current_user.check_password(form.old_password.data):
+      current_user.password = form.new_password.data
+      db.session.add(current_user)
+      db.session.commit()
+      flash('Passwort gespeichert', 'success')
+      return redirect('/meine-luftdaten')
+    else:
+      flash('Altes Passwort nicht korrekt', 'danger')
+  return render_template('mein-passwort.html', form=form)

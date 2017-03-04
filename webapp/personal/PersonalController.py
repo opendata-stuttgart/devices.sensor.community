@@ -24,11 +24,6 @@ personal = Blueprint('personal', __name__)
 def meine_luftdaten():
   return render_template('meine-luftdaten.html')
 
-@personal.route('/meine-einstellungen')
-@login_required
-def meine_einstellungen():
-  return render_template('meine-einstellungen.html')
-
 @personal.route('/meine-sensoren')
 @login_required
 def meine_sensoren():

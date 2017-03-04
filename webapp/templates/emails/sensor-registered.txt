@@ -1,0 +1,8 @@
+Hallo,
+
+ein Feinstaub-Sensor wurde für Sie registriert. Bitte melden Sie sich mit dieser Mailadresse an, Daten und Einstellungen einzunehmen oder auch zu ändern: {{ login_url }}
+
+Falls der Sensor fälschlicherweise für Sie registriert wurde, melden Sie dies bitte unter info@luftdaten.org.
+
+Mit freundlichen Grüßen,
+Ihr Luftdaten-Team
