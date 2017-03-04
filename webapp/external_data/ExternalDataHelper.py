@@ -39,12 +39,13 @@ class ExternalNodes():
       self.connection.commit()
       nodes = cursor.fetchall()
       for node in nodes:
-        email = re.search(r'[\w\.-]+@[\w\.-]+', node['description'])
-        if email:
-          email = email.group(0).lower()
-          sql = "UPDATE sensors_node SET email = %s WHERE ID = %s" % (self.connection.escape(email), node['id'])
-          cursor.execute(sql)
-          self.connection.commit()
+        if node['description']:
+          email = re.search(r'[\w\.-]+@[\w\.-]+', node['description'])
+          if email:
+            email = email.group(0).lower()
+            sql = "UPDATE sensors_node SET email = %s WHERE ID = %s" % (self.connection.escape(email), node['id'])
+            cursor.execute(sql)
+            self.connection.commit()
         
   
   def email_exists(self, email):
@@ -143,8 +144,7 @@ class ExternalNodes():
                        lon=None):
     result = False
     check = self.get_node_by_id(id, email)
-    #try:
-    if 1:
+    try:
       with self.connection.cursor() as cursor:
         # check if id + email exists
         if check != -1:
@@ -209,8 +209,8 @@ class ExternalNodes():
           self.connection.commit()
           
           return True
-    #except:
-    #  return -1
+    except:
+      return -1
     return -1
   
   def insert_new_node_with_sensors(self, uid=None, email=None):
