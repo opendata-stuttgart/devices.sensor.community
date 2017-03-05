@@ -28,7 +28,7 @@ def sensor_import_worker(new_sensors):
       sensor_id = new_sensor[0]
       sensor_email = None
       if len(new_sensor) > 1:
-        sensor_email = new_sensor[1]
+        sensor_email = new_sensor[1].lower()
       save_data_status = external_nodes.insert_new_node_with_sensors(
         uid='esp8266-' + sensor_id,
         email=sensor_email

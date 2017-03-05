@@ -26,17 +26,17 @@ users = Blueprint('users', __name__)
 def login():
   form = EmailForm()
   if form.validate_on_submit():
-    email_status = User.get_mail_status(form.email.data)
+    email_status = User.get_mail_status(form.email.data.lower())
     if email_status == 1:
-      return redirect('/login-with-password?email=%s' % (form.email.data))
+      return redirect('/login-with-password?email=%s' % (form.email.data.lower()))
     elif email_status == 0:
-      return redirect('/confirm?email=%s' % (form.email.data))
+      return redirect('/confirm?email=%s' % (form.email.data.lower()))
     else:
       external_nodes = ExternalNodes()
-      if not external_nodes.email_exists(form.email.data):
+      if not external_nodes.email_exists(form.email.data.lower()):
         return render_template('invalid-email.html')
       else:
-        return redirect('/register-minimal?email=%s' % (form.email.data))
+        return redirect('/register-minimal?email=%s' % (form.email.data.lower()))
   return render_template('login.html', form=form)
 
 @users.route('/register-minimal', methods=['GET', 'POST'])
@@ -44,7 +44,7 @@ def register_minimal():
   form = MinimalRegisterForm()
   form.email.data = request.args.get('email', '')
   if form.validate_on_submit():
-    User.send_recover_mail(form.email.data, True, True)
+    User.send_recover_mail(form.email.data.lower(), True, True)
     return render_template('register-existing-wait-for-mail.html')
   return render_template('register-minimal.html', form=form)
 
@@ -54,7 +54,7 @@ def login_with_password():
   form = LoginForm()
   form.email.data = request.args.get('email', '')
   if form.validate_on_submit():
-    user, authenticated = User.authenticate(form.email.data, form.password.data)
+    user, authenticated = User.authenticate(form.email.data.lower(), form.password.data)
     if user :
       if authenticated:
         login_user(user, remember=form.remember_me.data)
@@ -71,13 +71,13 @@ def recover():
   form = RecoverForm()
   form.email.data = request.args.get('email', '')
   if form.validate_on_submit():
-    email_status = User.get_mail_status(form.email.data)
+    email_status = User.get_mail_status(form.email.data.lower())
     if email_status == 0:
       flash('Diesen Account gibt es nicht.', 'danger')
     elif email_status == 0:
-      return redirect('/confirm?email=%s' % (form.email.data))
+      return redirect('/confirm?email=%s' % (form.email.data.lower()))
     else:
-      User.send_recover_mail(form.email.data, False)
+      User.send_recover_mail(form.email.data.lower(), False)
       return render_template('recover-mail-sent.html')
   return render_template('recover.html', form=form)
 

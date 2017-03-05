@@ -109,14 +109,14 @@ def mein_sensor_give(id):
     abort(403)
   form = SensorGiveForm()
   if form.validate_on_submit():
-    if form.email.data == current_user.email:
+    if form.email.data.lower() == current_user.email:
       flash('Sie können den Sensor nicht an sich selbst übergeben.', 'error')
     else:
-      if external_nodes.update_email(id, current_user.email, form.email.data) != -1:
+      if external_nodes.update_email(id, current_user.email, form.email.data.lower()) != -1:
         msg = Message(
           "Ein Feinstaubsensor wurde Ihnen übertragen",
           sender = current_app.config['MAILS_FROM'],
-          recipients = [  form.email.data ],
+          recipients = [  form.email.data.lower() ],
           body = render_template('emails/sensor-given.txt', login_url="%s/login" % (current_app.config['PROJECT_URL']))
         )
         mail.send(msg)
