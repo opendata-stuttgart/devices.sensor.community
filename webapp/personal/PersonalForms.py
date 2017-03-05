@@ -16,7 +16,7 @@ from . import PersonalConstants
 
 class SensorSettingsForm(FlaskForm):
   name = TextField(
-    'Name des Sensors',
+    'Interner Name des Sensors (veröffentlicht wird nur die Sensor-UID)',
     [
       validators.Required(
         message='Bitte geben Sie einen Sensornamen an.'
