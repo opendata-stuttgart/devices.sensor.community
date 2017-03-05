@@ -30,7 +30,7 @@ def login():
     if email_status == 1:
       return redirect('/login-with-password?email=%s' % (form.email.data.lower()))
     elif email_status == 0:
-      return redirect('/confirm?email=%s' % (form.email.data.lower()))
+      return redirect('/recover?email=%s' % (form.email.data.lower()))
     else:
       external_nodes = ExternalNodes()
       if not external_nodes.email_exists(form.email.data.lower()):
