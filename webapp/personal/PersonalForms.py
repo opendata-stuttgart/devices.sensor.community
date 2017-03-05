@@ -81,6 +81,14 @@ class SensorSettingsForm(FlaskForm):
       )
     ]
   )
+  sensor_position = IntegerField(
+    'Befestigungsort des Sensors am Haus. 1 = auf der Gartenseite, sehr gut abgeschirmt von allen Straßen, 10 = der Sensor ist an einer Hauswand direkt an der Straße. Bei diesem Wert ist irrelevant, wie groß die Straße ist, es geht nur darum, wo der Sensor am Haus angebracht ist.',
+    [
+      validators.Required(
+        message='Bitte geben Sie den Befestigungsort des Sensors an.'
+      )
+    ]
+  )
   industry_in_area = IntegerField(
     'Wie viel verarbeitende Industrie (also keine Büroflächen, sondern potentielle Feinstaubproduzenten) befinden sich in 100 m Radius? 1 = sehr wenig, 10 = sehr viel.',
     [

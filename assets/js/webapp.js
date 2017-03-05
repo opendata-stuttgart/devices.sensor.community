@@ -1,5 +1,5 @@
 var luftdaten_storage = {
-  default_center: [10.447683333333, 51.163375],
+  default_center: [10.44768333333, 51.163375],
   default_zoom: 6
 };
 
@@ -7,8 +7,14 @@ $( document ).ready(function() {
   if ($('#sensor-settings-map').length) {
     mapboxgl.accessToken = luftdaten_config.mapbox_token;
     if ($('#lat').val() && $('#lon').val()) {
-      luftdaten_storage.default_center = [$('#lon').val(), $('#lat').val()];
-      luftdaten_storage.default_zoom = 15;
+      if ($('#lat').val() == luftdaten_storage.default_center[1] && $('#lon').val() == luftdaten_storage.default_center[0]) {
+        $('#lat').val('');
+        $('#lon').val('');
+      }
+      else {
+        luftdaten_storage.default_center = [$('#lon').val(), $('#lat').val()];
+        luftdaten_storage.default_zoom = 15;
+      }
     }
     luftdaten_storage.geojson = {
       "type": "FeatureCollection",

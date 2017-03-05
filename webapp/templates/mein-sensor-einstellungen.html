@@ -116,6 +116,23 @@
   </div>
   <div class="row">
     <div class="col-md-12">
+      {{ form.sensor_position.label }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col-md-6{% if form.sensor_position.errors %} has-danger{% endif %}">
+      {{ form.sensor_position(class="form-control") }}
+    </div>
+    <div class="col-md-6">
+      {% if form.sensor_position.errors %}
+        {% for error in form.sensor_position.errors %}
+          {{ error }}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
       {{ form.industry_in_area.label }}
     </div>
   </div>

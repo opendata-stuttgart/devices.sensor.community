@@ -29,11 +29,19 @@ def sensor_import_worker(new_sensors):
       sensor_email = None
       if len(new_sensor) > 1:
         sensor_email = new_sensor[1]
-      external_nodes.insert_new_node_with_sensors(
+      save_data_status = external_nodes.insert_new_node_with_sensors(
         uid='esp8266-' + sensor_id,
         email=sensor_email
       )
-      if sensor_email:
+      if save_data_status == -1:
+        msg = Message(
+          "Kritischer Datenbankfehler",
+          sender = current_app.config['MAILS_FROM'],
+          recipients = [ current_app.config['MAILS_FROM'] ],
+          body = "Kritischer Datenbankfehler beim luftdaten.org Import"
+        )
+        mail.send(msg)
+      if sensor_email and save_data_status != -1:
         msg = Message(
           "Ihr Feinstaubsensor wurde registriert",
           sender = current_app.config['MAILS_FROM'],

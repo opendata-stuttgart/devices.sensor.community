@@ -74,6 +74,8 @@ def mein_sensor_einstellungen(id):
       form.oven_in_area.data = node['oven_in_area']
     if 'industry_in_area' in node:
       form.industry_in_area.data = node['industry_in_area']
+    if 'sensor_position' in node:
+      form.sensor_position.data = node['sensor_position']
   if form.validate_on_submit():
     if external_nodes.update_node_meta(id,
                                   current_user.email,
@@ -90,6 +92,7 @@ def mein_sensor_einstellungen(id):
                                   traffic_in_area=form.traffic_in_area.data,
                                   oven_in_area=form.oven_in_area.data,
                                   industry_in_area=form.industry_in_area.data,
+                                  sensor_position=form.sensor_position.data
                                   ) != -1:
       flash('Einstellungen erfolgreich gespeichert.', 'success')
       return redirect('/meine-sensoren')
