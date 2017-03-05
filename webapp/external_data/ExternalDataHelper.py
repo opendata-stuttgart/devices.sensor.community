@@ -218,8 +218,7 @@ class ExternalNodes():
     return -1
   
   def insert_new_node_with_sensors(self, uid=None, email=None):
-    #try:
-    if 1:
+    try:
       with self.connection.cursor() as cursor:
         sql_list = []
         sql_list.append("created = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
@@ -289,6 +288,6 @@ class ExternalNodes():
         self.connection.commit()
         node_id = cursor.lastrowid
         return 1
-    #except:
-    #  return -1
+    except:
+      return -1
     return -1
