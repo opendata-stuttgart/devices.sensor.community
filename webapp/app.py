@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 """
-Copyright (c) 2012 - 2016, Ernesto Ruge
+Copyright (c) 2017, Ernesto Ruge
 All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -64,7 +64,10 @@ def configure_app(app, config=None):
     return
 
   # get mode from os environment
-  application_mode = os.getenv('APPLICATION_MODE', 'LOCAL')
+  application_mode = os.getenv('APPLICATION_MODE', 'PRODUCTION')
+  
+  print("Running in %s mode" % application_mode)
+  
   app.config.from_object(Config.get_config(application_mode))
 
 def configure_extensions(app):
@@ -98,7 +101,28 @@ def configure_blueprints(app, blueprints):
     app.register_blueprint(blueprint)
 
 def configure_logging(app):
-   pass
+  #if app.debug or app.testing:
+  #  return
+
+  from logging import INFO, DEBUG, ERROR, handlers, Formatter
+  app.logger.setLevel(DEBUG)
+
+  info_log = os.path.join(app.config['LOG_DIR'], 'info.log')
+  info_file_handler = handlers.RotatingFileHandler(info_log, maxBytes=100000, backupCount=10)
+  info_file_handler.setLevel(DEBUG)
+  info_file_handler.setFormatter(Formatter(
+    '%(asctime)s %(levelname)s: %(message)s '
+    '[in %(pathname)s:%(lineno)d]')
+  )
+
+  exception_log = os.path.join(app.config['LOG_DIR'], 'exception.log')
+  exception_log_handler = handlers.RotatingFileHandler(exception_log, maxBytes=100000, backupCount=10)
+  exception_log_handler.setLevel(ERROR)
+  exception_log_handler.setFormatter(Formatter(
+    '%(asctime)s %(levelname)s: %(message)s ')
+  )
+  app.logger.addHandler(info_file_handler)
+  app.logger.addHandler(exception_log_handler)
 
 def configure_hook(app):
   @app.before_request

@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 """
-Copyright (c) 2012 - 2016, Ernesto Ruge
+Copyright (c) 2017, Ernesto Ruge
 All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -57,7 +57,8 @@ class ExternalNodes():
         
         self.connection.commit()
         result = cursor.fetchone()
-    except:
+    except pymysql.MySQLError as mysql_error:
+      current_app.logger.error("email_exists failed with error %s: %s" % (mysql_error[0], mysql_error[1]))
       return -1
     if result == False or result == None:
       return -1
@@ -72,7 +73,8 @@ class ExternalNodes():
         
         self.connection.commit()
         result = cursor.fetchall()
-    except:
+    except pymysql.MySQLError as mysql_error:
+      current_app.logger.error("get_nodes_by_email failed with error %s: %s" % (mysql_error[0], mysql_error[1]))
       return -1
     if result == False or result == None:
       return -1
@@ -93,7 +95,8 @@ class ExternalNodes():
         if 'longitude' in result:
           result['lon'] = result['longitude']
           del(result['longitude'])
-    except:
+    except pymysql.MySQLError as mysql_error:
+      current_app.logger.error("get_node_by_id failed with error %s: %s" % (mysql_error[0], mysql_error[1]))
       return -1
     if result == False or result == None:
       return -1
@@ -108,7 +111,8 @@ class ExternalNodes():
         
         self.connection.commit()
         result = cursor.fetchall()
-    except:
+    except pymysql.MySQLError as mysql_error:
+      current_app.logger.error("get_sensors failed with error %s: %s" % (mysql_error[0], mysql_error[1]))
       return -1
     if result == False:
       return -1
@@ -121,7 +125,8 @@ class ExternalNodes():
         sql = "UPDATE sensors_node SET email = %s WHERE id = %s AND email = %s"
         cursor.execute(sql, (new_email.lower(), int(id), current_email.lower()))
         self.connection.commit()
-    except:
+    except pymysql.MySQLError as mysql_error:
+      current_app.logger.error("update_email failed with error %s: %s" % (mysql_error[0], mysql_error[1]))
       return -1
     return True
   
@@ -150,7 +155,7 @@ class ExternalNodes():
         # check if id + email exists
         if check != -1:
           # check if location is used two times
-          sql = "SELECT location_id, COUNT(*) AS count FROM sensors_node WHERE location_id = %s" % check['location_id']
+          sql = "SELECT XXlocation_id, COUNT(*) AS count FROM sensors_node WHERE location_id = %s" % check['location_id']
           cursor.execute(sql)
           self.connection.commit()
           num_location_used = cursor.fetchone()['count']
@@ -213,7 +218,8 @@ class ExternalNodes():
           self.connection.commit()
           
           return True
-    except:
+    except pymysql.MySQLError as mysql_error:
+      current_app.logger.error("update_node_meta failed with error %s: %s" % (mysql_error.args[0], mysql_error.args[1]))
       return -1
     return -1
   
@@ -288,6 +294,7 @@ class ExternalNodes():
         self.connection.commit()
         node_id = cursor.lastrowid
         return 1
-    except:
+    except pymysql.MySQLError as mysql_error:
+      current_app.logger.error("insert_new_node_with_sensors failed with error %s: %s" % (mysql_error[0], mysql_error[1]))
       return -1
     return -1

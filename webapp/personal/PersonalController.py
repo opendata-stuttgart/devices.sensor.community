@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 """
-Copyright (c) 2012 - 2016, Ernesto Ruge
+Copyright (c) 2017, Ernesto Ruge
 All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -94,10 +94,11 @@ def mein_sensor_einstellungen(id):
                                   industry_in_area=form.industry_in_area.data,
                                   sensor_position=form.sensor_position.data
                                   ) != -1:
+      current_app.logger.info('%s updated node %s' % (current_user.email, id))
       flash('Einstellungen erfolgreich gespeichert.', 'success')
       return redirect('/meine-sensoren')
     else:
-      flash('Ein serverseitiger Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.', 'error')
+      flash('Ein serverseitiger Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.', 'danger')
   return render_template('mein-sensor-einstellungen.html', node=node, form=form)
 
 @personal.route('/mein-sensor/<id>/give', methods=['GET', 'POST'])
@@ -110,7 +111,7 @@ def mein_sensor_give(id):
   form = SensorGiveForm()
   if form.validate_on_submit():
     if form.email.data.lower() == current_user.email:
-      flash('Sie können den Sensor nicht an sich selbst übergeben.', 'error')
+      flash('Sie können den Sensor nicht an sich selbst übergeben.', 'danger')
     else:
       if external_nodes.update_email(id, current_user.email, form.email.data.lower()) != -1:
         msg = Message(
@@ -120,7 +121,8 @@ def mein_sensor_give(id):
           body = render_template('emails/sensor-given.txt', login_url="%s/login" % (current_app.config['PROJECT_URL']))
         )
         mail.send(msg)
+        current_app.logger.info('%s gave node node %s to %s' % (current_user.email, id, form.email.data.lower()))
         return render_template('mein-sensor-give-success.html', node=node)
       else:
-        flash('Ein serverseitiger Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.', 'error')
+        flash('Ein serverseitiger Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.', 'danger')
   return render_template('mein-sensor-give.html', node=node, form=form)

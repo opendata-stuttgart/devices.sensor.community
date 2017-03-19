@@ -15,7 +15,7 @@ webapp/config.py
 # Enviroment
 venv
 migrations
-log/*
+logs/*
 
 # Node, Bower, SASS
 .sass-cache

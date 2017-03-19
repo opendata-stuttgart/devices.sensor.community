@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 """
-Copyright (c) 2012 - 2016, Ernesto Ruge
+Copyright (c) 2017, Ernesto Ruge
 All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -45,6 +45,7 @@ def register_minimal():
   form.email.data = request.args.get('email', '')
   if form.validate_on_submit():
     User.send_recover_mail(form.email.data.lower(), True, True)
+    current_app.logger.info('%s sent an registration request' % (current_user.email))
     return render_template('register-existing-wait-for-mail.html')
   return render_template('register-minimal.html', form=form)
 
@@ -78,6 +79,7 @@ def recover():
       return redirect('/confirm?email=%s' % (form.email.data.lower()))
     else:
       User.send_recover_mail(form.email.data.lower(), False)
+      current_app.logger.info('%s sent an recovery request' % (current_user.email))
       return render_template('recover-mail-sent.html')
   return render_template('recover.html', form=form)
 
@@ -115,6 +117,7 @@ def recover_check():
             db.session.add(user)
             db.session.commit()
             login_user(user, remember=form.remember_me.data)
+            current_app.logger.info('%s got access to his / her account after registration / recovery' % (current_user.email))
             flash('Passwort erfolgreich aktualisiert.', 'success')
             return redirect('/meine-luftdaten')
           return render_template('recover-set-password.html', form=form, url_id=serialized_data)
@@ -133,6 +136,7 @@ def meine_daten():
     form.populate_obj(current_user)
     db.session.add(current_user)
     db.session.commit()
+    current_app.logger.info('%s updated his / her user data' % (current_user.email))
     flash('Nutzerdaten gespeichert', 'success')
     return redirect('/meine-luftdaten')
   return render_template('meine-einstellungen.html', form=form)
@@ -146,6 +150,7 @@ def mein_passwort():
       current_user.password = form.new_password.data
       db.session.add(current_user)
       db.session.commit()
+      current_app.logger.info('%s updated his / her password' % (current_user.email))
       flash('Passwort gespeichert', 'success')
       return redirect('/meine-luftdaten')
     else:
