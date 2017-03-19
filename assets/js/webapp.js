@@ -5,103 +5,112 @@ var luftdaten_storage = {
 
 $( document ).ready(function() {
   if ($('#sensor-settings-map').length) {
-    mapboxgl.accessToken = luftdaten_config.mapbox_token;
-    if ($('#lat').val() && $('#lon').val()) {
-      if ($('#lat').val() == luftdaten_storage.default_center[1] && $('#lon').val() == luftdaten_storage.default_center[0]) {
-        $('#lat').val('');
-        $('#lon').val('');
-      }
-      else {
-        luftdaten_storage.default_center = [$('#lon').val(), $('#lat').val()];
-        luftdaten_storage.default_zoom = 15;
-      }
-    }
-    luftdaten_storage.geojson = {
-      "type": "FeatureCollection",
-      "features": [
-        {
-          "type": "Feature",
-          "geometry": {
-            "type": "Point",
-            "coordinates": luftdaten_storage.default_center
-          }
-        }
-      ]
-    };
-    init_map('mapbox://styles/mapbox/streets-v9', luftdaten_storage.default_center, luftdaten_storage.default_zoom);
-    
-    luftdaten_storage.is_cursor_over_point = false;
-    luftdaten_storage.is_dragging = false;
-    luftdaten_storage.canvas = luftdaten_storage.map.getCanvasContainer();
-    
-    $('#sensor-setting-switch-style').click(function() {
-      center = luftdaten_storage.map.getCenter();
-      center = [center.lng, center.lat];
-      zoom = luftdaten_storage.map.getZoom();
-      luftdaten_storage.map.remove();
-      if ($('#sensor-setting-switch-style').attr('data-style') == 'streets') {
-        init_map('mapbox://styles/mapbox/satellite-streets-v9', center, zoom);
-        $('#sensor-setting-switch-style').attr({'data-style': 'satellite'});
-        $('#sensor-setting-switch-style').text('Straßen-Karte');
-      }
-      else {
-        init_map('mapbox://styles/mapbox/streets-v9', center, zoom);
-        $('#sensor-setting-switch-style').attr({'data-style': 'streets'});
-        $('#sensor-setting-switch-style').text('Satelliten-Karte');
-      }
-    });
-    $('#sensor-setting-use-address').click(function() {
-      var location_string = $('#street_name').val();
-      location_string += ' ' + $('#street_number').val();
-      location_string += ', ' + $('#postalcode').val();
-      location_string += ' ' + $('#city').val();
-      geocode_url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + location_string+ '.json?access_token=' + luftdaten_config.mapbox_token;
-      $.getJSON(geocode_url, function(data) {
-        if (data.features.length) {
-          luftdaten_storage.geojson.features[0].geometry.coordinates = data.features[0].center;
-          luftdaten_storage.map.getSource('point').setData(luftdaten_storage.geojson);
-          $('#lat').val(data.features[0].center[1]);
-          $('#lon').val(data.features[0].center[0]);
-          luftdaten_storage.map.flyTo({
-            center: data.features[0].center,
-            zoom: 17
-          });
-        }
-      });
-    });
-    
-    $('#sensor-setting-form').on('submit', function(event) {
-      if (!$('#lat').val() || !$('#lon').val()) {
-        event.preventDefault();
-        if ($('#city').val()) {
-          var location_string = $('#street_name').val();
-          location_string += ' ' + $('#street_number').val();
-          location_string += ', ' + $('#postalcode').val();
-          location_string += ' ' + $('#city').val();
-          geocode_url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + location_string+ '.json?access_token=' + luftdaten_config.mapbox_token;
-          $.getJSON(geocode_url, function(data) {
-            if (data.features.length) {
-              $('#lat').val(data.features[0].center[1]);
-              $('#lon').val(data.features[0].center[0]);
-              $('#submit').click();
-            }
-            else {
-              $('#content').prepend('<ul id="flash-messages"><li class="alert alert-danger" role="alert"><i class="fa fa-times-circle"></i> Keine Geoposition gefunden. Bitte Adresse korrigieren oder manuell eintragen.</li></ul>');
-              $("html, body").animate({
-                scrollTop: 0
-              }, 250);
-            }
-          });
+    try {
+      mapboxgl.accessToken = luftdaten_config.mapbox_token;
+      if ($('#lat').val() && $('#lon').val()) {
+        if ($('#lat').val() == luftdaten_storage.default_center[1] && $('#lon').val() == luftdaten_storage.default_center[0]) {
+          $('#lat').val('');
+          $('#lon').val('');
         }
         else {
-          $('#flash-messages').remove();
-          $('#content').prepend('<ul id="flash-messages"><li class="alert alert-danger" role="alert"><i class="fa fa-times-circle"></i> Keine Geoposition gefunden. Bitte Adresse korrigieren oder manuell eintragen.</li></ul>');
-          $("html, body").animate({
-            scrollTop: 0
-          }, 250);
+          luftdaten_storage.default_center = [$('#lon').val(), $('#lat').val()];
+          luftdaten_storage.default_zoom = 15;
         }
       }
-    });
+      luftdaten_storage.geojson = {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Point",
+              "coordinates": luftdaten_storage.default_center
+            }
+          }
+        ]
+      };
+      init_map('mapbox://styles/mapbox/streets-v9', luftdaten_storage.default_center, luftdaten_storage.default_zoom);
+      
+      luftdaten_storage.is_cursor_over_point = false;
+      luftdaten_storage.is_dragging = false;
+      luftdaten_storage.canvas = luftdaten_storage.map.getCanvasContainer();
+      
+      $('#sensor-setting-switch-style').click(function() {
+        center = luftdaten_storage.map.getCenter();
+        center = [center.lng, center.lat];
+        zoom = luftdaten_storage.map.getZoom();
+        luftdaten_storage.map.remove();
+        if ($('#sensor-setting-switch-style').attr('data-style') == 'streets') {
+          init_map('mapbox://styles/mapbox/satellite-streets-v9', center, zoom);
+          $('#sensor-setting-switch-style').attr({'data-style': 'satellite'});
+          $('#sensor-setting-switch-style').text('Straßen-Karte');
+        }
+        else {
+          init_map('mapbox://styles/mapbox/streets-v9', center, zoom);
+          $('#sensor-setting-switch-style').attr({'data-style': 'streets'});
+          $('#sensor-setting-switch-style').text('Satelliten-Karte');
+        }
+      });
+      $('#sensor-setting-use-address').click(function() {
+        var location_string = $('#street_name').val();
+        location_string += ' ' + $('#street_number').val();
+        location_string += ', ' + $('#postalcode').val();
+        location_string += ' ' + $('#city').val();
+        geocode_url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + location_string+ '.json?access_token=' + luftdaten_config.mapbox_token;
+        $.getJSON(geocode_url, function(data) {
+          if (data.features.length) {
+            luftdaten_storage.geojson.features[0].geometry.coordinates = data.features[0].center;
+            luftdaten_storage.map.getSource('point').setData(luftdaten_storage.geojson);
+            $('#lat').val(data.features[0].center[1]);
+            $('#lon').val(data.features[0].center[0]);
+            luftdaten_storage.map.flyTo({
+              center: data.features[0].center,
+              zoom: 17
+            });
+          }
+        });
+      });
+      
+      $('#sensor-setting-form').on('submit', function(event) {
+        if (!$('#lat').val() || !$('#lon').val()) {
+          event.preventDefault();
+          if ($('#city').val()) {
+            var location_string = $('#street_name').val();
+            location_string += ' ' + $('#street_number').val();
+            location_string += ', ' + $('#postalcode').val();
+            location_string += ' ' + $('#city').val();
+            geocode_url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + location_string+ '.json?access_token=' + luftdaten_config.mapbox_token;
+            $.getJSON(geocode_url, function(data) {
+              if (data.features.length) {
+                $('#lat').val(data.features[0].center[1]);
+                $('#lon').val(data.features[0].center[0]);
+                $('#submit').click();
+              }
+              else {
+                $('#content').prepend('<ul id="flash-messages"><li class="alert alert-danger" role="alert"><i class="fa fa-times-circle"></i> Keine Geoposition gefunden. Bitte Adresse korrigieren oder manuell eintragen.</li></ul>');
+                $("html, body").animate({
+                  scrollTop: 0
+                }, 250);
+              }
+            });
+          }
+          else {
+            $('#flash-messages').remove();
+            $('#content').prepend('<ul id="flash-messages"><li class="alert alert-danger" role="alert"><i class="fa fa-times-circle"></i> Keine Geoposition gefunden. Bitte Adresse korrigieren oder manuell eintragen.</li></ul>');
+            $("html, body").animate({
+              scrollTop: 0
+            }, 250);
+          }
+        }
+      });
+    }
+    catch(error) {
+      $('#flash-messages').remove();
+      $('#content').prepend('<ul id="flash-messages"><li class="alert alert-danger" role="alert"><i class="fa fa-times-circle"></i> Leider ist Ihr Browser inkompatibel zu der Kartenanwendung, da er kein WebGL beherrscht. Bitte verwenden Sie einen anderen Browser.</li></ul>');
+      $("html, body").animate({
+        scrollTop: 0
+      }, 250);
+    }
   }
 });
 
