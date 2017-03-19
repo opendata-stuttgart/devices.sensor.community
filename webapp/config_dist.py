@@ -19,6 +19,7 @@ class DefaultConfig(object):
   PROJECT_URL = ''
   PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
   PROJECT_VERSION = '0.1.0'
+  LOG_DIR = os.path.abspath(os.path.join(PROJECT_ROOT, os.pardir, 'logs'))
 
   DEBUG = False
   TESTING = False

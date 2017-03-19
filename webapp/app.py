@@ -11,7 +11,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 """
 
 import os
-from flask import Flask, request
+from flask import Flask, request, render_template
 
 from webapp import config as Config
 from .common import Response
@@ -84,8 +84,7 @@ def configure_extensions(app):
 
   @login_manager.unauthorized_handler
   def unauthorized(msg=None):
-    '''Handles unauthorized request  '''
-    return Response.make_error_resp(msg="You're not authorized!", code=401)
+    return render_template('401.html'), 401
     
   # flask-wtf
   csrf.init_app(app)
