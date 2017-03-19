@@ -183,17 +183,13 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12">
+    <div class="form-group col-md-12{% if form.description.errors %} has-danger{% endif %}">
       {{ form.description.label }}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12{% if form.description.errors %} has-danger{% endif %}">
       {{ form.description(class="form-control") }}
     </div>
   </div>
   <div class="row">
-    <div class="col-md-6">
+    <div class="form-group col-md-6">
       {{ form.submit(class="form-control") }}
     </div>
     <div class="col-md-6"></div>

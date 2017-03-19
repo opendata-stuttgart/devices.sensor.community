@@ -155,23 +155,39 @@ class ExternalNodes():
         # check if id + email exists
         if check != -1:
           # check if location is used two times
-          sql = "SELECT XXlocation_id, COUNT(*) AS count FROM sensors_node WHERE location_id = %s" % check['location_id']
+          sql = "SELECT location_id, COUNT(*) AS count FROM sensors_node WHERE location_id = %s" % check['location_id']
           cursor.execute(sql)
           self.connection.commit()
           num_location_used = cursor.fetchone()['count']
+          if num_location_used == 1:
+            location_id = check['location_id']
           
           sql_list = []
           # insert new sensors_node
           if num_location_used > 1:
-            sql_list = []
-            sql_list.append("created = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
-            sql_list.append("modified = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
-            sql_list.append("timestamp = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
-            sql_list.append("indoor = 0")
-            sql = "INSERT INTO sensors_sensorlocation SET %s" % (', '.join(sql_list))
+            sub_sql_list = []
+            sub_sql_list.append("created = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+            sub_sql_list.append("modified = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+            sub_sql_list.append("location = ''")
+            sub_sql_list.append("timestamp = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+            sub_sql_list.append("description = ''")
+            sub_sql_list.append("indoor = 1")
+            sub_sql_list.append("owner_id = %s" % (ExternalDataConstants.OWNER_ID))
+            sub_sql_list.append("latitude = %s" % (round(ExternalDataConstants.DEFAULT_LOCATION_LAT, 11)))
+            sub_sql_list.append("longitude = %s" % (round(ExternalDataConstants.DEFAULT_LOCATION_LON, 11)))
+            sub_sql_list.append("city = ''")
+            sub_sql_list.append("industry_in_area = 0")
+            sub_sql_list.append("oven_in_area = 0")
+            sub_sql_list.append("postalcode = ''")
+            sub_sql_list.append("street_name = ''")
+            sub_sql_list.append("street_number = ''")
+            sub_sql_list.append("traffic_in_area = 0")
+            sub_sql_list.append("country = ''")
+            sql = "INSERT INTO sensors_sensorlocation SET %s" % (', '.join(sub_sql_list))
             cursor.execute(sql)
             self.connection.commit()
-            sql_list.append("location_id = %s" % (cursor.lastrowid))
+            location_id = cursor.lastrowid
+            sql_list.append("location_id = %s" % (location_id))
           
           # update node
           if name != None:
@@ -213,7 +229,7 @@ class ExternalNodes():
           if lon != None:
             sql_list.append("longitude = %s" % (self.connection.escape(round(float(lon), 11))))
           sql_list.append("modified = '%s'" % (datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
-          sql = "UPDATE sensors_sensorlocation SET %s WHERE id = %s" % (', '.join(sql_list), check['location_id'])
+          sql = "UPDATE sensors_sensorlocation SET %s WHERE id = %s" % (', '.join(sql_list), location_id)
           cursor.execute(sql)
           self.connection.commit()
           
@@ -234,8 +250,8 @@ class ExternalNodes():
         sql_list.append("description = ''")
         sql_list.append("indoor = 1")
         sql_list.append("owner_id = %s" % (ExternalDataConstants.OWNER_ID))
-        sql_list.append("latitude = %s" % (ExternalDataConstants.DEFAULT_LOCATION_LAT))
-        sql_list.append("longitude = %s" % (ExternalDataConstants.DEFAULT_LOCATION_LON))
+        sql_list.append("latitude = %s" % (round(ExternalDataConstants.DEFAULT_LOCATION_LAT)))
+        sql_list.append("longitude = %s" % (round(ExternalDataConstants.DEFAULT_LOCATION_LON)))
         sql_list.append("city = ''")
         sql_list.append("industry_in_area = 0")
         sql_list.append("oven_in_area = 0")

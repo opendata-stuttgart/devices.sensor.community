@@ -101,9 +101,9 @@ def configure_blueprints(app, blueprints):
     app.register_blueprint(blueprint)
 
 def configure_logging(app):
-  #if app.debug or app.testing:
-  #  return
-
+  if not os.path.exists(app.config['LOG_DIR']):
+    os.makedirs(app.config['LOG_DIR'])
+  
   from logging import INFO, DEBUG, ERROR, handlers, Formatter
   app.logger.setLevel(DEBUG)
 

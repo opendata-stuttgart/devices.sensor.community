@@ -69,11 +69,11 @@ $( document ).ready(function() {
         }
       });
     });
-    /*
-    $('#sensor-setting-form').submit(function(event) {
-      event.preventDefault();
+    
+    $('#sensor-setting-form').on('submit', function(event) {
       if (!$('#lat').val() || !$('#lon').val()) {
-        if($('#city').val()) {
+        event.preventDefault();
+        if ($('#city').val()) {
           var location_string = $('#street_name').val();
           location_string += ' ' + $('#street_number').val();
           location_string += ', ' + $('#postalcode').val();
@@ -83,18 +83,25 @@ $( document ).ready(function() {
             if (data.features.length) {
               $('#lat').val(data.features[0].center[1]);
               $('#lon').val(data.features[0].center[0]);
+              $('#submit').click();
             }
-            $('#sensor-setting-form').trigger('submit');
+            else {
+              $('#content').prepend('<ul id="flash-messages"><li class="alert alert-danger" role="alert"><i class="fa fa-times-circle"></i> Keine Geoposition gefunden. Bitte Adresse korrigieren oder manuell eintragen.</li></ul>');
+              $("html, body").animate({
+                scrollTop: 0
+              }, 250);
+            }
           });
         }
         else {
-          $('#sensor-setting-form').trigger('submit');
+          $('#flash-messages').remove();
+          $('#content').prepend('<ul id="flash-messages"><li class="alert alert-danger" role="alert"><i class="fa fa-times-circle"></i> Keine Geoposition gefunden. Bitte Adresse korrigieren oder manuell eintragen.</li></ul>');
+          $("html, body").animate({
+            scrollTop: 0
+          }, 250);
         }
       }
-      else {
-        $('#sensor-setting-form').trigger('submit');
-      }
-    });*/
+    });
   }
 });
 
