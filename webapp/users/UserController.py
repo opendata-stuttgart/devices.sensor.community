@@ -79,7 +79,7 @@ def recover():
       return redirect('/confirm?email=%s' % (form.email.data.lower()))
     else:
       User.send_recover_mail(form.email.data.lower(), False)
-      current_app.logger.info('%s sent an recovery request' % (current_user.email))
+      current_app.logger.info('%s sent an recovery request' % (form.email.data.lower())
       return render_template('recover-mail-sent.html')
   return render_template('recover.html', form=form)
 
