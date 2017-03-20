@@ -45,7 +45,7 @@ def register_minimal():
   form.email.data = request.args.get('email', '')
   if form.validate_on_submit():
     User.send_recover_mail(form.email.data.lower(), True, True)
-    current_app.logger.info('%s sent an registration request' % (current_user.email))
+    current_app.logger.info('%s sent an registration request' % (form.email.data.lower()))
     return render_template('register-existing-wait-for-mail.html')
   return render_template('register-minimal.html', form=form)
 
