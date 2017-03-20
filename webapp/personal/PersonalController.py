@@ -65,9 +65,9 @@ def mein_sensor_daten(id):
             elif sensor_value['value_type'] == 'temperature':
               sensor_value['value_type_unit'] = '°C'
               sensor_value['value_type_name'] = 'Temperatur'
-            elif sensor_value['value_type'] == 'P2':
+            else:
               sensor_value['value_type_unit'] = ''
-              sensor_value['value_type_name'] = 'Unbekannte Größe'
+              sensor_value['value_type_name'] = sensor_value['value_type']
   if node == False:
     abort(403)
   return render_template('mein-sensor-daten.html', node=node, sensors=sensors)
