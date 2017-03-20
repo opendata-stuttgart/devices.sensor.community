@@ -15,10 +15,10 @@ from datetime import datetime, timedelta
 from flask.json import JSONEncoder as BaseJSONEncoder
 
 def get_current_time():
-   return datetime.utcnow()
+  return datetime.utcnow()
    
 def get_current_time_plus(days=0, hours=0, minutes=0, seconds=0):
-   return get_current_time() + timedelta(days=days, hours=hours, minutes=minutes, seconds=seconds)
+  return get_current_time() + timedelta(days=days, hours=hours, minutes=minutes, seconds=seconds)
     
 class JSONEncoder(BaseJSONEncoder):
   """Custom :class:`JSONEncoder` which respects objects that include the
@@ -68,3 +68,6 @@ class JsonSerializer(object):
     for key in hidden:
       rv.pop(key, None)
     return rv
+
+
+

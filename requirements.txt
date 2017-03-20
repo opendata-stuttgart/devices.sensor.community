@@ -5,9 +5,11 @@ Flask-Login
 Flask-Mail
 Flask-SQLAlchemy
 Flask-Migrate
+Flask-Celery-Helper
 pymysql
 passlib
 bcrypt
 celery
 redis
-Flask-Celery-Helper
+requests
+python-dateutil

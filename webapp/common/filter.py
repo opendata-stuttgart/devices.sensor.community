@@ -10,22 +10,12 @@ Redistribution and use in source and binary forms, with or without modification,
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
-# Flask-SQLAlchemy extension instance
-from flask_sqlalchemy import SQLAlchemy
-db = SQLAlchemy()
+import pytz
 
-# Flask-Login
-from flask_login import LoginManager
-login_manager = LoginManager()
-
-# Flask-WTF csrf protection
-from flask_wtf.csrf import CSRFProtect
-csrf = CSRFProtect()
-
-# Flask-Mail
-from flask_mail import Mail
-mail = Mail()
-
-# Celery
-from flask_celery import Celery
-celery = Celery()
+def register_global_filters(app):
+  @app.template_filter('datetime')
+  def template_datetime(datetime, format='medium'):
+    if datetime.tzname() == 'UTC':
+      datetime = datetime.astimezone(pytz.timezone('Europe/Berlin'))
+    datetime = datetime.strftime('%d.%m.%Y, %H:%M:%S')
+    return datetime

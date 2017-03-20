@@ -9,9 +9,18 @@
 <div class="row">
   <div class="col-md-12">
     <h1>Daten von Node {{ node.uid }}</h1>
-    <p>Hier folgen die Sensordaten.</p>
-    <p>Solange die Auswertung noch nicht programmiert wurde, kann man <a href="http://deutschland.maps.luftdaten.info/">auf der Luftdaten-Karte nachschauen</a>, ob der Sensor vorhanden ist. Nach dem ersten Speichern des Sensors wird es etwa fünf Minuten brauchen, bis der Sensor auf der Karte sichtbar wird.</p>
-    <p>Wer die Auswertung hier mitentwicken möchte, kann sich gerne <a href="https://github.com/ruhrmobil-E/meine-luftdaten">auf Github beteiligen</a>.</p>
+    <p>Typischerweise sind zwei Sensoren an jedem Node angebracht: der Feinstaubsensor sowie der Feuchtigkeits- und Temperatur-Sensor.</p>
+    {% for sensor in sensors %}
+    <h2>{{ sensor['sensor_type_name'] }}</h2>
+    {% if sensor['data'] %}
+    <p>Letzte Aktualisierung: {{ sensor['data']['timestamp']|datetime }} Uhr</p>
+    {% for sensor_value in sensor['data']['sensordatavalues'] %}
+    <p>{{ sensor_value['value_type_name'] }}: {{ sensor_value['value'] }} {{ sensor_value['value_type_unit'] }}</p>
+    {% endfor %}
+    {% else %}
+    <p>Zu diesem Sensor liegen noch keine Daten vor.</p>
+    {% endif %}
+    {% endfor %}
   </div>
 </div>
 {% endblock %}

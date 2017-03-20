@@ -106,7 +106,7 @@ class ExternalNodes():
     result = False
     try:
       with self.connection.cursor() as cursor:
-        sql = "SELECT sensors_sensor.*  FROM sensors_sensor LEFT JOIN sensors_node ON sensors_sensor.node_id = sensors_node.id WHERE node_id = %s AND sensors_node.email = %s"
+        sql = "SELECT sensors_sensor.* FROM sensors_sensor LEFT JOIN sensors_node ON sensors_sensor.node_id = sensors_node.id WHERE node_id = %s AND sensors_node.email = %s"
         cursor.execute(sql, (int(id), email.lower()))
         
         self.connection.commit()

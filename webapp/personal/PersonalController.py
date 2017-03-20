@@ -16,6 +16,9 @@ from .PersonalForms import *
 from ..external_data import ExternalNodes
 from ..extensions import mail
 from flask_mail import Message
+import requests
+import dateutil.parser
+import pytz
 
 personal = Blueprint('personal', __name__)
 
@@ -34,10 +37,40 @@ def meine_sensoren():
 @login_required
 def mein_sensor_daten(id):
   external_nodes = ExternalNodes()
-  node = external_nodes.get_sensors(id, current_user.email)
+  node = external_nodes.get_node_by_id(id, current_user.email)
+  sensors = external_nodes.get_sensors(id, current_user.email)
+  for sensor in sensors:
+    if sensor['sensor_type_id'] == 14:
+      sensor['sensor_type_name'] = 'Feinstaub-Sensor SDS011'
+    elif sensor['sensor_type_id'] == 9:
+      sensor['sensor_type_name'] = 'Feuchtigkeits- und Temperatur-Sensor DHT22'
+    sensor_request = requests.get('http://api.luftdaten.info/static/v1/sensor/%s/' % (sensor['id']))
+    if sensor_request.status_code == 200:
+      sensor_request = sensor_request.json()
+      if sensor_request:
+        sensor['data'] = sensor_request.json()[0]
+        if sensor['data']['timestamp']:
+          sensor['data']['timestamp'] = dateutil.parser.parse(sensor['data']['timestamp']).replace(tzinfo=pytz.UTC)
+        if sensor['data']['sensordatavalues']:
+          for sensor_value in sensor['data']['sensordatavalues']:
+            if sensor_value['value_type'] == 'P1':
+              sensor_value['value_type_name'] = 'Feinstaub 10 µm'
+              sensor_value['value_type_unit'] = 'µg'
+            elif sensor_value['value_type'] == 'P2':
+              sensor_value['value_type_name'] = 'Feinstaub 2,5 µm'
+              sensor_value['value_type_unit'] = 'µg'
+            elif sensor_value['value_type'] == 'humidity':
+              sensor_value['value_type_unit'] = '%'
+              sensor_value['value_type_name'] = 'Luftfeuchtigkeit'
+            elif sensor_value['value_type'] == 'temperature':
+              sensor_value['value_type_unit'] = '°C'
+              sensor_value['value_type_name'] = 'Temperatur'
+            elif sensor_value['value_type'] == 'P2':
+              sensor_value['value_type_unit'] = ''
+              sensor_value['value_type_name'] = 'Unbekannte Größe'
   if node == False:
     abort(403)
-  return render_template('mein-sensor-daten.html', node=node)
+  return render_template('mein-sensor-daten.html', node=node, sensors=sensors)
 
 @personal.route('/mein-sensor/<id>/einstellungen', methods=['GET', 'POST'])
 @login_required
@@ -126,3 +159,4 @@ def mein_sensor_give(id):
       else:
         flash('Ein serverseitiger Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.', 'danger')
   return render_template('mein-sensor-give.html', node=node, form=form)
+

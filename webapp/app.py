@@ -16,6 +16,7 @@ from flask import Flask, request, render_template
 from webapp import config as Config
 from .common import Response
 from .common import constants as COMMON_CONSTANTS
+from .common.filter import register_global_filters
 from .frontend import frontend
 from .personal import personal
 from .users import users
@@ -50,7 +51,9 @@ def launch(config=None, app_name=None, blueprints=None):
   configure_blueprints(app, blueprints)
   configure_extensions(app)
   configure_logging(app)
+  configure_filters(app)
   configure_error_handlers(app)
+  from .common import filter
   return app
 
 def configure_app(app, config=None):
@@ -64,7 +67,7 @@ def configure_app(app, config=None):
     return
 
   # get mode from os environment
-  application_mode = os.getenv('APPLICATION_MODE', 'PRODUCTION')
+  application_mode = os.getenv('APPLICATION_MODE', 'DEVELOPMENT')
   
   print("Running in %s mode" % application_mode)
   
@@ -99,6 +102,9 @@ def configure_blueprints(app, blueprints):
   for blueprint in blueprints:
     app.register_blueprint(blueprint)
 
+def configure_filters(app):
+  register_global_filters(app)
+  
 def configure_logging(app):
   if not os.path.exists(app.config['LOG_DIR']):
     os.makedirs(app.config['LOG_DIR'])
