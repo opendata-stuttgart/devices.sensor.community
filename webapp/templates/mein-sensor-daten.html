@@ -9,9 +9,10 @@
 <div class="row">
   <div class="col-md-12">
     <h1>Daten von Node {{ node.uid }}</h1>
-    <p>Typischerweise sind zwei Sensoren an jedem Node angebracht: der Feinstaubsensor sowie der Feuchtigkeits- und Temperatur-Sensor.</p>
+    <p>Typischerweise sind zwei Sensoren an jedem Node angebracht: der Feinstaubsensor sowie der Feuchtigkeits- und Temperatur-Sensor. Die Sensor-Nummer findet man auch <a href="http://deutschland.maps.luftdaten.info/">auf der Feinstaub-Karte wieder</a>.</p>
     {% for sensor in sensors %}
     <h2>{{ sensor['sensor_type_name'] }}</h2>
+    <p>Sensor ID: {{ sensor['id'] }}</p>
     {% if sensor['data'] %}
     <p>Letzte Aktualisierung: {{ sensor['data']['timestamp']|datetime }} Uhr</p>
     {% for sensor_value in sensor['data']['sensordatavalues'] %}

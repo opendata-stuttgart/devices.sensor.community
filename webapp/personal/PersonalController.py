@@ -48,7 +48,7 @@ def mein_sensor_daten(id):
     if sensor_request.status_code == 200:
       sensor_request = sensor_request.json()
       if sensor_request:
-        sensor['data'] = sensor_request.json()[0]
+        sensor['data'] = sensor_request[0]
         if sensor['data']['timestamp']:
           sensor['data']['timestamp'] = dateutil.parser.parse(sensor['data']['timestamp']).replace(tzinfo=pytz.UTC)
         if sensor['data']['sensordatavalues']:
