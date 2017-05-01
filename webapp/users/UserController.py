@@ -30,7 +30,9 @@ def login():
     if email_status == 1:
       return redirect('/login-with-password?email=%s' % (form.email.data.lower()))
     elif email_status == 0:
-      return redirect('/recover?email=%s' % (form.email.data.lower()))
+      User.send_recover_mail(form.email.data.lower(), False)
+      current_app.logger.info('%s sent an recovery request again' % (form.email.data.lower()))
+      return render_template('recover-mail-sent-again.html')
     else:
       external_nodes = ExternalNodes()
       if not external_nodes.email_exists(form.email.data.lower()):
@@ -44,9 +46,19 @@ def register_minimal():
   form = MinimalRegisterForm()
   form.email.data = request.args.get('email', '')
   if form.validate_on_submit():
-    User.send_recover_mail(form.email.data.lower(), True, True)
-    current_app.logger.info('%s sent an registration request' % (form.email.data.lower()))
-    return render_template('register-existing-wait-for-mail.html')
+    if User.is_email_taken(form.email.data.lower()):
+      email_status = User.get_mail_status(form.email.data.lower())
+      if email_status == 1:
+        flash('Ihr Account wurde bereits erfolgreich erstellt und aktiviert. Bitte nutzen Sie das Login.', 'success')
+        return redirect('/login-with-password?email=%s' % (form.email.data.lower()))
+      elif email_status == 0:
+        User.send_recover_mail(form.email.data.lower(), False)
+        current_app.logger.info('%s sent an recovery request again' % (form.email.data.lower()))
+        return render_template('recover-mail-sent-again.html')
+    else:
+      User.send_recover_mail(form.email.data.lower(), True, True)
+      current_app.logger.info('%s sent an registration request' % (form.email.data.lower()))
+      return render_template('register-existing-wait-for-mail.html')
   return render_template('register-minimal.html', form=form)
 
 
@@ -73,10 +85,12 @@ def recover():
   form.email.data = request.args.get('email', '')
   if form.validate_on_submit():
     email_status = User.get_mail_status(form.email.data.lower())
-    if email_status == 0:
+    if email_status == -1:
       flash('Diesen Account gibt es nicht.', 'danger')
     elif email_status == 0:
-      return redirect('/confirm?email=%s' % (form.email.data.lower()))
+      User.send_recover_mail(form.email.data.lower(), False)
+      current_app.logger.info('%s sent an recovery request again' % (form.email.data.lower()))
+      return render_template('recover-mail-sent-again.html')
     else:
       User.send_recover_mail(form.email.data.lower(), False)
       current_app.logger.info('%s sent an recovery request' % (form.email.data.lower()))
