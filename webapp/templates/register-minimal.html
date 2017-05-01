@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block content %}
-<form method="POST" action="/register-minimal?email={{ form.email.data }}">
+<form method="POST" action="/register-minimal?email={{ form.email.data|urlencode }}">
   <div class="row">
     <div class="col-md-12">
       <h1>Registrierung</h1>
