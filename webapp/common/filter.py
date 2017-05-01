@@ -11,6 +11,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 """
 
 import pytz
+from urllib.parse import quote_plus
 
 def register_global_filters(app):
   @app.template_filter('datetime')
@@ -19,3 +20,7 @@ def register_global_filters(app):
       datetime = datetime.astimezone(pytz.timezone('Europe/Berlin'))
     datetime = datetime.strftime('%d.%m.%Y, %H:%M:%S')
     return datetime
+  
+  @app.template_filter('urlencode')
+  def urlencode(data):
+    return(quote_plus(data))

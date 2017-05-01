@@ -10,7 +10,7 @@ Redistribution and use in source and binary forms, with or without modification,
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
-from urllib.parse import quote_plus, unquote_plus
+from urllib.parse import quote_plus
 from flask import (Flask, Blueprint, render_template, current_app, request, flash, url_for, redirect, session, abort, jsonify, send_from_directory)
 from flask_login import login_required, login_user, current_user, logout_user, confirm_login, login_fresh
 from ..extensions import db, mail
@@ -45,7 +45,7 @@ def login():
 @users.route('/register-minimal', methods=['GET', 'POST'])
 def register_minimal():
   form = MinimalRegisterForm()
-  form.email.data = unquote_plus(request.args.get('email', ''))
+  form.email.data = request.args.get('email', '')
   if form.validate_on_submit():
     if User.is_email_taken(form.email.data.lower()):
       email_status = User.get_mail_status(form.email.data.lower())
@@ -66,7 +66,7 @@ def register_minimal():
 @users.route('/login-with-password', methods=['GET', 'POST'])
 def login_with_password():
   form = LoginForm()
-  form.email.data = unquote_plus(request.args.get('email', ''))
+  form.email.data = request.args.get('email', '')
   if form.validate_on_submit():
     user, authenticated = User.authenticate(form.email.data.lower(), form.password.data)
     if user :
@@ -83,7 +83,7 @@ def login_with_password():
 @users.route('/recover', methods=['GET', 'POST'])
 def recover():
   form = RecoverForm()
-  form.email.data = unquote_plus(request.args.get('email', ''))
+  form.email.data = request.args.get('email', '')
   if form.validate_on_submit():
     email_status = User.get_mail_status(form.email.data.lower())
     if email_status == -1:
