@@ -33,8 +33,8 @@ class User(db.Model, UserMixin):
 
   id = db.Column(db.Integer, primary_key=True)
   email = db.Column(db.String(255), unique=True)
-  first_name = db.Column(db.String(255), unique=True)
-  last_name = db.Column(db.String(255), unique=True)
+  first_name = db.Column(db.String(255))
+  last_name = db.Column(db.String(255))
   _password = db.Column('password', db.String(UserConstants.PW_STRING_LEN), nullable=False)
   active = db.Column(db.Boolean, default=False)
   privacy = db.Column(db.Boolean, default=False)
