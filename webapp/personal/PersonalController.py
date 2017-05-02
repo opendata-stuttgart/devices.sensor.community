@@ -38,6 +38,8 @@ def meine_sensoren():
 def mein_sensor_daten(id):
   external_nodes = ExternalNodes()
   node = external_nodes.get_node_by_id(id, current_user.email)
+  if node == -1:
+    abort(403)
   sensors = external_nodes.get_sensors(id, current_user.email)
   for sensor in sensors:
     if sensor['sensor_type_id'] == 14:
@@ -72,8 +74,6 @@ def mein_sensor_daten(id):
             else:
               sensor_value['value_type_unit'] = ''
               sensor_value['value_type_name'] = sensor_value['value_type']
-  if node == False:
-    abort(403)
   return render_template('mein-sensor-daten.html', node=node, sensors=sensors)
 
 @personal.route('/mein-sensor/<id>/einstellungen', methods=['GET', 'POST'])
