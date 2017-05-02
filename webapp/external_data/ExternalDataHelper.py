@@ -89,6 +89,8 @@ class ExternalNodes():
         
         self.connection.commit()
         result = cursor.fetchone()
+        if not result:
+          return -1
         if 'latitude' in result:
           result['lat'] = result['latitude']
           del(result['latitude'])
