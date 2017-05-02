@@ -46,7 +46,11 @@ def mein_sensor_daten(id):
       sensor['sensor_type_name'] = 'Feuchtigkeits- und Temperatur-Sensor DHT22'
     sensor_request = requests.get('http://api.luftdaten.info/static/v1/sensor/%s/' % (sensor['id']))
     if sensor_request.status_code == 200:
-      sensor_request = sensor_request.json()
+      sensor_request = False
+      try:
+        sensor_request = sensor_request.json()
+      except json.decoder.JSONDecodeError:
+        pass
       if sensor_request:
         sensor['data'] = sensor_request[0]
         if sensor['data']['timestamp']:
