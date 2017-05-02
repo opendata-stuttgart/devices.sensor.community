@@ -19,6 +19,7 @@ from flask_mail import Message
 import requests
 import dateutil.parser
 import pytz
+import json
 
 personal = Blueprint('personal', __name__)
 
