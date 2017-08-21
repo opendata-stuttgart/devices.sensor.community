@@ -11,8 +11,9 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 """
 
 from flask_wtf import FlaskForm
-from wtforms import (BooleanField, TextField, HiddenField, PasswordField, DecimalField, DateTimeField, validators, IntegerField, SubmitField, TextAreaField)
+from wtforms import (BooleanField, TextField, HiddenField, PasswordField, DecimalField, DateTimeField, validators, IntegerField, SubmitField, TextAreaField, SelectField)
 from . import PersonalConstants
+from ..common.countrycodes import country_codes
 
 class SensorSettingsForm(FlaskForm):
   name = TextField(
@@ -48,14 +49,15 @@ class SensorSettingsForm(FlaskForm):
       )
     ]
   )
-  country = TextField(
+  country = SelectField(
     'Staat',
     [
       validators.Required(
         message='Bitte geben Sie einen Staat an.'
       )
     ],
-    default='Deutschland'
+    choices = country_codes,
+    default='DE'
   )
   lat = TextField(
     'Geographischer Längengrad',

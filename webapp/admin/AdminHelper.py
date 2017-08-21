@@ -25,28 +25,31 @@ def sensor_import_worker(new_sensors):
   for new_sensor in new_sensors:
     new_sensor = new_sensor.split(' ')
     if len(new_sensor) > 0:
-      sensor_id = new_sensor[0]
-      sensor_email = None
-      if len(new_sensor) > 1:
-        sensor_email = new_sensor[1].lower()
-      save_data_status = external_nodes.insert_new_node_with_sensors(
-        uid='esp8266-' + sensor_id,
-        email=sensor_email
+      continue
+    sensor_id = new_sensor[0]
+    if not sensor_id:
+      continue
+    sensor_email = None
+    if len(new_sensor) > 1:
+      sensor_email = new_sensor[1].lower()
+    save_data_status = external_nodes.insert_new_node_with_sensors(
+      uid='esp8266-' + sensor_id,
+      email=sensor_email
+    )
+    if save_data_status == -1:
+      msg = Message(
+        "Kritischer Datenbankfehler",
+        sender = current_app.config['MAILS_FROM'],
+        recipients = [ current_app.config['MAILS_FROM'] ],
+        body = "Kritischer Datenbankfehler beim luftdaten.org Import"
       )
-      if save_data_status == -1:
-        msg = Message(
-          "Kritischer Datenbankfehler",
-          sender = current_app.config['MAILS_FROM'],
-          recipients = [ current_app.config['MAILS_FROM'] ],
-          body = "Kritischer Datenbankfehler beim luftdaten.org Import"
-        )
-        mail.send(msg)
-      if sensor_email and save_data_status != -1:
-        msg = Message(
-          "Ihr Feinstaubsensor wurde registriert",
-          sender = current_app.config['MAILS_FROM'],
-          recipients = [  sensor_email ],
-          body = render_template('emails/sensor-registered.txt', login_url="%s/login" % (current_app.config['PROJECT_URL']))
-        )
-        mail.send(msg)
+      mail.send(msg)
+    if sensor_email and save_data_status != -1:
+      msg = Message(
+        "Ihr Feinstaubsensor wurde registriert",
+        sender = current_app.config['MAILS_FROM'],
+        recipients = [  sensor_email ],
+        body = render_template('emails/sensor-registered.txt', login_url="%s/login" % (current_app.config['PROJECT_URL']))
+      )
+      mail.send(msg)
       

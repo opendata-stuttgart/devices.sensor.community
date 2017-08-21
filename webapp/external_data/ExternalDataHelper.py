@@ -13,7 +13,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 import pymysql
 import re
 import datetime
-import json
 from flask import (current_app)
 from . import ExternalDataConstants
 

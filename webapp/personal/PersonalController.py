@@ -104,7 +104,8 @@ def mein_sensor_einstellungen(id):
     if 'city' in node:
       form.city.data = node['city']
     if 'country' in node:
-      form.country.data = node['country']
+      if node['country']:
+        form.country.data = node['country']
     if 'traffic_in_area' in node:
       form.traffic_in_area.data = node['traffic_in_area']
     if 'oven_in_area' in node:
