@@ -24,7 +24,7 @@ def sensor_import_worker(new_sensors):
   external_nodes = ExternalNodes()
   for new_sensor in new_sensors:
     new_sensor = new_sensor.split(' ')
-    if len(new_sensor) > 0:
+    if len(new_sensor) == 0:
       continue
     sensor_id = new_sensor[0]
     if not sensor_id:
@@ -48,7 +48,7 @@ def sensor_import_worker(new_sensors):
       msg = Message(
         "Ihr Feinstaubsensor wurde registriert",
         sender = current_app.config['MAILS_FROM'],
-        recipients = [  sensor_email ],
+        recipients = [ sensor_email ],
         body = render_template('emails/sensor-registered.txt', login_url="%s/login" % (current_app.config['PROJECT_URL']))
       )
       mail.send(msg)
