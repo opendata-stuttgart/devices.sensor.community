@@ -11,6 +11,7 @@ webapp/config.py
 .DS_Store
 ._*
 *~
+.idea
 
 # Enviroment
 venv
