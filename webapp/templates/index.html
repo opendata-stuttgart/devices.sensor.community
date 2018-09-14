@@ -1,19 +1,57 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Willkommen!</h1>
-            <p>Diese Seite dient vor allem dazu, dass Sie als Besitzer eins Feinstaub-Sensors Standort und weitere
-                Parameter selbst einstellen können.</p>
-            <p>Allgemeine Informationen befinden sich auf <a href="http://luftdaten.org">luftdaten.info</a>, <a
-                    href="https://github.com/opendata-stuttgart/meta/raw/master/flyer/assemble_station.150dpi.pdf">die
-                Bauanleitung befindet sich als PDF auf Github</a>.</p>
-            <p>Die Sensordaten kann man <a href="http://deutschland.maps.luftdaten.info">auf der Feinstaub Karte
-                einsehen</a> oder <a href="http://archive.luftdaten.info/">als CSVs herunterladen</a>.</p>
-            <p>Wissenschaftliche Hintergrundinformationen zum Thema Feinstaub und der Messmethode finden Sie <a
-                    href="https://ruhrmobil-e.de/2017/07/26/feinstaub-herkunft-gesundheitsgefahren-messungen/">auf
-                unserem Blog auf ruhrmobil-E.de</a>.</p>
+    <div class="fullwidth clearfix">
+        <div id="topcontainer" class="bodycontainer clearfix">
+            <p><img src="../../static/images/logo.svg" alt="logo"/></p>
+            <h1><span class="title">Luftdaten</span><br/>selber <span class="strikethrough">messen</span> konfigurieren
+            </h1>
+        </div>
+    </div>
+
+  <div class="arrow-separator arrow-white"></div>
+
+    <div class="fullwidth colour1 clearfix">
+        <div id="maincont" class="bodycontainer clearfix">
+            <h2>Luftdaten konfigurieren</h2>
+            <p>Diese Seite dient vor allem dazu, dass Sie als Besitzer eines Feinstaub-Sensors, den Standort und weitere Parameter selbst konfigurieren können. Hier zum {% if not current_user.is_authenticated %}<a href="/login">Login</a>{% endif %}.</p>
+            <p>Allgemeine Informationen finden Sie auf <a href="http://luftdaten.org">luftdaten.info</a>, genauso die <a href="http://luftdaten.org">die Bauanleitung </a>. Sensordaten kann man <a href="http://deutschland.maps.luftdaten.info">auf der Feinstaub Karte
+                </a>einsehen oder <a href="http://archive.luftdaten.info/">als CSVs herunterladen</a>.</p>
+        </div>
+    </div>
+
+    <div class="arrow-separator arrow-theme"></div>
+
+    {#<div class="fullwidth colour2 clearfix">#}
+    {#  <div id="maincont" class="bodycontainer clearfix">#}
+    {#  </div>#}
+    {#</div>#}
+    {#    <div class="arrow-separator arrow-themelight"></div>#}
+
+
+    <div class="fullwidth clearfix">
+        <div class="bodycontainer clearfix">
+
+
+            <h2>Mach mit!</h2>
+            <p>Das <strong>OK Lab Stuttgart</strong> trifft sich jeden:<br/>
+                <a href="https://www.letsmeet.click/c/ok-lab-stuttgart/" target="_blank">2. Dienstag im Monat im
+                    shackspace</a> in Stuttgart Wangen.<br/>
+                <a href="https://www.letsmeet.click/c/ok-lab-stuttgart/" target="_blank">4. Dienstag im Monat in der
+                    Stadtbibliothek</a> am Mailänderplatz.<br/>
+                Interessierte können gerne dazu kommen.</p>
+
+            <p>Die Stadt der Zukunft gehört den Bürgerinnen und Bürgern. Die digitalen Werkzeuge, die Maker Bewegung und
+                Citizen Science führt dazu, dass immer mehr Menschen die Möglichkeit bekommen die Stadt selber zu
+                gestalten.</p><br>
+
+                     <h2>Unterstütze uns mit einer Spende</h2>
+            <p>Der reine Materialwert eines Feinstaub Messgeräts liegt bei +/- 30,00 €. Deshalb gilt als Richtwert für
+                die Spende für ein Messgerät dieser Betrag. Gerne kann mehr oder weniger gespendet werden.</p>
+            <p>Mehr Infos zum Spenden gibt's in der <a href="https://www.betterplace.org/de/projects/38071/"
+                                                       title="Projektübersicht auf betterplace.org">Projektübersicht</a>.
+            </p>
+
         </div>
     </div>
 {% endblock %}

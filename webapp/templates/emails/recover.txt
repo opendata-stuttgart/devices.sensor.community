@@ -2,7 +2,7 @@ Hallo,
 
 um Ihr Passwort zurückzusetzen, nutzen Sie bitte die folgende URL: {{ recover_url }}
 
-Falls Sie kein neues Passwort auf luftdaten.org angefordert haben, so können Sie diese E-Mail ignorieren.
+Falls Sie kein neues Passwort auf luftdaten.info angefordert haben, so können Sie diese E-Mail ignorieren.
 
 Mit freundlichen Grüßen,
-Ihr Luftdaten-Team
+Dein Luftdaten.info-Team

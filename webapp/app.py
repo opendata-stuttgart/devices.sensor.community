@@ -67,7 +67,7 @@ def configure_app(app, config=None):
     return
 
   # get mode from os environment
-  application_mode = os.getenv('APPLICATION_MODE', 'DEVELOPMENT')
+  application_mode = os.getenv('APPLICATION_MODE', 'LOCAL')
   
   print("Running in %s mode" % application_mode)
   

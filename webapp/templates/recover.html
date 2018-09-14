@@ -1,39 +1,43 @@
-{% extends "layout.html" %}
+{#{% extends "layout.html" %}#}
 
 {% block head %}
-{{ super() }}
-<meta name="robots" content="noindex">
+    {{ super() }}
+    <meta name="robots" content="noindex">
 {% endblock %}
 
 {% block content %}
-<form method="POST" action="/recover?email={{ form.email.data }}">
-  <div class="row">
-    <div class="col-md-12">
-      <h1>Passwort vergessen</h1>
+    <div class="fullwidth clearfix">
+        <div id="topcontainer" class="bodycontainer clearfix">
+            <form method="POST" action="/recover?email={{ form.email.data }}">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Passwort vergessen</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        {{ form.email.label }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6{% if form.email.errors %} error{% endif %}">
+                        {{ form.email(disabled=True, class="form-control") }}
+                    </div>
+                    <div>
+                        {% if form.email.errors %}
+                            {% for error in form.email.errors %}
+                                {{ error }}
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        {{ form.submit(class="form-control") }}
+                    </div>
+                </div>
+                {{ form.csrf_token }}
+            </form>
+        </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      {{ form.email.label }}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6{% if form.email.errors %} error{% endif %}">
-      {{ form.email(disabled=True, class="form-control") }}
-    </div>
-    <div>
-      {% if form.email.errors %}
-        {% for error in form.email.errors %}
-          {{ error }}
-        {% endfor %}
-      {% endif %}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6">
-      {{ form.submit(class="form-control") }}
-    </div>
-  </div>
-  {{ form.csrf_token }}
-</form>
 {% endblock %}

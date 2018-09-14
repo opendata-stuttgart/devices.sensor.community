@@ -1,27 +1,33 @@
 {% extends "layout.html" %}
 
 {% block head %}
-{{ super() }}
-<meta name="robots" content="noindex">
+    {{ super() }}
+    <meta name="robots" content="noindex">
 {% endblock %}
 
 {% block content %}
-<div class="row">
-  <div class="col-md-12">
-    <h1>Daten von Node {{ node.uid }}</h1>
-    <p>Typischerweise sind zwei Sensoren an jedem Node angebracht: der Feinstaubsensor sowie der Feuchtigkeits- und Temperatur-Sensor. Die Sensor-Nummer findet man auch <a href="http://deutschland.maps.luftdaten.info/">auf der Feinstaub-Karte wieder</a>.</p>
-    {% for sensor in sensors %}
-    <h2>{{ sensor['sensor_type_name'] }}</h2>
-    <p>Sensor ID: {{ sensor['id'] }}</p>
-    {% if sensor['data'] %}
-    <p>Letzte Aktualisierung: {{ sensor['data']['timestamp']|datetime }} Uhr</p>
-    {% for sensor_value in sensor['data']['sensordatavalues'] %}
-    <p>{{ sensor_value['value_type_name'] }}: {{ sensor_value['value'] }} {{ sensor_value['value_type_unit'] }}</p>
-    {% endfor %}
-    {% else %}
-    <p>Zu diesem Sensor liegen keine aktuellen Daten vor.</p>
-    {% endif %}
-    {% endfor %}
-  </div>
-</div>
+    <div class="fullwidth clearfix">
+        <div id="maincont" class="bodycontainer clearfix">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Daten von Node {{ node.uid }}</h1>
+                    <p>Typischerweise sind zwei Sensoren an jedem Node angebracht: der Feinstaubsensor sowie der
+                        Feuchtigkeits- und Temperatur-Sensor. Die Sensor-Nummer findet man auch <a
+                                href="http://deutschland.maps.luftdaten.info/">auf der Feinstaub-Karte wieder</a>.</p>
+                    {% for sensor in sensors %}
+                        <h2>{{ sensor['sensor_type_name'] }}</h2>
+                        <p>Sensor ID: {{ sensor['id'] }}</p>
+                        {% if sensor['data'] %}
+                            <p>Letzte Aktualisierung: {{ sensor['data']['timestamp']|datetime }} Uhr</p>
+                            {% for sensor_value in sensor['data']['sensordatavalues'] %}
+                                <p>{{ sensor_value['value_type_name'] }}: {{ sensor_value['value'] }} {{ sensor_value['value_type_unit'] }}</p>
+                            {% endfor %}
+                        {% else %}
+                            <p>Zu diesem Sensor liegen keine aktuellen Daten vor.</p>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
