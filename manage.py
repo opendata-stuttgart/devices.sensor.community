@@ -50,16 +50,16 @@ def initdb():
   db.session.add(user)
   db.session.commit()
 
-@manager.command
-def sql_fill_email():
-  external_nodes = ExternalNodes()
-  external_nodes.transform_email()
+# @manager.command
+# def sql_fill_email():
+#   external_nodes = ExternalNodes()
+#   external_nodes.transform_email()
 
-@manager.command
-def celery_worker():
-  celery_args = ['celery', 'worker', '-n', 'worker', '-C', '--autoscale=10,1', '--without-gossip']
-  with app.app_context():
-    return celery(celery_args)
-    
+# @manager.command
+# def celery_worker():
+#   celery_args = ['celery', 'worker', '-n', 'worker', '-C', '--autoscale=10,1', '--without-gossip']
+#   with app.app_context():
+#     return celery(celery_args)
+#
 if __name__ == "__main__":
   manager.run()

@@ -43,13 +43,14 @@ def sensor_import_worker(new_sensors):
         recipients = [ current_app.config['MAILS_FROM'] ],
         body = "Kritischer Datenbankfehler beim luftdaten.org Import"
       )
+      print(msg)
       mail.send(msg)
     if sensor_email and save_data_status != -1:
       msg = Message(
         "Ihr Feinstaubsensor wurde registriert",
         sender = current_app.config['MAILS_FROM'],
-        recipients = [ sensor_email ],
+        recipients = [sensor_email],
         body = render_template('emails/sensor-registered.txt', login_url="%s/login" % (current_app.config['PROJECT_URL']))
       )
+      print(msg)
       mail.send(msg)
-      
