@@ -19,10 +19,10 @@ from ..extensions import celery
 admin = Blueprint('admin', __name__)
 
 @admin.route('/admin/sensor-import', methods=['GET', 'POST'])
-# @login_required
+@login_required
 def admin_sensor_import():
-  # if not current_user.has_role('Administrator'):
-  #   abort(403)
+  if not current_user.has_role('Administrator'):
+    abort(403)
   form = SensorImportForm()
   if form.validate_on_submit():
     new_sensors = form.data_field.data.replace("\r", "").split("\n")
@@ -32,10 +32,10 @@ def admin_sensor_import():
   return render_template('sensor-import.html', form=form)
 
 @admin.route('/admin/sensor-import-status')
-# @login_required
+@login_required
 def admin_sensor_import_status():
-  # if not current_user.has_role('Administrator'):
-  #   abort(403)
+  if not current_user.has_role('Administrator'):
+    abort(403)
   task_items_raw = celery.control.inspect().active()
   task_items = []
   print("Task items:", task_items)

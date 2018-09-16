@@ -1,15 +1,19 @@
 {% extends "layout.html" %}
 
 {% block head %}
-{{ super() }}
-<meta name="robots" content="noindex">
+    {{ super() }}
+    <meta name="robots" content="noindex">
 {% endblock %}
 
 {% block content %}
-<div class="row">
-  <div class="col-md-12">
-    <h1>Passwort setzen: Mail gesendet</h1>
-    <p>Bitte schauen Sie nun in Ihr Postfach, um Ihr Passwort zurückzusetzen.</p>
-  </div>
-</div>
+    <div class="fullwidth clearfix">
+        <div id="topcontainer" class="bodycontainer clearfix">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Passwort setzen: Mail gesendet</h1>
+                    <p>Bitte schauen Sie nun in Ihr Postfach, um Ihr Passwort zurückzusetzen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

@@ -28,6 +28,12 @@ roles_users = db.Table('roles_users',
   db.Column('role_id', db.Integer(), db.ForeignKey('role.id')))
 
 
+# class UserRoles(db.Model):
+#   __tablename__ = 'roles_users'
+#   id = db.Column(db.Integer(), primary_key=True)
+#   user_id = db.Column(db.Integer(), db.ForeignKey('user.id', ondelete='CASCADE'))
+#   role_id = db.Column(db.Integer(), db.ForeignKey('role.id', ondelete='CASCADE'))
+
 class User(db.Model, UserMixin):
   __tablename__ = 'user'
 
@@ -41,7 +47,7 @@ class User(db.Model, UserMixin):
   created = db.Column(db.DateTime, nullable=False, default = get_current_time)
   updated = db.Column(db.DateTime, nullable=False, default = get_current_time)
 
-  roles = db.relationship('Role', secondary=roles_users, backref=db.backref('users', lazy='dynamic'))
+  roles = db.relationship('Role', secondary='roles_users', backref=db.backref('users', lazy='dynamic'))
   
   def __init__(self):
     pass
@@ -133,9 +139,7 @@ class Role(db.Model):
   name = db.Column(db.String(120), unique=True)
   created = db.Column(db.DateTime, nullable=False, default = get_current_time)
   updated = db.Column(db.DateTime, nullable=False, default = get_current_time)
-  
-  #users = db.relationship('User', secondary=roles_users, backref=db.backref('roles', lazy='dynamic'))
-  
+
   def __repr__(self):
     return '<Role %r>' % self.name
 

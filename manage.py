@@ -37,29 +37,30 @@ def initdb():
   db.create_all(bind=None)
 
   role = Models.Role()
-  role.name = 'Administratoren'
+  role.name = 'Administrator'
   db.session.add(role)
   db.session.commit()
-  
+
   user = Models.User()
-  user.first_name='Ernesto',
-  user.last_name='Ruge',
-  user.password='password',
-  user.email="mail@ernestoruge.de"
-  
+  user.first_name='David'
+  user.last_name='Lackovic'
+  user.password='password'
+  user.email="david.lackovic@me.com"
+  user.roles = "Administrator"
+
   db.session.add(user)
   db.session.commit()
 
-# @manager.command
-# def sql_fill_email():
-#   external_nodes = ExternalNodes()
-#   external_nodes.transform_email()
+@manager.command
+def sql_fill_email():
+  external_nodes = ExternalNodes()
+  external_nodes.transform_email()
 
-# @manager.command
-# def celery_worker():
-#   celery_args = ['celery', 'worker', '-n', 'worker', '-C', '--autoscale=10,1', '--without-gossip']
-#   with app.app_context():
-#     return celery(celery_args)
-#
+@manager.command
+def celery_worker():
+  celery_args = ['celery', 'worker', '-n', 'worker', '-C', '--autoscale=10,1', '--without-gossip']
+  with app.app_context():
+    return celery(celery_args)
+
 if __name__ == "__main__":
   manager.run()

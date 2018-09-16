@@ -27,8 +27,10 @@ class DefaultConfig(object):
   ADMINS = ['']
   MAILS_FROM = ''
 
-  SECRET_KEY = ''
-  SECURITY_PASSWORD_SALT = ''
+  SECRET_KEY = 'ajsdgas7&*kosdsa21[]jaksdhlka-;kmcv8l$#diepsm8&ah^'
+  SECURITY_PASSWORD_SALT = 'ajsdgas7&*kosdsa21[]jaksdhlka-;kmcv8l$#diepsm8&ah^'
+  # SECRET_KEY = ''
+  # SECURITY_PASSWORD_SALT = ''
   SQLALCHEMY_TRACK_MODIFICATIONS = False
   SQLALCHEMY_ECHO = False
   DEBUG = True
