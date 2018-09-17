@@ -18,12 +18,14 @@ from flask_celery import single_instance
 import time
 from flask_mail import Message
 
-@celery.task(bind=True)
-@single_instance
+# @celery.task(bind=True)
+# @single_instance
+@celery.task()
 def sensor_import_worker(new_sensors):
   external_nodes = ExternalNodes()
   for new_sensor in new_sensors:
     new_sensor = new_sensor.split(' ')
+    print("New sensors:", new_sensors)
     if len(new_sensor) == 0:
       continue
     sensor_id = new_sensor[0]

@@ -3,6 +3,8 @@
 {% block head %}
     {{ super() }}
     <meta name="robots" content="noindex">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
 {% endblock %}
 
 {% block content %}
@@ -250,12 +252,15 @@
             </div>
     </div>
 {% endblock %}
-
 {% block scripts %}
-    var luftdaten_config = {
-    mapbox_token: "{{ config['MAPBOX_TOKEN'] }}"
-    }
+
     <script>
+    mapboxgl.accessToken = {{ config['MAPBOX_TOKEN'] }};
+var map = new mapboxgl.Map({
+    container: 'sensor-settings-map',
+    style: 'mapbox://styles/mapbox/streets-v9'
+});
     </script>
     {{ super() }}
 {% endblock %}
+

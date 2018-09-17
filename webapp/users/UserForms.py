@@ -18,7 +18,7 @@ class EmailForm(FlaskForm):
   email = TextField(
     'E-Mail Adresse',
     [
-      validators.Required(
+      validators.DataRequired(
         message='Bitte geben Sie eine E-Mail-Adresse an'
       ),
       validators.Email(
@@ -32,7 +32,7 @@ class LoginForm(FlaskForm):
   email = TextField(
     'E-Mail Adresse',
     [
-      validators.Required(
+      validators.DataRequired(
         message='Bitte geben Sie eine E-Mail-Adresse an'
       ),
       validators.Email(
@@ -43,7 +43,7 @@ class LoginForm(FlaskForm):
   password  = PasswordField(
     'Passwort',
     [
-      validators.Required(
+      validators.DataRequired(
         message='Bitte geben Sie ein Passwort ein.'
       )
     ]
@@ -55,7 +55,7 @@ class MinimalRegisterForm(FlaskForm):
   email = TextField(
     'E-Mail Adresse',
     [
-      validators.Required(
+      validators.DataRequired(
         message='Bitte geben Sie eine E-Mail-Adresse an'
       ),
       validators.Email(
@@ -66,7 +66,7 @@ class MinimalRegisterForm(FlaskForm):
   privacy = BooleanField(
     'Ich stimme den <a href="/datenschutz">Datenschutzbestimmungen</a> zu',
     [
-      validators.Required(
+      validators.DataRequired(
         message='Bitte stimmen Sie den Datenschutzbestimmungen zu.'
       )
     ]
@@ -77,7 +77,7 @@ class RecoverForm(FlaskForm):
   email = TextField(
     'E-Mail Adresse',
     [
-      validators.Required(
+      validators.DataRequired(
         message='Bitte geben Sie eine E-Mail-Adresse an'
       ),
       validators.Email(
@@ -91,7 +91,7 @@ class RecoverSetForm(FlaskForm):
   password = PasswordField(
     'Passwort', 
     [
-      validators.Required(
+      validators.DataRequired(
         message='Bitte geben Sie ein Passwort ein.'
       ),
       validators.Length(
@@ -104,7 +104,7 @@ class RecoverSetForm(FlaskForm):
   password_repeat = PasswordField(
     'Passwort (Wiederholung)',
     [
-      validators.Required(
+      validators.DataRequired(
         message='Bitte geben Sie ein Passwort ein.'
       ),
       validators.EqualTo('password', message='Passwörter müssen identisch sein.')
@@ -135,7 +135,7 @@ class UserPasswordForm(FlaskForm):
   confirm = PasswordField(
     'Neues Passwort (Wiederholung)',
     [
-      validators.Required(message='Bitte geben Sie ein Passwort ein.'),
+      validators.DataRequired(message='Bitte geben Sie ein Passwort ein.'),
       validators.EqualTo('new_password', message='Passwörter müssen identisch sein.')
     ]
   )
