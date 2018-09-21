@@ -4,7 +4,7 @@
     {{ super() }}
     <meta name="robots" content="noindex">
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet'/>
 {% endblock %}
 
 {% block content %}
@@ -21,13 +21,20 @@
                             können. Es ist also wichtig, dass die Sensor-Basisdaten immer aktuell gehalten werden.</p>
                     </div>
                 </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Basisinformationen</h2>
+                    </div>
+                </div>
+                <br>
                 <div class="row">
                     <div class="col-md-12">
                         {{ form.name.label }}
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6{% if form.name.errors %} has-danger{% endif %}">
+                    <div class="form-group col-md-6 offset-md-3{% if form.name.errors %} has-danger{% endif %}">
                         {{ form.name(class="form-control") }}
                     </div>
                     <div class="col-md-6">
@@ -44,10 +51,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-4{% if form.street_name.errors %} has-danger{% endif %}">
+                    <div class="form-group col-md-4 offset-md-3{% if form.street_name.errors %} has-danger{% endif %}">
                         {{ form.street_name(class="form-control") }}
                     </div>
-                    <div class="form-group col-md-2{% if form.street_number.errors %} has-danger{% endif %}">
+                    <div class="form-group col-md-2 {% if form.street_number.errors %} has-danger{% endif %}">
                         {{ form.street_number(class="form-control") }}
                     </div>
                     <div class="col-md-6">
@@ -69,7 +76,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-2{% if form.postalcode.errors or form.city.errors %} has-danger{% endif %}">
+                    <div class="form-group col-md-2 offset-md-3{% if form.postalcode.errors or form.city.errors %} has-danger{% endif %}">
                         {{ form.postalcode(class="form-control") }}
                     </div>
                     <div class="form-group col-md-4{% if form.city.errors or form.city.errors %} has-danger{% endif %}">
@@ -94,7 +101,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6{% if form.country.errors %} has-danger{% endif %}">
+                    <div class="form-group col-md-6 offset-md-3 {% if form.country.errors %} has-danger{% endif %}">
                         {{ form.country(class="form-control") }}
                     </div>
                     <div class="col-md-6">
@@ -105,16 +112,26 @@
                         {% endif %}
                     </div>
                 </div>
+                <br>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Zusätzliche Informationen</h2>
+                    </div>
+                </div>
+                <br>
                 <div class="row">
                     <div class="col-md-12">
                         {{ form.height.label }}
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6{% if form.height.errors %} has-danger{% endif %}">
+                    <div class="form-group col-md-6 offset-md-3 {% if form.height.errors %} has-danger{% endif %}">
                         {{ form.height(class="form-control") }}
                     </div>
-                    <div class="col-md-6">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
                         {% if form.height.errors %}
                             {% for error in form.height.errors %}
                                 {{ error }}
@@ -128,10 +145,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6{% if form.sensor_position.errors %} has-danger{% endif %}">
+                    <div class="form-group col-md-6 offset-md-3 {% if form.sensor_position.errors %} has-danger{% endif %}">
                         {{ form.sensor_position(class="form-control") }}
                     </div>
-                    <div class="col-md-6">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 offset-md-3">
                         {% if form.sensor_position.errors %}
                             {% for error in form.sensor_position.errors %}
                                 {{ error }}
@@ -145,10 +164,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6{% if form.industry_in_area.errors %} has-danger{% endif %}">
+                    <div class="form-group col-md-6 offset-md-3 {% if form.industry_in_area.errors %} has-danger{% endif %}">
                         {{ form.industry_in_area(class="form-control") }}
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 offset-md-3">
                         {% if form.industry_in_area.errors %}
                             {% for error in form.industry_in_area.errors %}
                                 {{ error }}
@@ -162,10 +181,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6{% if form.oven_in_area.errors %} has-danger{% endif %}">
+                    <div class="form-group col-md-6 offset-md-3 {% if form.oven_in_area.errors %} has-danger{% endif %}">
                         {{ form.oven_in_area(class="form-control") }}
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 offset-md-3">
                         {% if form.oven_in_area.errors %}
                             {% for error in form.oven_in_area.errors %}
                                 {{ error }}
@@ -179,10 +198,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6{% if form.traffic_in_area.errors %} has-danger{% endif %}">
+                    <div class="form-group col-md-6 offset-md-3 {% if form.traffic_in_area.errors %} has-danger{% endif %}">
                         {{ form.traffic_in_area(class="form-control") }}
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 offset-md-3">
                         {% if form.traffic_in_area.errors %}
                             {% for error in form.traffic_in_area.errors %}
                                 {{ error }}
@@ -197,10 +216,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6">
-                        {{ form.submit(class="form-control") }}
+                    <div class="form-group col-md-6 offset-md-3">
+                        {{ form.submit(class="form-control btn") }}
                     </div>
-                    <div class="col-md-6"></div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
@@ -249,17 +267,17 @@
                 </div>
                 {{ form.csrf_token }}
             </form>
-            </div>
+        </div>
     </div>
 {% endblock %}
 {% block scripts %}
 
     <script>
-    mapboxgl.accessToken = {{ config['MAPBOX_TOKEN'] }};
-var map = new mapboxgl.Map({
-    container: 'sensor-settings-map',
-    style: 'mapbox://styles/mapbox/streets-v9'
-});
+        mapboxgl.accessToken = {{ config['MAPBOX_TOKEN'] }};
+        var map = new mapboxgl.Map({
+            container: 'sensor-settings-map',
+            style: 'mapbox://styles/mapbox/streets-v9'
+        });
     </script>
     {{ super() }}
 {% endblock %}

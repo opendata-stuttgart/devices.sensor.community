@@ -89,6 +89,12 @@ mark {
 small {
     font-size: 80%
 }
+.small {
+    /*font-size: 80%*/
+    font-size: 0.8rem !important;
+    font-weight: 200;
+    line-height: 1.6rem;
+}
 
 sub, sup {
     font-size: 75%;
@@ -888,10 +894,10 @@ pre code {
 }
 
 /*@media (min-width: 992px) {*/
-    /*.container {*/
-        /*padding-right: 15px;*/
-        /*padding-left: 15px*/
-    /*}*/
+/*.container {*/
+/*padding-right: 15px;*/
+/*padding-left: 15px*/
+/*}*/
 
 /*}*/
 
@@ -3644,9 +3650,11 @@ tbody.collapse.show {
     html {
         font-size: 15px;
     }
-    .navbar-brand{
+
+    .navbar-brand {
         display: none;
     }
+
     .navbar-toggleable .navbar-nav {
         position: static;
         float: none

@@ -22,13 +22,13 @@
                         <p>Wenn eine E-Mail-Adresse angegeben wurde, wird der Besitzer mit einer E-Mail über seinen
                             neuen Sensor informiert.</p>
 
-                        <div class="col-md-10 col-md-offset-1">
+                        <div class="col-md-10 offset-1">
                             {{ form.data_field.label }}
                         </div>
-                        <div class="col-md-10 col-md-offset-1">
+                        <div class="col-md-10 offset-1">
                             {{ form.data_field(class="form-control") }}
                         </div>
-                        <div class="col-md-10 col-md-offset-1">
+                        <div class="col-md-10 offset-1">
                             {{ form.submit(class="form-control") }}
                         </div>
                         {{ form.csrf_token }}
