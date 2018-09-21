@@ -20,12 +20,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-10 offset-md-1">
                         {{ form.email.label }}
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6{% if form.email.errors %} error{% endif %}">
+                    <div class="col-md-10 offset-md-1 {% if form.email.errors %} error{% endif %}">
                         {{ form.email(class="form-control") }}
                     </div>
                     <div>
@@ -37,8 +37,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
-                        {{ form.submit(class="form-control") }}
+                    <div class="col-md-10 offset-md-1">
+                        {{ form.submit(class="form-control btn") }}
+                                        <br>
+
+                                        <br>
+
                         <p><a href="/meine-sensoren">Zurück zu meinen Sensoren</a></p>
                     </div>
                 </div>

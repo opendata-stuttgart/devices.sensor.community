@@ -17,4 +17,4 @@ from webapp import launch
 app = launch()
 
 if __name__ == "__main__":
-  app.run(debug=False, host='localhost')
+  app.run(debug=True, host='localhost')
