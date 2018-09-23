@@ -28,8 +28,8 @@ def admin_sensor_import():
     form = SensorImportForm()
     if form.validate_on_submit():
         new_sensors = form.data_field.data.replace("\r", "").split("\n")
-        print("New sensor:", new_sensors)
-        # Todo implement delay function
+        # print("New sensor:", new_sensors)
+        # Todo implement .delay() function
         sensor_import_worker(new_sensors)
         return redirect('/admin/sensor-import-status')
     return render_template('sensor-import.html', form=form)

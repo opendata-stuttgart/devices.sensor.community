@@ -45,7 +45,8 @@ def login():
 @users.route('/register-minimal', methods=['GET', 'POST'])
 def register_minimal():
   form = MinimalRegisterForm()
-  form.email.data = request.args.get('email', '')
+  # form.email.data = request.args.get('email', '')
+  form.email.data = request.form.get('email', '')
   if form.validate_on_submit():
     if User.is_email_taken(form.email.data.lower()):
       email_status = User.get_mail_status(form.email.data.lower())
