@@ -313,6 +313,6 @@ class ExternalNodes():
         node_id = cursor.lastrowid
         return 1
     except pymysql.MySQLError as mysql_error:
-      current_app.logger.error("insert_new_node_with_sensors failed with error %s: %s" % (mysql_error[0], mysql_error[1]))
+      current_app.logger.error("insert_new_node_with_sensors failed with error %s: %s" % (mysql_error, mysql_error.args[0]))
       return -1
     return -1
