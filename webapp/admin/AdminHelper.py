@@ -20,7 +20,8 @@ from flask_celery import single_instance
 import time
 from flask_mail import Message
 
-# Todo remove comment and test
+
+# Todo remove comment and test it
 # @celery.task(bind=True)
 # @single_instance
 @celery.task()

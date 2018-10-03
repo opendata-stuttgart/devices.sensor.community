@@ -79,7 +79,6 @@ def configure_extensions(app):
   db.init_app(app)
   
   # flask-login
-
   @login_manager.user_loader
   def load_user(id):
     return User.query.get(id)

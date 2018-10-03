@@ -12,9 +12,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 """
 
 import os
-
 from webapp import launch
-
 app = launch()
 
 if __name__ == "__main__":
