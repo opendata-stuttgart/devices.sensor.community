@@ -13,4 +13,5 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 from .extensions import celery
 from .app import launch
+
 application = launch()

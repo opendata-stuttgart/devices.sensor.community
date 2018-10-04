@@ -13,20 +13,25 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 # Flask-SQLAlchemy extension instance
 from flask_sqlalchemy import SQLAlchemy
+
 db = SQLAlchemy()
 
 # Flask-Login
 from flask_login import LoginManager
+
 login_manager = LoginManager()
 
 # Flask-WTF csrf protection
 from flask_wtf.csrf import CSRFProtect
+
 csrf = CSRFProtect()
 
 # Flask-Mail
 from flask_mail import Mail
+
 mail = Mail()
 
 # Celery
 from flask_celery import Celery
+
 celery = Celery()

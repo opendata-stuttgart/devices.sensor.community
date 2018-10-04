@@ -11,23 +11,27 @@ Redistribution and use in source and binary forms, with or without modification,
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
-from flask import (Flask, Blueprint, render_template, current_app, request, flash, url_for, redirect, session, abort, jsonify, send_from_directory)
+from flask import (Flask, Blueprint, render_template, current_app, request, flash, url_for, redirect, session, abort,
+                   jsonify, send_from_directory)
 
 frontend = Blueprint('frontend', __name__)
 
+
 @frontend.route('/')
-def index():   
-  return render_template('index.html')
+def index():
+    return render_template('index.html')
+
 
 @frontend.route('/impressum')
 def impressum():
-  return render_template('impressum.html')
+    return render_template('impressum.html')
+
 
 @frontend.route('/datenschutz')
 def datenschutz():
-  return render_template('datenschutz.html')
+    return render_template('datenschutz.html')
 
 
 @frontend.route('/informationen/projekt')
 def informationen_projekt():
-  return render_template('informationen-projekt.html')
+    return render_template('informationen-projekt.html')

@@ -28,40 +28,45 @@ migrate = Migrate(app, db)
 
 manager.add_command('db', MigrateCommand)
 
+
 @manager.shell
 def make_shell_context():
-  return dict(app=current_app, db=db, models=Models)
+    return dict(app=current_app, db=db, models=Models)
+
 
 @manager.command
 def initdb():
-  db.drop_all(bind=None)
-  db.create_all(bind=None)
+    db.drop_all(bind=None)
+    db.create_all(bind=None)
 
-  role = Models.Role()
-  role.name = 'Administrator'
-  db.session.add(role)
-  db.session.commit()
+    role = Models.Role()
+    role.name = 'Administrator'
+    db.session.add(role)
+    db.session.commit()
 
-  user = Models.User()
-  user.first_name='David'
-  user.last_name='Lackovic'
-  user.password='password'
-  user.email="david.lackovic@me.com"
-  user.roles = "Administrator"
+    user = Models.User()
+    user.first_name = 'David'
+    user.last_name = 'Lackovic'
+    user.password = 'password'
+    user.email = "david.lackovic@me.com"
+    user.roles = "Administrator"
 
-  db.session.add(user)
-  db.session.commit()
+    db.session.add(user)
+    db.session.commit()
+
 
 @manager.command
 def sql_fill_email():
-  external_nodes = ExternalNodes()
-  external_nodes.transform_email()
+    external_nodes = ExternalNodes()
+    external_nodes.transform_email()
+
 
 @manager.command
 def celery_worker():
-  celery_args = ['celery', 'worker', '-n', 'worker', '-C', '--autoscale=10,1', '--without-gossip']
-  with app.app_context():
-    return celery(celery_args)
+    celery_args = ['celery', 'worker', '-n', 'worker', '-C', '--autoscale=10,1', '--without-gossip']
+    with app.app_context():
+        return celery(celery_args)
+
 
 if __name__ == "__main__":
-  manager.run()
+    manager.run()

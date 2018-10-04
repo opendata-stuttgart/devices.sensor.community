@@ -1,5 +1,6 @@
 # Python
 webapp/config.py
+feinstaub.sql
 *.py[cod]
 
 # KomodoEdit
@@ -24,6 +25,3 @@ bower_components
 node_modules
 tmp
 
-# config files
-config.py
-feinstaub.sql
