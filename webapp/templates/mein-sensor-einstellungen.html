@@ -3,8 +3,11 @@
 {% block head %}
     {{ super() }}
     <meta name="robots" content="noindex">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet'/>
+    {#    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>#}
+    {#    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet'/>#}
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 {% endblock %}
 
 {% block content %}
@@ -271,14 +274,49 @@
     </div>
 {% endblock %}
 {% block scripts %}
-
     <script>
-        mapboxgl.accessToken = {{ config['MAPBOX_TOKEN'] }};
+        /*        mapboxgl.accessToken = {{ config['MAPBOX_TOKEN'] }};
         var map = new mapboxgl.Map({
             container: 'sensor-settings-map',
             style: 'mapbox://styles/mapbox/streets-v9'
         });
+*/
+
+        var mapCenter = [$('#lat').val(), $('#lon').val()];
+        var map = L.map('sensor-settings-map', {center: mapCenter, zoom: 17});
+        L.tileLayer('https://maps.luftdaten.info/tiles/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+                '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            id: 'examples.map-i875mjb7',
+            noWrap: true
+        }).addTo(map);
+        var marker = L.marker(mapCenter).addTo(map);
+        var updateMarker = function (lat, lng) {
+            marker
+                .setLatLng([lat, lng])
+                .bindPopup("Your location :  " + marker.getLatLng().toString())
+                .openPopup();
+            return false;
+        };
+        map.on('click', function (e) {
+            $('#lat').val(e.latlng.lat);
+            $('#lon').val(e.latlng.lng);
+            updateMarker(e.latlng.lat, e.latlng.lng);
+        });
+
+        function search_coords() {
+            var geocode = 'http://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + $('#street_name').val() + " " + $('#street_number').val() + " " + $('#postalcode').val() + " " + $('#city').val() + " " + $('#country').val();
+            $.getJSON(geocode, function (data) {
+                // get lat + lon from first match
+                var latlng = [data[0].lat, data[0].lon];
+                console.log(latlng);
+                $('#lat').val(data[0].lat);
+                $('#lon').val(data[0].lon);
+                map.setView({lat: $('#lat').val(), lng: $('#lon').val()}, 18);
+                updateMarker($('#lat').val(), $('#lon').val());
+            });
+        }
     </script>
     {{ super() }}
 {% endblock %}
-

@@ -106,10 +106,10 @@ $( document ).ready(function() {
     }
     catch(error) {
       $('#flash-messages').remove();
-      $('#content').prepend('<ul id="flash-messages"><li class="alert alert-danger" role="alert"><i class="fa fa-times-circle"></i> Leider ist Ihr Browser inkompatibel zu der Kartenanwendung, da er kein WebGL beherrscht. Bitte verwenden Sie einen anderen Browser.</li></ul>');
-      $("html, body").animate({
-        scrollTop: 0
-      }, 250);
+      // $('#content').prepend('<ul id="flash-messages"><li class="alert alert-danger" role="alert"><i class="fa fa-times-circle"></i> Leider ist Ihr Browser inkompatibel zu der Kartenanwendung, da er kein WebGL beherrscht. Bitte verwenden Sie einen anderen Browser.</li></ul>');
+      // $("html, body").animate({
+      //   scrollTop: 0
+      // }, 250);
     }
   }
 });
