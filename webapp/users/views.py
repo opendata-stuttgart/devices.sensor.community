@@ -17,9 +17,9 @@ from flask_login import login_required, login_user, current_user, logout_user, c
 from ..extensions import db, mail
 from hashlib import sha256
 from itsdangerous import URLSafeTimedSerializer
-from .UserForms import *
-from .UserModels import User
-from . import UserConstants
+from .forms import *
+from .models import User
+from . import constants
 from ..external_data import ExternalNodes
 
 users = Blueprint('users', __name__)
@@ -112,7 +112,7 @@ def recover_check():
         data = serializer.loads(
             serialized_data,
             salt=current_app.config['SECURITY_PASSWORD_SALT'],
-            max_age=UserConstants.RECOVER_VALID_DURATION
+            max_age=constants.RECOVER_VALID_DURATION
         )
     except:
         data = False

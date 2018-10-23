@@ -14,7 +14,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 from flask_wtf import FlaskForm
 from wtforms import (BooleanField, StringField, HiddenField, PasswordField, DecimalField, DateTimeField, validators,
                      IntegerField, SubmitField, TextAreaField, SelectField)
-from . import PersonalConstants
+from . import constants
 from ..common.countrycodes import country_codes
 
 

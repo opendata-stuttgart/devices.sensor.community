@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 """
-CCopyright (c) 2018, Maintainer: David Lackovic
+Copyright (c) 2018, Maintainer: David Lackovic
 based on Ernesto Ruge https://github.com/ruhrmobil-E/meine-luftdaten/
 All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -22,7 +22,7 @@ from flask_mail import Message
 from flask_login import UserMixin
 from ..common.helpers import JsonSerializer, get_current_time
 from ..extensions import db, mail
-from . import UserConstants
+from . import constants
 
 roles_users = db.Table('roles_users',
                        db.Column('user_id', db.Integer(), db.ForeignKey('user.id')),
@@ -42,7 +42,7 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(255), unique=True)
     first_name = db.Column(db.String(255))
     last_name = db.Column(db.String(255))
-    _password = db.Column('password', db.String(UserConstants.PW_STRING_LEN), nullable=False)
+    _password = db.Column('password', db.String(constants.PW_STRING_LEN), nullable=False)
     active = db.Column(db.Boolean, default=False)
     privacy = db.Column(db.Boolean, default=False)
     created = db.Column(db.DateTime, nullable=False, default=get_current_time)

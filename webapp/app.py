@@ -45,8 +45,6 @@ def launch(config=None, app_name=None, blueprints=None):
 
     app = Flask(
         app_name,
-        instance_path=COMMON_CONSTANTS.INSTANCE_FOLDER_PATH,
-        instance_relative_config=True,
         template_folder='webapp/templates')
     configure_app(app, config)
     configure_hook(app)
@@ -149,7 +147,7 @@ def configure_error_handlers(app):
 """
   @app.errorhandler(500)
   def server_error_page(error):
-    return Response.make_error_resp(msg=str(error), code=500)  
+    return Response.make_error_resp(msg=str(error), code=500)
 
   @app.errorhandler(422)
   def semantic_error(error):

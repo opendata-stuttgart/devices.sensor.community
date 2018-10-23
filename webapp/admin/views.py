@@ -14,8 +14,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 from flask import (Flask, Blueprint, render_template, current_app, request, flash, url_for, redirect, session, abort,
                    jsonify, send_from_directory)
 from flask_login import current_user, login_required
-from .AdminForms import *
-from .AdminHelper import *
+from .forms import *
+from .helpers import *
 from ..extensions import celery
 
 admin = Blueprint('admin', __name__)

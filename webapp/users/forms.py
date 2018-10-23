@@ -14,7 +14,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 from flask_wtf import FlaskForm
 from wtforms import (BooleanField, TextField, HiddenField, PasswordField, DateTimeField, validators, IntegerField,
                      SubmitField)
-from . import UserConstants
+from . import constants
 
 
 class EmailForm(FlaskForm):
@@ -102,9 +102,9 @@ class RecoverSetForm(FlaskForm):
                 message='Bitte geben Sie ein Passwort ein.'
             ),
             validators.Length(
-                min=UserConstants.MIN_PASSWORD_LEN,
-                max=UserConstants.MAX_PASSWORD_LEN,
-                message='Passwort muss aus mindestens %s Buchstaben bestehen.' % (UserConstants.MIN_PASSWORD_LEN)
+                min=constants.MIN_PASSWORD_LEN,
+                max=constants.MAX_PASSWORD_LEN,
+                message='Passwort muss aus mindestens %s Buchstaben bestehen.' % (constants.MIN_PASSWORD_LEN)
             )
         ]
     )
@@ -135,9 +135,9 @@ class UserPasswordForm(FlaskForm):
         'Neues Passwort',
         [
             validators.Length(
-                min=UserConstants.MIN_PASSWORD_LEN,
-                max=UserConstants.MAX_PASSWORD_LEN,
-                message='Passwort muss aus mindestens %s Buchstaben bestehen.' % (UserConstants.MIN_PASSWORD_LEN)
+                min=constants.MIN_PASSWORD_LEN,
+                max=constants.MAX_PASSWORD_LEN,
+                message='Passwort muss aus mindestens %s Buchstaben bestehen.' % (constants.MIN_PASSWORD_LEN)
             )
         ]
     )
