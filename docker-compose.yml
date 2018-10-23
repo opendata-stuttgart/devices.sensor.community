@@ -1,0 +1,39 @@
+version: "3"
+services:
+  web:
+    restart: unless-stopped
+    build:
+      context: .
+    volumes:
+      - .:/app
+    depends_on:
+      - mysql
+      - redis
+    ports:
+      - 5000:5000
+    command: bash -c "python3 manage.py db upgrade && python3 -u manage.py runserver --host=0.0.0.0"
+
+  # TODO get rid of Flask-Celery per http://flask.pocoo.org/docs/1.0/patterns/celery/
+  #celery:
+  #  restart: unless-stopped
+  #  build:
+  #    context: .
+  #  volumes:
+  #    - .:/app
+  #  depends_on:
+  #    - mysql
+  #    - redis
+  #  command: bash -c "python3 manage.py celery_worker"
+
+  mysql:
+    image: mariadb:10.3
+    volumes:
+      - ./initdb:/docker-entrypoint-initdb.d
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=1
+      - MYSQL_USER=devel
+      - MYSQL_PASSWORD=devel
+      - MYSQL_DATABASE=devel
+
+  redis:
+    image: redis:5.0-alpine

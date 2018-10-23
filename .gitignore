@@ -18,6 +18,7 @@ feinstaub.sql
 venv
 migrations
 logs/*
+.bash_history
 
 # Node, Bower, SASS
 .sass-cache
@@ -25,3 +26,5 @@ bower_components
 node_modules
 tmp
 
+# vim
+.ropeproject
