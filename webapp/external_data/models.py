@@ -1,3 +1,5 @@
+from sqlalchemy.orm import backref
+
 from ..extensions import db
 from ..common.helpers import JsonSerializer, get_current_time
 
@@ -19,7 +21,12 @@ class Node(db.Model):
 
     owner_id = db.Column(db.Integer, nullable=False)
     description_internal = db.Column(db.String)
+
     email = db.Column(db.String(254))
+    owner = db.relationship('User', primaryjoin='User.email == Node.email',
+                            foreign_keys='Node.email', remote_side='User.email',
+                            backref=backref('nodes', lazy='dynamic'), lazy=True)
+
     height = db.Column(db.Integer)
     sensor_position = db.Column(db.Integer)
     name = db.Column(db.String)

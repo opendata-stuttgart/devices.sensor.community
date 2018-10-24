@@ -36,15 +36,16 @@ def meine_luftdaten():
 
 
 @personal.route('/meine-sensoren')
+@personal.route('/sensors')
 @login_required
-def meine_sensoren():
-    external_nodes = ExternalNodes()
-    return render_template('meine-sensoren.html', nodes=external_nodes.get_nodes_by_email(current_user.email))
+def sensor_list():
+    return render_template('meine-sensoren.html', nodes=current_user.nodes)
 
 
 @personal.route('/mein-sensor/<id>/daten')
+@personal.route('/sensors/<id>/data')
 @login_required
-def mein_sensor_daten(id):
+def sensor_data(id):
     external_nodes = ExternalNodes()
     node = external_nodes.get_node_by_id(id, current_user.email)
     if node == -1:
@@ -87,8 +88,9 @@ def mein_sensor_daten(id):
 
 
 @personal.route('/mein-sensor/<id>/einstellungen', methods=['GET', 'POST'])
+@personal.route('/sensors/<id>/settings', methods=['GET', 'POST'])
 @login_required
-def mein_sensor_einstellungen(id):
+def sensor_settings(id):
     node = get_object_or_404(Node, Node.id == id, Node.email == current_user.email)
     form = SensorSettingsForm(obj=node)
 
@@ -97,35 +99,34 @@ def mein_sensor_einstellungen(id):
         db.session.commit()
         current_app.logger.info('%s updated node %s' % (current_user.email, id))
         flash('Einstellungen erfolgreich gespeichert.', 'success')
-        return redirect('/meine-sensoren')
+        return redirect(url_for('.sensor_list'))
 
     return render_template('mein-sensor-einstellungen.html', node=node, form=form)
 
 
 @personal.route('/mein-sensor/<id>/give', methods=['GET', 'POST'])
+@personal.route('/sensors/<id>/transfer', methods=['GET', 'POST'])
 @login_required
-def mein_sensor_give(id):
-    external_nodes = ExternalNodes()
-    node = external_nodes.get_node_by_id(id, current_user.email)
-    if node == False:
-        abort(403)
+def sensor_transfer(id):
+    node = get_object_or_404(Node, Node.id == id, Node.email == current_user.email)
     form = SensorGiveForm()
     if form.validate_on_submit():
         if form.email.data.lower() == current_user.email:
             flash('Sie können den Sensor nicht an sich selbst übergeben.', 'danger')
         else:
-            if external_nodes.update_email(id, current_user.email, form.email.data.lower()) != -1:
-                msg = Message(
-                    "Ein Feinstaubsensor wurde Ihnen übertragen",
-                    sender=current_app.config['MAILS_FROM'],
-                    recipients=[form.email.data.lower()],
-                    body=render_template('emails/sensor-given.txt',
-                                         login_url="%s/login" % (current_app.config['PROJECT_URL']))
-                )
-                mail.send(msg)
-                current_app.logger.info(
-                    '%s gave node node %s to %s' % (current_user.email, id, form.email.data.lower()))
-                return render_template('mein-sensor-give-success.html', node=node)
-            else:
-                flash('Ein serverseitiger Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.', 'danger')
+            node.email = form.email.data.lower()
+
+            msg = Message(
+                "Ein Feinstaubsensor wurde Ihnen übertragen",
+                sender=current_app.config['MAILS_FROM'],
+                recipients=[form.email.data.lower()],
+                body=render_template('emails/sensor-given.txt',
+                                        login_url="%s/login" % (current_app.config['PROJECT_URL']))
+            )
+            mail.send(msg)
+            current_app.logger.info(
+                '%s gave node node %s to %s' % (current_user.email, id, form.email.data.lower()))
+
+            db.session.commit()
+            return render_template('mein-sensor-give-success.html', node=node)
     return render_template('mein-sensor-give.html', node=node, form=form)
