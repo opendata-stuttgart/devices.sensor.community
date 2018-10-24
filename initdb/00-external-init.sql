@@ -1,3 +1,9 @@
+-- Set up authentication
+CREATE USER 'external'@'%' IDENTIFIED BY 'external' ;
+CREATE DATABASE IF NOT EXISTS `external`;
+GRANT ALL ON `external`.* TO 'external'@'%' ;
+USE external;
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
