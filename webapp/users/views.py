@@ -20,7 +20,7 @@ from itsdangerous import URLSafeTimedSerializer
 from .forms import *
 from .models import User
 from . import constants
-from ..external_data import ExternalNodes
+from ..external_data.models import Node
 
 users = Blueprint('users', __name__)
 
@@ -37,8 +37,7 @@ def login():
             current_app.logger.info('%s sent an recovery request again' % (form.email.data.lower()))
             return render_template('recover-mail-sent-again.html')
         else:
-            external_nodes = ExternalNodes()
-            if not external_nodes.email_exists(form.email.data.lower()):
+            if not Node.query.filter_by(email=form.email.data.lower()).count():
                 return render_template('invalid-email.html')
             else:
                 return redirect('/register-minimal?email=%s' % (quote_plus(form.email.data.lower())))

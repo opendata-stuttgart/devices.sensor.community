@@ -21,7 +21,6 @@ import pytz
 import json
 
 from .forms import *
-from ..external_data import ExternalNodes
 from ..external_data.models import Node
 from ..common.helpers import get_object_or_404
 from ..extensions import mail, db
@@ -30,8 +29,9 @@ personal = Blueprint('personal', __name__)
 
 
 @personal.route('/meine-luftdaten')
+@personal.route('/dashboard')
 @login_required
-def meine_luftdaten():
+def dashboard():
     return render_template('meine-luftdaten.html')
 
 
@@ -46,44 +46,44 @@ def sensor_list():
 @personal.route('/sensors/<id>/data')
 @login_required
 def sensor_data(id):
-    external_nodes = ExternalNodes()
-    node = external_nodes.get_node_by_id(id, current_user.email)
-    if node == -1:
-        abort(403)
-    sensors = external_nodes.get_sensors(id, current_user.email)
+    node = get_object_or_404(Node, Node.id == id, Node.email == current_user.email)
+    sensors = node.sensors
     for sensor in sensors:
-        if sensor['sensor_type_id'] == 14:
-            sensor['sensor_type_name'] = 'Feinstaub-Sensor SDS011'
-        elif sensor['sensor_type_id'] == 9:
-            sensor['sensor_type_name'] = 'Feuchtigkeits- und Temperatur-Sensor DHT22'
-        sensor_request = requests.get('http://api.luftdaten.info/static/v1/sensor/%s/' % (sensor['id']))
-        if sensor_request.status_code == 200:
-            try:
-                sensor_request = sensor_request.json()
-            except json.decoder.JSONDecodeError:
-                sensor_request = False
-            if sensor_request:
-                sensor['data'] = sensor_request[0]
-                if sensor['data']['timestamp']:
-                    sensor['data']['timestamp'] = dateutil.parser.parse(sensor['data']['timestamp']).replace(
-                        tzinfo=pytz.UTC)
-                if sensor['data']['sensordatavalues']:
-                    for sensor_value in sensor['data']['sensordatavalues']:
-                        if sensor_value['value_type'] == 'P1':
-                            sensor_value['value_type_name'] = 'Feinstaub 10 µm'
-                            sensor_value['value_type_unit'] = 'µg'
-                        elif sensor_value['value_type'] == 'P2':
-                            sensor_value['value_type_name'] = 'Feinstaub 2,5 µm'
-                            sensor_value['value_type_unit'] = 'µg'
-                        elif sensor_value['value_type'] == 'humidity':
-                            sensor_value['value_type_unit'] = '%'
-                            sensor_value['value_type_name'] = 'Luftfeuchtigkeit'
-                        elif sensor_value['value_type'] == 'temperature':
-                            sensor_value['value_type_unit'] = '°C'
-                            sensor_value['value_type_name'] = 'Temperatur'
-                        else:
-                            sensor_value['value_type_unit'] = ''
-                            sensor_value['value_type_name'] = sensor_value['value_type']
+        if sensor.sensor_type_id == 14:
+            sensor.sensor_type_name = 'Feinstaub-Sensor SDS011'
+        elif sensor.sensor_type_id == 9:
+            sensor.sensor_type_name = 'Feuchtigkeits- und Temperatur-Sensor DHT22'
+
+        try:
+            sensor_request = requests.get('http://api.luftdaten.info/static/v1/sensor/%s/' % (sensor.id))
+            sensor_request.raise_for_status()
+            sensor_request = sensor_request.json()
+            if not sensor_request:
+                continue
+        except:
+            continue
+
+        sensor.data = sensor_request[0]
+        if sensor.data['timestamp']:
+            sensor.data['timestamp'] = dateutil.parser.parse(sensor.data['timestamp']).replace(
+                tzinfo=pytz.UTC)
+        if sensor.data['sensordatavalues']:
+            for sensor_value in sensor.data['sensordatavalues']:
+                if sensor_value['value_type'] == 'P1':
+                    sensor_value['value_type_name'] = 'Feinstaub 10 µm'
+                    sensor_value['value_type_unit'] = 'µg'
+                elif sensor_value['value_type'] == 'P2':
+                    sensor_value['value_type_name'] = 'Feinstaub 2,5 µm'
+                    sensor_value['value_type_unit'] = 'µg'
+                elif sensor_value['value_type'] == 'humidity':
+                    sensor_value['value_type_unit'] = '%'
+                    sensor_value['value_type_name'] = 'Luftfeuchtigkeit'
+                elif sensor_value['value_type'] == 'temperature':
+                    sensor_value['value_type_unit'] = '°C'
+                    sensor_value['value_type_name'] = 'Temperatur'
+                else:
+                    sensor_value['value_type_unit'] = ''
+                    sensor_value['value_type_name'] = sensor_value['value_type']
     return render_template('mein-sensor-daten.html', node=node, sensors=sensors)
 
 

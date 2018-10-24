@@ -45,7 +45,8 @@ class Sensor(db.Model):
     description = db.Column(db.String)
 
     sensor_type_id = db.Column(db.Integer, nullable=False)
-    node_id = db.Column(db.Integer, nullable=False)
+    node_id = db.Column(db.Integer, db.ForeignKey('sensors_node.id'), nullable=False)
+    node = db.relationship('Node', backref='sensors')
     pin = db.Column(db.String(10), nullable=False)
     public = db.Column(db.Boolean, nullable=False)
 
