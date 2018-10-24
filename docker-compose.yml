@@ -24,6 +24,11 @@ services:
   #    - mysql
   #    - redis
   #  command: bash -c "python3 manage.py celery_worker"
+  gulp:
+    image: node:10-alpine
+    volumes:
+      - .:/app
+    working_dir: /app
 
   mysql:
     image: mariadb:10.3
