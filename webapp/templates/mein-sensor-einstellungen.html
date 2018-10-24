@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+{% from "_formhelpers.html" import render_field %}
 
 {% block head %}
     {{ super() }}
@@ -31,23 +32,8 @@
                     </div>
                 </div>
                 <br>
-                <div class="row">
-                    <div class="col-md-12">
-                        {{ form.name.label }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-6 offset-md-3{% if form.name.errors %} has-danger{% endif %}">
-                        {{ form.name(class="form-control") }}
-                    </div>
-                    <div class="col-md-6">
-                        {% if form.name.errors %}
-                            {% for error in form.name.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
+                {{ render_field(form.name) }}
+
                 {% set location = form.location %}
                 <div class="row">
                     <div class="col-md-12">
@@ -99,24 +85,8 @@
                         {% endif %}
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        {{ location.country.label }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-6 offset-md-3 {% if location.country.errors %} has-danger{% endif %}">
-                        {{ location.country(class="form-control") }}
-                    </div>
-                    <div class="col-md-6">
-                        {% if location.country.errors %}
-                            {% for error in location.country.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-                <br>
+
+                {{ render_field(location.country) }}
 
                 <div class="row">
                     <div class="col-md-12">
@@ -124,101 +94,13 @@
                     </div>
                 </div>
                 <br>
-                <div class="row">
-                    <div class="col-md-12">
-                        {{ form.height.label }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-6 offset-md-3 {% if form.height.errors %} has-danger{% endif %}">
-                        {{ form.height(class="form-control") }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 offset-md-3">
-                        {% if form.height.errors %}
-                            {% for error in form.height.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        {{ form.sensor_position.label }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-6 offset-md-3 {% if form.sensor_position.errors %} has-danger{% endif %}">
-                        {{ form.sensor_position(class="form-control") }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 offset-md-3">
-                        {% if form.sensor_position.errors %}
-                            {% for error in form.sensor_position.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        {{ location.industry_in_area.label }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-6 offset-md-3 {% if location.industry_in_area.errors %} has-danger{% endif %}">
-                        {{ location.industry_in_area(class="form-control") }}
-                    </div>
-                    <div class="col-md-6 offset-md-3">
-                        {% if location.industry_in_area.errors %}
-                            {% for error in location.industry_in_area.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        {{ location.oven_in_area.label }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-6 offset-md-3 {% if location.oven_in_area.errors %} has-danger{% endif %}">
-                        {{ location.oven_in_area(class="form-control") }}
-                    </div>
-                    <div class="col-md-6 offset-md-3">
-                        {% if location.oven_in_area.errors %}
-                            {% for error in location.oven_in_area.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        {{ location.traffic_in_area.label }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-6 offset-md-3 {% if location.traffic_in_area.errors %} has-danger{% endif %}">
-                        {{ location.traffic_in_area(class="form-control") }}
-                    </div>
-                    <div class="col-md-6 offset-md-3">
-                        {% if location.traffic_in_area.errors %}
-                            {% for error in location.traffic_in_area.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-12{% if form.description.errors %} has-danger{% endif %}">
-                        {{ form.description.label }}
-                        {{ form.description(class="form-control") }}
-                    </div>
-                </div>
+
+                {{ render_field(form.height) }}
+                {{ render_field(form.sensor_position) }}
+                {{ render_field(location.industry_in_area) }}
+                {{ render_field(location.oven_in_area) }}
+                {{ render_field(location.traffic_in_area) }}
+
                 <div class="row">
                     <div class="form-group col-md-6 offset-md-3">
                         {{ form.submit(class="form-control btn") }}

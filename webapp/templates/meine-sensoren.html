@@ -30,27 +30,11 @@
                                 <td>{{ node.name }}</td>
                                 <td class="hidden-md-down">{{ node.modified }}</td>
                                 <td>
-                                    {#                                            <div class="dropdown">#}
-                                    {#                                                <button type="button" class="btn btn-secondary dropdown-toggle"#}
-                                    {#                                                        id="dropdown-{{ node.id }}" data-toggle="dropdown">Aktionen#}
-                                    {#                                                    <span class="caret"></span></button>#}
-                                    {#                                                <div class="dropdown-menu" aria-labelledby="dropdown-{{ node.id }}">#}
-                                    {#                                                    <a class="dropdown-item" href="/mein-sensor/{{ node.id }}/daten">Daten</a>#}
-                                    {#                                                    <a class="dropdown-item"#}
-                                    {#                                                       href="/mein-sensor/{{ node.id }}/einstellungen">Einstellungen</a>#}
-                                    {#                                                    <div class="dropdown-divider"></div>#}
-                                    {#                                                    <a class="dropdown-item" href="/mein-sensor/{{ node.id }}/give">Sensor#}
-                                    {#                                                        übergeben</a>#}
-                                    {#                                                </div>#}
-                                    {#                                            </div>#}
-
-                                    <a class="dropdown-item" href="/mein-sensor/{{ node.id }}/daten">Daten</a>
-                                    <a class="dropdown-item"
-                                       href="/mein-sensor/{{ node.id }}/einstellungen">Einstellungen</a>
+                                    <a class="dropdown-item" href="{{ url_for('personal.sensor_data', id=node.id) }}">Daten</a>
+                                    <a class="dropdown-item" href="{{ url_for('personal.sensor_settings', id=node.id) }}">Einstellungen</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="/mein-sensor/{{ node.id }}/give">Sensor
+                                    <a class="dropdown-item" href="{{ url_for('personal.sensor_transfer', id=node.id) }}">Sensor
                                         übergeben</a>
-
                                 </td>
                             </tr>
                         {% endfor %}
