@@ -169,7 +169,7 @@ CREATE TABLE IF NOT EXISTS `sensors_sensor` (
 DELETE FROM `sensors_sensor`;
 /*!40000 ALTER TABLE `sensors_sensor` DISABLE KEYS */;
 INSERT INTO `sensors_sensor` (`id`, `created`, `modified`, `description`, `sensor_type_id`, `node_id`, `pin`, `public`) VALUES
-	(30, '2015-07-27 17:41:50', '2015-08-07 23:00:21', 'esp-12 (E)', 1, 1, '-', 0);
+	(16444, '2015-07-27 17:41:50', '2015-08-07 23:00:21', 'esp-12 (E)', 14, 1, '-', 0);
 /*!40000 ALTER TABLE `sensors_sensor` ENABLE KEYS */;
 
 
