@@ -14,7 +14,9 @@ class Node(db.Model):
     uid = db.Column(db.String(50), nullable=False)
     description = db.Column(db.String, nullable=False)
 
-    location_id = db.Column(db.Integer, nullable=False)
+    location_id = db.Column(db.Integer, db.ForeignKey('sensors_sensorlocation.id'), nullable=False)
+    location = db.relationship('SensorLocation')
+
     owner_id = db.Column(db.Integer, nullable=False)
     description_internal = db.Column(db.String)
     email = db.Column(db.String(254))
@@ -39,6 +41,7 @@ class Sensor(db.Model):
     node_id = db.Column(db.Integer, nullable=False)
     pin = db.Column(db.String(10), nullable=False)
     public = db.Column(db.Boolean, nullable=False)
+
 
 
 class SensorLocation(db.Model):

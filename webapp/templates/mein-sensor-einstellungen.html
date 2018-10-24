@@ -48,51 +48,27 @@
                         {% endif %}
                     </div>
                 </div>
+                {% set location = form.location %}
                 <div class="row">
                     <div class="col-md-12">
-                        {{ form.street_name.label }} und {{ form.street_number.label }}
+                        {{ location.street_name.label }} und {{ location.street_number.label }}
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-4 offset-md-3{% if form.street_name.errors %} has-danger{% endif %}">
-                        {{ form.street_name(class="form-control") }}
+                    <div class="form-group col-md-4 offset-md-3{% if location.street_name.errors %} has-danger{% endif %}">
+                        {{ location.street_name(class="form-control") }}
                     </div>
-                    <div class="form-group col-md-2 {% if form.street_number.errors %} has-danger{% endif %}">
-                        {{ form.street_number(class="form-control") }}
+                    <div class="form-group col-md-2 {% if location.street_number.errors %} has-danger{% endif %}">
+                        {{ location.street_number(class="form-control") }}
                     </div>
                     <div class="col-md-6">
-                        {% if form.street_name.errors %}
-                            {% for error in form.street_name.errors %}
+                        {% if location.street_name.errors %}
+                            {% for error in location.street_name.errors %}
                                 {{ error }}
                             {% endfor %}
                         {% endif %}
-                        {% if form.street_number.errors %}
-                            {% for error in form.street_number.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        {{ form.postalcode.label }} und {{ form.city.label }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-2 offset-md-3{% if form.postalcode.errors or form.city.errors %} has-danger{% endif %}">
-                        {{ form.postalcode(class="form-control") }}
-                    </div>
-                    <div class="form-group col-md-4{% if form.city.errors or form.city.errors %} has-danger{% endif %}">
-                        {{ form.city(class="form-control") }}
-                    </div>
-                    <div class="col-md-6">
-                        {% if form.postalcode.errors %}
-                            {% for error in form.postalcode.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                        {% if form.city.errors %}
-                            {% for error in form.city.errors %}
+                        {% if location.street_number.errors %}
+                            {% for error in location.street_number.errors %}
                                 {{ error }}
                             {% endfor %}
                         {% endif %}
@@ -100,16 +76,41 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        {{ form.country.label }}
+                        {{ location.postalcode.label }} und {{ location.city.label }}
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6 offset-md-3 {% if form.country.errors %} has-danger{% endif %}">
-                        {{ form.country(class="form-control") }}
+                    <div class="form-group col-md-2 offset-md-3{% if location.postalcode.errors or location.city.errors %} has-danger{% endif %}">
+                        {{ location.postalcode(class="form-control") }}
+                    </div>
+                    <div class="form-group col-md-4{% if location.city.errors or location.city.errors %} has-danger{% endif %}">
+                        {{ location.city(class="form-control") }}
                     </div>
                     <div class="col-md-6">
-                        {% if form.country.errors %}
-                            {% for error in form.country.errors %}
+                        {% if location.postalcode.errors %}
+                            {% for error in location.postalcode.errors %}
+                                {{ error }}
+                            {% endfor %}
+                        {% endif %}
+                        {% if location.city.errors %}
+                            {% for error in location.city.errors %}
+                                {{ error }}
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        {{ location.country.label }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-6 offset-md-3 {% if location.country.errors %} has-danger{% endif %}">
+                        {{ location.country(class="form-control") }}
+                    </div>
+                    <div class="col-md-6">
+                        {% if location.country.errors %}
+                            {% for error in location.country.errors %}
                                 {{ error }}
                             {% endfor %}
                         {% endif %}
@@ -163,16 +164,16 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        {{ form.industry_in_area.label }}
+                        {{ location.industry_in_area.label }}
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6 offset-md-3 {% if form.industry_in_area.errors %} has-danger{% endif %}">
-                        {{ form.industry_in_area(class="form-control") }}
+                    <div class="form-group col-md-6 offset-md-3 {% if location.industry_in_area.errors %} has-danger{% endif %}">
+                        {{ location.industry_in_area(class="form-control") }}
                     </div>
                     <div class="col-md-6 offset-md-3">
-                        {% if form.industry_in_area.errors %}
-                            {% for error in form.industry_in_area.errors %}
+                        {% if location.industry_in_area.errors %}
+                            {% for error in location.industry_in_area.errors %}
                                 {{ error }}
                             {% endfor %}
                         {% endif %}
@@ -180,16 +181,16 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        {{ form.oven_in_area.label }}
+                        {{ location.oven_in_area.label }}
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6 offset-md-3 {% if form.oven_in_area.errors %} has-danger{% endif %}">
-                        {{ form.oven_in_area(class="form-control") }}
+                    <div class="form-group col-md-6 offset-md-3 {% if location.oven_in_area.errors %} has-danger{% endif %}">
+                        {{ location.oven_in_area(class="form-control") }}
                     </div>
                     <div class="col-md-6 offset-md-3">
-                        {% if form.oven_in_area.errors %}
-                            {% for error in form.oven_in_area.errors %}
+                        {% if location.oven_in_area.errors %}
+                            {% for error in location.oven_in_area.errors %}
                                 {{ error }}
                             {% endfor %}
                         {% endif %}
@@ -197,16 +198,16 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        {{ form.traffic_in_area.label }}
+                        {{ location.traffic_in_area.label }}
                     </div>
                 </div>
                 <div class="row">
-                    <div class="form-group col-md-6 offset-md-3 {% if form.traffic_in_area.errors %} has-danger{% endif %}">
-                        {{ form.traffic_in_area(class="form-control") }}
+                    <div class="form-group col-md-6 offset-md-3 {% if location.traffic_in_area.errors %} has-danger{% endif %}">
+                        {{ location.traffic_in_area(class="form-control") }}
                     </div>
                     <div class="col-md-6 offset-md-3">
-                        {% if form.traffic_in_area.errors %}
-                            {% for error in form.traffic_in_area.errors %}
+                        {% if location.traffic_in_area.errors %}
+                            {% for error in location.traffic_in_area.errors %}
                                 {{ error }}
                             {% endfor %}
                         {% endif %}
@@ -250,19 +251,19 @@
                 </div>
                 <div class="row">
                     <div class="col-md-3">
-                        {{ form.lat(class="form-control") }}
+                        {{ location.latitude(class="form-control") }}
                     </div>
                     <div class="col-md-3">
-                        {{ form.lon(class="form-control") }}
+                        {{ location.longitude(class="form-control") }}
                     </div>
                     <div class="col-md-6">
-                        {% if form.lat.errors %}
-                            {% for error in form.lat.errors %}
+                        {% if location.latitude.errors %}
+                            {% for error in location.latitude.errors %}
                                 {{ error }}
                             {% endfor %}
                         {% endif %}
-                        {% if form.lon.errors %}
-                            {% for error in form.lon.errors %}
+                        {% if location.longitude.errors %}
+                            {% for error in location.longitude.errors %}
                                 {{ error }}
                             {% endfor %}
                         {% endif %}
@@ -282,7 +283,7 @@
         });
 */
 
-        var mapCenter = [$('#lat').val(), $('#lon').val()];
+        var mapCenter = [$('#location-latitude').val(), $('#location-longitude').val()];
         var map = L.map('sensor-settings-map', {center: mapCenter, zoom: 17});
         L.tileLayer('https://maps.luftdaten.info/tiles/{z}/{x}/{y}.png', {
             maxZoom: 18,
@@ -300,8 +301,8 @@
             return false;
         };
         map.on('click', function (e) {
-            $('#lat').val(e.latlng.lat);
-            $('#lon').val(e.latlng.lng);
+            $('#location-latitude').val(e.latlng.lat);
+            $('#location-longitude').val(e.latlng.lng);
             updateMarker(e.latlng.lat, e.latlng.lng);
         });
 
@@ -311,10 +312,10 @@
                 // get lat + lon from first match
                 var latlng = [data[0].lat, data[0].lon];
                 console.log(latlng);
-                $('#lat').val(data[0].lat);
-                $('#lon').val(data[0].lon);
-                map.setView({lat: $('#lat').val(), lng: $('#lon').val()}, 18);
-                updateMarker($('#lat').val(), $('#lon').val());
+                $('#location-latitude').val(data[0].lat);
+                $('#location-longitude').val(data[0].lon);
+                map.setView({lat: $('#location-latitude').val(), lng: $('#location-longitude').val()}, 18);
+                updateMarker($('#location-latitude').val(), $('#location-longitude').val());
             });
         }
     </script>

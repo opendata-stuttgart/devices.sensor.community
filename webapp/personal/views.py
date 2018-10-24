@@ -14,14 +14,17 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 from flask import (Flask, Blueprint, render_template, current_app, request, flash, url_for, redirect, session, abort,
                    jsonify, send_from_directory)
 from flask_login import current_user, login_required
-from .forms import *
-from ..external_data import ExternalNodes
-from ..extensions import mail
 from flask_mail import Message
 import requests
 import dateutil.parser
 import pytz
 import json
+
+from .forms import *
+from ..external_data import ExternalNodes
+from ..external_data.models import Node
+from ..common.helpers import get_object_or_404
+from ..extensions import mail, db
 
 personal = Blueprint('personal', __name__)
 
@@ -86,64 +89,16 @@ def mein_sensor_daten(id):
 @personal.route('/mein-sensor/<id>/einstellungen', methods=['GET', 'POST'])
 @login_required
 def mein_sensor_einstellungen(id):
-    external_nodes = ExternalNodes()
-    node = external_nodes.get_node_by_id(id, current_user.email)
-    if node == -1:
-        abort(403)
-    form = SensorSettingsForm()
-    if request.method == 'GET':
-        if 'name' in node:
-            form.name.data = node['name']
-        if 'description' in node:
-            form.description.data = node['description']
-        if 'height' in node:
-            form.height.data = node['height']
-        if 'lat' in node:
-            form.lat.data = node['lat']
-        if 'lon' in node:
-            form.lon.data = node['lon']
-        if 'street_name' in node:
-            form.street_name.data = node['street_name']
-        if 'street_number' in node:
-            form.street_number.data = node['street_number']
-        if 'postalcode' in node:
-            form.postalcode.data = node['postalcode']
-        if 'city' in node:
-            form.city.data = node['city']
-        if 'country' in node:
-            if node['country']:
-                form.country.data = node['country']
-        if 'traffic_in_area' in node:
-            form.traffic_in_area.data = node['traffic_in_area']
-        if 'oven_in_area' in node:
-            form.oven_in_area.data = node['oven_in_area']
-        if 'industry_in_area' in node:
-            form.industry_in_area.data = node['industry_in_area']
-        if 'sensor_position' in node:
-            form.sensor_position.data = node['sensor_position']
+    node = get_object_or_404(Node, Node.id == id, Node.email == current_user.email)
+    form = SensorSettingsForm(obj=node)
+
     if form.validate_on_submit():
-        if external_nodes.update_node_meta(id,
-                                           current_user.email,
-                                           name=form.name.data,
-                                           description=form.description.data,
-                                           height=form.height.data,
-                                           lat=form.lat.data,
-                                           lon=form.lon.data,
-                                           street_name=form.street_name.data,
-                                           street_number=form.street_number.data,
-                                           postalcode=form.postalcode.data,
-                                           city=form.city.data,
-                                           country=form.country.data,
-                                           traffic_in_area=form.traffic_in_area.data,
-                                           oven_in_area=form.oven_in_area.data,
-                                           industry_in_area=form.industry_in_area.data,
-                                           sensor_position=form.sensor_position.data
-                                           ) != -1:
-            current_app.logger.info('%s updated node %s' % (current_user.email, id))
-            flash('Einstellungen erfolgreich gespeichert.', 'success')
-            return redirect('/meine-sensoren')
-        else:
-            flash('Ein serverseitiger Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.', 'danger')
+        form.populate_obj(node)
+        db.session.commit()
+        current_app.logger.info('%s updated node %s' % (current_user.email, id))
+        flash('Einstellungen erfolgreich gespeichert.', 'success')
+        return redirect('/meine-sensoren')
+
     return render_template('mein-sensor-einstellungen.html', node=node, form=form)
 
 

@@ -14,6 +14,8 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 import os
 from datetime import datetime, timedelta
 from flask.json import JSONEncoder as BaseJSONEncoder
+from sqlalchemy.orm import exc
+from werkzeug.exceptions import abort
 
 
 def get_current_time():
@@ -73,3 +75,10 @@ class JsonSerializer(object):
         for key in hidden:
             rv.pop(key, None)
         return rv
+
+def get_object_or_404(model, *criterion):
+    """Returns a single result or 404 error"""
+    try:
+        return model.query.filter(*criterion).one()
+    except (exc.NoResultFound, exc.MultipleResultsFound):
+        abort(404)

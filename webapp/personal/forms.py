@@ -13,20 +13,12 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 from flask_wtf import FlaskForm
 from wtforms import (BooleanField, StringField, HiddenField, PasswordField, DecimalField, DateTimeField, validators,
-                     IntegerField, SubmitField, TextAreaField, SelectField)
+                     IntegerField, SubmitField, TextAreaField, SelectField, FormField)
 from . import constants
 from ..common.countrycodes import country_codes
 
 
-class SensorSettingsForm(FlaskForm):
-    name = StringField(
-        'Interner Name des Sensors (veröffentlicht wird nur die Sensor-UID)',
-        [
-            validators.DataRequired(
-                message='Bitte geben Sie einen Sensornamen an.'
-            )
-        ]
-    )
+class SensorLocationForm(FlaskForm):
     street_name = StringField(
         'Straße',
         [
@@ -62,7 +54,7 @@ class SensorSettingsForm(FlaskForm):
         choices=country_codes,
         default='DE'
     )
-    lat = StringField(
+    latitude = StringField(
         'Geographischer Längengrad',
         [
             validators.DataRequired(
@@ -70,27 +62,11 @@ class SensorSettingsForm(FlaskForm):
             )
         ]
     )
-    lon = StringField(
+    longitude = StringField(
         'Geographischer Breitengrad',
         [
             validators.DataRequired(
                 message='Bitte geben Sie eine geographische Breite an.'
-            )
-        ]
-    )
-    height = IntegerField(
-        'Höhe des Sensors über dem Boden (in cm)',
-        [
-            validators.DataRequired(
-                message='Bitte geben Sie die Höhe des Sensors über dem Boden an.'
-            )
-        ]
-    )
-    sensor_position = IntegerField(
-        'Befestigungsort des Sensors am Haus. <p class="small">1 = auf der Gartenseite, sehr gut abgeschirmt von allen Straßen, 10 = der Sensor ist an einer Hauswand direkt an der Straße. Bei diesem Wert ist irrelevant, wie groß die Straße ist, es geht nur darum, wo der Sensor am Haus angebracht ist.</p>',
-        [
-            validators.DataRequired(
-                message='Bitte geben Sie den Befestigungsort des Sensors an.'
             )
         ]
     )
@@ -133,6 +109,33 @@ class SensorSettingsForm(FlaskForm):
             )
         ]
     )
+
+class SensorSettingsForm(FlaskForm):
+    name = StringField(
+        'Interner Name des Sensors (veröffentlicht wird nur die Sensor-UID)',
+        [
+            validators.DataRequired(
+                message='Bitte geben Sie einen Sensornamen an.'
+            )
+        ]
+    )
+    height = IntegerField(
+        'Höhe des Sensors über dem Boden (in cm)',
+        [
+            validators.DataRequired(
+                message='Bitte geben Sie die Höhe des Sensors über dem Boden an.'
+            )
+        ]
+    )
+    sensor_position = IntegerField(
+        'Befestigungsort des Sensors am Haus. <p class="small">1 = auf der Gartenseite, sehr gut abgeschirmt von allen Straßen, 10 = der Sensor ist an einer Hauswand direkt an der Straße. Bei diesem Wert ist irrelevant, wie groß die Straße ist, es geht nur darum, wo der Sensor am Haus angebracht ist.</p>',
+        [
+            validators.DataRequired(
+                message='Bitte geben Sie den Befestigungsort des Sensors an.'
+            )
+        ]
+    )
+    location = FormField(SensorLocationForm)
     description = TextAreaField(
         'Kurze Beschreibung des Sensor-Standortes inkl. seiner Besonderheiten'
     )
