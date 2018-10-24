@@ -1,18 +1,34 @@
 # meine luftdaten
----
+luftdaten.info self-service registration portal.
 
-virtualenv -p python3 venv
+## virtualenv setup
+    virtualenv -p python3 venv
+    source venv/bin/activate
+    pip install -r requirements.txt
 
-source venv/bin/activate
+### Database intialization
+    python manage.py db init
+    python manage.py db migrate
+    python manage.py db upgrade
 
-pip install -r requirements.txt
+### Running
+    python runserver.py
 
-## config erstellen
-python manage.py db init
+## Docker development
+To ease up development Docker container and relevant `docker-compose.yml`
+project file has been created. Following will start up basic development
+environment including MySQL database with "external" schema, redis
+<s> and celery workers</s>. Code reloads are active by default.
 
-python manage.py db migrate
+    docker-compose up
 
-python manage.py db upgrade
+Web application is available on http://localhost:5000/
 
-# runserver
-python runserver.py
+To create new database migration:
+
+    docker-compose run --rm web python3 manage.py db migrate -m 'Short change summary'
+
+### Gulp automatic rebuilds
+To start automatic CSS/JS rebuilds on change use this:
+
+    docker-comopose run --rm gulp npm start
