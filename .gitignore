@@ -16,7 +16,6 @@ feinstaub.sql
 
 # Enviroment
 venv
-migrations
 logs/*
 .bash_history
 

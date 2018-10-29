@@ -1,14 +1,22 @@
 # meine luftdaten
 luftdaten.info self-service registration portal.
 
+## Configuration file
+To start this project you need to create configuration file in
+`webapp/config.py`. Example config (suitable for Docker environment below) is
+provided in `webapp/config.py.dist` file. Docker environment uses `LocalConfig`
+by default. Also take care of `MAIL_SUPPRESS_SEND` variable during development.
+
 ## virtualenv setup
     virtualenv -p python3 venv
     source venv/bin/activate
     pip install -r requirements.txt
 
 ### Database intialization
-    python manage.py db init
-    python manage.py db migrate
+    # Following two commands are not required as of mid-october.
+    #python manage.py db init
+    #python manage.py db migrate
+
     python manage.py db upgrade
 
 ### Running
