@@ -53,7 +53,7 @@ gulp.task('js', function() {
     basePaths.packages + 'bootstrap/dist/js/bootstrap.js',
     basePaths.packages + 'bootstrap-multiselect/dist/js/bootstrap-multiselect.js',
     basePaths.packages + 'bootstrap-multiselect/dist/js/bootstrap-multiselect-collapsible-groups.js',
-    basePaths.assets + 'js/webapp/webapp.js'
+    basePaths.assets + 'js/webapp.js'
   ])
   .pipe(concat('webapp.min.js'))
   .pipe(uglify()) // comment out for devel
