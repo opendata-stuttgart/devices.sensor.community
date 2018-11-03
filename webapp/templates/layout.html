@@ -24,47 +24,45 @@
 </head>
 <body class="{% block bodyclass %}default{% endblock %}">
 {% block header %}
-    <div id="menu" class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+            <img src="/static/images/logo.svg" alt="" class="d-inline-block align-top" height=30>
+            </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <nav class="navbar navbar-toggleable-md navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header"
-                    aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <img class="navbar-brand" src="/static/images/logo.svg" alt="">
 
-            <div class="collapse navbar-collapse" id="navbar-header">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="/" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        {% if not current_user.is_authenticated %}<a class="nav-link" href="/login">Login</a>{% endif %}
-                    </li>
+        <div class="collapse navbar-collapse" id="topNavbar">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
 {#                    <li class="nav-item">#}
 {#                        {% if not current_user.is_authenticated %}#}
 {#                            <a class="nav-link" href="/register-minimal">Registrierung</a>{% endif %}#}
 {#                    </li>#}
-                    <li class="nav-item">
-                        {% if current_user.is_authenticated %}
-                            <a class="nav-link" href="/meine-luftdaten">Übersicht</a>{% endif %}</li>
-                    <li class="nav-item"> {% if current_user.is_authenticated %}
-                        <a class="nav-link" href="/meine-sensoren">Meine Sensoren</a>{% endif %}</li>
-                    <li class="nav-item">{% if current_user.is_authenticated %}
-                        <a class="nav-link" href="/meine-einstellungen">Einstellungen</a>{% endif %}</li>
-                    <li class="nav-item">{% if current_user.is_authenticated %}
-                        <a class="nav-link" href="/mein-passwort">Passwort ändern</a>{% endif %}</li>
-                    <li class="nav-item">{% if current_user.is_authenticated  %}
-                        {% if current_user.has_role('Administrator') %}
-                        <a class="nav-link" href="/admin/sensor-import">Massenimporter</a>{% endif %}{% endif %}</li>
-                    <li class="nav-item">{% if current_user.is_authenticated %}
-                        <a class="nav-link" href="/logout">Logout</a>{% endif %}</li>
+                {% if current_user.is_authenticated  %}
+                <li class="nav-item"><a class="nav-link" href="/meine-luftdaten">Übersicht</a></li>
+                <li class="nav-item"><a class="nav-link" href="/meine-sensoren">Meine Sensoren</a></li>
+                <li class="nav-item"><a class="nav-link" href="/meine-einstellungen">Einstellungen</a></li>
+                <li class="nav-item"><a class="nav-link" href="/mein-passwort">Passwort ändern</a></li>
 
-                </ul>
-            </div>
-        </nav>
-    </div>
+                {% if current_user.has_role('Administrator') %}
+                    <li class="nav-item"><a class="nav-link" href="/admin/sensor-import">Massenimporter</a></li>
+                {% endif %}
+
+                <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                {% else %}
+                <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                {% endif %}
+            </ul>
+        </div>
+        </div>
+    </nav>
 {% endblock %}
+
 <div id="content" class="container">
     {% include "messages.html" %}
     {% block content %}
@@ -72,24 +70,20 @@
 </div>
 
 {% block footer %}
-    <div id="footer" class="container">
-
-    </div>
-
-    <footer>
-        <div class="fullwidth clearfix">
-            <div id="footercont" class="bodycontainer clearfix">
-                <div id="socialmedia" class="clearfix">
-                    <ul>
-                        <li><a href="https://twitter.com/codefors" rel="external" target="_blank"><span
-                                class="fa fa-twitter-square"></span></a></li>
-                        <li><a href="https://github.com/opendata-stuttgart" rel="external" target="_blank"><span
-                                class="fa fa-github-square"></span></a></li>
-                    </ul>
-                </div>
-
-                <a href="/impressum">Impressum</a><br> <a href="/datenschutz">Datenschutzerklärung</a>
-            </div>
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">
+                <ul class="footer-list">
+                    <li>
+                        <a href="https://twitter.com/codefors" rel="external" target="_blank">
+                            <span class="fa fa-twitter-square"></span></a>
+                        <a href="https://github.com/opendata-stuttgart" rel="external" target="_blank">
+                            <span class="fa fa-github-square"></span></a>
+                    </li>
+                    <li><a href="/impressum">Impressum</a></li>
+                    <li><a href="/datenschutz">Datenschutzerklärung</a></li>
+                </ul>
+            </span>
         </div>
     </footer>
 {% endblock %}

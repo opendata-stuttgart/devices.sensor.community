@@ -15,86 +15,31 @@
     <div class="fullwidth clearfix">
         <div id="maincont" class="bodycontainer clearfix">
             <form method="POST" action="/mein-sensor/{{ node.id }}/einstellungen" id="sensor-setting-form">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>Einstellungen von Node {{ node.uid }}</h1>
-                        <p>Mit diesem Formular können Sie die Daten des Sensors aktuell halten. Bitte beachten Sie
-                            dabei, dass
-                            nur präzise Daten zu präzisen Auswertungen führen können, mit denen wir auch politisch
-                            argumentieren
-                            können. Es ist also wichtig, dass die Sensor-Basisdaten immer aktuell gehalten werden.</p>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2>Basisinformationen</h2>
-                    </div>
-                </div>
-                <br>
+                <h1>Einstellungen von Node {{ node.uid }}</h1>
+                <p>Mit diesem Formular können Sie die Daten des Sensors aktuell halten. Bitte beachten Sie
+                    dabei, dass
+                    nur präzise Daten zu präzisen Auswertungen führen können, mit denen wir auch politisch
+                    argumentieren
+                    können. Es ist also wichtig, dass die Sensor-Basisdaten immer aktuell gehalten werden.</p>
+
+                <h2>Basisinformationen</h2>
+
                 {{ render_field(form.name) }}
 
                 {% set location = form.location %}
                 <div class="row">
-                    <div class="col-md-12">
-                        {{ location.street_name.label }} und {{ location.street_number.label }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-4 offset-md-3{% if location.street_name.errors %} has-danger{% endif %}">
-                        {{ location.street_name(class="form-control") }}
-                    </div>
-                    <div class="form-group col-md-2 {% if location.street_number.errors %} has-danger{% endif %}">
-                        {{ location.street_number(class="form-control") }}
-                    </div>
-                    <div class="col-md-6">
-                        {% if location.street_name.errors %}
-                            {% for error in location.street_name.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                        {% if location.street_number.errors %}
-                            {% for error in location.street_number.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        {{ location.postalcode.label }} und {{ location.city.label }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="form-group col-md-2 offset-md-3{% if location.postalcode.errors or location.city.errors %} has-danger{% endif %}">
-                        {{ location.postalcode(class="form-control") }}
-                    </div>
-                    <div class="form-group col-md-4{% if location.city.errors or location.city.errors %} has-danger{% endif %}">
-                        {{ location.city(class="form-control") }}
-                    </div>
-                    <div class="col-md-6">
-                        {% if location.postalcode.errors %}
-                            {% for error in location.postalcode.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                        {% if location.city.errors %}
-                            {% for error in location.city.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                    </div>
+                    {{ render_field(location.street_name, 'basic', 'col-md-6') }}
+                    {{ render_field(location.street_number, 'basic', 'col-md-6') }}
                 </div>
 
-                {{ render_field(location.country) }}
-
                 <div class="row">
-                    <div class="col-md-12">
-                        <h2>Zusätzliche Informationen</h2>
-                    </div>
+                    {{ render_field(location.postalcode, 'basic', 'col-md-3') }}
+                    {{ render_field(location.city, 'basic', 'col-md-5') }}
+                    {{ render_field(location.country, 'basic', 'col-md-4') }}
                 </div>
-                <br>
 
+
+                <h2>Zusätzliche Informationen</h2>
                 {{ render_field(form.height) }}
                 {{ render_field(form.sensor_position) }}
                 {{ render_field(location.industry_in_area) }}
@@ -103,7 +48,7 @@
 
                 <div class="row">
                     <div class="form-group col-md-6 offset-md-3">
-                        {{ form.submit(class="form-control btn") }}
+                        {{ form.submit(class="form-control btn btn-primary") }}
                     </div>
                 </div>
                 <div class="row">

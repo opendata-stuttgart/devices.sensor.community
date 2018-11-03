@@ -1,13 +1,40 @@
-{% macro render_field(field) %}
-    <div class="form-group{% if field.errors %} has-danger{% endif %}">
-        {{ field.label(class='control-label col-md-12') }}
-        {{ field(class="form-control col-md-6 offset-md-3") }}
+{% macro render_field(field, style='horizontal', class='') %}
+    {# TODO: unify this #}
+    {% if style == 'basic' %}
+        <div class="form-group{% if field.errors %} has-danger{% endif %} {{ class }}">
+        {{ field.label(class='control-label') }}
+        {{ field(class="form-control" + (" is-invalid" if field.errors else "")) }}
         {% if field.errors %}
-            <div class="form-control-feedback">
-                {% for error in field.errors %}
-                    {{ error }}
-                {% endfor %}
-            </div>
+        <div class="invalid-feedback">
+            {% for error in field.errors %}
+                {{ error }}
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% if field.description %}
+        <small class="form-text text-muted">
+            {{ field.description }}
+        </small>
         {% endif %}
     </div>
+    {% elif style == 'horizontal' %}
+    <div class="form-group row{% if field.errors %} has-danger{% endif %}">
+        {{ field.label(class='col-form-label col-md-4') }}
+        <div class="col-md-8">
+        {{ field(class="form-control" + (" is-invalid" if field.errors else "")) }}
+        {% if field.errors %}
+        <div class="invalid-feedback">
+            {% for error in field.errors %}
+                {{ error }}
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% if field.description %}
+        <small class="form-text text-muted">
+            {{ field.description }}
+        </small>
+        {% endif %}
+        </div>
+    </div>
+    {% endif %}
 {% endmacro %}
