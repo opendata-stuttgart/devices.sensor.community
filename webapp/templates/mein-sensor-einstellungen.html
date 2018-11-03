@@ -28,14 +28,14 @@
 
                 {% set location = form.location %}
                 <div class="row">
-                    {{ render_field(location.street_name, 'basic', 'col-md-6') }}
-                    {{ render_field(location.street_number, 'basic', 'col-md-6') }}
+                    {{ render_field(location.street_name, 'basic') }}
+                    {{ render_field(location.street_number, 'basic') }}
                 </div>
 
                 <div class="row">
                     {{ render_field(location.postalcode, 'basic', 'col-md-3') }}
                     {{ render_field(location.city, 'basic', 'col-md-5') }}
-                    {{ render_field(location.country, 'basic', 'col-md-4') }}
+                    {{ render_field(location.country, 'basic') }}
                 </div>
 
 

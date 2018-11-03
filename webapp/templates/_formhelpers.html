@@ -1,7 +1,7 @@
-{% macro render_field(field, style='horizontal', class='') %}
+{% macro render_field(field, style='horizontal', class=None) %}
     {# TODO: unify this #}
     {% if style == 'basic' %}
-        <div class="form-group{% if field.errors %} has-danger{% endif %} {{ class }}">
+        <div class="form-group{% if field.errors %} has-danger{% endif %} {{ class if class != None else 'col' }}">
         {{ field.label(class='control-label') }}
         {{ field(class="form-control" + (" is-invalid" if field.errors else "")) }}
         {% if field.errors %}
@@ -20,7 +20,7 @@
     {% elif style == 'horizontal' %}
     <div class="form-group row{% if field.errors %} has-danger{% endif %}">
         {{ field.label(class='col-form-label col-md-4') }}
-        <div class="col-md-8">
+        <div class="col">
         {{ field(class="form-control" + (" is-invalid" if field.errors else "")) }}
         {% if field.errors %}
         <div class="invalid-feedback">
