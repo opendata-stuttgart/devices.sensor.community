@@ -71,7 +71,7 @@ class SensorLocationForm(FlaskForm):
         ]
     )
     industry_in_area = IntegerField(
-        'Wie viel verarbeitende Industrie befinden sich in 100 m Radius? <p class="small">Keine Büroflächen, sondern potentielle Feinstaubproduzenten 1 = sehr wenig, 10 = sehr viel.</p>',
+        'Wie viel verarbeitende Industrie befinden sich in 100 m Radius?',
         [
             validators.DataRequired(
                 message='Bitte geben Sie eine Einschätzung an.'
@@ -81,10 +81,11 @@ class SensorLocationForm(FlaskForm):
                 max=10,
                 message='Bitte geben Sie einen Wert von 1 bis 10 an'
             )
-        ]
+        ],
+        description='Keine Büroflächen, sondern potentielle Feinstaubproduzenten 1 = sehr wenig, 10 = sehr viel.',
     )
     oven_in_area = IntegerField(
-        'Wie viele private Öfen oder Kamine befinden sich in 100 m Radius? <p class="small">Riecht es in Ihrem Wohngebiet sehr nach solchem Rauch? 1 = sehr wenig, 10 = sehr viel.</p>',
+        'Wie viele private Öfen oder Kamine befinden sich in 100 m Radius?',
         [
             validators.DataRequired(
                 message='Bitte geben Sie eine Einschätzung an.'
@@ -94,10 +95,11 @@ class SensorLocationForm(FlaskForm):
                 max=10,
                 message='Bitte geben Sie einen Wert von 1 bis 10 an'
             )
-        ]
+        ],
+        description='Riecht es in Ihrem Wohngebiet sehr nach solchem Rauch? 1 = sehr wenig, 10 = sehr viel.',
     )
     traffic_in_area = IntegerField(
-        'Wie stark befahren sind die Straßen in 100 m Radius? <p class="small">Wie nah dran sind solche Straßen? 1 = sehr wenig weiter weg, 10 = sehr viel Verkehr direkt vor der Haustür.</p>',
+        'Wie stark befahren sind die Straßen in 100 m Radius?',
         [
             validators.DataRequired(
                 message='Bitte geben Sie eine Einschätzung an.'
@@ -107,7 +109,8 @@ class SensorLocationForm(FlaskForm):
                 max=10,
                 message='Bitte geben Sie einen Wert von 1 bis 10 an'
             )
-        ]
+        ],
+        description='Wie nah dran sind solche Straßen? 1 = sehr wenig weiter weg, 10 = sehr viel Verkehr direkt vor der Haustür.',
     )
 
 class SensorSettingsForm(FlaskForm):
@@ -128,12 +131,13 @@ class SensorSettingsForm(FlaskForm):
         ]
     )
     sensor_position = IntegerField(
-        'Befestigungsort des Sensors am Haus. <p class="small">1 = auf der Gartenseite, sehr gut abgeschirmt von allen Straßen, 10 = der Sensor ist an einer Hauswand direkt an der Straße. Bei diesem Wert ist irrelevant, wie groß die Straße ist, es geht nur darum, wo der Sensor am Haus angebracht ist.</p>',
+        'Befestigungsort des Sensors am Haus.',
         [
             validators.DataRequired(
                 message='Bitte geben Sie den Befestigungsort des Sensors an.'
             )
-        ]
+        ],
+        description='1 = auf der Gartenseite, sehr gut abgeschirmt von allen Straßen, 10 = der Sensor ist an einer Hauswand direkt an der Straße. Bei diesem Wert ist irrelevant, wie groß die Straße ist, es geht nur darum, wo der Sensor am Haus angebracht ist.'
     )
     location = FormField(SensorLocationForm)
     description = TextAreaField(
