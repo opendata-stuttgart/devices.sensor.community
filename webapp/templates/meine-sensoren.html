@@ -19,7 +19,7 @@
                             <th class="hidden-sm-down">Sensor UID</th>
                             <th>Name</th>
                             <th class="hidden-md-down">Letztes Update</th>
-                            <th>Funktionen</th>
+                            <th class="text-right">Funktionen</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -29,12 +29,10 @@
                                 <td class="hidden-sm-down">{{ node.uid }}</td>
                                 <td>{{ node.name }}</td>
                                 <td class="hidden-md-down">{{ node.modified }}</td>
-                                <td>
-                                    <a class="dropdown-item" href="{{ url_for('personal.sensor_data', id=node.id) }}">Daten</a>
-                                    <a class="dropdown-item" href="{{ url_for('personal.sensor_settings', id=node.id) }}">Einstellungen</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="{{ url_for('personal.sensor_transfer', id=node.id) }}">Sensor
-                                        übergeben</a>
+                                <td class="text-right">
+                                    <a class="btn btn-sm btn-info" href="{{ url_for('personal.sensor_data', id=node.id) }}">Daten</a>
+                                    <a class="btn btn-sm btn-primary" href="{{ url_for('personal.sensor_settings', id=node.id) }}">Einstellungen</a>
+                                    <a class="btn btn-sm btn-warning" href="{{ url_for('personal.sensor_transfer', id=node.id) }}">Sensor übergeben</a>
                                 </td>
                             </tr>
                         {% endfor %}

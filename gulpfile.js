@@ -31,7 +31,7 @@ gulp.task('watch', ['js', 'sass'], function () {
 // gulp sass
 gulp.task('sass', ['fonts'], function () {
   gulp.src([
-    basePaths.packages + 'tether/dist/css/tether.css',
+    // basePaths.packages + 'tether/dist/css/tether.css',
     basePaths.packages + 'bootstrap-multiselect/dist/css/bootstrap-multiselect.css',
     basePaths.assets + 'sass/base.scss',
   ])
@@ -49,7 +49,7 @@ gulp.task('sass', ['fonts'], function () {
 gulp.task('js', function() {
   gulp.src([
     basePaths.packages + 'jquery/dist/jquery.js',
-    basePaths.packages + 'tether/dist/js/tether.js',
+    // basePaths.packages + 'tether/dist/js/tether.js',
     basePaths.packages + 'bootstrap/dist/js/bootstrap.js',
     basePaths.packages + 'bootstrap-multiselect/dist/js/bootstrap-multiselect.js',
     basePaths.packages + 'bootstrap-multiselect/dist/js/bootstrap-multiselect-collapsible-groups.js',

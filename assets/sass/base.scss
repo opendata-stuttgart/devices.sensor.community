@@ -1,7 +1,29 @@
-@import "~tether/src/css/tether";
+//@import "~tether/src/css/tether";
+
+$theme-colors: (
+  "primary": #4ecac2,
+  "secondary": #38b5ad
+);
+
+$font-family-sans-serif: 'Lato','HelveticaNeue','Helvetica Neue',Helvetica,Arial,sans-serif;
+
 @import "~bootstrap/scss/bootstrap";
 @import "fonts/google-fonts";
 $fa-font-path: '/static/fonts/font-awesome';
 @import "~font-awesome/scss/font-awesome";
 
 @import "webapp";
+
+.navbar-dark .navbar-nav .nav-link {
+    color: hsla(0,0%,100%,.8);
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: hsla(0,0%,100%,1.0);
+}
+
+.btn-primary {
+    color: white;
+}

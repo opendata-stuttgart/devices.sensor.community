@@ -1,11 +1,19 @@
 {% with messages = get_flashed_messages(with_categories=true) %}
 {% if messages %}
-  <ul id="flash-messages">
   {% for category, message in messages %}
-    <li class="alert alert-{{ category }}" role="alert">
-      {% if category == 'success' %}<i class="fa fa-check"></i>{% elif category == 'warning' %}<i class="fa fa-warning"></i>{% elif category == 'danger' %}<i class="fa fa-times-circle"></i>{% else %}<i class="fa fa-info-circle"></i>{% endif %} {{ message | safe }}
-    </li>
+    <div class="alert alert-{{ category }}" role="alert">
+      {% if category == 'success' %}
+        <i class="fa fa-check"></i>
+      {% elif category == 'warning' %}
+        <i class="fa fa-warning"></i>
+      {% elif category == 'danger' %}
+        <i class="fa fa-times-circle"></i>
+      {% else %}
+        <i class="fa fa-info-circle"></i>
+      {% endif %}
+
+      {{ message | safe }}
+    </div>
   {% endfor %}
-  </ul>
 {% endif %}
 {% endwith %}
