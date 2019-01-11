@@ -88,7 +88,7 @@ class User(db.Model, UserMixin):
 
     @classmethod
     def is_email_taken(cls, email):
-        return db.session.query(db.exists().where(User.email == email)).scalar()
+        return bool(User.query.filter_by(email=email).count())
 
     @classmethod
     def get_mail_status(cls, email):
