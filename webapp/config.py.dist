@@ -49,10 +49,14 @@ class DefaultConfig(object):
 
 class LocalConfig(DefaultConfig):
     DEBUG = True
+
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://devel:devel@mysql/devel'
     SQLALCHEMY_BINDS = {
         'external': 'mysql+pymysql://external:external@mysql/external',
     }
+
+    # Default docker mariadb wait_timeout is 600s
+    SQLALCHEMY_POOL_RECYCLE = 480
 
     EXTERNAL_DATABASE_HOST = "mysql"
     EXTERNAL_DATABASE_USER = 'external'
