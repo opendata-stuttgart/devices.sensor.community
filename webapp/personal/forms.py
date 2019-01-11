@@ -15,6 +15,7 @@ from flask_wtf import FlaskForm
 from flask_login import current_user
 from wtforms import (BooleanField, StringField, HiddenField, PasswordField, DecimalField, DateTimeField, validators,
                      IntegerField, SubmitField, TextAreaField, SelectField, FormField)
+from flask_babel import lazy_gettext as _
 from . import constants
 from ..common.countrycodes import country_codes
 
@@ -149,19 +150,19 @@ class SensorSettingsForm(FlaskForm):
 
 class SensorGiveForm(FlaskForm):
     email = StringField(
-        'E-Mail Adresse des Empfängers',
+        _("Recipient's e-mail address"),
         [
             validators.DataRequired(
-                message='Bitte geben Sie eine E-Mail-Adresse an'
+                message=_("Please enter e-mail address"),
             ),
             validators.Email(
-                message='Bitte geben Sie eine korrekte Mailadresse an.'
+                message=_("Please enter correct e-mail address"),
             )
         ]
     )
-    submit = SubmitField('Sensor übergeben')
+    submit = SubmitField(_("Transfer sensor"))
 
     def validate_email(self, field):
         if field.data.lower().strip() == current_user.email.lower().strip():
             raise validators.ValidationError(
-                "You can't transfer the sensor to yourself")
+                _("You can't transfer the sensor to yourself"))
