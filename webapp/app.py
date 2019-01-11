@@ -23,7 +23,7 @@ from .personal import personal
 from .users import users
 from .admin import admin
 from .models import User
-from .extensions import db, login_manager, csrf, mail, celery
+from .extensions import db, login_manager, csrf, mail, celery, babel
 
 __all__ = ['launch']
 
@@ -98,6 +98,9 @@ def configure_extensions(app):
 
     # celery
     celery.init_app(app)
+
+    # flask-babel
+    babel.init_app(app)
 
 
 def configure_blueprints(app, blueprints):
