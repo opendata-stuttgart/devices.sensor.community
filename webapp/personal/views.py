@@ -20,7 +20,7 @@ import dateutil.parser
 import pytz
 import json
 
-from .forms import *
+from .forms import SensorGiveForm, SensorSettingsForm
 from ..external_data.models import Node
 from ..common.helpers import get_object_or_404
 from ..extensions import mail, db
@@ -111,22 +111,19 @@ def sensor_transfer(id):
     node = get_object_or_404(Node, Node.id == id, Node.email == current_user.email)
     form = SensorGiveForm()
     if form.validate_on_submit():
-        if form.email.data.lower() == current_user.email:
-            flash('Sie können den Sensor nicht an sich selbst übergeben.', 'danger')
-        else:
-            node.email = form.email.data.lower()
+        node.email = form.email.data.lower()
 
-            msg = Message(
-                "Ein Feinstaubsensor wurde Ihnen übertragen",
-                sender=current_app.config['MAILS_FROM'],
-                recipients=[form.email.data.lower()],
-                body=render_template('emails/sensor-given.txt',
-                                        login_url="%s/login" % (current_app.config['PROJECT_URL']))
-            )
-            mail.send(msg)
-            current_app.logger.info(
-                '%s gave node node %s to %s' % (current_user.email, id, form.email.data.lower()))
+        msg = Message(
+            "Ein Feinstaubsensor wurde Ihnen übertragen",
+            sender=current_app.config['MAILS_FROM'],
+            recipients=[form.email.data.lower()],
+            body=render_template('emails/sensor-given.txt',
+                                    login_url="%s/login" % (current_app.config['PROJECT_URL']))
+        )
+        mail.send(msg)
+        current_app.logger.info(
+            '%s gave node node %s to %s' % (current_user.email, id, form.email.data.lower()))
 
-            db.session.commit()
-            return render_template('mein-sensor-give-success.html', node=node)
+        db.session.commit()
+        return render_template('mein-sensor-give-success.html', node=node)
     return render_template('mein-sensor-give.html', node=node, form=form)

@@ -12,6 +12,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 """
 
 from flask_wtf import FlaskForm
+from flask_login import current_user
 from wtforms import (BooleanField, StringField, HiddenField, PasswordField, DecimalField, DateTimeField, validators,
                      IntegerField, SubmitField, TextAreaField, SelectField, FormField)
 from . import constants
@@ -159,3 +160,8 @@ class SensorGiveForm(FlaskForm):
         ]
     )
     submit = SubmitField('Sensor übergeben')
+
+    def validate_email(self, field):
+        if field.data.lower().strip() == current_user.email.lower().strip():
+            raise validators.ValidationError(
+                "You can't transfer the sensor to yourself")

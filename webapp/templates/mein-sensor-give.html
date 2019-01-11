@@ -1,9 +1,5 @@
 {% extends "layout.html" %}
-
-{% block head %}
-    {{ super() }}
-    <meta name="robots" content="noindex">
-{% endblock %}
+{% from "_formhelpers.html" import render_field %}
 
 {% block content %}
     <div class="fullwidth clearfix">
@@ -19,31 +15,18 @@
                             Sensor.</strong></p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-10 offset-md-1">
-                        {{ form.email.label }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-10 offset-md-1 {% if form.email.errors %} error{% endif %}">
-                        {{ form.email(class="form-control") }}
-                    </div>
-                    <div>
-                        {% if form.email.errors %}
-                            {% for error in form.email.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-10 offset-md-1">
+
+                {{ render_field(form.email) }}
+
+                <div class="row m-3">
+                    <div class="col-md-6 offset-md-3">
                         {{ form.submit(class="form-control btn btn-primary") }}
-                                        <br>
+                    </div>
+                </div>
 
-                                        <br>
-
-                        <p><a href="/meine-sensoren">Zurück zu meinen Sensoren</a></p>
+                <div class="row m-3">
+                    <div class="col-md-6 offset-md-3">
+                        <a href="/meine-sensoren" class="form-control btn btn-info">Zurück zu meinen Sensoren</a>
                     </div>
                 </div>
                 {{ form.csrf_token }}

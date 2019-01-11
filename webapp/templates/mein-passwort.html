@@ -1,9 +1,5 @@
 {% extends "layout.html" %}
-
-{% block head %}
-    {{ super() }}
-    <meta name="robots" content="noindex">
-{% endblock %}
+{% from "_formhelpers.html" import render_field, render_submit %}
 
 {% block content %}
     <div class="fullwidth clearfix">
@@ -15,62 +11,12 @@
                         <p>Hier können Sie Ihr Passwort ändern.</p>
                     </div>
                 </div>
-{#                <div class="row">#}
-{#                    <div class="col-md-12">#}
-{#                        {{ form.old_password.label }}#}
-{#                    </div>#}
-{#                </div>#}
-                <div class="row">
-                    <div class="col-md-10 offset-md-1 {% if form.old_password.errors %} error{% endif %}">
-                        {{ form.old_password(class="form-control", placeholder="Altes Passwort") }}
-                    </div>
-                    <div>
-                        {% if form.old_password.errors %}
-                            {% for error in form.old_password.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-{#                <div class="row">#}
-{#                    <div class="col-md-12">#}
-{#                        {{ form.new_password.label }}#}
-{#                    </div>#}
-{#                </div>#}
-                <div class="row">
-                    <div class="col-md-10 offset-md-1 {% if form.new_password.errors %} error{% endif %}">
-                        {{ form.new_password(class="form-control", placeholder="Neues Passwort") }}
-                    </div>
-                    <div>
-                        {% if form.new_password.errors %}
-                            {% for error in form.new_password.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-{#                <div class="row">#}
-{#                    <div class="col-md-12">#}
-{#                        {{ form.confirm.label }}#}
-{#                    </div>#}
-{#                </div>#}
-                <div class="row">
-                    <div class="col-md-10 offset-md-1 {% if form.confirm.errors %} error{% endif %}">
-                        {{ form.confirm(class="form-control", placeholder="Neues Passwort (Wiederholen) ") }}
-                    </div>
-                    <div>
-                        {% if form.confirm.errors %}
-                            {% for error in form.confirm.errors %}
-                                {{ error }}
-                            {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-10 offset-md-1">
-                        {{ form.submit(class="form-control btn btn-primary") }}
-                    </div>
-                </div>
+
+                {{ render_field(form.old_password) }}
+                {{ render_field(form.new_password) }}
+                {{ render_field(form.confirm) }}
+                {{ render_submit(form.submit) }}
+
                 {{ form.csrf_token }}
             </form>
         </div>

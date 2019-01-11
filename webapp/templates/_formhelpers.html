@@ -38,3 +38,11 @@
     </div>
     {% endif %}
 {% endmacro %}
+
+{% macro render_submit(field) %}
+    <div class="row m-3">
+        <div class="col-md-6 offset-md-3">
+            {{ field(class="form-control btn btn-primary") }}
+        </div>
+    </div>
+{% endmacro %}

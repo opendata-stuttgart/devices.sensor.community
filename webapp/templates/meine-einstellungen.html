@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+{% from "_formhelpers.html" import render_field, render_submit %}
 
 {% block head %}
     {{ super() }}
@@ -16,45 +17,10 @@
                     </div>
                 </div>
 
-            {#                <div class="row">#}
-            {#                    <div class="col-md-12">#}
-            {#                        {{ form.first_name.label }}#}
-            {#                    </div>#}
-            {#                </div>#}
-            <div class="row">
-                <div class="col-md-10 offset-md-1 col-sm-12{% if form.first_name.errors %} error{% endif %}">
-                    {{ form.first_name(class="form-control", placeholder='Vorname') }}
-                </div>
-                <div>
-                    {% if form.first_name.errors %}
-                        {% for error in form.first_name.errors %}
-                            {{ error }}
-                        {% endfor %}
-                    {% endif %}
-                </div>
-            </div>
-            {#                <div class="row">#}
-            {#                    <div class="col-md-12">#}
-            {#                        {{ form.last_name.label }}#}
-            {#                    </div>#}
-            {#                </div>#}
-            <div class="row">
-                <div class="col-md-10 offset-md-1 col-sm-12 {% if form.last_name.errors %} error{% endif %}">
-                    {{ form.last_name(class="form-control", placeholder='Nachname') }}
-                </div>
-                <div>
-                    {% if form.last_name.errors %}
-                        {% for error in form.last_name.errors %}
-                            {{ error }}
-                        {% endfor %}
-                    {% endif %}
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10 offset-md-1 col-sm-8 offset-sm-2">
-                    {{ form.submit(class="form-control btn btn-primary") }}
-                </div>
-            </div>
+            {{ render_field(form.first_name) }}
+            {{ render_field(form.last_name) }}
+            {{ render_submit(form.submit) }}
+
             {{ form.csrf_token }}
             </form>
         </div>
