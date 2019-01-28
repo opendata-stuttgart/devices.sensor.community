@@ -151,8 +151,9 @@ def logout():
 
 
 @users.route('/meine-einstellungen', methods=['GET', 'POST'])
+@users.route('/settings', methods=['GET', 'POST'])
 @login_required
-def meine_daten():
+def settings():
     form = UserDataForm(request.form, obj=current_user)
     if form.validate_on_submit():
         form.populate_obj(current_user)
@@ -165,8 +166,9 @@ def meine_daten():
 
 
 @users.route('/mein-passwort', methods=['GET', 'POST'])
+@users.route('/password', methods=['GET', 'POST'])
 @login_required
-def mein_passwort():
+def password():
     form = UserPasswordForm()
     if form.validate_on_submit():
         if current_user.check_password(form.old_password.data):

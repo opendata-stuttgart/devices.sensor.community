@@ -22,94 +22,94 @@ from ..common.countrycodes import country_codes
 
 class SensorLocationForm(FlaskForm):
     street_name = StringField(
-        'Straße',
+        _('Street'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie einen Straßennamen an.'
+                message=_('Please enter the street name.'),
             )
         ]
     )
-    street_number = StringField('Hausnummer')
+    street_number = StringField(_('Street number'))
     postalcode = StringField(
-        'Postleitzahl',
+        _('Postal code'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie eine Postleitzahl an.'
+                message=_('Please enter the postal code.'),
             )
         ]
     )
     city = StringField(
-        'Ort',
+        _('City'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie einen Ort an.'
+                message=_('Please enter the city name.'),
             )
         ]
     )
     country = SelectField(
-        'Staat',
+        _('Country'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie einen Staat an.'
+                message=_('Please enter the country name.'),
             )
         ],
         choices=country_codes,
         default='DE'
     )
     latitude = StringField(
-        'Geographischer Längengrad',
+        _('Latitude'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie eine geographische Länge an.'
+                message=_('Please enter th latitude.'),
             )
         ]
     )
     longitude = StringField(
-        'Geographischer Breitengrad',
+        _('Longitude'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie eine geographische Breite an.'
+                message=_('Please enter the longitude.'),
             )
         ]
     )
     industry_in_area = IntegerField(
-        'Wie viel verarbeitende Industrie befinden sich in 100 m Radius?',
+        _('How much industrial activity is there within a 100m radius?'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie eine Einschätzung an.'
+                message=_('Please give your estimate.'),
             ),
             validators.NumberRange(
                 min=1,
                 max=10,
-                message='Bitte geben Sie einen Wert von 1 bis 10 an'
+                message=_('Please enter the number between 1 and 10'),
             )
         ],
         description='Keine Büroflächen, sondern potentielle Feinstaubproduzenten 1 = sehr wenig, 10 = sehr viel.',
     )
     oven_in_area = IntegerField(
-        'Wie viele private Öfen oder Kamine befinden sich in 100 m Radius?',
+        _('How many private stoves or fireplaces are within a 100m radius?'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie eine Einschätzung an.'
+                message=_('Please give your estimate.'),
             ),
             validators.NumberRange(
                 min=1,
                 max=10,
-                message='Bitte geben Sie einen Wert von 1 bis 10 an'
+                message=_('Please enter the number between 1 and 10'),
             )
         ],
         description='Riecht es in Ihrem Wohngebiet sehr nach solchem Rauch? 1 = sehr wenig, 10 = sehr viel.',
     )
     traffic_in_area = IntegerField(
-        'Wie stark befahren sind die Straßen in 100 m Radius?',
+        _('How much traffic is there within a 100m radius?'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie eine Einschätzung an.'
+                message=_('Please give your estimate.'),
             ),
             validators.NumberRange(
                 min=1,
                 max=10,
-                message='Bitte geben Sie einen Wert von 1 bis 10 an'
+                message=_('Please enter the number between 1 and 10'),
             )
         ],
         description='Wie nah dran sind solche Straßen? 1 = sehr wenig weiter weg, 10 = sehr viel Verkehr direkt vor der Haustür.',
@@ -117,15 +117,16 @@ class SensorLocationForm(FlaskForm):
 
 class SensorSettingsForm(FlaskForm):
     name = StringField(
-        'Interner Name des Sensors (veröffentlicht wird nur die Sensor-UID)',
+        _('Personal sensor name'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie einen Sensornamen an.'
+                message=_('Please enter the sensor name.'),
             )
-        ]
+        ],
+        description=_('Only the sensor ID will be published.'),
     )
     height = IntegerField(
-        'Höhe des Sensors über dem Boden (in cm)',
+        _('Sensor level above ground (in cm)'),
         [
             validators.DataRequired(
                 message='Bitte geben Sie die Höhe des Sensors über dem Boden an.'
@@ -133,7 +134,7 @@ class SensorSettingsForm(FlaskForm):
         ]
     )
     sensor_position = IntegerField(
-        'Befestigungsort des Sensors am Haus.',
+        _('Sensor location relative to the traffic'),
         [
             validators.DataRequired(
                 message='Bitte geben Sie den Befestigungsort des Sensors an.'
@@ -143,9 +144,9 @@ class SensorSettingsForm(FlaskForm):
     )
     location = FormField(SensorLocationForm)
     description = TextAreaField(
-        'Kurze Beschreibung des Sensor-Standortes inkl. seiner Besonderheiten'
+        _('Short description of location'),
     )
-    submit = SubmitField('Einstellungen speichern')
+    submit = SubmitField(_('Save settings'))
 
 
 class SensorGiveForm(FlaskForm):
