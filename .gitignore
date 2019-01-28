@@ -4,6 +4,8 @@ feinstaub.sql
 *.py[cod]
 .flaskenv
 *.db
+.local
+.cache
 
 # KomodoEdit
 *.komodoedit

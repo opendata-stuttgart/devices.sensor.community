@@ -46,6 +46,9 @@ class DefaultConfig(object):
     CELERY_BROKER_URL = 'redis://redis:6379/0'
     CELERY_RESULT_BACKEND = 'redis://redis:6379/0'
 
+    SECURITY_CONFIRMABLE = True
+    SECURITY_REGISTERABLE = True
+    SECURITY_CHANGEABLE = True
 
 class LocalConfig(DefaultConfig):
     DEBUG = True

@@ -22,8 +22,8 @@ from .frontend import frontend
 from .personal import personal
 from .users import users
 from .admin import admin
-from .models import User
-from .extensions import db, login_manager, csrf, mail, celery, babel
+from .models import User, Role
+from .extensions import db, csrf, mail, celery, babel, security
 from .babel import create_module as babel_create_module
 
 __all__ = ['launch']
@@ -47,7 +47,7 @@ def launch(config=None, app_name=None, blueprints=None):
     app = Flask(
         app_name,
         template_folder='webapp/templates')
-        
+
     configure_app(app, config)
     configure_hook(app)
     configure_blueprints(app, blueprints)
@@ -81,17 +81,6 @@ def configure_extensions(app):
     # flask-sqlalchemy
     db.init_app(app)
 
-    # flask-login
-    @login_manager.user_loader
-    def load_user(id):
-        return User.query.get(id)
-
-    login_manager.setup_app(app)
-
-    @login_manager.unauthorized_handler
-    def unauthorized(msg=None):
-        return render_template('401.html'), 401
-
     # flask-wtf
     csrf.init_app(app)
 
@@ -103,6 +92,9 @@ def configure_extensions(app):
 
     # flask-babel
     babel.init_app(app)
+
+    from flask_security import SQLAlchemyUserDatastore
+    security.init_app(app, SQLAlchemyUserDatastore(db, User, Role))
 
 
 def configure_blueprints(app, blueprints):

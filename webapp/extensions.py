@@ -12,15 +12,15 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 """
 
 from flask_sqlalchemy import SQLAlchemy
-from flask_login import LoginManager
 from flask_wtf.csrf import CSRFProtect
 from flask_mail import Mail
 from flask_celery import Celery
 from flask_babel import Babel
+from flask_security import Security
 
 db = SQLAlchemy()
-login_manager = LoginManager()
 csrf = CSRFProtect()
 mail = Mail()
 celery = Celery()
 babel = Babel()
+security = Security()

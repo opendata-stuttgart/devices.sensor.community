@@ -3,7 +3,7 @@
     {% if style == 'basic' %}
         <div class="form-group{% if field.errors %} has-danger{% endif %} {{ class if class != None else 'col' }}">
         {{ field.label(class='control-label') }}
-        {{ field(class="form-control" + (" is-invalid" if field.errors else "")) }}
+        {{ field(class="form-control" + (" is-invalid" if field.errors else ""), **kwargs) }}
         {% if field.errors %}
         <div class="invalid-feedback">
             {% for error in field.errors %}
@@ -19,9 +19,19 @@
     </div>
     {% elif style == 'horizontal' %}
     <div class="form-group row{% if field.errors %} has-danger{% endif %}">
+        {% if field.type == 'BooleanField' %}
+        <div class="col">
+            <div class="offset-md-4">
+                <div class="form-check">
+                    {{ field(class='form-check-input') }}
+                    {{ field.label(class='form-check-label') }}
+                </div>
+            </div>
+        </div>
+        {% else %}
         {{ field.label(class='col-form-label col-md-4') }}
         <div class="col">
-        {{ field(class="form-control" + (" is-invalid" if field.errors else "")) }}
+        {{ field(class="form-control" + (" is-invalid" if field.errors else ""), **kwargs) }}
         {% if field.errors %}
         <div class="invalid-feedback">
             {% for error in field.errors %}
@@ -35,6 +45,7 @@
         </small>
         {% endif %}
         </div>
+        {% endif %}
     </div>
     {% endif %}
 {% endmacro %}

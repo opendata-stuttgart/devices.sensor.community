@@ -1,0 +1,12 @@
+{% from "_formhelpers.html" import render_field as render_f %}
+{% from "_formhelpers.html" import render_submit %}
+{% macro render_field(field) -%}
+  {% if field.type == 'SubmitField' %}
+    {{ render_submit(field) }}
+  {% else %}
+    {{ render_f(field, **kwargs) }}
+  {% endif %}
+{%- endmacro %}
+{% macro render_field_with_errors(field) -%}
+  {{ render_field(field, **kwargs) }}
+{%- endmacro %}
