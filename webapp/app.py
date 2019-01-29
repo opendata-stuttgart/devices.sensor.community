@@ -24,6 +24,9 @@ from .users import users
 from .admin import admin
 from .models import User
 from .extensions import db, login_manager, csrf, mail, celery, babel
+from .babel import create_module as babel_create_module
+
+
 
 __all__ = ['launch']
 
@@ -53,6 +56,8 @@ def launch(config=None, app_name=None, blueprints=None):
     configure_logging(app)
     configure_filters(app)
     configure_error_handlers(app)
+    babel_create_module(app)
+
     from .common import filter
     return app
 
@@ -103,6 +108,8 @@ def configure_extensions(app):
     babel.init_app(app)
 
 
+
+
 def configure_blueprints(app, blueprints):
     for blueprint in blueprints:
         app.register_blueprint(blueprint)
@@ -145,6 +152,7 @@ def configure_hook(app):
 
 def configure_error_handlers(app):
     pass
+
 
 
 """

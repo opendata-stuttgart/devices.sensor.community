@@ -62,6 +62,16 @@
                         {{ navbar_link('users.login', 'Login') }}
                     {% endif %}
                 </ul>
+                <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="dropdown nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Lang</a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{{ url_for("babel.index", locale="en") }}">🇬🇧 en</a>
+                        <a class="dropdown-item" href="{{ url_for("babel.index", locale="de") }}">🇩🇪 de</a>
+                    </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>

@@ -40,3 +40,19 @@ To create new database migration:
 To start automatic CSS/JS rebuilds on change use this:
 
     docker-comopose run --rm gulp npm start
+
+
+
+
+### Create new langauge
+
+    pybabel init -i ./babel/messages.pot -d ./webapp/translations -l country_code
+
+for example
+
+    pybabel init -i ./babel/messages.pot -d ./webapp/translations -l de
+
+
+update langauge
+
+    pybabel init -i ./babel/messages.pot -d ./webapp/translations

@@ -2,6 +2,8 @@
 webapp/config.py
 feinstaub.sql
 *.py[cod]
+.flaskenv
+*.db
 
 # KomodoEdit
 *.komodoedit
@@ -18,6 +20,16 @@ feinstaub.sql
 venv
 logs/*
 .bash_history
+get-pip.py
+
+### VisualStudioCode ###
+.vscode/*
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
 
 # Node, Bower, SASS
 .sass-cache

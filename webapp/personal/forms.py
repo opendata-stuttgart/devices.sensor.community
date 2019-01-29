@@ -60,7 +60,7 @@ class SensorLocationForm(FlaskForm):
         _('Latitude'),
         [
             validators.DataRequired(
-                message=_('Please enter th latitude.'),
+                message=_('Please enter the latitude.'),
             )
         ]
     )
