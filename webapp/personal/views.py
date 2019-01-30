@@ -21,8 +21,8 @@ import dateutil.parser
 import pytz
 import json
 
-from .forms import SensorGiveForm, SensorSettingsForm
-from ..external_data.models import Node
+from .forms import SensorGiveForm, SensorSettingsForm, SensorRegisterForm
+from ..external_data.models import Node, SensorLocation
 from ..common.helpers import get_object_or_404
 from ..extensions import mail, db
 
@@ -72,14 +72,14 @@ def sensor_data(id):
         if sensor.data['sensordatavalues']:
             for sensor_value in sensor.data['sensordatavalues']:
                 if sensor_value['value_type'] == 'P1':
-                    sensor_value['value_type_name'] = _('Fine dust 10 µm')   
+                    sensor_value['value_type_name'] = _('Fine dust 10 µm')
                     sensor_value['value_type_unit'] = 'µg'
                 elif sensor_value['value_type'] == 'P2':
-                    sensor_value['value_type_name'] = _('Fine dust 2.5 µm')  
+                    sensor_value['value_type_name'] = _('Fine dust 2.5 µm')
                     sensor_value['value_type_unit'] = 'µg'
                 elif sensor_value['value_type'] == 'humidity':
                     sensor_value['value_type_unit'] = '%'
-                    sensor_value['value_type_name'] = _('Humidity') 
+                    sensor_value['value_type_name'] = _('Humidity')
                 elif sensor_value['value_type'] == 'temperature':
                     sensor_value['value_type_unit'] = '°C'
                     sensor_value['value_type_name'] = _('Temperature')
@@ -106,6 +106,26 @@ def sensor_settings(id):
     return render_template('my-sensor-settings.html', node=node, form=form)
 
 
+@personal.route('/sensors/register', methods=['GET', 'POST'])
+@login_required
+def sensor_register():
+    form = SensorRegisterForm()
+
+    if form.validate_on_submit():
+        node = Node(location=SensorLocation())
+        form.populate_obj(node)
+        node.uid = 'esp8266-' + form.sensor_id.data
+        node.email = current_user.email
+
+        db.session.add(node)
+        db.session.commit()
+
+        flash(_('Sensor succesfuly registered.'), 'success')
+        return redirect(url_for('.sensor_list'))
+
+    return render_template('sensor-register.html', node=None, form=form)
+
+
 @personal.route('/my-sensor/<id>/give', methods=['GET', 'POST'])
 @personal.route('/sensors/<id>/transfer', methods=['GET', 'POST'])
 @login_required
@@ -114,7 +134,7 @@ def sensor_transfer(id):
     form = SensorGiveForm()
     if form.validate_on_submit():
         node.email = form.email.data.lower()
-        
+
         msg = Message(_('A fine dust sensor was transferred to you'),
             sender=current_app.config['MAILS_FROM'],
             recipients=[form.email.data.lower()],

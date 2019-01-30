@@ -149,6 +149,10 @@ class SensorSettingsForm(FlaskForm):
     submit = SubmitField(_('Save settings'))
 
 
+class SensorRegisterForm(SensorSettingsForm):
+    sensor_id = StringField(_('Sensor ID'))
+
+
 class SensorGiveForm(FlaskForm):
     email = StringField(
         _("Recipient's e-mail address"),

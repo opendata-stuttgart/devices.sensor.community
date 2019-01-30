@@ -19,7 +19,7 @@ class Node(db.Model):
     location_id = db.Column(db.Integer, db.ForeignKey('sensors_sensorlocation.id'), nullable=False)
     location = db.relationship('SensorLocation')
 
-    owner_id = db.Column(db.Integer, nullable=False)
+    owner_id = db.Column(db.Integer, nullable=False, default=1)
     description_internal = db.Column(db.String)
 
     email = db.Column(db.String(254))
@@ -62,9 +62,9 @@ class SensorLocation(db.Model):
     modified = db.Column(db.DateTime, nullable=False, default=get_current_time)
 
     location = db.Column(db.String)
-    timestamp = db.Column(db.DateTime, nullable=False)
+    timestamp = db.Column(db.DateTime, nullable=False, default=get_current_time)
     description = db.Column(db.String)
-    indoor = db.Column(db.Boolean, nullable=False)
+    indoor = db.Column(db.Boolean, nullable=False, default=False)
 
     owner_id = db.Column(db.Integer)
 

@@ -1,0 +1,71 @@
+<h2>{{ _('Basic Information') }} </h2>
+
+{{ render_field(form.name) }}
+
+{% set location = form.location %}
+<div class="row">
+    {{ render_field(location.street_name, 'basic') }}
+    {{ render_field(location.street_number, 'basic') }}
+</div>
+
+<div class="row">
+    {{ render_field(location.postalcode, 'basic', 'col-md-3') }}
+    {{ render_field(location.city, 'basic', 'col-md-5') }}
+    {{ render_field(location.country, 'basic') }}
+</div>
+
+
+<h2>{{ _('Additional Information') }}  </h2>
+{{ render_field(form.height) }}
+{{ render_field(form.sensor_position) }}
+{{ render_field(location.industry_in_area) }}
+{{ render_field(location.oven_in_area) }}
+{{ render_field(location.traffic_in_area) }}
+
+<div class="row">
+    <div class="form-group col-md-6 offset-md-3">
+        {{ form.submit(class="form-control btn btn-primary") }}
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <p>{{ _('The more precise the data we have, the better we can evaluate the data and thus energize statements. The system also tries to make a geoposition out of the address, but we would be happy if you would specify the position with the map below.') }} </p>
+        <button type="button" class="btn btn-default" id="sensor-setting-use-address">Suche Adresse
+        </button>
+        <button type="button" class="btn btn-default" id="sensor-setting-switch-style"
+                data-style="streets">
+                {{ _('satellite map') }}
+        </button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div id="sensor-settings-map"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <p>{{ _('For those interested: the geocoordinates resulting from the map.') }}  </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        {{ location.latitude(class="form-control") }}
+    </div>
+    <div class="col-md-3">
+        {{ location.longitude(class="form-control") }}
+    </div>
+    <div class="col-md-6">
+        {% if location.latitude.errors %}
+            {% for error in location.latitude.errors %}
+                {{ error }}
+            {% endfor %}
+        {% endif %}
+        {% if location.longitude.errors %}
+            {% for error in location.longitude.errors %}
+                {{ error }}
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
+{{ form.csrf_token }}
