@@ -47,13 +47,24 @@
         </div>
         {% endif %}
     </div>
+    {% elif style == 'wide' %}
+    {{ field.label(class_='sr-only') }}{{ field(class_='form-control' + (' is-invalid' if field.errors else ''), placeholder=field.label.text, **kwargs) }}
+    {% if field.errors %}
+    {% for error in field.errors %}
+        <div class="invalid-feedback">{{ error }}</div>
+    {% endfor %}
+    {% endif %}
     {% endif %}
 {% endmacro %}
 
-{% macro render_submit(field) %}
+{% macro render_submit(field, wide=False) %}
+{% if not wide %}
     <div class="row m-3">
         <div class="col-md-6 offset-md-3">
-            {{ field(class="form-control btn btn-primary") }}
+{% endif %}
+            {{ field(class="form-control btn btn-primary", **kwargs) }}
+{% if not wide %}
         </div>
     </div>
+{% endif %}
 {% endmacro %}
