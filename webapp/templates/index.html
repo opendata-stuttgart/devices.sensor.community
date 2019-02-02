@@ -13,10 +13,10 @@
 
     <div class="fullwidth colour1 clearfix">
         <div id="maincont" class="bodycontainer clearfix">
-            <h2>Luftdaten konfigurieren</h2>
-            <p>Diese Seite dient vor allem dazu, dass Sie als Besitzer eines Feinstaub-Sensors, den Standort und weitere Parameter selbst konfigurieren können. Hier zum {% if not current_user.is_authenticated %}<a href="/login">Login</a>{% endif %}.</p>
-            <p>Allgemeine Informationen finden Sie auf <a href="http://luftdaten.org">luftdaten.info</a>, genauso die <a href="http://luftdaten.org">die Bauanleitung </a>. Sensordaten kann man <a href="http://deutschland.maps.luftdaten.info">auf der Feinstaub Karte
-                </a>einsehen oder <a href="http://archive.luftdaten.info/">als CSVs herunterladen</a>.</p>
+            <h2>{{ _('Configure Luftdaten') }}</h2>
+            <p>{{ _('The main purpose of this page is to enable you, as the owner of a fine dust sensor, to configure the location and other parameters yourself. Click here to ') }} {% if not current_user.is_authenticated %}<a href="/login">Login</a>{% endif %}.</p>
+            <p>{{ _('General information can be found at') }}  <a href="http://luftdaten.info">luftdaten.info</a>{{ _(', as well as the ') }}  <a href="http://luftdaten.info">{{ _('building instructions.') }} </a> {{ _('Sensor data can be found on ') }} <a href="http://deutschland.maps.luftdaten.info">{{ _('on the fine dust map') }}
+                </a>{{ _('oder') }} <a href="http://archive.luftdaten.info/">{{ _('download as CSVs') }}</a>.</p>
         </div>
     </div>
 
@@ -34,13 +34,6 @@
 
 
             <h2>Mach mit!</h2>
-            <p>Das <strong>OK Lab Stuttgart</strong> trifft sich jeden:<br/>
-                <a href="https://www.letsmeet.click/c/ok-lab-stuttgart/" target="_blank">2. Dienstag im Monat im
-                    shackspace</a> in Stuttgart Wangen.<br/>
-                <a href="https://www.letsmeet.click/c/ok-lab-stuttgart/" target="_blank">4. Dienstag im Monat in der
-                    Stadtbibliothek</a> am Mailänderplatz.<br/>
-                Interessierte können gerne dazu kommen.</p>
-
             <p>Die Stadt der Zukunft gehört den Bürgerinnen und Bürgern. Die digitalen Werkzeuge, die Maker Bewegung und
                 Citizen Science führt dazu, dass immer mehr Menschen die Möglichkeit bekommen die Stadt selber zu
                 gestalten.</p><br>

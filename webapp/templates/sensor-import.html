@@ -12,15 +12,14 @@
                 <div id="maincont" class="bodycontainer clearfix">
                     <form method="POST" action="/admin/sensor-import">
 
-                        <h1>Sensor-Massenimport</h1>
-                        <p>Mit diesem Formular können neue Nodes massenhaft importiert werden. Pro Zeile wird ein Node
-                            erwartet, und zwar in folgendem Format:</p>
-                        <p><code>123456 info@ruhrmobil-e.de</code></p>
-                        <p>123456 ist hierbei die ID des ESP8266-Boards, die E-Mail ist die Adresse des zukünftigen
-                            Besitzers. Falls diese nicht feststeht, kann auch nur die Node-ID angegeben werden, die
-                            E-Mail muss dann nachträglich ergänzt werden.</p>
-                        <p>Wenn eine E-Mail-Adresse angegeben wurde, wird der Besitzer mit einer E-Mail über seinen
-                            neuen Sensor informiert.</p>
+                        <h1>{{ _('Sensor mass importer') }}</h1>
+                        <p>{{ _('With this form new nodes can be imported in masses. One node per line is expected in the following format:') }}</p>
+                        <p><code>123456 demo@luftdaten.info</code></p>
+                        <p>{{ _('123456 is the ID of the ESP8266 board, the e-mail is the address of the future
+                            of the owner. If this is not fixed, only the Node-ID can be specified, which is
+                            E-mail must then be added later.') }} </p>
+                        <p>{{ _('If an email address has been specified, the owner will be notified with an email about their
+                            new sensor.') }}</p>
 
                         <div class="col-md-10 offset-1">
                             {{ form.data_field.label }}

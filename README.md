@@ -50,9 +50,12 @@ To start automatic CSS/JS rebuilds on change use this:
 
 for example
 
-    pybabel init -i ./babel/messages.pot -d ./webapp/translations -l de
-
-
+    pybabel extract -F ./babel/babel.cfg -o ./babel/messages.pot ./webapp/
+    
 update langauge
 
-    pybabel init -i ./babel/messages.pot -d ./webapp/translations
+    pybabel update -i ./babel/messages.pot -d ./webapp/translations
+
+compile into binary
+
+    pybabel compile -d ./webapp/translations/

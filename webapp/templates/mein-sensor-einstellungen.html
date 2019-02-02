@@ -15,14 +15,10 @@
     <div class="fullwidth clearfix">
         <div id="maincont" class="bodycontainer clearfix">
             <form method="POST" action="/mein-sensor/{{ node.id }}/einstellungen" id="sensor-setting-form">
-                <h1>Einstellungen von Node {{ node.uid }}</h1>
-                <p>Mit diesem Formular können Sie die Daten des Sensors aktuell halten. Bitte beachten Sie
-                    dabei, dass
-                    nur präzise Daten zu präzisen Auswertungen führen können, mit denen wir auch politisch
-                    argumentieren
-                    können. Es ist also wichtig, dass die Sensor-Basisdaten immer aktuell gehalten werden.</p>
+                <h1>{{ _('Settings of Node ') }}   {{ node.uid }}</h1>
+                <p>{{ _('With this form you can keep the data of the sensor up to date. Please note that only precise data can lead to precise evaluations with which we can also argue politically. It is therefore important that the basic sensor data is always kept up to date.') }}  </p>
 
-                <h2>Basisinformationen</h2>
+                <h2>{{ _('Basic Information') }} </h2>
 
                 {{ render_field(form.name) }}
 
@@ -39,7 +35,7 @@
                 </div>
 
 
-                <h2>Zusätzliche Informationen</h2>
+                <h2>{{ _('Additional Information') }}  </h2>
                 {{ render_field(form.height) }}
                 {{ render_field(form.sensor_position) }}
                 {{ render_field(location.industry_in_area) }}
@@ -53,16 +49,12 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <p>Je genauere Daten wir haben, desto besser können wir die Daten auswerten und dadurch Aussagen
-                            generieren. Das System versucht zwar auch so, aus der Adresse eine Geoposition zu machen,
-                            aber wir
-                            würden uns freuen, wenn Sie die Position mit der Karte unten noch weiter präzisieren
-                            würden.</p>
+                        <p>{{ _('The more precise the data we have, the better we can evaluate the data and thus energize statements. The system also tries to make a geoposition out of the address, but we would be happy if you would specify the position with the map below.') }} </p>
                         <button type="button" class="btn btn-default" id="sensor-setting-use-address">Suche Adresse
                         </button>
                         <button type="button" class="btn btn-default" id="sensor-setting-switch-style"
                                 data-style="streets">
-                            Satelliten-Karte
+                                {{ _('satellite map') }} 
                         </button>
                     </div>
                 </div>
@@ -73,7 +65,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <p>Für Interessierte: die aus der Karte resultierenden Geokoordinaten.</p>
+                        <p>{{ _('For those interested: the geocoordinates resulting from the map.') }}  </p>
                     </div>
                 </div>
                 <div class="row">

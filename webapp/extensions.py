@@ -18,7 +18,6 @@ from flask_mail import Mail
 from flask_celery import Celery
 from flask_babel import Babel
 
-
 db = SQLAlchemy()
 login_manager = LoginManager()
 csrf = CSRFProtect()

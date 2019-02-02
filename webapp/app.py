@@ -12,7 +12,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 """
 
 import os
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, g
 
 from webapp import config as Config
 from .common import Response
@@ -26,8 +26,6 @@ from .models import User
 from .extensions import db, login_manager, csrf, mail, celery, babel
 from .babel import create_module as babel_create_module
 
-
-
 __all__ = ['launch']
 
 DEFAULT_BLUEPRINTS = [
@@ -37,8 +35,8 @@ DEFAULT_BLUEPRINTS = [
     admin
 ]
 
-
 def launch(config=None, app_name=None, blueprints=None):
+
     """Create a Flask app."""
 
     if app_name is None:
@@ -49,6 +47,7 @@ def launch(config=None, app_name=None, blueprints=None):
     app = Flask(
         app_name,
         template_folder='webapp/templates')
+        
     configure_app(app, config)
     configure_hook(app)
     configure_blueprints(app, blueprints)
@@ -57,8 +56,6 @@ def launch(config=None, app_name=None, blueprints=None):
     configure_filters(app)
     configure_error_handlers(app)
     babel_create_module(app)
-
-    from .common import filter
     return app
 
 
@@ -108,8 +105,6 @@ def configure_extensions(app):
     babel.init_app(app)
 
 
-
-
 def configure_blueprints(app, blueprints):
     for blueprint in blueprints:
         app.register_blueprint(blueprint)
@@ -152,8 +147,6 @@ def configure_hook(app):
 
 def configure_error_handlers(app):
     pass
-
-
 
 """
   @app.errorhandler(500)

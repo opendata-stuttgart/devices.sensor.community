@@ -5,20 +5,20 @@
         <div id="maincont" class="bodycontainer clearfix">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Daten von Node {{ node.uid }}</h1>
-                    <p>Typischerweise sind zwei Sensoren an jedem Node angebracht: der Feinstaubsensor sowie der
-                        Feuchtigkeits- und Temperatur-Sensor. Die Sensor-Nummer findet man auch <a
-                                href="http://deutschland.maps.luftdaten.info/">auf der Feinstaub-Karte wieder</a>.</p>
+                    <h1>{{ _('Data from Node') }}  {{ node.uid }}</h1>
+                    <p>{{ _('Typically, two sensors are attached to each node: the fine dust sensor and the
+                        Humidity and temperature sensor. The sensor number can also be found ') }} <a
+                                href="http://deutschland.maps.luftdaten.info/">{{ _('on the fine dust card again.') }}  </a>.</p>
                     {% for sensor in sensors %}
                         <h2>{{ sensor['sensor_type_name'] }}</h2>
                         <p>Sensor ID: {{ sensor['id'] }}</p>
                         {% if sensor['data'] %}
-                            <p>Letzte Aktualisierung: {{ sensor['data']['timestamp']|datetime }} Uhr</p>
+                            <p>{{ _('Last updated: ') }}  {{ sensor['data']['timestamp']|datetime }} Uhr</p>
                             {% for sensor_value in sensor['data']['sensordatavalues'] %}
                                 <p>{{ sensor_value['value_type_name'] }}: {{ sensor_value['value'] }} {{ sensor_value['value_type_unit'] }}</p>
                             {% endfor %}
                         {% else %}
-                            <p>Zu diesem Sensor liegen keine aktuellen Daten vor.</p>
+                            <p>{{ _('No current data are available for this sensor.') }} </p>
                         {% endif %}
                     {% endfor %}
                 </div>

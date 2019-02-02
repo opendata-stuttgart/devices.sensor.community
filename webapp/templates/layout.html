@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}luftdaten.info | Benutzerkonfiguration{% endblock %}</title>
+    <title>{% block title %}meine-luftdaten.info | {{ _('user configuration') }} {% endblock %}</title>
     {% block head %}
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <meta name="description" content="{% block meta_description %}{% endblock %}"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta property="og:title" content="luftdaten.org"/>
+        <meta property="og:title" content="luftdaten.info"/>
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://luftdaten.info/"/>
-        <meta property="og:description" content="Informationen und Einstellungen zum Luftdaten-Projekt."/>
+        <meta property="og:description" content="{{ _('Information and settings for the luftaten project') }} ."/>
 
         <link rel="manifest" href="/static/images/favicon/manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
@@ -51,7 +51,7 @@
                         {{ navbar_link('users.password', 'Password change') }}
 
                         {% if current_user.has_role('Administrator') %}
-                            <li class="nav-item"><a class="nav-link" href="/admin/sensor-import">Massenimporter</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/admin/sensor-import">{{ _('Massimporter') }} </a></li>
                         {% endif %}
                     {% endif %}
                 </ul>
@@ -62,16 +62,7 @@
                         {{ navbar_link('users.login', 'Login') }}
                     {% endif %}
                 </ul>
-                <ul class="navbar-nav mt-2 mt-lg-0">
-                    <li class="dropdown nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">Lang</a>
-
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="{{ url_for("babel.index", locale="en") }}">🇬🇧 en</a>
-                        <a class="dropdown-item" href="{{ url_for("babel.index", locale="de") }}">🇩🇪 de</a>
-                    </div>
-                    </li>
-                </ul>
+                
             </div>
         </div>
     </nav>
@@ -94,8 +85,8 @@
                         <a href="https://github.com/opendata-stuttgart" rel="external" target="_blank">
                             <span class="fa fa-github-square"></span></a>
                     </li>
-                    <li><a href="/impressum">Impressum</a></li>
-                    <li><a href="/datenschutz">Datenschutzerklärung</a></li>
+                    <li><a href="/impressum">{{ _('Impressum') }}</a></li>
+                    <li><a href="/datenschutz">{{ _('Data Privacy') }}</a></li>
                 </ul>
             </span>
         </div>
