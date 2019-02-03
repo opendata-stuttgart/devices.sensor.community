@@ -12,6 +12,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 """
 
 from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
 from flask_wtf.csrf import CSRFProtect
 from flask_mail import Mail
 from flask_celery import Celery
@@ -19,6 +20,7 @@ from flask_babel import Babel
 from flask_security import Security
 
 db = SQLAlchemy()
+migrate = Migrate()
 csrf = CSRFProtect()
 mail = Mail()
 celery = Celery()

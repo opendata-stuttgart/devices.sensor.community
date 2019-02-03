@@ -6,6 +6,7 @@ feinstaub.sql
 *.db
 .local
 .cache
+.flaskenv
 
 # KomodoEdit
 *.komodoedit

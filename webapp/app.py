@@ -23,7 +23,7 @@ from .personal import personal
 from .users import users
 from .admin import admin
 from .models import User, Role
-from .extensions import db, csrf, mail, celery, babel, security
+from .extensions import db, csrf, mail, celery, babel, security, migrate
 from .babel import create_module as babel_create_module
 
 __all__ = ['launch']
@@ -70,7 +70,7 @@ def configure_app(app, config=None):
         return
 
     # get mode from os environment
-    application_mode = os.getenv('APPLICATION_MODE', 'LOCAL')
+    application_mode = app.config['ENV']
 
     print("Running in %s mode" % application_mode)
 
@@ -80,6 +80,9 @@ def configure_app(app, config=None):
 def configure_extensions(app):
     # flask-sqlalchemy
     db.init_app(app)
+
+    # flask-migrate
+    migrate.init_app(app, db)
 
     # flask-wtf
     csrf.init_app(app)

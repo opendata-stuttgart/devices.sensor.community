@@ -7,20 +7,26 @@ To start this project you need to create configuration file in
 provided in `webapp/config.py.dist` file. Docker environment uses `LocalConfig`
 by default. Also take care of `MAIL_SUPPRESS_SEND` variable during development.
 
+Additionally, when running outside of docker, `.flaskenv` file is required.
+Basic development environment file can be copied from `.flaskenv.dist`.
+
 ## virtualenv setup
     virtualenv -p python3 venv
     source venv/bin/activate
     pip install -r requirements.txt
 
 ### Database intialization
-    # Following two commands are not required as of mid-october.
-    #python manage.py db init
-    #python manage.py db migrate
 
-    python manage.py db upgrade
+    flask db upgrade
+
+    # Create initial user and roles
+    flask users create testing@luftdaten.info --password password -a
+    flask roles create admin
+    flask roles add testing@luftdaten.info admin
 
 ### Running
-    python runserver.py
+
+    flask run
 
 ## Docker development
 To ease up development Docker container and relevant `docker-compose.yml`
@@ -34,7 +40,9 @@ Web application is available on http://localhost:5000/
 
 To create new database migration:
 
-    docker-compose run --rm web python3 manage.py db migrate -m 'Short change summary'
+    docker-compose run --rm web flask db migrate -m 'Short change summary'
+
+Flask environment can be overriden by modifying `docker-compose.yml` only.
 
 ### Gulp automatic rebuilds
 To start automatic CSS/JS rebuilds on change use this:

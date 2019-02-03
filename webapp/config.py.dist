@@ -39,6 +39,9 @@ class DefaultConfig(object):
     MAIL_PASSWORD = 'password'
     MAIL_SUPPRESS_SEND = False
 
+    # Default docker mariadb wait_timeout is 600s
+    SQLALCHEMY_POOL_RECYCLE = 480
+
     MAPBOX_TOKEN = "dummytoken"
 
     # all fields after the scheme are optional, and will default to localhost on port 6379, using database 0.
@@ -49,17 +52,15 @@ class DefaultConfig(object):
     SECURITY_CONFIRMABLE = True
     SECURITY_REGISTERABLE = True
     SECURITY_CHANGEABLE = True
+    SECURITY_CONFIRMABLE = True
+
 
 class LocalConfig(DefaultConfig):
     DEBUG = True
-
     SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://devel:devel@mysql/devel'
     SQLALCHEMY_BINDS = {
         'external': 'mysql+pymysql://external:external@mysql/external',
     }
-
-    # Default docker mariadb wait_timeout is 600s
-    SQLALCHEMY_POOL_RECYCLE = 480
 
     EXTERNAL_DATABASE_HOST = "mysql"
     EXTERNAL_DATABASE_USER = 'external'
@@ -67,9 +68,7 @@ class LocalConfig(DefaultConfig):
     EXTERNAL_DATABASE_DATABASE = 'external'
     EXTERNAL_DATABASE_PORT = 3306
 
-
-class StagingConfig(DefaultConfig):
-    pass
+    MAIL_SUPPRESS_SEND = True
 
 
 class ProdConfig(DefaultConfig):
@@ -79,9 +78,8 @@ class ProdConfig(DefaultConfig):
 
 def get_config(MODE):
     SWITCH = {
-        'LOCAL': LocalConfig,
-        'STAGING': StagingConfig,
-        'PRODUCTION': ProdConfig
+        'development': LocalConfig,
+        'production': ProdConfig
     }
     return SWITCH[MODE]
 

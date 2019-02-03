@@ -11,7 +11,9 @@ services:
       - redis
     ports:
       - 5000:5000
-    command: bash -c "python3 manage.py db upgrade && python3 -u manage.py runserver --host=0.0.0.0"
+    command: bash -c "flask db upgrade && flask run --host=0.0.0.0"
+    environment:
+      - FLASK_ENV=development
 
   # TODO get rid of Flask-Celery per http://flask.pocoo.org/docs/1.0/patterns/celery/
   #celery:
