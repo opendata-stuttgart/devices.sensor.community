@@ -69,7 +69,7 @@ class MinimalRegisterForm(FlaskForm):
         ]
     )
     privacy = BooleanField(
-        'Ich stimme den <a href="/datenschutz">Datenschutzbestimmungen</a> zu',
+        'Ich stimme den <a href="/privacy-policy">Datenschutzbestimmungen</a> zu',
         [
             validators.DataRequired(
                 message='Bitte stimmen Sie den Datenschutzbestimmungen zu.'

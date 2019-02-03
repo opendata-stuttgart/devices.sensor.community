@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-02 09:06+0100\n"
+"POT-Creation-Date: 2019-02-03 15:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,13 +147,37 @@ msgstr ""
 msgid "You may not access this page. Maybe "
 msgstr ""
 
-#: webapp/templates/datenschutz.html:8 webapp/templates/layout.html:95
-msgid "Data Privacy"
+#: webapp/templates/401.html:9
+msgid "you must first log in?"
+msgstr ""
+
+#: webapp/templates/imprint.html:8 webapp/templates/layout.html:88
+msgid "Imprint"
+msgstr ""
+
+#: webapp/templates/imprint.html:14
+msgid "Informations according to § 5 TMG"
+msgstr ""
+
+#: webapp/templates/imprint.html:21
+msgid "Represented by:"
+msgstr ""
+
+#: webapp/templates/imprint.html:26
+msgid "Contact:"
+msgstr ""
+
+#: webapp/templates/imprint.html:32
+msgid "based on the concept and software development of Ernesto Ruge:"
+msgstr ""
+
+#: webapp/templates/imprint.html:34
+msgid "Contact: Website of Ernesto Ruge:"
 msgstr ""
 
 #: webapp/templates/index.html:16
 msgid "Configure Luftdaten"
-msgstr "Luftdaten konfigurieren"
+msgstr ""
 
 #: webapp/templates/index.html:17
 msgid ""
@@ -216,8 +240,8 @@ msgstr ""
 msgid "Massimporter"
 msgstr ""
 
-#: webapp/templates/layout.html:94
-msgid "Impressum"
+#: webapp/templates/layout.html:89 webapp/templates/privacy-policy.html:8
+msgid "Privacy Policy"
 msgstr ""
 
 #: webapp/templates/login-with-password.html:68
@@ -228,19 +252,59 @@ msgstr ""
 msgid "Password Reset"
 msgstr ""
 
-#: webapp/templates/mein-passwort.html:10
+#: webapp/templates/meine-luftdaten.html:11
+msgid "Meine Luftdaten"
+msgstr ""
+
+#: webapp/templates/meine-luftdaten.html:11
+msgid "Your personal area. "
+msgstr ""
+
+#: webapp/templates/meine-luftdaten.html:18
+msgid "Sensors "
+msgstr ""
+
+#: webapp/templates/meine-luftdaten.html:19
+msgid "View and change sensor data and settings. "
+msgstr ""
+
+#: webapp/templates/meine-luftdaten.html:20
+msgid "Settings "
+msgstr ""
+
+#: webapp/templates/meine-luftdaten.html:21
+msgid "View and change data, notification settings and passwords. "
+msgstr ""
+
+#: webapp/templates/meine-luftdaten.html:22
+msgid "Password "
+msgstr ""
+
+#: webapp/templates/meine-luftdaten.html:23
+msgid "Change password "
+msgstr ""
+
+#: webapp/templates/meine-luftdaten.html:24
+msgid "Logout "
+msgstr ""
+
+#: webapp/templates/meine-luftdaten.html:25
+msgid "Logout"
+msgstr ""
+
+#: webapp/templates/my-password.html:10
 msgid "Settings"
 msgstr ""
 
-#: webapp/templates/mein-passwort.html:11
+#: webapp/templates/my-password.html:11
 msgid "Change your password."
 msgstr ""
 
-#: webapp/templates/mein-sensor-daten.html:8
+#: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
 msgstr ""
 
-#: webapp/templates/mein-sensor-daten.html:9
+#: webapp/templates/my-sensor-data.html:9
 msgid ""
 "Typically, two sensors are attached to each node: the fine dust sensor "
 "and the\n"
@@ -248,23 +312,39 @@ msgid ""
 "number can also be found "
 msgstr ""
 
-#: webapp/templates/mein-sensor-daten.html:11
+#: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust card again."
 msgstr ""
 
-#: webapp/templates/mein-sensor-daten.html:16
+#: webapp/templates/my-sensor-data.html:16
 msgid "Last updated: "
 msgstr ""
 
-#: webapp/templates/mein-sensor-daten.html:21
+#: webapp/templates/my-sensor-data.html:21
 msgid "No current data are available for this sensor."
 msgstr ""
 
-#: webapp/templates/mein-sensor-einstellungen.html:18
+#: webapp/templates/my-sensor-give-success.html:13
+msgid "Sensor "
+msgstr ""
+
+#: webapp/templates/my-sensor-give-success.html:13
+msgid "was handed over."
+msgstr ""
+
+#: webapp/templates/my-sensor-give-success.html:14
+msgid "An e-mail was sent to the new owner"
+msgstr ""
+
+#: webapp/templates/my-sensor-give-success.html:15
+msgid "Back to my sensors"
+msgstr ""
+
+#: webapp/templates/my-sensor-settings.html:18
 msgid "Settings of Node "
 msgstr ""
 
-#: webapp/templates/mein-sensor-einstellungen.html:19
+#: webapp/templates/my-sensor-settings.html:19
 msgid ""
 "With this form you can keep the data of the sensor up to date. Please "
 "note that only precise data can lead to precise evaluations with which we"
@@ -272,15 +352,15 @@ msgid ""
 "sensor data is always kept up to date."
 msgstr ""
 
-#: webapp/templates/mein-sensor-einstellungen.html:21
+#: webapp/templates/my-sensor-settings.html:21
 msgid "Basic Information"
 msgstr ""
 
-#: webapp/templates/mein-sensor-einstellungen.html:38
+#: webapp/templates/my-sensor-settings.html:38
 msgid "Additional Information"
 msgstr ""
 
-#: webapp/templates/mein-sensor-einstellungen.html:52
+#: webapp/templates/my-sensor-settings.html:52
 msgid ""
 "The more precise the data we have, the better we can evaluate the data "
 "and thus energize statements. The system also tries to make a geoposition"
@@ -288,28 +368,172 @@ msgid ""
 "position with the map below."
 msgstr ""
 
-#: webapp/templates/mein-sensor-einstellungen.html:57
+#: webapp/templates/my-sensor-settings.html:57
 msgid "satellite map"
 msgstr ""
 
-#: webapp/templates/mein-sensor-einstellungen.html:68
+#: webapp/templates/my-sensor-settings.html:68
 msgid "For those interested: the geocoordinates resulting from the map."
 msgstr ""
 
-#: webapp/templates/mein-sensor-give-success.html:13
-msgid "Sensor "
+#: webapp/templates/privacy-policy.html:13
+msgid ""
+"The operators of these pages take the protection of your personal data "
+"very seriously. We treat your personal data confidentially and according "
+"to the legal data protection regulations as well as this data protection "
+"explanation."
 msgstr ""
 
-#: webapp/templates/mein-sensor-give-success.html:13
-msgid "was handed over."
+#: webapp/templates/privacy-policy.html:15
+msgid ""
+"The use of our website is generally possible without providing personal "
+"data. Insofar as personal data (e.g. name, address or e-mail addresses) "
+"is collected on our pages, this is always done on a voluntary basis as "
+"far as possible. This data will not be passed on to third parties without"
+" your express consent."
 msgstr ""
 
-#: webapp/templates/mein-sensor-give-success.html:14
-msgid "An e-mail was sent to the new owner"
+#: webapp/templates/privacy-policy.html:17
+msgid ""
+"We would like to point out that data transmission via the Internet (e.g. "
+"communication via e-mail) may have security gaps. A complete protection "
+"of the data against the access by third is not possible."
 msgstr ""
 
-#: webapp/templates/mein-sensor-give-success.html:15
-msgid "Back to my sensors"
+#: webapp/templates/privacy-policy.html:19
+msgid "Information, deletion, blocking"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:20
+msgid ""
+"You have the right at any time to free information about your stored "
+"personal data, their origin and recipient and the purpose of data "
+"processing as well as a right to correction, blocking or deletion of this"
+" data. You can contact us at any time at the address given in the imprint"
+" for this and other questions on the subject of personal data."
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:21
+msgid "Cookies"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:22
+msgid ""
+"Some of the Internet pages use so-called cookies. Cookies do not damage "
+"your computer and do not contain viruses. Cookies serve to make our offer"
+" more user-friendly, more effective and safer. Cookies are small text "
+"files that are stored on your computer by your browser."
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:23
+msgid ""
+"Most of the cookies we use are so-called \"session cookies\". They are "
+"automatically deleted at the end of your visit. Other cookies remain "
+"stored on your terminal until you delete them. These cookies enable us to"
+" recognize your browser during your next visit."
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:25
+msgid "Account and sensor data"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:26
+msgid ""
+"The measurement data of the sensors are collected on the server of the "
+"luftdaten.info and are publicly accessible to the company. The following "
+"information will be published:"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:28
+msgid ""
+"The anonymized geoposition (longitude and latitude) rounded to approx. "
+"100 m."
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:29
+msgid "The ID of your ESP8266 NodeMCU board"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:30
+msgid "The given numerical description of the environment"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:31
+msgid "The sensor height"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:32
+msgid "The description as text"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:34
+msgid ""
+"The following additional data will be stored for internal processing, but"
+" will not be published:"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:36
+msgid "The postal address of the sensor"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:37
+msgid "The e-mail address"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:38
+msgid "Your first and last name"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:40
+msgid "Server log files"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:41
+msgid ""
+"Der Provider der Seiten erhebt und speichert automatisch Informationen in"
+" so genannten Server-Log  Files, die Ihr Browser automatisch an uns "
+"übermittelt. Dies sind:"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:43
+msgid "Browser type / browser version"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:44
+msgid "used operating system"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:45
+msgid "Referrer URL"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:46
+msgid "Hostname of the accessing computer"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:47
+msgid "Time of the server request"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:49
+msgid ""
+"These data cannot be assigned to specific persons. This data will not be "
+"merged with other data sources. We reserve the right to subsequently "
+"check this data if we become aware of concrete indications of illegal "
+"use."
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:50
+msgid "Contradiction advertising mails"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:51
+msgid ""
+"We hereby object to the use of contact data published within the scope of"
+" the imprint obligation to send unsolicited advertising and information "
+"material. The operators of this website expressly reserve the right to "
+"take legal action against unsolicited mailing or e-mailing of spam and "
+"other similar advertising materials."
 msgstr ""
 
 #: webapp/templates/sensor-import.html:15

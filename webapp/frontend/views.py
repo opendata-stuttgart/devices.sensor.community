@@ -22,16 +22,16 @@ def index():
     return render_template('index.html')
 
 
-@frontend.route('/impressum')
-def impressum():
-    return render_template('impressum.html')
+@frontend.route('/imprint')
+def imprint():
+    return render_template('imprint.html')
 
 
-@frontend.route('/datenschutz')
-def datenschutz():
-    return render_template('datenschutz.html')
+@frontend.route('/privacy-policy')
+def privacy_policy():
+    return render_template('privacy-policy.html')
 
 
-@frontend.route('/informationen/projekt')
+@frontend.route('/about')
 def informationen_projekt():
-    return render_template('informationen-projekt.html')
+    return render_template('about.html')

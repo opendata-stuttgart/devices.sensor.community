@@ -35,11 +35,11 @@ def dashboard():
     return render_template('meine-luftdaten.html')
 
 
-@personal.route('/meine-sensoren')
+@personal.route('/my-sensors')
 @personal.route('/sensors')
 @login_required
 def sensor_list():
-    return render_template('meine-sensoren.html', nodes=current_user.nodes)
+    return render_template('my-sensors.html', nodes=current_user.nodes)
 
 
 @personal.route('/mein-sensor/<id>/daten')
@@ -84,7 +84,7 @@ def sensor_data(id):
                 else:
                     sensor_value['value_type_unit'] = ''
                     sensor_value['value_type_name'] = sensor_value['value_type']
-    return render_template('mein-sensor-daten.html', node=node, sensors=sensors)
+    return render_template('my-sensor-data.html', node=node, sensors=sensors)
 
 
 @personal.route('/mein-sensor/<id>/einstellungen', methods=['GET', 'POST'])
@@ -101,10 +101,10 @@ def sensor_settings(id):
         flash('Einstellungen erfolgreich gespeichert.', 'success')
         return redirect(url_for('.sensor_list'))
 
-    return render_template('mein-sensor-einstellungen.html', node=node, form=form)
+    return render_template('my-sensor-settings.html', node=node, form=form)
 
 
-@personal.route('/mein-sensor/<id>/give', methods=['GET', 'POST'])
+@personal.route('/my-sensor/<id>/give', methods=['GET', 'POST'])
 @personal.route('/sensors/<id>/transfer', methods=['GET', 'POST'])
 @login_required
 def sensor_transfer(id):
@@ -125,5 +125,5 @@ def sensor_transfer(id):
             '%s gave node node %s to %s' % (current_user.email, id, form.email.data.lower()))
 
         db.session.commit()
-        return render_template('mein-sensor-give-success.html', node=node)
-    return render_template('mein-sensor-give.html', node=node, form=form)
+        return render_template('my-sensor-give-success.html', node=node)
+    return render_template('my-sensor-give.html', node=node, form=form)

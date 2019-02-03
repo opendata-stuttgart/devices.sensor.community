@@ -150,7 +150,7 @@ def logout():
     return redirect('/')
 
 
-@users.route('/meine-einstellungen', methods=['GET', 'POST'])
+@users.route('/my-settings', methods=['GET', 'POST'])
 @users.route('/settings', methods=['GET', 'POST'])
 @login_required
 def settings():
@@ -162,10 +162,10 @@ def settings():
         current_app.logger.info('%s updated his / her user data' % (current_user.email))
         flash('Nutzerdaten gespeichert', 'success')
         return redirect('/meine-luftdaten')
-    return render_template('meine-einstellungen.html', form=form)
+    return render_template('my-settings.html', form=form)
 
 
-@users.route('/mein-passwort', methods=['GET', 'POST'])
+@users.route('/my-password', methods=['GET', 'POST'])
 @users.route('/password', methods=['GET', 'POST'])
 @login_required
 def password():
@@ -180,4 +180,4 @@ def password():
             return redirect('/meine-luftdaten')
         else:
             flash('Altes Passwort nicht korrekt', 'danger')
-    return render_template('mein-passwort.html', form=form)
+    return render_template('my-password.html', form=form)

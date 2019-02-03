@@ -54,8 +54,8 @@ for example
     
 update langauge
 
-    pybabel update -i ./babel/messages.pot -d ./webapp/translations
+    pybabel update -i ./babel/messages.pot -d ./translations
 
 compile into binary
 
-    pybabel compile -d ./webapp/translations/
+    pybabel compile -d ./translations/
