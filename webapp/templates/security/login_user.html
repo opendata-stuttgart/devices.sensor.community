@@ -12,5 +12,10 @@
         {{ render_field_with_errors(login_user_form.remember) }}
         {{ render_submit(login_user_form.submit, wide=True, class_='btn btn-lg btn-primary btn-block') }}
     </form>
+
+    <div class="my-3 btn-group-vertical btn-block">
+        <a href="{{ url_for_security('register') }}" class="btn btn-secondary btn-sm">Register</a>
+        <a href="{{ url_for_security('forgot_password') }}" class="btn btn-info btn-sm">Password reminder</a>
+    </div>
 </div>
 {% endblock %}
