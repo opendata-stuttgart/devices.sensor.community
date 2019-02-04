@@ -30,8 +30,3 @@ def imprint():
 @frontend.route('/privacy-policy')
 def privacy_policy():
     return render_template('privacy-policy.html')
-
-
-@frontend.route('/about')
-def informationen_projekt():
-    return render_template('about.html')

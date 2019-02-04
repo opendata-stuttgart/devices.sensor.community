@@ -39,7 +39,7 @@ To create new database migration:
 ### Gulp automatic rebuilds
 To start automatic CSS/JS rebuilds on change use this:
 
-    docker-comopose run --rm gulp npm start
+    docker-compose run --rm gulp npm start
 
 
 

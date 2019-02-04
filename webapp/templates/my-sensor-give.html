@@ -7,12 +7,9 @@
             <form method="POST" action="/mein-sensor/{{ node.id }}/give">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>Sensor {{ node.uid }} übergeben</h1>
-                        <p>Hiermit können Sie Sensoren an einen anderen Menschen übergeben. Dies ist besonders dann
-                            hilfreich, wenn Sie einen Sensor für eine Freundin oder einen Freund mitbestellt haben und
-                            diesen nun an ihr oder ihn übertragen wollen.</p>
-                        <p><strong>Achtung! Nach der Übergabe haben Sie natürlich keine Kontrolle mehr über den
-                            Sensor.</strong></p>
+                        <h1>{{ _('Sensor') }} {{ node.uid }}{{ _('hand over') }} </h1>
+                        <p>{{ _('This allows you to transfer sensors to another person. This is especially useful if you have ordered a sensor for a friend and want to transfer it to him or her.') }}  </p>
+                        <p><strong>{{ _('Warning! After the transfer you have no more control over the sensor!') }}  </strong></p>
                     </div>
                 </div>
 
@@ -26,7 +23,7 @@
 
                 <div class="row m-3">
                     <div class="col-md-6 offset-md-3">
-                        <a href="/my-sensors" class="form-control btn btn-info">Zurück zu meinen Sensoren</a>
+                        <a href="/my-sensors" class="form-control btn btn-info">{{ _('Back to my sensors') }}</a>
                     </div>
                 </div>
                 {{ form.csrf_token }}

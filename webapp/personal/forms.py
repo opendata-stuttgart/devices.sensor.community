@@ -84,7 +84,7 @@ class SensorLocationForm(FlaskForm):
                 message=_('Please enter the number between 1 and 10'),
             )
         ],
-        description='Keine Büroflächen, sondern potentielle Feinstaubproduzenten 1 = sehr wenig, 10 = sehr viel.',
+        description='No office space, but potential fine dust producers 1 = very little, 10 = very much.',
     )
     oven_in_area = IntegerField(
         _('How many private stoves or fireplaces are within a 100m radius?'),
@@ -98,7 +98,7 @@ class SensorLocationForm(FlaskForm):
                 message=_('Please enter the number between 1 and 10'),
             )
         ],
-        description='Riecht es in Ihrem Wohngebiet sehr nach solchem Rauch? 1 = sehr wenig, 10 = sehr viel.',
+        description='Does it smell very much like such smoke in your area? 1 = very little, 10 = very much.',
     )
     traffic_in_area = IntegerField(
         _('How much traffic is there within a 100m radius?'),
@@ -112,7 +112,7 @@ class SensorLocationForm(FlaskForm):
                 message=_('Please enter the number between 1 and 10'),
             )
         ],
-        description='Wie nah dran sind solche Straßen? 1 = sehr wenig weiter weg, 10 = sehr viel Verkehr direkt vor der Haustür.',
+        description='How close are those roads? 1 = very little further away, 10 = a lot of traffic right on your doorstep.',
     )
 
 class SensorSettingsForm(FlaskForm):
@@ -129,7 +129,7 @@ class SensorSettingsForm(FlaskForm):
         _('Sensor level above ground (in cm)'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie die Höhe des Sensors über dem Boden an.'
+                message='Please indicate the height of the sensor above the ground.'
             )
         ]
     )
@@ -137,10 +137,10 @@ class SensorSettingsForm(FlaskForm):
         _('Sensor location relative to the traffic'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie den Befestigungsort des Sensors an.'
+                message='Please indicate the mounting location of the sensor.'
             )
         ],
-        description='1 = auf der Gartenseite, sehr gut abgeschirmt von allen Straßen, 10 = der Sensor ist an einer Hauswand direkt an der Straße. Bei diesem Wert ist irrelevant, wie groß die Straße ist, es geht nur darum, wo der Sensor am Haus angebracht ist.'
+        description='1 = on the garden side, very well shielded from all streets, 10 = the sensor is on a house wall directly on the street. With this value it is irrelevant how big the street is, it is only about where the sensor is attached to the house.'
     )
     location = FormField(SensorLocationForm)
     description = TextAreaField(

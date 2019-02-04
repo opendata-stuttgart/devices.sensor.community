@@ -10,8 +10,9 @@
     <div class="fullwidth clearfix">
         <div id="topcontainer" class="bodycontainer clearfix">
             <p><img src="../../static/images/logo.svg" alt="logo"/></p>
-            <h1><span class="title">Luftdaten</span><br/>selber <span class="strikethrough">messen</span> konfigurieren
-            </h1>
+            <h1>{{ _('Activation required') }} 
+            <span class="title">{{ _('Configure air quality sensor yourself') }}</span>\
+        </h1>
         </div>
     </div>
 
@@ -22,7 +23,7 @@
             <form method="POST" action="/register-minimal?email={{ form.email.data|urlencode }}">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>Registrierung</h1>
+                        <h1>{{ _('Registration') }}</h1>
                     </div>
                 </div>
                 <div class="row">

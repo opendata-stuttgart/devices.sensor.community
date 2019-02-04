@@ -10,16 +10,16 @@
         <div id="topcontainer" class="bodycontainer clearfix">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Meine Sensoren</h1>
-                    <p>Alle Ihrem Account zugeordneten Sensoren können Sie in dieser Übersicht finden.</p>
+                    <h1>{{ _('My sensors') }}</h1>
+                    <p> {{ _('All sensors assigned to your account can be found in this overview.') }} </p>
                     <table class="table table-striped">
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th class="hidden-sm-down">Sensor UID</th>
-                            <th>Name</th>
-                            <th class="hidden-md-down">Letztes Update</th>
-                            <th class="text-right">Funktionen</th>
+                            <th class="hidden-sm-down">{{ _('Sensor UID') }} </th>
+                            <th>{{ _('Name') }} </th>
+                            <th class="hidden-md-down">{{ _('Last Update') }} </th>
+                            <th class="text-right">{{ _('Functions') }}</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -30,9 +30,9 @@
                                 <td>{{ node.name }}</td>
                                 <td class="hidden-md-down">{{ node.modified }}</td>
                                 <td class="text-right">
-                                    <a class="btn btn-sm btn-info" href="{{ url_for('personal.sensor_data', id=node.id) }}">Daten</a>
-                                    <a class="btn btn-sm btn-primary" href="{{ url_for('personal.sensor_settings', id=node.id) }}">Einstellungen</a>
-                                    <a class="btn btn-sm btn-warning" href="{{ url_for('personal.sensor_transfer', id=node.id) }}">Sensor übergeben</a>
+                                    <a class="btn btn-sm btn-info" href="{{ url_for('personal.sensor_data', id=node.id) }}">{{ _('Data') }}</a>
+                                    <a class="btn btn-sm btn-primary" href="{{ url_for('personal.sensor_settings', id=node.id) }}">{{ _('Settings') }} </a>
+                                    <a class="btn btn-sm btn-warning" href="{{ url_for('personal.sensor_transfer', id=node.id) }}">{{ _('Hand over sensor') }}</a>
                                 </td>
                             </tr>
                         {% endfor %}

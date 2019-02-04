@@ -13,6 +13,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 from flask import (Flask, Blueprint, render_template, current_app, request, flash, url_for, redirect, session, abort,
                    jsonify, send_from_directory)
+from flask_babel import lazy_gettext as _
 from flask_login import current_user, login_required
 from ..external_data import ExternalNodes
 from ..extensions import celery, mail
@@ -43,17 +44,15 @@ def sensor_import_worker(new_sensors):
             email=sensor_email
         )
         if save_data_status == -1:
-            msg = Message(
-                "Kritischer Datenbankfehler",
+            msg = Message(_("Critical database error."),
                 sender=current_app.config['MAILS_FROM'],
                 recipients=[current_app.config['MAILS_FROM']],
-                body="Kritischer Datenbankfehler beim luftdaten.org Import"
+                body=_("Critical database error on meine.luftdaten.info import.")
             )
             # print(msg)
             mail.send(msg)
         if sensor_email and save_data_status != -1:
-            msg = Message(
-                "Ihr Feinstaubsensor wurde registriert",
+            msg = Message(_("Your particulate sensor has been registered."),
                 sender=current_app.config['MAILS_FROM'],
                 recipients=[sensor_email],
                 body=render_template('emails/sensor-registered.txt',

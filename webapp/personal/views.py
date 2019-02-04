@@ -15,6 +15,7 @@ from flask import (Flask, Blueprint, render_template, current_app, request, flas
                    jsonify, send_from_directory)
 from flask_login import current_user, login_required
 from flask_mail import Message
+from flask_babel import lazy_gettext as _
 import requests
 import dateutil.parser
 import pytz
@@ -24,6 +25,7 @@ from .forms import SensorGiveForm, SensorSettingsForm
 from ..external_data.models import Node
 from ..common.helpers import get_object_or_404
 from ..extensions import mail, db
+
 
 personal = Blueprint('personal', __name__)
 
@@ -42,7 +44,7 @@ def sensor_list():
     return render_template('my-sensors.html', nodes=current_user.nodes)
 
 
-@personal.route('/mein-sensor/<id>/daten')
+@personal.route('/my-sensor/<id>/data')
 @personal.route('/sensors/<id>/data')
 @login_required
 def sensor_data(id):
@@ -70,24 +72,24 @@ def sensor_data(id):
         if sensor.data['sensordatavalues']:
             for sensor_value in sensor.data['sensordatavalues']:
                 if sensor_value['value_type'] == 'P1':
-                    sensor_value['value_type_name'] = 'Feinstaub 10 µm'
+                    sensor_value['value_type_name'] = _('Fine dust 10 µm')   
                     sensor_value['value_type_unit'] = 'µg'
                 elif sensor_value['value_type'] == 'P2':
-                    sensor_value['value_type_name'] = 'Feinstaub 2,5 µm'
+                    sensor_value['value_type_name'] = _('Fine dust 2.5 µm')  
                     sensor_value['value_type_unit'] = 'µg'
                 elif sensor_value['value_type'] == 'humidity':
                     sensor_value['value_type_unit'] = '%'
-                    sensor_value['value_type_name'] = 'Luftfeuchtigkeit'
+                    sensor_value['value_type_name'] = _('Humidity') 
                 elif sensor_value['value_type'] == 'temperature':
                     sensor_value['value_type_unit'] = '°C'
-                    sensor_value['value_type_name'] = 'Temperatur'
+                    sensor_value['value_type_name'] = _('Temperature')
                 else:
                     sensor_value['value_type_unit'] = ''
                     sensor_value['value_type_name'] = sensor_value['value_type']
     return render_template('my-sensor-data.html', node=node, sensors=sensors)
 
 
-@personal.route('/mein-sensor/<id>/einstellungen', methods=['GET', 'POST'])
+@personal.route('/my-sensor/<id>/settings', methods=['GET', 'POST'])
 @personal.route('/sensors/<id>/settings', methods=['GET', 'POST'])
 @login_required
 def sensor_settings(id):
@@ -98,7 +100,7 @@ def sensor_settings(id):
         form.populate_obj(node)
         db.session.commit()
         current_app.logger.info('%s updated node %s' % (current_user.email, id))
-        flash('Einstellungen erfolgreich gespeichert.', 'success')
+        flash(_('Settings saved successfully.'), 'success')
         return redirect(url_for('.sensor_list'))
 
     return render_template('my-sensor-settings.html', node=node, form=form)
@@ -112,13 +114,12 @@ def sensor_transfer(id):
     form = SensorGiveForm()
     if form.validate_on_submit():
         node.email = form.email.data.lower()
-
-        msg = Message(
-            "Ein Feinstaubsensor wurde Ihnen übertragen",
+        
+        msg = Message(_('A fine dust sensor was transferred to you'),
             sender=current_app.config['MAILS_FROM'],
             recipients=[form.email.data.lower()],
             body=render_template('emails/sensor-given.txt',
-                                    login_url="%s/login" % (current_app.config['PROJECT_URL']))
+            login_url="%s/login" % (current_app.config['PROJECT_URL']))
         )
         mail.send(msg)
         current_app.logger.info(

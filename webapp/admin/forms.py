@@ -11,13 +11,13 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 """
 
 from flask_wtf import FlaskForm
+from flask_babel import lazy_gettext as _
 from wtforms import (BooleanField, TextField, HiddenField, PasswordField, DecimalField, DateTimeField, validators,
                      IntegerField, SubmitField, TextAreaField)
 from . import constants
 
 
+
 class SensorImportForm(FlaskForm):
-    data_field = TextAreaField(
-        'Sensoren und E-Mail-Adressen'
-    )
-    submit = SubmitField('Sensoren importieren')
+    data_field = TextAreaField(_('Sensors and email addresses'))
+    submit = SubmitField(_('Import Sensors') )

@@ -154,7 +154,7 @@ msgstr ""
 
 #: webapp/templates/imprint.html:8 webapp/templates/layout.html:88
 msgid "Imprint"
-msgstr ""
+msgstr "Impressum"
 
 #: webapp/templates/imprint.html:14
 msgid "Informations according to § 5 TMG"
