@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-03 15:34+0100\n"
+"POT-Creation-Date: 2019-02-08 15:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,26 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
+
+#: webapp/admin/forms.py:22
+msgid "Sensors and email addresses"
+msgstr ""
+
+#: webapp/admin/forms.py:23
+msgid "Import Sensors"
+msgstr ""
+
+#: webapp/admin/helpers.py:47
+msgid "Critical database error."
+msgstr ""
+
+#: webapp/admin/helpers.py:50
+msgid "Critical database error on meine.luftdaten.info import."
+msgstr ""
+
+#: webapp/admin/helpers.py:55
+msgid "Your particulate sensor has been registered."
+msgstr ""
 
 #: webapp/personal/forms.py:25
 msgid "Street"
@@ -139,6 +159,30 @@ msgstr ""
 msgid "You can't transfer the sensor to yourself"
 msgstr ""
 
+#: webapp/personal/views.py:75
+msgid "Fine dust 10 µm"
+msgstr ""
+
+#: webapp/personal/views.py:78
+msgid "Fine dust 2.5 µm"
+msgstr ""
+
+#: webapp/personal/views.py:82
+msgid "Humidity"
+msgstr ""
+
+#: webapp/personal/views.py:85
+msgid "Temperature"
+msgstr ""
+
+#: webapp/personal/views.py:103
+msgid "Settings saved successfully."
+msgstr ""
+
+#: webapp/personal/views.py:118
+msgid "A fine dust sensor was transferred to you"
+msgstr ""
+
 #: webapp/templates/401.html:8
 msgid "Access prohibited"
 msgstr ""
@@ -175,43 +219,81 @@ msgstr ""
 msgid "Contact: Website of Ernesto Ruge:"
 msgstr ""
 
-#: webapp/templates/index.html:16
+#: webapp/templates/index.html:7 webapp/templates/register-minimal.html:14
+msgid "Configure air quality sensor yourself"
+msgstr ""
+
+#: webapp/templates/index.html:15
 msgid "Configure Luftdaten"
 msgstr ""
 
-#: webapp/templates/index.html:17
+#: webapp/templates/index.html:16
 msgid ""
 "The main purpose of this page is to enable you, as the owner of a fine "
 "dust sensor, to configure the location and other parameters yourself. "
 "Click here to "
 msgstr ""
 
-#: webapp/templates/index.html:18
+#: webapp/templates/index.html:17
 msgid "General information can be found at"
 msgstr ""
 
-#: webapp/templates/index.html:18
+#: webapp/templates/index.html:17
 msgid ", as well as the "
 msgstr ""
 
-#: webapp/templates/index.html:18
+#: webapp/templates/index.html:17
 msgid "building instructions."
 msgstr ""
 
-#: webapp/templates/index.html:18
+#: webapp/templates/index.html:17
 msgid "Sensor data can be found on "
 msgstr ""
 
-#: webapp/templates/index.html:18
+#: webapp/templates/index.html:17
 msgid "on the fine dust map"
 msgstr ""
 
-#: webapp/templates/index.html:19
-msgid "oder"
+#: webapp/templates/index.html:18
+msgid "or"
 msgstr ""
 
-#: webapp/templates/index.html:19
+#: webapp/templates/index.html:18
 msgid "download as CSVs"
+msgstr ""
+
+#: webapp/templates/index.html:35
+msgid "Join us!"
+msgstr ""
+
+#: webapp/templates/index.html:36
+msgid ""
+"The city of the future belongs to its citizens. The digital tools, the "
+"Maker Movement and Citizen Science are leading to more and more people "
+"being given the opportunity to design the city themselves."
+msgstr ""
+
+#: webapp/templates/index.html:38
+msgid "About the project"
+msgstr ""
+
+#: webapp/templates/index.html:39
+msgid ""
+"The OK Lab Stuttgart is part of the program Code for Germany of the Open "
+"Knowledge Foundation Germany. The aim of the program is to promote "
+"developments in the areas of transparency, Open Data and Citizen Science."
+msgstr ""
+
+#: webapp/templates/index.html:40
+msgid ""
+"Regional groups consisting of designers, developers, journalists and "
+"others meet regularly in Labs. They develop apps that inform, positively "
+"shape and support society and make the work of administrations and "
+"authorities more transparent."
+msgstr ""
+
+#: webapp/templates/index.html:41
+msgid "Code a difference: Use your skills to improve your city!"
 msgstr ""
 
 #: webapp/templates/invalid-email.html:8
@@ -252,6 +334,10 @@ msgstr ""
 msgid "Password Reset"
 msgstr ""
 
+#: webapp/templates/login.html:12
+msgid "Configure air data sensor yourself  "
+msgstr ""
+
 #: webapp/templates/meine-luftdaten.html:11
 msgid "Meine Luftdaten"
 msgstr ""
@@ -281,7 +367,7 @@ msgid "Password "
 msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:23
-msgid "Change password "
+msgid "Change password. "
 msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:24
@@ -289,10 +375,11 @@ msgid "Logout "
 msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:25
-msgid "Logout"
+msgid "Logout."
 msgstr ""
 
-#: webapp/templates/my-password.html:10
+#: webapp/templates/my-password.html:10 webapp/templates/my-sensors.html:34
+#: webapp/templates/my-settings.html:15
 msgid "Settings"
 msgstr ""
 
@@ -337,7 +424,27 @@ msgid "An e-mail was sent to the new owner"
 msgstr ""
 
 #: webapp/templates/my-sensor-give-success.html:15
+#: webapp/templates/my-sensor-give.html:26
 msgid "Back to my sensors"
+msgstr ""
+
+#: webapp/templates/my-sensor-give.html:10
+msgid "Sensor"
+msgstr ""
+
+#: webapp/templates/my-sensor-give.html:10
+msgid "hand over"
+msgstr ""
+
+#: webapp/templates/my-sensor-give.html:11
+msgid ""
+"This allows you to transfer sensors to another person. This is especially"
+" useful if you have ordered a sensor for a friend and want to transfer it"
+" to him or her."
+msgstr ""
+
+#: webapp/templates/my-sensor-give.html:12
+msgid "Warning! After the transfer you have no more control over the sensor!"
 msgstr ""
 
 #: webapp/templates/my-sensor-settings.html:18
@@ -374,6 +481,42 @@ msgstr ""
 
 #: webapp/templates/my-sensor-settings.html:68
 msgid "For those interested: the geocoordinates resulting from the map."
+msgstr ""
+
+#: webapp/templates/my-sensors.html:13
+msgid "My sensors"
+msgstr ""
+
+#: webapp/templates/my-sensors.html:14
+msgid "All sensors assigned to your account can be found in this overview."
+msgstr ""
+
+#: webapp/templates/my-sensors.html:19
+msgid "Sensor UID"
+msgstr ""
+
+#: webapp/templates/my-sensors.html:20
+msgid "Name"
+msgstr ""
+
+#: webapp/templates/my-sensors.html:21
+msgid "Last Update"
+msgstr ""
+
+#: webapp/templates/my-sensors.html:22
+msgid "Functions"
+msgstr ""
+
+#: webapp/templates/my-sensors.html:33
+msgid "Data"
+msgstr ""
+
+#: webapp/templates/my-sensors.html:35
+msgid "Hand over sensor"
+msgstr ""
+
+#: webapp/templates/my-settings.html:16
+msgid "Here you can change your settings."
 msgstr ""
 
 #: webapp/templates/privacy-policy.html:13
@@ -534,6 +677,72 @@ msgid ""
 "material. The operators of this website expressly reserve the right to "
 "take legal action against unsolicited mailing or e-mailing of spam and "
 "other similar advertising materials."
+msgstr ""
+
+#: webapp/templates/recover-fail.html:13
+msgid "Set password Error"
+msgstr ""
+
+#: webapp/templates/recover-fail.html:14
+msgid ""
+"Unfortunately the link is not correct. Either it is too old, or it was "
+"not copied completely. Please try again."
+msgstr ""
+
+#: webapp/templates/recover-mail-sent-again.html:13
+#: webapp/templates/recover-mail-sent.html:13
+msgid "Mail sent"
+msgstr ""
+
+#: webapp/templates/recover-mail-sent-again.html:14
+msgid "Please look into your mailbox to reset your password."
+msgstr ""
+
+#: webapp/templates/recover-mail-sent.html:14
+msgid ""
+"Your account was not active yet. Please look into your mailbox to reset "
+"your password and activate your account."
+msgstr ""
+
+#: webapp/templates/recover-set-password.html:14
+msgid "Set password"
+msgstr ""
+
+#: webapp/templates/recover.html:14
+msgid "Forgot Passwort?"
+msgstr ""
+
+#: webapp/templates/register-existing-wait-for-mail.html:13
+#: webapp/templates/register-minimal.html:13
+msgid "Activation required"
+msgstr ""
+
+#: webapp/templates/register-existing-wait-for-mail.html:14
+msgid ""
+"Since you are logging in for the first time, your e-mail address must be "
+"confirmed. Please look in your mailbox to get access to your sensors."
+msgstr ""
+
+#: webapp/templates/register-minimal.html:26
+msgid "Registration"
+msgstr ""
+
+#: webapp/templates/sensor-import-status.html:13
+msgid "Sensor Mass Import: Status"
+msgstr ""
+
+#: webapp/templates/sensor-import-status.html:14
+msgid ""
+"You can see all current imports in this overview. Click on Reload to "
+"update the status."
+msgstr ""
+
+#: webapp/templates/sensor-import-status.html:18
+msgid "ID"
+msgstr ""
+
+#: webapp/templates/sensor-import-status.html:19
+msgid "Data (Start)"
 msgstr ""
 
 #: webapp/templates/sensor-import.html:15

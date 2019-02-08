@@ -46,15 +46,18 @@ To start automatic CSS/JS rebuilds on change use this:
 
 ### Create new langauge
 
-    pybabel init -i ./babel/messages.pot -d ./webapp/translations -l country_code
+extract text and lazy_gettext() functions
 
-for example
-
-    pybabel extract -F ./babel/babel.cfg -o ./babel/messages.pot ./webapp/
+    pybabel extract -F ./babel/babel.cfg -k lazy_gettext -o ./babel/messages.pot .
     
 update langauge
 
     pybabel update -i ./babel/messages.pot -d ./translations
+
+create translated language
+
+    pybabel init -i ./babel/messages.pot -d ./translations -l country_code
+
 
 compile into binary
 
