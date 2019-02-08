@@ -52,6 +52,7 @@ extract text and lazy_gettext() functions
     
 update langauge
 
+    pybabel extract -F ./babel/babel.cfg -k _l -o ./babel/messages.pot .    
     pybabel update -i ./babel/messages.pot -d ./translations
 
 create translated language

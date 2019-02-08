@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-08 15:21+0100\n"
+"POT-Creation-Date: 2019-02-08 18:10+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -219,7 +219,7 @@ msgstr ""
 msgid "Contact: Website of Ernesto Ruge:"
 msgstr ""
 
-#: webapp/templates/index.html:7 webapp/templates/register-minimal.html:14
+#: webapp/templates/index.html:7 webapp/templates/register-minimal.html:13
 msgid "Configure air quality sensor yourself"
 msgstr ""
 
@@ -713,7 +713,6 @@ msgid "Forgot Passwort?"
 msgstr ""
 
 #: webapp/templates/register-existing-wait-for-mail.html:13
-#: webapp/templates/register-minimal.html:13
 msgid "Activation required"
 msgstr ""
 
@@ -723,7 +722,7 @@ msgid ""
 "confirmed. Please look in your mailbox to get access to your sensors."
 msgstr ""
 
-#: webapp/templates/register-minimal.html:26
+#: webapp/templates/register-minimal.html:25
 msgid "Registration"
 msgstr ""
 
@@ -769,5 +768,98 @@ msgid ""
 "If an email address has been specified, the owner will be notified with "
 "an email about their\n"
 "                            new sensor."
+msgstr ""
+
+#: webapp/users/forms.py:22 webapp/users/forms.py:36 webapp/users/forms.py:58
+#: webapp/users/forms.py:79
+msgid "E-Mail addresse"
+msgstr ""
+
+#: webapp/users/forms.py:25 webapp/users/forms.py:39 webapp/users/forms.py:61
+#: webapp/users/forms.py:82
+msgid "Please enter an e-mail address."
+msgstr ""
+
+#: webapp/users/forms.py:28 webapp/users/forms.py:42 webapp/users/forms.py:64
+#: webapp/users/forms.py:85
+msgid "Please enter a correct e-mail address."
+msgstr ""
+
+#: webapp/users/forms.py:32
+msgid "next"
+msgstr ""
+
+#: webapp/users/forms.py:46 webapp/users/forms.py:93
+msgid "Password"
+msgstr ""
+
+#: webapp/users/forms.py:49 webapp/users/forms.py:96 webapp/users/forms.py:108
+#: webapp/users/forms.py:136
+msgid "Please enter a password."
+msgstr ""
+
+#: webapp/users/forms.py:53 webapp/users/forms.py:113
+msgid "Stay logged in."
+msgstr ""
+
+#: webapp/users/forms.py:54
+msgid "login"
+msgstr ""
+
+#: webapp/users/forms.py:68
+msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>"
+msgstr ""
+
+#: webapp/users/forms.py:71
+msgid "Please agree to the privacy policy."
+msgstr ""
+
+#: webapp/users/forms.py:75
+msgid "register"
+msgstr ""
+
+#: webapp/users/forms.py:89
+msgid "Password request via email"
+msgstr ""
+
+#: webapp/users/forms.py:101 webapp/users/forms.py:130
+#, python-format
+msgid "Password must consist of at least %s letters."
+msgstr ""
+
+#: webapp/users/forms.py:105
+msgid "Password (repeat)"
+msgstr ""
+
+#: webapp/users/forms.py:110 webapp/users/forms.py:137
+msgid "Passwords must be identical."
+msgstr ""
+
+#: webapp/users/forms.py:114 webapp/users/forms.py:140
+msgid "Save Password"
+msgstr ""
+
+#: webapp/users/forms.py:118
+msgid "First name."
+msgstr ""
+
+#: webapp/users/forms.py:119
+msgid "Last name."
+msgstr ""
+
+#: webapp/users/forms.py:120
+msgid "Save user data."
+msgstr ""
+
+#: webapp/users/forms.py:124
+msgid "Old Password"
+msgstr ""
+
+#: webapp/users/forms.py:125
+msgid "New password"
+msgstr ""
+
+#: webapp/users/forms.py:134
+msgid "New password (repeat)"
 msgstr ""
 

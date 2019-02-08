@@ -12,140 +12,129 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 """
 
 from flask_wtf import FlaskForm
+from flask_babel import lazy_gettext as _
 from wtforms import (BooleanField, TextField, HiddenField, PasswordField, DateTimeField, validators, IntegerField,
                      SubmitField)
 from . import constants
 
 
 class EmailForm(FlaskForm):
-    email = TextField(
-        'E-Mail Adresse',
+    email = TextField(_('E-Mail addresse'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie eine E-Mail-Adresse an'
+                message=_('Please enter an e-mail address.') 
             ),
             validators.Email(
-                message='Bitte geben Sie eine korrekte Mailadresse an.'
+                message=_('Please enter a correct e-mail address.')  
             )
         ]
     )
-    submit = SubmitField('weiter')
+    submit = SubmitField(_('next') )
 
 
 class LoginForm(FlaskForm):
-    email = TextField(
-        'E-Mail Adresse',
+    email = TextField(_('E-Mail addresse'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie eine E-Mail-Adresse an'
+                message=_('Please enter an e-mail address.')
             ),
             validators.Email(
-                message='Bitte geben Sie eine korrekte Mailadresse an.'
+                message=_('Please enter a correct e-mail address.') 
             )
         ]
     )
-    password = PasswordField(
-        'Passwort',
+    password = PasswordField(_('Password'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie ein Passwort ein.'
+                message=_('Please enter a password.') 
             )
         ]
     )
-    remember_me = BooleanField('Eingeloggt bleiben', default=False)
-    submit = SubmitField('login')
+    remember_me = BooleanField(_('Stay logged in.') , default=False)
+    submit = SubmitField(_('login'))
 
 
 class MinimalRegisterForm(FlaskForm):
-    email = TextField(
-        'E-Mail Adresse',
+    email = TextField(_('E-Mail addresse'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie eine E-Mail-Adresse an'
+                message=_('Please enter an e-mail address.')
             ),
             validators.Email(
-                message='Bitte geben Sie eine korrekte Mailadresse an.'
+                message=_('Please enter a correct e-mail address.') 
             )
         ]
     )
-    privacy = BooleanField(
-        'Ich stimme den <a href="/privacy-policy">Datenschutzbestimmungen</a> zu',
+    privacy = BooleanField(_('I agree to the <a href="/privacy-policy">Privacy policy</a>'),
         [
             validators.DataRequired(
-                message='Bitte stimmen Sie den Datenschutzbestimmungen zu.'
+                message=_('Please agree to the privacy policy.') 
             )
         ]
     )
-    submit = SubmitField('registrieren')
+    submit = SubmitField(_('register'))
 
 
 class RecoverForm(FlaskForm):
-    email = TextField(
-        'E-Mail Adresse',
+    email = TextField(_('E-Mail addresse'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie eine E-Mail-Adresse an'
+                message=_('Please enter an e-mail address.')
             ),
             validators.Email(
-                message='Bitte geben Sie eine korrekte Mailadresse an.'
+                message=_('Please enter a correct e-mail address.') 
             )
         ]
     )
-    submit = SubmitField('Password via E-Mail anfordern')
+    submit = SubmitField(_('Password request via email'))
 
 
 class RecoverSetForm(FlaskForm):
-    password = PasswordField(
-        'Passwort',
+    password = PasswordField(_('Password'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie ein Passwort ein.'
+                message=_('Please enter a password.')
             ),
             validators.Length(
                 min=constants.MIN_PASSWORD_LEN,
                 max=constants.MAX_PASSWORD_LEN,
-                message='Passwort muss aus mindestens %s Buchstaben bestehen.' % (constants.MIN_PASSWORD_LEN)
+                message=_('Password must consist of at least %s letters.') % (constants.MIN_PASSWORD_LEN)
             )
         ]
     )
-    password_repeat = PasswordField(
-        'Passwort (Wiederholung)',
+    password_repeat = PasswordField(_('Password (repeat)'),
         [
             validators.DataRequired(
-                message='Bitte geben Sie ein Passwort ein.'
+                message=_('Please enter a password.') 
             ),
-            validators.EqualTo('password', message='Passwörter müssen identisch sein.')
+            validators.EqualTo('password', message=_('Passwords must be identical.'))
         ]
     )
-    remember_me = BooleanField('Anschließend eingeloggt bleiben', default=False)
-    submit = SubmitField('Passwort speichern')
+    remember_me = BooleanField(_('Stay logged in.'), default=False)
+    submit = SubmitField(_('Save Password'))
 
 
 class UserDataForm(FlaskForm):
-    first_name = TextField('Vorname')
-    last_name = TextField('Nachname')
-    submit = SubmitField('Nutzerdaten speichern')
+    first_name = TextField(_('First name'))
+    last_name = TextField(_('Last name'))
+    submit = SubmitField(_('Save user data.'))
 
 
 class UserPasswordForm(FlaskForm):
-    old_password = PasswordField(
-        'Altes Passwort'
-    )
-    new_password = PasswordField(
-        'Neues Passwort',
+    old_password = PasswordField(_('Old Password'))
+    new_password = PasswordField((_('New password')),
         [
             validators.Length(
                 min=constants.MIN_PASSWORD_LEN,
                 max=constants.MAX_PASSWORD_LEN,
-                message='Passwort muss aus mindestens %s Buchstaben bestehen.' % (constants.MIN_PASSWORD_LEN)
+                message=_('Password must consist of at least %s letters.') % (constants.MIN_PASSWORD_LEN)
             )
         ]
     )
-    confirm = PasswordField(
-        'Neues Passwort (Wiederholung)',
+    confirm = PasswordField(_('New password (repeat)'),
         [
-            validators.DataRequired(message='Bitte geben Sie ein Passwort ein.'),
-            validators.EqualTo('new_password', message='Passwörter müssen identisch sein.')
+            validators.DataRequired(message=_('Please enter a password.')),
+            validators.EqualTo('new_password', message=_('Passwords must be identical.'))
         ]
     )
-    submit = SubmitField('Passwort speichern')
+    submit = SubmitField(_('Save Password'))
