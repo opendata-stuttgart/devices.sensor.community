@@ -711,7 +711,7 @@ msgid ""
 "The provider of the pages automatically collects and stores information "
 "in so-called server log files, which your browser automatically transmits"
 " to us. These are:"
-msgstr "The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:"
+msgstr "Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log Files, die Ihr Browser automatisch an uns übermittelt. Dies sind:"
 
 #: webapp/templates/privacy-policy.html:43
 msgid "Browser type / browser version"
@@ -898,7 +898,8 @@ msgstr ""
 msgid ""
 "Sincerely,\n"
 "    Your Luftdaten.info team"
-msgstr ""
+msgstr "Mit freundlichen Grüßen,
+Dein Luftdaten.info-Team"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
