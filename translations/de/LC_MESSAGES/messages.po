@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-08 18:10+0100\n"
+"POT-Creation-Date: 2019-02-09 00:31+0100\n"
 "PO-Revision-Date: 2019-02-08 15:22+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -26,7 +26,7 @@ msgstr "Sensoren und E-Mail-Adressen"
 msgid "Import Sensors"
 msgstr "Sensoren importieren"
 
-#: webapp/admin/helpers.py:47
+#: webapp/admin/helpers.py:47 webapp/users/views.py:57
 msgid "Critical database error."
 msgstr "Kritischer Datenbankfehler"
 
@@ -377,7 +377,9 @@ msgstr "Einstellungen"
 
 #: webapp/templates/meine-luftdaten.html:21
 msgid "View and change data, notification settings and passwords. "
-msgstr "Daten, Benachrichtigungseinstellungen und Passwörter einsehen und verändern."
+msgstr ""
+"Daten, Benachrichtigungseinstellungen und Passwörter einsehen und "
+"verändern."
 
 #: webapp/templates/meine-luftdaten.html:22
 msgid "Password "
@@ -523,7 +525,9 @@ msgstr "Meine Sensoren"
 
 #: webapp/templates/my-sensors.html:14
 msgid "All sensors assigned to your account can be found in this overview."
-msgstr "Alle Ihrem Account zugeordneten Sensoren können Sie in dieser Übersicht finden."
+msgstr ""
+"Alle Ihrem Account zugeordneten Sensoren können Sie in dieser Übersicht "
+"finden."
 
 #: webapp/templates/my-sensors.html:19
 msgid "Sensor UID"
@@ -871,6 +875,85 @@ msgstr ""
 "Wenn eine E-Mail-Adresse angegeben wurde, wird der Besitzer mit einer "
 "E-Mail über seinen neuen Sensor informiert."
 
+#: webapp/templates/emails/recover.html:11
+#: webapp/templates/emails/register-existing.html:11
+#: webapp/templates/emails/sensor-given.html:11
+#: webapp/templates/emails/sensor-registered.html:11
+msgid "Hello,"
+msgstr "Hallo"
+
+#: webapp/templates/emails/recover.html:13
+msgid "to reset your password, please use the following URL:"
+msgstr "um Ihr Passwort zurückzusetzen, nutzen Sie bitte die folgende URL:"
+
+#: webapp/templates/emails/recover.html:14
+msgid ""
+"If you have not requested a new password on luftdaten.info, you can "
+"ignore this e-mail."
+msgstr ""
+"Falls Sie kein neues Passwort auf luftdaten.info angefordert haben, so "
+"können Sie diese E-Mail ignorieren."
+
+#: webapp/templates/emails/recover.html:15
+#: webapp/templates/emails/register-existing.html:15
+#: webapp/templates/emails/sensor-given.html:15
+#: webapp/templates/emails/sensor-registered.html:15
+msgid ""
+"Sincerely,\n"
+"    Your Luftdaten.info team"
+msgstr ""
+
+#: webapp/templates/emails/register-existing.html:13
+msgid ""
+"in order to manage your sensor in the future, we have created an account "
+"for you. Please enter a password under the following link: "
+msgstr ""
+"um Ihren Sensor in Zukunft verwalten zu können, haben wir für Sie einen "
+"Account erstellt"
+
+#: webapp/templates/emails/register-existing.html:14
+msgid ""
+"If you have not created an account on luftdaten.info, you can ignore this"
+" e-mail."
+msgstr ""
+"Falls Sie keinen Account auf luftdaten.info erstellt haben, so können Sie"
+" diese E-Mail ignorieren."
+
+#: webapp/templates/emails/sensor-given.html:13
+msgid ""
+"a particulate matter sensor has been handed over to your control. Please "
+"log in with this mail address to take data and settings or to change "
+"them: "
+msgstr ""
+"ein Feinstaub-Sensor wurde Ihrer Kontrolle übergeben. Bitte melden Sie "
+"sich mit dieser Mailadresse an, Daten und Einstellungen einzunehmen oder "
+"auch zu ändern:"
+
+#: webapp/templates/emails/sensor-given.html:14
+msgid ""
+"If you have received a sensor by mistake, please report this at "
+"info@luftdaten.info."
+msgstr ""
+"Falls Sie Ihnen fälschlicherweise ein Sensor übergeben wurde, melden Sie "
+"dies bitte unter info@luftdaten.info."
+
+#: webapp/templates/emails/sensor-registered.html:13
+msgid ""
+"a fine dust sensor has been registered for you. Please log in with this "
+"mail address to take in or change data and settings: "
+msgstr ""
+"ein Feinstaub-Sensor wurde für Sie registriert. Bitte melden Sie sich mit"
+" dieser Mailadresse an, Daten und Einstellungen einzunehmen oder auch zu "
+"ändern:"
+
+#: webapp/templates/emails/sensor-registered.html:14
+msgid ""
+"If the sensor was registered for you by mistake, please report this to "
+"info@luftdaten.info."
+msgstr ""
+"Falls der Sensor fälschlicherweise für Sie registriert wurde, melden Sie "
+"dies bitte unter info@luftdaten.info."
+
 #: webapp/users/forms.py:22 webapp/users/forms.py:36 webapp/users/forms.py:58
 #: webapp/users/forms.py:79
 msgid "E-Mail addresse"
@@ -963,4 +1046,32 @@ msgstr "Neues Passwort"
 #: webapp/users/forms.py:134
 msgid "New password (repeat)"
 msgstr "Neues Passwort (Wiederholung)"
+
+#: webapp/users/models.py:129
+msgid "Create account to configure the fine dust sensor."
+msgstr "Account zur Konfiguration des Feinstaubsensors erstellen"
+
+#: webapp/users/views.py:82
+msgid "The password is incorrect"
+msgstr "Das Passwort ist nicht korrekt"
+
+#: webapp/users/views.py:84 webapp/users/views.py:95
+msgid "This account does not exist."
+msgstr "Diesen Account gibt es nicht."
+
+#: webapp/users/views.py:142
+msgid "Password successfully updated."
+msgstr "Passwort erfolgreich aktualisiert"
+
+#: webapp/users/views.py:164
+msgid "User data saved."
+msgstr "Nutzerdaten gespeichert."
+
+#: webapp/users/views.py:180
+msgid "Password saved."
+msgstr "Passwort gespeichert"
+
+#: webapp/users/views.py:183
+msgid "Old password not correct."
+msgstr "Altes Passwort nicht korrekt"
 

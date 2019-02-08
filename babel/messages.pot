@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-08 18:10+0100\n"
+"POT-Creation-Date: 2019-02-09 00:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "Import Sensors"
 msgstr ""
 
-#: webapp/admin/helpers.py:47
+#: webapp/admin/helpers.py:47 webapp/users/views.py:57
 msgid "Critical database error."
 msgstr ""
 
@@ -770,6 +770,69 @@ msgid ""
 "                            new sensor."
 msgstr ""
 
+#: webapp/templates/emails/recover.html:11
+#: webapp/templates/emails/register-existing.html:11
+#: webapp/templates/emails/sensor-given.html:11
+#: webapp/templates/emails/sensor-registered.html:11
+msgid "Hello,"
+msgstr ""
+
+#: webapp/templates/emails/recover.html:13
+msgid "to reset your password, please use the following URL:"
+msgstr ""
+
+#: webapp/templates/emails/recover.html:14
+msgid ""
+"If you have not requested a new password on luftdaten.info, you can "
+"ignore this e-mail."
+msgstr ""
+
+#: webapp/templates/emails/recover.html:15
+#: webapp/templates/emails/register-existing.html:15
+#: webapp/templates/emails/sensor-given.html:15
+#: webapp/templates/emails/sensor-registered.html:15
+msgid ""
+"Sincerely,\n"
+"    Your Luftdaten.info team"
+msgstr ""
+
+#: webapp/templates/emails/register-existing.html:13
+msgid ""
+"in order to manage your sensor in the future, we have created an account "
+"for you. Please enter a password under the following link: "
+msgstr ""
+
+#: webapp/templates/emails/register-existing.html:14
+msgid ""
+"If you have not created an account on luftdaten.info, you can ignore this"
+" e-mail."
+msgstr ""
+
+#: webapp/templates/emails/sensor-given.html:13
+msgid ""
+"a particulate matter sensor has been handed over to your control. Please "
+"log in with this mail address to take data and settings or to change "
+"them: "
+msgstr ""
+
+#: webapp/templates/emails/sensor-given.html:14
+msgid ""
+"If you have received a sensor by mistake, please report this at "
+"info@luftdaten.info."
+msgstr ""
+
+#: webapp/templates/emails/sensor-registered.html:13
+msgid ""
+"a fine dust sensor has been registered for you. Please log in with this "
+"mail address to take in or change data and settings: "
+msgstr ""
+
+#: webapp/templates/emails/sensor-registered.html:14
+msgid ""
+"If the sensor was registered for you by mistake, please report this to "
+"info@luftdaten.info."
+msgstr ""
+
 #: webapp/users/forms.py:22 webapp/users/forms.py:36 webapp/users/forms.py:58
 #: webapp/users/forms.py:79
 msgid "E-Mail addresse"
@@ -840,11 +903,11 @@ msgid "Save Password"
 msgstr ""
 
 #: webapp/users/forms.py:118
-msgid "First name."
+msgid "First name"
 msgstr ""
 
 #: webapp/users/forms.py:119
-msgid "Last name."
+msgid "Last name"
 msgstr ""
 
 #: webapp/users/forms.py:120
@@ -861,5 +924,33 @@ msgstr ""
 
 #: webapp/users/forms.py:134
 msgid "New password (repeat)"
+msgstr ""
+
+#: webapp/users/models.py:129
+msgid "Create account to configure the fine dust sensor."
+msgstr ""
+
+#: webapp/users/views.py:82
+msgid "The password is incorrect"
+msgstr ""
+
+#: webapp/users/views.py:84 webapp/users/views.py:95
+msgid "This account does not exist."
+msgstr ""
+
+#: webapp/users/views.py:142
+msgid "Password successfully updated."
+msgstr ""
+
+#: webapp/users/views.py:164
+msgid "User data saved."
+msgstr ""
+
+#: webapp/users/views.py:180
+msgid "Password saved."
+msgstr ""
+
+#: webapp/users/views.py:183
+msgid "Old password not correct."
 msgstr ""
 

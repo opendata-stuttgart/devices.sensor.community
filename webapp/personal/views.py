@@ -118,7 +118,7 @@ def sensor_transfer(id):
         msg = Message(_('A fine dust sensor was transferred to you'),
             sender=current_app.config['MAILS_FROM'],
             recipients=[form.email.data.lower()],
-            body=render_template('emails/sensor-given.txt',
+            html=render_template('emails/sensor-given.html',
             login_url="%s/login" % (current_app.config['PROJECT_URL']))
         )
         mail.send(msg)

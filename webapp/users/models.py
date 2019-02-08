@@ -13,6 +13,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 from flask import (current_app, render_template)
 from werkzeug import generate_password_hash, check_password_hash
+from flask_babel import lazy_gettext as _
 
 from passlib.hash import bcrypt
 from passlib import pwd
@@ -125,12 +126,12 @@ class User(db.Model, UserMixin):
                                      salt=current_app.config['SECURITY_PASSWORD_SALT'])
         )
         msg = Message(
-            "Account zur Konfiguration des Feinstaubsensors erstellen",
+            _('Create account to configure the fine dust sensor.'),
             sender=current_app.config['MAILS_FROM'],
             recipients=[email],
-            body=render_template('emails/register-existing.txt' if create_user else 'emails/recover.txt',
+            html=render_template('emails/register-existing.html' if create_user else 'emails/recover.html',
                                  recover_url=recover_url)
-        )
+            )
         mail.send(msg)
         return True
 

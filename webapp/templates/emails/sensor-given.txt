@@ -1,8 +1,0 @@
-Hallo,
-
-ein Feinstaub-Sensor wurde Ihrer Kontrolle übergeben. Bitte melden Sie sich mit dieser Mailadresse an, Daten und Einstellungen einzunehmen oder auch zu ändern: {{ login_url }}
-
-Falls Sie Ihnen fälschlicherweise ein Sensor übergeben wurde, melden Sie dies bitte unter info@luftdaten.info.
-
-Mit freundlichen Grüßen,
-Dein Luftdaten.info-Team

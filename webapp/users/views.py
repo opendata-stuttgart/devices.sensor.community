@@ -13,6 +13,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 from urllib.parse import quote_plus
 from flask import (Flask, Blueprint, render_template, current_app, request, flash, url_for, redirect, session, abort,
                    jsonify, send_from_directory)
+from flask_babel import lazy_gettext as _
 from flask_login import login_required, login_user, current_user, logout_user, confirm_login, login_fresh
 from ..extensions import db, mail
 from hashlib import sha256
@@ -53,7 +54,7 @@ def register_minimal():
         if User.is_email_taken(form.email.data.lower()):
             email_status = User.get_mail_status(form.email.data.lower())
             if email_status == 1:
-                flash('Ihr Account wurde bereits erfolgreich erstellt und aktiviert. Bitte nutzen Sie das Login.',
+                flash(_('Critical database error.'),
                       'success')
                 return redirect('/login-with-password?email=%s' % (quote_plus(form.email.data.lower())))
             elif email_status == 0:
@@ -78,9 +79,9 @@ def login_with_password():
                 login_user(user, remember=form.remember_me.data)
                 return redirect('/meine-luftdaten')
             else:
-                flash('Das Passwort ist nicht korrekt.', 'danger')
+                flash(_('The password is incorrect'), 'danger')
         else:
-            flash('Das Passwort ist nicht korrekt.', 'danger')
+            flash(_('This account does not exist.'), 'danger')
     return render_template('login-with-password.html', form=form)
 
 
@@ -91,7 +92,7 @@ def recover():
     if form.validate_on_submit():
         email_status = User.get_mail_status(form.email.data.lower())
         if email_status == -1:
-            flash('Diesen Account gibt es nicht.', 'danger')
+            flash(_('This account does not exist.') , 'danger')
         elif email_status == 0:
             User.send_recover_mail(form.email.data.lower(), False)
             current_app.logger.info('%s sent an recovery request again' % (form.email.data.lower()))
@@ -138,7 +139,7 @@ def recover_check():
                         login_user(user, remember=form.remember_me.data)
                         current_app.logger.info(
                             '%s got access to his / her account after registration / recovery' % (current_user.email))
-                        flash('Passwort erfolgreich aktualisiert.', 'success')
+                        flash(_('Password successfully updated.') , 'success')
                         return redirect('/meine-luftdaten')
                     return render_template('recover-set-password.html', form=form, url_id=serialized_data)
 
@@ -160,7 +161,7 @@ def settings():
         db.session.add(current_user)
         db.session.commit()
         current_app.logger.info('%s updated his / her user data' % (current_user.email))
-        flash('Nutzerdaten gespeichert', 'success')
+        flash(_('User data saved.'), 'success')
         return redirect('/meine-luftdaten')
     return render_template('my-settings.html', form=form)
 
@@ -176,8 +177,8 @@ def password():
             db.session.add(current_user)
             db.session.commit()
             current_app.logger.info('%s updated his / her password' % (current_user.email))
-            flash('Passwort gespeichert', 'success')
+            flash(_('Password saved.'), 'success')
             return redirect('/meine-luftdaten')
         else:
-            flash('Altes Passwort nicht korrekt', 'danger')
+            flash(_('Old password not correct.'), 'danger')
     return render_template('my-password.html', form=form)

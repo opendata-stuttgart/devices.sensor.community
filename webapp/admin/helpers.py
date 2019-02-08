@@ -55,7 +55,7 @@ def sensor_import_worker(new_sensors):
             msg = Message(_("Your particulate sensor has been registered."),
                 sender=current_app.config['MAILS_FROM'],
                 recipients=[sensor_email],
-                body=render_template('emails/sensor-registered.txt',
+                html=render_template('emails/sensor-registered.html',
                                      login_url="%s/login" % (current_app.config['PROJECT_URL']))
             )
             # print(msg)

@@ -1,8 +1,0 @@
-Hallo,
-
-um Ihren Sensor in Zukunft verwalten zu können, haben wir für Sie einen Account erstellt. Bitte vergeben Sie unter dem nachfolgenden Link ein Passwort: {{ recover_url }}
-
-Falls Sie keinen Account auf luftdaten.info erstellt haben, so können Sie diese E-Mail ignorieren.
-
-Mit freundlichen Grüßen,
-Dein Luftdaten.info-Team
