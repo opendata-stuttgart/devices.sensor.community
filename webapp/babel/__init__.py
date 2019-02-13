@@ -14,3 +14,7 @@ def create_module(app, **kwargs):
 
 @babel.localeselector
 def get_locale():
+    if 'lang' in request.args:
+        session['lang'] = request.args.get('lang')
+    return session.get('lang') or \
+        request.accept_languages.best_match(['en', 'de'])
