@@ -1,8 +1,7 @@
 from flask import request,session
-from flask_babel import Babel
+from webapp.extensions import babel
 from flask import Blueprint
 
-babel = Babel()
 
 babel_blueprint = Blueprint(
     'babel',
@@ -15,4 +14,3 @@ def create_module(app, **kwargs):
 
 @babel.localeselector
 def get_locale():
-    return request.accept_languages.best_match(['en','de'])

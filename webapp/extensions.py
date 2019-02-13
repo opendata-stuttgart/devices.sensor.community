@@ -16,7 +16,7 @@ from flask_migrate import Migrate
 from flask_wtf.csrf import CSRFProtect
 from flask_mail import Mail
 from flask_celery import Celery
-from flask_babel import Babel
+from flask_babelex import Babel
 from flask_security import Security
 
 db = SQLAlchemy()
@@ -25,4 +25,7 @@ csrf = CSRFProtect()
 mail = Mail()
 celery = Celery()
 babel = Babel()
+# https://github.com/lingthio/Flask-User/issues/195#issuecomment-352274132
+babel.translation_directories = 'translations'
+babel.domain = 'webapp'
 security = Security()
