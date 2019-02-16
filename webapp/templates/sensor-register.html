@@ -1,8 +1,8 @@
-{% extends "mein-sensor-einstellungen.html" %}
+{% extends "my-sensor-settings.html" %}
 {% from "_formhelpers.html" import render_field %}
 
 {% block content %}
-    <form id="sensor-setting-form" action="{{ url_for('personal.sensor_register') }}" method="POST">
+    <form id="sensor-setting-form" action="{{ url_for('.sensor_register') }}" method="POST">
         <h1>Sensor registration</h1>
         {{ render_field(form.sensor_id) }}
         {% include "sensor-settings-form.html" with context %}

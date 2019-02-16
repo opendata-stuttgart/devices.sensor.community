@@ -7,23 +7,18 @@
 {% endblock %}
 
 {% block content %}
-    <div class="fullwidth clearfix">
-        <div id="maincont" class="bodycontainer clearfix">
-            <form method="POST" action="/my-settings">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>{{ _('Settings') }}</h1>
-                        <p>{{ _('Here you can change your settings.') }}</p>
-                    </div>
-                </div>
-
-            {{ render_field(form.first_name) }}
-            {{ render_field(form.last_name) }}
-            {{ render_submit(form.submit) }}
-
-            {{ form.csrf_token }}
-            </form>
+    <form method="POST" action="{{ url_for('.settings') }}">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{{ _('Settings') }}</h1>
+                <p>{{ _('Here you can change your settings.') }}</p>
+            </div>
         </div>
-    </div>
 
+        {{ render_field(form.first_name) }}
+        {{ render_field(form.last_name) }}
+        {{ render_submit(form.submit) }}
+
+        {{ form.csrf_token }}
+    </form>
 {% endblock %}

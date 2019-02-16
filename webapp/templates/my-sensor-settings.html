@@ -4,18 +4,16 @@
 {% block head %}
     {{ super() }}
     <meta name="robots" content="noindex">
-    {#    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>#}
-    {#    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet'/>#}
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
     <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 {% endblock %}
 
 {% block content %}
-            <form method="POST" action="/mein-sensor/{{ node.id }}/einstellungen" id="sensor-setting-form">
-                <h1>{{ _('Settings of Node ') }}   {{ node.uid }}</h1>
-                <p>{{ _('With this form you can keep the data of the sensor up to date. Please note that only precise data can lead to precise evaluations with which we can also argue politically. It is therefore important that the basic sensor data is always kept up to date.') }}  </p>
+    <form method="POST" action="{{ url_for('.sensor_settings', id=node.id) }}" id="sensor-setting-form">
+        <h1>{{ _('Settings of Node %(node_id)s', node_id=node.uid) }}</h1>
+        <p>{{ _('With this form you can keep the data of the sensor up to date. Please note that only precise data can lead to precise evaluations with which we can also argue politically. It is therefore important that the basic sensor data is always kept up to date.') }}  </p>
 
-                {% include "sensor-settings-form.html" with context %}
-            </form>
+        {% include "sensor-settings-form.html" with context %}
+    </form>
 {% endblock %}

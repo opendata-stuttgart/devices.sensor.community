@@ -2,32 +2,28 @@
 {% from "_formhelpers.html" import render_field %}
 
 {% block content %}
-    <div class="fullwidth clearfix">
-        <div id="maincont" class="bodycontainer clearfix">
-            <form method="POST" action="/mein-sensor/{{ node.id }}/give">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>{{ _('Sensor') }} {{ node.uid }}{{ _('hand over') }} </h1>
-                        <p>{{ _('This allows you to transfer sensors to another person. This is especially useful if you have ordered a sensor for a friend and want to transfer it to him or her.') }}  </p>
-                        <p><strong>{{ _('Warning! After the transfer you have no more control over the sensor!') }}  </strong></p>
-                    </div>
-                </div>
-
-                {{ render_field(form.email) }}
-
-                <div class="row m-3">
-                    <div class="col-md-6 offset-md-3">
-                        {{ form.submit(class="form-control btn btn-primary") }}
-                    </div>
-                </div>
-
-                <div class="row m-3">
-                    <div class="col-md-6 offset-md-3">
-                        <a href="/my-sensors" class="form-control btn btn-info">{{ _('Back to my sensors') }}</a>
-                    </div>
-                </div>
-                {{ form.csrf_token }}
-            </form>
+    <form method="POST" action="{{ url_for('.sensor_transfer', id=node.id) }}">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{{ _('Sensor %(node_id)s hand over', node_id=node.uid) }}</h1>
+                <p>{{ _('This allows you to transfer sensors to another person. This is especially useful if you have ordered a sensor for a friend and want to transfer it to him or her.') }}  </p>
+                <p><strong>{{ _('Warning! After the transfer you have no more control over the sensor!') }}  </strong></p>
+            </div>
         </div>
-    </div>
+
+        {{ render_field(form.email) }}
+
+        <div class="row m-3">
+            <div class="col-md-6 offset-md-3">
+                {{ form.submit(class="form-control btn btn-primary") }}
+            </div>
+        </div>
+
+        <div class="row m-3">
+            <div class="col-md-6 offset-md-3">
+                <a href="/my-sensors" class="form-control btn btn-info">{{ _('Back to my sensors') }}</a>
+            </div>
+        </div>
+        {{ form.csrf_token }}
+    </form>
 {% endblock %}
