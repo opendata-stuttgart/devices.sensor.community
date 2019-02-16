@@ -6,40 +6,40 @@
 {% endblock %}
 
 {% block content %}
-    <div class="fullwidth clearfix">
-        <div id="topcontainer" class="bodycontainer clearfix">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>{{ _('My sensors') }}</h1>
-                    <p> {{ _('All sensors assigned to your account can be found in this overview.') }} </p>
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th>#</th>
-                            <th class="hidden-sm-down">{{ _('Sensor UID') }} </th>
-                            <th>{{ _('Name') }} </th>
-                            <th class="hidden-md-down">{{ _('Last Update') }} </th>
-                            <th class="text-right">{{ _('Functions') }}</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        {% for node in nodes %}
-                            <tr>
-                                <td>{{ node.id }}</td>
-                                <td class="hidden-sm-down">{{ node.uid }}</td>
-                                <td>{{ node.name }}</td>
-                                <td class="hidden-md-down">{{ node.modified }}</td>
-                                <td class="text-right">
-                                    <a class="btn btn-sm btn-info" href="{{ url_for('personal.sensor_data', id=node.id) }}">{{ _('Data') }}</a>
-                                    <a class="btn btn-sm btn-primary" href="{{ url_for('personal.sensor_settings', id=node.id) }}">{{ _('Settings') }} </a>
-                                    <a class="btn btn-sm btn-warning" href="{{ url_for('personal.sensor_transfer', id=node.id) }}">{{ _('Hand over sensor') }}</a>
-                                </td>
-                            </tr>
-                        {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
+    <h1>{{ _('My sensors') }}</h1>
+    <p> {{ _('All sensors assigned to your account can be found in this overview.') }} </p>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th class="hidden-sm-down">{{ _('Sensor UID') }} </th>
+            <th>{{ _('Name') }} </th>
+            <th class="hidden-md-down">{{ _('Last Update') }} </th>
+            <th class="text-right">{{ _('Functions') }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for node in nodes %}
+            <tr>
+                <td>{{ node.id }}</td>
+                <td class="hidden-sm-down">{{ node.uid }}</td>
+                <td>{{ node.name }}</td>
+                <td class="hidden-md-down">{{ node.modified }}</td>
+                <td class="text-right">
+                    <a class="btn btn-sm btn-info" href="{{ url_for('personal.sensor_data', id=node.id) }}">{{ _('Data') }}</a>
+                    <a class="btn btn-sm btn-primary" href="{{ url_for('personal.sensor_settings', id=node.id) }}">{{ _('Settings') }} </a>
+                    <a class="btn btn-sm btn-warning" href="{{ url_for('personal.sensor_transfer', id=node.id) }}">{{ _('Hand over sensor') }}</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr><td colspan="5" class="text-muted text-center">No sensors found</td></tr>
+        {% endfor %}
+        <tfoot>
+            <tr><td colspan="5">
+                    <a href="{{ url_for('.sensor_register') }}" class="btn btn-primary btn-block offset-md-3 col-md-6">Register new sensor</a>
+                </td></tr>
+        </tfoot>
+        </tbody>
+    </table>
+
 {% endblock %}
