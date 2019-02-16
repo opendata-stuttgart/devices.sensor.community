@@ -44,12 +44,32 @@ class Sensor(db.Model):
 
     description = db.Column(db.String)
 
-    sensor_type_id = db.Column(db.Integer, nullable=False)
+    sensor_type_id = db.Column(db.Integer, db.ForeignKey('sensors_sensortype.id'), nullable=False)
+    sensor_type = db.relationship('SensorType')
+
     node_id = db.Column(db.Integer, db.ForeignKey('sensors_node.id'), nullable=False)
     node = db.relationship('Node', backref='sensors')
-    pin = db.Column(db.String(10), nullable=False)
-    public = db.Column(db.Boolean, nullable=False)
 
+    pin = db.Column(db.String(10), nullable=False)
+    public = db.Column(db.Boolean, nullable=False, default=False)
+
+
+class SensorType(db.Model):
+    __tablename__ = 'sensors_sensortype'
+    __bind_key__ = 'external'
+
+    id = db.Column(db.Integer, primary_key=True)
+
+    created = db.Column(db.DateTime, nullable=False, default=get_current_time)
+    modified = db.Column(db.DateTime, nullable=False, default=get_current_time)
+
+    uid = db.Column(db.String(50), nullable=False)
+    name = db.Column(db.String(1000), nullable=False)
+    manufacturer = db.Column(db.String(1000), nullable=False)
+    description = db.Column(db.String(10000))
+
+    def __str__(self):
+        return '{0.name}'.format(self)
 
 
 class SensorLocation(db.Model):

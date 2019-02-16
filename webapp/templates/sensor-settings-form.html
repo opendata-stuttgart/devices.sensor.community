@@ -22,6 +22,14 @@
 {{ render_field(location.oven_in_area) }}
 {{ render_field(location.traffic_in_area) }}
 
+<h2>{{ _('Hardware configuration') }}</h2>
+{% for sensor in form.sensors %}
+  <div class="row">
+  {{ render_field(sensor.pin, 'basic', 'col-md-3') }}
+  {{ render_field(sensor.sensor_type, 'basic') }}
+  </div>
+{% endfor %}
+
 <div class="row">
     <div class="form-group col-md-6 offset-md-3">
         {{ form.submit(class="form-control btn btn-primary") }}
@@ -68,4 +76,5 @@
         {% endif %}
     </div>
 </div>
+
 {{ form.csrf_token }}

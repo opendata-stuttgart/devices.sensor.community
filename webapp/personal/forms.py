@@ -15,9 +15,13 @@ from flask_wtf import FlaskForm
 from flask_login import current_user
 from wtforms import (BooleanField, StringField, HiddenField, PasswordField, DecimalField, DateTimeField, validators,
                      IntegerField, SubmitField, TextAreaField, SelectField, FormField)
+from wtforms.fields import FieldList
+from wtforms.ext.sqlalchemy.fields import QuerySelectField
 from flask_babel import lazy_gettext as _
 from . import constants
 from ..common.countrycodes import country_codes
+
+from webapp.external_data.models import SensorType, db
 
 
 class SensorLocationForm(FlaskForm):
@@ -115,6 +119,17 @@ class SensorLocationForm(FlaskForm):
         description='How close are those roads? 1 = very little further away, 10 = a lot of traffic right on your doorstep.',
     )
 
+def fetch_sensor_types():
+    # Custom order just to pronounce default types
+    return SensorType.query.order_by(db.case([
+            (SensorType.uid.in_(['SDS011', 'DHT22']), 1),
+        ], else_=0).desc()).all()
+
+class SensorForm(FlaskForm):
+    pin = StringField(_('PIN'))
+    sensor_type = QuerySelectField(_('Sensor Type'),
+                                   query_factory=fetch_sensor_types)
+
 class SensorSettingsForm(FlaskForm):
     name = StringField(
         _('Personal sensor name'),
@@ -143,6 +158,7 @@ class SensorSettingsForm(FlaskForm):
         description='1 = on the garden side, very well shielded from all streets, 10 = the sensor is on a house wall directly on the street. With this value it is irrelevant how big the street is, it is only about where the sensor is attached to the house.'
     )
     location = FormField(SensorLocationForm)
+    sensors = FieldList(FormField(SensorForm), min_entries=1)
     description = TextAreaField(
         _('Short description of location'),
     )

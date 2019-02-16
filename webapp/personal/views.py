@@ -22,7 +22,7 @@ import pytz
 import json
 
 from .forms import SensorGiveForm, SensorSettingsForm, SensorRegisterForm
-from ..external_data.models import Node, SensorLocation
+from ..external_data.models import Node, SensorLocation, Sensor, SensorType
 from ..common.helpers import get_object_or_404
 from ..extensions import mail, db
 
@@ -109,10 +109,16 @@ def sensor_settings(id):
 @personal.route('/sensors/register', methods=['GET', 'POST'])
 @login_required
 def sensor_register():
-    form = SensorRegisterForm()
+    form = SensorRegisterForm(data={'sensors': [
+        {'pin': '1', 'sensor_type': SensorType.query.get(14)},  # SDS011
+        {'pin': '7', 'sensor_type': SensorType.query.get(9)},  # DHT22
+    ]})
 
     if form.validate_on_submit():
-        node = Node(location=SensorLocation())
+        node = Node(location=SensorLocation(), sensors=[
+            Sensor() for _ in form.sensors
+        ])
+
         form.populate_obj(node)
         node.uid = 'esp8266-' + form.sensor_id.data
         node.email = current_user.email
