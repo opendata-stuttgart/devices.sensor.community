@@ -11,7 +11,8 @@ class Node(db.Model):
     id = db.Column(db.Integer, primary_key=True)
 
     created = db.Column(db.DateTime, nullable=False, default=get_current_time)
-    modified = db.Column(db.DateTime, nullable=False, default=get_current_time)
+    modified = db.Column(db.DateTime, nullable=False, default=get_current_time,
+                         onupdate=get_current_time)
 
     uid = db.Column(db.String(50), nullable=False)
     description = db.Column(db.String, nullable=False)
@@ -40,7 +41,8 @@ class Sensor(db.Model):
     id = db.Column(db.Integer, primary_key=True)
 
     created = db.Column(db.DateTime, nullable=False, default=get_current_time)
-    modified = db.Column(db.DateTime, nullable=False, default=get_current_time)
+    modified = db.Column(db.DateTime, nullable=False, default=get_current_time,
+                         onupdate=get_current_time)
 
     description = db.Column(db.String)
 
@@ -61,7 +63,8 @@ class SensorType(db.Model):
     id = db.Column(db.Integer, primary_key=True)
 
     created = db.Column(db.DateTime, nullable=False, default=get_current_time)
-    modified = db.Column(db.DateTime, nullable=False, default=get_current_time)
+    modified = db.Column(db.DateTime, nullable=False, default=get_current_time,
+                         onupdate=get_current_time)
 
     uid = db.Column(db.String(50), nullable=False)
     name = db.Column(db.String(1000), nullable=False)
@@ -79,7 +82,8 @@ class SensorLocation(db.Model):
     id = db.Column(db.Integer, primary_key=True)
 
     created = db.Column(db.DateTime, nullable=False, default=get_current_time)
-    modified = db.Column(db.DateTime, nullable=False, default=get_current_time)
+    modified = db.Column(db.DateTime, nullable=False, default=get_current_time,
+                         onupdate=get_current_time)
 
     location = db.Column(db.String)
     timestamp = db.Column(db.DateTime, nullable=False, default=get_current_time)
