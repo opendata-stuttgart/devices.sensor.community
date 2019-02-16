@@ -53,6 +53,7 @@ class DefaultConfig(object):
     SECURITY_REGISTERABLE = True
     SECURITY_CHANGEABLE = True
     SECURITY_CONFIRMABLE = True
+    SECURITY_RECOVERABLE = True
 
 
 class LocalConfig(DefaultConfig):
