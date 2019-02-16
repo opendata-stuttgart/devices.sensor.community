@@ -9,6 +9,7 @@ services:
     depends_on:
       - mysql
       - redis
+      - smtp
     ports:
       - 5000:5000
     command: bash -c "flask db upgrade && flask run --host=0.0.0.0"
@@ -45,3 +46,6 @@ services:
 
   redis:
     image: redis:5.0-alpine
+
+  smtp:
+    image: tianon/exim4

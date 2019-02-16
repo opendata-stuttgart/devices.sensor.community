@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 """
-Copyright (c) 2018, Maintainer: David Lackovic
+CCopyright (c) 2018, Maintainer: David Lackovic
 based on Ernesto Ruge https://github.com/ruhrmobil-E/meine-luftdaten/
 All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -11,29 +11,46 @@ Redistribution and use in source and binary forms, with or without modification,
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
-from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
-from flask_wtf.csrf import CSRFProtect
-from flask_mail import Mail, email_dispatched
-from flask_celery import Celery
-from flask_babelex import Babel
-from flask_security import Security
+import os
 
-db = SQLAlchemy()
-migrate = Migrate()
-csrf = CSRFProtect()
-mail = Mail()
-celery = Celery()
-babel = Babel()
-# https://github.com/lingthio/Flask-User/issues/195#issuecomment-352274132
-babel.translation_directories = 'translations'
-babel.domain = 'webapp'
-security = Security()
+PROJECT_NAME = "luftdaten"
+PROJECT_URL = 'https://meine.luftaten.info'
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+PROJECT_VERSION = '0.1.0'
+LOG_DIR = os.path.abspath(os.path.join(PROJECT_ROOT, os.pardir, 'logs'))
 
+DEBUG = False
 
-# When testing without proper mail server set up, set MAIL_SUPPRESS_SEND = True
-# config property to enable mail logging.
-@email_dispatched.connect
-def log_message(message, app):
-    if app.config.get('MAIL_SUPPRESS_SEND'):
-        app.logger.info('%s\n%s', message.subject, message.body)
+ADMINS = ['david.lackovic@me.com']
+
+SECRET_KEY = SECURITY_PASSWORD_SALT = 'dummysecret'
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+SQLALCHEMY_ECHO = False
+
+MAIL_DEFAULT_SENDER = SECURITY_EMAIL_SENDER = MAILS_FROM = 'noreply@meine.luftdaten.info'
+MAIL_SERVER = 'smtp'
+MAIL_PORT = 25
+MAIL_USE_TLS = False
+MAIL_USERNAME = None
+MAIL_PASSWORD = None
+MAIL_SUPPRESS_SEND = False
+
+# Default docker mariadb wait_timeout is 600s
+SQLALCHEMY_POOL_RECYCLE = 480
+
+# all fields after the scheme are optional, and will default to localhost on port 6379, using database 0.
+# redis://:password@hostname:port/db_number
+CELERY_BROKER_URL = 'redis://redis:6379/0'
+CELERY_RESULT_BACKEND = 'redis://redis:6379/0'
+
+SECURITY_CONFIRMABLE = True
+SECURITY_REGISTERABLE = True
+SECURITY_CHANGEABLE = True
+SECURITY_CONFIRMABLE = True
+SECURITY_RECOVERABLE = True
+
+# Docker defaults
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://devel:devel@mysql/devel'
+SQLALCHEMY_BINDS = {
+    'external': 'mysql+pymysql://external:external@mysql/external',
+}

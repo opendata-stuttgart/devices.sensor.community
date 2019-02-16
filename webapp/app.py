@@ -14,7 +14,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 import os
 from flask import Flask, request, render_template, g
 
-from webapp import config as Config
 from .common import Response
 from .common import constants as COMMON_CONSTANTS
 from .common.filter import register_global_filters
@@ -33,18 +32,17 @@ DEFAULT_BLUEPRINTS = [
     users,
 ]
 
+
 def launch(config=None, app_name=None, blueprints=None):
 
     """Create a Flask app."""
 
-    if app_name is None:
-        app_name = Config.DefaultConfig.PROJECT_NAME
     if blueprints is None:
         blueprints = DEFAULT_BLUEPRINTS
 
     app = Flask(
-        app_name,
-        template_folder='webapp/templates')
+        app_name or 'webapp',
+        static_folder='../static')
 
     configure_app(app, config)
     configure_hook(app)
@@ -61,18 +59,14 @@ def configure_app(app, config=None):
     """Different ways of configurations."""
 
     # http://flask.pocoo.org/docs/api/#configuration
-    app.config.from_object(Config.DefaultConfig)
+    app.config.from_object('webapp.default_settings')
 
     if config:
         app.config.from_object(config)
         return
 
     # get mode from os environment
-    application_mode = app.config['ENV']
-
-    print("Running in %s mode" % application_mode)
-
-    app.config.from_object(Config.get_config(application_mode))
+    app.config.from_pyfile('config.py', silent=True)
 
 
 def configure_extensions(app):

@@ -2,15 +2,16 @@
 luftdaten.info self-service registration portal.
 
 ## Configuration file
-To start this project you need to create configuration file in
-`webapp/config.py`. Example config (suitable for Docker environment below) is
-provided in `webapp/config.py.dist` file. Docker environment uses `LocalConfig`
-by default. Also take care of `MAIL_SUPPRESS_SEND` variable during development.
+Default configuration settings (set from `webapp/default_settings.py`) are
+suitable for running in non-production Docker environment. If you need to
+override any configuration variables, you can create `webapp/config.py` file
+based off `webapp/config.py.dist`.
 
 Additionally, when running outside of docker, `.flaskenv` file is required.
 Basic development environment file can be copied from `.flaskenv.dist`.
 
 ## virtualenv setup
+
     virtualenv -p python3 venv
     source venv/bin/activate
     pip install -r requirements.txt
@@ -50,23 +51,19 @@ To start automatic CSS/JS rebuilds on change use this:
     docker-compose run --rm gulp npm start
 
 
-
-
 ### Create new langauge
-
-extract text and lazy_gettext() functions
+extract text and `lazy_gettext()` functions
 
     pybabel extract -F ./babel/babel.cfg -k lazy_gettext -o ./babel/messages.pot .
-    
+
 update langauge
 
-    pybabel extract -F ./babel/babel.cfg -k _l -o ./babel/messages.pot .    
+    pybabel extract -F ./babel/babel.cfg -k _l -o ./babel/messages.pot .
     pybabel update -i ./babel/messages.pot -d ./translations
 
 create translated language
 
     pybabel init -i ./babel/messages.pot -d ./translations -l country_code
-
 
 compile into binary
 
