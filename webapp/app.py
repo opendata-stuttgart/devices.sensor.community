@@ -21,7 +21,6 @@ from .common.filter import register_global_filters
 from .frontend import frontend
 from .personal import personal
 from .users import users
-from .admin import admin
 from .models import User, Role
 from .extensions import db, csrf, mail, celery, babel, security, migrate
 from .babel import create_module as babel_create_module
@@ -32,7 +31,6 @@ DEFAULT_BLUEPRINTS = [
     frontend,
     personal,
     users,
-    admin
 ]
 
 def launch(config=None, app_name=None, blueprints=None):
