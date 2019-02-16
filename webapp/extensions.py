@@ -14,7 +14,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_wtf.csrf import CSRFProtect
-from flask_mail import Mail
+from flask_mail import Mail, email_dispatched
 from flask_celery import Celery
 from flask_babelex import Babel
 from flask_security import Security
@@ -29,3 +29,10 @@ babel = Babel()
 babel.translation_directories = 'translations'
 babel.domain = 'webapp'
 security = Security()
+
+# When testing without proper mail server set up, set MAIL_SUPPRESS_SEND = True
+# config property to enable mail logging.
+@email_dispatched.connect
+def log_message(message, app):
+    if app.config.get('MAIL_SUPPRESS_SEND'):
+        app.logger.info('%s\n%s', message.subject, message.body)
