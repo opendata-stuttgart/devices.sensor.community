@@ -30,6 +30,13 @@ from ..extensions import mail, db
 
 personal = Blueprint('personal', __name__)
 
+VALUE_TYPES = {
+    'P1': ('µg/m³', _('Fine dust 10 µm')),
+    'P2': ('µg/m³', _('Fine dust 2.5 µm')),
+    'humidity': ('% RH', _('Humidity')),
+    'temperature': ('°C', _('Temperature')),
+}
+
 
 @personal.route('/meine-luftdaten')
 @personal.route('/dashboard')
@@ -72,21 +79,14 @@ def sensor_data(id):
                 tzinfo=pytz.UTC)
         if sensor.data['sensordatavalues']:
             for sensor_value in sensor.data['sensordatavalues']:
-                if sensor_value['value_type'] == 'P1':
-                    sensor_value['value_type_name'] = _('Fine dust 10 µm')
-                    sensor_value['value_type_unit'] = 'µg'
-                elif sensor_value['value_type'] == 'P2':
-                    sensor_value['value_type_name'] = _('Fine dust 2.5 µm')
-                    sensor_value['value_type_unit'] = 'µg'
-                elif sensor_value['value_type'] == 'humidity':
-                    sensor_value['value_type_unit'] = '%'
-                    sensor_value['value_type_name'] = _('Humidity')
-                elif sensor_value['value_type'] == 'temperature':
-                    sensor_value['value_type_unit'] = '°C'
-                    sensor_value['value_type_name'] = _('Temperature')
+                if sensor_value['value_type'] in VALUE_TYPES:
+                    unit, name = VALUE_TYPES[sensor_value['value_type']]
+                    sensor_value['value_type_unit'] = unit
+                    sensor_value['value_type_name'] = name
                 else:
                     sensor_value['value_type_unit'] = ''
                     sensor_value['value_type_name'] = sensor_value['value_type']
+
     return render_template('my-sensor-data.html', node=node, sensors=sensors)
 
 

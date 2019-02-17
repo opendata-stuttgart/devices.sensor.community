@@ -11,15 +11,26 @@
                                 href="http://deutschland.maps.luftdaten.info/">{{ _('on the fine dust card again.') }}  </a>.</p>
                     {% for sensor in sensors %}
                         <h2>{{ sensor['sensor_type_name'] }}</h2>
-                        <p>Sensor ID: {{ sensor['id'] }}</p>
-                        {% if sensor['data'] %}
-                            <p>{{ _('Last updated: ') }}  {{ sensor['data']['timestamp']|datetime }} Uhr</p>
-                            {% for sensor_value in sensor['data']['sensordatavalues'] %}
-                                <p>{{ sensor_value['value_type_name'] }}: {{ sensor_value['value'] }} {{ sensor_value['value_type_unit'] }}</p>
-                            {% endfor %}
-                        {% else %}
-                            <p>{{ _('No current data are available for this sensor.') }} </p>
-                        {% endif %}
+                        <table class="table">
+                            <tr>
+                                <th>Sensor ID:</th>
+                                <td>{{ sensor['id'] }}</td>
+                            </tr>
+                            {% if sensor['data'] %}
+                                <tr>
+                                    <th>{{ _('Last updated: ') }}</th>
+                                    <td>{{ sensor['data']['timestamp']|datetime }}</td>
+                                </tr>
+                                {% for sensor_value in sensor['data']['sensordatavalues'] %}
+                                    <tr>
+                                        <th>{{ sensor_value['value_type_name'] }}:</th>
+                                        <td>{{ sensor_value['value'] }} {{ sensor_value['value_type_unit'] }}</td>
+                                    </tr>
+                                {% endfor %}
+                            {% else %}
+                                <tr><td colspan="2">{{ _('No current data are available for this sensor.') }}</td></tr>
+                            {% endif %}
+                        </table>
                     {% endfor %}
                 </div>
             </div>
