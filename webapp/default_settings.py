@@ -49,6 +49,8 @@ SECURITY_CHANGEABLE = True
 SECURITY_CONFIRMABLE = True
 SECURITY_RECOVERABLE = True
 
+SECURITY_I18N_DIRNAME = os.path.join(PROJECT_ROOT, '..', 'translations')
+
 # Docker defaults
 SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://devel:devel@mysql/devel'
 SQLALCHEMY_BINDS = {

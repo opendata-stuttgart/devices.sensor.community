@@ -18,7 +18,7 @@ from wtforms import (BooleanField, StringField, HiddenField, PasswordField, Deci
                      IntegerField, SubmitField, TextAreaField, SelectField, FormField)
 from wtforms.fields import FieldList
 from wtforms.ext.sqlalchemy.fields import QuerySelectField
-from flask_babel import lazy_gettext as _
+from flask_babelex import lazy_gettext as _
 from . import constants
 from ..common.countrycodes import country_codes
 

@@ -14,8 +14,8 @@
     </form>
 
     <div class="my-3 btn-group-vertical btn-block">
-        <a href="{{ url_for_security('register') }}" class="btn btn-secondary btn-sm">Register</a>
-        <a href="{{ url_for_security('forgot_password') }}" class="btn btn-info btn-sm">Password reminder</a>
+        <a href="{{ url_for_security('register') }}" class="btn btn-secondary btn-sm">{{ _('Register') }}</a>
+        <a href="{{ url_for_security('forgot_password') }}" class="btn btn-info btn-sm">{{ _('Password reminder') }}</a>
     </div>
 </div>
 {% endblock %}

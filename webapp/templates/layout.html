@@ -42,13 +42,13 @@
                         </li>
                     {% endmacro %}
 
-                    {{ navbar_link('frontend.index', 'Home') }}
+                    {{ navbar_link('frontend.index', _('Home')) }}
 
                     {% if current_user.is_authenticated  %}
-                        {{ navbar_link('personal.dashboard', 'Overview') }}
-                        {{ navbar_link('personal.sensor_list', 'My sensors') }}
-                        {{ navbar_link('users.settings', 'Settings') }}
-                        {{ navbar_link('security.change_password', 'Password change') }}
+                        {{ navbar_link('personal.dashboard', _('Overview')) }}
+                        {{ navbar_link('personal.sensor_list', _('My sensors')) }}
+                        {{ navbar_link('users.settings', _('Settings')) }}
+                        {{ navbar_link('security.change_password', _('Password change')) }}
 
                         {% if current_user.has_role('Administrator') %}
                             <li class="nav-item"><a class="nav-link" href="/admin/sensor-import">{{ _('Massimporter') }} </a></li>
@@ -57,9 +57,9 @@
                 </ul>
                 <ul class="navbar-nav mt-2 mt-lg-0">
                     {% if current_user.is_authenticated  %}
-                        {{ navbar_link('security.logout', 'Logout') }}
+                        {{ navbar_link('security.logout', _('Logout')) }}
                     {% else %}
-                        {{ navbar_link('security.login', 'Login') }}
+                        {{ navbar_link('security.login', _('Login')) }}
                     {% endif %}
                 </ul>
                 

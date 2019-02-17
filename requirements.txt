@@ -26,7 +26,7 @@ Flask-Migrate==2.2.1
 Flask-Principal==0.4.0
 Flask-Redis==0.3.0
 Flask-Script==2.0.6
-Flask-Security==3.0.0
+https://github.com/mattupstate/flask-security/archive/a401fb47018fbbbe0b899ea55afadfd0e3cd847a.zip#Flask-Security==3.0.0
 Flask-SQLAlchemy==2.3.2
 Flask-WTF==0.14.2
 idna==2.7
