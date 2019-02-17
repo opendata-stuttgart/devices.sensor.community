@@ -14,6 +14,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 import os
 from datetime import datetime, timedelta
 from flask.json import JSONEncoder as BaseJSONEncoder
+from sqlalchemy import inspect
 from sqlalchemy.orm import exc
 from werkzeug.exceptions import abort
 
@@ -24,6 +25,19 @@ def get_current_time():
 
 def get_current_time_plus(days=0, hours=0, minutes=0, seconds=0):
     return get_current_time() + timedelta(days=days, hours=hours, minutes=minutes, seconds=seconds)
+
+
+def model_to_dict(model, ignore_fields=None, only_fields=None):
+    """Extracts SQLAlchemy model fields to dictionary to ease comparisons"""
+    if ignore_fields is None:
+        ignore_fields = ['id', 'created', 'modified']
+
+    return {
+        col.key: str(getattr(model, col.key))
+        for col in inspect(model).mapper.column_attrs
+        if (only_fields is not None and col.key in only_fields) or
+        (only_fields is None and col.key not in ignore_fields)
+    }
 
 
 class JSONEncoder(BaseJSONEncoder):

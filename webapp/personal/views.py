@@ -18,12 +18,13 @@ from flask_mail import Message
 from flask_babel import lazy_gettext as _
 import requests
 import dateutil.parser
+from datetime import datetime, timedelta
 import pytz
 import json
 
 from .forms import SensorGiveForm, SensorSettingsForm, SensorRegisterForm
 from ..external_data.models import Node, SensorLocation, Sensor, SensorType
-from ..common.helpers import get_object_or_404
+from ..common.helpers import get_object_or_404, model_to_dict
 from ..extensions import mail, db
 
 
@@ -97,7 +98,25 @@ def sensor_settings(id):
     form = SensorSettingsForm(obj=node)
 
     if form.validate_on_submit():
-        form.populate_obj(node)
+        update_delta = timedelta(
+            seconds=current_app.config['SENSOR_LOCATION_UPDATE_INTERVAL'])
+
+        if node.location.modified > datetime.utcnow() - update_delta:
+            # This node's location has been modified recently, update it in
+            # place
+            form.populate_obj(node)
+        else:
+            old_location = node.location
+            node.location = SensorLocation()
+            form.populate_obj(node)
+
+            location_fields = [f.short_name for f in form.location.form]
+            new_d = model_to_dict(node.location, only_fields=location_fields)
+            old_d = model_to_dict(old_location, only_fields=location_fields)
+            if old_d == new_d:
+                # No location field has been changed, revert back to original
+                node.location = old_location
+
         db.session.commit()
         current_app.logger.info('%s updated node %s' % (current_user.email, id))
         flash(_('Settings saved successfully.'), 'success')
