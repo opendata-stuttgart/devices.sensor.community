@@ -25,8 +25,10 @@
 <h2>{{ _('Hardware configuration') }}</h2>
 {% for sensor in form.sensors %}
   <div class="row">
-  {{ render_field(sensor.pin, 'basic', 'col-md-3') }}
-  {{ render_field(sensor.sensor_type, 'basic') }}
+    {{ render_field(sensor.sensor_type, 'basic') }}
+    {# this field needs to be renderer as optional in template, as it might be
+    autopopulated in form validation #}
+    {{ render_field(sensor.pin, 'basic', 'col-md-2', required=False) }}
   </div>
 {% endfor %}
 

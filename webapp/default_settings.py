@@ -54,3 +54,14 @@ SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://devel:devel@mysql/devel'
 SQLALCHEMY_BINDS = {
     'external': 'mysql+pymysql://external:external@mysql/external',
 }
+
+# Predefined sensor PINs
+SENSOR_TYPES = {
+    14: '1',
+    9: '7',
+}
+
+# IDs of default SensorTypes assigned to node
+SENSOR_DEFAULT_SET = [
+    14, 9,
+]

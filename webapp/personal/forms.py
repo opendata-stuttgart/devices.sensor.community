@@ -11,6 +11,7 @@ Redistribution and use in source and binary forms, with or without modification,
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
+from flask import current_app as app
 from flask_wtf import FlaskForm
 from flask_login import current_user
 from wtforms import (BooleanField, StringField, HiddenField, PasswordField, DecimalField, DateTimeField, validators,
@@ -126,9 +127,21 @@ def fetch_sensor_types():
         ], else_=0).desc()).all()
 
 class SensorForm(FlaskForm):
-    pin = StringField(_('PIN'))
-    sensor_type = QuerySelectField(_('Sensor Type'),
-                                   query_factory=fetch_sensor_types)
+    pin = StringField(
+        _('PIN'), [validators.DataRequired()],
+        description=_('For special use only'))
+
+    sensor_type = QuerySelectField(
+        _('Sensor Type'), [validators.DataRequired()],
+        query_factory=fetch_sensor_types)
+
+    def validate(self, *args, **kwargs):
+        if not self.pin.data and self.sensor_type.data \
+                and self.sensor_type.data.id in app.config['SENSOR_TYPES']:
+            self.pin.data = app.config['SENSOR_TYPES'].get(
+                self.sensor_type.data.id)
+        return super().validate(*args, **kwargs)
+
 
 class SensorSettingsForm(FlaskForm):
     name = StringField(

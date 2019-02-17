@@ -110,8 +110,8 @@ def sensor_settings(id):
 @login_required
 def sensor_register():
     form = SensorRegisterForm(data={'sensors': [
-        {'pin': '1', 'sensor_type': SensorType.query.get(14)},  # SDS011
-        {'pin': '7', 'sensor_type': SensorType.query.get(9)},  # DHT22
+        {'sensor_type': SensorType.query.get(sensor)}
+        for sensor in current_app.config['SENSOR_DEFAULT_SET']
     ]})
 
     if form.validate_on_submit():
