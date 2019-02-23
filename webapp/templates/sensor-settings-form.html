@@ -4,6 +4,7 @@
 
 {% set location = form.location %}
 <div class="row">
+    {{ render_field(location.indoor, 'basic', 'col-md-2') }}
     {{ render_field(location.street_name, 'basic') }}
     {{ render_field(location.street_number, 'basic') }}
 </div>
