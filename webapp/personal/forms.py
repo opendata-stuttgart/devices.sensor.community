@@ -46,10 +46,10 @@ class SensorLocationForm(FlaskForm):
         default='DE'
     )
 
-
-    latitude = StringField(_('Latitude'), [RequiredIf(indoor=False, message=_('Please enter the latitude.'))])
-    longitude = StringField(_('Longitude'), [RequiredIf(indoor=False, message=_('Please enter the longitude.'))])
-
+    latitude = StringField(_('Latitude'), default="0.0",
+                           validators=[RequiredIf(indoor=False, message=_('Please enter the latitude.'))])
+    longitude = StringField(_('Longitude'), default="0.0",
+                            validators=[RequiredIf(indoor=False, message=_('Please enter the longitude.'))])
 
     industry_in_area = IntegerField(
         _('How much industrial activity is there within a 100m radius?'),
@@ -97,19 +97,21 @@ class SensorLocationForm(FlaskForm):
         description='How close are those roads? 1 = very little further away, 10 = a lot of traffic right on your doorstep.',
     )
 
+
 def fetch_sensor_types():
     # Custom order just to pronounce default types
     return SensorType.query.order_by(db.case([
-            (SensorType.uid.in_(['SDS011', 'DHT22']), 1),
-        ], else_=0).desc()).all()
+        (SensorType.uid.in_(['SDS011', 'DHT22']), 1),
+    ], else_=0).desc()).all()
+
 
 class SensorForm(FlaskForm):
     pin = StringField(
-        _('PIN'), [validators.Optional()],
+        _('PIN'), [validators.InputRequired()],
         description=_('For special use only'))
 
     sensor_type = QuerySelectField(
-        _('Sensor Type'), [validators.Optional()],
+        _('Sensor Type'), [validators.InputRequired()],
         query_factory=fetch_sensor_types)
 
     def validate(self, *args, **kwargs):

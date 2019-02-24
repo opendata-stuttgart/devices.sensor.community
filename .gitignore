@@ -17,7 +17,6 @@ feinstaub.sql
 .DS_Store
 ._*
 *~
-.idea
 
 # Enviroment
 venv
@@ -33,6 +32,10 @@ get-pip.py
 !.vscode/launch.json
 !.vscode/extensions.json
 .history
+
+### IntelliJ ###
+*.iml
+*.idea
 
 # Node, Bower, SASS
 .sass-cache
