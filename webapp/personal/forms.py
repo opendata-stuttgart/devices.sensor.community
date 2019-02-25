@@ -12,77 +12,52 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 """
 
 from flask import current_app as app
-from flask_wtf import FlaskForm
-from flask_login import current_user
-from wtforms import (BooleanField, StringField, HiddenField, PasswordField, DecimalField, DateTimeField, validators,
-                     IntegerField, SubmitField, TextAreaField, SelectField, FormField)
-from wtforms.fields import FieldList
-from wtforms.ext.sqlalchemy.fields import QuerySelectField
 from flask_babelex import lazy_gettext as _
-from . import constants
-from ..common.countrycodes import country_codes
+from flask_login import current_user
+from flask_wtf import FlaskForm
+from wtforms import (BooleanField, StringField, validators,
+                     IntegerField, SubmitField, TextAreaField, SelectField, FormField)
+from wtforms.ext.sqlalchemy.fields import QuerySelectField
+from wtforms.fields import FieldList
 
+from webapp.common.helpers import RequiredIf
 from webapp.external_data.models import SensorType, db
+from ..common.countrycodes import country_codes
 
 
 class SensorLocationForm(FlaskForm):
-    street_name = StringField(
-        _('Street'),
-        [
-            validators.DataRequired(
-                message=_('Please enter the street name.'),
-            )
-        ]
-    )
+    indoor = BooleanField(_("Indoor Sensor"), )
+
+    street_name = StringField(_('Street'), [RequiredIf(indoor=False, message=_('Please enter the street name.'))])
     street_number = StringField(_('Street number'))
-    postalcode = StringField(
-        _('Postal code'),
-        [
-            validators.DataRequired(
-                message=_('Please enter the postal code.'),
-            )
-        ]
-    )
-    city = StringField(
-        _('City'),
-        [
-            validators.DataRequired(
-                message=_('Please enter the city name.'),
-            )
-        ]
-    )
+
+    postalcode = StringField(_('Postal code'), [RequiredIf(indoor=False, message=_('Please enter the postal code.'))])
+
+    city = StringField(_('City'), [RequiredIf(indoor=False, message=_('Please enter the city name.'))])
+
     country = SelectField(
         _('Country'),
         [
-            validators.DataRequired(
+            validators.InputRequired(
                 message=_('Please enter the country name.'),
             )
         ],
         choices=country_codes,
         default='DE'
     )
-    latitude = StringField(
-        _('Latitude'),
-        [
-            validators.DataRequired(
-                message=_('Please enter the latitude.'),
-            )
-        ]
-    )
-    longitude = StringField(
-        _('Longitude'),
-        [
-            validators.DataRequired(
-                message=_('Please enter the longitude.'),
-            )
-        ]
-    )
+
+    latitude = StringField(_('Latitude'), default="0.0",
+                           validators=[RequiredIf(indoor=False, message=_('Please enter the latitude.'))])
+    longitude = StringField(_('Longitude'), default="0.0",
+                            validators=[RequiredIf(indoor=False, message=_('Please enter the longitude.'))])
+
     industry_in_area = IntegerField(
         _('How much industrial activity is there within a 100m radius?'),
         [
-            validators.DataRequired(
-                message=_('Please give your estimate.'),
-            ),
+            # validators.InputRequired(
+            #     message=_('Please give your estimate.'),
+            # ),
+            validators.Optional(),
             validators.NumberRange(
                 min=1,
                 max=10,
@@ -94,9 +69,10 @@ class SensorLocationForm(FlaskForm):
     oven_in_area = IntegerField(
         _('How many private stoves or fireplaces are within a 100m radius?'),
         [
-            validators.DataRequired(
-                message=_('Please give your estimate.'),
-            ),
+            # validators.InputRequired(
+            #     message=_('Please give your estimate.'),
+            # ),
+            validators.Optional(),
             validators.NumberRange(
                 min=1,
                 max=10,
@@ -108,9 +84,10 @@ class SensorLocationForm(FlaskForm):
     traffic_in_area = IntegerField(
         _('How much traffic is there within a 100m radius?'),
         [
-            validators.DataRequired(
-                message=_('Please give your estimate.'),
-            ),
+            # validators.InputRequired(
+            #     message=_('Please give your estimate.'),
+            # ),
+            validators.Optional(),
             validators.NumberRange(
                 min=1,
                 max=10,
@@ -120,19 +97,21 @@ class SensorLocationForm(FlaskForm):
         description='How close are those roads? 1 = very little further away, 10 = a lot of traffic right on your doorstep.',
     )
 
+
 def fetch_sensor_types():
     # Custom order just to pronounce default types
     return SensorType.query.order_by(db.case([
-            (SensorType.uid.in_(['SDS011', 'DHT22']), 1),
-        ], else_=0).desc()).all()
+        (SensorType.uid.in_(['SDS011', 'DHT22']), 1),
+    ], else_=0).desc()).all()
+
 
 class SensorForm(FlaskForm):
     pin = StringField(
-        _('PIN'), [validators.DataRequired()],
+        _('PIN'), [validators.InputRequired()],
         description=_('For special use only'))
 
     sensor_type = QuerySelectField(
-        _('Sensor Type'), [validators.DataRequired()],
+        _('Sensor Type'), [validators.InputRequired()],
         query_factory=fetch_sensor_types)
 
     def validate(self, *args, **kwargs):
@@ -147,7 +126,7 @@ class SensorSettingsForm(FlaskForm):
     name = StringField(
         _('Personal sensor name'),
         [
-            validators.DataRequired(
+            validators.InputRequired(
                 message=_('Please enter the sensor name.'),
             )
         ],
@@ -156,17 +135,19 @@ class SensorSettingsForm(FlaskForm):
     height = IntegerField(
         _('Sensor level above ground (in cm)'),
         [
-            validators.DataRequired(
-                message='Please indicate the height of the sensor above the ground.'
-            )
+            # validators.InputRequired(
+            #     message='Please indicate the height of the sensor above the ground.'
+            # )
+            validators.Optional()
         ]
     )
     sensor_position = IntegerField(
         _('Sensor location relative to the traffic'),
         [
-            validators.DataRequired(
-                message='Please indicate the mounting location of the sensor.'
-            )
+            # validators.InputRequired(
+            #     message='Please indicate the mounting location of the sensor.'
+            # )
+            validators.Optional()
         ],
         description='1 = on the garden side, very well shielded from all streets, 10 = the sensor is on a house wall directly on the street. With this value it is irrelevant how big the street is, it is only about where the sensor is attached to the house.'
     )
@@ -186,7 +167,7 @@ class SensorGiveForm(FlaskForm):
     email = StringField(
         _("Recipient's e-mail address"),
         [
-            validators.DataRequired(
+            validators.InputRequired(
                 message=_("Please enter e-mail address"),
             ),
             validators.Email(

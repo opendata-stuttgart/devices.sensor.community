@@ -4,6 +4,7 @@
 
 {% set location = form.location %}
 <div class="row">
+    {{ render_field(location.indoor, 'basic', 'col-md-2') }}
     {{ render_field(location.street_name, 'basic') }}
     {{ render_field(location.street_number, 'basic') }}
 </div>
@@ -32,11 +33,7 @@
   </div>
 {% endfor %}
 
-<div class="row">
-    <div class="form-group col-md-6 offset-md-3">
-        {{ form.submit(class="form-control btn btn-primary") }}
-    </div>
-</div>
+
 <div class="row">
     <div class="col-md-12">
         <p>{{ _('The more precise the data we have, the better we can evaluate the data and thus energize statements. The system also tries to make a geoposition out of the address, but we would be happy if you would specify the position with the map below.') }} </p>
@@ -76,6 +73,12 @@
                 {{ error }}
             {% endfor %}
         {% endif %}
+    </div>
+</div>
+
+<div class="row">
+    <div class="form-group col-md-6 offset-md-3">
+        {{ form.submit(class="form-control btn btn-primary") }}
     </div>
 </div>
 
