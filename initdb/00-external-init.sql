@@ -131,6 +131,9 @@ CREATE TABLE IF NOT EXISTS `sensors_node` (
   `sensor_position` int(11) DEFAULT NULL,
   `name` longtext DEFAULT NULL,
   `last_notify` datetime DEFAULT NULL,
+  `indoor` tinyint(1) NOT NULL,
+  `inactive` tinyint(1) NOT NULL,
+  `exact_location` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `uid` (`uid`),
   KEY `sensors_node_e274a5da` (`location_id`),
@@ -142,8 +145,8 @@ CREATE TABLE IF NOT EXISTS `sensors_node` (
 -- Dumping data for table feinstaub.sensors_node: ~7,852 rows (approximately)
 DELETE FROM `sensors_node`;
 /*!40000 ALTER TABLE `sensors_node` DISABLE KEYS */;
-INSERT INTO `sensors_node` (`id`, `created`, `modified`, `uid`, `description`, `location_id`, `owner_id`, `description_internal`, `email`, `height`, `sensor_position`, `name`, `last_notify`) VALUES
-	(1, '2015-08-07 23:00:21', '2015-08-07 23:00:21', 'esp8266-16630636', 'esp-12 (E)', 3, 2, NULL, 'testing@luftdaten.info', NULL, NULL, NULL, NULL);
+INSERT INTO `sensors_node` (`id`, `created`, `modified`, `uid`, `description`, `location_id`, `owner_id`, `description_internal`, `email`, `height`, `sensor_position`, `name`, `last_notify`, `indoor`, `inactive`, `exact_location`) VALUES
+	(1, '2015-08-07 23:00:21', '2015-08-07 23:00:21', 'esp8266-16630636', 'esp-12 (E)', 3, 2, NULL, 'testing@luftdaten.info', NULL, NULL, NULL, NULL, 0, 0, 0);
 /*!40000 ALTER TABLE `sensors_node` ENABLE KEYS */;
 
 

@@ -1,6 +1,7 @@
 <h2>{{ _('Basic Information') }} </h2>
 
 {{ render_field(form.name) }}
+{{ render_field(form.inactive) }}
 
 {% set location = form.location %}
 <div class="row">
@@ -17,6 +18,7 @@
 
 
 <h2>{{ _('Additional Information') }}  </h2>
+{{ render_field(form.exact_location) }}
 {{ render_field(form.height) }}
 {{ render_field(form.sensor_position) }}
 {{ render_field(location.industry_in_area) }}

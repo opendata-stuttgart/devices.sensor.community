@@ -33,6 +33,10 @@ class Node(db.Model):
     name = db.Column(db.String)
     last_notify = db.Column(db.DateTime)
 
+    indoor = db.Column(db.Boolean, nullable=False, default=False)
+    inactive = db.Column(db.Boolean, nullable=False, default=False)
+    exact_location = db.Column(db.Boolean, nullable=False, default=False)
+
 
 class Sensor(db.Model):
     __tablename__ = 'sensors_sensor'

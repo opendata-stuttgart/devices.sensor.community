@@ -151,6 +151,14 @@ class SensorSettingsForm(FlaskForm):
         ],
         description='1 = on the garden side, very well shielded from all streets, 10 = the sensor is on a house wall directly on the street. With this value it is irrelevant how big the street is, it is only about where the sensor is attached to the house.'
     )
+    exact_location = BooleanField(
+        _('Exact location'),
+        description=_('Reveal exact sensor location in public data and archives.'),
+    )
+    inactive = BooleanField(
+        _('Inactive'),
+        description=_('Mark sensor as inactive. No notifications will be sent when sensor goes offline.')
+    )
     location = FormField(SensorLocationForm)
     sensors = FieldList(FormField(SensorForm), min_entries=1)
     description = TextAreaField(
