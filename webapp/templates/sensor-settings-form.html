@@ -38,47 +38,26 @@
 
 <div class="row">
     <div class="col-md-12">
-        <p>{{ _('The more precise the data we have, the better we can evaluate the data and thus energize statements. The system also tries to make a geoposition out of the address, but we would be happy if you would specify the position with the map below.') }} </p>
-        <button type="button" class="btn btn-default" id="sensor-setting-use-address">Suche Adresse
-        </button>
-        <button type="button" class="btn btn-default" id="sensor-setting-switch-style"
-                data-style="streets">
-                {{ _('satellite map') }}
-        </button>
+        <p>{{ _('The more precise the data we have, the better we can evaluate the data and thus energize statements. The system can also try to make a geoposition out of the address, but we would be happy if you would specify the position with the map below.') }} </p>
     </div>
 </div>
+
+<div class="row">
+  {{ render_field(location.latitude, 'basic', 'col-md-4') }}
+  {{ render_field(location.longitude, 'basic', 'col-md-4') }}
+  <div class="col">
+    <label class="control-label">&nbsp;</label>
+    <button type="button" class="btn btn-default btn-block" id="sensor-setting-use-address">{{ _('Lookup entered address') }}</button>
+  </div>
+</div>
+
 <div class="row">
     <div class="col-md-12">
         <div id="sensor-settings-map"></div>
     </div>
 </div>
-<div class="row">
-    <div class="col-md-12">
-        <p>{{ _('For those interested: the geocoordinates resulting from the map.') }}  </p>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-3">
-        {{ location.latitude(class="form-control") }}
-    </div>
-    <div class="col-md-3">
-        {{ location.longitude(class="form-control") }}
-    </div>
-    <div class="col-md-6">
-        {% if location.latitude.errors %}
-            {% for error in location.latitude.errors %}
-                {{ error }}
-            {% endfor %}
-        {% endif %}
-        {% if location.longitude.errors %}
-            {% for error in location.longitude.errors %}
-                {{ error }}
-            {% endfor %}
-        {% endif %}
-    </div>
-</div>
 
-<div class="row">
+<div class="row m-3">
     <div class="form-group col-md-6 offset-md-3">
         {{ form.submit(class="form-control btn btn-primary") }}
     </div>
