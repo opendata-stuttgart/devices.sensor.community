@@ -11,6 +11,7 @@ $( document ).ready(function() {
             var mapCenter = [$('#location-latitude').val(), $('#location-longitude').val()];
         }
 
+      L.Icon.Default.imagePath = '/static/images/leaflet/';
         var map = L.map('sensor-settings-map', {center: mapCenter, zoom: luftdaten_storage.default_zoom});
         L.tileLayer('https://maps.luftdaten.info/tiles/{z}/{x}/{y}.png', {
             maxZoom: 18,
