@@ -1,3 +1,4 @@
+from flask import current_app
 from sqlalchemy.orm import backref
 
 from ..extensions import db
@@ -20,7 +21,8 @@ class Node(db.Model):
     location_id = db.Column(db.Integer, db.ForeignKey('sensors_sensorlocation.id'), nullable=False)
     location = db.relationship('SensorLocation')
 
-    owner_id = db.Column(db.Integer, nullable=False, default=1)
+    owner_id = db.Column(db.Integer, nullable=False,
+                         default=lambda: current_app.config['SENSOR_DEFAULT_OWNER'])
     description_internal = db.Column(db.String)
 
     email = db.Column(db.String(254))
@@ -32,6 +34,10 @@ class Node(db.Model):
     sensor_position = db.Column(db.Integer)
     name = db.Column(db.String)
     last_notify = db.Column(db.DateTime)
+
+    indoor = db.Column(db.Boolean, nullable=False, default=False)
+    inactive = db.Column(db.Boolean, nullable=False, default=False)
+    exact_location = db.Column(db.Boolean, nullable=False, default=False)
 
 
 class Sensor(db.Model):

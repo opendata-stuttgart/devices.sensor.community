@@ -30,6 +30,7 @@
     "gulp-uglify": "^1.5.3",
     "gulp-watch": "^4.3.6",
     "jquery": "~3",
+    "leaflet": "^1.4.0",
     "merge2": "^1.0.2",
     "node-sass-tilde-importer": "^1.0.2",
     "normalize.css": "~5",

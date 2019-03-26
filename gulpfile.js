@@ -33,6 +33,7 @@ gulp.task('sass', ['fonts'], function () {
   gulp.src([
     // basePaths.packages + 'tether/dist/css/tether.css',
     basePaths.packages + 'bootstrap-multiselect/dist/css/bootstrap-multiselect.css',
+    basePaths.packages + 'leaflet/dist/leaflet.css',
     basePaths.assets + 'sass/base.scss',
   ])
   .pipe(sass({
@@ -50,6 +51,7 @@ gulp.task('js', function() {
   gulp.src([
     basePaths.packages + 'jquery/dist/jquery.js',
     // basePaths.packages + 'tether/dist/js/tether.js',
+    basePaths.packages + 'leaflet/dist/leaflet.js',
     basePaths.packages + 'bootstrap/dist/js/bootstrap.js',
     basePaths.packages + 'bootstrap-multiselect/dist/js/bootstrap-multiselect.js',
     basePaths.packages + 'bootstrap-multiselect/dist/js/bootstrap-multiselect-collapsible-groups.js',

@@ -71,3 +71,6 @@ SENSOR_DEFAULT_SET = [
 # Update sensor location in-place if it has been modified earlier than N
 # seconds ago
 SENSOR_LOCATION_UPDATE_INTERVAL = 60 * 60 * 24 * 3  # 3 days
+
+# Default Node.owner_id field value
+SENSOR_DEFAULT_OWNER = 1
