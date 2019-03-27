@@ -169,7 +169,11 @@ class SensorSettingsForm(FlaskForm):
 
 class SensorRegisterForm(SensorSettingsForm):
     sensor_id = StringField(_('Sensor ID'))
-
+    sensor_board = SelectField(
+        _('Sensor Board'), [validators.InputRequired()],
+        choices=[('esp8266-', 'esp8266'), ('esp32-', 'esp32')],
+        default='esp32-'
+    )
 
 class SensorGiveForm(FlaskForm):
     email = StringField(

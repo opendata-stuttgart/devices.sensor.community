@@ -5,6 +5,7 @@
     <form id="sensor-setting-form" action="{{ url_for('.sensor_register') }}" method="POST">
         <h1>{{ _('Sensor registration') }}</h1>
         {{ render_field(form.sensor_id) }}
+        {{ render_field(form.sensor_board) }}
         {% include "sensor-settings-form.html" with context %}
     </form>
 {% endblock %}
