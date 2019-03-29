@@ -107,11 +107,11 @@ def fetch_sensor_types():
 
 class SensorForm(FlaskForm):
     pin = StringField(
-        _('PIN'), [validators.InputRequired()],
+        _('PIN'), [validators.Optional()],
         description=_('For special use only'))
 
     sensor_type = QuerySelectField(
-        _('Sensor Type'), [validators.InputRequired()],
+        _('Sensor Type'), [validators.Optional()],
         query_factory=fetch_sensor_types)
 
     def validate(self, *args, **kwargs):
@@ -172,7 +172,7 @@ class SensorRegisterForm(SensorSettingsForm):
     sensor_board = SelectField(
         _('Sensor Board'), [validators.InputRequired()],
         choices=[('esp8266-', 'esp8266'), ('esp32-', 'esp32')],
-        default='esp32-'
+        default='esp8266-'
     )
 
 class SensorGiveForm(FlaskForm):
