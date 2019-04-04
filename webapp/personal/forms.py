@@ -100,18 +100,16 @@ class SensorLocationForm(FlaskForm):
 
 def fetch_sensor_types():
     # Custom order just to pronounce default types
-    return SensorType.query.order_by(db.case([
-        (SensorType.uid.in_(['SDS011', 'DHT22']), 1),
-    ], else_=0).desc()).all()
+    return SensorType.query.order_by(SensorType.uid.asc()).filter(SensorType.id.in_(app.config["SENSOR_TYPES"].keys())).all()
 
 
 class SensorForm(FlaskForm):
     pin = StringField(
-        _('PIN'), [validators.InputRequired()],
+        _('PIN'), [validators.Optional()],
         description=_('For special use only'))
 
     sensor_type = QuerySelectField(
-        _('Sensor Type'), [validators.InputRequired()],
+        _('Sensor Type'), [validators.Optional()],
         query_factory=fetch_sensor_types)
 
     def validate(self, *args, **kwargs):
@@ -169,7 +167,11 @@ class SensorSettingsForm(FlaskForm):
 
 class SensorRegisterForm(SensorSettingsForm):
     sensor_id = StringField(_('Sensor ID'))
-
+    sensor_board = SelectField(
+        _('Sensor Board'), [validators.InputRequired()],
+        choices=[('esp8266-', 'esp8266'), ('esp32-', 'esp32')],
+        default='esp8266-'
+    )
 
 class SensorGiveForm(FlaskForm):
     email = StringField(

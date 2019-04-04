@@ -1,6 +1,14 @@
 {% extends "layout.html" %}
 {% from "_formhelpers.html" import render_field %}
 
+{% block head %}
+    {{ super() }}
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="https://meine.luftdaten.info/leaflet/leaflet@1.4.0/dist/leaflet.css"/>
+    <script src="https://meine.luftdaten.info/leaflet/leaflet@1.4.0/dist/leaflet.js"></script>
+{#    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>#}
+{% endblock %}
+
 {% block content %}
     <form method="POST" action="{{ url_for('.sensor_settings', id=node.id) }}" id="sensor-setting-form">
         <h1>{{ _('Settings of Node %(node_id)s', node_id=node.uid) }}</h1>
