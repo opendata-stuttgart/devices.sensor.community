@@ -3,7 +3,7 @@
 {% block content %}
     <div class="fullwidth clearfix">
         <div id="topcontainer" class="bodycontainer clearfix">
-            <p><img src="../../static/images/logo.svg" alt="logo"/></p>
+            <p><img src="/static/images/logo.svg" alt="logo"/></p>
             <h1><span class="title">{{ _('Configure air quality sensor yourself') }}</span></h1>
         </div>
     </div>
@@ -13,32 +13,28 @@
     <div class="fullwidth colour1 clearfix">
         <div id="maincont" class="bodycontainer clearfix">
             <h2>{{ _('Configure Luftdaten') }}</h2>
-            <p>{{ _('The main purpose of this page is to enable you, as the owner of a fine dust sensor, to configure the location and other parameters yourself. Click here to ') }} {% if not current_user.is_authenticated %}<a href="/login">Login</a>{% endif %}.</p>
-            <p>{{ _('General information can be found at') }}  <a href="http://luftdaten.info">luftdaten.info</a>{{ _(', as well as the ') }}  <a href="http://luftdaten.info">{{ _('building instructions.') }} </a> {{ _('Sensor data can be found on ') }} <a href="http://deutschland.maps.luftdaten.info">{{ _('on the fine dust map') }}
-                </a>{{ _('or') }} <a href="http://archive.luftdaten.info/">{{ _('download as CSVs') }}</a>.</p>
+            <p>{{ _('The main purpose of this page is to enable you, as the owner of a fine dust sensor, to configure the location and other parameters yourself.') }}
+            {% if not current_user.is_authenticated %}{% trans login_url=url_for('security.login') %}Click here to <a href="{{ login_url }}">log in</a>.{% endtrans %}{% endif %}</p>
+            <p>
+            {% trans home_url='https://luftdaten.info', manual_url='https://luftdaten.info', map_url='https://deutschland.maps.luftdaten.info' -%}
+            General information can be found at <a href="{{ home_url }}">luftdaten.info</a>, as well as the <a href="{{ manual_url }}">building instructions</a>.
+            Sensor data can be found on <a href="{{ map_url }}">the fine dust map</a> or <a href="{{ archive_url }}">be downloaded as CSVs</a>.
+            {%- endtrans %}
+            </p>
         </div>
     </div>
 
     <div class="arrow-separator arrow-theme"></div>
 
-    {#<div class="fullwidth colour2 clearfix">#}
-    {#  <div id="maincont" class="bodycontainer clearfix">#}
-    {#  </div>#}
-    {#</div>#}
-    {#    <div class="arrow-separator arrow-themelight"></div>#}
-
-
     <div class="fullwidth clearfix">
         <div class="bodycontainer clearfix">
-
-
             <h2>{{ _('Join us!') }} </h2>
             <p>{{ _('The city of the future belongs to its citizens. The digital tools, the Maker Movement and Citizen Science are leading to more and more people being given the opportunity to design the city themselves.') }} </p><br>
 
             <h2>{{ _('About the project') }}</h2>
-                    <p>{{ _('The OK Lab Stuttgart is part of the program Code for Germany of the Open Knowledge Foundation Germany. The aim of the program is to promote developments in the areas of transparency, Open Data and Citizen Science.') }} </p>
-                    <p>{{ _('Regional groups consisting of designers, developers, journalists and others meet regularly in Labs. They develop apps that inform, positively shape and support society and make the work of administrations and authorities more transparent.') }} </p>
-                    <h4>{{ _('Code a difference: Use your skills to improve your city!') }}</h4>
+            <p>{{ _('The OK Lab Stuttgart is part of the program Code for Germany of the Open Knowledge Foundation Germany. The aim of the program is to promote developments in the areas of transparency, Open Data and Citizen Science.') }} </p>
+            <p>{{ _('Regional groups consisting of designers, developers, journalists and others meet regularly in Labs. They develop apps that inform, positively shape and support society and make the work of administrations and authorities more transparent.') }} </p>
+            <h4>{{ _('Code a difference: Use your skills to improve your city!') }}</h4>
         </div>
     </div>
 {% endblock %}
