@@ -67,7 +67,7 @@ gulp.task('fonts', function() {
     .pipe(googleWebFonts({
       fontsDir: basePaths.target + 'fonts/',
       cssDir: basePaths.target + 'fonts/',
-      cssFilename: 'google-fonts.scss',
+      cssFilename: 'fonts.css',
       relativePaths: true,
     }))
     .pipe(replace('url(static', 'url(/static'))
