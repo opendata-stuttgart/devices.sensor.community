@@ -100,9 +100,7 @@ class SensorLocationForm(FlaskForm):
 
 def fetch_sensor_types():
     # Custom order just to pronounce default types
-    return SensorType.query.order_by(db.case([
-        (SensorType.uid.in_(['SDS011', 'DHT22']), 1),
-    ], else_=0).desc()).all()
+    return SensorType.query.order_by(SensorType.uid.asc()).filter(SensorType.id.in_(app.config["SENSOR_TYPES"].keys())).all()
 
 
 class SensorForm(FlaskForm):
