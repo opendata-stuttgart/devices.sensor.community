@@ -64,7 +64,7 @@ class SensorLocationForm(FlaskForm):
                 message=_('Please enter the number between 1 and 10'),
             )
         ],
-        description='No office space, but potential fine dust producers 1 = very little, 10 = very much.',
+        description=_('No office space, but potential fine dust producers 1 = very little, 10 = very much.'),
     )
     oven_in_area = IntegerField(
         _('How many private stoves or fireplaces are within a 100m radius?'),
@@ -79,7 +79,7 @@ class SensorLocationForm(FlaskForm):
                 message=_('Please enter the number between 1 and 10'),
             )
         ],
-        description='Does it smell very much like such smoke in your area? 1 = very little, 10 = very much.',
+        description=_('Does it smell very much like such smoke in your area? 1 = very little, 10 = very much.'),
     )
     traffic_in_area = IntegerField(
         _('How much traffic is there within a 100m radius?'),
@@ -94,7 +94,7 @@ class SensorLocationForm(FlaskForm):
                 message=_('Please enter the number between 1 and 10'),
             )
         ],
-        description='How close are those roads? 1 = very little further away, 10 = a lot of traffic right on your doorstep.',
+        description=_('How close are those roads? 1 = very little further away, 10 = a lot of traffic right on your doorstep.'),
     )
 
 
@@ -137,7 +137,8 @@ class SensorSettingsForm(FlaskForm):
             #     message='Please indicate the height of the sensor above the ground.'
             # )
             validators.Optional()
-        ]
+        ],
+        description=_('NOT height above sea level!')
     )
     sensor_position = IntegerField(
         _('Sensor location relative to the traffic'),
@@ -147,10 +148,10 @@ class SensorSettingsForm(FlaskForm):
             # )
             validators.Optional()
         ],
-        description='1 = on the garden side, very well shielded from all streets, 10 = the sensor is on a house wall directly on the street. With this value it is irrelevant how big the street is, it is only about where the sensor is attached to the house.'
+        description=_('1 = on the garden side, very well shielded from all streets, 10 = the sensor is on a house wall directly on the street. With this value it is irrelevant how big the street is, it is only about where the sensor is attached to the house.')
     )
     exact_location = BooleanField(
-        _('Exact location'),
+        _('Publish exact location'),
         description=_('Reveal exact sensor location in public data and archives.'),
     )
     inactive = BooleanField(
@@ -169,7 +170,7 @@ class SensorRegisterForm(SensorSettingsForm):
     sensor_id = StringField(_('Sensor ID'))
     sensor_board = SelectField(
         _('Sensor Board'), [validators.InputRequired()],
-        choices=[('esp8266-', 'esp8266'), ('esp32-', 'esp32')],
+        choices=[('esp8266-', 'esp8266'), ('esp32-', 'esp32'), ('raspi-', 'raspi-'), ('smogomierz', 'smogomierz')],
         default='esp8266-'
     )
 

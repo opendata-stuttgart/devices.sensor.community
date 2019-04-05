@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-03-07 14:07+0000\n"
+"POT-Creation-Date: 2019-04-05 15:22+0000\n"
 "PO-Revision-Date: 2019-02-08 15:22+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -83,103 +83,165 @@ msgstr "Wie viel verarbeitende Industrie befinden sich in 100 m Radius?"
 msgid "Please enter the number between 1 and 10"
 msgstr "Bitte geben Sie einen Wert von 1 bis 10 an"
 
+#: webapp/personal/forms.py:67
+msgid ""
+"No office space, but potential fine dust producers 1 = very little, 10 = "
+"very much."
+msgstr ""
+"Nicht Büros, sondern potentielle Feinstaubquellen. 1 = sehr wenige, 10 = "
+"sehr viele"
+
 #: webapp/personal/forms.py:70
 msgid "How many private stoves or fireplaces are within a 100m radius?"
 msgstr "Wie viele private Öfen oder Kamine gibt es im Umkreis von 100 m?"
+
+#: webapp/personal/forms.py:82
+msgid ""
+"Does it smell very much like such smoke in your area? 1 = very little, 10"
+" = very much."
+msgstr "Riecht es sehr nach Rauch in der Umgebung? 1 = sehr wenig, 10 = sehr viel"
 
 #: webapp/personal/forms.py:85
 msgid "How much traffic is there within a 100m radius?"
 msgstr "Wie viel Verkehr gibt es in einem Umkreis von 100 Metern?"
 
-#: webapp/personal/forms.py:110
+#: webapp/personal/forms.py:97
+msgid ""
+"How close are those roads? 1 = very little further away, 10 = a lot of "
+"traffic right on your doorstep."
+msgstr ""
+"Wie nah sind diese Straßen? 1 = sehr wenige weiter weg, 10 = VielVerkehr "
+"direkt vor der Tür."
+
+#: webapp/personal/forms.py:108
 msgid "PIN"
 msgstr ""
 
-#: webapp/personal/forms.py:111
+#: webapp/personal/forms.py:109
 msgid "For special use only"
 msgstr ""
 
-#: webapp/personal/forms.py:114
+#: webapp/personal/forms.py:112
 msgid "Sensor Type"
 msgstr "Sensortyp"
 
-#: webapp/personal/forms.py:127
+#: webapp/personal/forms.py:125
 msgid "Personal sensor name"
 msgstr "Interner Name des Sensors"
 
-#: webapp/personal/forms.py:130
+#: webapp/personal/forms.py:128
 msgid "Please enter the sensor name."
 msgstr "Bitte geben Sie einen Sensornamen an."
 
-#: webapp/personal/forms.py:133
+#: webapp/personal/forms.py:131
 msgid "Only the sensor ID will be published."
 msgstr "Veröffentlicht wird nur die Sensor-UID"
 
-#: webapp/personal/forms.py:136
+#: webapp/personal/forms.py:134
 msgid "Sensor level above ground (in cm)"
 msgstr "Höhe des Sensors über dem Boden (in cm)"
 
-#: webapp/personal/forms.py:145
+#: webapp/personal/forms.py:141
+msgid "NOT height above sea level!"
+msgstr "NICHT die Höhe über Meeresspiegel!"
+
+#: webapp/personal/forms.py:144
 msgid "Sensor location relative to the traffic"
 msgstr "Sensorposition relativ zur Straße:"
 
-#: webapp/personal/forms.py:157
+#: webapp/personal/forms.py:151
+msgid ""
+"1 = on the garden side, very well shielded from all streets, 10 = the "
+"sensor is on a house wall directly on the street. With this value it is "
+"irrelevant how big the street is, it is only about where the sensor is "
+"attached to the house."
+msgstr ""
+"1 = an der Hausrückseite, 10 = zur Straße hin. Die Größe der Straße ist "
+"hier nicht entscheidend."
+
+#: webapp/personal/forms.py:154
+msgid "Publish exact location"
+msgstr "Genaue Position veröffentlichen"
+
+#: webapp/personal/forms.py:155
+msgid "Reveal exact sensor location in public data and archives."
+msgstr ""
+"Es wird die genaue Sensorposition in den veröffentlichten Daten und um "
+"Archiv verwendet."
+
+#: webapp/personal/forms.py:158
+msgid "Inactive"
+msgstr "Inaktiv"
+
+#: webapp/personal/forms.py:159
+msgid ""
+"Mark sensor as inactive. No notifications will be sent when sensor goes "
+"offline."
+msgstr ""
+"Markiert den Sensor als inaktiv. Es werden keine Benachrichtigungen mehr "
+"versendet, wenn der Sensor keine Daten mehr liefert."
+
+#: webapp/personal/forms.py:164
 msgid "Short description of location"
 msgstr "Kurze Beschreibung des Standortes"
 
-#: webapp/personal/forms.py:159
+#: webapp/personal/forms.py:166
 msgid "Save settings"
 msgstr "Einstellungen speichern"
 
-#: webapp/personal/forms.py:163
+#: webapp/personal/forms.py:170
 msgid "Sensor ID"
 msgstr ""
 
-#: webapp/personal/forms.py:168
+#: webapp/personal/forms.py:172
+msgid "Sensor Board"
+msgstr ""
+
+#: webapp/personal/forms.py:179
 msgid "Recipient's e-mail address"
 msgstr "E-Mail Adresse des Empfängers"
 
-#: webapp/personal/forms.py:171
+#: webapp/personal/forms.py:182
 msgid "Please enter e-mail address"
 msgstr "Bitte geben Sie eine E-Mail-Adresse an"
 
-#: webapp/personal/forms.py:174
+#: webapp/personal/forms.py:185
 msgid "Please enter correct e-mail address"
 msgstr "Bitte geben Sie eine korrekte Mailadresse an."
 
-#: webapp/personal/forms.py:178
+#: webapp/personal/forms.py:189
 msgid "Transfer sensor"
 msgstr "Sensor übergeben"
 
-#: webapp/personal/forms.py:183
+#: webapp/personal/forms.py:194
 msgid "You can't transfer the sensor to yourself"
 msgstr "Du kannst den Sensor nicht auf dich selbst übertragen."
 
-#: webapp/personal/views.py:34
+#: webapp/personal/views.py:32
 msgid "Fine dust 10 µm"
 msgstr "Feinstaub 10 µm"
 
-#: webapp/personal/views.py:35
+#: webapp/personal/views.py:33
 msgid "Fine dust 2.5 µm"
 msgstr "Feinstaub 2,5 µm"
 
-#: webapp/personal/views.py:36
+#: webapp/personal/views.py:34
 msgid "Humidity"
 msgstr "Luftfeuchtigkeit"
 
-#: webapp/personal/views.py:37
+#: webapp/personal/views.py:35
 msgid "Temperature"
 msgstr "Temperatur"
 
-#: webapp/personal/views.py:122
+#: webapp/personal/views.py:120
 msgid "Settings saved successfully."
 msgstr "Einstellungen erfolgreich gespeichert."
 
-#: webapp/personal/views.py:148
+#: webapp/personal/views.py:147
 msgid "Sensor succesfuly registered."
 msgstr "Sensor erfolgreich registriert"
 
-#: webapp/personal/views.py:163
+#: webapp/personal/views.py:162
 msgid "A fine dust sensor was transferred to you"
 msgstr "Ein Feinstaubsensor wurde Ihnen übertragen"
 
@@ -230,46 +292,29 @@ msgstr "Luftdaten konfigurieren"
 #: webapp/templates/index.html:16
 msgid ""
 "The main purpose of this page is to enable you, as the owner of a fine "
-"dust sensor, to configure the location and other parameters yourself. "
-"Click here to "
+"dust sensor, to configure the location and other parameters yourself."
 msgstr ""
-"Auf dieser Seite können Besitzer eines Feinstaubsensors diesen Sensor "
-"anmelden und den Standort und andere Parameter selbst"
-" konfigurieren. Klicken Sie hier für das "
 
 #: webapp/templates/index.html:17
-msgid "General information can be found at"
-msgstr "Weitere Informationen zum Projekt finden Sie unter"
+#, python-format
+msgid "Click here to <a href=\"%(login_url)s\">log in</a>."
+msgstr ""
 
-#: webapp/templates/index.html:17
-msgid ", as well as the "
-msgstr ", ebenso die "
+#: webapp/templates/index.html:19
+#, python-format
+msgid ""
+"General information can be found at <a "
+"href=\"%(home_url)s\">luftdaten.info</a>, as well as the <a "
+"href=\"%(manual_url)s\">building instructions</a>.\n"
+"            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
+"dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
+msgstr ""
 
-#: webapp/templates/index.html:17
-msgid "building instructions."
-msgstr "Bauanleitung"
-
-#: webapp/templates/index.html:17
-msgid "Sensor data can be found on "
-msgstr "Sensordaten finden Sie unter "
-
-#: webapp/templates/index.html:17
-msgid "on the fine dust map"
-msgstr "auf der Feinstaubkarte"
-
-#: webapp/templates/index.html:18
-msgid "or"
-msgstr "oder"
-
-#: webapp/templates/index.html:18
-msgid "download as CSVs"
-msgstr "als CSVs herunterladen"
-
-#: webapp/templates/index.html:35
+#: webapp/templates/index.html:31
 msgid "Join us!"
 msgstr "Mach mit!"
 
-#: webapp/templates/index.html:36
+#: webapp/templates/index.html:32
 msgid ""
 "The city of the future belongs to its citizens. The digital tools, the "
 "Maker Movement and Citizen Science are leading to more and more people "
@@ -279,22 +324,22 @@ msgstr ""
 "Maker Bewegung und Citizen Science führen dazu, dass immer mehr Menschen "
 "die Möglichkeit erhalten, die Stadt selbst zu gestalten."
 
-#: webapp/templates/index.html:38
+#: webapp/templates/index.html:34
 msgid "About the project"
 msgstr "Über das Projekt"
 
-#: webapp/templates/index.html:39
+#: webapp/templates/index.html:35
 msgid ""
 "The OK Lab Stuttgart is part of the program Code for Germany of the Open "
 "Knowledge Foundation Germany. The aim of the program is to promote "
 "developments in the areas of transparency, Open Data and Citizen Science."
 msgstr ""
-"Das OK Lab Stuttgart ist Teil des Programms "Code for Germany" der "
-"Open Knowledge Foundation Deutschland. Das Ziel des Programms ist die Förderung"
-" von Entwicklungen in den Bereichen Transparenz, offene Daten und "
-"Citizen Science."
+"Das OK Lab Stuttgart ist Teil des Programms \"Code for Germany\" der Open"
+" Knowledge Foundation Deutschland. Das Ziel des Programms ist die "
+"Förderung von Entwicklungen in den Bereichen Transparenz, offene Daten "
+"und Citizen Science."
 
-#: webapp/templates/index.html:40
+#: webapp/templates/index.html:36
 msgid ""
 "Regional groups consisting of designers, developers, journalists and "
 "others meet regularly in Labs. They develop apps that inform, positively "
@@ -303,10 +348,11 @@ msgid ""
 msgstr ""
 "Regionale Gruppen bestehend aus Designern, Entwicklern, Journalisten und "
 "Anderen treffen sich regelmäßig in den Labs. Sie entwickeln Apps, die "
-"positiv informieren, die Gesellschaft zu gestalten und zu unterstützen und"
-" die Arbeit der Verwaltungen zu erleichtern und  Behörden transparenter zu machen."
+"positiv informieren, die Gesellschaft zu gestalten und zu unterstützen "
+"und die Arbeit der Verwaltungen zu erleichtern und  Behörden "
+"transparenter zu machen."
 
-#: webapp/templates/index.html:41
+#: webapp/templates/index.html:37
 msgid "Code a difference: Use your skills to improve your city!"
 msgstr "Code a difference: Nutz‘ deine Fähigkeiten, um deine Stadt zu verbessern!"
 
@@ -828,8 +874,8 @@ msgid ""
 "You can see all current imports in this overview. Click on Reload to "
 "update the status."
 msgstr ""
-"Alle noch laufenden Importe können Sie in dieser Übersicht sehen. Klicken "
-"Sie auf neu laden, um den Status zu aktualisieren."
+"Alle noch laufenden Importe können Sie in dieser Übersicht sehen. Klicken"
+" Sie auf neu laden, um den Status zu aktualisieren."
 
 #: webapp/templates/sensor-import-status.html:18
 msgid "ID"
@@ -881,33 +927,25 @@ msgstr "Sensor-Registrierung"
 msgid "Basic Information"
 msgstr "Basisinformationen"
 
-#: webapp/templates/sensor-settings-form.html:19
+#: webapp/templates/sensor-settings-form.html:20
 msgid "Additional Information"
 msgstr "Zusätzliche Informationen"
 
-#: webapp/templates/sensor-settings-form.html:26
+#: webapp/templates/sensor-settings-form.html:28
 msgid "Hardware configuration"
 msgstr "Hardware-Konfiguration"
 
-#: webapp/templates/sensor-settings-form.html:39
+#: webapp/templates/sensor-settings-form.html:41
 msgid ""
 "The more precise the data we have, the better we can evaluate the data "
-"and thus energize statements. The system also tries to make a geoposition"
-" out of the address, but we would be happy if you would specify the "
-"position with the map below."
+"and thus energize statements. The system can also try to make a "
+"geoposition out of the address, but we would be happy if you would "
+"specify the position with the map below."
 msgstr ""
-"Je genauere Daten wir haben, desto besser können wir die Daten auswerten "
-"und dadurch Aussagen generieren. Das System versucht zwar auch so, aus "
-"der Adresse eine Geoposition zu machen, aber wir würden uns freuen, wenn "
-"Sie die Position mit der Karte unten noch weiter präzisieren würden.\""
 
-#: webapp/templates/sensor-settings-form.html:44
-msgid "satellite map"
-msgstr "Satelliten-Karte"
-
-#: webapp/templates/sensor-settings-form.html:55
-msgid "For those interested: the geocoordinates resulting from the map."
-msgstr "Für Interessierte: die aus der Karte resultierenden Geokoordinaten."
+#: webapp/templates/sensor-settings-form.html:50
+msgid "Lookup entered address"
+msgstr ""
 
 #: webapp/templates/emails/recover.html:11
 #: webapp/templates/emails/register-existing.html:11
@@ -1154,4 +1192,66 @@ msgstr "Nutzerdaten gespeichert."
 
 #~ msgid "Old password not correct."
 #~ msgstr "Altes Passwort nicht korrekt"
+
+#~ msgid ""
+#~ "The main purpose of this page is"
+#~ " to enable you, as the owner of"
+#~ " a fine dust sensor, to configure "
+#~ "the location and other parameters "
+#~ "yourself. Click here to "
+#~ msgstr ""
+#~ "Auf dieser Seite können Besitzer eines"
+#~ " Feinstaubsensors diesen Sensor anmelden "
+#~ "und den Standort und andere Parameter"
+#~ " selbst konfigurieren. Klicken Sie hier "
+#~ "für das "
+
+#~ msgid "General information can be found at"
+#~ msgstr "Weitere Informationen zum Projekt finden Sie unter"
+
+#~ msgid ", as well as the "
+#~ msgstr ", ebenso die "
+
+#~ msgid "building instructions."
+#~ msgstr "Bauanleitung"
+
+#~ msgid "Sensor data can be found on "
+#~ msgstr "Sensordaten finden Sie unter "
+
+#~ msgid "on the fine dust map"
+#~ msgstr "auf der Feinstaubkarte"
+
+#~ msgid "or"
+#~ msgstr "oder"
+
+#~ msgid "download as CSVs"
+#~ msgstr "als CSVs herunterladen"
+
+#~ msgid ""
+#~ "The more precise the data we have,"
+#~ " the better we can evaluate the "
+#~ "data and thus energize statements. The"
+#~ " system also tries to make a "
+#~ "geoposition out of the address, but "
+#~ "we would be happy if you would "
+#~ "specify the position with the map "
+#~ "below."
+#~ msgstr ""
+#~ "Je genauere Daten wir haben, desto "
+#~ "besser können wir die Daten auswerten"
+#~ " und dadurch Aussagen generieren. Das "
+#~ "System versucht zwar auch so, aus "
+#~ "der Adresse eine Geoposition zu machen,"
+#~ " aber wir würden uns freuen, wenn "
+#~ "Sie die Position mit der Karte "
+#~ "unten noch weiter präzisieren würden.\""
+
+#~ msgid "satellite map"
+#~ msgstr "Satelliten-Karte"
+
+#~ msgid "For those interested: the geocoordinates resulting from the map."
+#~ msgstr "Für Interessierte: die aus der Karte resultierenden Geokoordinaten."
+
+#~ msgid "Exact location"
+#~ msgstr "Exakte Position"
 
