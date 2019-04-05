@@ -12,7 +12,7 @@
 
     <div class="fullwidth colour1 clearfix">
         <div id="maincont" class="bodycontainer clearfix">
-            <h2>{{ _('Configure Luftdaten') }}</h2>
+            <!-- <h2>{{ _('Configure Luftdaten') }}</h2> -->
             <p>{{ _('The main purpose of this page is to enable you, as the owner of a fine dust sensor, to configure the location and other parameters yourself.') }}
             {% if not current_user.is_authenticated %}{% trans login_url=url_for('security.login') %}Click here to <a href="{{ login_url }}">log in</a>.{% endtrans %}{% endif %}</p>
             <p>

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-04-05 15:22+0000\n"
+"POT-Creation-Date: 2019-04-05 17:50+0000\n"
 "PO-Revision-Date: 2019-02-17 19:11+0100\n"
 "Last-Translator: Piotr Dobrowolski <admin@tastycode.pl>\n"
 "Language: pl_PL\n"
@@ -180,31 +180,42 @@ msgstr "Krótki opis lokalizacji"
 msgid "Save settings"
 msgstr "Zapisz ustawienia"
 
-#: webapp/personal/forms.py:170
+#: webapp/personal/forms.py:171
 msgid "Sensor ID"
 msgstr "ID Sensora"
 
 #: webapp/personal/forms.py:172
+msgid "The numeric part of the sensorname only"
+msgstr ""
+
+#: webapp/personal/forms.py:175
 msgid "Sensor Board"
 msgstr ""
 
-#: webapp/personal/forms.py:179
+#: webapp/personal/forms.py:178
+msgid ""
+"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
+"the Smogomierz sensor version need to change this accordingly. Also in "
+"these cases the Sensor ID is the numeric part of the name only."
+msgstr ""
+
+#: webapp/personal/forms.py:183
 msgid "Recipient's e-mail address"
 msgstr "Adres e-mail odbiorcy"
 
-#: webapp/personal/forms.py:182
+#: webapp/personal/forms.py:186
 msgid "Please enter e-mail address"
 msgstr "Podaj adres e-mail"
 
-#: webapp/personal/forms.py:185
+#: webapp/personal/forms.py:189
 msgid "Please enter correct e-mail address"
 msgstr "Podaj poprawny adres e-mail"
 
-#: webapp/personal/forms.py:189
+#: webapp/personal/forms.py:193
 msgid "Transfer sensor"
 msgstr "Przekaż czujnik"
 
-#: webapp/personal/forms.py:194
+#: webapp/personal/forms.py:198
 msgid "You can't transfer the sensor to yourself"
 msgstr "Nie możesz przekazać czujnika do samego siebie"
 

@@ -48,7 +48,7 @@ python-dotenv==0.10.1
 python-editor==1.0.3
 pytz==2018.9
 redis==2.10.6
-requests==2.19.1
+requests==2.20.0
 setuptools==20.4
 six==1.11.0
 speaklater==1.3
