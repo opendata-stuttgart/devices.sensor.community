@@ -1,4 +1,4 @@
-# Polish (Poland) translations for PROJECT.
+# Portuguese translations for PROJECT.
 # Copyright (C) 2019 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
@@ -8,12 +8,11 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2019-04-05 15:22+0000\n"
-"PO-Revision-Date: 2019-02-17 19:11+0100\n"
-"Last-Translator: Piotr Dobrowolski <admin@tastycode.pl>\n"
-"Language: pl_PL\n"
-"Language-Team: \n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && "
-"(n%100<10 || n%100>=20) ? 1 : 2)\n"
+"PO-Revision-Date: 2019-04-05 15:53+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: pt\n"
+"Language-Team: pt <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,64 +24,64 @@ msgstr ""
 
 #: webapp/personal/forms.py:31
 msgid "Street"
-msgstr "Ulica"
+msgstr ""
 
 #: webapp/personal/forms.py:31
 msgid "Please enter the street name."
-msgstr "Podaj nazwę ulicy."
+msgstr ""
 
 #: webapp/personal/forms.py:32
 msgid "Street number"
-msgstr "Numer domu"
+msgstr ""
 
 #: webapp/personal/forms.py:34
 msgid "Postal code"
-msgstr "Kod pocztowy"
+msgstr ""
 
 #: webapp/personal/forms.py:34
 msgid "Please enter the postal code."
-msgstr "Podaj kod pocztowy."
+msgstr ""
 
 #: webapp/personal/forms.py:36
 msgid "City"
-msgstr "Miasto"
+msgstr ""
 
 #: webapp/personal/forms.py:36
 msgid "Please enter the city name."
-msgstr "Podaj nazwę miasta."
+msgstr ""
 
 #: webapp/personal/forms.py:39
 msgid "Country"
-msgstr "Państwo"
+msgstr ""
 
 #: webapp/personal/forms.py:42
 msgid "Please enter the country name."
-msgstr "Podaj nazwę państwa."
+msgstr ""
 
 #: webapp/personal/forms.py:49
 msgid "Latitude"
-msgstr "Szerokość geograficzna"
+msgstr ""
 
 #: webapp/personal/forms.py:50
 msgid "Please enter the latitude."
-msgstr "Podaj szerokość geograficzną."
+msgstr ""
 
 #: webapp/personal/forms.py:51
 msgid "Longitude"
-msgstr "Długość geograficzna"
+msgstr ""
 
 #: webapp/personal/forms.py:52
 msgid "Please enter the longitude."
-msgstr "Podaj długość geograficzną."
+msgstr ""
 
 #: webapp/personal/forms.py:55
 msgid "How much industrial activity is there within a 100m radius?"
-msgstr "Jaki jest poziom aktywności przemysłowej w okręgu 100 metrów?"
+msgstr ""
 
 #: webapp/personal/forms.py:64 webapp/personal/forms.py:79
 #: webapp/personal/forms.py:94
 msgid "Please enter the number between 1 and 10"
-msgstr "Podaj liczbę pomiędzy 1 a 10"
+msgstr ""
 
 #: webapp/personal/forms.py:67
 msgid ""
@@ -92,7 +91,7 @@ msgstr ""
 
 #: webapp/personal/forms.py:70
 msgid "How many private stoves or fireplaces are within a 100m radius?"
-msgstr "Jaka jest ilość pieców grzewczych i kominków w okręgu 100 metrów?"
+msgstr ""
 
 #: webapp/personal/forms.py:82
 msgid ""
@@ -102,7 +101,7 @@ msgstr ""
 
 #: webapp/personal/forms.py:85
 msgid "How much traffic is there within a 100m radius?"
-msgstr "Jak dużo ruchu miejskiego jest w okręgu 100m?"
+msgstr ""
 
 #: webapp/personal/forms.py:97
 msgid ""
@@ -112,31 +111,31 @@ msgstr ""
 
 #: webapp/personal/forms.py:108
 msgid "PIN"
-msgstr "PIN"
+msgstr ""
 
 #: webapp/personal/forms.py:109
 msgid "For special use only"
-msgstr "Tylko do specjalnych zastosowań"
+msgstr ""
 
 #: webapp/personal/forms.py:112
 msgid "Sensor Type"
-msgstr "Typ sensora"
+msgstr ""
 
 #: webapp/personal/forms.py:125
 msgid "Personal sensor name"
-msgstr "Własna nazwa czujnika"
+msgstr ""
 
 #: webapp/personal/forms.py:128
 msgid "Please enter the sensor name."
-msgstr "Podaj nazwę czujnika."
+msgstr ""
 
 #: webapp/personal/forms.py:131
 msgid "Only the sensor ID will be published."
-msgstr "Tylko ID sensora zostanie upublicznione."
+msgstr ""
 
 #: webapp/personal/forms.py:134
 msgid "Sensor level above ground (in cm)"
-msgstr "Wysokość czujnika ponad ziemią (w centrymetrach)"
+msgstr ""
 
 #: webapp/personal/forms.py:141
 msgid "NOT height above sea level!"
@@ -144,7 +143,7 @@ msgstr ""
 
 #: webapp/personal/forms.py:144
 msgid "Sensor location relative to the traffic"
-msgstr "Lokalizacja czujnika względem ruchu miejskiego"
+msgstr ""
 
 #: webapp/personal/forms.py:151
 msgid ""
@@ -174,15 +173,15 @@ msgstr ""
 
 #: webapp/personal/forms.py:164
 msgid "Short description of location"
-msgstr "Krótki opis lokalizacji"
+msgstr ""
 
 #: webapp/personal/forms.py:166
 msgid "Save settings"
-msgstr "Zapisz ustawienia"
+msgstr ""
 
 #: webapp/personal/forms.py:170
 msgid "Sensor ID"
-msgstr "ID Sensora"
+msgstr ""
 
 #: webapp/personal/forms.py:172
 msgid "Sensor Board"
@@ -190,95 +189,95 @@ msgstr ""
 
 #: webapp/personal/forms.py:179
 msgid "Recipient's e-mail address"
-msgstr "Adres e-mail odbiorcy"
+msgstr ""
 
 #: webapp/personal/forms.py:182
 msgid "Please enter e-mail address"
-msgstr "Podaj adres e-mail"
+msgstr ""
 
 #: webapp/personal/forms.py:185
 msgid "Please enter correct e-mail address"
-msgstr "Podaj poprawny adres e-mail"
+msgstr ""
 
 #: webapp/personal/forms.py:189
 msgid "Transfer sensor"
-msgstr "Przekaż czujnik"
+msgstr ""
 
 #: webapp/personal/forms.py:194
 msgid "You can't transfer the sensor to yourself"
-msgstr "Nie możesz przekazać czujnika do samego siebie"
+msgstr ""
 
 #: webapp/personal/views.py:32
 msgid "Fine dust 10 µm"
-msgstr "Cząstki zawieszone 10µm"
+msgstr ""
 
 #: webapp/personal/views.py:33
 msgid "Fine dust 2.5 µm"
-msgstr "Cząstki zawieszone 2.5µm"
+msgstr ""
 
 #: webapp/personal/views.py:34
 msgid "Humidity"
-msgstr "Wilgotność"
+msgstr ""
 
 #: webapp/personal/views.py:35
 msgid "Temperature"
-msgstr "Temperatura"
+msgstr ""
 
 #: webapp/personal/views.py:120
 msgid "Settings saved successfully."
-msgstr "Ustawienia zapisane."
+msgstr ""
 
 #: webapp/personal/views.py:147
 msgid "Sensor succesfuly registered."
-msgstr "Czunik został zarejestrowany."
+msgstr ""
 
 #: webapp/personal/views.py:162
 msgid "A fine dust sensor was transferred to you"
-msgstr "Czujnik pyłu zawieszonego został przekazany Tobie"
+msgstr ""
 
 #: webapp/templates/401.html:8
 msgid "Access prohibited"
-msgstr "Dostęp zabroniony"
+msgstr ""
 
 #: webapp/templates/401.html:9
 msgid "You may not access this page. Maybe "
-msgstr "Nie możesz otworzyć tej strony. Może "
+msgstr ""
 
 #: webapp/templates/401.html:9
 msgid "you must first log in?"
-msgstr "musisz się najpierw zalogować?"
+msgstr ""
 
 #: webapp/templates/imprint.html:8 webapp/templates/layout.html:88
 msgid "Imprint"
-msgstr "Impressum"
+msgstr ""
 
 #: webapp/templates/imprint.html:14
 msgid "Informations according to § 5 TMG"
-msgstr "Informacje, zgodnie z § 5 TMG"
+msgstr ""
 
 #: webapp/templates/imprint.html:21
 msgid "Represented by:"
-msgstr "Reprezentowane przez:"
+msgstr ""
 
 #: webapp/templates/imprint.html:26
 msgid "Contact:"
-msgstr "Kontakt:"
+msgstr ""
 
 #: webapp/templates/imprint.html:32
 msgid "based on the concept and software development of Ernesto Ruge:"
-msgstr "bazowane na pomyśle i oprogramowaniu stworzonym przez Ernesto Ruge:"
+msgstr ""
 
 #: webapp/templates/imprint.html:34
 msgid "Contact: Website of Ernesto Ruge:"
-msgstr "Kontakt: Strona Ernesto Ruge:"
+msgstr ""
 
 #: webapp/templates/index.html:7 webapp/templates/register-minimal.html:13
 msgid "Configure air quality sensor yourself"
-msgstr "Skonfiguruj swój czujnik jakości powietrza"
+msgstr ""
 
 #: webapp/templates/index.html:15
 msgid "Configure Luftdaten"
-msgstr "Skonfiguruj Luftdaten"
+msgstr ""
 
 #: webapp/templates/index.html:16
 msgid ""
@@ -303,7 +302,7 @@ msgstr ""
 
 #: webapp/templates/index.html:31
 msgid "Join us!"
-msgstr "Dołącz do nas!"
+msgstr ""
 
 #: webapp/templates/index.html:32
 msgid ""
@@ -311,13 +310,10 @@ msgid ""
 "Maker Movement and Citizen Science are leading to more and more people "
 "being given the opportunity to design the city themselves."
 msgstr ""
-"Miasto przyszłości należy do jego mieszkańców. Cyfrowe narzędzia, ruch "
-"Makerski i Nauka Obywatelska prowadzą do udostępnienia ludziom możliwości"
-" projektowania ich własnego miasta."
 
 #: webapp/templates/index.html:34
 msgid "About the project"
-msgstr "O projekcie"
+msgstr ""
 
 #: webapp/templates/index.html:35
 msgid ""
@@ -325,10 +321,6 @@ msgid ""
 "Knowledge Foundation Germany. The aim of the program is to promote "
 "developments in the areas of transparency, Open Data and Citizen Science."
 msgstr ""
-"OK Lab Stuttgart jest częścią programu Code for Germany z fundacji Open "
-"Knowledge Foundation Germany. Celem tego programu jest promowanie rozwoju"
-" w dziedzinach związanych z przejrzystością danych publicznych oraz Nauk "
-"Obywatelskich."
 
 #: webapp/templates/index.html:36
 msgid ""
@@ -337,18 +329,14 @@ msgid ""
 "shape and support society and make the work of administrations and "
 "authorities more transparent."
 msgstr ""
-"Lokalne grupy składające się z designerów, programistów, dziennikarzy i "
-"innych spotykają się regularnie w Labach. Tworzą oni aplikacje które "
-"informują, pozytywnie formują, wspierają społeczeństwo i pozwalają na "
-"zwiększenie transparentności administracji i służb."
 
 #: webapp/templates/index.html:37
 msgid "Code a difference: Use your skills to improve your city!"
-msgstr "Koduj zmianę: Używaj swoich umiejętności aby ulepszyć swoje miasto!"
+msgstr ""
 
 #: webapp/templates/invalid-email.html:8
 msgid "Unknown email address"
-msgstr "Nieznany adres e-mail"
+msgstr ""
 
 #: webapp/templates/invalid-email.html:9
 msgid "There are no sensors stored under this e-mail address."
@@ -370,24 +358,24 @@ msgstr ""
 
 #: webapp/templates/layout.html:45
 msgid "Home"
-msgstr "Strona główna"
+msgstr ""
 
 #: webapp/templates/layout.html:48
 msgid "Overview"
-msgstr "Przegląd"
+msgstr ""
 
 #: webapp/templates/layout.html:49 webapp/templates/my-sensors.html:9
 msgid "My sensors"
-msgstr "Moje czujniki"
+msgstr ""
 
 #: webapp/templates/layout.html:50 webapp/templates/my-password.html:10
 #: webapp/templates/my-sensors.html:30 webapp/templates/my-settings.html:13
 msgid "Settings"
-msgstr "Ustawienia"
+msgstr ""
 
 #: webapp/templates/layout.html:51
 msgid "Password change"
-msgstr "Zmiana hasła"
+msgstr ""
 
 #: webapp/templates/layout.html:54
 msgid "Massimporter"
@@ -395,76 +383,76 @@ msgstr ""
 
 #: webapp/templates/layout.html:60
 msgid "Logout"
-msgstr "Wyloguj"
+msgstr ""
 
 #: webapp/templates/layout.html:62 webapp/templates/security/login_user.html:7
 #: webapp/templates/security/send_login.html:5
 msgid "Login"
-msgstr "Logowanie"
+msgstr ""
 
 #: webapp/templates/layout.html:89 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
-msgstr "Polityka prywatności"
+msgstr ""
 
 #: webapp/templates/login-with-password.html:68
 msgid "Back to e-mail login"
-msgstr "Powróć do strony logowania"
+msgstr ""
 
 #: webapp/templates/login-with-password.html:69
 msgid "Password Reset"
-msgstr "Resetowanie hasła"
+msgstr ""
 
 #: webapp/templates/login.html:12
 msgid "Configure air data sensor yourself  "
-msgstr "Skonfiguruj swój czujnik jakości powietrza "
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:11
 msgid "Meine Luftdaten"
-msgstr "Moje Luftdaten"
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:11
 msgid "Your personal area. "
-msgstr "Twoja prywatna strefa. "
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:18
 msgid "Sensors "
-msgstr "Sensory"
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:19
 msgid "View and change sensor data and settings. "
-msgstr "Przeglądaj i zmieniaj konfigurację swoich sensorów."
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:20
 msgid "Settings "
-msgstr "Ustawienia"
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:21
 msgid "View and change data, notification settings and passwords. "
-msgstr "Zmień swoje ustawienia, powiadomienia i hasła."
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:22
 msgid "Password "
-msgstr "Hasło"
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:23
 msgid "Change password. "
-msgstr "Zmień hasło."
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:24
 msgid "Logout "
-msgstr "Wyloguj"
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:25
 msgid "Logout."
-msgstr "Wyloguj."
+msgstr ""
 
 #: webapp/templates/my-password.html:11
 msgid "Change your password."
-msgstr "Zmień hasło."
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr "Dane z czujnika"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -473,44 +461,40 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found "
 msgstr ""
-"Standardowo, dwa sensory podłączone są do jednego czujnika: sensor pyłów "
-"zawieszonych, oraz\n"
-"\t\t\tsensor temperatury i wilgotności. Identyfikator sensora może zostać"
-" znaleziony na"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust card again."
-msgstr "mapie pyłów zawieszonych"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:21
 msgid "Last updated: "
-msgstr "Ostatnia aktualizacja:"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:31
 msgid "No current data are available for this sensor."
-msgstr "\t"
+msgstr ""
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "Sensor "
-msgstr "Sensor"
+msgstr ""
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "was handed over."
-msgstr "został przekazany."
+msgstr ""
 
 #: webapp/templates/my-sensor-give-success.html:14
 msgid "An e-mail was sent to the new owner"
-msgstr "Wiadomość e-mail została wysłana do nowego właściciela"
+msgstr ""
 
 #: webapp/templates/my-sensor-give-success.html:15
 #: webapp/templates/my-sensor-give.html:24
 msgid "Back to my sensors"
-msgstr "Powrót do listy czujników"
+msgstr ""
 
 #: webapp/templates/my-sensor-give.html:8
 #, python-format
 msgid "Sensor %(node_id)s hand over"
-msgstr "Przekazywanie czujnika %(node_id)s"
+msgstr ""
 
 #: webapp/templates/my-sensor-give.html:9
 msgid ""
@@ -518,18 +502,15 @@ msgid ""
 " useful if you have ordered a sensor for a friend and want to transfer it"
 " to him or her."
 msgstr ""
-"Możesz tutaj przekazać czujnik innej osobie. Jest to szczególnie "
-"przydatne gdy zamówiłeś czujnik dla swojego znajomego, a teraz chcesz im "
-"go przekazać."
 
 #: webapp/templates/my-sensor-give.html:10
 msgid "Warning! After the transfer you have no more control over the sensor!"
-msgstr "Uwaga! Po przekazaniu czujnika tracisz nad nim kontrolę!"
+msgstr ""
 
 #: webapp/templates/my-sensor-settings.html:14
 #, python-format
 msgid "Settings of Node %(node_id)s"
-msgstr "Ustawienia czujnika %(node_id)s"
+msgstr ""
 
 #: webapp/templates/my-sensor-settings.html:15
 msgid ""
@@ -538,53 +519,46 @@ msgid ""
 " can also argue politically. It is therefore important that the basic "
 "sensor data is always kept up to date."
 msgstr ""
-"W tym formularzu możesz upewnić się że informacje o Twoim czujniku nadal "
-"są aktualne. Pamiętaj że tylko poprawne informacje umożliwiają dokładną "
-"analizę danych pozwalającą na polityczny dyskurs nt. jakości powietrza. Z"
-" tego powodu bardzo ważne jest, aby informacje o Twoim czujniku były "
-"wciąż aktualne."
 
 #: webapp/templates/my-sensors.html:10
 msgid "All sensors assigned to your account can be found in this overview."
 msgstr ""
-"Wszystkie czujniki przypisane do Twojego konta będą widoczne w tym "
-"podsumowaniu"
 
 #: webapp/templates/my-sensors.html:15
 msgid "Sensor UID"
-msgstr "ID sensora"
+msgstr ""
 
 #: webapp/templates/my-sensors.html:16
 msgid "Name"
-msgstr "Nazwa"
+msgstr ""
 
 #: webapp/templates/my-sensors.html:17
 msgid "Last Update"
-msgstr "Ostatnia aktualizacja"
+msgstr ""
 
 #: webapp/templates/my-sensors.html:18
 msgid "Functions"
-msgstr "Funkcje"
+msgstr ""
 
 #: webapp/templates/my-sensors.html:29
 msgid "Data"
-msgstr "Dane"
+msgstr ""
 
 #: webapp/templates/my-sensors.html:31
 msgid "Hand over sensor"
-msgstr "Przekaż czujnik"
+msgstr ""
 
 #: webapp/templates/my-sensors.html:35
 msgid "No sensors found"
-msgstr "Nie znaleziono czujników"
+msgstr ""
 
 #: webapp/templates/my-sensors.html:40
 msgid "Register new sensor"
-msgstr "Zarejestruj nowy czujnik"
+msgstr ""
 
 #: webapp/templates/my-settings.html:14
 msgid "Here you can change your settings."
-msgstr "Tutaj możesz zmienić jego ustawienia."
+msgstr ""
 
 #: webapp/templates/privacy-policy.html:13
 msgid ""
@@ -662,7 +636,7 @@ msgstr ""
 
 #: webapp/templates/privacy-policy.html:29
 msgid "The ID of your ESP8266 NodeMCU board"
-msgstr "Identyfikator Twojej płytki NodeMCU ESP8266"
+msgstr ""
 
 #: webapp/templates/privacy-policy.html:30
 msgid "The given numerical description of the environment"
@@ -688,7 +662,7 @@ msgstr ""
 
 #: webapp/templates/privacy-policy.html:37
 msgid "The e-mail address"
-msgstr "Podaj adres e-mail"
+msgstr ""
 
 #: webapp/templates/privacy-policy.html:38
 msgid "Your first and last name"
@@ -805,7 +779,7 @@ msgstr ""
 
 #: webapp/templates/sensor-import-status.html:18
 msgid "ID"
-msgstr "Tylko ID sensora zostanie upublicznione."
+msgstr ""
 
 #: webapp/templates/sensor-import-status.html:19
 msgid "Data (Start)"
@@ -843,15 +817,15 @@ msgstr ""
 
 #: webapp/templates/sensor-settings-form.html:1
 msgid "Basic Information"
-msgstr "Podstawowe informacje"
+msgstr ""
 
 #: webapp/templates/sensor-settings-form.html:20
 msgid "Additional Information"
-msgstr "Dodatkowe informacje"
+msgstr ""
 
 #: webapp/templates/sensor-settings-form.html:28
 msgid "Hardware configuration"
-msgstr "Konfiguracja sprzętu"
+msgstr ""
 
 #: webapp/templates/sensor-settings-form.html:41
 msgid ""
@@ -930,28 +904,28 @@ msgstr ""
 
 #: webapp/templates/security/change_password.html:5
 msgid "Change password"
-msgstr "Zmień hasło"
+msgstr ""
 
 #: webapp/templates/security/forgot_password.html:5
 msgid "Send password reset instructions"
-msgstr "Wyślij instrukcje resetu hasła"
+msgstr ""
 
 #: webapp/templates/security/login_user.html:17
 #: webapp/templates/security/register_user.html:5
 msgid "Register"
-msgstr "Rejestracja"
+msgstr ""
 
 #: webapp/templates/security/login_user.html:18
 msgid "Password reminder"
-msgstr "Resetowanie hasła"
+msgstr ""
 
 #: webapp/templates/security/reset_password.html:5
 msgid "Reset password"
-msgstr "Resetowanie hasła"
+msgstr ""
 
 #: webapp/templates/security/send_confirmation.html:5
 msgid "Resend confirmation instructions"
-msgstr "Wyślij instrukcje logowania ponownie"
+msgstr ""
 
 #: webapp/users/forms.py:22 webapp/users/forms.py:36 webapp/users/forms.py:58
 #: webapp/users/forms.py:79
@@ -961,12 +935,12 @@ msgstr ""
 #: webapp/users/forms.py:25 webapp/users/forms.py:39 webapp/users/forms.py:61
 #: webapp/users/forms.py:82
 msgid "Please enter an e-mail address."
-msgstr "Podaj poprawny adres e-mail"
+msgstr ""
 
 #: webapp/users/forms.py:28 webapp/users/forms.py:42 webapp/users/forms.py:64
 #: webapp/users/forms.py:85
 msgid "Please enter a correct e-mail address."
-msgstr "Podaj poprawny adres e-mail"
+msgstr ""
 
 #: webapp/users/forms.py:32
 msgid "next"
@@ -974,7 +948,7 @@ msgstr ""
 
 #: webapp/users/forms.py:46 webapp/users/forms.py:93
 msgid "Password"
-msgstr "Hasło"
+msgstr ""
 
 #: webapp/users/forms.py:49 webapp/users/forms.py:96 webapp/users/forms.py:108
 #: webapp/users/forms.py:136
@@ -987,7 +961,7 @@ msgstr ""
 
 #: webapp/users/forms.py:54
 msgid "login"
-msgstr "logowanie"
+msgstr ""
 
 #: webapp/users/forms.py:68
 msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>"
@@ -999,7 +973,7 @@ msgstr ""
 
 #: webapp/users/forms.py:75
 msgid "register"
-msgstr "rejestracja"
+msgstr ""
 
 #: webapp/users/forms.py:89
 msgid "Password request via email"
@@ -1040,7 +1014,7 @@ msgstr ""
 
 #: webapp/users/forms.py:125
 msgid "New password"
-msgstr "Nowe hasło"
+msgstr ""
 
 #: webapp/users/forms.py:134
 msgid "New password (repeat)"
@@ -1049,94 +1023,4 @@ msgstr ""
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr ""
-
-#~ msgid "Please give your estimate."
-#~ msgstr "Podaj swój szacunek."
-
-#~ msgid ""
-#~ "The main purpose of this page is"
-#~ " to enable you, as the owner of"
-#~ " a fine dust sensor, to configure "
-#~ "the location and other parameters "
-#~ "yourself. Click here to "
-#~ msgstr ""
-#~ "Głównym celem tej strony jest "
-#~ "umożliwienie Tobie, jako właścicielowi "
-#~ "czujnika pyłów zawieszonych, skonfigurowania "
-#~ "lokalizacji oraz jego parametrów. Naciśnij "
-#~ "tutaj aby "
-
-#~ msgid "General information can be found at"
-#~ msgstr "Ogólne informacje znajdziesz"
-
-#~ msgid ", as well as the "
-#~ msgstr ", jak również "
-
-#~ msgid "building instructions."
-#~ msgstr "instrukcje budowy."
-
-#~ msgid "Sensor data can be found on "
-#~ msgstr "Dane z czujników znajdziesz pod "
-
-#~ msgid "on the fine dust map"
-#~ msgstr "na mapie pyłu zawieszonego"
-
-#~ msgid "or"
-#~ msgstr "lub"
-
-#~ msgid "download as CSVs"
-#~ msgstr "pobrać jako CSV"
-
-#~ msgid ""
-#~ "The more precise the data we have,"
-#~ " the better we can evaluate the "
-#~ "data and thus energize statements. The"
-#~ " system also tries to make a "
-#~ "geoposition out of the address, but "
-#~ "we would be happy if you would "
-#~ "specify the position with the map "
-#~ "below."
-#~ msgstr ""
-
-#~ msgid "satellite map"
-#~ msgstr ""
-
-#~ msgid "For those interested: the geocoordinates resulting from the map."
-#~ msgstr ""
-
-#~ msgid "Your password has been changed."
-#~ msgstr "Hasło zostało zmienione."
-
-#~ msgid "If you did not change your password,"
-#~ msgstr "Jeśli nie zmieniłeś swojego hasła,"
-
-#~ msgid "click here to reset it"
-#~ msgstr "naciśnij tutaj aby je zresetować."
-
-#~ msgid "Please confirm your email through the link below:"
-#~ msgstr "Potwierdź swój adres email klikając w poniższy link:"
-
-#~ msgid "Confirm my account"
-#~ msgstr "Potwierdź konto"
-
-#~ msgid "Welcome %(email)s!"
-#~ msgstr "Witaj %(email)s!"
-
-#~ msgid "You can log into your account through the link below:"
-#~ msgstr "Możesz zalogować się na swoje konto poniższym linkiem:"
-
-#~ msgid "Login now"
-#~ msgstr "Zaloguj teraz"
-
-#~ msgid "Click here to reset your password"
-#~ msgstr "Kliknij tutaj aby zresetować hasło"
-
-#~ msgid "Your password has been reset"
-#~ msgstr "Twoje hasło zostało zresetowane"
-
-#~ msgid "You can confirm your email through the link below:"
-#~ msgstr "Możesz potwierdzić swój adres email poniższym linkiem:"
-
-#~ msgid "Exact location"
-#~ msgstr ""
 
