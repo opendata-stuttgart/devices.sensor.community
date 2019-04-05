@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-02-17 19:08+0100\n"
+"POT-Creation-Date: 2019-04-05 13:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,169 +17,190 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: webapp/personal/forms.py:30
+#: webapp/personal/forms.py:29
+msgid "Indoor Sensor"
+msgstr ""
+
+#: webapp/personal/forms.py:31
 msgid "Street"
 msgstr ""
 
-#: webapp/personal/forms.py:33
+#: webapp/personal/forms.py:31
 msgid "Please enter the street name."
 msgstr ""
 
-#: webapp/personal/forms.py:37
+#: webapp/personal/forms.py:32
 msgid "Street number"
 msgstr ""
 
-#: webapp/personal/forms.py:39
+#: webapp/personal/forms.py:34
 msgid "Postal code"
 msgstr ""
 
-#: webapp/personal/forms.py:42
+#: webapp/personal/forms.py:34
 msgid "Please enter the postal code."
 msgstr ""
 
-#: webapp/personal/forms.py:47
+#: webapp/personal/forms.py:36
 msgid "City"
 msgstr ""
 
-#: webapp/personal/forms.py:50
+#: webapp/personal/forms.py:36
 msgid "Please enter the city name."
 msgstr ""
 
-#: webapp/personal/forms.py:55
+#: webapp/personal/forms.py:39
 msgid "Country"
 msgstr ""
 
-#: webapp/personal/forms.py:58
+#: webapp/personal/forms.py:42
 msgid "Please enter the country name."
 msgstr ""
 
-#: webapp/personal/forms.py:65
+#: webapp/personal/forms.py:49
 msgid "Latitude"
 msgstr ""
 
-#: webapp/personal/forms.py:68
+#: webapp/personal/forms.py:50
 msgid "Please enter the latitude."
 msgstr ""
 
-#: webapp/personal/forms.py:73
+#: webapp/personal/forms.py:51
 msgid "Longitude"
 msgstr ""
 
-#: webapp/personal/forms.py:76
+#: webapp/personal/forms.py:52
 msgid "Please enter the longitude."
 msgstr ""
 
-#: webapp/personal/forms.py:81
+#: webapp/personal/forms.py:55
 msgid "How much industrial activity is there within a 100m radius?"
 msgstr ""
 
-#: webapp/personal/forms.py:84 webapp/personal/forms.py:98
-#: webapp/personal/forms.py:112
-msgid "Please give your estimate."
-msgstr ""
-
-#: webapp/personal/forms.py:89 webapp/personal/forms.py:103
-#: webapp/personal/forms.py:117
+#: webapp/personal/forms.py:64 webapp/personal/forms.py:79
+#: webapp/personal/forms.py:94
 msgid "Please enter the number between 1 and 10"
 msgstr ""
 
-#: webapp/personal/forms.py:95
+#: webapp/personal/forms.py:70
 msgid "How many private stoves or fireplaces are within a 100m radius?"
 msgstr ""
 
-#: webapp/personal/forms.py:109
+#: webapp/personal/forms.py:85
 msgid "How much traffic is there within a 100m radius?"
 msgstr ""
 
-#: webapp/personal/forms.py:131
+#: webapp/personal/forms.py:108
 msgid "PIN"
 msgstr ""
 
-#: webapp/personal/forms.py:132
+#: webapp/personal/forms.py:109
 msgid "For special use only"
 msgstr ""
 
-#: webapp/personal/forms.py:135
+#: webapp/personal/forms.py:112
 msgid "Sensor Type"
 msgstr ""
 
-#: webapp/personal/forms.py:148
+#: webapp/personal/forms.py:125
 msgid "Personal sensor name"
 msgstr ""
 
-#: webapp/personal/forms.py:151
+#: webapp/personal/forms.py:128
 msgid "Please enter the sensor name."
 msgstr ""
 
-#: webapp/personal/forms.py:154
+#: webapp/personal/forms.py:131
 msgid "Only the sensor ID will be published."
 msgstr ""
 
-#: webapp/personal/forms.py:157
+#: webapp/personal/forms.py:134
 msgid "Sensor level above ground (in cm)"
 msgstr ""
 
-#: webapp/personal/forms.py:165
+#: webapp/personal/forms.py:143
 msgid "Sensor location relative to the traffic"
 msgstr ""
 
-#: webapp/personal/forms.py:176
+#: webapp/personal/forms.py:153
+msgid "Exact location"
+msgstr ""
+
+#: webapp/personal/forms.py:154
+msgid "Reveal exact sensor location in public data and archives."
+msgstr ""
+
+#: webapp/personal/forms.py:157
+msgid "Inactive"
+msgstr ""
+
+#: webapp/personal/forms.py:158
+msgid ""
+"Mark sensor as inactive. No notifications will be sent when sensor goes "
+"offline."
+msgstr ""
+
+#: webapp/personal/forms.py:163
 msgid "Short description of location"
 msgstr ""
 
-#: webapp/personal/forms.py:178
+#: webapp/personal/forms.py:165
 msgid "Save settings"
 msgstr ""
 
-#: webapp/personal/forms.py:182
+#: webapp/personal/forms.py:169
 msgid "Sensor ID"
 msgstr ""
 
-#: webapp/personal/forms.py:187
+#: webapp/personal/forms.py:171
+msgid "Sensor Board"
+msgstr ""
+
+#: webapp/personal/forms.py:178
 msgid "Recipient's e-mail address"
 msgstr ""
 
-#: webapp/personal/forms.py:190
+#: webapp/personal/forms.py:181
 msgid "Please enter e-mail address"
 msgstr ""
 
-#: webapp/personal/forms.py:193
+#: webapp/personal/forms.py:184
 msgid "Please enter correct e-mail address"
 msgstr ""
 
-#: webapp/personal/forms.py:197
+#: webapp/personal/forms.py:188
 msgid "Transfer sensor"
 msgstr ""
 
-#: webapp/personal/forms.py:202
+#: webapp/personal/forms.py:193
 msgid "You can't transfer the sensor to yourself"
 msgstr ""
 
-#: webapp/personal/views.py:34
+#: webapp/personal/views.py:32
 msgid "Fine dust 10 µm"
 msgstr ""
 
-#: webapp/personal/views.py:35
+#: webapp/personal/views.py:33
 msgid "Fine dust 2.5 µm"
 msgstr ""
 
-#: webapp/personal/views.py:36
+#: webapp/personal/views.py:34
 msgid "Humidity"
 msgstr ""
 
-#: webapp/personal/views.py:37
+#: webapp/personal/views.py:35
 msgid "Temperature"
 msgstr ""
 
-#: webapp/personal/views.py:122
+#: webapp/personal/views.py:120
 msgid "Settings saved successfully."
 msgstr ""
 
-#: webapp/personal/views.py:148
+#: webapp/personal/views.py:147
 msgid "Sensor succesfuly registered."
 msgstr ""
 
-#: webapp/personal/views.py:163
+#: webapp/personal/views.py:162
 msgid "A fine dust sensor was transferred to you"
 msgstr ""
 
@@ -230,61 +251,47 @@ msgstr ""
 #: webapp/templates/index.html:16
 msgid ""
 "The main purpose of this page is to enable you, as the owner of a fine "
-"dust sensor, to configure the location and other parameters yourself. "
-"Click here to "
+"dust sensor, to configure the location and other parameters yourself."
 msgstr ""
 
 #: webapp/templates/index.html:17
-msgid "General information can be found at"
+#, python-format
+msgid "Click here to <a href=\"%(login_url)s\">log in</a>."
 msgstr ""
 
-#: webapp/templates/index.html:17
-msgid ", as well as the "
+#: webapp/templates/index.html:19
+#, python-format
+msgid ""
+"General information can be found at <a "
+"href=\"%(home_url)s\">luftdaten.info</a>, as well as the <a "
+"href=\"%(manual_url)s\">building instructions</a>.\n"
+"            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
+"dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
 
-#: webapp/templates/index.html:17
-msgid "building instructions."
-msgstr ""
-
-#: webapp/templates/index.html:17
-msgid "Sensor data can be found on "
-msgstr ""
-
-#: webapp/templates/index.html:17
-msgid "on the fine dust map"
-msgstr ""
-
-#: webapp/templates/index.html:18
-msgid "or"
-msgstr ""
-
-#: webapp/templates/index.html:18
-msgid "download as CSVs"
-msgstr ""
-
-#: webapp/templates/index.html:35
+#: webapp/templates/index.html:31
 msgid "Join us!"
 msgstr ""
 
-#: webapp/templates/index.html:36
+#: webapp/templates/index.html:32
 msgid ""
 "The city of the future belongs to its citizens. The digital tools, the "
 "Maker Movement and Citizen Science are leading to more and more people "
 "being given the opportunity to design the city themselves."
 msgstr ""
 
-#: webapp/templates/index.html:38
+#: webapp/templates/index.html:34
 msgid "About the project"
 msgstr ""
 
-#: webapp/templates/index.html:39
+#: webapp/templates/index.html:35
 msgid ""
 "The OK Lab Stuttgart is part of the program Code for Germany of the Open "
 "Knowledge Foundation Germany. The aim of the program is to promote "
 "developments in the areas of transparency, Open Data and Citizen Science."
 msgstr ""
 
-#: webapp/templates/index.html:40
+#: webapp/templates/index.html:36
 msgid ""
 "Regional groups consisting of designers, developers, journalists and "
 "others meet regularly in Labs. They develop apps that inform, positively "
@@ -292,7 +299,7 @@ msgid ""
 "authorities more transparent."
 msgstr ""
 
-#: webapp/templates/index.html:41
+#: webapp/templates/index.html:37
 msgid "Code a difference: Use your skills to improve your city!"
 msgstr ""
 
@@ -773,32 +780,32 @@ msgid ""
 "                            new sensor."
 msgstr ""
 
+#: webapp/templates/sensor-register.html:6
+msgid "Sensor registration"
+msgstr ""
+
 #: webapp/templates/sensor-settings-form.html:1
 msgid "Basic Information"
 msgstr ""
 
-#: webapp/templates/sensor-settings-form.html:18
+#: webapp/templates/sensor-settings-form.html:20
 msgid "Additional Information"
 msgstr ""
 
-#: webapp/templates/sensor-settings-form.html:25
+#: webapp/templates/sensor-settings-form.html:28
 msgid "Hardware configuration"
 msgstr ""
 
-#: webapp/templates/sensor-settings-form.html:42
+#: webapp/templates/sensor-settings-form.html:41
 msgid ""
 "The more precise the data we have, the better we can evaluate the data "
-"and thus energize statements. The system also tries to make a geoposition"
-" out of the address, but we would be happy if you would specify the "
-"position with the map below."
+"and thus energize statements. The system can also try to make a "
+"geoposition out of the address, but we would be happy if you would "
+"specify the position with the map below."
 msgstr ""
 
-#: webapp/templates/sensor-settings-form.html:47
-msgid "satellite map"
-msgstr ""
-
-#: webapp/templates/sensor-settings-form.html:58
-msgid "For those interested: the geocoordinates resulting from the map."
+#: webapp/templates/sensor-settings-form.html:50
+msgid "Lookup entered address"
 msgstr ""
 
 #: webapp/templates/emails/recover.html:11
@@ -887,53 +894,6 @@ msgstr ""
 
 #: webapp/templates/security/send_confirmation.html:5
 msgid "Resend confirmation instructions"
-msgstr ""
-
-#: webapp/templates/security/email/change_notice.html:1
-msgid "Your password has been changed."
-msgstr ""
-
-#: webapp/templates/security/email/change_notice.html:3
-msgid "If you did not change your password,"
-msgstr ""
-
-#: webapp/templates/security/email/change_notice.html:3
-msgid "click here to reset it"
-msgstr ""
-
-#: webapp/templates/security/email/confirmation_instructions.html:1
-msgid "Please confirm your email through the link below:"
-msgstr ""
-
-#: webapp/templates/security/email/confirmation_instructions.html:3
-#: webapp/templates/security/email/welcome.html:6
-msgid "Confirm my account"
-msgstr ""
-
-#: webapp/templates/security/email/login_instructions.html:1
-#: webapp/templates/security/email/welcome.html:1
-#, python-format
-msgid "Welcome %(email)s!"
-msgstr ""
-
-#: webapp/templates/security/email/login_instructions.html:3
-msgid "You can log into your account through the link below:"
-msgstr ""
-
-#: webapp/templates/security/email/login_instructions.html:5
-msgid "Login now"
-msgstr ""
-
-#: webapp/templates/security/email/reset_instructions.html:1
-msgid "Click here to reset your password"
-msgstr ""
-
-#: webapp/templates/security/email/reset_notice.html:1
-msgid "Your password has been reset"
-msgstr ""
-
-#: webapp/templates/security/email/welcome.html:4
-msgid "You can confirm your email through the link below:"
 msgstr ""
 
 #: webapp/users/forms.py:22 webapp/users/forms.py:36 webapp/users/forms.py:58
