@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-04-05 15:22+0000\n"
+"POT-Creation-Date: 2019-04-05 17:50+0000\n"
 "PO-Revision-Date: 2019-02-08 15:22+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -166,8 +166,8 @@ msgstr "Genaue Position veröffentlichen"
 #: webapp/personal/forms.py:155
 msgid "Reveal exact sensor location in public data and archives."
 msgstr ""
-"Es wird die genaue Sensorposition in den veröffentlichten Daten und um "
-"Archiv verwendet."
+"Es wird die genaue Sensorposition in den veröffentlichten Daten und im"
+" Archiv verwendet."
 
 #: webapp/personal/forms.py:158
 msgid "Inactive"
@@ -189,31 +189,46 @@ msgstr "Kurze Beschreibung des Standortes"
 msgid "Save settings"
 msgstr "Einstellungen speichern"
 
-#: webapp/personal/forms.py:170
+#: webapp/personal/forms.py:171
 msgid "Sensor ID"
 msgstr ""
 
 #: webapp/personal/forms.py:172
+msgid "The numeric part of the sensorname only"
+msgstr "Nur der numerische Teil des Sensornamen"
+
+#: webapp/personal/forms.py:175
 msgid "Sensor Board"
 msgstr ""
 
-#: webapp/personal/forms.py:179
+#: webapp/personal/forms.py:178
+msgid ""
+"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
+"the Smogomierz sensor version need to change this accordingly. Also in "
+"these cases the Sensor ID is the numeric part of the name only."
+msgstr ""
+"Normalerweise sollte dies bei esp8266 bleiben. Nutzer von ESP32 Boards,"
+" Raspberry PI oder der Smogomierz-Sensor-Version müssen dieses Feld"
+" entsprechend ändern. Auch bei diesen Varianten wird in das Feld Sensor ID"
+" nur der numerische Teil des Namen eingetragen."
+
+#: webapp/personal/forms.py:183
 msgid "Recipient's e-mail address"
 msgstr "E-Mail Adresse des Empfängers"
 
-#: webapp/personal/forms.py:182
+#: webapp/personal/forms.py:186
 msgid "Please enter e-mail address"
 msgstr "Bitte geben Sie eine E-Mail-Adresse an"
 
-#: webapp/personal/forms.py:185
+#: webapp/personal/forms.py:189
 msgid "Please enter correct e-mail address"
 msgstr "Bitte geben Sie eine korrekte Mailadresse an."
 
-#: webapp/personal/forms.py:189
+#: webapp/personal/forms.py:193
 msgid "Transfer sensor"
 msgstr "Sensor übergeben"
 
-#: webapp/personal/forms.py:194
+#: webapp/personal/forms.py:198
 msgid "You can't transfer the sensor to yourself"
 msgstr "Du kannst den Sensor nicht auf dich selbst übertragen."
 
@@ -294,11 +309,13 @@ msgid ""
 "The main purpose of this page is to enable you, as the owner of a fine "
 "dust sensor, to configure the location and other parameters yourself."
 msgstr ""
+"Auf diesen Seiten können Sie ihren Feinstaubsensor anmelden und die"
+" benötigten Daten wie Adresse, Position, Umgebung u.a. eintragen."
 
 #: webapp/templates/index.html:17
 #, python-format
 msgid "Click here to <a href=\"%(login_url)s\">log in</a>."
-msgstr ""
+msgstr "Klicken Sie hier für das <a href=\"%(login_url)s\">Login</a>"
 
 #: webapp/templates/index.html:19
 #, python-format
@@ -309,6 +326,12 @@ msgid ""
 "            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
 "dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
+"Generelle Informationen zum Projekt finden Sie auf <a "
+"href=\"%(home_url)s\">luftdaten.info</a>, ebenso die Bauanleitung für den"
+" Sensor.\n"
+"            Die Sensordaten finden Sie zum Beispiel auf"
+" <a href=\"%(map_url)s\">unserer Feinstaubkarte</a> oder in"
+" <a href=\"%(archive_url)s\">unserem Archiv</a>."
 
 #: webapp/templates/index.html:31
 msgid "Join us!"
@@ -335,9 +358,9 @@ msgid ""
 "developments in the areas of transparency, Open Data and Citizen Science."
 msgstr ""
 "Das OK Lab Stuttgart ist Teil des Programms \"Code for Germany\" der Open"
-" Knowledge Foundation Deutschland. Das Ziel des Programms ist die "
-"Förderung von Entwicklungen in den Bereichen Transparenz, offene Daten "
-"und Citizen Science."
+" Knowledge Foundation Deutschland. Das Ziel des Programms ist die"
+" Förderung von Entwicklungen in den Bereichen Transparenz, offene Daten"
+" und Citizen Science."
 
 #: webapp/templates/index.html:36
 msgid ""
@@ -942,10 +965,14 @@ msgid ""
 "geoposition out of the address, but we would be happy if you would "
 "specify the position with the map below."
 msgstr ""
+"Je genauer die angegebenen Daten sind, desto besser können die Messdaten"
+" ausgewertet werden. Das System kann versuchen, aus der Adresse die"
+" Geokoordinaten zu bestimmen. Es wäre aber schön, wenn Sie dies"
+" kontrollieren und gegebenenfalls korrigieren würden."
 
 #: webapp/templates/sensor-settings-form.html:50
 msgid "Lookup entered address"
-msgstr ""
+msgstr "Eingegebene Adresse suchen"
 
 #: webapp/templates/emails/recover.html:11
 #: webapp/templates/emails/register-existing.html:11
@@ -973,7 +1000,9 @@ msgstr ""
 msgid ""
 "Sincerely,\n"
 "    Your Luftdaten.info team"
-msgstr "Mit freundlichen Grüßen"
+msgstr ""
+"Mit freundlichen Grüßen,\n"
+"    Ihr Team von Luftdaten.info"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
