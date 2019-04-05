@@ -121,11 +121,11 @@ msgstr "Höhe des Sensors über dem Boden (in cm)"
 
 #: webapp/personal/forms.py:145
 msgid "Sensor location relative to the traffic"
-msgstr "Bitte geben Sie die Höhe des Sensors über dem Boden an."
+msgstr "Sensorposition relativ zur Straße:"
 
 #: webapp/personal/forms.py:157
 msgid "Short description of location"
-msgstr "Befestigungsort des Sensors am Haus."
+msgstr "Kurze Beschreibung des Standortes"
 
 #: webapp/personal/forms.py:159
 msgid "Save settings"
@@ -189,7 +189,7 @@ msgstr "Zugriff verboten"
 
 #: webapp/templates/401.html:9
 msgid "You may not access this page. Maybe "
-msgstr "uf diese Seite dürfen Sie nicht zugreifen. Vielleicht "
+msgstr "Auf diese Seite dürfen Sie nicht zugreifen. Vielleicht "
 
 #: webapp/templates/401.html:9
 msgid "you must first log in?"
@@ -213,7 +213,7 @@ msgstr "Kontakt:"
 
 #: webapp/templates/imprint.html:32
 msgid "based on the concept and software development of Ernesto Ruge:"
-msgstr "basierend auf dem Konzept- und Softwareentwicklung von Ernesto Ruge:"
+msgstr "basierend auf dem Konzept und der Softwareentwicklung von Ernesto Ruge:"
 
 #: webapp/templates/imprint.html:34
 msgid "Contact: Website of Ernesto Ruge:"
@@ -221,7 +221,7 @@ msgstr "Kontakt: Website von Ernesto Ruge: "
 
 #: webapp/templates/index.html:7 webapp/templates/register-minimal.html:13
 msgid "Configure air quality sensor yourself"
-msgstr "Luftdaten selber konfigurieren"
+msgstr "Luftdaten-Sensor selbst konfigurieren"
 
 #: webapp/templates/index.html:15
 msgid "Configure Luftdaten"
@@ -234,7 +234,7 @@ msgid ""
 "Click here to "
 msgstr ""
 "Auf dieser Seite können Besitzer eines Feinstaubsensors diesen Sensor "
-"anzumelden und den Standort und andere Parameter selbst zu"
+"anmelden und den Standort und andere Parameter selbst"
 " konfigurieren. Klicken Sie hier für das "
 
 #: webapp/templates/index.html:17
@@ -828,7 +828,7 @@ msgid ""
 "You can see all current imports in this overview. Click on Reload to "
 "update the status."
 msgstr ""
-"lle noch laufenden Importe können Sie in dieser Übersicht sehen. Klicken "
+"Alle noch laufenden Importe können Sie in dieser Übersicht sehen. Klicken "
 "Sie auf neu laden, um den Status zu aktualisieren."
 
 #: webapp/templates/sensor-import-status.html:18
