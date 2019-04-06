@@ -23,7 +23,6 @@ DEBUG = False
 
 ADMINS = ['david.lackovic@me.com']
 
-SECRET_KEY = SECURITY_PASSWORD_SALT = 'dummysecret'
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 SQLALCHEMY_ECHO = False
 

@@ -7,3 +7,6 @@ DEBUG = True
 
 # Disable mail sending (this will print out mail contents to default logger)
 MAIL_SUPPRESS_SEND = True
+
+SECRET_KEY = SECURITY_PASSWORD_SALT = 'dummysecret'
+
