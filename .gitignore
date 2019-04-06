@@ -7,7 +7,7 @@ feinstaub.sql
 .local
 .cache
 .flaskenv
-
+translations/*.mo
 # KomodoEdit
 *.komodoedit
 .komodotools

@@ -100,7 +100,6 @@ def configure_blueprints(app, blueprints):
 def configure_filters(app):
     register_global_filters(app)
 
-
 def configure_logging(app):
     if not os.path.exists(app.config['LOG_DIR']):
         os.makedirs(app.config['LOG_DIR'])

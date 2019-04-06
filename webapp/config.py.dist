@@ -10,3 +10,7 @@ MAIL_SUPPRESS_SEND = True
 
 SECRET_KEY = SECURITY_PASSWORD_SALT = 'dummysecret'
 
+LANGUAGES = {
+  'en': 'English',
+}
+
