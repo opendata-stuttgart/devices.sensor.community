@@ -8,13 +8,13 @@
                     <h1>{{ _('Data from Node') }}  {{ node.uid }}</h1>
                     <p>{{ _('Typically, two sensors are attached to each node: the fine dust sensor and the
                         Humidity and temperature sensor. The sensor number can also be found ') }} <a
-                                href="http://deutschland.maps.luftdaten.info/">{{ _('on the fine dust card again.') }}  </a>.</p>
+                                href="https://maps.luftdaten.info/" target="_blank">{{ _('on the fine dust card again.') }}  </a>.</p>
                     {% for sensor in sensors %}
                         <h2>{{ sensor['sensor_type_name'] }}</h2>
                         <table class="table">
                             <tr>
                                 <th>Sensor ID:</th>
-                                <td>{{ sensor['id'] }}</td>
+                                <td>{{ sensor['id'] }} (<a href="https://maps.luftdaten.info/#15/{{ sensor['data']['location']['latitude'] }}/{{ sensor['data']['location']['longitude'] }}" target="_blank">{{ _('show on map') }}</a>)</td>
                             </tr>
                             {% if sensor['data'] %}
                                 <tr>

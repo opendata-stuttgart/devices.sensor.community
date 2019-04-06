@@ -16,7 +16,7 @@
             <p>{{ _('The main purpose of this page is to enable you, as the owner of a fine dust sensor, to configure the location and other parameters yourself.') }}
             {% if not current_user.is_authenticated %}{% trans login_url=url_for('security.login') %}Click here to <a href="{{ login_url }}">log in</a>.{% endtrans %}{% endif %}</p>
             <p>
-            {% trans home_url='https://luftdaten.info', manual_url='https://luftdaten.info', map_url='https://deutschland.maps.luftdaten.info' -%}
+            {% trans home_url='https://luftdaten.info', manual_url='https://luftdaten.info', map_url='https://maps.luftdaten.info', archive_url='https://archive.luftdaten.info' -%}
             General information can be found at <a href="{{ home_url }}">luftdaten.info</a>, as well as the <a href="{{ manual_url }}">building instructions</a>.
             Sensor data can be found on <a href="{{ map_url }}">the fine dust map</a> or <a href="{{ archive_url }}">be downloaded as CSVs</a>.
             {%- endtrans %}
