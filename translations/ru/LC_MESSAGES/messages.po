@@ -1,4 +1,4 @@
-# Russian translations for luftdaten.info PROJECT.
+# Russian translations for luftdaten.info project.
 # Copyright (C) 2019
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR: Denis Kulandin <radiomgrs@gmail.com>, 2019.
@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: luftdaten.info\n"
 "Report-Msgid-Bugs-To: radiomgrs@gmail.com\n"
 "POT-Creation-Date: 2019-04-05 15:22+0000\n"
-"PO-Revision-Date: 2019-04-06 13:04+0300\n"
+"PO-Revision-Date: 2019-04-06 16:02+0300\n"
 "Language: ru\n"
 "Language-Team: ru <radiomgrs@gmail.com>\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
@@ -78,7 +78,7 @@ msgstr "Пожалуйста укажите долготу."
 
 #: webapp/personal/forms.py:55
 msgid "How much industrial activity is there within a 100m radius?"
-msgstr "Сколько "
+msgstr "Сколько промышленной активности в радиусе 100 метров?"
 
 #: webapp/personal/forms.py:64 webapp/personal/forms.py:79
 #: webapp/personal/forms.py:94
@@ -95,9 +95,7 @@ msgstr ""
 
 #: webapp/personal/forms.py:70
 msgid "How many private stoves or fireplaces are within a 100m radius?"
-msgstr ""
-"Сколько активно используемых дымовых труб (не заводов!) в радиусе 100 "
-"метров?"
+msgstr "Сколько активно используемых дымовых труб в радиусе 100 метров?"
 
 #: webapp/personal/forms.py:82
 msgid ""
@@ -121,7 +119,7 @@ msgstr ""
 
 #: webapp/personal/forms.py:108
 msgid "PIN"
-msgstr "ПИН код"
+msgstr "PIN код"
 
 #: webapp/personal/forms.py:109
 msgid "For special use only"
@@ -133,7 +131,7 @@ msgstr "Тип сенсора"
 
 #: webapp/personal/forms.py:125
 msgid "Personal sensor name"
-msgstr "Личное название сенсора"
+msgstr "Название сенсора"
 
 #: webapp/personal/forms.py:128
 msgid "Please enter the sensor name."
@@ -141,7 +139,7 @@ msgstr "Пожалуйста укажите название сенсора."
 
 #: webapp/personal/forms.py:131
 msgid "Only the sensor ID will be published."
-msgstr "Будет опубликован только ID сенсора"
+msgstr "Будет опубликован только ID сенсора."
 
 #: webapp/personal/forms.py:134
 msgid "Sensor level above ground (in cm)"
@@ -162,9 +160,11 @@ msgid ""
 "irrelevant how big the street is, it is only about where the sensor is "
 "attached to the house."
 msgstr ""
-"1 = со стороны сада, очень хорошо экранирована от всех улиц, 10 = датчик "
-"находится на стене дома прямо на улице. В этом случае не важно, насколько "
-"оживленная улица, речь идет только о том, где установлен датчик."
+"1 = со стороны двора, очень хорошо экранирована от улицы, \n"
+"10 = датчик находится на стене дома выходящей на улицу. \n"
+"\n"
+"Не важно насколько оживленная улица, речь идет только о том, где установлен "
+"датчик."
 
 #: webapp/personal/forms.py:154
 msgid "Publish exact location"
@@ -257,7 +257,7 @@ msgstr "Доступ запрещен"
 
 #: webapp/templates/401.html:9
 msgid "You may not access this page. Maybe "
-msgstr "Вы не имеете доступа к этой странице. Возможно"
+msgstr "Вы не имеете доступа к этой странице. Возможно "
 
 #: webapp/templates/401.html:9
 msgid "you must first log in?"
@@ -289,7 +289,7 @@ msgstr "Контакты: веб страница Ernesto Ruge:"
 
 #: webapp/templates/index.html:7 webapp/templates/register-minimal.html:13
 msgid "Configure air quality sensor yourself"
-msgstr "Настрой свой сенсор воздуха"
+msgstr "Настрой свой сенсор"
 
 #: webapp/templates/index.html:15
 msgid "Configure Luftdaten"
@@ -299,7 +299,9 @@ msgstr "Настроить свой сенсор"
 msgid ""
 "The main purpose of this page is to enable you, as the owner of a fine dust "
 "sensor, to configure the location and other parameters yourself."
-msgstr "На данной странице вы как пользователь сенсора, имеете"
+msgstr ""
+"Основная цель этой страницы - дать вам, владельцу датчика, возможность "
+"самостоятельно настраивать его параметры."
 
 #: webapp/templates/index.html:17
 #, python-format
@@ -317,7 +319,7 @@ msgid ""
 msgstr ""
 "Общую информацию можно найти на сайте <a href=\"%(home_url)s\">luftdaten."
 "info</a>, а также <a href=\"%(manual_url)s\">инструкции по сборке</a>.\n"
-"            Данные сенсоров можно найти <a href=\"%(map_url)s\">на карте "
+"            Данные сенсоров можно найти<a href=\"%(map_url)s\">на карте "
 "мелкодисперсных частиц</a> или <a href=\"%(archive_url)s\">загрузить в "
 "формате CSV</a>."
 
@@ -421,7 +423,7 @@ msgstr "Выйти"
 #: webapp/templates/layout.html:62 webapp/templates/security/login_user.html:7
 #: webapp/templates/security/send_login.html:5
 msgid "Login"
-msgstr "войти"
+msgstr "Войти"
 
 #: webapp/templates/layout.html:89 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
@@ -437,7 +439,7 @@ msgstr "Сброс пароля"
 
 #: webapp/templates/login.html:12
 msgid "Configure air data sensor yourself  "
-msgstr "Настройте лично свой сенсор воздуха"
+msgstr "Настройте лично свой сенсор воздуха "
 
 #: webapp/templates/meine-luftdaten.html:11
 msgid "Meine Luftdaten"
@@ -445,31 +447,31 @@ msgstr "Мой luftdaten.info"
 
 #: webapp/templates/meine-luftdaten.html:11
 msgid "Your personal area. "
-msgstr "Ваш личный кабинет."
+msgstr "Ваш личный кабинет. "
 
 #: webapp/templates/meine-luftdaten.html:18
 msgid "Sensors "
-msgstr "Сенсоры"
+msgstr "Сенсоры "
 
 #: webapp/templates/meine-luftdaten.html:19
 msgid "View and change sensor data and settings. "
-msgstr "Просмотреть и изменить данные сенсоров и настройки."
+msgstr "Просмотреть и изменить данные сенсоров и настройки. "
 
 #: webapp/templates/meine-luftdaten.html:20
 msgid "Settings "
-msgstr "Настройки"
+msgstr "Настройки "
 
 #: webapp/templates/meine-luftdaten.html:21
 msgid "View and change data, notification settings and passwords. "
-msgstr "Просмотреть и изменить данные, настройки оповещения и пароли."
+msgstr "Просмотреть и изменить данные, настройки оповещения и пароли. "
 
 #: webapp/templates/meine-luftdaten.html:22
 msgid "Password "
-msgstr "Пароль"
+msgstr "Пароль "
 
 #: webapp/templates/meine-luftdaten.html:23
 msgid "Change password. "
-msgstr "Изменить пароль."
+msgstr "Изменить пароль. "
 
 #: webapp/templates/meine-luftdaten.html:24
 msgid "Logout "
@@ -497,7 +499,7 @@ msgstr ""
 "Обычно, два сенсора присоединены к одному устройству: сенсор "
 "мелкодисперсных частиц и\n"
 "                        сенсор влажности и температуры. Номер каждого "
-"сенсора отображается"
+"сенсора отображается "
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust card again."
@@ -505,7 +507,7 @@ msgstr "на карте мелкодисперсных частиц."
 
 #: webapp/templates/my-sensor-data.html:21
 msgid "Last updated: "
-msgstr "Последнее обновление:"
+msgstr "Последнее обновление: "
 
 #: webapp/templates/my-sensor-data.html:31
 msgid "No current data are available for this sensor."
@@ -513,7 +515,7 @@ msgstr "Нет актуальных данные для данного сенс�
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "Sensor "
-msgstr "Сенсор"
+msgstr "Сенсор "
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "was handed over."
@@ -570,7 +572,7 @@ msgstr ""
 
 #: webapp/templates/my-sensors.html:10
 msgid "All sensors assigned to your account can be found in this overview."
-msgstr "Все датчики вашей учетной записи можно найти в этом обзоре."
+msgstr "Все ваши сенсоры перечислены в этом списке."
 
 #: webapp/templates/my-sensors.html:15
 msgid "Sensor UID"
@@ -606,7 +608,7 @@ msgstr "Зарегистрировать новый сенсор"
 
 #: webapp/templates/my-settings.html:14
 msgid "Here you can change your settings."
-msgstr "Здесь вы можете изменить ваши настройки."
+msgstr "Здесь вы можете изменить настройки вашего личного кабинета."
 
 #: webapp/templates/privacy-policy.html:13
 msgid ""
@@ -986,7 +988,7 @@ msgid ""
 "for you. Please enter a password under the following link: "
 msgstr ""
 "чтобы в будущем вы могли управлять вашим датчиком, мы создали для вас "
-"аккаунт. Пожалуйста, введите пароль по следующей ссылке:"
+"аккаунт. Пожалуйста, введите пароль по следующей ссылке: "
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
@@ -1003,7 +1005,7 @@ msgid ""
 msgstr ""
 "датчик мелкодисперсных частиц был передан под ваш контроль. Пожалуйста, "
 "войдите с этим почтовым адресом, чтобы получить данные и настройки или "
-"изменить их:"
+"изменить их: "
 
 #: webapp/templates/emails/sensor-given.html:14
 msgid ""
@@ -1020,7 +1022,7 @@ msgid ""
 msgstr ""
 "датчик мелкодисперсной пыли был зарегистрирован для вас. Пожалуйста, "
 "войдите с этим адресом электронной почты, чтобы принять или изменить данные "
-"и настройки:"
+"и настройки: "
 
 #: webapp/templates/emails/sensor-registered.html:14
 msgid ""
