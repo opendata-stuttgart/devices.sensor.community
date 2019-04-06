@@ -14,7 +14,11 @@
                         <table class="table">
                             <tr>
                                 <th>Sensor ID:</th>
-                                <td>{{ sensor['id'] }} (<a href="https://maps.luftdaten.info/#15/{{ sensor['data']['location']['latitude'] }}/{{ sensor['data']['location']['longitude'] }}" target="_blank">{{ _('show on map') }}</a>)</td>
+                                <td>{{ sensor['id'] }}
+				{% if sensor['data'] %}
+					(<a href="https://maps.luftdaten.info/#15/{{ sensor['data']['location']['latitude'] }}/{{ sensor['data']['location']['longitude'] }}" target="_blank">{{ _('show on map') }}</a>)
+				{% endif %}
+				</td>
                             </tr>
                             {% if sensor['data'] %}
                                 <tr>
