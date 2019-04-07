@@ -50,6 +50,8 @@ SECURITY_RECOVERABLE = True
 
 SECURITY_I18N_DIRNAME = os.path.join(PROJECT_ROOT, '..', 'translations')
 
+SECURITY_POST_LOGIN_VIEW = 'personal.sensor_list'
+
 # Docker defaults
 SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://devel:devel@mysql/devel'
 SQLALCHEMY_BINDS = {
