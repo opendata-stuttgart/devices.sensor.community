@@ -1,91 +1,90 @@
 # Russian translations for luftdaten.info project.
 # Copyright (C) 2019
-# This file is distributed under the same license as the PROJECT project.
+# This file is distributed under the same license as the  project.
 # FIRST AUTHOR: Denis Kulandin <radiomgrs@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: luftdaten.info\n"
+"Project-Id-Version:  luftdaten.info\n"
 "Report-Msgid-Bugs-To: radiomgrs@gmail.com\n"
-"POT-Creation-Date: 2019-04-05 15:22+0000\n"
+"POT-Creation-Date: 2019-04-07 23:01+0000\n"
 "PO-Revision-Date: 2019-04-06 16:02+0300\n"
+"Last-Translator: \n"
 "Language: ru\n"
 "Language-Team: ru <radiomgrs@gmail.com>\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
-"Last-Translator: \n"
-"X-Generator: Poedit 2.0.6\n"
 
-#: webapp/personal/forms.py:29
+#: webapp/personal/forms.py:39
 msgid "Indoor Sensor"
 msgstr "Внутренний сенсор"
 
-#: webapp/personal/forms.py:31
+#: webapp/personal/forms.py:41
 msgid "Street"
 msgstr "Улица"
 
-#: webapp/personal/forms.py:31
+#: webapp/personal/forms.py:41
 msgid "Please enter the street name."
 msgstr "Пожалуйста укажите название улицы."
 
-#: webapp/personal/forms.py:32
+#: webapp/personal/forms.py:42
 msgid "Street number"
 msgstr "Номер дома"
 
-#: webapp/personal/forms.py:34
+#: webapp/personal/forms.py:44
 msgid "Postal code"
 msgstr "Почтовый индекс"
 
-#: webapp/personal/forms.py:34
+#: webapp/personal/forms.py:44
 msgid "Please enter the postal code."
 msgstr "Пожалуйста укажите почтовый индекс."
 
-#: webapp/personal/forms.py:36
+#: webapp/personal/forms.py:46
 msgid "City"
 msgstr "Город"
 
-#: webapp/personal/forms.py:36
+#: webapp/personal/forms.py:46
 msgid "Please enter the city name."
 msgstr "Пожалуйста укажите название города."
 
-#: webapp/personal/forms.py:39
+#: webapp/personal/forms.py:49
 msgid "Country"
 msgstr "Страна"
 
-#: webapp/personal/forms.py:42
+#: webapp/personal/forms.py:52
 msgid "Please enter the country name."
 msgstr "Пожалуйста укажите название страны."
 
-#: webapp/personal/forms.py:49
+#: webapp/personal/forms.py:59
 msgid "Latitude"
 msgstr "Широта"
 
-#: webapp/personal/forms.py:50
+#: webapp/personal/forms.py:60
 msgid "Please enter the latitude."
 msgstr "Пожалуйста укажите широту."
 
-#: webapp/personal/forms.py:51
+#: webapp/personal/forms.py:61
 msgid "Longitude"
 msgstr "Долгота"
 
-#: webapp/personal/forms.py:52
+#: webapp/personal/forms.py:62
 msgid "Please enter the longitude."
 msgstr "Пожалуйста укажите долготу."
 
-#: webapp/personal/forms.py:55
+#: webapp/personal/forms.py:65
 msgid "How much industrial activity is there within a 100m radius?"
 msgstr "Сколько промышленной активности в радиусе 100 метров?"
 
-#: webapp/personal/forms.py:64 webapp/personal/forms.py:79
-#: webapp/personal/forms.py:94
+#: webapp/personal/forms.py:74 webapp/personal/forms.py:89
+#: webapp/personal/forms.py:104
 msgid "Please enter the number between 1 and 10"
 msgstr "Пожалуйста введите число от 1 до 10"
 
-#: webapp/personal/forms.py:67
+#: webapp/personal/forms.py:77
 msgid ""
 "No office space, but potential fine dust producers 1 = very little, 10 = "
 "very much."
@@ -93,23 +92,23 @@ msgstr ""
 "Потенциальных источников мелкодисперсной пыли 1 = очень мало, 10 = очень "
 "много."
 
-#: webapp/personal/forms.py:70
+#: webapp/personal/forms.py:80
 msgid "How many private stoves or fireplaces are within a 100m radius?"
 msgstr "Сколько активно используемых дымовых труб в радиусе 100 метров?"
 
-#: webapp/personal/forms.py:82
+#: webapp/personal/forms.py:92
 msgid ""
-"Does it smell very much like such smoke in your area? 1 = very little, 10 = "
-"very much."
+"Does it smell very much like such smoke in your area? 1 = very little, 10"
+" = very much."
 msgstr ""
-"Это пахнет очень похоже на такой дым в вашем районе? 1 = очень мало, 10 = "
-"очень много."
+"Это пахнет очень похоже на такой дым в вашем районе? 1 = очень мало, 10 ="
+" очень много."
 
-#: webapp/personal/forms.py:85
+#: webapp/personal/forms.py:95
 msgid "How much traffic is there within a 100m radius?"
 msgstr "Сколько авто трафика в радиусе 100 метров?"
 
-#: webapp/personal/forms.py:97
+#: webapp/personal/forms.py:107
 msgid ""
 "How close are those roads? 1 = very little further away, 10 = a lot of "
 "traffic right on your doorstep."
@@ -117,43 +116,43 @@ msgstr ""
 "Насколько близко эти дороги? 1 - очень близко, 10 - загруженное движение "
 "прямо у вашего порога."
 
-#: webapp/personal/forms.py:108
+#: webapp/personal/forms.py:118
 msgid "PIN"
 msgstr "PIN код"
 
-#: webapp/personal/forms.py:109
+#: webapp/personal/forms.py:119
 msgid "For special use only"
 msgstr "Для спец. использования"
 
-#: webapp/personal/forms.py:112
+#: webapp/personal/forms.py:122
 msgid "Sensor Type"
 msgstr "Тип сенсора"
 
-#: webapp/personal/forms.py:125
+#: webapp/personal/forms.py:135
 msgid "Personal sensor name"
 msgstr "Название сенсора"
 
-#: webapp/personal/forms.py:128
+#: webapp/personal/forms.py:138
 msgid "Please enter the sensor name."
 msgstr "Пожалуйста укажите название сенсора."
 
-#: webapp/personal/forms.py:131
+#: webapp/personal/forms.py:141
 msgid "Only the sensor ID will be published."
 msgstr "Будет опубликован только ID сенсора."
 
-#: webapp/personal/forms.py:134
+#: webapp/personal/forms.py:144
 msgid "Sensor level above ground (in cm)"
 msgstr "Высота сенсора от уровня земли (в см)"
 
-#: webapp/personal/forms.py:141
+#: webapp/personal/forms.py:151
 msgid "NOT height above sea level!"
 msgstr "Не путайте с высотой над уровнем моря!"
 
-#: webapp/personal/forms.py:144
+#: webapp/personal/forms.py:154
 msgid "Sensor location relative to the traffic"
 msgstr "Расположение сенсора по отношению к автодорогам"
 
-#: webapp/personal/forms.py:151
+#: webapp/personal/forms.py:161
 msgid ""
 "1 = on the garden side, very well shielded from all streets, 10 = the "
 "sensor is on a house wall directly on the street. With this value it is "
@@ -163,23 +162,22 @@ msgstr ""
 "1 = со стороны двора, очень хорошо экранирована от улицы, \n"
 "10 = датчик находится на стене дома выходящей на улицу. \n"
 "\n"
-"Не важно насколько оживленная улица, речь идет только о том, где установлен "
-"датчик."
+"Не важно насколько оживленная улица, речь идет только о том, где "
+"установлен датчик."
 
-#: webapp/personal/forms.py:154
+#: webapp/personal/forms.py:164
 msgid "Publish exact location"
 msgstr "Опубликовать точное местоположение"
 
-#: webapp/personal/forms.py:155
+#: webapp/personal/forms.py:165
 msgid "Reveal exact sensor location in public data and archives."
-msgstr ""
-"Показывать точное местоположение сенсора в публичном доступе и архивах."
+msgstr "Показывать точное местоположение сенсора в публичном доступе и архивах."
 
-#: webapp/personal/forms.py:158
+#: webapp/personal/forms.py:168
 msgid "Inactive"
 msgstr "Неактивен"
 
-#: webapp/personal/forms.py:159
+#: webapp/personal/forms.py:169
 msgid ""
 "Mark sensor as inactive. No notifications will be sent when sensor goes "
 "offline."
@@ -187,39 +185,50 @@ msgstr ""
 "Отметить сенсор как неактивный, чтобы не посылать сообщения если сенсор "
 "отключится."
 
-#: webapp/personal/forms.py:164
+#: webapp/personal/forms.py:174
 msgid "Short description of location"
 msgstr "Короткое описание местоположения"
 
-#: webapp/personal/forms.py:166
+#: webapp/personal/forms.py:176
 msgid "Save settings"
 msgstr "Сохранить настройки"
 
-#: webapp/personal/forms.py:170
+#: webapp/personal/forms.py:181
 msgid "Sensor ID"
 msgstr "ID сенсора"
 
-#: webapp/personal/forms.py:172
+#: webapp/personal/forms.py:182
+msgid "The numeric part of the sensorname only"
+msgstr ""
+
+#: webapp/personal/forms.py:185
 msgid "Sensor Board"
 msgstr "Плата сенсора"
 
-#: webapp/personal/forms.py:179
+#: webapp/personal/forms.py:188
+msgid ""
+"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
+"the Smogomierz sensor version need to change this accordingly. Also in "
+"these cases the Sensor ID is the numeric part of the name only."
+msgstr ""
+
+#: webapp/personal/forms.py:193
 msgid "Recipient's e-mail address"
 msgstr "Электронная почта получателя"
 
-#: webapp/personal/forms.py:182
+#: webapp/personal/forms.py:196
 msgid "Please enter e-mail address"
 msgstr "Пожалуйста введите адрес эл. почты"
 
-#: webapp/personal/forms.py:185
+#: webapp/personal/forms.py:199
 msgid "Please enter correct e-mail address"
 msgstr "Пожалуйста введите корректный адрес эл. почты"
 
-#: webapp/personal/forms.py:189
+#: webapp/personal/forms.py:203
 msgid "Transfer sensor"
 msgstr "Передать сенсор"
 
-#: webapp/personal/forms.py:194
+#: webapp/personal/forms.py:208
 msgid "You can't transfer the sensor to yourself"
 msgstr "Вы не можете передать сенсор себе"
 
@@ -263,7 +272,7 @@ msgstr "Вы не имеете доступа к этой странице. Во
 msgid "you must first log in?"
 msgstr "вам надо сперва войти?"
 
-#: webapp/templates/imprint.html:8 webapp/templates/layout.html:88
+#: webapp/templates/imprint.html:8 webapp/templates/layout.html:99
 msgid "Imprint"
 msgstr "Imprint"
 
@@ -297,8 +306,8 @@ msgstr "Настроить свой сенсор"
 
 #: webapp/templates/index.html:16
 msgid ""
-"The main purpose of this page is to enable you, as the owner of a fine dust "
-"sensor, to configure the location and other parameters yourself."
+"The main purpose of this page is to enable you, as the owner of a fine "
+"dust sensor, to configure the location and other parameters yourself."
 msgstr ""
 "Основная цель этой страницы - дать вам, владельцу датчика, возможность "
 "самостоятельно настраивать его параметры."
@@ -311,14 +320,15 @@ msgstr "Нажмите сюда чтобы <a href=\"%(login_url)s\">войти<
 #: webapp/templates/index.html:19
 #, python-format
 msgid ""
-"General information can be found at <a href=\"%(home_url)s\">luftdaten."
-"info</a>, as well as the <a href=\"%(manual_url)s\">building instructions</"
-"a>.\n"
+"General information can be found at <a "
+"href=\"%(home_url)s\">luftdaten.info</a>, as well as the <a "
+"href=\"%(manual_url)s\">building instructions</a>.\n"
 "            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
 "dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
-"Общую информацию можно найти на сайте <a href=\"%(home_url)s\">luftdaten."
-"info</a>, а также <a href=\"%(manual_url)s\">инструкции по сборке</a>.\n"
+"Общую информацию можно найти на сайте <a "
+"href=\"%(home_url)s\">luftdaten.info</a>, а также <a "
+"href=\"%(manual_url)s\">инструкции по сборке</a>.\n"
 "            Данные сенсоров можно найти<a href=\"%(map_url)s\">на карте "
 "мелкодисперсных частиц</a> или <a href=\"%(archive_url)s\">загрузить в "
 "формате CSV</a>."
@@ -353,15 +363,15 @@ msgstr ""
 
 #: webapp/templates/index.html:36
 msgid ""
-"Regional groups consisting of designers, developers, journalists and others "
-"meet regularly in Labs. They develop apps that inform, positively shape and "
-"support society and make the work of administrations and authorities more "
-"transparent."
+"Regional groups consisting of designers, developers, journalists and "
+"others meet regularly in Labs. They develop apps that inform, positively "
+"shape and support society and make the work of administrations and "
+"authorities more transparent."
 msgstr ""
-"Региональные группы, состоящие из дизайнеров, разработчиков, журналистов и "
-"других, регулярно встречаются в мастерских. Они разрабатывают приложения, "
-"которые информируют, положительно формируют и поддерживают общество и "
-"делают работу органов власти более прозрачной."
+"Региональные группы, состоящие из дизайнеров, разработчиков, журналистов "
+"и других, регулярно встречаются в мастерских. Они разрабатывают "
+"приложения, которые информируют, положительно формируют и поддерживают "
+"общество и делают работу органов власти более прозрачной."
 
 #: webapp/templates/index.html:37
 msgid "Code a difference: Use your skills to improve your city!"
@@ -395,37 +405,33 @@ msgstr "Информация и настройки для проекта luftdat
 msgid "Home"
 msgstr "Домой"
 
-#: webapp/templates/layout.html:48
-msgid "Overview"
-msgstr "Обзор"
-
-#: webapp/templates/layout.html:49 webapp/templates/my-sensors.html:9
+#: webapp/templates/layout.html:48 webapp/templates/my-sensors.html:9
 msgid "My sensors"
 msgstr "Мои сенсоры"
 
-#: webapp/templates/layout.html:50 webapp/templates/my-password.html:10
+#: webapp/templates/layout.html:49 webapp/templates/my-password.html:10
 #: webapp/templates/my-sensors.html:30 webapp/templates/my-settings.html:13
 msgid "Settings"
 msgstr "Настройки"
 
-#: webapp/templates/layout.html:51
+#: webapp/templates/layout.html:50
 msgid "Password change"
 msgstr "Изменить пароль"
 
-#: webapp/templates/layout.html:54
+#: webapp/templates/layout.html:53
 msgid "Massimporter"
 msgstr "Массовый импорт"
 
-#: webapp/templates/layout.html:60
+#: webapp/templates/layout.html:59
 msgid "Logout"
 msgstr "Выйти"
 
-#: webapp/templates/layout.html:62 webapp/templates/security/login_user.html:7
+#: webapp/templates/layout.html:61 webapp/templates/security/login_user.html:7
 #: webapp/templates/security/send_login.html:5
 msgid "Login"
 msgstr "Войти"
 
-#: webapp/templates/layout.html:89 webapp/templates/privacy-policy.html:8
+#: webapp/templates/layout.html:100 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
 msgstr "Политика конфиденциальности"
 
@@ -491,10 +497,10 @@ msgstr "Данные из Node"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
-"Typically, two sensors are attached to each node: the fine dust sensor and "
-"the\n"
-"                        Humidity and temperature sensor. The sensor number "
-"can also be found "
+"Typically, two sensors are attached to each node: the fine dust sensor "
+"and the\n"
+"                        Humidity and temperature sensor. The sensor "
+"number can also be found "
 msgstr ""
 "Обычно, два сенсора присоединены к одному устройству: сенсор "
 "мелкодисперсных частиц и\n"
@@ -505,11 +511,15 @@ msgstr ""
 msgid "on the fine dust card again."
 msgstr "на карте мелкодисперсных частиц."
 
-#: webapp/templates/my-sensor-data.html:21
+#: webapp/templates/my-sensor-data.html:19
+msgid "show on map"
+msgstr ""
+
+#: webapp/templates/my-sensor-data.html:25
 msgid "Last updated: "
 msgstr "Последнее обновление: "
 
-#: webapp/templates/my-sensor-data.html:31
+#: webapp/templates/my-sensor-data.html:35
 msgid "No current data are available for this sensor."
 msgstr "Нет актуальных данные для данного сенсора."
 
@@ -537,13 +547,13 @@ msgstr "Передача сенсор %(node_id)s"
 
 #: webapp/templates/my-sensor-give.html:9
 msgid ""
-"This allows you to transfer sensors to another person. This is especially "
-"useful if you have ordered a sensor for a friend and want to transfer it to "
-"him or her."
+"This allows you to transfer sensors to another person. This is especially"
+" useful if you have ordered a sensor for a friend and want to transfer it"
+" to him or her."
 msgstr ""
 "Эта опция позволяет передавать сенсор на другой аккаунт. Это, например, "
-"может быть полезно, если вы приобрели сенсор в подарок и хотите перевести "
-"его на аккаунт одаряемого."
+"может быть полезно, если вы приобрели сенсор в подарок и хотите перевести"
+" его на аккаунт одаряемого."
 
 #: webapp/templates/my-sensor-give.html:10
 msgid "Warning! After the transfer you have no more control over the sensor!"
@@ -551,24 +561,24 @@ msgstr ""
 "Внимание! После завершения процедуры передачи сенсора вы потеряете "
 "возможность контролировать данный сенсор!"
 
-#: webapp/templates/my-sensor-settings.html:14
+#: webapp/templates/my-sensor-settings.html:6
 #, python-format
 msgid "Settings of Node %(node_id)s"
 msgstr "Настройки устройства %(node_id)s"
 
-#: webapp/templates/my-sensor-settings.html:15
+#: webapp/templates/my-sensor-settings.html:7
 msgid ""
-"With this form you can keep the data of the sensor up to date. Please note "
-"that only precise data can lead to precise evaluations with which we can "
-"also argue politically. It is therefore important that the basic sensor "
-"data is always kept up to date."
+"With this form you can keep the data of the sensor up to date. Please "
+"note that only precise data can lead to precise evaluations with which we"
+" can also argue politically. It is therefore important that the basic "
+"sensor data is always kept up to date."
 msgstr ""
 "Данная форма поможет вам хранить все данные сенсоров\n"
 "\n"
 "С помощью этой формы вы можете поддерживать данные датчика в актуальном "
-"состоянии. Обратите внимание, что только точные данные могут дать к точным "
-"оценки окружающей среды. Поэтому важно, чтобы основные данные датчика "
-"всегда были актуальными."
+"состоянии. Обратите внимание, что только точные данные могут дать к "
+"точным оценки окружающей среды. Поэтому важно, чтобы основные данные "
+"датчика всегда были актуальными."
 
 #: webapp/templates/my-sensors.html:10
 msgid "All sensors assigned to your account can be found in this overview."
@@ -612,38 +622,38 @@ msgstr "Здесь вы можете изменить настройки ваш�
 
 #: webapp/templates/privacy-policy.html:13
 msgid ""
-"The operators of these pages take the protection of your personal data very "
-"seriously. We treat your personal data confidentially and according to the "
-"legal data protection regulations as well as this data protection "
+"The operators of these pages take the protection of your personal data "
+"very seriously. We treat your personal data confidentially and according "
+"to the legal data protection regulations as well as this data protection "
 "explanation."
 msgstr ""
 "Операторы этих страниц очень серьезно относятся к защите ваших личных "
-"данных. Мы относимся к вашим личным данным конфиденциально и в соответствии "
-"с правовыми нормами защиты данных."
+"данных. Мы относимся к вашим личным данным конфиденциально и в "
+"соответствии с правовыми нормами защиты данных."
 
 #: webapp/templates/privacy-policy.html:15
 msgid ""
 "The use of our website is generally possible without providing personal "
-"data. Insofar as personal data (e.g. name, address or e-mail addresses) is "
-"collected on our pages, this is always done on a voluntary basis as far as "
-"possible. This data will not be passed on to third parties without your "
-"express consent."
+"data. Insofar as personal data (e.g. name, address or e-mail addresses) "
+"is collected on our pages, this is always done on a voluntary basis as "
+"far as possible. This data will not be passed on to third parties without"
+" your express consent."
 msgstr ""
 "Использование нашего сайта, как правило, возможно без предоставления "
 "персональных данных. Поскольку личные данные (например, имя, адрес "
-"устройства или адрес эл. почты) собираются на наших страницах, это всегда "
-"делается на добровольной основе, насколько это возможно. Эти данные не "
+"устройства или адрес эл. почты) собираются на наших страницах, это всегда"
+" делается на добровольной основе, насколько это возможно. Эти данные не "
 "будут переданы третьим лицам без вашего явного согласия."
 
 #: webapp/templates/privacy-policy.html:17
 msgid ""
 "We would like to point out that data transmission via the Internet (e.g. "
-"communication via e-mail) may have security gaps. A complete protection of "
-"the data against the access by third is not possible."
+"communication via e-mail) may have security gaps. A complete protection "
+"of the data against the access by third is not possible."
 msgstr ""
 "Мы хотели бы отметить, что при передаче данных через Интернет (например, "
-"через электронную почту) могут быть пробелы в безопасности. Полная защита "
-"данных от доступа третьих лиц невозможна."
+"через электронную почту) могут быть пробелы в безопасности. Полная защита"
+" данных от доступа третьих лиц невозможна."
 
 #: webapp/templates/privacy-policy.html:19
 msgid "Information, deletion, blocking"
@@ -653,9 +663,9 @@ msgstr "Информация, удаление, блокирование"
 msgid ""
 "You have the right at any time to free information about your stored "
 "personal data, their origin and recipient and the purpose of data "
-"processing as well as a right to correction, blocking or deletion of this "
-"data. You can contact us at any time at the address given in the imprint "
-"for this and other questions on the subject of personal data."
+"processing as well as a right to correction, blocking or deletion of this"
+" data. You can contact us at any time at the address given in the imprint"
+" for this and other questions on the subject of personal data."
 msgstr ""
 "Вы имеете право в любое время отозвать информацию о ваших сохраненных "
 "личных данных, их происхождении и получателе, а также целях обработки "
@@ -670,27 +680,28 @@ msgstr "Куки"
 #: webapp/templates/privacy-policy.html:22
 msgid ""
 "Some of the Internet pages use so-called cookies. Cookies do not damage "
-"your computer and do not contain viruses. Cookies serve to make our offer "
-"more user-friendly, more effective and safer. Cookies are small text files "
-"that are stored on your computer by your browser."
+"your computer and do not contain viruses. Cookies serve to make our offer"
+" more user-friendly, more effective and safer. Cookies are small text "
+"files that are stored on your computer by your browser."
 msgstr ""
-"Некоторые из интернет-страниц используют так называемые файлы куки. Файлы "
-"куки не наносят вреда вашему компьютеру и не содержат вирусов. Файлы куки "
-"служат для того, чтобы сделать наше предложение более удобным, эффективным "
-"и безопасным. Файлы куки - это небольшие текстовые файлы, которые "
-"сохраняются на вашем компьютере вашим браузером."
+"Некоторые из интернет-страниц используют так называемые файлы куки. Файлы"
+" куки не наносят вреда вашему компьютеру и не содержат вирусов. Файлы "
+"куки служат для того, чтобы сделать наше предложение более удобным, "
+"эффективным и безопасным. Файлы куки - это небольшие текстовые файлы, "
+"которые сохраняются на вашем компьютере вашим браузером."
 
 #: webapp/templates/privacy-policy.html:23
 msgid ""
 "Most of the cookies we use are so-called \"session cookies\". They are "
-"automatically deleted at the end of your visit. Other cookies remain stored "
-"on your terminal until you delete them. These cookies enable us to "
-"recognize your browser during your next visit."
+"automatically deleted at the end of your visit. Other cookies remain "
+"stored on your terminal until you delete them. These cookies enable us to"
+" recognize your browser during your next visit."
 msgstr ""
-"Большинство используемых нами файлов куки - это так называемые «сеансовые "
-"файлы куки». Они автоматически удаляются в конце вашего визита. Другие куки "
-"остаются на вашем терминале, пока вы не удалите их. Эти файлы куки "
-"позволяют нам распознать ваш браузер во время вашего следующего посещения."
+"Большинство используемых нами файлов куки - это так называемые «сеансовые"
+" файлы куки». Они автоматически удаляются в конце вашего визита. Другие "
+"куки остаются на вашем терминале, пока вы не удалите их. Эти файлы куки "
+"позволяют нам распознать ваш браузер во время вашего следующего "
+"посещения."
 
 #: webapp/templates/privacy-policy.html:25
 msgid "Account and sensor data"
@@ -702,16 +713,16 @@ msgid ""
 "luftdaten.info and are publicly accessible to the company. The following "
 "information will be published:"
 msgstr ""
-"Данные измерений датчиков собираются на сервере luftdaten.info и являются "
-"публично доступными. Будет опубликована следующая информация:"
+"Данные измерений датчиков собираются на сервере luftdaten.info и являются"
+" публично доступными. Будет опубликована следующая информация:"
 
 #: webapp/templates/privacy-policy.html:28
 msgid ""
-"The anonymized geoposition (longitude and latitude) rounded to approx. 100 "
-"m."
+"The anonymized geoposition (longitude and latitude) rounded to approx. "
+"100 m."
 msgstr ""
-"Анонимизированная геопозиция (долгота и широта) округляется до примерно 100 "
-"м."
+"Анонимизированная геопозиция (долгота и широта) округляется до примерно "
+"100 м."
 
 #: webapp/templates/privacy-policy.html:29
 msgid "The ID of your ESP8266 NodeMCU board"
@@ -731,8 +742,8 @@ msgstr "Текстовое описание"
 
 #: webapp/templates/privacy-policy.html:34
 msgid ""
-"The following additional data will be stored for internal processing, but "
-"will not be published:"
+"The following additional data will be stored for internal processing, but"
+" will not be published:"
 msgstr ""
 "Следующие данные будут сохранены для внутренней обработки и не будут "
 "опубликованы:"
@@ -755,9 +766,9 @@ msgstr "Лог файлы сервера"
 
 #: webapp/templates/privacy-policy.html:41
 msgid ""
-"The provider of the pages automatically collects and stores information in "
-"so-called server log files, which your browser automatically transmits to "
-"us. These are:"
+"The provider of the pages automatically collects and stores information "
+"in so-called server log files, which your browser automatically transmits"
+" to us. These are:"
 msgstr ""
 "Владелец данного сервиса автоматически собирает и сохраняет информацию в "
 "так называемых лог-файлах сервера, которые ваш браузер автоматически "
@@ -786,8 +797,9 @@ msgstr "Время запроса сервера"
 #: webapp/templates/privacy-policy.html:49
 msgid ""
 "These data cannot be assigned to specific persons. This data will not be "
-"merged with other data sources. We reserve the right to subsequently check "
-"this data if we become aware of concrete indications of illegal use."
+"merged with other data sources. We reserve the right to subsequently "
+"check this data if we become aware of concrete indications of illegal "
+"use."
 msgstr ""
 "Эти данные не могут быть назначены конкретным лицам. Эти данные не будут "
 "объединены с другими источниками данных. Мы оставляем за собой право "
@@ -800,17 +812,17 @@ msgstr "Об отношение к рекламным сообщениям"
 
 #: webapp/templates/privacy-policy.html:51
 msgid ""
-"We hereby object to the use of contact data published within the scope of "
-"the imprint obligation to send unsolicited advertising and information "
-"material. The operators of this website expressly reserve the right to take "
-"legal action against unsolicited mailing or e-mailing of spam and other "
-"similar advertising materials."
+"We hereby object to the use of contact data published within the scope of"
+" the imprint obligation to send unsolicited advertising and information "
+"material. The operators of this website expressly reserve the right to "
+"take legal action against unsolicited mailing or e-mailing of spam and "
+"other similar advertising materials."
 msgstr ""
 "Настоящим мы возражаем против использования контактных данных, "
-"опубликованных в рамках обязательства по отправке нежелательных рекламных и "
-"информационных материалов. Операторы этого веб-сайта оставляют за собой "
-"право подать в суд на нежелательную рассылку спама или иные подобные "
-"рекламные материалы."
+"опубликованных в рамках обязательства по отправке нежелательных рекламных"
+" и информационных материалов. Операторы этого веб-сайта оставляют за "
+"собой право подать в суд на нежелательную рассылку спама или иные "
+"подобные рекламные материалы."
 
 #: webapp/templates/recover-fail.html:13
 msgid "Set password Error"
@@ -818,8 +830,8 @@ msgstr "Ошибка ввода пароля"
 
 #: webapp/templates/recover-fail.html:14
 msgid ""
-"Unfortunately the link is not correct. Either it is too old, or it was not "
-"copied completely. Please try again."
+"Unfortunately the link is not correct. Either it is too old, or it was "
+"not copied completely. Please try again."
 msgstr ""
 "К сожалению, ссылка не верна. Либо она слишком старая, либо был не "
 "полностью скопирована. Пожалуйста, попробуйте еще раз."
@@ -859,8 +871,8 @@ msgid ""
 "confirmed. Please look in your mailbox to get access to your sensors."
 msgstr ""
 "Так как вы входите в первый раз ваш адрес электронной почты должен быть "
-"подтвержден. Пожалуйста поищите в своем ящике письмо для получения доступа "
-"к вашим сенсорам."
+"подтвержден. Пожалуйста поищите в своем ящике письмо для получения "
+"доступа к вашим сенсорам."
 
 #: webapp/templates/register-minimal.html:25
 msgid "Registration"
@@ -872,8 +884,8 @@ msgstr "Массовый импорт сенсоров: Статус"
 
 #: webapp/templates/sensor-import-status.html:14
 msgid ""
-"You can see all current imports in this overview. Click on Reload to update "
-"the status."
+"You can see all current imports in this overview. Click on Reload to "
+"update the status."
 msgstr ""
 "Здесь вы видите все текущие импортированные сенсоры. Нажмите кнопку "
 "\"Перезагрузка\" чтобы обновить статус."
@@ -913,8 +925,8 @@ msgstr ""
 
 #: webapp/templates/sensor-import.html:21
 msgid ""
-"If an email address has been specified, the owner will be notified with an "
-"email about their\n"
+"If an email address has been specified, the owner will be notified with "
+"an email about their\n"
 "                            new sensor."
 msgstr ""
 "Если адрес эл. почты указан, то будущий владелец получит извещение о\n"
@@ -938,10 +950,10 @@ msgstr "Настройка аппаратного обеспечения"
 
 #: webapp/templates/sensor-settings-form.html:41
 msgid ""
-"The more precise the data we have, the better we can evaluate the data and "
-"thus energize statements. The system can also try to make a geoposition out "
-"of the address, but we would be happy if you would specify the position "
-"with the map below."
+"The more precise the data we have, the better we can evaluate the data "
+"and thus energize statements. The system can also try to make a "
+"geoposition out of the address, but we would be happy if you would "
+"specify the position with the map below."
 msgstr ""
 "Чем более точные данные у нас есть, тем лучше мы можем оценить данные и, "
 "таким образом, сделать какие-либо выводы. Система также может попытаться "
@@ -965,8 +977,8 @@ msgstr "для сброса вашего пароля пожалуйста пе�
 
 #: webapp/templates/emails/recover.html:14
 msgid ""
-"If you have not requested a new password on luftdaten.info, you can ignore "
-"this e-mail."
+"If you have not requested a new password on luftdaten.info, you can "
+"ignore this e-mail."
 msgstr ""
 "Если вы не запрашивали сброс пароля на сайте  luftdaten.info просто "
 "игнорируйте данное сообщение."
@@ -992,16 +1004,17 @@ msgstr ""
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
-"If you have not created an account on luftdaten.info, you can ignore this e-"
-"mail."
+"If you have not created an account on luftdaten.info, you can ignore this"
+" e-mail."
 msgstr ""
-"Если вы не создали учетную запись на luftdaten.info, вы можете игнорировать "
-"это электронное письмо."
+"Если вы не создали учетную запись на luftdaten.info, вы можете "
+"игнорировать это электронное письмо."
 
 #: webapp/templates/emails/sensor-given.html:13
 msgid ""
 "a particulate matter sensor has been handed over to your control. Please "
-"log in with this mail address to take data and settings or to change them: "
+"log in with this mail address to take data and settings or to change "
+"them: "
 msgstr ""
 "датчик мелкодисперсных частиц был передан под ваш контроль. Пожалуйста, "
 "войдите с этим почтовым адресом, чтобы получить данные и настройки или "
@@ -1021,8 +1034,8 @@ msgid ""
 "mail address to take in or change data and settings: "
 msgstr ""
 "датчик мелкодисперсной пыли был зарегистрирован для вас. Пожалуйста, "
-"войдите с этим адресом электронной почты, чтобы принять или изменить данные "
-"и настройки: "
+"войдите с этим адресом электронной почты, чтобы принять или изменить "
+"данные и настройки: "
 
 #: webapp/templates/emails/sensor-registered.html:14
 msgid ""
@@ -1096,8 +1109,8 @@ msgstr "войти"
 #: webapp/users/forms.py:68
 msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>"
 msgstr ""
-"Я даю согласие с <a href=\"/privacy-policy\">политикой конфиденциальности</"
-"a>"
+"Я даю согласие с <a href=\"/privacy-policy\">политикой "
+"конфиденциальности</a>"
 
 #: webapp/users/forms.py:71
 msgid "Please agree to the privacy policy."
@@ -1155,3 +1168,7 @@ msgstr "Новый пароль (повторно)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Данные пользователя сохранены."
+
+#~ msgid "Overview"
+#~ msgstr "Обзор"
+

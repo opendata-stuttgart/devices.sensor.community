@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-04-06 10:21+0000\n"
+"POT-Creation-Date: 2019-04-07 23:01+0000\n"
 "PO-Revision-Date: 2019-02-08 15:22+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -18,72 +18,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 
-#: webapp/personal/forms.py:29
+#: webapp/personal/forms.py:39
 msgid "Indoor Sensor"
 msgstr "Indoor-Sensor"
 
-#: webapp/personal/forms.py:31
+#: webapp/personal/forms.py:41
 msgid "Street"
 msgstr "Straße"
 
-#: webapp/personal/forms.py:31
+#: webapp/personal/forms.py:41
 msgid "Please enter the street name."
 msgstr "Bitte geben Sie einen Straßennamen an."
 
-#: webapp/personal/forms.py:32
+#: webapp/personal/forms.py:42
 msgid "Street number"
 msgstr "Hausnummer"
 
-#: webapp/personal/forms.py:34
+#: webapp/personal/forms.py:44
 msgid "Postal code"
 msgstr "Postleitzahl"
 
-#: webapp/personal/forms.py:34
+#: webapp/personal/forms.py:44
 msgid "Please enter the postal code."
 msgstr "Bitte geben Sie eine Postleitzahl an."
 
-#: webapp/personal/forms.py:36
+#: webapp/personal/forms.py:46
 msgid "City"
 msgstr "Ort"
 
-#: webapp/personal/forms.py:36
+#: webapp/personal/forms.py:46
 msgid "Please enter the city name."
 msgstr "Bitte geben Sie einen Ort an."
 
-#: webapp/personal/forms.py:39
+#: webapp/personal/forms.py:49
 msgid "Country"
 msgstr "Staat"
 
-#: webapp/personal/forms.py:42
+#: webapp/personal/forms.py:52
 msgid "Please enter the country name."
 msgstr "Bitte geben Sie einen Staat an."
 
-#: webapp/personal/forms.py:49
+#: webapp/personal/forms.py:59
 msgid "Latitude"
 msgstr "Geographischer Längengrad"
 
-#: webapp/personal/forms.py:50
+#: webapp/personal/forms.py:60
 msgid "Please enter the latitude."
 msgstr "Bitte geben Sie eine geographische Breite an."
 
-#: webapp/personal/forms.py:51
+#: webapp/personal/forms.py:61
 msgid "Longitude"
 msgstr "Geographischer Breitengrad"
 
-#: webapp/personal/forms.py:52
+#: webapp/personal/forms.py:62
 msgid "Please enter the longitude."
 msgstr "Geographischer Breitengrad"
 
-#: webapp/personal/forms.py:55
+#: webapp/personal/forms.py:65
 msgid "How much industrial activity is there within a 100m radius?"
 msgstr "Wie viel verarbeitende Industrie befinden sich in 100 m Radius?"
 
-#: webapp/personal/forms.py:64 webapp/personal/forms.py:79
-#: webapp/personal/forms.py:94
+#: webapp/personal/forms.py:74 webapp/personal/forms.py:89
+#: webapp/personal/forms.py:104
 msgid "Please enter the number between 1 and 10"
 msgstr "Bitte geben Sie einen Wert von 1 bis 10 an"
 
-#: webapp/personal/forms.py:67
+#: webapp/personal/forms.py:77
 msgid ""
 "No office space, but potential fine dust producers 1 = very little, 10 = "
 "very much."
@@ -91,21 +91,21 @@ msgstr ""
 "Nicht Büros, sondern potentielle Feinstaubquellen. 1 = sehr wenige, 10 = "
 "sehr viele"
 
-#: webapp/personal/forms.py:70
+#: webapp/personal/forms.py:80
 msgid "How many private stoves or fireplaces are within a 100m radius?"
 msgstr "Wie viele private Öfen oder Kamine gibt es im Umkreis von 100 m?"
 
-#: webapp/personal/forms.py:82
+#: webapp/personal/forms.py:92
 msgid ""
 "Does it smell very much like such smoke in your area? 1 = very little, 10"
 " = very much."
 msgstr "Riecht es sehr nach Rauch in der Umgebung? 1 = sehr wenig, 10 = sehr viel"
 
-#: webapp/personal/forms.py:85
+#: webapp/personal/forms.py:95
 msgid "How much traffic is there within a 100m radius?"
 msgstr "Wie viel Verkehr gibt es in einem Umkreis von 100 Metern?"
 
-#: webapp/personal/forms.py:97
+#: webapp/personal/forms.py:107
 msgid ""
 "How close are those roads? 1 = very little further away, 10 = a lot of "
 "traffic right on your doorstep."
@@ -113,43 +113,43 @@ msgstr ""
 "Wie nah sind diese Straßen? 1 = sehr wenige weiter weg, 10 = VielVerkehr "
 "direkt vor der Tür."
 
-#: webapp/personal/forms.py:108
+#: webapp/personal/forms.py:118
 msgid "PIN"
 msgstr ""
 
-#: webapp/personal/forms.py:109
+#: webapp/personal/forms.py:119
 msgid "For special use only"
 msgstr ""
 
-#: webapp/personal/forms.py:112
+#: webapp/personal/forms.py:122
 msgid "Sensor Type"
 msgstr "Sensortyp"
 
-#: webapp/personal/forms.py:125
+#: webapp/personal/forms.py:135
 msgid "Personal sensor name"
 msgstr "Interner Name des Sensors"
 
-#: webapp/personal/forms.py:128
+#: webapp/personal/forms.py:138
 msgid "Please enter the sensor name."
 msgstr "Bitte geben Sie einen Sensornamen an."
 
-#: webapp/personal/forms.py:131
+#: webapp/personal/forms.py:141
 msgid "Only the sensor ID will be published."
 msgstr "Veröffentlicht wird nur die Sensor-UID"
 
-#: webapp/personal/forms.py:134
+#: webapp/personal/forms.py:144
 msgid "Sensor level above ground (in cm)"
 msgstr "Höhe des Sensors über dem Boden (in cm)"
 
-#: webapp/personal/forms.py:141
+#: webapp/personal/forms.py:151
 msgid "NOT height above sea level!"
 msgstr "NICHT die Höhe über Meeresspiegel!"
 
-#: webapp/personal/forms.py:144
+#: webapp/personal/forms.py:154
 msgid "Sensor location relative to the traffic"
 msgstr "Sensorposition relativ zur Straße:"
 
-#: webapp/personal/forms.py:151
+#: webapp/personal/forms.py:161
 msgid ""
 "1 = on the garden side, very well shielded from all streets, 10 = the "
 "sensor is on a house wall directly on the street. With this value it is "
@@ -159,21 +159,21 @@ msgstr ""
 "1 = an der Hausrückseite, 10 = zur Straße hin. Die Größe der Straße ist "
 "hier nicht entscheidend."
 
-#: webapp/personal/forms.py:154
+#: webapp/personal/forms.py:164
 msgid "Publish exact location"
 msgstr "Genaue Position veröffentlichen"
 
-#: webapp/personal/forms.py:155
+#: webapp/personal/forms.py:165
 msgid "Reveal exact sensor location in public data and archives."
 msgstr ""
 "Es wird die genaue Sensorposition in den veröffentlichten Daten und im "
 "Archiv verwendet."
 
-#: webapp/personal/forms.py:158
+#: webapp/personal/forms.py:168
 msgid "Inactive"
 msgstr "Inaktiv"
 
-#: webapp/personal/forms.py:159
+#: webapp/personal/forms.py:169
 msgid ""
 "Mark sensor as inactive. No notifications will be sent when sensor goes "
 "offline."
@@ -181,27 +181,27 @@ msgstr ""
 "Markiert den Sensor als inaktiv. Es werden keine Benachrichtigungen mehr "
 "versendet, wenn der Sensor keine Daten mehr liefert."
 
-#: webapp/personal/forms.py:164
+#: webapp/personal/forms.py:174
 msgid "Short description of location"
 msgstr "Kurze Beschreibung des Standortes"
 
-#: webapp/personal/forms.py:166
+#: webapp/personal/forms.py:176
 msgid "Save settings"
 msgstr "Einstellungen speichern"
 
-#: webapp/personal/forms.py:171
+#: webapp/personal/forms.py:181
 msgid "Sensor ID"
 msgstr ""
 
-#: webapp/personal/forms.py:172
+#: webapp/personal/forms.py:182
 msgid "The numeric part of the sensorname only"
 msgstr "Nur der numerische Teil des Sensornamen"
 
-#: webapp/personal/forms.py:175
+#: webapp/personal/forms.py:185
 msgid "Sensor Board"
 msgstr ""
 
-#: webapp/personal/forms.py:178
+#: webapp/personal/forms.py:188
 msgid ""
 "Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
 "the Smogomierz sensor version need to change this accordingly. Also in "
@@ -212,23 +212,23 @@ msgstr ""
 "entsprechend ändern. Auch bei diesen Varianten wird in das Feld Sensor ID"
 " nur der numerische Teil des Namen eingetragen."
 
-#: webapp/personal/forms.py:183
+#: webapp/personal/forms.py:193
 msgid "Recipient's e-mail address"
 msgstr "E-Mail Adresse des Empfängers"
 
-#: webapp/personal/forms.py:186
+#: webapp/personal/forms.py:196
 msgid "Please enter e-mail address"
 msgstr "Bitte geben Sie eine E-Mail-Adresse an"
 
-#: webapp/personal/forms.py:189
+#: webapp/personal/forms.py:199
 msgid "Please enter correct e-mail address"
 msgstr "Bitte geben Sie eine korrekte Mailadresse an."
 
-#: webapp/personal/forms.py:193
+#: webapp/personal/forms.py:203
 msgid "Transfer sensor"
 msgstr "Sensor übergeben"
 
-#: webapp/personal/forms.py:198
+#: webapp/personal/forms.py:208
 msgid "You can't transfer the sensor to yourself"
 msgstr "Du kannst den Sensor nicht auf dich selbst übertragen."
 
@@ -272,7 +272,7 @@ msgstr "Auf diese Seite dürfen Sie nicht zugreifen. Vielleicht "
 msgid "you must first log in?"
 msgstr "müssen Sie sich zunächst einloggen?"
 
-#: webapp/templates/imprint.html:8 webapp/templates/layout.html:88
+#: webapp/templates/imprint.html:8 webapp/templates/layout.html:99
 msgid "Imprint"
 msgstr "Impressum"
 
@@ -407,37 +407,33 @@ msgstr "Informationen und Einstellungen zum Luftdaten-Projekt"
 msgid "Home"
 msgstr "Startseite"
 
-#: webapp/templates/layout.html:48
-msgid "Overview"
-msgstr "Übersicht"
-
-#: webapp/templates/layout.html:49 webapp/templates/my-sensors.html:9
+#: webapp/templates/layout.html:48 webapp/templates/my-sensors.html:9
 msgid "My sensors"
 msgstr "Meine Sensoren"
 
-#: webapp/templates/layout.html:50 webapp/templates/my-password.html:10
+#: webapp/templates/layout.html:49 webapp/templates/my-password.html:10
 #: webapp/templates/my-sensors.html:30 webapp/templates/my-settings.html:13
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: webapp/templates/layout.html:51
+#: webapp/templates/layout.html:50
 msgid "Password change"
 msgstr "Passwort ändern"
 
-#: webapp/templates/layout.html:54
+#: webapp/templates/layout.html:53
 msgid "Massimporter"
 msgstr "Massenimporter"
 
-#: webapp/templates/layout.html:60
+#: webapp/templates/layout.html:59
 msgid "Logout"
 msgstr "Logout"
 
-#: webapp/templates/layout.html:62 webapp/templates/security/login_user.html:7
+#: webapp/templates/layout.html:61 webapp/templates/security/login_user.html:7
 #: webapp/templates/security/send_login.html:5
 msgid "Login"
 msgstr "Login"
 
-#: webapp/templates/layout.html:89 webapp/templates/privacy-policy.html:8
+#: webapp/templates/layout.html:100 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
 msgstr "Datenschutzerklärung"
 
@@ -518,11 +514,15 @@ msgstr ""
 msgid "on the fine dust card again."
 msgstr "auf der Feinstaub-Karte wieder"
 
-#: webapp/templates/my-sensor-data.html:21
+#: webapp/templates/my-sensor-data.html:19
+msgid "show on map"
+msgstr "auf der Karte zeigen"
+
+#: webapp/templates/my-sensor-data.html:25
 msgid "Last updated: "
 msgstr "Letzte Aktualisierung: "
 
-#: webapp/templates/my-sensor-data.html:31
+#: webapp/templates/my-sensor-data.html:35
 msgid "No current data are available for this sensor."
 msgstr "Zu diesem Sensor liegen keine aktuellen Daten vor."
 
@@ -565,12 +565,12 @@ msgstr ""
 "Achtung! Nach der Übergabe haben Sie natürlich keine Kontrolle mehr über "
 "den Sensor."
 
-#: webapp/templates/my-sensor-settings.html:14
+#: webapp/templates/my-sensor-settings.html:6
 #, python-format
 msgid "Settings of Node %(node_id)s"
 msgstr "Einstellungen für Node %(node_id)s"
 
-#: webapp/templates/my-sensor-settings.html:15
+#: webapp/templates/my-sensor-settings.html:7
 msgid ""
 "With this form you can keep the data of the sensor up to date. Please "
 "note that only precise data can lead to precise evaluations with which we"
@@ -1283,4 +1283,7 @@ msgstr "Nutzerdaten gespeichert."
 
 #~ msgid "Exact location"
 #~ msgstr "Exakte Position"
+
+#~ msgid "Overview"
+#~ msgstr "Übersicht"
 
