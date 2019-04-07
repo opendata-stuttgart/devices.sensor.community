@@ -45,7 +45,6 @@
                     {{ navbar_link('frontend.index', _('Home')) }}
 
                     {% if current_user.is_authenticated  %}
-                        {{ navbar_link('personal.dashboard', _('Overview')) }}
                         {{ navbar_link('personal.sensor_list', _('My sensors')) }}
                         {{ navbar_link('users.settings', _('Settings')) }}
                         {{ navbar_link('security.change_password', _('Password change')) }}
