@@ -33,7 +33,8 @@ DELETE FROM `auth_user`;
 INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES
 	(1, '...', '2017-04-25 17:37:19', 1, 'admin', '', '', 'test1@codefor.de', 1, 1, '2015-03-31 20:50:35'),
 	(2, '...', '2017-04-25 17:37:19', 1, 'admin2', '', '', 'test2@codefor.de', 1, 1, '2015-03-31 20:50:35'),
-	(3, '...', '2017-04-25 17:37:19', 1, 'admin3', '', '', 'test3@codefor.de', 1, 1, '2015-03-31 20:50:35');
+	(3, '...', '2017-04-25 17:37:19', 1, 'admin3', '', '', 'test3@codefor.de', 1, 1, '2015-03-31 20:50:35'),
+	(17, '...', '2017-04-25 17:37:19', 1, 'webapp', '', '', 'webapp@codefor.de', 1, 1, '2015-03-31 20:50:35');
 /*!40000 ALTER TABLE `auth_user` ENABLE KEYS */;
 
 -- Dumping structure for table feinstaub.sensors_sensortype
