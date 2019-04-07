@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{% block title %}meine-luftdaten.info | {{ _('user configuration') }} {% endblock %}</title>
+    <title>{% block title %}meine.luftdaten.info | {{ _('user configuration') }} {% endblock %}</title>
     {% block head %}
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -61,6 +61,15 @@
                     {% else %}
                         {{ navbar_link('security.login', _('Login')) }}
                     {% endif %}
+                </ul>
+                <ul class="navbar-nav mt-2 mt-lg-0 lang_select">
+			{% for language in AVAILABLE_LANGUAGES.items() %}
+			     {% if CURRENT_LANGUAGE == language[0] or (CURRENT_LANGUAGE == '' and BEST_MATCH_LANGUAGE == language[0]) %}
+			         <li class="lang_active"><a name="language">{{ language[1] }}</a></li>
+			     {% else %}
+			         <li class="lang_inactive"><a href="?lang={{ language[0] }}">{{ language[1] }}</a></li>
+			     {%  endif %}
+			{% endfor %}
                 </ul>
                 
             </div>

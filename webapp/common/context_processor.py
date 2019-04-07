@@ -15,14 +15,10 @@ import pytz
 from urllib.parse import quote_plus
 from flask import session, request
 
-def register_global_filters(app):
-    @app.template_filter('datetime')
-    def template_datetime(datetime, format='medium'):
-        if datetime.tzname() == 'UTC':
-            datetime = datetime.astimezone(pytz.timezone('Europe/Berlin'))
-        datetime = datetime.strftime('%d.%m.%Y, %H:%M:%S')
-        return datetime
-
-    @app.template_filter('urlencode')
-    def urlencode(data):
-        return (quote_plus(data))
+def register_context_processor(app):
+    @app.context_processor
+    def inject_conf_var():
+        return dict(
+                    AVAILABLE_LANGUAGES=app.config['LANGUAGES'],
+                    CURRENT_LANGUAGE=request.args.get('lang',session.get('lang',request.accept_languages.best_match(app.config['LANGUAGES'].keys()))),
+                    BEST_MATCH_LANGUAGE=request.accept_languages.best_match(app.config['LANGUAGES'].keys()))

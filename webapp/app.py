@@ -23,6 +23,7 @@ from .users import users
 from .models import User, Role
 from .extensions import db, csrf, mail, celery, babel, security, migrate
 from .babel import create_module as babel_create_module
+from .common.context_processor import register_context_processor
 
 __all__ = ['launch']
 
@@ -50,6 +51,7 @@ def launch(config=None, app_name=None, blueprints=None):
     configure_extensions(app)
     configure_logging(app)
     configure_filters(app)
+    configure_context_processor(app)
     configure_error_handlers(app)
     babel_create_module(app)
     return app
@@ -96,9 +98,11 @@ def configure_blueprints(app, blueprints):
     for blueprint in blueprints:
         app.register_blueprint(blueprint)
 
-
 def configure_filters(app):
     register_global_filters(app)
+
+def configure_context_processor(app):
+    register_context_processor(app)
 
 def configure_logging(app):
     if not os.path.exists(app.config['LOG_DIR']):
