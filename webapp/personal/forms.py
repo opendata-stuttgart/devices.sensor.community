@@ -11,7 +11,7 @@ Redistribution and use in source and binary forms, with or without modification,
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
-from flask import current_app as app
+from flask import request, current_app as app
 from flask_babelex import lazy_gettext as _
 from flask_login import current_user
 from flask_wtf import FlaskForm
@@ -23,6 +23,16 @@ from wtforms.fields import FieldList
 from webapp.common.helpers import RequiredIf
 from webapp.external_data.models import SensorType, db
 from ..common.countrycodes import country_codes
+
+
+def default_country():
+    """Try returning sensible default country value based on user browser
+    accepted languages"""
+
+    try:
+        return request.accept_languages.best_match(dict(country_codes).keys())
+    except Exception:
+        return 'DE'
 
 
 class SensorLocationForm(FlaskForm):
@@ -43,7 +53,7 @@ class SensorLocationForm(FlaskForm):
             )
         ],
         choices=country_codes,
-        default='DE'
+        default=default_country,
     )
 
     latitude = StringField(_('Latitude'), default="0.0",
