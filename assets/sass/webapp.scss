@@ -20,22 +20,6 @@ body {
   align-items: baseline;
 }
 
-.lang_select {
-  display: block !important;
-}
-
-.lang_active {
-  display:list-item
-}
-
-.lang_inactive {
-  display:none;
-}
-
-.lang_select:hover .lang_inactive {
-  display:list-item
-}
-
 .footer {
   position: absolute;
   bottom: 0;

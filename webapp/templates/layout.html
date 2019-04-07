@@ -60,17 +60,20 @@
                     {% else %}
                         {{ navbar_link('security.login', _('Login')) }}
                     {% endif %}
+
+                    <li class="nav-item dropdown">
+                        {% with current_language = get_locale().language %}
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ config['LANGUAGES'].get(current_language) }}
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            {% for code, name in config['LANGUAGES'].items() %}
+                            <a class="dropdown-item{% if current_language == code %} active{% endif %}" href="?lang={{ code }}">{{ name }}</a>
+                            {% endfor %}
+                        </div>
+                        {% endwith %}
+                    </li>
                 </ul>
-                <ul class="navbar-nav mt-2 mt-lg-0 lang_select">
-			{% for language in AVAILABLE_LANGUAGES.items() %}
-			     {% if CURRENT_LANGUAGE == language[0] or (CURRENT_LANGUAGE == '' and BEST_MATCH_LANGUAGE == language[0]) %}
-			         <li class="lang_active"><a name="language">{{ language[1] }}</a></li>
-			     {% else %}
-			         <li class="lang_inactive"><a href="?lang={{ language[0] }}">{{ language[1] }}</a></li>
-			     {%  endif %}
-			{% endfor %}
-                </ul>
-                
             </div>
         </div>
     </nav>
