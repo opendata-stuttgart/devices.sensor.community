@@ -12,7 +12,11 @@ body {
   margin-bottom: 60px; /* Margin bottom by footer height */
 }
 
-#topNavbar {
+.navbar, .navbar > .container, .navbar > .container-fluid {
+  align-items: baseline;
+}
+
+.navbar-collapse {
   align-items: baseline;
 }
 
