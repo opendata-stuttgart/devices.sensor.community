@@ -13,7 +13,6 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 import pytz
 from urllib.parse import quote_plus
-from flask import session, request
 
 def register_global_filters(app):
     @app.template_filter('datetime')

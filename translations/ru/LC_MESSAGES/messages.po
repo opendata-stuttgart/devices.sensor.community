@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  luftdaten.info\n"
 "Report-Msgid-Bugs-To: radiomgrs@gmail.com\n"
-"POT-Creation-Date: 2019-04-07 23:01+0000\n"
+"POT-Creation-Date: 2019-04-11 06:19+0000\n"
 "PO-Revision-Date: 2019-04-06 16:02+0300\n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -272,7 +272,7 @@ msgstr "Вы не имеете доступа к этой странице. Во
 msgid "you must first log in?"
 msgstr "вам надо сперва войти?"
 
-#: webapp/templates/imprint.html:8 webapp/templates/layout.html:99
+#: webapp/templates/imprint.html:8 webapp/templates/layout.html:100
 msgid "Imprint"
 msgstr "Imprint"
 
@@ -409,8 +409,9 @@ msgstr "Домой"
 msgid "My sensors"
 msgstr "Мои сенсоры"
 
-#: webapp/templates/layout.html:49 webapp/templates/my-password.html:10
-#: webapp/templates/my-sensors.html:30 webapp/templates/my-settings.html:13
+#: webapp/templates/layout.html:49 webapp/templates/meine-luftdaten.html:20
+#: webapp/templates/my-password.html:10 webapp/templates/my-sensors.html:30
+#: webapp/templates/my-settings.html:13
 msgid "Settings"
 msgstr "Настройки"
 
@@ -422,7 +423,7 @@ msgstr "Изменить пароль"
 msgid "Massimporter"
 msgstr "Массовый импорт"
 
-#: webapp/templates/layout.html:59
+#: webapp/templates/layout.html:59 webapp/templates/meine-luftdaten.html:24
 msgid "Logout"
 msgstr "Выйти"
 
@@ -431,7 +432,12 @@ msgstr "Выйти"
 msgid "Login"
 msgstr "Войти"
 
-#: webapp/templates/layout.html:100 webapp/templates/privacy-policy.html:8
+#: webapp/templates/layout.html:62 webapp/templates/security/login_user.html:17
+#: webapp/templates/security/register_user.html:5
+msgid "Register"
+msgstr "Зарегистрировать"
+
+#: webapp/templates/layout.html:101 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
 msgstr "Политика конфиденциальности"
 
@@ -444,44 +450,37 @@ msgid "Password Reset"
 msgstr "Сброс пароля"
 
 #: webapp/templates/login.html:12
-msgid "Configure air data sensor yourself  "
-msgstr "Настройте лично свой сенсор воздуха "
+msgid "Configure air data sensor yourself"
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:11
 msgid "Meine Luftdaten"
 msgstr "Мой luftdaten.info"
 
 #: webapp/templates/meine-luftdaten.html:11
-msgid "Your personal area. "
-msgstr "Ваш личный кабинет. "
+msgid "Your personal area."
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:18
-msgid "Sensors "
-msgstr "Сенсоры "
+msgid "Sensors"
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:19
-msgid "View and change sensor data and settings. "
-msgstr "Просмотреть и изменить данные сенсоров и настройки. "
-
-#: webapp/templates/meine-luftdaten.html:20
-msgid "Settings "
-msgstr "Настройки "
+msgid "View and change sensor data and settings."
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:21
-msgid "View and change data, notification settings and passwords. "
-msgstr "Просмотреть и изменить данные, настройки оповещения и пароли. "
+msgid "View and change data, notification settings and passwords."
+msgstr ""
 
-#: webapp/templates/meine-luftdaten.html:22
-msgid "Password "
-msgstr "Пароль "
+#: webapp/templates/meine-luftdaten.html:22 webapp/users/forms.py:46
+#: webapp/users/forms.py:93
+msgid "Password"
+msgstr "Пароль"
 
 #: webapp/templates/meine-luftdaten.html:23
-msgid "Change password. "
-msgstr "Изменить пароль. "
-
-#: webapp/templates/meine-luftdaten.html:24
-msgid "Logout "
-msgstr "Выйти "
+msgid "Change password."
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:25
 msgid "Logout."
@@ -500,12 +499,8 @@ msgid ""
 "Typically, two sensors are attached to each node: the fine dust sensor "
 "and the\n"
 "                        Humidity and temperature sensor. The sensor "
-"number can also be found "
+"number can also be found"
 msgstr ""
-"Обычно, два сенсора присоединены к одному устройству: сенсор "
-"мелкодисперсных частиц и\n"
-"                        сенсор влажности и температуры. Номер каждого "
-"сенсора отображается "
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust card again."
@@ -516,16 +511,16 @@ msgid "show on map"
 msgstr ""
 
 #: webapp/templates/my-sensor-data.html:25
-msgid "Last updated: "
-msgstr "Последнее обновление: "
+msgid "Last updated:"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:35
 msgid "No current data are available for this sensor."
 msgstr "Нет актуальных данные для данного сенсора."
 
 #: webapp/templates/my-sensor-give-success.html:13
-msgid "Sensor "
-msgstr "Сенсор "
+msgid "Sensor"
+msgstr ""
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "was handed over."
@@ -622,207 +617,82 @@ msgstr "Здесь вы можете изменить настройки ваш�
 
 #: webapp/templates/privacy-policy.html:13
 msgid ""
-"The operators of these pages take the protection of your personal data "
-"very seriously. We treat your personal data confidentially and according "
-"to the legal data protection regulations as well as this data protection "
-"explanation."
+"<p>The operators of these pages take the protection of your personal data"
+" very seriously. We treat your personal data confidentially and according"
+" to the legal data protection regulations as well as this data protection"
+" explanation.</p>\n"
+"                    <p>The use of our website is generally possible "
+"without providing personal data. Insofar as personal data (e.g. name, "
+"address or e-mail addresses) is collected on our pages, this is always "
+"done on a voluntary basis as far as possible. This data will not be "
+"passed on to third parties without your express consent.</p>\n"
+"                    <p>We would like to point out that data transmission "
+"via the Internet (e.g. communication via e-mail) may have security gaps. "
+"A complete protection of the data against the access by third is not "
+"possible.</p>\n"
+"                    <h2>Information, deletion, blocking</h2>\n"
+"                    <p>You have the right at any time to free information"
+" about your stored personal data, their origin and recipient and the "
+"purpose of data processing as well as a right to correction, blocking or "
+"deletion of this data. You can contact us at any time at the address "
+"given in the imprint for this and other questions on the subject of "
+"personal data.</p>\n"
+"                    <h2>Cookies</h2>\n"
+"                    <p>Some of the Internet pages use so-called cookies. "
+"Cookies do not damage your computer and do not contain viruses. Cookies "
+"serve to make our offer more user-friendly, more effective and safer. "
+"Cookies are small text files that are stored on your computer by your "
+"browser.</p>\n"
+"                    <p>Most of the cookies we use are so-called \"session"
+" cookies\". They are automatically deleted at the end of your visit. "
+"Other cookies remain stored on your terminal until you delete them. These"
+" cookies enable us to recognize your browser during your next visit.</p>"
+"\n"
+"                \n"
+"                    <h2>Account and sensor data</h2>\n"
+"                    <p>The measurement data of the sensors are collected "
+"on the server of the luftdaten.info and are publicly accessible to the "
+"company. The following information will be published:</p>\n"
+"                    <ul>\n"
+"                        <li>The anonymized geoposition (longitude and "
+"latitude) rounded to approx. 100 m.</li>\n"
+"                        <li>The ID of your ESP8266 NodeMCU board</li>\n"
+"                        <li>The given numerical description of the "
+"environment</li>\n"
+"                        <li>The sensor height</li>\n"
+"                        <li>The description as text</li>\n"
+"                    </ul>\n"
+"                    <p>The following additional data will be stored for "
+"internal processing, but will not be published:</p>\n"
+"                    <ul>\n"
+"                        <li>The postal address of the sensor</li>\n"
+"                        <li>The e-mail address</li>\n"
+"                        <li>Your first and last name</li>\n"
+"                    </ul>\n"
+"                    <h2>Server log files</h2>\n"
+"                    <p>The provider of the pages automatically collects "
+"and stores information in so-called server log files, which your browser "
+"automatically transmits to us. These are:</p>\n"
+"                    <ul>\n"
+"                        <li>Browser type / browser version/li>\n"
+"                        <li>used operating system</li>\n"
+"                        <li>Referrer URL</li>\n"
+"                        <li>Hostname of the accessing computer</li>\n"
+"                        <li>Time of the server request</li>\n"
+"                    </ul>\n"
+"                    <p>These data cannot be assigned to specific persons."
+" This data will not be merged with other data sources. We reserve the "
+"right to subsequently check this data if we become aware of concrete "
+"indications of illegal use.</p>\n"
+"                    <h2>Contradiction advertising mails</h2>\n"
+"                    <p>We hereby object to the use of contact data "
+"published within the scope of the imprint obligation to send unsolicited "
+"advertising and information material. The operators of this website "
+"expressly reserve the right to take legal action against unsolicited "
+"mailing or e-mailing of spam and other similar advertising materials.</p>"
+"\n"
+"                    "
 msgstr ""
-"Операторы этих страниц очень серьезно относятся к защите ваших личных "
-"данных. Мы относимся к вашим личным данным конфиденциально и в "
-"соответствии с правовыми нормами защиты данных."
-
-#: webapp/templates/privacy-policy.html:15
-msgid ""
-"The use of our website is generally possible without providing personal "
-"data. Insofar as personal data (e.g. name, address or e-mail addresses) "
-"is collected on our pages, this is always done on a voluntary basis as "
-"far as possible. This data will not be passed on to third parties without"
-" your express consent."
-msgstr ""
-"Использование нашего сайта, как правило, возможно без предоставления "
-"персональных данных. Поскольку личные данные (например, имя, адрес "
-"устройства или адрес эл. почты) собираются на наших страницах, это всегда"
-" делается на добровольной основе, насколько это возможно. Эти данные не "
-"будут переданы третьим лицам без вашего явного согласия."
-
-#: webapp/templates/privacy-policy.html:17
-msgid ""
-"We would like to point out that data transmission via the Internet (e.g. "
-"communication via e-mail) may have security gaps. A complete protection "
-"of the data against the access by third is not possible."
-msgstr ""
-"Мы хотели бы отметить, что при передаче данных через Интернет (например, "
-"через электронную почту) могут быть пробелы в безопасности. Полная защита"
-" данных от доступа третьих лиц невозможна."
-
-#: webapp/templates/privacy-policy.html:19
-msgid "Information, deletion, blocking"
-msgstr "Информация, удаление, блокирование"
-
-#: webapp/templates/privacy-policy.html:20
-msgid ""
-"You have the right at any time to free information about your stored "
-"personal data, their origin and recipient and the purpose of data "
-"processing as well as a right to correction, blocking or deletion of this"
-" data. You can contact us at any time at the address given in the imprint"
-" for this and other questions on the subject of personal data."
-msgstr ""
-"Вы имеете право в любое время отозвать информацию о ваших сохраненных "
-"личных данных, их происхождении и получателе, а также целях обработки "
-"данных, а также право на исправление, блокирование или удаление этих "
-"данных. Вы можете в любое время связаться с нами по адресу, указанному в "
-"контактных данных, по этому и другим вопросам, касающимся личных данных."
-
-#: webapp/templates/privacy-policy.html:21
-msgid "Cookies"
-msgstr "Куки"
-
-#: webapp/templates/privacy-policy.html:22
-msgid ""
-"Some of the Internet pages use so-called cookies. Cookies do not damage "
-"your computer and do not contain viruses. Cookies serve to make our offer"
-" more user-friendly, more effective and safer. Cookies are small text "
-"files that are stored on your computer by your browser."
-msgstr ""
-"Некоторые из интернет-страниц используют так называемые файлы куки. Файлы"
-" куки не наносят вреда вашему компьютеру и не содержат вирусов. Файлы "
-"куки служат для того, чтобы сделать наше предложение более удобным, "
-"эффективным и безопасным. Файлы куки - это небольшие текстовые файлы, "
-"которые сохраняются на вашем компьютере вашим браузером."
-
-#: webapp/templates/privacy-policy.html:23
-msgid ""
-"Most of the cookies we use are so-called \"session cookies\". They are "
-"automatically deleted at the end of your visit. Other cookies remain "
-"stored on your terminal until you delete them. These cookies enable us to"
-" recognize your browser during your next visit."
-msgstr ""
-"Большинство используемых нами файлов куки - это так называемые «сеансовые"
-" файлы куки». Они автоматически удаляются в конце вашего визита. Другие "
-"куки остаются на вашем терминале, пока вы не удалите их. Эти файлы куки "
-"позволяют нам распознать ваш браузер во время вашего следующего "
-"посещения."
-
-#: webapp/templates/privacy-policy.html:25
-msgid "Account and sensor data"
-msgstr "Аккаунт и данные сенсора"
-
-#: webapp/templates/privacy-policy.html:26
-msgid ""
-"The measurement data of the sensors are collected on the server of the "
-"luftdaten.info and are publicly accessible to the company. The following "
-"information will be published:"
-msgstr ""
-"Данные измерений датчиков собираются на сервере luftdaten.info и являются"
-" публично доступными. Будет опубликована следующая информация:"
-
-#: webapp/templates/privacy-policy.html:28
-msgid ""
-"The anonymized geoposition (longitude and latitude) rounded to approx. "
-"100 m."
-msgstr ""
-"Анонимизированная геопозиция (долгота и широта) округляется до примерно "
-"100 м."
-
-#: webapp/templates/privacy-policy.html:29
-msgid "The ID of your ESP8266 NodeMCU board"
-msgstr "ID вашей платы ESP8266 NodeMCU"
-
-#: webapp/templates/privacy-policy.html:30
-msgid "The given numerical description of the environment"
-msgstr "Будет приведено количественно описание среды"
-
-#: webapp/templates/privacy-policy.html:31
-msgid "The sensor height"
-msgstr "Высота сенсора"
-
-#: webapp/templates/privacy-policy.html:32
-msgid "The description as text"
-msgstr "Текстовое описание"
-
-#: webapp/templates/privacy-policy.html:34
-msgid ""
-"The following additional data will be stored for internal processing, but"
-" will not be published:"
-msgstr ""
-"Следующие данные будут сохранены для внутренней обработки и не будут "
-"опубликованы:"
-
-#: webapp/templates/privacy-policy.html:36
-msgid "The postal address of the sensor"
-msgstr "Почтовый адрес сенсора"
-
-#: webapp/templates/privacy-policy.html:37
-msgid "The e-mail address"
-msgstr "Адрес электронной почты"
-
-#: webapp/templates/privacy-policy.html:38
-msgid "Your first and last name"
-msgstr "Ваше имя и фамилия"
-
-#: webapp/templates/privacy-policy.html:40
-msgid "Server log files"
-msgstr "Лог файлы сервера"
-
-#: webapp/templates/privacy-policy.html:41
-msgid ""
-"The provider of the pages automatically collects and stores information "
-"in so-called server log files, which your browser automatically transmits"
-" to us. These are:"
-msgstr ""
-"Владелец данного сервиса автоматически собирает и сохраняет информацию в "
-"так называемых лог-файлах сервера, которые ваш браузер автоматически "
-"передает нам. Это:"
-
-#: webapp/templates/privacy-policy.html:43
-msgid "Browser type / browser version"
-msgstr "Тип и версия браузера"
-
-#: webapp/templates/privacy-policy.html:44
-msgid "used operating system"
-msgstr "используемая операционная система"
-
-#: webapp/templates/privacy-policy.html:45
-msgid "Referrer URL"
-msgstr "URL источника запроса"
-
-#: webapp/templates/privacy-policy.html:46
-msgid "Hostname of the accessing computer"
-msgstr "Имя хоста устройства которое совершает вход в аккаунт"
-
-#: webapp/templates/privacy-policy.html:47
-msgid "Time of the server request"
-msgstr "Время запроса сервера"
-
-#: webapp/templates/privacy-policy.html:49
-msgid ""
-"These data cannot be assigned to specific persons. This data will not be "
-"merged with other data sources. We reserve the right to subsequently "
-"check this data if we become aware of concrete indications of illegal "
-"use."
-msgstr ""
-"Эти данные не могут быть назначены конкретным лицам. Эти данные не будут "
-"объединены с другими источниками данных. Мы оставляем за собой право "
-"впоследствии проверять эти данные, если нам станет известно о конкретных "
-"признаках незаконного использования."
-
-#: webapp/templates/privacy-policy.html:50
-msgid "Contradiction advertising mails"
-msgstr "Об отношение к рекламным сообщениям"
-
-#: webapp/templates/privacy-policy.html:51
-msgid ""
-"We hereby object to the use of contact data published within the scope of"
-" the imprint obligation to send unsolicited advertising and information "
-"material. The operators of this website expressly reserve the right to "
-"take legal action against unsolicited mailing or e-mailing of spam and "
-"other similar advertising materials."
-msgstr ""
-"Настоящим мы возражаем против использования контактных данных, "
-"опубликованных в рамках обязательства по отправке нежелательных рекламных"
-" и информационных материалов. Операторы этого веб-сайта оставляют за "
-"собой право подать в суд на нежелательную рассылку спама или иные "
-"подобные рекламные материалы."
 
 #: webapp/templates/recover-fail.html:13
 msgid "Set password Error"
@@ -1053,11 +923,6 @@ msgstr "Изменить пароль"
 msgid "Send password reset instructions"
 msgstr "Отослать инструкции по восстановлению пароля"
 
-#: webapp/templates/security/login_user.html:17
-#: webapp/templates/security/register_user.html:5
-msgid "Register"
-msgstr "Зарегистрировать"
-
 #: webapp/templates/security/login_user.html:18
 msgid "Password reminder"
 msgstr "Напомнить пароль"
@@ -1088,10 +953,6 @@ msgstr "Пожалуйста введение корректный адрес э
 #: webapp/users/forms.py:32
 msgid "next"
 msgstr "далее"
-
-#: webapp/users/forms.py:46 webapp/users/forms.py:93
-msgid "Password"
-msgstr "Пароль"
 
 #: webapp/users/forms.py:49 webapp/users/forms.py:96 webapp/users/forms.py:108
 #: webapp/users/forms.py:136
@@ -1171,4 +1032,294 @@ msgstr "Данные пользователя сохранены."
 
 #~ msgid "Overview"
 #~ msgstr "Обзор"
+
+#~ msgid "Configure air data sensor yourself  "
+#~ msgstr "Настройте лично свой сенсор воздуха "
+
+#~ msgid "Your personal area. "
+#~ msgstr "Ваш личный кабинет. "
+
+#~ msgid "Sensors "
+#~ msgstr "Сенсоры "
+
+#~ msgid "View and change sensor data and settings. "
+#~ msgstr "Просмотреть и изменить данные сенсоров и настройки. "
+
+#~ msgid "Settings "
+#~ msgstr "Настройки "
+
+#~ msgid "View and change data, notification settings and passwords. "
+#~ msgstr "Просмотреть и изменить данные, настройки оповещения и пароли. "
+
+#~ msgid "Password "
+#~ msgstr "Пароль "
+
+#~ msgid "Change password. "
+#~ msgstr "Изменить пароль. "
+
+#~ msgid "Logout "
+#~ msgstr "Выйти "
+
+#~ msgid ""
+#~ "Typically, two sensors are attached to"
+#~ " each node: the fine dust sensor "
+#~ "and the\n"
+#~ "                        Humidity and temperature "
+#~ "sensor. The sensor number can also "
+#~ "be found "
+#~ msgstr ""
+#~ "Обычно, два сенсора присоединены к "
+#~ "одному устройству: сенсор мелкодисперсных "
+#~ "частиц и\n"
+#~ "                        сенсор влажности и "
+#~ "температуры. Номер каждого сенсора "
+#~ "отображается "
+
+#~ msgid "Last updated: "
+#~ msgstr "Последнее обновление: "
+
+#~ msgid "Sensor "
+#~ msgstr "Сенсор "
+
+#~ msgid ""
+#~ "The operators of these pages take "
+#~ "the protection of your personal data "
+#~ "very seriously. We treat your personal"
+#~ " data confidentially and according to "
+#~ "the legal data protection regulations as"
+#~ " well as this data protection "
+#~ "explanation."
+#~ msgstr ""
+#~ "Операторы этих страниц очень серьезно "
+#~ "относятся к защите ваших личных данных."
+#~ " Мы относимся к вашим личным данным"
+#~ " конфиденциально и в соответствии с "
+#~ "правовыми нормами защиты данных."
+
+#~ msgid ""
+#~ "The use of our website is "
+#~ "generally possible without providing personal"
+#~ " data. Insofar as personal data (e.g."
+#~ " name, address or e-mail addresses) "
+#~ "is collected on our pages, this is"
+#~ " always done on a voluntary basis "
+#~ "as far as possible. This data will"
+#~ " not be passed on to third "
+#~ "parties without your express consent."
+#~ msgstr ""
+#~ "Использование нашего сайта, как правило, "
+#~ "возможно без предоставления персональных "
+#~ "данных. Поскольку личные данные (например, "
+#~ "имя, адрес устройства или адрес эл. "
+#~ "почты) собираются на наших страницах, "
+#~ "это всегда делается на добровольной "
+#~ "основе, насколько это возможно. Эти "
+#~ "данные не будут переданы третьим лицам"
+#~ " без вашего явного согласия."
+
+#~ msgid ""
+#~ "We would like to point out that"
+#~ " data transmission via the Internet "
+#~ "(e.g. communication via e-mail) may have"
+#~ " security gaps. A complete protection "
+#~ "of the data against the access by"
+#~ " third is not possible."
+#~ msgstr ""
+#~ "Мы хотели бы отметить, что при "
+#~ "передаче данных через Интернет (например, "
+#~ "через электронную почту) могут быть "
+#~ "пробелы в безопасности. Полная защита "
+#~ "данных от доступа третьих лиц "
+#~ "невозможна."
+
+#~ msgid "Information, deletion, blocking"
+#~ msgstr "Информация, удаление, блокирование"
+
+#~ msgid ""
+#~ "You have the right at any time "
+#~ "to free information about your stored"
+#~ " personal data, their origin and "
+#~ "recipient and the purpose of data "
+#~ "processing as well as a right to"
+#~ " correction, blocking or deletion of "
+#~ "this data. You can contact us at"
+#~ " any time at the address given "
+#~ "in the imprint for this and other"
+#~ " questions on the subject of personal"
+#~ " data."
+#~ msgstr ""
+#~ "Вы имеете право в любое время "
+#~ "отозвать информацию о ваших сохраненных "
+#~ "личных данных, их происхождении и "
+#~ "получателе, а также целях обработки "
+#~ "данных, а также право на исправление,"
+#~ " блокирование или удаление этих данных. "
+#~ "Вы можете в любое время связаться "
+#~ "с нами по адресу, указанному в "
+#~ "контактных данных, по этому и другим "
+#~ "вопросам, касающимся личных данных."
+
+#~ msgid "Cookies"
+#~ msgstr "Куки"
+
+#~ msgid ""
+#~ "Some of the Internet pages use "
+#~ "so-called cookies. Cookies do not "
+#~ "damage your computer and do not "
+#~ "contain viruses. Cookies serve to make"
+#~ " our offer more user-friendly, more"
+#~ " effective and safer. Cookies are "
+#~ "small text files that are stored "
+#~ "on your computer by your browser."
+#~ msgstr ""
+#~ "Некоторые из интернет-страниц используют так"
+#~ " называемые файлы куки. Файлы куки не"
+#~ " наносят вреда вашему компьютеру и не"
+#~ " содержат вирусов. Файлы куки служат "
+#~ "для того, чтобы сделать наше предложение"
+#~ " более удобным, эффективным и безопасным."
+#~ " Файлы куки - это небольшие текстовые"
+#~ " файлы, которые сохраняются на вашем "
+#~ "компьютере вашим браузером."
+
+#~ msgid ""
+#~ "Most of the cookies we use are "
+#~ "so-called \"session cookies\". They are"
+#~ " automatically deleted at the end of"
+#~ " your visit. Other cookies remain "
+#~ "stored on your terminal until you "
+#~ "delete them. These cookies enable us "
+#~ "to recognize your browser during your"
+#~ " next visit."
+#~ msgstr ""
+#~ "Большинство используемых нами файлов куки "
+#~ "- это так называемые «сеансовые файлы"
+#~ " куки». Они автоматически удаляются в "
+#~ "конце вашего визита. Другие куки "
+#~ "остаются на вашем терминале, пока вы "
+#~ "не удалите их. Эти файлы куки "
+#~ "позволяют нам распознать ваш браузер во"
+#~ " время вашего следующего посещения."
+
+#~ msgid "Account and sensor data"
+#~ msgstr "Аккаунт и данные сенсора"
+
+#~ msgid ""
+#~ "The measurement data of the sensors "
+#~ "are collected on the server of the"
+#~ " luftdaten.info and are publicly accessible"
+#~ " to the company. The following "
+#~ "information will be published:"
+#~ msgstr ""
+#~ "Данные измерений датчиков собираются на "
+#~ "сервере luftdaten.info и являются публично "
+#~ "доступными. Будет опубликована следующая "
+#~ "информация:"
+
+#~ msgid ""
+#~ "The anonymized geoposition (longitude and "
+#~ "latitude) rounded to approx. 100 m."
+#~ msgstr ""
+#~ "Анонимизированная геопозиция (долгота и "
+#~ "широта) округляется до примерно 100 м."
+
+#~ msgid "The ID of your ESP8266 NodeMCU board"
+#~ msgstr "ID вашей платы ESP8266 NodeMCU"
+
+#~ msgid "The given numerical description of the environment"
+#~ msgstr "Будет приведено количественно описание среды"
+
+#~ msgid "The sensor height"
+#~ msgstr "Высота сенсора"
+
+#~ msgid "The description as text"
+#~ msgstr "Текстовое описание"
+
+#~ msgid ""
+#~ "The following additional data will be"
+#~ " stored for internal processing, but "
+#~ "will not be published:"
+#~ msgstr ""
+#~ "Следующие данные будут сохранены для "
+#~ "внутренней обработки и не будут "
+#~ "опубликованы:"
+
+#~ msgid "The postal address of the sensor"
+#~ msgstr "Почтовый адрес сенсора"
+
+#~ msgid "The e-mail address"
+#~ msgstr "Адрес электронной почты"
+
+#~ msgid "Your first and last name"
+#~ msgstr "Ваше имя и фамилия"
+
+#~ msgid "Server log files"
+#~ msgstr "Лог файлы сервера"
+
+#~ msgid ""
+#~ "The provider of the pages automatically"
+#~ " collects and stores information in "
+#~ "so-called server log files, which "
+#~ "your browser automatically transmits to "
+#~ "us. These are:"
+#~ msgstr ""
+#~ "Владелец данного сервиса автоматически "
+#~ "собирает и сохраняет информацию в так"
+#~ " называемых лог-файлах сервера, которые ваш"
+#~ " браузер автоматически передает нам. Это:"
+
+#~ msgid "Browser type / browser version"
+#~ msgstr "Тип и версия браузера"
+
+#~ msgid "used operating system"
+#~ msgstr "используемая операционная система"
+
+#~ msgid "Referrer URL"
+#~ msgstr "URL источника запроса"
+
+#~ msgid "Hostname of the accessing computer"
+#~ msgstr "Имя хоста устройства которое совершает вход в аккаунт"
+
+#~ msgid "Time of the server request"
+#~ msgstr "Время запроса сервера"
+
+#~ msgid ""
+#~ "These data cannot be assigned to "
+#~ "specific persons. This data will not "
+#~ "be merged with other data sources. "
+#~ "We reserve the right to subsequently "
+#~ "check this data if we become aware"
+#~ " of concrete indications of illegal "
+#~ "use."
+#~ msgstr ""
+#~ "Эти данные не могут быть назначены "
+#~ "конкретным лицам. Эти данные не будут"
+#~ " объединены с другими источниками данных."
+#~ " Мы оставляем за собой право "
+#~ "впоследствии проверять эти данные, если "
+#~ "нам станет известно о конкретных "
+#~ "признаках незаконного использования."
+
+#~ msgid "Contradiction advertising mails"
+#~ msgstr "Об отношение к рекламным сообщениям"
+
+#~ msgid ""
+#~ "We hereby object to the use of "
+#~ "contact data published within the scope"
+#~ " of the imprint obligation to send"
+#~ " unsolicited advertising and information "
+#~ "material. The operators of this website"
+#~ " expressly reserve the right to take"
+#~ " legal action against unsolicited mailing"
+#~ " or e-mailing of spam and other "
+#~ "similar advertising materials."
+#~ msgstr ""
+#~ "Настоящим мы возражаем против использования"
+#~ " контактных данных, опубликованных в рамках"
+#~ " обязательства по отправке нежелательных "
+#~ "рекламных и информационных материалов. "
+#~ "Операторы этого веб-сайта оставляют за "
+#~ "собой право подать в суд на "
+#~ "нежелательную рассылку спама или иные "
+#~ "подобные рекламные материалы."
 

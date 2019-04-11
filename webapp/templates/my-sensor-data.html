@@ -7,7 +7,7 @@
                 <div class="col-md-12">
                     <h1>{{ _('Data from Node') }}  {{ node.uid }}</h1>
                     <p>{{ _('Typically, two sensors are attached to each node: the fine dust sensor and the
-                        Humidity and temperature sensor. The sensor number can also be found ') }} <a
+                        Humidity and temperature sensor. The sensor number can also be found') }} <a
                                 href="https://maps.luftdaten.info/" target="_blank">{{ _('on the fine dust card again.') }}  </a>.</p>
                     {% for sensor in sensors %}
                         <h2>{{ sensor['sensor_type_name'] }}</h2>
@@ -22,7 +22,7 @@
                             </tr>
                             {% if sensor['data'] %}
                                 <tr>
-                                    <th>{{ _('Last updated: ') }}</th>
+                                    <th>{{ _('Last updated:') }} </th>
                                     <td>{{ sensor['data']['timestamp']|datetime }}</td>
                                 </tr>
                                 {% for sensor_value in sensor['data']['sensordatavalues'] %}
