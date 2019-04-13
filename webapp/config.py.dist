@@ -2,6 +2,9 @@
 # `webapp/config.py`. You can override any variables set in
 # `webapp/default_settings.py`.
 
+from webapp.default_settings import LANGUAGES
+
+
 # Enable debugging
 DEBUG = True
 
@@ -10,7 +13,9 @@ MAIL_SUPPRESS_SEND = True
 
 SECRET_KEY = SECURITY_PASSWORD_SALT = 'dummysecret'
 
-LANGUAGES = {
-  'en': 'English',
-}
-
+# add additional languages
+LANGUAGES.update({
+    'ru': 'русский',
+    'fr': 'français',
+    'de': 'Deutsch'
+})
