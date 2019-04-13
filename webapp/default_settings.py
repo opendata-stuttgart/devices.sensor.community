@@ -101,3 +101,7 @@ SENSOR_LOCATION_UPDATE_INTERVAL = 60 * 60 * 24 * 3  # 3 days
 
 # Default Node.owner_id field value
 SENSOR_DEFAULT_OWNER = 17
+
+LANGUAGES = {
+    'en': 'English'
+}
