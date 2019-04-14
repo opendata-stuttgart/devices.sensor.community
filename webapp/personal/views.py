@@ -120,7 +120,7 @@ def sensor_settings(id):
         flash(_('Settings saved successfully.'), 'success')
         return redirect(url_for('.sensor_list'))
 
-    return render_template('my-sensor-settings.html', node=node, form=form)
+    return render_template('my-sensor-settings.html', node=node, form=form, types=current_app.config['SENSOR_TYPES'])
 
 
 @personal.route('/sensors/register', methods=['GET', 'POST'])
@@ -147,7 +147,7 @@ def sensor_register():
         flash(_('Sensor succesfuly registered.'), 'success')
         return redirect(url_for('.sensor_list'))
 
-    return render_template('sensor-register.html', node=None, form=form)
+    return render_template('sensor-register.html', node=None, form=form, types=current_app.config['SENSOR_TYPES'])
 
 
 @personal.route('/my-sensor/<id>/give', methods=['GET', 'POST'])

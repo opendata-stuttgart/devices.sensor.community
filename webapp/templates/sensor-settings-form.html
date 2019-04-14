@@ -32,7 +32,19 @@
     {{ render_field(sensor.pin, 'basic', 'col-md-2', required=False) }}
   </div>
 {% endfor %}
-
+<script type="text/javascript">
+var sensor_types = { {% for pin in types %}
+"{{ pin }}": {{ types[pin] }},
+{% endfor%}
+};
+var sensors = document.querySelectorAll('[id$="sensor_type"]');
+for (i=0;i<sensors.length;i++) {
+	sensors[i].onchange = function(){document.getElementById(this.getAttribute('id').replace('sensor_type','pin')).value = sensor_types[this.value];};
+{% if  request.path == "/sensors/register" %}
+	document.getElementById(sensors[i].getAttribute('id').replace('sensor_type','pin')).value = sensor_types[sensors[i].value];
+{% endif %}
+}
+</script>
 
 <div class="row">
     <div class="col-md-12">
