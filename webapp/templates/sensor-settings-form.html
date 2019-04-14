@@ -1,13 +1,14 @@
 <h2>{{ _('Basic Information') }} </h2>
 
 {{ render_field(form.name) }}
+{% if  request.path != "/sensors/register" %}
 {{ render_field(form.inactive) }}
-
+{% endif %}
 {% set location = form.location %}
 <div class="row">
-    {{ render_field(location.indoor, 'basic', 'col-md-2') }}
     {{ render_field(location.street_name, 'basic') }}
     {{ render_field(location.street_number, 'basic') }}
+    {{ render_field(location.indoor, 'basic', 'col-md-2') }}
 </div>
 
 <div class="row">
@@ -21,9 +22,6 @@
 {{ render_field(form.exact_location) }}
 {{ render_field(form.height) }}
 {{ render_field(form.sensor_position) }}
-{{ render_field(location.industry_in_area) }}
-{{ render_field(location.oven_in_area) }}
-{{ render_field(location.traffic_in_area) }}
 {{ render_field(form.description) }}
 <h2>{{ _('Hardware configuration') }}</h2>
 {% for sensor in form.sensors %}
