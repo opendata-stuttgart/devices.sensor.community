@@ -974,7 +974,7 @@ msgstr "connexion"
 
 #: webapp/users/forms.py:68
 msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>"
-"J'accepte la <a href=\"/privacy-policy\">politique de confidentialité</a>"
+msgstr "J'accepte la <a href=\"/privacy-policy\">politique de confidentialité</a>"
 
 #: webapp/users/forms.py:71
 msgid "Please agree to the privacy policy."

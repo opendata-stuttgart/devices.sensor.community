@@ -46,11 +46,14 @@ for (i=0;i<sensors.length;i++) {
 }
 
 function orderSelect($element) {
+    var selected_item = $element.selectedIndex;
+    var selected_lang = $element.options[selected_item].value;
     var options   = $element.getElementsByTagName('option'),
         n_options = options.length,
         temp = [],
         parts,
-        i;
+        i,
+        new_selected_item;
 
     for(i = n_options; i --;) {
         temp[i] = options[i].text + "," + options[i].value ; 
@@ -63,7 +66,11 @@ function orderSelect($element) {
 
         options[i].text  = parts[0];
         options[i].value = parts[1]; 
+	if (options[i].value == selected_lang) {
+		new_selected_item = i;
+        }
     }
+    $element.selectedIndex = new_selected_item;
 }
 orderSelect(document.getElementById('location-country'));
 </script>
