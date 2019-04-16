@@ -44,6 +44,28 @@ for (i=0;i<sensors.length;i++) {
 	document.getElementById(sensors[i].getAttribute('id').replace('sensor_type','pin')).value = sensor_types[sensors[i].value];
 {% endif %}
 }
+
+function orderSelect($element) {
+    var options   = $element.getElementsByTagName('option'),
+        n_options = options.length,
+        temp = [],
+        parts,
+        i;
+
+    for(i = n_options; i --;) {
+        temp[i] = options[i].text + "," + options[i].value ; 
+    }
+
+    temp.sort();
+
+    for(i = n_options; i --;) {
+        parts = temp[i].split(',');
+
+        options[i].text  = parts[0];
+        options[i].value = parts[1]; 
+    }
+}
+orderSelect(document.getElementById('location-country'));
 </script>
 
 <div class="row">

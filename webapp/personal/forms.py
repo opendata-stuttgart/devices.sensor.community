@@ -50,10 +50,10 @@ class SensorLocationForm(FlaskForm):
         [
             validators.InputRequired(
                 message=_('Please enter the country name.'),
-            )
+            ),
+            validators.NoneOf(['--'], message=_('Please enter the country name.'),)
         ],
         choices=country_codes,
-        default=default_country,
     )
 
     latitude = StringField(_('Latitude'), default="0.0",
