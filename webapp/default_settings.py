@@ -14,7 +14,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 import os
 
 PROJECT_NAME = "luftdaten"
-PROJECT_URL = 'https://meine.luftaten.info'
+PROJECT_URL = 'https://meine.luftdaten.info'
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 PROJECT_VERSION = '0.1.0'
 LOG_DIR = os.path.abspath(os.path.join(PROJECT_ROOT, os.pardir, 'logs'))
