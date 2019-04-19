@@ -19,6 +19,7 @@ import requests
 import dateutil.parser
 from datetime import datetime, timedelta
 import pytz
+import sqlalchemy.exc as exc
 
 from .forms import SensorGiveForm, SensorSettingsForm, SensorRegisterForm
 from ..external_data.models import Node, SensorLocation, Sensor, SensorType
@@ -141,11 +142,15 @@ def sensor_register():
         node.uid = form.sensor_board.data + form.sensor_id.data
         node.email = current_user.email
 
-        db.session.add(node)
-        db.session.commit()
+        try:
+            db.session.add(node)
+            db.session.commit()
 
-        flash(_('Sensor succesfuly registered.'), 'success')
-        return redirect(url_for('.sensor_list'))
+            flash(_('Sensor succesfully registered.'), 'success')
+            return redirect(url_for('.sensor_list'))
+        except exc.IntegrityError:
+            db.session.rollback()
+            flash(_('This sensor ID is already registered.'), 'warning')
 
     return render_template('sensor-register.html', node=None, form=form, types=current_app.config['SENSOR_TYPES'])
 
