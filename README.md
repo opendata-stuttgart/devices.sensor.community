@@ -32,8 +32,7 @@ Basic development environment file can be copied from `.flaskenv.dist`.
 ## Docker development
 To ease up development Docker container and relevant `docker-compose.yml`
 project file has been created. Following will start up basic development
-environment including MySQL database with "external" schema, redis
-<s> and celery workers</s>. Code reloads are active by default.
+environment including MySQL database with "external" schema and redis. Code reloads are active by default.
 
     docker-compose up
 
