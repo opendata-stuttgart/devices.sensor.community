@@ -15,7 +15,6 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_wtf.csrf import CSRFProtect
 from flask_mail import Mail, email_dispatched
-from flask_celery import Celery
 from flask_babelex import Babel, Domain
 from flask_security import Security
 
@@ -23,7 +22,6 @@ db = SQLAlchemy()
 migrate = Migrate()
 csrf = CSRFProtect()
 mail = Mail()
-celery = Celery()
 babel = Babel(default_domain=Domain('translations', domain='messages'))
 # https://github.com/lingthio/Flask-User/issues/195#issuecomment-352274132
 babel.translation_directories = 'translations'

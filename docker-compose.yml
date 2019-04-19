@@ -16,17 +16,6 @@ services:
     environment:
       - FLASK_ENV=development
 
-  # TODO get rid of Flask-Celery per http://flask.pocoo.org/docs/1.0/patterns/celery/
-  #celery:
-  #  restart: unless-stopped
-  #  build:
-  #    context: .
-  #  volumes:
-  #    - .:/app
-  #  depends_on:
-  #    - mysql
-  #    - redis
-  #  command: bash -c "python3 manage.py celery_worker"
   gulp:
     image: node:10-alpine
     command: npm run build

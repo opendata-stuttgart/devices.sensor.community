@@ -21,7 +21,7 @@ from .frontend import frontend
 from .personal import personal
 from .users import users
 from .models import User, Role
-from .extensions import db, csrf, mail, celery, babel, security, migrate
+from .extensions import db, csrf, mail, babel, security, migrate
 from .babel import create_module as babel_create_module
 from .common.context_processor import register_context_processor
 
@@ -83,9 +83,6 @@ def configure_extensions(app):
 
     # flask-mail
     mail.init_app(app)
-
-    # celery
-    celery.init_app(app)
 
     # flask-babel
     #babel.init_app(app)
