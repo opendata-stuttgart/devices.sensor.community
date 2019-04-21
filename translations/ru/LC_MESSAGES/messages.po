@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  luftdaten.info\n"
 "Report-Msgid-Bugs-To: radiomgrs@gmail.com\n"
-"POT-Creation-Date: 2019-04-11 06:19+0000\n"
+"POT-Creation-Date: 2019-04-19 14:05+0000\n"
 "PO-Revision-Date: 2019-04-06 16:02+0300\n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -55,7 +55,7 @@ msgstr "Пожалуйста укажите название города."
 msgid "Country"
 msgstr "Страна"
 
-#: webapp/personal/forms.py:52
+#: webapp/personal/forms.py:52 webapp/personal/forms.py:54
 msgid "Please enter the country name."
 msgstr "Пожалуйста укажите название страны."
 
@@ -232,31 +232,35 @@ msgstr "Передать сенсор"
 msgid "You can't transfer the sensor to yourself"
 msgstr "Вы не можете передать сенсор себе"
 
-#: webapp/personal/views.py:32
+#: webapp/personal/views.py:33
 msgid "Fine dust 10 µm"
 msgstr "Мелкодисперсная пыль 10 µm"
 
-#: webapp/personal/views.py:33
+#: webapp/personal/views.py:34
 msgid "Fine dust 2.5 µm"
 msgstr "Мелкодисперсная пыль 2.5 µm"
 
-#: webapp/personal/views.py:34
+#: webapp/personal/views.py:35
 msgid "Humidity"
 msgstr "Влажность"
 
-#: webapp/personal/views.py:35
+#: webapp/personal/views.py:36
 msgid "Temperature"
 msgstr "Температура"
 
-#: webapp/personal/views.py:120
+#: webapp/personal/views.py:121
 msgid "Settings saved successfully."
 msgstr "Настройки успешно сохранены."
 
-#: webapp/personal/views.py:147
-msgid "Sensor succesfuly registered."
-msgstr "Сенсор успешно зарегистрирован."
+#: webapp/personal/views.py:149
+msgid "Sensor succesfully registered."
+msgstr ""
 
-#: webapp/personal/views.py:162
+#: webapp/personal/views.py:153
+msgid "This sensor ID is already registered."
+msgstr ""
+
+#: webapp/personal/views.py:167
 msgid "A fine dust sensor was transferred to you"
 msgstr "Сенсор был перенесен в ваш список"
 
@@ -398,8 +402,8 @@ msgid "user configuration"
 msgstr "пользовательские настройки"
 
 #: webapp/templates/layout.html:14
-msgid "Information and settings for the luftaten project"
-msgstr "Информация и настройки для проекта luftdaten.info"
+msgid "Information and settings for the luftdaten project"
+msgstr ""
 
 #: webapp/templates/layout.html:45
 msgid "Home"
@@ -810,15 +814,15 @@ msgstr "Регистрация сенсора"
 msgid "Basic Information"
 msgstr "Базовая информация"
 
-#: webapp/templates/sensor-settings-form.html:20
+#: webapp/templates/sensor-settings-form.html:21
 msgid "Additional Information"
 msgstr "Дополнительная информация"
 
-#: webapp/templates/sensor-settings-form.html:28
+#: webapp/templates/sensor-settings-form.html:26
 msgid "Hardware configuration"
 msgstr "Настройка аппаратного обеспечения"
 
-#: webapp/templates/sensor-settings-form.html:41
+#: webapp/templates/sensor-settings-form.html:80
 msgid ""
 "The more precise the data we have, the better we can evaluate the data "
 "and thus energize statements. The system can also try to make a "
@@ -830,7 +834,7 @@ msgstr ""
 "вычислить вашу геопозицию, но мы будем рады, если вы укажете позицию с "
 "помощью карты ниже."
 
-#: webapp/templates/sensor-settings-form.html:50
+#: webapp/templates/sensor-settings-form.html:89
 msgid "Lookup entered address"
 msgstr "Найти введенный адрес"
 
@@ -1322,4 +1326,10 @@ msgstr "Данные пользователя сохранены."
 #~ "собой право подать в суд на "
 #~ "нежелательную рассылку спама или иные "
 #~ "подобные рекламные материалы."
+
+#~ msgid "Sensor succesfuly registered."
+#~ msgstr "Сенсор успешно зарегистрирован."
+
+#~ msgid "Information and settings for the luftaten project"
+#~ msgstr "Информация и настройки для проекта luftdaten.info"
 

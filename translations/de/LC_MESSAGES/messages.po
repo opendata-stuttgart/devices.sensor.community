@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-04-11 06:19+0000\n"
+"POT-Creation-Date: 2019-04-19 14:05+0000\n"
 "PO-Revision-Date: 2019-02-08 15:22+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -54,7 +54,7 @@ msgstr "Bitte geben Sie einen Ort an."
 msgid "Country"
 msgstr "Staat"
 
-#: webapp/personal/forms.py:52
+#: webapp/personal/forms.py:52 webapp/personal/forms.py:54
 msgid "Please enter the country name."
 msgstr "Bitte geben Sie einen Staat an."
 
@@ -232,31 +232,35 @@ msgstr "Sensor übergeben"
 msgid "You can't transfer the sensor to yourself"
 msgstr "Du kannst den Sensor nicht auf dich selbst übertragen."
 
-#: webapp/personal/views.py:32
+#: webapp/personal/views.py:33
 msgid "Fine dust 10 µm"
 msgstr "Feinstaub 10 µm"
 
-#: webapp/personal/views.py:33
+#: webapp/personal/views.py:34
 msgid "Fine dust 2.5 µm"
 msgstr "Feinstaub 2,5 µm"
 
-#: webapp/personal/views.py:34
+#: webapp/personal/views.py:35
 msgid "Humidity"
 msgstr "Luftfeuchtigkeit"
 
-#: webapp/personal/views.py:35
+#: webapp/personal/views.py:36
 msgid "Temperature"
 msgstr "Temperatur"
 
-#: webapp/personal/views.py:120
+#: webapp/personal/views.py:121
 msgid "Settings saved successfully."
 msgstr "Einstellungen erfolgreich gespeichert."
 
-#: webapp/personal/views.py:147
-msgid "Sensor succesfuly registered."
-msgstr "Sensor erfolgreich registriert"
+#: webapp/personal/views.py:149
+msgid "Sensor succesfully registered."
+msgstr ""
 
-#: webapp/personal/views.py:162
+#: webapp/personal/views.py:153
+msgid "This sensor ID is already registered."
+msgstr "Diese Sensor ID ist bereits registriert."
+
+#: webapp/personal/views.py:167
 msgid "A fine dust sensor was transferred to you"
 msgstr "Ein Feinstaubsensor wurde Ihnen übertragen"
 
@@ -400,8 +404,8 @@ msgid "user configuration"
 msgstr "Benutzerkonfiguration"
 
 #: webapp/templates/layout.html:14
-msgid "Information and settings for the luftaten project"
-msgstr "Informationen und Einstellungen zum Luftdaten-Projekt"
+msgid "Information and settings for the luftdaten project"
+msgstr ""
 
 #: webapp/templates/layout.html:45
 msgid "Home"
@@ -473,7 +477,9 @@ msgstr "Anzeigen und Ändern der Sensor-Daten und -Einstellungen."
 
 #: webapp/templates/meine-luftdaten.html:21
 msgid "View and change data, notification settings and passwords."
-msgstr "Anzeigen und Ändern der Daten, der Benachrichtigungseinstellungen und des Passworts."
+msgstr ""
+"Anzeigen und Ändern der Daten, der Benachrichtigungseinstellungen und des"
+" Passworts."
 
 #: webapp/templates/meine-luftdaten.html:22 webapp/users/forms.py:46
 #: webapp/users/forms.py:93
@@ -502,9 +508,10 @@ msgid ""
 "and the\n"
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
-msgstr "Typischerweise sind 2 Sensoren pro Gerät angeschlossen:"
-"der Feinstaubsensor und ein Temperatur/Luftfeuchte-Sensor. Die Sensor IDs"
-"finden Sie hier""
+msgstr ""
+"Typischerweise sind 2 Sensoren pro Gerät angeschlossen:der "
+"Feinstaubsensor und ein Temperatur/Luftfeuchte-Sensor. Die Sensor "
+"IDsfinden Sie hier\""
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust card again."
@@ -698,18 +705,18 @@ msgid ""
 "\n"
 "                    "
 msgstr ""
-"<p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten "
-"sehr ernst. Wir behandeln  Ihre personenbezogenen Daten vertraulich und "
-"entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser"
-" Datenschutzerklärung.</p>\n"
+"<p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten"
+" sehr ernst. Wir behandeln  Ihre personenbezogenen Daten vertraulich und "
+"entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser "
+"Datenschutzerklärung.</p>\n"
 "<p>Die Nutzung unserer Webseite ist in der Regel ohne Angabe "
 "personenbezogener Daten möglich. Soweitauf unseren Seiten "
-"personenbezogene Daten (beispielsweise Name, Anschrift oder "
-"E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf "
-"freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche "
-"Zustimmung nicht an Dritte weitergegeben.</p>\n"
-"<p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei "
-"der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein "
+"personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-"
+"Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf "
+"freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung"
+" nicht an Dritte weitergegeben.</p>\n"
+"<p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei"
+" der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein "
 "lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht "
 "möglich.</p>\n"
 "<h2>Auskunft, Löschung, Sperrung</h2>\n"
@@ -718,25 +725,24 @@ msgstr ""
 "den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, "
 "Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum "
 "Thema personenbezogene Daten können Sie sich jederzeit unter der im "
-"Impressum angegebenen Adresse an uns wenden.</p>"
-"<h2>Cookies</h2>\n"
+"Impressum angegebenen Adresse an uns wenden.</p><h2>Cookies</h2>\n"
 "Die Internetseiten verwenden teilweise so genannte Cookies. Cookies "
 "richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. "
 "Cookies dienen dazu, unser Angebot nutzerfreundlicher, effektiver und "
-"sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner "
-"abgelegt werden und die Ihr Browser speichert.</p>\n"
+"sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem "
+"Rechner abgelegt werden und die Ihr Browser speichert.</p>\n"
 "<p>Die meisten der von uns verwendeten Cookies sind so genannte „Session-"
-"Cookies“. Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Andere "
-"Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese löschen. "
+"Cookies“. Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Andere"
+" Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese löschen. "
 "Diese Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch "
 "wiederzuerkennen.</p>\n"
 "<h2>Account und Sensordaten</h2>\n"
-"<p>Die Messdaten der Sensoren werden auf dem Server des OK Lab Stuttgarts "
-"gesammelt und öffentlich zur Verfügung gestellt. Hierbei werden folgende "
-"Informationen veröffentlicht:</p>\n"
+"<p>Die Messdaten der Sensoren werden auf dem Server des OK Lab Stuttgarts"
+" gesammelt und öffentlich zur Verfügung gestellt. Hierbei werden folgende"
+" Informationen veröffentlicht:</p>\n"
 "<ul>\n"
-"    <li>TDie anonymisierte Geoposition (Längengrad und"
-" Breitengrad) auf ca. 100 m gerundet</li>\n"
+"    <li>TDie anonymisierte Geoposition (Längengrad und Breitengrad) auf "
+"ca. 100 m gerundet</li>\n"
 "    <li>Die ID Ihres ESP8266-NodeMCU-Boards</li>\n"
 "    <li>Die angegebene numerische Beschreibung der Umgebung</li>\n"
 "    <li>Die Sensorhöhe</li>\n"
@@ -750,8 +756,8 @@ msgstr ""
 "    <li>Ihr Vor- und Nachname</li>\n"
 "</ul>\n"
 "<h2>Server-Log-Files</h2>\n"
-"Der Provider der Seiten erhebt und speichert automatisch Informationen "
-"in so genannten Server-Log Files, die Ihr Browser automatisch an uns "
+"Der Provider der Seiten erhebt und speichert automatisch Informationen in"
+" so genannten Server-Log Files, die Ihr Browser automatisch an uns "
 "übermittelt. Dies sind:</p>\n"
 "<ul>\n"
 "    <li>Browsertyp / Browserversion</li>\n"
@@ -764,14 +770,13 @@ msgstr ""
 "Zusammenführung dieser Daten mit anderen Datenquellen wird nicht "
 "vorgenommen. Wir behalten uns vor, diese Daten nachträglich zu prüfen, "
 "wenn uns konkrete Anhaltspunkte für eine rechtswidrige Nutzung bekannt "
-"werden.</p>"
-"<h2>Widerspruch Werbe-Mails</h2>\n"
+"werden.</p><h2>Widerspruch Werbe-Mails</h2>\n"
 "<p>Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten "
-"Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter "
-"Werbung und Informationsmaterialien wird hiermit widersprochen. Die "
-"Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im "
-"Falle der unverlangten Zusendung von Werbeinformationen, etwa durch "
-"Spam-E-Mails, vor.</p>\n"
+"Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung"
+" und Informationsmaterialien wird hiermit widersprochen. Die Betreiber "
+"der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der "
+"unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, "
+"vor.</p>\n"
 
 #: webapp/templates/recover-fail.html:13
 msgid "Set password Error"
@@ -888,15 +893,15 @@ msgstr "Sensor-Registrierung"
 msgid "Basic Information"
 msgstr "Basisinformationen"
 
-#: webapp/templates/sensor-settings-form.html:20
+#: webapp/templates/sensor-settings-form.html:21
 msgid "Additional Information"
 msgstr "Zusätzliche Informationen"
 
-#: webapp/templates/sensor-settings-form.html:28
+#: webapp/templates/sensor-settings-form.html:26
 msgid "Hardware configuration"
 msgstr "Hardware-Konfiguration"
 
-#: webapp/templates/sensor-settings-form.html:41
+#: webapp/templates/sensor-settings-form.html:80
 msgid ""
 "The more precise the data we have, the better we can evaluate the data "
 "and thus energize statements. The system can also try to make a "
@@ -908,7 +913,7 @@ msgstr ""
 "Geokoordinaten zu bestimmen. Es wäre aber schön, wenn Sie dies "
 "kontrollieren und gegebenenfalls korrigieren würden."
 
-#: webapp/templates/sensor-settings-form.html:50
+#: webapp/templates/sensor-settings-form.html:89
 msgid "Lookup entered address"
 msgstr "Eingegebene Adresse suchen"
 
@@ -1264,4 +1269,10 @@ msgstr "Nutzerdaten gespeichert."
 
 #~ msgid "Sensor "
 #~ msgstr "Sensor "
+
+#~ msgid "Sensor succesfuly registered."
+#~ msgstr "Sensor erfolgreich registriert"
+
+#~ msgid "Information and settings for the luftaten project"
+#~ msgstr "Informationen und Einstellungen zum Luftdaten-Projekt"
 
