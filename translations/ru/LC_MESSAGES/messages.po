@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  luftdaten.info\n"
 "Report-Msgid-Bugs-To: radiomgrs@gmail.com\n"
-"POT-Creation-Date: 2019-04-19 14:05+0000\n"
+"POT-Creation-Date: 2019-04-29 20:17+0000\n"
 "PO-Revision-Date: 2019-04-06 16:02+0300\n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -253,8 +253,8 @@ msgid "Settings saved successfully."
 msgstr "Настройки успешно сохранены."
 
 #: webapp/personal/views.py:149
-msgid "Sensor succesfully registered."
-msgstr ""
+msgid "Sensor successfully registered."
+msgstr "Сенсор успешно зарегистрирован."
 
 #: webapp/personal/views.py:153
 msgid "This sensor ID is already registered."
@@ -1327,9 +1327,5 @@ msgstr "Данные пользователя сохранены."
 #~ "нежелательную рассылку спама или иные "
 #~ "подобные рекламные материалы."
 
-#~ msgid "Sensor succesfuly registered."
-#~ msgstr "Сенсор успешно зарегистрирован."
-
 #~ msgid "Information and settings for the luftaten project"
 #~ msgstr "Информация и настройки для проекта luftdaten.info"
-

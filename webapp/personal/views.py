@@ -146,7 +146,7 @@ def sensor_register():
             db.session.add(node)
             db.session.commit()
 
-            flash(_('Sensor succesfully registered.'), 'success')
+            flash(_('Sensor successfully registered.'), 'success')
             return redirect(url_for('.sensor_list'))
         except exc.IntegrityError:
             db.session.rollback()

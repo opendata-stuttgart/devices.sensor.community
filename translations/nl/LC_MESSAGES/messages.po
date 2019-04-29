@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-04-19 14:05+0000\n"
+"POT-Creation-Date: 2019-04-29 20:17+0000\n"
 "PO-Revision-Date: 2019-04-05 15:53+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: nl\n"
@@ -239,7 +239,7 @@ msgid "Settings saved successfully."
 msgstr ""
 
 #: webapp/personal/views.py:149
-msgid "Sensor succesfully registered."
+msgid "Sensor successfully registered."
 msgstr ""
 
 #: webapp/personal/views.py:153
@@ -1164,5 +1164,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Information and settings for the luftaten project"
+#~ msgstr ""
+
+#~ msgid "Sensor succesfully registered."
 #~ msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-04-19 14:05+0000\n"
+"POT-Creation-Date: 2019-04-29 20:17+0000\n"
 "PO-Revision-Date: 2019-02-17 19:11+0100\n"
 "Last-Translator: Piotr Dobrowolski <admin@tastycode.pl>\n"
 "Language: pl_PL\n"
@@ -240,12 +240,12 @@ msgid "Settings saved successfully."
 msgstr "Ustawienia zapisane."
 
 #: webapp/personal/views.py:149
-msgid "Sensor succesfully registered."
-msgstr ""
+msgid "Sensor successfully registered."
+msgstr "Czunik został zarejestrowany."
 
 #: webapp/personal/views.py:153
 msgid "This sensor ID is already registered."
-msgstr ""
+msgstr "Czujnik o tym numerze (ID) jest już zarejesrowany."
 
 #: webapp/personal/views.py:167
 msgid "A fine dust sensor was transferred to you"
@@ -1277,10 +1277,3 @@ msgstr ""
 #~ " or e-mailing of spam and other "
 #~ "similar advertising materials."
 #~ msgstr ""
-
-#~ msgid "Sensor succesfuly registered."
-#~ msgstr "Czunik został zarejestrowany."
-
-#~ msgid "Information and settings for the luftaten project"
-#~ msgstr ""
-
