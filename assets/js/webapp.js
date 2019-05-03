@@ -1,6 +1,6 @@
 var luftdaten_storage = {
     default_center: [51.163375, 10.44768333333],
-    default_zoom: 7
+    default_zoom: 2
 };
 
 $( document ).ready(function() {
