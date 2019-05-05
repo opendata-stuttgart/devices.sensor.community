@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  luftdaten.info\n"
 "Report-Msgid-Bugs-To: radiomgrs@gmail.com\n"
-"POT-Creation-Date: 2019-05-05 18:03+0000\n"
+"POT-Creation-Date: 2019-05-05 21:15+0000\n"
 "PO-Revision-Date: 2019-04-06 16:02+0300\n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -18,255 +18,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
-
-#: webapp/personal/forms.py:39
-msgid "Indoor Sensor"
-msgstr "Внутренний сенсор"
-
-#: webapp/personal/forms.py:41
-msgid "Street"
-msgstr "Улица"
-
-#: webapp/personal/forms.py:41
-msgid "Please enter the street name."
-msgstr "Пожалуйста укажите название улицы."
-
-#: webapp/personal/forms.py:42
-msgid "Street number"
-msgstr "Номер дома"
-
-#: webapp/personal/forms.py:44
-msgid "Postal code"
-msgstr "Почтовый индекс"
-
-#: webapp/personal/forms.py:44
-msgid "Please enter the postal code."
-msgstr "Пожалуйста укажите почтовый индекс."
-
-#: webapp/personal/forms.py:46
-msgid "City"
-msgstr "Город"
-
-#: webapp/personal/forms.py:46
-msgid "Please enter the city name."
-msgstr "Пожалуйста укажите название города."
-
-#: webapp/personal/forms.py:49
-msgid "Country"
-msgstr "Страна"
-
-#: webapp/personal/forms.py:52 webapp/personal/forms.py:54
-msgid "Please enter the country name."
-msgstr "Пожалуйста укажите название страны."
-
-#: webapp/personal/forms.py:59
-msgid "Latitude"
-msgstr "Широта"
-
-#: webapp/personal/forms.py:60
-msgid "Please enter the latitude."
-msgstr "Пожалуйста укажите широту."
-
-#: webapp/personal/forms.py:61
-msgid "Longitude"
-msgstr "Долгота"
-
-#: webapp/personal/forms.py:62
-msgid "Please enter the longitude."
-msgstr "Пожалуйста укажите долготу."
-
-#: webapp/personal/forms.py:65
-msgid "How much industrial activity is there within a 100m radius?"
-msgstr "Сколько промышленной активности в радиусе 100 метров?"
-
-#: webapp/personal/forms.py:74 webapp/personal/forms.py:89
-#: webapp/personal/forms.py:104
-msgid "Please enter the number between 1 and 10"
-msgstr "Пожалуйста введите число от 1 до 10"
-
-#: webapp/personal/forms.py:77
-msgid ""
-"No office space, but potential fine dust producers 1 = very little, 10 = "
-"very much."
-msgstr ""
-"Потенциальных источников мелкодисперсной пыли 1 = очень мало, 10 = очень "
-"много."
-
-#: webapp/personal/forms.py:80
-msgid "How many private stoves or fireplaces are within a 100m radius?"
-msgstr "Сколько активно используемых дымовых труб в радиусе 100 метров?"
-
-#: webapp/personal/forms.py:92
-msgid ""
-"Does it smell very much like such smoke in your area? 1 = very little, 10"
-" = very much."
-msgstr ""
-"Это пахнет очень похоже на такой дым в вашем районе? 1 = очень мало, 10 ="
-" очень много."
-
-#: webapp/personal/forms.py:95
-msgid "How much traffic is there within a 100m radius?"
-msgstr "Сколько авто трафика в радиусе 100 метров?"
-
-#: webapp/personal/forms.py:107
-msgid ""
-"How close are those roads? 1 = very little further away, 10 = a lot of "
-"traffic right on your doorstep."
-msgstr ""
-"Насколько близко эти дороги? 1 - очень близко, 10 - загруженное движение "
-"прямо у вашего порога."
-
-#: webapp/personal/forms.py:118
-msgid "PIN"
-msgstr "PIN код"
-
-#: webapp/personal/forms.py:119
-msgid "For special use only"
-msgstr "Для спец. использования"
-
-#: webapp/personal/forms.py:122
-msgid "Sensor Type"
-msgstr "Тип сенсора"
-
-#: webapp/personal/forms.py:135
-msgid "Personal sensor name"
-msgstr "Название сенсора"
-
-#: webapp/personal/forms.py:138
-msgid "Please enter the sensor name."
-msgstr "Пожалуйста укажите название сенсора."
-
-#: webapp/personal/forms.py:141
-msgid "Only the sensor ID will be published."
-msgstr "Будет опубликован только ID сенсора."
-
-#: webapp/personal/forms.py:144
-msgid "Sensor level above ground (in cm)"
-msgstr "Высота сенсора от уровня земли (в см)"
-
-#: webapp/personal/forms.py:151
-msgid "NOT height above sea level!"
-msgstr "Не путайте с высотой над уровнем моря!"
-
-#: webapp/personal/forms.py:154
-msgid "Sensor location relative to the traffic"
-msgstr "Расположение сенсора по отношению к автодорогам"
-
-#: webapp/personal/forms.py:161
-msgid ""
-"1 = on the garden side, very well shielded from all streets, 10 = the "
-"sensor is on a house wall directly on the street. With this value it is "
-"irrelevant how big the street is, it is only about where the sensor is "
-"attached to the house."
-msgstr ""
-"1 = со стороны двора, очень хорошо экранирована от улицы, \n"
-"10 = датчик находится на стене дома выходящей на улицу. \n"
-"\n"
-"Не важно насколько оживленная улица, речь идет только о том, где "
-"установлен датчик."
-
-#: webapp/personal/forms.py:164
-msgid "Publish exact location"
-msgstr "Опубликовать точное местоположение"
-
-#: webapp/personal/forms.py:165
-msgid "Reveal exact sensor location in public data and archives."
-msgstr "Показывать точное местоположение сенсора в публичном доступе и архивах."
-
-#: webapp/personal/forms.py:168
-msgid "Inactive"
-msgstr "Неактивен"
-
-#: webapp/personal/forms.py:169
-msgid ""
-"Mark sensor as inactive. No notifications will be sent when sensor goes "
-"offline."
-msgstr ""
-"Отметить сенсор как неактивный, чтобы не посылать сообщения если сенсор "
-"отключится."
-
-#: webapp/personal/forms.py:174
-msgid "Short description of location"
-msgstr "Короткое описание местоположения"
-
-#: webapp/personal/forms.py:176
-msgid "Save settings"
-msgstr "Сохранить настройки"
-
-#: webapp/personal/forms.py:181
-msgid "Sensor ID"
-msgstr "ID сенсора"
-
-#: webapp/personal/forms.py:183
-msgid "Sensor ID may only contain digits and letters A to F"
-msgstr ""
-
-#: webapp/personal/forms.py:185
-msgid "The numeric part of the sensorname only"
-msgstr ""
-
-#: webapp/personal/forms.py:188
-msgid "Sensor Board"
-msgstr "Плата сенсора"
-
-#: webapp/personal/forms.py:191
-msgid ""
-"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
-"the Smogomierz sensor version need to change this accordingly. Also in "
-"these cases the Sensor ID is the numeric part of the name only."
-msgstr ""
-
-#: webapp/personal/forms.py:196
-msgid "Recipient's e-mail address"
-msgstr "Электронная почта получателя"
-
-#: webapp/personal/forms.py:199
-msgid "Please enter e-mail address"
-msgstr "Пожалуйста введите адрес эл. почты"
-
-#: webapp/personal/forms.py:202
-msgid "Please enter correct e-mail address"
-msgstr "Пожалуйста введите корректный адрес эл. почты"
-
-#: webapp/personal/forms.py:206
-msgid "Transfer sensor"
-msgstr "Передать сенсор"
-
-#: webapp/personal/forms.py:211
-msgid "You can't transfer the sensor to yourself"
-msgstr "Вы не можете передать сенсор себе"
-
-#: webapp/personal/views.py:33
-msgid "Fine dust 10 µm"
-msgstr "Мелкодисперсная пыль 10 µm"
-
-#: webapp/personal/views.py:34
-msgid "Fine dust 2.5 µm"
-msgstr "Мелкодисперсная пыль 2.5 µm"
-
-#: webapp/personal/views.py:35
-msgid "Humidity"
-msgstr "Влажность"
-
-#: webapp/personal/views.py:36
-msgid "Temperature"
-msgstr "Температура"
-
-#: webapp/personal/views.py:121
-msgid "Settings saved successfully."
-msgstr "Настройки успешно сохранены."
-
-#: webapp/personal/views.py:149
-msgid "Sensor successfully registered."
-msgstr "Сенсор успешно зарегистрирован."
-
-#: webapp/personal/views.py:153
-msgid "This sensor ID is already registered."
-msgstr ""
-
-#: webapp/personal/views.py:167
-msgid "A fine dust sensor was transferred to you"
-msgstr "Сенсор был перенесен в ваш список"
 
 #: webapp/templates/401.html:8
 msgid "Access prohibited"
@@ -481,8 +232,7 @@ msgstr ""
 msgid "View and change data, notification settings and passwords."
 msgstr ""
 
-#: webapp/templates/meine-luftdaten.html:22 webapp/users/forms.py:46
-#: webapp/users/forms.py:93
+#: webapp/templates/meine-luftdaten.html:22
 msgid "Password"
 msgstr "Пароль"
 
@@ -943,101 +693,6 @@ msgstr "Сбросить пароль"
 msgid "Resend confirmation instructions"
 msgstr "Заново послать инструкции с подтверждением"
 
-#: webapp/users/forms.py:22 webapp/users/forms.py:36 webapp/users/forms.py:58
-#: webapp/users/forms.py:79
-msgid "E-Mail addresse"
-msgstr "Адрес эл. почты"
-
-#: webapp/users/forms.py:25 webapp/users/forms.py:39 webapp/users/forms.py:61
-#: webapp/users/forms.py:82
-msgid "Please enter an e-mail address."
-msgstr "Пожалуйста введите адрес эл. почты."
-
-#: webapp/users/forms.py:28 webapp/users/forms.py:42 webapp/users/forms.py:64
-#: webapp/users/forms.py:85
-msgid "Please enter a correct e-mail address."
-msgstr "Пожалуйста введение корректный адрес эл. почты."
-
-#: webapp/users/forms.py:32
-msgid "next"
-msgstr "далее"
-
-#: webapp/users/forms.py:49 webapp/users/forms.py:96 webapp/users/forms.py:108
-#: webapp/users/forms.py:136
-msgid "Please enter a password."
-msgstr "Пожалуйста введите пароль."
-
-#: webapp/users/forms.py:53 webapp/users/forms.py:113
-msgid "Stay logged in."
-msgstr "Оставаться в системе."
-
-#: webapp/users/forms.py:54
-msgid "login"
-msgstr "войти"
-
-#: webapp/users/forms.py:68
-msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>"
-msgstr ""
-"Я даю согласие с <a href=\"/privacy-policy\">политикой "
-"конфиденциальности</a>"
-
-#: webapp/users/forms.py:71
-msgid "Please agree to the privacy policy."
-msgstr "Пожалуйста дайте согласие с политикой конфеденциальности."
-
-#: webapp/users/forms.py:75
-msgid "register"
-msgstr "зарегистрировать"
-
-#: webapp/users/forms.py:89
-msgid "Password request via email"
-msgstr "Запрос пароля через эл. почту"
-
-#: webapp/users/forms.py:101 webapp/users/forms.py:130
-#, python-format
-msgid "Password must consist of at least %s letters."
-msgstr "Пароль должен содержать следующие символы: %s ."
-
-#: webapp/users/forms.py:105
-msgid "Password (repeat)"
-msgstr "Пароль (повторно)"
-
-#: webapp/users/forms.py:110 webapp/users/forms.py:137
-msgid "Passwords must be identical."
-msgstr "Пароли должны совпадать."
-
-#: webapp/users/forms.py:114 webapp/users/forms.py:140
-msgid "Save Password"
-msgstr "Сохранить пароль"
-
-#: webapp/users/forms.py:118
-msgid "First name"
-msgstr "Имя"
-
-#: webapp/users/forms.py:119
-msgid "Last name"
-msgstr "Фамилия"
-
-#: webapp/users/forms.py:120
-msgid "Save user data."
-msgstr "Сохранить данные пользователя."
-
-#: webapp/users/forms.py:124
-msgid "Old Password"
-msgstr "Старый пароль"
-
-#: webapp/users/forms.py:125
-msgid "New password"
-msgstr "Новый пароль"
-
-#: webapp/users/forms.py:134
-msgid "New password (repeat)"
-msgstr "Новый пароль (повторно)"
-
-#: webapp/users/views.py:38
-msgid "User data saved."
-msgstr "Данные пользователя сохранены."
-
 #~ msgid "Overview"
 #~ msgstr "Обзор"
 
@@ -1333,4 +988,281 @@ msgstr "Данные пользователя сохранены."
 
 #~ msgid "Information and settings for the luftaten project"
 #~ msgstr "Информация и настройки для проекта luftdaten.info"
+
+#~ msgid "Indoor Sensor"
+#~ msgstr "Внутренний сенсор"
+
+#~ msgid "Street"
+#~ msgstr "Улица"
+
+#~ msgid "Please enter the street name."
+#~ msgstr "Пожалуйста укажите название улицы."
+
+#~ msgid "Street number"
+#~ msgstr "Номер дома"
+
+#~ msgid "Postal code"
+#~ msgstr "Почтовый индекс"
+
+#~ msgid "Please enter the postal code."
+#~ msgstr "Пожалуйста укажите почтовый индекс."
+
+#~ msgid "City"
+#~ msgstr "Город"
+
+#~ msgid "Please enter the city name."
+#~ msgstr "Пожалуйста укажите название города."
+
+#~ msgid "Country"
+#~ msgstr "Страна"
+
+#~ msgid "Please enter the country name."
+#~ msgstr "Пожалуйста укажите название страны."
+
+#~ msgid "Latitude"
+#~ msgstr "Широта"
+
+#~ msgid "Please enter the latitude."
+#~ msgstr "Пожалуйста укажите широту."
+
+#~ msgid "Longitude"
+#~ msgstr "Долгота"
+
+#~ msgid "Please enter the longitude."
+#~ msgstr "Пожалуйста укажите долготу."
+
+#~ msgid "How much industrial activity is there within a 100m radius?"
+#~ msgstr "Сколько промышленной активности в радиусе 100 метров?"
+
+#~ msgid "Please enter the number between 1 and 10"
+#~ msgstr "Пожалуйста введите число от 1 до 10"
+
+#~ msgid ""
+#~ "No office space, but potential fine "
+#~ "dust producers 1 = very little, 10"
+#~ " = very much."
+#~ msgstr ""
+#~ "Потенциальных источников мелкодисперсной пыли "
+#~ "1 = очень мало, 10 = очень "
+#~ "много."
+
+#~ msgid "How many private stoves or fireplaces are within a 100m radius?"
+#~ msgstr "Сколько активно используемых дымовых труб в радиусе 100 метров?"
+
+#~ msgid ""
+#~ "Does it smell very much like such"
+#~ " smoke in your area? 1 = very"
+#~ " little, 10 = very much."
+#~ msgstr ""
+#~ "Это пахнет очень похоже на такой "
+#~ "дым в вашем районе? 1 = очень "
+#~ "мало, 10 = очень много."
+
+#~ msgid "How much traffic is there within a 100m radius?"
+#~ msgstr "Сколько авто трафика в радиусе 100 метров?"
+
+#~ msgid ""
+#~ "How close are those roads? 1 = "
+#~ "very little further away, 10 = a"
+#~ " lot of traffic right on your "
+#~ "doorstep."
+#~ msgstr ""
+#~ "Насколько близко эти дороги? 1 - "
+#~ "очень близко, 10 - загруженное движение"
+#~ " прямо у вашего порога."
+
+#~ msgid "PIN"
+#~ msgstr "PIN код"
+
+#~ msgid "For special use only"
+#~ msgstr "Для спец. использования"
+
+#~ msgid "Sensor Type"
+#~ msgstr "Тип сенсора"
+
+#~ msgid "Personal sensor name"
+#~ msgstr "Название сенсора"
+
+#~ msgid "Please enter the sensor name."
+#~ msgstr "Пожалуйста укажите название сенсора."
+
+#~ msgid "Only the sensor ID will be published."
+#~ msgstr "Будет опубликован только ID сенсора."
+
+#~ msgid "Sensor level above ground (in cm)"
+#~ msgstr "Высота сенсора от уровня земли (в см)"
+
+#~ msgid "NOT height above sea level!"
+#~ msgstr "Не путайте с высотой над уровнем моря!"
+
+#~ msgid "Sensor location relative to the traffic"
+#~ msgstr "Расположение сенсора по отношению к автодорогам"
+
+#~ msgid ""
+#~ "1 = on the garden side, very "
+#~ "well shielded from all streets, 10 "
+#~ "= the sensor is on a house "
+#~ "wall directly on the street. With "
+#~ "this value it is irrelevant how "
+#~ "big the street is, it is only "
+#~ "about where the sensor is attached "
+#~ "to the house."
+#~ msgstr ""
+#~ "1 = со стороны двора, очень хорошо экранирована от улицы, \n"
+#~ "10 = датчик находится на стене дома выходящей на улицу. \n"
+#~ "\n"
+#~ "Не важно насколько оживленная улица, "
+#~ "речь идет только о том, где "
+#~ "установлен датчик."
+
+#~ msgid "Publish exact location"
+#~ msgstr "Опубликовать точное местоположение"
+
+#~ msgid "Reveal exact sensor location in public data and archives."
+#~ msgstr "Показывать точное местоположение сенсора в публичном доступе и архивах."
+
+#~ msgid "Inactive"
+#~ msgstr "Неактивен"
+
+#~ msgid ""
+#~ "Mark sensor as inactive. No "
+#~ "notifications will be sent when sensor"
+#~ " goes offline."
+#~ msgstr ""
+#~ "Отметить сенсор как неактивный, чтобы не"
+#~ " посылать сообщения если сенсор отключится."
+
+#~ msgid "Short description of location"
+#~ msgstr "Короткое описание местоположения"
+
+#~ msgid "Save settings"
+#~ msgstr "Сохранить настройки"
+
+#~ msgid "Sensor ID"
+#~ msgstr "ID сенсора"
+
+#~ msgid "Sensor ID may only contain digits and letters A to F"
+#~ msgstr ""
+
+#~ msgid "The numeric part of the sensorname only"
+#~ msgstr ""
+
+#~ msgid "Sensor Board"
+#~ msgstr "Плата сенсора"
+
+#~ msgid ""
+#~ "Normally this should be esp8266. Users"
+#~ " of ESP32 boards, Raspberry PI or "
+#~ "the Smogomierz sensor version need to"
+#~ " change this accordingly. Also in "
+#~ "these cases the Sensor ID is the"
+#~ " numeric part of the name only."
+#~ msgstr ""
+
+#~ msgid "Recipient's e-mail address"
+#~ msgstr "Электронная почта получателя"
+
+#~ msgid "Please enter e-mail address"
+#~ msgstr "Пожалуйста введите адрес эл. почты"
+
+#~ msgid "Please enter correct e-mail address"
+#~ msgstr "Пожалуйста введите корректный адрес эл. почты"
+
+#~ msgid "Transfer sensor"
+#~ msgstr "Передать сенсор"
+
+#~ msgid "You can't transfer the sensor to yourself"
+#~ msgstr "Вы не можете передать сенсор себе"
+
+#~ msgid "Fine dust 10 µm"
+#~ msgstr "Мелкодисперсная пыль 10 µm"
+
+#~ msgid "Fine dust 2.5 µm"
+#~ msgstr "Мелкодисперсная пыль 2.5 µm"
+
+#~ msgid "Humidity"
+#~ msgstr "Влажность"
+
+#~ msgid "Temperature"
+#~ msgstr "Температура"
+
+#~ msgid "Settings saved successfully."
+#~ msgstr "Настройки успешно сохранены."
+
+#~ msgid "Sensor successfully registered."
+#~ msgstr "Сенсор успешно зарегистрирован."
+
+#~ msgid "This sensor ID is already registered."
+#~ msgstr ""
+
+#~ msgid "A fine dust sensor was transferred to you"
+#~ msgstr "Сенсор был перенесен в ваш список"
+
+#~ msgid "E-Mail addresse"
+#~ msgstr "Адрес эл. почты"
+
+#~ msgid "Please enter an e-mail address."
+#~ msgstr "Пожалуйста введите адрес эл. почты."
+
+#~ msgid "Please enter a correct e-mail address."
+#~ msgstr "Пожалуйста введение корректный адрес эл. почты."
+
+#~ msgid "next"
+#~ msgstr "далее"
+
+#~ msgid "Please enter a password."
+#~ msgstr "Пожалуйста введите пароль."
+
+#~ msgid "Stay logged in."
+#~ msgstr "Оставаться в системе."
+
+#~ msgid "login"
+#~ msgstr "войти"
+
+#~ msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>"
+#~ msgstr ""
+#~ "Я даю согласие с <a href=\"/privacy-"
+#~ "policy\">политикой конфиденциальности</a>"
+
+#~ msgid "Please agree to the privacy policy."
+#~ msgstr "Пожалуйста дайте согласие с политикой конфеденциальности."
+
+#~ msgid "register"
+#~ msgstr "зарегистрировать"
+
+#~ msgid "Password request via email"
+#~ msgstr "Запрос пароля через эл. почту"
+
+#~ msgid "Password must consist of at least %s letters."
+#~ msgstr "Пароль должен содержать следующие символы: %s ."
+
+#~ msgid "Password (repeat)"
+#~ msgstr "Пароль (повторно)"
+
+#~ msgid "Passwords must be identical."
+#~ msgstr "Пароли должны совпадать."
+
+#~ msgid "Save Password"
+#~ msgstr "Сохранить пароль"
+
+#~ msgid "First name"
+#~ msgstr "Имя"
+
+#~ msgid "Last name"
+#~ msgstr "Фамилия"
+
+#~ msgid "Save user data."
+#~ msgstr "Сохранить данные пользователя."
+
+#~ msgid "Old Password"
+#~ msgstr "Старый пароль"
+
+#~ msgid "New password"
+#~ msgstr "Новый пароль"
+
+#~ msgid "New password (repeat)"
+#~ msgstr "Новый пароль (повторно)"
+
+#~ msgid "User data saved."
+#~ msgstr "Данные пользователя сохранены."
 

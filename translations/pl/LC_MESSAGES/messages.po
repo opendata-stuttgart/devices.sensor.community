@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-05-05 18:03+0000\n"
+"POT-Creation-Date: 2019-05-05 21:15+0000\n"
 "PO-Revision-Date: 2019-05-05 14:10+0200\n"
 "Last-Translator: Piotr Dobrowolski <admin@tastycode.pl>\n"
 "Language: pl_PL\n"
@@ -18,253 +18,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
-
-#: webapp/personal/forms.py:39
-msgid "Indoor Sensor"
-msgstr "Sensor domowy"
-
-#: webapp/personal/forms.py:41
-msgid "Street"
-msgstr "Ulica"
-
-#: webapp/personal/forms.py:41
-msgid "Please enter the street name."
-msgstr "Podaj nazwę ulicy."
-
-#: webapp/personal/forms.py:42
-msgid "Street number"
-msgstr "Numer domu"
-
-#: webapp/personal/forms.py:44
-msgid "Postal code"
-msgstr "Kod pocztowy"
-
-#: webapp/personal/forms.py:44
-msgid "Please enter the postal code."
-msgstr "Podaj kod pocztowy."
-
-#: webapp/personal/forms.py:46
-msgid "City"
-msgstr "Miasto"
-
-#: webapp/personal/forms.py:46
-msgid "Please enter the city name."
-msgstr "Podaj nazwę miasta."
-
-#: webapp/personal/forms.py:49
-msgid "Country"
-msgstr "Państwo"
-
-#: webapp/personal/forms.py:52 webapp/personal/forms.py:54
-msgid "Please enter the country name."
-msgstr "Podaj nazwę państwa."
-
-#: webapp/personal/forms.py:59
-msgid "Latitude"
-msgstr "Szerokość geograficzna"
-
-#: webapp/personal/forms.py:60
-msgid "Please enter the latitude."
-msgstr "Podaj szerokość geograficzną."
-
-#: webapp/personal/forms.py:61
-msgid "Longitude"
-msgstr "Długość geograficzna"
-
-#: webapp/personal/forms.py:62
-msgid "Please enter the longitude."
-msgstr "Podaj długość geograficzną."
-
-#: webapp/personal/forms.py:65
-msgid "How much industrial activity is there within a 100m radius?"
-msgstr "Jaki jest poziom aktywności przemysłowej w okręgu 100 metrów?"
-
-#: webapp/personal/forms.py:74 webapp/personal/forms.py:89
-#: webapp/personal/forms.py:104
-msgid "Please enter the number between 1 and 10"
-msgstr "Podaj liczbę pomiędzy 1 a 10"
-
-#: webapp/personal/forms.py:77
-msgid ""
-"No office space, but potential fine dust producers 1 = very little, 10 = "
-"very much."
-msgstr ""
-
-#: webapp/personal/forms.py:80
-msgid "How many private stoves or fireplaces are within a 100m radius?"
-msgstr "Jaka jest ilość pieców grzewczych i kominków w okręgu 100 metrów?"
-
-#: webapp/personal/forms.py:92
-msgid ""
-"Does it smell very much like such smoke in your area? 1 = very little, 10"
-" = very much."
-msgstr ""
-
-#: webapp/personal/forms.py:95
-msgid "How much traffic is there within a 100m radius?"
-msgstr "Jak dużo ruchu miejskiego jest w okręgu 100m?"
-
-#: webapp/personal/forms.py:107
-msgid ""
-"How close are those roads? 1 = very little further away, 10 = a lot of "
-"traffic right on your doorstep."
-msgstr ""
-
-#: webapp/personal/forms.py:118
-msgid "PIN"
-msgstr "PIN"
-
-#: webapp/personal/forms.py:119
-msgid "For special use only"
-msgstr "Tylko do specjalnych zastosowań"
-
-#: webapp/personal/forms.py:122
-msgid "Sensor Type"
-msgstr "Typ sensora"
-
-#: webapp/personal/forms.py:135
-msgid "Personal sensor name"
-msgstr "Własna nazwa czujnika"
-
-#: webapp/personal/forms.py:138
-msgid "Please enter the sensor name."
-msgstr "Podaj nazwę czujnika."
-
-#: webapp/personal/forms.py:141
-msgid "Only the sensor ID will be published."
-msgstr "Tylko ID sensora zostanie upublicznione."
-
-#: webapp/personal/forms.py:144
-msgid "Sensor level above ground (in cm)"
-msgstr "Wysokość czujnika ponad ziemią (w centrymetrach)"
-
-#: webapp/personal/forms.py:151
-msgid "NOT height above sea level!"
-msgstr "NIE wysokość nad poziomem morza!"
-
-#: webapp/personal/forms.py:154
-msgid "Sensor location relative to the traffic"
-msgstr "Lokalizacja czujnika względem ruchu miejskiego"
-
-#: webapp/personal/forms.py:161
-msgid ""
-"1 = on the garden side, very well shielded from all streets, 10 = the "
-"sensor is on a house wall directly on the street. With this value it is "
-"irrelevant how big the street is, it is only about where the sensor is "
-"attached to the house."
-msgstr ""
-"1 = przy ogrodzie, bardzo dobrze odgrodzone od wszelkiego ruchu "
-"miejskiego, 10 = sensor umieszczony jest na budynku bezpośrednio nad "
-"ulicą. W przypadku tej wartości nie ma znaczenia ilość ruchu, zależy nam "
-"tylko na informacji gdzie umieszczony jest sensor."
-
-#: webapp/personal/forms.py:164
-msgid "Publish exact location"
-msgstr "Opublikuj dokładną pozycję"
-
-#: webapp/personal/forms.py:165
-msgid "Reveal exact sensor location in public data and archives."
-msgstr ""
-"Opublikuj lokalizację czujnika w danych udostępnianych publicznie oraz "
-"archiwach."
-
-#: webapp/personal/forms.py:168
-msgid "Inactive"
-msgstr "Nieaktywny"
-
-#: webapp/personal/forms.py:169
-msgid ""
-"Mark sensor as inactive. No notifications will be sent when sensor goes "
-"offline."
-msgstr ""
-"Oznacz sensor jako nieaktywny. Powiadomienia o problemach z połączeniem "
-"sensora nie będą wysyłane."
-
-#: webapp/personal/forms.py:174
-msgid "Short description of location"
-msgstr "Krótki opis lokalizacji"
-
-#: webapp/personal/forms.py:176
-msgid "Save settings"
-msgstr "Zapisz ustawienia"
-
-#: webapp/personal/forms.py:181
-msgid "Sensor ID"
-msgstr "ID Sensora"
-
-#: webapp/personal/forms.py:183
-msgid "Sensor ID may only contain digits and letters A to F"
-msgstr ""
-
-#: webapp/personal/forms.py:185
-msgid "The numeric part of the sensorname only"
-msgstr "Numeryczna część identyfikatora sensora"
-
-#: webapp/personal/forms.py:188
-msgid "Sensor Board"
-msgstr "Płytka sensora"
-
-#: webapp/personal/forms.py:191
-msgid ""
-"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
-"the Smogomierz sensor version need to change this accordingly. Also in "
-"these cases the Sensor ID is the numeric part of the name only."
-msgstr ""
-"Najczęściej będzie to esp8266. Użytkownicy ESP32, Raspberry Pi lub "
-"Smogomierza muszą wybrać odpowiednią wartość w tym polu. Również w tym "
-"przypadku ID sensora powinno być tylko częścią numeryczną."
-
-#: webapp/personal/forms.py:196
-msgid "Recipient's e-mail address"
-msgstr "Adres e-mail odbiorcy"
-
-#: webapp/personal/forms.py:199
-msgid "Please enter e-mail address"
-msgstr "Podaj adres e-mail"
-
-#: webapp/personal/forms.py:202
-msgid "Please enter correct e-mail address"
-msgstr "Podaj poprawny adres e-mail"
-
-#: webapp/personal/forms.py:206
-msgid "Transfer sensor"
-msgstr "Przekaż czujnik"
-
-#: webapp/personal/forms.py:211
-msgid "You can't transfer the sensor to yourself"
-msgstr "Nie możesz przekazać czujnika do samego siebie"
-
-#: webapp/personal/views.py:33
-msgid "Fine dust 10 µm"
-msgstr "Cząstki zawieszone 10µm"
-
-#: webapp/personal/views.py:34
-msgid "Fine dust 2.5 µm"
-msgstr "Cząstki zawieszone 2.5µm"
-
-#: webapp/personal/views.py:35
-msgid "Humidity"
-msgstr "Wilgotność"
-
-#: webapp/personal/views.py:36
-msgid "Temperature"
-msgstr "Temperatura"
-
-#: webapp/personal/views.py:121
-msgid "Settings saved successfully."
-msgstr "Ustawienia zapisane."
-
-#: webapp/personal/views.py:149
-msgid "Sensor successfully registered."
-msgstr "Czunik został zarejestrowany."
-
-#: webapp/personal/views.py:153
-msgid "This sensor ID is already registered."
-msgstr "Czujnik o tym numerze (ID) jest już zarejestrowany."
-
-#: webapp/personal/views.py:167
-msgid "A fine dust sensor was transferred to you"
-msgstr "Czujnik pyłu zawieszonego został przekazany Tobie"
 
 #: webapp/templates/401.html:8
 msgid "Access prohibited"
@@ -479,8 +232,7 @@ msgstr ""
 msgid "View and change data, notification settings and passwords."
 msgstr ""
 
-#: webapp/templates/meine-luftdaten.html:22 webapp/users/forms.py:46
-#: webapp/users/forms.py:93
+#: webapp/templates/meine-luftdaten.html:22
 msgid "Password"
 msgstr "Hasło"
 
@@ -901,96 +653,279 @@ msgstr "Resetowanie hasła"
 msgid "Resend confirmation instructions"
 msgstr "Wyślij instrukcje logowania ponownie"
 
-#: webapp/users/forms.py:22 webapp/users/forms.py:36 webapp/users/forms.py:58
-#: webapp/users/forms.py:79
-msgid "E-Mail addresse"
-msgstr ""
+#~ msgid "Indoor Sensor"
+#~ msgstr "Sensor domowy"
 
-#: webapp/users/forms.py:25 webapp/users/forms.py:39 webapp/users/forms.py:61
-#: webapp/users/forms.py:82
-msgid "Please enter an e-mail address."
-msgstr "Podaj poprawny adres e-mail"
+#~ msgid "Street"
+#~ msgstr "Ulica"
 
-#: webapp/users/forms.py:28 webapp/users/forms.py:42 webapp/users/forms.py:64
-#: webapp/users/forms.py:85
-msgid "Please enter a correct e-mail address."
-msgstr "Podaj poprawny adres e-mail"
+#~ msgid "Please enter the street name."
+#~ msgstr "Podaj nazwę ulicy."
 
-#: webapp/users/forms.py:32
-msgid "next"
-msgstr ""
+#~ msgid "Street number"
+#~ msgstr "Numer domu"
 
-#: webapp/users/forms.py:49 webapp/users/forms.py:96 webapp/users/forms.py:108
-#: webapp/users/forms.py:136
-msgid "Please enter a password."
-msgstr ""
+#~ msgid "Postal code"
+#~ msgstr "Kod pocztowy"
 
-#: webapp/users/forms.py:53 webapp/users/forms.py:113
-msgid "Stay logged in."
-msgstr ""
+#~ msgid "Please enter the postal code."
+#~ msgstr "Podaj kod pocztowy."
 
-#: webapp/users/forms.py:54
-msgid "login"
-msgstr "logowanie"
+#~ msgid "City"
+#~ msgstr "Miasto"
 
-#: webapp/users/forms.py:68
-msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>"
-msgstr ""
+#~ msgid "Please enter the city name."
+#~ msgstr "Podaj nazwę miasta."
 
-#: webapp/users/forms.py:71
-msgid "Please agree to the privacy policy."
-msgstr ""
+#~ msgid "Country"
+#~ msgstr "Państwo"
 
-#: webapp/users/forms.py:75
-msgid "register"
-msgstr "rejestracja"
+#~ msgid "Please enter the country name."
+#~ msgstr "Podaj nazwę państwa."
 
-#: webapp/users/forms.py:89
-msgid "Password request via email"
-msgstr ""
+#~ msgid "Latitude"
+#~ msgstr "Szerokość geograficzna"
 
-#: webapp/users/forms.py:101 webapp/users/forms.py:130
-#, python-format
-msgid "Password must consist of at least %s letters."
-msgstr ""
+#~ msgid "Please enter the latitude."
+#~ msgstr "Podaj szerokość geograficzną."
 
-#: webapp/users/forms.py:105
-msgid "Password (repeat)"
-msgstr ""
+#~ msgid "Longitude"
+#~ msgstr "Długość geograficzna"
 
-#: webapp/users/forms.py:110 webapp/users/forms.py:137
-msgid "Passwords must be identical."
-msgstr ""
+#~ msgid "Please enter the longitude."
+#~ msgstr "Podaj długość geograficzną."
 
-#: webapp/users/forms.py:114 webapp/users/forms.py:140
-msgid "Save Password"
-msgstr ""
+#~ msgid "How much industrial activity is there within a 100m radius?"
+#~ msgstr "Jaki jest poziom aktywności przemysłowej w okręgu 100 metrów?"
 
-#: webapp/users/forms.py:118
-msgid "First name"
-msgstr "Imię"
+#~ msgid "Please enter the number between 1 and 10"
+#~ msgstr "Podaj liczbę pomiędzy 1 a 10"
 
-#: webapp/users/forms.py:119
-msgid "Last name"
-msgstr "Nazwisko"
+#~ msgid ""
+#~ "No office space, but potential fine "
+#~ "dust producers 1 = very little, 10"
+#~ " = very much."
+#~ msgstr ""
 
-#: webapp/users/forms.py:120
-msgid "Save user data."
-msgstr "Zapisz dane użytkownika."
+#~ msgid "How many private stoves or fireplaces are within a 100m radius?"
+#~ msgstr "Jaka jest ilość pieców grzewczych i kominków w okręgu 100 metrów?"
 
-#: webapp/users/forms.py:124
-msgid "Old Password"
-msgstr "Stare hasło"
+#~ msgid ""
+#~ "Does it smell very much like such"
+#~ " smoke in your area? 1 = very"
+#~ " little, 10 = very much."
+#~ msgstr ""
 
-#: webapp/users/forms.py:125
-msgid "New password"
-msgstr "Nowe hasło"
+#~ msgid "How much traffic is there within a 100m radius?"
+#~ msgstr "Jak dużo ruchu miejskiego jest w okręgu 100m?"
 
-#: webapp/users/forms.py:134
-msgid "New password (repeat)"
-msgstr "Nowe hasło (powtórzone)"
+#~ msgid ""
+#~ "How close are those roads? 1 = "
+#~ "very little further away, 10 = a"
+#~ " lot of traffic right on your "
+#~ "doorstep."
+#~ msgstr ""
 
-#: webapp/users/views.py:38
-msgid "User data saved."
-msgstr "Dane użytkownika zapisane."
+#~ msgid "PIN"
+#~ msgstr "PIN"
+
+#~ msgid "For special use only"
+#~ msgstr "Tylko do specjalnych zastosowań"
+
+#~ msgid "Sensor Type"
+#~ msgstr "Typ sensora"
+
+#~ msgid "Personal sensor name"
+#~ msgstr "Własna nazwa czujnika"
+
+#~ msgid "Please enter the sensor name."
+#~ msgstr "Podaj nazwę czujnika."
+
+#~ msgid "Only the sensor ID will be published."
+#~ msgstr "Tylko ID sensora zostanie upublicznione."
+
+#~ msgid "Sensor level above ground (in cm)"
+#~ msgstr "Wysokość czujnika ponad ziemią (w centrymetrach)"
+
+#~ msgid "NOT height above sea level!"
+#~ msgstr "NIE wysokość nad poziomem morza!"
+
+#~ msgid "Sensor location relative to the traffic"
+#~ msgstr "Lokalizacja czujnika względem ruchu miejskiego"
+
+#~ msgid ""
+#~ "1 = on the garden side, very "
+#~ "well shielded from all streets, 10 "
+#~ "= the sensor is on a house "
+#~ "wall directly on the street. With "
+#~ "this value it is irrelevant how "
+#~ "big the street is, it is only "
+#~ "about where the sensor is attached "
+#~ "to the house."
+#~ msgstr ""
+#~ "1 = przy ogrodzie, bardzo dobrze "
+#~ "odgrodzone od wszelkiego ruchu miejskiego, "
+#~ "10 = sensor umieszczony jest na "
+#~ "budynku bezpośrednio nad ulicą. W "
+#~ "przypadku tej wartości nie ma znaczenia"
+#~ " ilość ruchu, zależy nam tylko na "
+#~ "informacji gdzie umieszczony jest sensor."
+
+#~ msgid "Publish exact location"
+#~ msgstr "Opublikuj dokładną pozycję"
+
+#~ msgid "Reveal exact sensor location in public data and archives."
+#~ msgstr ""
+#~ "Opublikuj lokalizację czujnika w danych "
+#~ "udostępnianych publicznie oraz archiwach."
+
+#~ msgid "Inactive"
+#~ msgstr "Nieaktywny"
+
+#~ msgid ""
+#~ "Mark sensor as inactive. No "
+#~ "notifications will be sent when sensor"
+#~ " goes offline."
+#~ msgstr ""
+#~ "Oznacz sensor jako nieaktywny. Powiadomienia"
+#~ " o problemach z połączeniem sensora "
+#~ "nie będą wysyłane."
+
+#~ msgid "Short description of location"
+#~ msgstr "Krótki opis lokalizacji"
+
+#~ msgid "Save settings"
+#~ msgstr "Zapisz ustawienia"
+
+#~ msgid "Sensor ID"
+#~ msgstr "ID Sensora"
+
+#~ msgid "Sensor ID may only contain digits and letters A to F"
+#~ msgstr ""
+
+#~ msgid "The numeric part of the sensorname only"
+#~ msgstr "Numeryczna część identyfikatora sensora"
+
+#~ msgid "Sensor Board"
+#~ msgstr "Płytka sensora"
+
+#~ msgid ""
+#~ "Normally this should be esp8266. Users"
+#~ " of ESP32 boards, Raspberry PI or "
+#~ "the Smogomierz sensor version need to"
+#~ " change this accordingly. Also in "
+#~ "these cases the Sensor ID is the"
+#~ " numeric part of the name only."
+#~ msgstr ""
+#~ "Najczęściej będzie to esp8266. Użytkownicy "
+#~ "ESP32, Raspberry Pi lub Smogomierza "
+#~ "muszą wybrać odpowiednią wartość w tym"
+#~ " polu. Również w tym przypadku ID "
+#~ "sensora powinno być tylko częścią "
+#~ "numeryczną."
+
+#~ msgid "Recipient's e-mail address"
+#~ msgstr "Adres e-mail odbiorcy"
+
+#~ msgid "Please enter e-mail address"
+#~ msgstr "Podaj adres e-mail"
+
+#~ msgid "Please enter correct e-mail address"
+#~ msgstr "Podaj poprawny adres e-mail"
+
+#~ msgid "Transfer sensor"
+#~ msgstr "Przekaż czujnik"
+
+#~ msgid "You can't transfer the sensor to yourself"
+#~ msgstr "Nie możesz przekazać czujnika do samego siebie"
+
+#~ msgid "Fine dust 10 µm"
+#~ msgstr "Cząstki zawieszone 10µm"
+
+#~ msgid "Fine dust 2.5 µm"
+#~ msgstr "Cząstki zawieszone 2.5µm"
+
+#~ msgid "Humidity"
+#~ msgstr "Wilgotność"
+
+#~ msgid "Temperature"
+#~ msgstr "Temperatura"
+
+#~ msgid "Settings saved successfully."
+#~ msgstr "Ustawienia zapisane."
+
+#~ msgid "Sensor successfully registered."
+#~ msgstr "Czunik został zarejestrowany."
+
+#~ msgid "This sensor ID is already registered."
+#~ msgstr "Czujnik o tym numerze (ID) jest już zarejestrowany."
+
+#~ msgid "A fine dust sensor was transferred to you"
+#~ msgstr "Czujnik pyłu zawieszonego został przekazany Tobie"
+
+#~ msgid "E-Mail addresse"
+#~ msgstr ""
+
+#~ msgid "Please enter an e-mail address."
+#~ msgstr "Podaj poprawny adres e-mail"
+
+#~ msgid "Please enter a correct e-mail address."
+#~ msgstr "Podaj poprawny adres e-mail"
+
+#~ msgid "next"
+#~ msgstr ""
+
+#~ msgid "Please enter a password."
+#~ msgstr ""
+
+#~ msgid "Stay logged in."
+#~ msgstr ""
+
+#~ msgid "login"
+#~ msgstr "logowanie"
+
+#~ msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>"
+#~ msgstr ""
+
+#~ msgid "Please agree to the privacy policy."
+#~ msgstr ""
+
+#~ msgid "register"
+#~ msgstr "rejestracja"
+
+#~ msgid "Password request via email"
+#~ msgstr ""
+
+#~ msgid "Password must consist of at least %s letters."
+#~ msgstr ""
+
+#~ msgid "Password (repeat)"
+#~ msgstr ""
+
+#~ msgid "Passwords must be identical."
+#~ msgstr ""
+
+#~ msgid "Save Password"
+#~ msgstr ""
+
+#~ msgid "First name"
+#~ msgstr "Imię"
+
+#~ msgid "Last name"
+#~ msgstr "Nazwisko"
+
+#~ msgid "Save user data."
+#~ msgstr "Zapisz dane użytkownika."
+
+#~ msgid "Old Password"
+#~ msgstr "Stare hasło"
+
+#~ msgid "New password"
+#~ msgstr "Nowe hasło"
+
+#~ msgid "New password (repeat)"
+#~ msgstr "Nowe hasło (powtórzone)"
+
+#~ msgid "User data saved."
+#~ msgstr "Dane użytkownika zapisane."
 
