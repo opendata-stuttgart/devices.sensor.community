@@ -257,7 +257,7 @@ msgstr "Czunik został zarejestrowany."
 
 #: webapp/personal/views.py:153
 msgid "This sensor ID is already registered."
-msgstr "Czujnik o tym numerze (ID) jest już zarejesrowany."
+msgstr "Czujnik o tym numerze (ID) jest już zarejestrowany."
 
 #: webapp/personal/views.py:167
 msgid "A fine dust sensor was transferred to you"
