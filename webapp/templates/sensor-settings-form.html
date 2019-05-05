@@ -56,13 +56,13 @@ function orderSelect($element) {
         new_selected_item;
 
     for(i = n_options; i --;) {
-        temp[i] = options[i].text + "," + options[i].value ; 
+        temp[i] = options[i].text + " || " + options[i].value ; 
     }
 
     temp.sort();
 
     for(i = n_options; i --;) {
-        parts = temp[i].split(',');
+        parts = temp[i].split(' || ');
 
         options[i].text  = parts[0];
         options[i].value = parts[1]; 
