@@ -14,7 +14,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 from flask import (Flask, Blueprint, render_template, current_app, flash, url_for, redirect, session)
 from flask_login import current_user, login_required
 from flask_mail import Message
-from flask_babel import lazy_gettext as _
+from flask_babelex import lazy_gettext as _
 import requests
 import dateutil.parser
 from datetime import datetime, timedelta

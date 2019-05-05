@@ -12,7 +12,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 """
 
 from flask_wtf import FlaskForm
-from flask_babel import lazy_gettext as _
+from flask_babelex import lazy_gettext as _
 from wtforms import (BooleanField, TextField, HiddenField, PasswordField, DateTimeField, validators, IntegerField,
                      SubmitField)
 from . import constants
@@ -22,10 +22,10 @@ class EmailForm(FlaskForm):
     email = TextField(_('E-Mail addresse'),
         [
             validators.DataRequired(
-                message=_('Please enter an e-mail address.') 
+                message=_('Please enter an e-mail address.')
             ),
             validators.Email(
-                message=_('Please enter a correct e-mail address.')  
+                message=_('Please enter a correct e-mail address.')
             )
         ]
     )
@@ -39,14 +39,14 @@ class LoginForm(FlaskForm):
                 message=_('Please enter an e-mail address.')
             ),
             validators.Email(
-                message=_('Please enter a correct e-mail address.') 
+                message=_('Please enter a correct e-mail address.')
             )
         ]
     )
     password = PasswordField(_('Password'),
         [
             validators.DataRequired(
-                message=_('Please enter a password.') 
+                message=_('Please enter a password.')
             )
         ]
     )
@@ -61,14 +61,14 @@ class MinimalRegisterForm(FlaskForm):
                 message=_('Please enter an e-mail address.')
             ),
             validators.Email(
-                message=_('Please enter a correct e-mail address.') 
+                message=_('Please enter a correct e-mail address.')
             )
         ]
     )
     privacy = BooleanField(_('I agree to the <a href="/privacy-policy">Privacy policy</a>'),
         [
             validators.DataRequired(
-                message=_('Please agree to the privacy policy.') 
+                message=_('Please agree to the privacy policy.')
             )
         ]
     )
@@ -82,7 +82,7 @@ class RecoverForm(FlaskForm):
                 message=_('Please enter an e-mail address.')
             ),
             validators.Email(
-                message=_('Please enter a correct e-mail address.') 
+                message=_('Please enter a correct e-mail address.')
             )
         ]
     )
@@ -98,14 +98,14 @@ class RecoverSetForm(FlaskForm):
             validators.Length(
                 min=constants.MIN_PASSWORD_LEN,
                 max=constants.MAX_PASSWORD_LEN,
-                message=_('Password must consist of at least %s letters.') % (constants.MIN_PASSWORD_LEN)
+                message=_('Password must consist of at least %s letters.', constants.MIN_PASSWORD_LEN)
             )
         ]
     )
     password_repeat = PasswordField(_('Password (repeat)'),
         [
             validators.DataRequired(
-                message=_('Please enter a password.') 
+                message=_('Please enter a password.')
             ),
             validators.EqualTo('password', message=_('Passwords must be identical.'))
         ]
@@ -127,7 +127,7 @@ class UserPasswordForm(FlaskForm):
             validators.Length(
                 min=constants.MIN_PASSWORD_LEN,
                 max=constants.MAX_PASSWORD_LEN,
-                message=_('Password must consist of at least %s letters.') % (constants.MIN_PASSWORD_LEN)
+                message=_('Password must consist of at least %s letters.', constants.MIN_PASSWORD_LEN)
             )
         ]
     )
