@@ -63,7 +63,9 @@ update langauge
 create translated language
 
     venv/bin/pybabel init -i ./babel/messages.pot -d ./translations -l country_code
+    venv/bin/pybabel init -i ./babel/flask_security.pot -D flask_security -d ./translations -l country_code
 
 compile into binary
 
     venv/bin/pybabel compile -d ./translations/
+    venv/bin/pybabel compile -d ./translations/ -D flask_security
