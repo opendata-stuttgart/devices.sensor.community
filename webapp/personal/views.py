@@ -34,6 +34,8 @@ VALUE_TYPES = {
     'P2': ('µg/m³', _('Fine dust 2.5 µm')),
     'humidity': ('% RH', _('Humidity')),
     'temperature': ('°C', _('Temperature')),
+    'pressure': ('Pa', _('Pressure')),
+    'pressure_at_sealevel': ('Pa', _('Pressure at sea level')),
 }
 
 

@@ -27,7 +27,7 @@
                                 </tr>
                                 {% for sensor_value in sensor['data']['sensordatavalues'] %}
                                     <tr>
-                                        <th>{{ sensor_value['value_type_name'] }}:</th>
+                                        <th>{{ _(sensor_value['value_type_name']) }}:</th>
                                         <td>{{ sensor_value['value'] }} {{ sensor_value['value_type_unit'] }}</td>
                                     </tr>
                                 {% endfor %}

@@ -83,3 +83,19 @@ ul.footer-list li:first-child::before {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+.betterplace {
+  display: block;
+  float: right;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 0px 0px 15px 15px;
+}
+.betterplace a {
+  color: black;
+}
+.betterplace span {
+  color: rgb(56, 181, 173);
+}
