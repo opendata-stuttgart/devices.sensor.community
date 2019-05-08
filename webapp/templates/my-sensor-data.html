@@ -28,7 +28,11 @@
                                 {% for sensor_value in sensor['data']['sensordatavalues'] %}
                                     <tr>
                                         <th>{{ _(sensor_value['value_type_name']) }}:</th>
+                                    {% if sensor_value['value_type_name'] == 'Pressure' or sensor_value['value_type_name'] == 'Pressure at sea level'%}
+                                        <td>{{ '%0.2f'| format(sensor_value['value']|float / 100) }} {{ sensor_value['value_type_unit'] }}</td>
+                                    {% else %}
                                         <td>{{ sensor_value['value'] }} {{ sensor_value['value_type_unit'] }}</td>
+                                    {% endif %}
                                     </tr>
                                 {% endfor %}
                             {% else %}

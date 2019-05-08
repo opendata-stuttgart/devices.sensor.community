@@ -87,7 +87,10 @@ SENSOR_TYPES = {
     25: "1",  # HPM
     26: "7",  # SHT30
     27: "7",  # SHT31
-    28: "7"  # SHT35
+    28: "7",  # SHT35
+    29: "15", # Lärm
+    30: "17", # NO2-A43F
+    31: "19", # Radiation_EC
 }
 
 # IDs of default SensorTypes assigned to node
