@@ -13,9 +13,15 @@
         <meta property="og:url" content="https://luftdaten.info/"/>
         <meta property="og:description" content="{{ _('Information and settings for the luftdaten project') }} ."/>
 
-        <link rel="manifest" href="/static/images/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/static/images/favicon/ms-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/static/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#38b5ad">
+        <meta name="msapplication-TileColor" content="#38b5ad">
+        <meta name="msapplication-TileImage" content="/static/favicons/mstile-144x144.png">
+        <meta name="theme-color" content="#38b5ad">
+
     {% endblock %}
 
     {% block styles %}
@@ -28,7 +34,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="container">
             <a class="navbar-brand" href="/">
-            <img src="https://luftdaten.info/wp-content/uploads/2018/02/luftdaten-feinstaub-selber-messen-logo.png" alt="" class="d-inline-block align-top" height=30>
+            <img src="/static/images/logo-v1-white.svg" alt="" class="d-inline-block align-top" height="30">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
