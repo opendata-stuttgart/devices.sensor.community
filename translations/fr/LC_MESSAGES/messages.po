@@ -48,7 +48,7 @@ msgstr "Ville"
 
 #: webapp/personal/forms.py:46
 msgid "Please enter the city name."
-msgstr "Veuillez saisir la ville."
+msgstr "Veuillez saisir la ville"
 
 #: webapp/personal/forms.py:49
 msgid "Country"
@@ -76,7 +76,7 @@ msgstr "Veuillez saisir la longitude."
 
 #: webapp/personal/forms.py:65
 msgid "How much industrial activity is there within a 100m radius?"
-msgstr "Décrivez l'activité industriel dans un rayon de 100 mètres."
+msgstr "Décrivez l'activité industrielle dans un rayon de 100 mètres."
 
 #: webapp/personal/forms.py:74 webapp/personal/forms.py:89
 #: webapp/personal/forms.py:104
@@ -121,7 +121,7 @@ msgstr "PIN"
 
 #: webapp/personal/forms.py:119
 msgid "For special use only"
-msgstr "Seulement pour un usage spécial"
+msgstr "Réservé pour un usage spécial"
 
 #: webapp/personal/forms.py:122
 msgid "Sensor Type"
@@ -137,7 +137,7 @@ msgstr "Veuillez saisir le nom de votre détecteur."
 
 #: webapp/personal/forms.py:141
 msgid "Only the sensor ID will be published."
-msgstr "Seul l'ID du détecteur sera publiée"
+msgstr "Seul l'ID du détecteur sera publié"
 
 #: webapp/personal/forms.py:144
 msgid "Sensor level above ground (in cm)"
@@ -198,11 +198,11 @@ msgstr "ID du détecteur"
 
 #: webapp/personal/forms.py:183
 msgid "Sensor ID may only contain digits and letters A to F"
-msgstr ""
+msgstr "L'ID ne peut contenir que des chiffres et les lettres A à F"
 
 #: webapp/personal/forms.py:185
 msgid "The numeric part of the sensorname only"
-msgstr "Seulement les chiffres contenus dans le nom du détecteur"
+msgstr "Uniquement les chiffres présents dans le nom du détecteur"
 
 #: webapp/personal/forms.py:188
 msgid "Sensor Board"
@@ -213,7 +213,10 @@ msgid ""
 "Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
 "the Smogomierz sensor version need to change this accordingly. Also in "
 "these cases the Sensor ID is the numeric part of the name only."
-msgstr ""
+msgstr "La valeur normale est esp8266. Les personnes utilisant un ESP32,"
+"un Raspberry Pi ou la version Smogomierz du capteur doivent modifier cette"
+" valeur en conséquence. Dans tous les cas, le Sensor ID reste la partie "
+"numérique uniquement."
 
 #: webapp/personal/forms.py:196
 msgid "Recipient's e-mail address"
@@ -253,11 +256,11 @@ msgstr "Température"
 
 #: webapp/personal/views.py:37
 msgid "Pressure"
-msgstr ""
+msgstr "Pression"
 
 #: webapp/personal/views.py:38
 msgid "Pressure at sea level"
-msgstr ""
+msgstr "Pression au niveau de la mer"
 
 #: webapp/personal/views.py:123
 msgid "Settings saved successfully."
@@ -269,7 +272,7 @@ msgstr "Détecteur enregistré avec succès"
 
 #: webapp/personal/views.py:155
 msgid "This sensor ID is already registered."
-msgstr ""
+msgstr "Cet ID de capteur est déjà enregistré."
 
 #: webapp/personal/views.py:169
 msgid "A fine dust sensor was transferred to you"
@@ -315,11 +318,11 @@ msgstr "Contact : site web d'Ernesto Ruge"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
 msgid "Donate for Luftdaten.info (Hardware, Software) now on Betterplace.org"
-msgstr ""
+msgstr "Faites un don à Luftdaten.info (logiciel et matériel) sur Betterplace.org"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
 msgid "Donate for<br>Luftdaten.info<br>now on<br><span>Betterplace.org</span>"
-msgstr ""
+msgstr "Donnez à<br>Luftdaten.info<br>sur<br><span>Betterplace.org</span>"
 
 #: webapp/templates/index.html:9 webapp/templates/register-minimal.html:13
 msgid "Configure air quality sensor yourself"
@@ -453,7 +456,7 @@ msgstr "Importer en masse"
 
 #: webapp/templates/layout.html:59 webapp/templates/meine-luftdaten.html:24
 msgid "Logout"
-msgstr "Décconnexion"
+msgstr "Déconnexion"
 
 #: webapp/templates/layout.html:61 webapp/templates/security/login_user.html:7
 #: webapp/templates/security/send_login.html:5
@@ -463,7 +466,7 @@ msgstr "Connexion"
 #: webapp/templates/layout.html:62 webapp/templates/security/login_user.html:17
 #: webapp/templates/security/register_user.html:5
 msgid "Register"
-msgstr "Enregistrer"
+msgstr "S'enregistrer"
 
 #: webapp/templates/layout.html:101 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
@@ -471,7 +474,7 @@ msgstr "Politique de confidentialité"
 
 #: webapp/templates/login-with-password.html:68
 msgid "Back to e-mail login"
-msgstr "Retour l'enregistrement d'une adresse électronique"
+msgstr "Retour à l'identification par adresse électronique"
 
 #: webapp/templates/login-with-password.html:69
 msgid "Password Reset"
@@ -534,15 +537,15 @@ msgstr ""
 "Normalement, deux détecteurs sont attaché à chaque nœud : le capteur de "
 "particules fines et le\n"
 " capteur d'humidité relative et de température. Le numéro du détecteur "
-"peut ainsi être trouvé "
+"peut aussi être retrouvé "
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust card again."
-msgstr "à nouveau sur la platine."
+msgstr "sur la platine."
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr "montrer sur la carte"
+msgstr "voir sur la carte"
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
@@ -587,7 +590,7 @@ msgstr ""
 #: webapp/templates/my-sensor-give.html:10
 msgid "Warning! After the transfer you have no more control over the sensor!"
 msgstr ""
-"Attention ! Après le transfert, vous n'avez plus de contrôle sur le "
+"Attention ! Après le transfert, vous n'aurez plus de contrôle sur le "
 "détecteur !"
 
 #: webapp/templates/my-sensor-settings.html:6
@@ -622,7 +625,7 @@ msgstr "Nom"
 
 #: webapp/templates/my-sensors.html:17
 msgid "Created"
-msgstr ""
+msgstr "Créé"
 
 #: webapp/templates/my-sensors.html:17
 msgid "Last Update"
@@ -822,7 +825,7 @@ msgid ""
 "Unfortunately the link is not correct. Either it is too old, or it was "
 "not copied completely. Please try again."
 msgstr ""
-"Malheureusement, le lien est incorrect. Soit il est soit périmé, soit il "
+"Malheureusement, le lien est incorrect. Soit il est périmé, soit il "
 "a été copié de manière incomplète."
 
 #: webapp/templates/recover-mail-sent-again.html:13
@@ -840,7 +843,7 @@ msgid ""
 "your password and activate your account."
 msgstr ""
 "Votre compte n'est pas encore actif. Veuillez consultez votre boite aux "
-"lettres électronique pour réinitialiser votre mot de passe et acier votre"
+"lettres électronique pour réinitialiser votre mot de passe et activer votre"
 " compte."
 
 #: webapp/templates/recover-set-password.html:14
@@ -849,7 +852,7 @@ msgstr "Définir un mot de passe"
 
 #: webapp/templates/recover.html:14
 msgid "Forgot Passwort?"
-msgstr "Vous avez oublié votre mot de passe?"
+msgstr "Vous avez oublié votre mot de passe ?"
 
 #: webapp/templates/register-existing-wait-for-mail.html:13
 msgid "Activation required"
@@ -911,7 +914,7 @@ msgstr ""
 "123456 est l'ID de la platine ESP8266, l'adresse électronique est celle "
 "du futur propriétaire\n"
 "                            du propriétaire. SI elle n'est pas "
-"disponible, seule l'ID du nœud peut être indiquée. il s'agit de\n"
+"disponible, l'ID du nœud peut être indiquée seule. il s'agit de\n"
 "                            L'adresse électronique devra être communiquée"
 " ultérieurement."
 
@@ -985,7 +988,7 @@ msgid ""
 "    Your Luftdaten.info team"
 msgstr ""
 "Cordialement,\n"
-"L'équipe Luftdaten"
+"L'équipe Luftdaten.info"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
@@ -1010,7 +1013,7 @@ msgid ""
 "log in with this mail address to take data and settings or to change "
 "them: "
 msgstr ""
-"On vous a transféré un d´secteur de particules fines. Veuillez vous "
+"On vous a transféré un détecteur de particules fines. Veuillez vous "
 "connecter avec cette adresse électronique pour confirmer les informations"
 " et les configurations ou bien les modifier."
 
@@ -1036,7 +1039,7 @@ msgid ""
 "If the sensor was registered for you by mistake, please report this to "
 "info@luftdaten.info."
 msgstr ""
-"Si un détecteur vos a été transféré par erreur, veuillez envoyer un "
+"Si un détecteur vous a été transféré par erreur, veuillez envoyer un "
 "courriel à info@luftdaten.info."
 
 #: webapp/templates/security/change_password.html:5
@@ -1101,7 +1104,7 @@ msgstr "Veuillez accepter la politique de confidentialité."
 
 #: webapp/users/forms.py:75
 msgid "register"
-msgstr "enregistrer"
+msgstr "s'enregistrer"
 
 #: webapp/users/forms.py:89
 msgid "Password request via email"
@@ -1122,7 +1125,7 @@ msgstr "Les mots de passe doivent être identiques."
 
 #: webapp/users/forms.py:114 webapp/users/forms.py:140
 msgid "Save Password"
-msgstr "Sauvegarder le mot de pase"
+msgstr "Sauvegarder le mot de passe"
 
 #: webapp/users/forms.py:118
 msgid "First name"
@@ -1162,8 +1165,8 @@ msgstr "Informations utilisateur sauvegardées"
 #~ "Les utilisateurs de platines ESP32, "
 #~ "Raspberry Pi ou bien de la version"
 #~ " du détecteur Smogomierz doivent "
-#~ "conformément modifier cela. Dans tous "
-#~ "ces cas, l'ID du détecteur reste "
+#~ "modifier cela en conséquence. Dans tous "
+#~ "les cas, l'ID du détecteur reste "
 #~ "la partie numérique du nom."
 
 #~ msgid "Indoor Sensor"
@@ -1258,7 +1261,7 @@ msgstr "Informations utilisateur sauvegardées"
 #~ msgstr "PIN"
 
 #~ msgid "For special use only"
-#~ msgstr "Seulement pour un usage spécial"
+#~ msgstr "Réservé pour un usage spécial"
 
 #~ msgid "Sensor Type"
 #~ msgstr "Type de capteur"
@@ -1333,7 +1336,7 @@ msgstr "Informations utilisateur sauvegardées"
 #~ msgstr ""
 
 #~ msgid "The numeric part of the sensorname only"
-#~ msgstr "Seulement les chiffres contenus dans le nom du détecteur"
+#~ msgstr "Uniquement les chiffres contenus dans le nom du détecteur"
 
 #~ msgid "Sensor Board"
 #~ msgstr "Platine"
@@ -1346,6 +1349,13 @@ msgstr "Informations utilisateur sauvegardées"
 #~ "these cases the Sensor ID is the"
 #~ " numeric part of the name only."
 #~ msgstr ""
+#~ "Il devrait normalement s'agir d'ESP8266. "
+#~ "Les utilisateurs de platines ESP32, "
+#~ "Raspberry Pi ou bien de la version"
+#~ " du détecteur Smogomierz doivent "
+#~ "modifier cela en conséquence. Dans tous "
+#~ "les cas, l'ID du détecteur reste "
+#~ "la partie numérique du nom."
 
 #~ msgid "Recipient's e-mail address"
 #~ msgstr "Adresse électronique du destinataire"
@@ -1381,7 +1391,7 @@ msgstr "Informations utilisateur sauvegardées"
 #~ msgstr "Détecteur enregistré avec succès"
 
 #~ msgid "This sensor ID is already registered."
-#~ msgstr ""
+#~ msgstr "Cet ID de capteur est déjà enregistré."
 
 #~ msgid "A fine dust sensor was transferred to you"
 #~ msgstr "On vous a transféré un détecteur de particules fines"
@@ -1416,7 +1426,7 @@ msgstr "Informations utilisateur sauvegardées"
 #~ msgstr "Veuillez accepter la politique de confidentialité."
 
 #~ msgid "register"
-#~ msgstr "enregistrer"
+#~ msgstr "s'enregistrer"
 
 #~ msgid "Password request via email"
 #~ msgstr "Demande de mot de passe par courriel"
