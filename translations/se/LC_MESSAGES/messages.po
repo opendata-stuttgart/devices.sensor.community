@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-05-07 11:13+0000\n"
+"POT-Creation-Date: 2019-05-18 16:17+0200\n"
 "PO-Revision-Date: 2019-04-19 05:36+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: se\n"
@@ -274,7 +274,7 @@ msgstr ""
 msgid "you must first log in?"
 msgstr ""
 
-#: webapp/templates/imprint.html:8 webapp/templates/layout.html:100
+#: webapp/templates/imprint.html:8 webapp/templates/layout.html:106
 msgid "Imprint"
 msgstr ""
 
@@ -391,43 +391,43 @@ msgstr ""
 msgid "Information and settings for the luftdaten project"
 msgstr ""
 
-#: webapp/templates/layout.html:45
+#: webapp/templates/layout.html:51
 msgid "Home"
 msgstr ""
 
-#: webapp/templates/layout.html:48 webapp/templates/my-sensors.html:9
+#: webapp/templates/layout.html:54 webapp/templates/my-sensors.html:9
 msgid "My sensors"
 msgstr ""
 
-#: webapp/templates/layout.html:49 webapp/templates/meine-luftdaten.html:20
+#: webapp/templates/layout.html:55 webapp/templates/meine-luftdaten.html:20
 #: webapp/templates/my-password.html:10 webapp/templates/my-sensors.html:30
 #: webapp/templates/my-settings.html:13
 msgid "Settings"
 msgstr ""
 
-#: webapp/templates/layout.html:50
+#: webapp/templates/layout.html:56
 msgid "Password change"
 msgstr ""
 
-#: webapp/templates/layout.html:53
+#: webapp/templates/layout.html:59
 msgid "Massimporter"
 msgstr ""
 
-#: webapp/templates/layout.html:59 webapp/templates/meine-luftdaten.html:24
+#: webapp/templates/layout.html:65 webapp/templates/meine-luftdaten.html:24
 msgid "Logout"
 msgstr ""
 
-#: webapp/templates/layout.html:61 webapp/templates/security/login_user.html:7
+#: webapp/templates/layout.html:67 webapp/templates/security/login_user.html:7
 #: webapp/templates/security/send_login.html:5
 msgid "Login"
 msgstr ""
 
-#: webapp/templates/layout.html:62 webapp/templates/security/login_user.html:17
+#: webapp/templates/layout.html:68 webapp/templates/security/login_user.html:17
 #: webapp/templates/security/register_user.html:5
 msgid "Register"
 msgstr ""
 
-#: webapp/templates/layout.html:101 webapp/templates/privacy-policy.html:8
+#: webapp/templates/layout.html:107 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
 msgstr ""
 
@@ -504,7 +504,7 @@ msgstr ""
 msgid "Last updated:"
 msgstr ""
 
-#: webapp/templates/my-sensor-data.html:35
+#: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
 msgstr ""
 
@@ -869,6 +869,10 @@ msgstr ""
 
 #: webapp/templates/security/login_user.html:18
 msgid "Password reminder"
+msgstr ""
+
+#: webapp/templates/security/register_user.html:17
+msgid "please wait up to 30 min to receive the mail and check your spam folder"
 msgstr ""
 
 #: webapp/templates/security/reset_password.html:5

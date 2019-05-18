@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-05-07 11:13+0000\n"
+"POT-Creation-Date: 2019-05-18 16:17+0200\n"
 "PO-Revision-Date: 2019-02-08 15:22+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -288,7 +288,7 @@ msgstr "Auf diese Seite dürfen Sie nicht zugreifen. Vielleicht "
 msgid "you must first log in?"
 msgstr "müssen Sie sich zunächst einloggen?"
 
-#: webapp/templates/imprint.html:8 webapp/templates/layout.html:100
+#: webapp/templates/imprint.html:8 webapp/templates/layout.html:106
 msgid "Imprint"
 msgstr "Impressum"
 
@@ -427,43 +427,43 @@ msgstr "Benutzerkonfiguration"
 msgid "Information and settings for the luftdaten project"
 msgstr "Informationen und Einstellungen für das Projekt Luftdaten.info"
 
-#: webapp/templates/layout.html:45
+#: webapp/templates/layout.html:51
 msgid "Home"
 msgstr "Startseite"
 
-#: webapp/templates/layout.html:48 webapp/templates/my-sensors.html:9
+#: webapp/templates/layout.html:54 webapp/templates/my-sensors.html:9
 msgid "My sensors"
 msgstr "Meine Sensoren"
 
-#: webapp/templates/layout.html:49 webapp/templates/meine-luftdaten.html:20
+#: webapp/templates/layout.html:55 webapp/templates/meine-luftdaten.html:20
 #: webapp/templates/my-password.html:10 webapp/templates/my-sensors.html:30
 #: webapp/templates/my-settings.html:13
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: webapp/templates/layout.html:50
+#: webapp/templates/layout.html:56
 msgid "Password change"
 msgstr "Passwort ändern"
 
-#: webapp/templates/layout.html:53
+#: webapp/templates/layout.html:59
 msgid "Massimporter"
 msgstr "Massenimporter"
 
-#: webapp/templates/layout.html:59 webapp/templates/meine-luftdaten.html:24
+#: webapp/templates/layout.html:65 webapp/templates/meine-luftdaten.html:24
 msgid "Logout"
 msgstr "Logout"
 
-#: webapp/templates/layout.html:61 webapp/templates/security/login_user.html:7
+#: webapp/templates/layout.html:67 webapp/templates/security/login_user.html:7
 #: webapp/templates/security/send_login.html:5
 msgid "Login"
 msgstr "Login"
 
-#: webapp/templates/layout.html:62 webapp/templates/security/login_user.html:17
+#: webapp/templates/layout.html:68 webapp/templates/security/login_user.html:17
 #: webapp/templates/security/register_user.html:5
 msgid "Register"
 msgstr "Registrieren"
 
-#: webapp/templates/layout.html:101 webapp/templates/privacy-policy.html:8
+#: webapp/templates/layout.html:107 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
 msgstr "Datenschutzerklärung"
 
@@ -545,7 +545,7 @@ msgstr "auf der Karte zeigen"
 msgid "Last updated:"
 msgstr "Letztes Update:"
 
-#: webapp/templates/my-sensor-data.html:35
+#: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
 msgstr "Zu diesem Sensor liegen keine aktuellen Daten vor."
 
@@ -1033,6 +1033,10 @@ msgstr "Passwort-Reset anfordern"
 #: webapp/templates/security/login_user.html:18
 msgid "Password reminder"
 msgstr "Passwort-Erinnerung"
+
+#: webapp/templates/security/register_user.html:17
+msgid "please wait up to 30 min to receive the mail and check your spam folder"
+msgstr "Die E-Mail kann bis zu 30 Minuten brauchen (bitte auch den Spam-Ordner prüfen)."
 
 #: webapp/templates/security/reset_password.html:5
 msgid "Reset password"
