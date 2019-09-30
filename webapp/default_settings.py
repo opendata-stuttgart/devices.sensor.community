@@ -90,7 +90,9 @@ SENSOR_TYPES = {
     28: "7",  # SHT35
     29: "15", # Lärm
     30: "17", # NO2-A43F
-    31: "19", # Radiation_EC
+    31: "19", # Radiation SBM-20
+    35: "19", # Radiation SBM-19
+    36: "19", # Radiation Si22G
 }
 
 # IDs of default SensorTypes assigned to node
