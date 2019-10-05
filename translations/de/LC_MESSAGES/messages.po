@@ -333,7 +333,7 @@ msgid ""
 "The main purpose of this page is to enable you, as the owner of a fine "
 "dust sensor, to configure the location and other parameters yourself."
 msgstr ""
-"Auf diesen Seiten können Sie ihren Feinstaubsensor anmelden und die "
+"Auf diesen Seiten können Sie Ihren Feinstaubsensor anmelden und die "
 "benötigten Daten wie Adresse, Position, Umgebung u.a. eintragen."
 
 #: webapp/templates/index.html:19
@@ -477,7 +477,7 @@ msgstr "Passwort zurücksetzen"
 
 #: webapp/templates/login.html:12
 msgid "Configure air data sensor yourself"
-msgstr "Melden Sie ihren Sensor selbst an"
+msgstr "Melden Sie Ihren Sensor selbst an"
 
 #: webapp/templates/meine-luftdaten.html:11
 msgid "Meine Luftdaten"
@@ -1381,7 +1381,7 @@ msgstr "Nutzerdaten gespeichert."
 #~ msgstr ""
 #~ "Wie nah sind diese Straßen? 1 ="
 #~ " sehr wenige weiter weg, 10 = "
-#~ "VielVerkehr direkt vor der Tür."
+#~ "Viel Verkehr direkt vor der Tür."
 
 #~ msgid "PIN"
 #~ msgstr ""
