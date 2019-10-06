@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-05-18 16:17+0200\n"
+"POT-Creation-Date: 2019-10-06 22:07+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -213,9 +213,10 @@ msgid ""
 "Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
 "the Smogomierz sensor version need to change this accordingly. Also in "
 "these cases the Sensor ID is the numeric part of the name only."
-msgstr "La valeur normale est esp8266. Les personnes utilisant un ESP32,"
-"un Raspberry Pi ou la version Smogomierz du capteur doivent modifier cette"
-" valeur en conséquence. Dans tous les cas, le Sensor ID reste la partie "
+msgstr ""
+"La valeur normale est esp8266. Les personnes utilisant un ESP32,un "
+"Raspberry Pi ou la version Smogomierz du capteur doivent modifier cette "
+"valeur en conséquence. Dans tous les cas, le Sensor ID reste la partie "
 "numérique uniquement."
 
 #: webapp/personal/forms.py:196
@@ -262,19 +263,59 @@ msgstr "Pression"
 msgid "Pressure at sea level"
 msgstr "Pression au niveau de la mer"
 
-#: webapp/personal/views.py:123
+#: webapp/personal/views.py:64
+msgid "particulate matter sensor SDS011"
+msgstr ""
+
+#: webapp/personal/views.py:66
+msgid "particulate matter sensor PMS1003"
+msgstr ""
+
+#: webapp/personal/views.py:68
+msgid "particulate matter sensor PMS3003"
+msgstr ""
+
+#: webapp/personal/views.py:70
+msgid "particulate matter sensor PMS5003"
+msgstr ""
+
+#: webapp/personal/views.py:72
+msgid "particulate matter sensor PMS6003"
+msgstr ""
+
+#: webapp/personal/views.py:74
+msgid "particulate matter sensor PMS7003"
+msgstr ""
+
+#: webapp/personal/views.py:76
+msgid "temperature/humidity sensor DHT22"
+msgstr ""
+
+#: webapp/personal/views.py:78
+msgid "temperature/pressure sensor BMP180"
+msgstr ""
+
+#: webapp/personal/views.py:80
+msgid "temperature/pressure sensor BMP280"
+msgstr ""
+
+#: webapp/personal/views.py:82
+msgid "temperature/humidity/pressure sensor BME280"
+msgstr ""
+
+#: webapp/personal/views.py:140
 msgid "Settings saved successfully."
 msgstr "Configuration enregistrée avec succès"
 
-#: webapp/personal/views.py:151
+#: webapp/personal/views.py:168
 msgid "Sensor successfully registered."
 msgstr "Détecteur enregistré avec succès"
 
-#: webapp/personal/views.py:155
+#: webapp/personal/views.py:172
 msgid "This sensor ID is already registered."
 msgstr "Cet ID de capteur est déjà enregistré."
 
-#: webapp/personal/views.py:169
+#: webapp/personal/views.py:186
 msgid "A fine dust sensor was transferred to you"
 msgstr "On vous a transféré un détecteur de particules fines"
 
@@ -290,7 +331,7 @@ msgstr "Vous n'êtes pas autorisé accéder à cette page."
 msgid "you must first log in?"
 msgstr "vous devez d'abord vous connecter"
 
-#: webapp/templates/imprint.html:8 webapp/templates/layout.html:106
+#: webapp/templates/imprint.html:8 webapp/templates/layout.html:110
 msgid "Imprint"
 msgstr "Mentions légales"
 
@@ -432,43 +473,43 @@ msgstr "configuration utilisateur"
 msgid "Information and settings for the luftdaten project"
 msgstr "Information et configuration pour le projet Luftdaten "
 
-#: webapp/templates/layout.html:51
+#: webapp/templates/layout.html:55
 msgid "Home"
 msgstr "Accueil"
 
-#: webapp/templates/layout.html:54 webapp/templates/my-sensors.html:9
+#: webapp/templates/layout.html:58 webapp/templates/my-sensors.html:9
 msgid "My sensors"
 msgstr "Mon détecteur"
 
-#: webapp/templates/layout.html:55 webapp/templates/meine-luftdaten.html:20
+#: webapp/templates/layout.html:59 webapp/templates/meine-luftdaten.html:20
 #: webapp/templates/my-password.html:10 webapp/templates/my-sensors.html:30
 #: webapp/templates/my-settings.html:13
 msgid "Settings"
 msgstr "Configuration"
 
-#: webapp/templates/layout.html:56
+#: webapp/templates/layout.html:60
 msgid "Password change"
 msgstr "Changer le mot de passe"
 
-#: webapp/templates/layout.html:59
+#: webapp/templates/layout.html:63
 msgid "Massimporter"
 msgstr "Importer en masse"
 
-#: webapp/templates/layout.html:65 webapp/templates/meine-luftdaten.html:24
+#: webapp/templates/layout.html:69 webapp/templates/meine-luftdaten.html:24
 msgid "Logout"
 msgstr "Déconnexion"
 
-#: webapp/templates/layout.html:67 webapp/templates/security/login_user.html:7
+#: webapp/templates/layout.html:71 webapp/templates/security/login_user.html:7
 #: webapp/templates/security/send_login.html:5
 msgid "Login"
 msgstr "Connexion"
 
-#: webapp/templates/layout.html:68 webapp/templates/security/login_user.html:17
+#: webapp/templates/layout.html:72 webapp/templates/security/login_user.html:17
 #: webapp/templates/security/register_user.html:5
 msgid "Register"
 msgstr "S'enregistrer"
 
-#: webapp/templates/layout.html:107 webapp/templates/privacy-policy.html:8
+#: webapp/templates/layout.html:111 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
 msgstr "Politique de confidentialité"
 
@@ -825,8 +866,8 @@ msgid ""
 "Unfortunately the link is not correct. Either it is too old, or it was "
 "not copied completely. Please try again."
 msgstr ""
-"Malheureusement, le lien est incorrect. Soit il est périmé, soit il "
-"a été copié de manière incomplète."
+"Malheureusement, le lien est incorrect. Soit il est périmé, soit il a été"
+" copié de manière incomplète."
 
 #: webapp/templates/recover-mail-sent-again.html:13
 #: webapp/templates/recover-mail-sent.html:13
@@ -843,8 +884,8 @@ msgid ""
 "your password and activate your account."
 msgstr ""
 "Votre compte n'est pas encore actif. Veuillez consultez votre boite aux "
-"lettres électronique pour réinitialiser votre mot de passe et activer votre"
-" compte."
+"lettres électronique pour réinitialiser votre mot de passe et activer "
+"votre compte."
 
 #: webapp/templates/recover-set-password.html:14
 msgid "Set password"
@@ -1168,10 +1209,10 @@ msgstr "Informations utilisateur sauvegardées"
 #~ "Il devrait normalement s'agir d'ESP8266. "
 #~ "Les utilisateurs de platines ESP32, "
 #~ "Raspberry Pi ou bien de la version"
-#~ " du détecteur Smogomierz doivent "
-#~ "modifier cela en conséquence. Dans tous "
-#~ "les cas, l'ID du détecteur reste "
-#~ "la partie numérique du nom."
+#~ " du détecteur Smogomierz doivent modifier"
+#~ " cela en conséquence. Dans tous les"
+#~ " cas, l'ID du détecteur reste la "
+#~ "partie numérique du nom."
 
 #~ msgid "Indoor Sensor"
 #~ msgstr "Capteur intérieur"
@@ -1356,10 +1397,10 @@ msgstr "Informations utilisateur sauvegardées"
 #~ "Il devrait normalement s'agir d'ESP8266. "
 #~ "Les utilisateurs de platines ESP32, "
 #~ "Raspberry Pi ou bien de la version"
-#~ " du détecteur Smogomierz doivent "
-#~ "modifier cela en conséquence. Dans tous "
-#~ "les cas, l'ID du détecteur reste "
-#~ "la partie numérique du nom."
+#~ " du détecteur Smogomierz doivent modifier"
+#~ " cela en conséquence. Dans tous les"
+#~ " cas, l'ID du détecteur reste la "
+#~ "partie numérique du nom."
 
 #~ msgid "Recipient's e-mail address"
 #~ msgstr "Adresse électronique du destinataire"

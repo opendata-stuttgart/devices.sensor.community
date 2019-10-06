@@ -61,9 +61,25 @@ def sensor_data(id):
     sensors = node.sensors
     for sensor in sensors:
         if sensor.sensor_type_id == 14:
-            sensor.sensor_type_name = 'Feinstaub-Sensor SDS011'
+            sensor.sensor_type_name = _('particulate matter sensor SDS011')
+        elif sensor.sensor_type_id == 21:
+            sensor.sensor_type_name = _('particulate matter sensor PMS1003')
+        elif sensor.sensor_type_id == 16:
+            sensor.sensor_type_name = _('particulate matter sensor PMS3003')
+        elif sensor.sensor_type_id == 23:
+            sensor.sensor_type_name = _('particulate matter sensor PMS5003')
+        elif sensor.sensor_type_id == 24:
+            sensor.sensor_type_name = _('particulate matter sensor PMS6003')
+        elif sensor.sensor_type_id == 22:
+            sensor.sensor_type_name = _('particulate matter sensor PMS7003')
         elif sensor.sensor_type_id == 9:
-            sensor.sensor_type_name = 'Feuchtigkeits- und Temperatur-Sensor DHT22'
+            sensor.sensor_type_name = _('temperature/humidity sensor DHT22')
+        elif sensor.sensor_type_id == 8:
+            sensor.sensor_type_name = _('temperature/pressure sensor BMP180')
+        elif sensor.sensor_type_id == 20:
+            sensor.sensor_type_name = _('temperature/pressure sensor BMP280')
+        elif sensor.sensor_type_id == 17:
+            sensor.sensor_type_name = _('temperature/humidity/pressure sensor BME280')
 
         try:
             # sensor_request = requests.get('http://api.luftdaten.info/static/v1/sensor/%s/' % (sensor.id))

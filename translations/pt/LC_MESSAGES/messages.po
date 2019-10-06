@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-05-18 16:17+0200\n"
+"POT-Creation-Date: 2019-10-06 22:07+0000\n"
 "PO-Revision-Date: 2019-04-05 15:53+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: pt\n"
@@ -246,19 +246,59 @@ msgstr ""
 msgid "Pressure at sea level"
 msgstr ""
 
-#: webapp/personal/views.py:123
+#: webapp/personal/views.py:64
+msgid "particulate matter sensor SDS011"
+msgstr ""
+
+#: webapp/personal/views.py:66
+msgid "particulate matter sensor PMS1003"
+msgstr ""
+
+#: webapp/personal/views.py:68
+msgid "particulate matter sensor PMS3003"
+msgstr ""
+
+#: webapp/personal/views.py:70
+msgid "particulate matter sensor PMS5003"
+msgstr ""
+
+#: webapp/personal/views.py:72
+msgid "particulate matter sensor PMS6003"
+msgstr ""
+
+#: webapp/personal/views.py:74
+msgid "particulate matter sensor PMS7003"
+msgstr ""
+
+#: webapp/personal/views.py:76
+msgid "temperature/humidity sensor DHT22"
+msgstr ""
+
+#: webapp/personal/views.py:78
+msgid "temperature/pressure sensor BMP180"
+msgstr ""
+
+#: webapp/personal/views.py:80
+msgid "temperature/pressure sensor BMP280"
+msgstr ""
+
+#: webapp/personal/views.py:82
+msgid "temperature/humidity/pressure sensor BME280"
+msgstr ""
+
+#: webapp/personal/views.py:140
 msgid "Settings saved successfully."
 msgstr ""
 
-#: webapp/personal/views.py:151
+#: webapp/personal/views.py:168
 msgid "Sensor successfully registered."
 msgstr ""
 
-#: webapp/personal/views.py:155
+#: webapp/personal/views.py:172
 msgid "This sensor ID is already registered."
 msgstr ""
 
-#: webapp/personal/views.py:169
+#: webapp/personal/views.py:186
 msgid "A fine dust sensor was transferred to you"
 msgstr ""
 
@@ -274,7 +314,7 @@ msgstr ""
 msgid "you must first log in?"
 msgstr ""
 
-#: webapp/templates/imprint.html:8 webapp/templates/layout.html:106
+#: webapp/templates/imprint.html:8 webapp/templates/layout.html:110
 msgid "Imprint"
 msgstr ""
 
@@ -391,43 +431,43 @@ msgstr ""
 msgid "Information and settings for the luftdaten project"
 msgstr ""
 
-#: webapp/templates/layout.html:51
+#: webapp/templates/layout.html:55
 msgid "Home"
 msgstr ""
 
-#: webapp/templates/layout.html:54 webapp/templates/my-sensors.html:9
+#: webapp/templates/layout.html:58 webapp/templates/my-sensors.html:9
 msgid "My sensors"
 msgstr ""
 
-#: webapp/templates/layout.html:55 webapp/templates/meine-luftdaten.html:20
+#: webapp/templates/layout.html:59 webapp/templates/meine-luftdaten.html:20
 #: webapp/templates/my-password.html:10 webapp/templates/my-sensors.html:30
 #: webapp/templates/my-settings.html:13
 msgid "Settings"
 msgstr ""
 
-#: webapp/templates/layout.html:56
+#: webapp/templates/layout.html:60
 msgid "Password change"
 msgstr ""
 
-#: webapp/templates/layout.html:59
+#: webapp/templates/layout.html:63
 msgid "Massimporter"
 msgstr ""
 
-#: webapp/templates/layout.html:65 webapp/templates/meine-luftdaten.html:24
+#: webapp/templates/layout.html:69 webapp/templates/meine-luftdaten.html:24
 msgid "Logout"
 msgstr ""
 
-#: webapp/templates/layout.html:67 webapp/templates/security/login_user.html:7
+#: webapp/templates/layout.html:71 webapp/templates/security/login_user.html:7
 #: webapp/templates/security/send_login.html:5
 msgid "Login"
 msgstr ""
 
-#: webapp/templates/layout.html:68 webapp/templates/security/login_user.html:17
+#: webapp/templates/layout.html:72 webapp/templates/security/login_user.html:17
 #: webapp/templates/security/register_user.html:5
 msgid "Register"
 msgstr ""
 
-#: webapp/templates/layout.html:107 webapp/templates/privacy-policy.html:8
+#: webapp/templates/layout.html:111 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
 msgstr ""
 
