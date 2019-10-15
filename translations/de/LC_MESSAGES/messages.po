@@ -60,7 +60,7 @@ msgstr "Bitte geben Sie einen Staat an."
 
 #: webapp/personal/forms.py:59
 msgid "Latitude"
-msgstr "Geographischer Längengrad"
+msgstr "Geographischer Breitengrad"
 
 #: webapp/personal/forms.py:60
 msgid "Please enter the latitude."
@@ -68,11 +68,11 @@ msgstr "Bitte geben Sie eine geographische Breite an."
 
 #: webapp/personal/forms.py:61
 msgid "Longitude"
-msgstr "Geographischer Breitengrad"
+msgstr "Geographischer Längengrad"
 
 #: webapp/personal/forms.py:62
 msgid "Please enter the longitude."
-msgstr "Geographischer Breitengrad"
+msgstr "Bitte geben Sie eine geografische Länge an."
 
 #: webapp/personal/forms.py:65
 msgid "How much industrial activity is there within a 100m radius?"
