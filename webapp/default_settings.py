@@ -63,20 +63,20 @@ SENSOR_TYPES = {
     1: "5",  # PPD42NS
     # 2: "GP2Y101AU0F",  # GP2Y101AU0F
     # 3: "dsm401a",  # dsm401a
-    4: "7",  # SHT10p
-    5: "7",  # SHT11
-    6: "7",  # SHT15
-    # 7: "DHT11",  # DHT11
-    8: "3",  # BMP180
-    9: "7",  # DHT22
+    4: "7",   # SHT10
+    5: "7",   # SHT11
+    6: "7",   # SHT15
+    # 7: "7", # DHT11
+    8: "3",   # BMP180
+    9: "7",   # DHT22
     # 10: "photoresitor",  # photoresitor
     # 11: "doorswitch",  # doorswitch
-    12: "13",  # DS18S20
-    13: "13",  # DS18B20
+    12: "13", # DS18S20
+    13: "13", # DS18B20
     14: '1',  # SDS011
     15: "9",  # GPS-NEO-6M
     16: "1",  # PMS3003
-    17: "11",  # BME280
+    17: "11", # BME280
     18: "1",  # SDS021
     19: "7",  # HTU21D
     20: "3",  # BMP280
@@ -93,6 +93,7 @@ SENSOR_TYPES = {
     31: "19", # Radiation SBM-20
     35: "19", # Radiation SBM-19
     36: "19", # Radiation Si22G
+    37: "1",  # SPS30
 }
 
 # IDs of default SensorTypes assigned to node
