@@ -16,7 +16,7 @@
     "del": "^2.2.0",
     "es6-promise": "~4",
     "font-awesome": "~4",
-    "gulp": "~3.9.1",
+    "gulp": "^3.9.1",
     "gulp-browser": "^2.1.4",
     "gulp-concat": "^2.6.0",
     "gulp-cssnano": "^2.1.2",
@@ -36,5 +36,9 @@
     "normalize.css": "~5",
     "reactify": "^1.1.1",
     "tether": "~1"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.2.0",
+    "popper.js": "^1.16.0"
   }
 }

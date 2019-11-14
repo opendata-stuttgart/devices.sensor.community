@@ -89,6 +89,11 @@ orderSelect(document.getElementById('location-country'));
     <button type="button" class="btn btn-default btn-block" id="sensor-setting-use-address">{{ _('Lookup entered address') }}</button>
   </div>
 </div>
+<div class="row">
+    <div class="col-md-12" id="sensor-setting-location-not-found-msg" style="display: none; color: red">
+	{{ _('Please check sensor position.') }}
+    </div>
+</div>
 
 <div class="row">
     <div class="col-md-12">

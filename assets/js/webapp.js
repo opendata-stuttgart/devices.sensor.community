@@ -13,7 +13,7 @@ $( document ).ready(function() {
 
       L.Icon.Default.imagePath = '/static/images/leaflet/';
         var map = L.map('sensor-settings-map', {center: mapCenter, zoom: luftdaten_storage.default_zoom});
-        L.tileLayer('https://maps.luftdaten.info/tiles/{z}/{x}/{y}.png', {
+        L.tileLayer('https://maps.sensor.community/tiles/{z}/{x}/{y}.png', {
             maxZoom: 18,
             attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
             '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
@@ -61,5 +61,21 @@ $( document ).ready(function() {
         $("#sensor-setting-use-address").click(function() {
             geocode_lookup();
         })
+
+        $("#submit").click(function() {
+            console.log("Check lat/lon ...");
+            console.log($("#location-latitude").val());
+            if ($("#location-latitude").val() == 0 && $("#location-longitude").val() == 0 && !($("#location-indoor").is(":checked")) ) {
+		console.log("geo location not set ...");
+                geocode_lookup();
+                $("#sensor-setting-use-address").focus();
+                $("#sensor-setting-use-address").css('border-color','red');
+		$("#sensor-setting-location-not-found-msg").css('display','inline-block');
+                return false;
+            } else {
+                return true;
+            }
+        })
+
     }
 });
