@@ -5,7 +5,6 @@
 # project.
 # Ingo Kleiber <ingo@kleiber.me>, 2017,
 # Erich Seifert <dev@erichseifert.de>, 2017.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask-Security 2.0.1\n"
@@ -19,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.4.0\n"
+"Generated-By: Babel 2.6.0\n"
 
 #: flask_security/core.py:99
 msgid "Login Required"
@@ -57,7 +56,9 @@ msgstr "Nincs jogosultságod ehhez az adathoz"
 #: flask_security/core.py:134
 #, python-format
 msgid "Thank you. Confirmation instructions have been sent to %(email)s."
-msgstr "Köszönjük, az emailcím visszaigazolásához az útmutatót elküldtük a %(email)s címre."
+msgstr ""
+"Köszönjük, az emailcím visszaigazolásához az útmutatót elküldtük a "
+"%(email)s címre."
 
 #: flask_security/core.py:138
 msgid "Thank you. Your email has been confirmed."
@@ -91,14 +92,7 @@ msgstr "Átirányítás a domain-en kívülre nem megengedett"
 #: flask_security/core.py:152
 #, python-format
 msgid "Instructions to reset your password have been sent to %(email)s."
-msgstr ""
-"A jelszó reset-eléséhez az útmutatót elküldtük a %(email)s címre."
-""
-
-#
-# translation to be continued
-#
-
+msgstr "A jelszó reset-eléséhez az útmutatót elküldtük a %(email)s címre."
 
 #: flask_security/core.py:155
 #, python-format
@@ -106,8 +100,8 @@ msgid ""
 "You did not reset your password within %(within)s. New instructions have "
 "been sent to %(email)s."
 msgstr ""
-"Das Passwort wurde nicht innerhalb von %(within)s zurückgesetzt. Eine neue "
-"Anleitung wurde an %(email)s gesendet."
+"Das Passwort wurde nicht innerhalb von %(within)s zurückgesetzt. Eine "
+"neue Anleitung wurde an %(email)s gesendet."
 
 #: flask_security/core.py:158
 msgid "Invalid reset password token."
@@ -334,3 +328,4 @@ msgstr "Hier klicken, um das Passwort zurückzusetzen"
 #: flask_security/templates/security/email/welcome.html:4
 msgid "You can confirm your email through the link below:"
 msgstr "Die E-Mail-Adresse kann über den Link unten bestätigt werden"
+

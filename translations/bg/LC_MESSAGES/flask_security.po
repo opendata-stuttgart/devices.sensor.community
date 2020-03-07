@@ -1,99 +1,93 @@
-# German translation for Flask-Security (Du/Sie distinction has been
-# avoided)
-# Copyright (C) 2017 ORGANIZATION
+# Translations template for Flask-Security.
+# Copyright (C) 2017 CERN
 # This file is distributed under the same license as the Flask-Security
 # project.
-# Ingo Kleiber <ingo@kleiber.me>, 2017,
-# Erich Seifert <dev@erichseifert.de>, 2017.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Flask-Security 2.0.1\n"
 "Report-Msgid-Bugs-To: info@inveniosoftware.org\n"
 "POT-Creation-Date: 2017-06-06 13:23+0200\n"
-"PO-Revision-Date: 2017-09-25 09:14+0200\n"
-"Last-Translator: Erich Seifert <dev@erichseifert.de>\n"
-"Language: de_DE\n"
-"Language-Team: de_DE <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.4.0\n"
 
 #: flask_security/core.py:99
 msgid "Login Required"
-msgstr "Anmeldung erforderlich"
+msgstr "Изисква се вход"
 
 #: flask_security/core.py:100
 msgid "Welcome"
-msgstr "Willkommen"
+msgstr "Добре дошли"
 
 #: flask_security/core.py:101
 msgid "Please confirm your email"
-msgstr "Bitte E-Mail-Adresse bestätigen"
+msgstr "Моля, потвърдете имейла си"
 
 #: flask_security/core.py:102
 msgid "Login instructions"
-msgstr "Anmeldeanleitung"
+msgstr "Инструкции за вход"
 
 #: flask_security/core.py:103
 #: flask_security/templates/security/email/reset_notice.html:1
 msgid "Your password has been reset"
-msgstr "Das Passwort wurde zurückgesetzt"
+msgstr "Вашата парола е нулирана"
 
 #: flask_security/core.py:104
 msgid "Your password has been changed"
-msgstr "Das Passwort wurde geändert"
+msgstr "Вашата парола е променена"
 
 #: flask_security/core.py:106
 msgid "Password reset instructions"
-msgstr "Anleitung zur Passwortwiederherstellung"
+msgstr "Инструкции за нулиране на парола"
 
 #: flask_security/core.py:132
 msgid "You do not have permission to view this resource."
-msgstr "Keine Berechtigung um diese Ressource zu sehen."
+msgstr "Нямате разрешение за преглед на този ресурс."
 
 #: flask_security/core.py:134
 #, python-format
 msgid "Thank you. Confirmation instructions have been sent to %(email)s."
-msgstr "Vielen Dank. Bestätigungsanleitung wurde an %(email)s gesendet."
+msgstr "Благодаря ви. Инструкциите за потвърждение бяха изпратени до %(email)."
 
 #: flask_security/core.py:138
 msgid "Thank you. Your email has been confirmed."
-msgstr "Vielen Dank. Die E-Mail-Adresse wurde bestätigt."
+msgstr "Благодаря ви. Вашият имейл е потвърден."
 
 #: flask_security/core.py:140
 msgid "Your email has already been confirmed."
-msgstr "Die E-Mail-Adresse wurde bereits bestätigt."
+msgstr "Вашият имейл вече е потвърден."
 
 #: flask_security/core.py:142
 msgid "Invalid confirmation token."
-msgstr "Ungültiger Bestätigungscode."
+msgstr "Невалиден код за потвърждение."
 
 #: flask_security/core.py:144
 #, python-format
 msgid "%(email)s is already associated with an account."
-msgstr "%(email)s ist bereits mit einem Konto verknüpft."
+msgstr "%(email)s вече е свързан с акаунт."
 
 #: flask_security/core.py:146
 msgid "Password does not match"
-msgstr "Das Passwort stimmt nicht überein"
+msgstr "Паролата не съвпада"
 
 #: flask_security/core.py:148
 msgid "Passwords do not match"
-msgstr "Die Passwörter stimmen nicht überein"
+msgstr "Паролите не съвпадат"
 
 #: flask_security/core.py:150
 msgid "Redirections outside the domain are forbidden"
-msgstr "Weiterleitungen außerhalb der Domain sind verboten"
+msgstr "Пренасочванията извън домейна са забранени"
 
 #: flask_security/core.py:152
 #, python-format
 msgid "Instructions to reset your password have been sent to %(email)s."
-msgstr ""
-"Eine Anleitung, um das Passwort wiederherzustellen wurde an %(email)s "
-"gesendet."
+msgstr "Инструкциите за нулиране на паролата ви бяха изпратени на %(email)s"
 
 #: flask_security/core.py:155
 #, python-format
@@ -101,21 +95,21 @@ msgid ""
 "You did not reset your password within %(within)s. New instructions have "
 "been sent to %(email)s."
 msgstr ""
-"Das Passwort wurde nicht innerhalb von %(within)s zurückgesetzt. Eine "
-"neue Anleitung wurde an %(email)s gesendet."
+"Не сте нулирали паролата си в рамките на % (within)s сек. Новите инструкции“
+"са изпратени на %(email)."
 
 #: flask_security/core.py:158
 msgid "Invalid reset password token."
-msgstr "Ungültiger Passwortwiederherstellungscode."
+msgstr "Невалиден знак за нулиране на паролата."
 
 #: flask_security/core.py:160
 msgid "Email requires confirmation."
-msgstr "Die E-Mail-Adresse muss bestätigt werden."
+msgstr "Имейлът изисква потвърждение."
 
 #: flask_security/core.py:162
 #, python-format
 msgid "Confirmation instructions have been sent to %(email)s."
-msgstr "Bestätigungsanleitung wurde an %(email)s gesendet."
+msgstr "Инструкции за потвърждение са изпратени на %(email)s"
 
 #: flask_security/core.py:164
 #, python-format
@@ -123,8 +117,8 @@ msgid ""
 "You did not confirm your email within %(within)s. New instructions to "
 "confirm your email have been sent to %(email)s."
 msgstr ""
-"Die E-Mail-Adresse wurden nicht innerhalb von %(within)s bestätigt. Neue "
-"Instruktionen wurden an %(email)s gesendet."
+"Не сте потвърдили имейла си в рамките на %(within)s сек. Нови инструкции “
+"за потвърждение на имейла ви са изпратени на %(email)s."
 
 #: flask_security/core.py:168
 #, python-format
@@ -132,200 +126,201 @@ msgid ""
 "You did not login within %(within)s. New instructions to login have been "
 "sent to %(email)s."
 msgstr ""
-"Die Anmeldung erfolgte nicht in %(within)s. Eine neue Anleitung wurde an "
-"%(email)s gesendet."
+"Не сте влезли в рамките на %(within)s сек. Нови инструкции за вход са“
+"изпратени на %(email)s."
 
 #: flask_security/core.py:171
 #, python-format
 msgid "Instructions to login have been sent to %(email)s."
-msgstr "Eine Anleitung zur Anmeldung wurde an %(email)s gesendet."
+msgstr "Инструкциите за влизане бяха изпратени на %(email)s."
 
 #: flask_security/core.py:173
 msgid "Invalid login token."
-msgstr "Ungültiger Anmeldecode."
+msgstr "Невалиден знак за вход."
 
 #: flask_security/core.py:175
 msgid "Account is disabled."
-msgstr "Konto ist deaktiviert."
+msgstr "Профилът е деактивиран"
 
 #: flask_security/core.py:177
 msgid "Email not provided"
-msgstr "Keine E-Mail-Adresse angegeben"
+msgstr "Имейлът не е предоставен"
 
 #: flask_security/core.py:179
 msgid "Invalid email address"
-msgstr "Ungültige E-Mail-Adresse"
+msgstr "Невалиден имейл адрес"
 
 #: flask_security/core.py:181
 msgid "Password not provided"
-msgstr "Kein Passwort angegeben"
+msgstr "Паролата не е предоставена"
 
 #: flask_security/core.py:183
 msgid "No password is set for this user"
-msgstr "Für diesen Benutzer ist kein Passwort gesetzt"
+msgstr "Не е зададена парола за този потребител"
 
 #: flask_security/core.py:185
 msgid "Password must be at least 6 characters"
-msgstr "Das Passwort muss mindestens 6 Zeichen lang sein"
+msgstr "Паролата трябва да е поне 6 знака"
 
 #: flask_security/core.py:187
 msgid "Specified user does not exist"
-msgstr "Angegebener Benutzer existiert nicht"
+msgstr "Посоченият потребител не съществува"
 
 #: flask_security/core.py:189
 msgid "Invalid password"
-msgstr "Ungültiges Passwort"
+msgstr "Невалидна парола"
 
 #: flask_security/core.py:191
 msgid "You have successfully logged in."
-msgstr "Die Anmeldung war erfolgreich."
+msgstr "Успешно сте влезли в системата"
 
 #: flask_security/core.py:193
 msgid "Forgot password?"
-msgstr "Passwort vergessen?"
+msgstr "Забравена парола?"
 
 #: flask_security/core.py:195
 msgid ""
 "You successfully reset your password and you have been logged in "
 "automatically."
 msgstr ""
-"Das Passwort wurde erfolgreich wiederhergestellt und die Anmeldung "
-"erfolgte automatisch."
+"Вие успешно нулирахте паролата си и автоматично сте влезли"
+"в профила си".
 
 #: flask_security/core.py:198
 msgid "Your new password must be different than your previous password."
-msgstr "Das neue Passwort muss sich vom vorherigen unterscheiden."
+msgstr "Вашата нова парола трябва да е различна от предишната ви парола."
 
 #: flask_security/core.py:201
 msgid "You successfully changed your password."
-msgstr "Das Passwort wurde erfolgreich geändert."
+msgstr "Успешно променихте паролата си."
 
 #: flask_security/core.py:203
 msgid "Please log in to access this page."
-msgstr "Bitte anmelden, um diese Seite zu sehen."
+msgstr "Моля, влезте, за да получите достъп до тази страница."
 
 #: flask_security/core.py:205
 msgid "Please reauthenticate to access this page."
-msgstr "Bitte neu authentifizieren, um auf diese Seite zuzugreifen."
+msgstr "Моля, потвърдете повторно достъпа до тази страница."
 
 #: flask_security/forms.py:30
 msgid "Email Address"
-msgstr "E-Mail-Adresse"
+msgstr "Имейл адрес"
 
 #: flask_security/forms.py:31
 msgid "Password"
-msgstr "Passwort"
+msgstr "Парола"
 
 #: flask_security/forms.py:32
 msgid "Remember Me"
-msgstr "Erinnern"
+msgstr "Запомни ме"
 
 #: flask_security/forms.py:33 flask_security/templates/security/_menu.html:4
 #: flask_security/templates/security/login_user.html:3
 #: flask_security/templates/security/send_login.html:3
 msgid "Login"
-msgstr "Anmelden"
+msgstr "Влизане"
 
 #: flask_security/forms.py:34 flask_security/templates/security/_menu.html:6
 #: flask_security/templates/security/register_user.html:3
 msgid "Register"
-msgstr "Registrieren"
+msgstr "Регистриране"
 
 #: flask_security/forms.py:35
 msgid "Resend Confirmation Instructions"
-msgstr "Bestätigungsanleitung neu senden"
+msgstr "Повторно изпращане на инструкции за потвърждение"
 
 #: flask_security/forms.py:36
 msgid "Recover Password"
-msgstr "Passwort wiederherstellen"
+msgstr "Възстановяване на парола"
 
 #: flask_security/forms.py:37
 msgid "Reset Password"
-msgstr "Passwort zurücksetzen"
+msgstr "Нулиране на парола"
 
 #: flask_security/forms.py:38
 msgid "Retype Password"
-msgstr "Passwort neu eingeben"
+msgstr "Повторете паролата"
 
 #: flask_security/forms.py:39
 msgid "New Password"
-msgstr "Neues Passwort"
+msgstr "Нова парола"
 
 #: flask_security/forms.py:40
 msgid "Change Password"
-msgstr "Passwort ändern"
+msgstr "Промяна на паролата"
 
 #: flask_security/forms.py:41
 msgid "Send Login Link"
-msgstr "Anmelde-Link versenden"
+msgstr "Изпращане на линк за вход"
 
 #: flask_security/templates/security/_menu.html:2
 msgid "Menu"
-msgstr "Menü"
+msgstr "Меню"
 
 #: flask_security/templates/security/_menu.html:9
 msgid "Forgot password"
-msgstr "Passwort vergessen"
+msgstr "Забравена парола"
 
 #: flask_security/templates/security/_menu.html:12
 msgid "Confirm account"
-msgstr "Konto bestätigen"
+msgstr "Потвърдете акаунта"
 
 #: flask_security/templates/security/change_password.html:3
 msgid "Change password"
-msgstr "Passwort ändern"
+msgstr "Промяна на парола"
 
 #: flask_security/templates/security/forgot_password.html:3
 msgid "Send password reset instructions"
-msgstr "Anleitung zur Passwortzurücksetzung versenden"
+msgstr "Изпращане на инструкции за нулиране на паролата"
 
 #: flask_security/templates/security/reset_password.html:3
 msgid "Reset password"
-msgstr "Passwort zurücksetzen"
+msgstr "Нулиране на парола"
 
 #: flask_security/templates/security/send_confirmation.html:3
 msgid "Resend confirmation instructions"
-msgstr "Bestätigungsanleitung erneut versenden"
+msgstr "Повторно изпращане на инструкции за потвърждение"
 
 #: flask_security/templates/security/email/change_notice.html:1
 msgid "Your password has been changed."
-msgstr "Das Passwort wurde geändert."
+msgstr "Вашата парола е променена."
 
 #: flask_security/templates/security/email/change_notice.html:3
 msgid "If you did not change your password,"
-msgstr "Falls das Passwort nicht geändert wurde"
+msgstr "Ако не сте променили паролата си,"
 
 #: flask_security/templates/security/email/change_notice.html:3
 msgid "click here to reset it"
-msgstr "hier klicken, um es zurückzusetzen"
+msgstr "щракнете тук, за да я нулирате"
 
 #: flask_security/templates/security/email/confirmation_instructions.html:1
 msgid "Please confirm your email through the link below:"
-msgstr "Bitte die E-Mail-Adresse durch den Link unten bestätigen:"
+msgstr "Моля, потвърдете имейла си чрез връзката по-долу:"
 
 #: flask_security/templates/security/email/confirmation_instructions.html:3
 #: flask_security/templates/security/email/welcome.html:6
 msgid "Confirm my account"
-msgstr "Das Konto bestätigen"
+msgstr "Потвърдете акаунта ми"
 
 #: flask_security/templates/security/email/login_instructions.html:1
 #: flask_security/templates/security/email/welcome.html:1
 #, python-format
 msgid "Welcome %(email)s!"
-msgstr "Willkommen %(email)s!"
+msgstr "Добре дошли %(email)s!"
 
 #: flask_security/templates/security/email/login_instructions.html:3
 msgid "You can log into your account through the link below:"
-msgstr "Die Anmeldung kann über den Link unten erfolgen:"
+msgstr "Можете да влезете в акаунта си чрез връзката по-долу:"
 
 #: flask_security/templates/security/email/login_instructions.html:5
 msgid "Login now"
-msgstr "Jetzt anmelden"
+msgstr "Влез сега"
 
 #: flask_security/templates/security/email/reset_instructions.html:1
 msgid "Click here to reset your password"
-msgstr "Hier klicken, um das Passwort zurückzusetzen"
+msgstr "Щракнете тук, за да нулирате паролата си"
 
 #: flask_security/templates/security/email/welcome.html:4
 msgid "You can confirm your email through the link below:"
-msgstr "Die E-Mail-Adresse kann über den Link unten bestätigt werden"
+msgstr "Можете да потвърдите имейла си чрез връзката по-долу:"
+
