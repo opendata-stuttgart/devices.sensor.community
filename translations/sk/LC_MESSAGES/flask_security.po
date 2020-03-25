@@ -1,0 +1,326 @@
+# Translations template for Flask-Security.
+# Copyright (C) 2017 CERN
+# This file is distributed under the same license as the Flask-Security
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Flask-Security 2.0.1\n"
+"Report-Msgid-Bugs-To: info@inveniosoftware.org\n"
+"POT-Creation-Date: 2017-06-06 13:23+0200\n"
+"PO-Revision-Date: 2020-03-25 19:22+0100\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.4.0\n"
+"X-Generator: Poedit 2.3\n"
+"Last-Translator: LadislavM <ladislavm@gmail.com>\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"Language: sk\n"
+
+#: flask_security/core.py:99
+msgid "Login Required"
+msgstr "Je potrebné sa prihlásiť"
+
+#: flask_security/core.py:100
+msgid "Welcome"
+msgstr "Vitajte"
+
+#: flask_security/core.py:101
+msgid "Please confirm your email"
+msgstr "Potvrďte prosím svoj e-mail"
+
+#: flask_security/core.py:102
+msgid "Login instructions"
+msgstr "Prihlasovacie inštrukcie"
+
+#: flask_security/core.py:103
+#: flask_security/templates/security/email/reset_notice.html:1
+msgid "Your password has been reset"
+msgstr "Vaše heslo bolo resetované"
+
+#: flask_security/core.py:104
+msgid "Your password has been changed"
+msgstr "Vaše heslo bolo zmenené"
+
+#: flask_security/core.py:106
+msgid "Password reset instructions"
+msgstr "Pokyny na obnovenie hesla"
+
+#: flask_security/core.py:132
+msgid "You do not have permission to view this resource."
+msgstr "Nemáte oprávnenie na zobrazenie tohto prostriedku."
+
+#: flask_security/core.py:134
+#, python-format
+msgid "Thank you. Confirmation instructions have been sent to %(email)s."
+msgstr "Ďakujeme. Pokyny na potvrdenie boli odoslané na %(email)s."
+
+#: flask_security/core.py:138
+msgid "Thank you. Your email has been confirmed."
+msgstr "Ďakujeme. Vaš e-mail bol potvrdený."
+
+#: flask_security/core.py:140
+msgid "Your email has already been confirmed."
+msgstr "Váš e-mail už bol potvrdený."
+
+#: flask_security/core.py:142
+msgid "Invalid confirmation token."
+msgstr "Neplatný potvrdzovací token."
+
+#: flask_security/core.py:144
+#, python-format
+msgid "%(email)s is already associated with an account."
+msgstr "%(email)s je už spojený s účtom."
+
+#: flask_security/core.py:146
+msgid "Password does not match"
+msgstr "Heslo sa nezhoduje"
+
+#: flask_security/core.py:148
+msgid "Passwords do not match"
+msgstr "Heslá sa nezhodujú"
+
+#: flask_security/core.py:150
+msgid "Redirections outside the domain are forbidden"
+msgstr "Presmerovania mimo domény sú zakázané"
+
+#: flask_security/core.py:152
+#, python-format
+msgid "Instructions to reset your password have been sent to %(email)s."
+msgstr "Pokyny na obnovenie hesla boli odoslané na %(email)s."
+
+#: flask_security/core.py:155
+#, python-format
+msgid ""
+"You did not reset your password within %(within)s. New instructions have "
+"been sent to %(email)s."
+msgstr ""
+"Neobnovili ste heslo pre %(within)s. Nové pokyny boli odoslané na "
+"%(email)s."
+
+#: flask_security/core.py:158
+msgid "Invalid reset password token."
+msgstr "Neplatný token pre obnovenia hesla."
+
+#: flask_security/core.py:160
+msgid "Email requires confirmation."
+msgstr "E-mail vyžaduje overenie."
+
+#: flask_security/core.py:162
+#, python-format
+msgid "Confirmation instructions have been sent to %(email)s."
+msgstr "Pokyny na potvrdenie boli odoslané na adresu %(email)s."
+
+#: flask_security/core.py:164
+#, python-format
+msgid ""
+"You did not confirm your email within %(within)s. New instructions to "
+"confirm your email have been sent to %(email)s."
+msgstr ""
+"Nepotvrdili ste svoj e-mail %(within)s. Nové pokyny na potvrdenie e-mailu "
+"boli odoslané na %(email)s."
+
+#: flask_security/core.py:168
+#, python-format
+msgid ""
+"You did not login within %(within)s. New instructions to login have been "
+"sent to %(email)s."
+msgstr ""
+"Neprihlásili ste sa s %(within)s. Nové pokyny na prihlásenie boli "
+"odoslané na %(email)s."
+
+#: flask_security/core.py:171
+#, python-format
+msgid "Instructions to login have been sent to %(email)s."
+msgstr "Pokyny na prihlásenie boli zaslané na %(email)s."
+
+#: flask_security/core.py:173
+msgid "Invalid login token."
+msgstr "Chybný prihlasovací token."
+
+#: flask_security/core.py:175
+msgid "Account is disabled."
+msgstr "Účet je zablokovaný."
+
+#: flask_security/core.py:177
+msgid "Email not provided"
+msgstr "E-mail nebol poskytnutý"
+
+#: flask_security/core.py:179
+msgid "Invalid email address"
+msgstr "Nesprávna e-mailová adresa"
+
+#: flask_security/core.py:181
+msgid "Password not provided"
+msgstr "Heslo nebolo poskytnuté"
+
+#: flask_security/core.py:183
+msgid "No password is set for this user"
+msgstr "Pre tohoto používateľa nie je nastavené heslo"
+
+#: flask_security/core.py:185
+msgid "Password must be at least 6 characters"
+msgstr "Heslo musí mať aspoň 6 znakov"
+
+#: flask_security/core.py:187
+msgid "Specified user does not exist"
+msgstr "Zadaný používateľ neexistuje"
+
+#: flask_security/core.py:189
+msgid "Invalid password"
+msgstr "Chybné heslo"
+
+#: flask_security/core.py:191
+msgid "You have successfully logged in."
+msgstr "Úspešne ste sa prihlásili."
+
+#: flask_security/core.py:193
+msgid "Forgot password?"
+msgstr "Zabudnuté heslo?"
+
+#: flask_security/core.py:195
+msgid ""
+"You successfully reset your password and you have been logged in "
+"automatically."
+msgstr "Úspešne ste obnovili svoje heslo a automaticky ste sa prihlásili."
+
+#: flask_security/core.py:198
+msgid "Your new password must be different than your previous password."
+msgstr "Vaše nové heslo musí byť iné, ako predchádzajúce heslo."
+
+#: flask_security/core.py:201
+msgid "You successfully changed your password."
+msgstr "Úspešne ste zmenili svoje heslo."
+
+#: flask_security/core.py:203
+msgid "Please log in to access this page."
+msgstr "Pre prístup k tejto stránke je potrebné, aby ste sa prihlásili."
+
+#: flask_security/core.py:205
+msgid "Please reauthenticate to access this page."
+msgstr "Pre prístupu na túto stránku sa opäť prihláste."
+
+#: flask_security/forms.py:30
+msgid "Email Address"
+msgstr "E-mailová adresa"
+
+#: flask_security/forms.py:31
+msgid "Password"
+msgstr "Heslo"
+
+#: flask_security/forms.py:32
+msgid "Remember Me"
+msgstr "Zapamätať si ma"
+
+#: flask_security/forms.py:33 flask_security/templates/security/_menu.html:4
+#: flask_security/templates/security/login_user.html:3
+#: flask_security/templates/security/send_login.html:3
+msgid "Login"
+msgstr "Prihlásenie"
+
+#: flask_security/forms.py:34 flask_security/templates/security/_menu.html:6
+#: flask_security/templates/security/register_user.html:3
+msgid "Register"
+msgstr "Registrácia"
+
+#: flask_security/forms.py:35
+msgid "Resend Confirmation Instructions"
+msgstr "Znovu odoslať pokyny na potvrdenie"
+
+#: flask_security/forms.py:36
+msgid "Recover Password"
+msgstr "Obnoviť heslo"
+
+#: flask_security/forms.py:37
+msgid "Reset Password"
+msgstr "Resetovať heslo"
+
+#: flask_security/forms.py:38
+msgid "Retype Password"
+msgstr "Opäť zadajte heslo"
+
+#: flask_security/forms.py:39
+msgid "New Password"
+msgstr "Nové heslo"
+
+#: flask_security/forms.py:40
+msgid "Change Password"
+msgstr "Zmeniť heslo"
+
+#: flask_security/forms.py:41
+msgid "Send Login Link"
+msgstr "Poslať odkaz na prihlásenie"
+
+#: flask_security/templates/security/_menu.html:2
+msgid "Menu"
+msgstr "Menu"
+
+#: flask_security/templates/security/_menu.html:9
+msgid "Forgot password"
+msgstr "Zabudnuté heslo"
+
+#: flask_security/templates/security/_menu.html:12
+msgid "Confirm account"
+msgstr "Potvrďte účet"
+
+#: flask_security/templates/security/change_password.html:3
+msgid "Change password"
+msgstr "Zmeniť heslo"
+
+#: flask_security/templates/security/forgot_password.html:3
+msgid "Send password reset instructions"
+msgstr "Odoslať pokyny na obnovenie hesla"
+
+#: flask_security/templates/security/reset_password.html:3
+msgid "Reset password"
+msgstr "Resetovať heslo"
+
+#: flask_security/templates/security/send_confirmation.html:3
+msgid "Resend confirmation instructions"
+msgstr "Znovu odoslať pokyny na potvrdenie"
+
+#: flask_security/templates/security/email/change_notice.html:1
+msgid "Your password has been changed."
+msgstr "Vaše heslo bolo zmenené."
+
+#: flask_security/templates/security/email/change_notice.html:3
+msgid "If you did not change your password,"
+msgstr "Ak ste svoje heslo nezmenili,"
+
+#: flask_security/templates/security/email/change_notice.html:3
+msgid "click here to reset it"
+msgstr "pre resetovanie kliknite tu"
+
+#: flask_security/templates/security/email/confirmation_instructions.html:1
+msgid "Please confirm your email through the link below:"
+msgstr "Prosím, potvrďte svoj e-mail pomocou odkazu nižšie:"
+
+#: flask_security/templates/security/email/confirmation_instructions.html:3
+#: flask_security/templates/security/email/welcome.html:6
+msgid "Confirm my account"
+msgstr "Potvrdiť môj účet"
+
+#: flask_security/templates/security/email/login_instructions.html:1
+#: flask_security/templates/security/email/welcome.html:1
+#, python-format
+msgid "Welcome %(email)s!"
+msgstr "Vitajte %(email)s!"
+
+#: flask_security/templates/security/email/login_instructions.html:3
+msgid "You can log into your account through the link below:"
+msgstr "Do svojho účtu sa môžete prihlásiť pomocou odkazu nižšie:"
+
+#: flask_security/templates/security/email/login_instructions.html:5
+msgid "Login now"
+msgstr "Prihlásiť sa"
+
+#: flask_security/templates/security/email/reset_instructions.html:1
+msgid "Click here to reset your password"
+msgstr "Pre resetovanie hesla kliknite tu"
+
+#: flask_security/templates/security/email/welcome.html:4
+msgid "You can confirm your email through the link below:"
+msgstr "Váš e-mail môžete potvrdiť pomocou odkazu nižšie:"
