@@ -17,7 +17,7 @@ msgstr ""
 "X-Generator: Poedit 2.3\n"
 "Last-Translator: LadislavM <ladislavm@gmail.com>\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
-"Language: sk\n"
+"Language: sk_SK\n"
 
 #: webapp/personal/forms.py:39
 msgid "Indoor Sensor"
