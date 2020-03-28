@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2019-10-06 22:07+0000\n"
-"PO-Revision-Date: 2020-03-26 00:10+0100\n"
+"PO-Revision-Date: 2020-03-28 22:26+0100\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.6.0\n"
 "X-Generator: Poedit 2.3\n"
-"Last-Translator: LadislavM <ladislavm@gmail.com>\n"
+"Last-Translator: Ladislav <ladislav@ruzomberok.eu>\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
 "Language: sk_SK\n"
 
@@ -130,7 +130,7 @@ msgstr "Typ senzora"
 
 #: webapp/personal/forms.py:135
 msgid "Personal sensor name"
-msgstr "Osobné názov senzora"
+msgstr "Váše pomenovanie senzora"
 
 #: webapp/personal/forms.py:138
 msgid "Please enter the sensor name."
@@ -169,7 +169,7 @@ msgstr "Zverejniť presnú polohu"
 
 #: webapp/personal/forms.py:165
 msgid "Reveal exact sensor location in public data and archives."
-msgstr "Zverejniť presné umiestnenie senzora vo verejných datách a archívoch."
+msgstr "Zverejniť presnú polohu senzora vo verejných datách a archívoch."
 
 #: webapp/personal/forms.py:168
 msgid "Inactive"
@@ -213,9 +213,9 @@ msgid ""
 "Smogomierz sensor version need to change this accordingly. Also in these "
 "cases the Sensor ID is the numeric part of the name only."
 msgstr ""
-"Normálne by to malo byť esp8266. Používatelia ESP32, RaspberryPi, alebo "
+"Zvyčajne by to malo byť esp8266. Používatelia ESP32, RaspberryPi, alebo "
 "Smogomierz to musia zmeniť zodpovedajúcim spôsobom. Aj v týchto prípadoch je "
-"ID senzora iba číselná časť názvu."
+"ID senzora len číselná časť názvu."
 
 #: webapp/personal/forms.py:196
 msgid "Recipient's e-mail address"
@@ -263,43 +263,43 @@ msgstr "Tlak na hladine mora"
 
 #: webapp/personal/views.py:64
 msgid "particulate matter sensor SDS011"
-msgstr "snímač pevných znečisťujúcich látok SDS011"
+msgstr "senzor pevných znečisťujúcich látok SDS011"
 
 #: webapp/personal/views.py:66
 msgid "particulate matter sensor PMS1003"
-msgstr "snímač pevných znečisťujúcich látok PMS1003"
+msgstr "senzor pevných znečisťujúcich látok PMS1003"
 
 #: webapp/personal/views.py:68
 msgid "particulate matter sensor PMS3003"
-msgstr "snímač pevných znečisťujúcich látok PMS3003"
+msgstr "senzor pevných znečisťujúcich látok PMS3003"
 
 #: webapp/personal/views.py:70
 msgid "particulate matter sensor PMS5003"
-msgstr "snímač pevných znečisťujúcich látok PMS5003"
+msgstr "senzor pevných znečisťujúcich látok PMS5003"
 
 #: webapp/personal/views.py:72
 msgid "particulate matter sensor PMS6003"
-msgstr "snímač pevných znečisťujúcich látok PMS6003"
+msgstr "senzor pevných znečisťujúcich látok PMS6003"
 
 #: webapp/personal/views.py:74
 msgid "particulate matter sensor PMS7003"
-msgstr "snímač pevných znečisťujúcich látok PMS7003"
+msgstr "senzor pevných znečisťujúcich látok PMS7003"
 
 #: webapp/personal/views.py:76
 msgid "temperature/humidity sensor DHT22"
-msgstr "snímač teploty / vlhkosti DHT22"
+msgstr "senzor teploty / vlhkosti DHT22"
 
 #: webapp/personal/views.py:78
 msgid "temperature/pressure sensor BMP180"
-msgstr "snímač teploty / tlaku BMP180"
+msgstr "senzor teploty / tlaku BMP180"
 
 #: webapp/personal/views.py:80
 msgid "temperature/pressure sensor BMP280"
-msgstr "snímač teploty / tlaku BMP280"
+msgstr "senzor teploty / tlaku BMP280"
 
 #: webapp/personal/views.py:82
 msgid "temperature/humidity/pressure sensor BME280"
-msgstr "snímač teploty / vlhkosti / tlaku BME280"
+msgstr "senzor teploty / vlhkosti / tlaku BME280"
 
 #: webapp/personal/views.py:140
 msgid "Settings saved successfully."
@@ -315,7 +315,7 @@ msgstr "Toto ID senzora je už zaregistrované."
 
 #: webapp/personal/views.py:186
 msgid "A fine dust sensor was transferred to you"
-msgstr "Bol vám prenesený senzor prachových časťíc"
+msgstr "Bol vám prenesený senzor prachových častíc"
 
 #: webapp/templates/401.html:8
 msgid "Access prohibited"
@@ -331,7 +331,7 @@ msgstr "musíte sa najskôr prihlásiť?"
 
 #: webapp/templates/imprint.html:8 webapp/templates/layout.html:110
 msgid "Imprint"
-msgstr "Odtlačok"
+msgstr "Tiráž"
 
 #: webapp/templates/imprint.html:14
 msgid "Informations according to § 5 TMG"
@@ -339,7 +339,7 @@ msgstr "Informácie podľa § 5 TMG"
 
 #: webapp/templates/imprint.html:21
 msgid "Represented by:"
-msgstr "Reprezentovaný:"
+msgstr "Zastúpený:"
 
 #: webapp/templates/imprint.html:26
 msgid "Contact:"
@@ -347,7 +347,7 @@ msgstr "Kontakt:"
 
 #: webapp/templates/imprint.html:32
 msgid "based on the concept and software development of Ernesto Ruge:"
-msgstr "na základe konceptu a vývoja softvéru od Ernesto Ruge:"
+msgstr "založený na koncepte a vývoji softvéru od Ernesto Ruge:"
 
 #: webapp/templates/imprint.html:34
 msgid "Contact: Website of Ernesto Ruge:"
@@ -355,7 +355,7 @@ msgstr "Kontakt: Webová stránka Ernesto Ruge:"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
 msgid "Donate for Luftdaten.info (Hardware, Software) now on Betterplace.org"
-msgstr "Prispejte Luftdaten.info (hardvér, softvér) teraz na Betterplace.org"
+msgstr "Podporte Luftdaten.info (hardvér, softvér) na Betterplace.org"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
 msgid "Donate for<br>Luftdaten.info<br>now on<br><span>Betterplace.org</span>"
@@ -364,7 +364,7 @@ msgstr ""
 
 #: webapp/templates/index.html:9 webapp/templates/register-minimal.html:13
 msgid "Configure air quality sensor yourself"
-msgstr "Nakonfigurujte si sami snímač kvality vzduchu"
+msgstr "Nakonfigurujte si sami senzor kvality vzduchu"
 
 #: webapp/templates/index.html:17
 msgid "Configure Luftdaten"
@@ -381,7 +381,7 @@ msgstr ""
 #: webapp/templates/index.html:19
 #, python-format
 msgid "Click here to <a href=\"%(login_url)s\">log in</a>."
-msgstr "Kliknite tu pre <a href=\"%(login_url)s\">prihlásenie</a> ."
+msgstr "Kliknite tu pre <a href=\"%(login_url)s\">prihlásenie</a>."
 
 #: webapp/templates/index.html:21
 #, python-format
@@ -391,11 +391,11 @@ msgid ""
 "            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
 "dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
-"Všeobecné informácie nájdete na <a href=\"%(home_url)s\">luftdaten.info</"
-"a> , ako aj <a href=\"%(manual_url)s\">návod na postavenie</a> . \n"
+"Všeobecné informácie nájdete na <a href=\"%(home_url)s\">luftdaten.info</a> "
+"spolu s <a href=\"%(manual_url)s\">návodom na postavenie</a>. \n"
 "Údaje zo senzoru nájdete na <a href=\"%(map_url)s\">mape prachových častíc,</"
 "a> alebo si <a href=\"%(archive_url)s\">ich môžete stiahnuť vo formáte CSV</"
-"a> ."
+"a>."
 
 #: webapp/templates/index.html:33
 msgid "Join us!"
@@ -423,7 +423,8 @@ msgid ""
 msgstr ""
 "OK Lab Stuttgart je súčasťou programu Code for Germany of the Open Knowledge "
 "Foundation Germany. Cieľom programu je podpora rozvoja v oblasti "
-"transparentnosti, otvorených údajov a občianskych vied."
+"transparentnosti, otvorených dát (Open Data) a občianskych výskumných "
+"aktivít."
 
 #: webapp/templates/index.html:38
 msgid ""
@@ -432,10 +433,9 @@ msgid ""
 "support society and make the work of administrations and authorities more "
 "transparent."
 msgstr ""
-"V laboratóriách sa pravidelne stretávajú regionálne skupiny pozostávajúce z "
-"dizajnérov, vývojárov, novinárov a ďalších. Vyvíjajú aplikácie, ktoré "
-"informujú, pozitívne formujú a robia prácu úradov a správnych orgánov viac "
-"transparentnú."
+"V Labs sa pravidelne stretávajú regionálne skupiny vývojárov, dizajnérov, "
+"novinárov a ďalších. Vyvíjajú aplikácie, ktoré informujú, pozitívne formujú "
+"a robia prácu úradov a správnych orgánov viac transparentnú."
 
 #: webapp/templates/index.html:39
 msgid "Code a difference: Use your skills to improve your city!"
@@ -615,7 +615,7 @@ msgid ""
 "him or her."
 msgstr ""
 "Toto vám umožní preniesť senzory na inú osobu. Je to veľmi užitočné, ak ste "
-"si objednali snímač pre priateľa a chcete ho preniesť na neho."
+"si objednali senzor pre priateľa a chcete ho preniesť na neho."
 
 #: webapp/templates/my-sensor-give.html:10
 msgid "Warning! After the transfer you have no more control over the sensor!"
@@ -668,7 +668,7 @@ msgstr "Dáta"
 
 #: webapp/templates/my-sensors.html:31
 msgid "Hand over sensor"
-msgstr "Preniesť snímač"
+msgstr "Preniesť senzor"
 
 #: webapp/templates/my-sensors.html:35
 msgid "No sensors found"
@@ -772,7 +772,7 @@ msgstr ""
 "p>\n"
 "                    <h2> Informácie, výmaz, blokovanie </h2>\n"
 "                    <p> Máte právo kedykoľvek bezplatne získať informácie o "
-"svojich uložených osobných údajoch, ich pôvode a príjemcovi a účelu "
+"svojich uložených osobných údajoch, ich pôvode, príjemcovi a účele "
 "spracovania údajov, ako aj právo na opravu, zablokovanie alebo vymazanie "
 "týchto údajov. V prípade akýchkoľvek ďalších otázok týkajúcich sa osobných "
 "údajov nás môžete kedykoľvek kontaktovať na adrese uvedenej v tiráži. </p>\n"
@@ -789,11 +789,11 @@ msgstr ""
 "                    \n"
 "                    <h2> Údaje o účte a senzore </h2>\n"
 "                    <p> Namerané údaje senzorov sa zhromažďujú na serveri "
-"luftdaten.info a sú verejne prístupné spoločnosti. Budú uverejnené "
+"luftdaten.info a sú verejne prístupné návštevníkom. Budú uverejnené "
 "nasledujúce informácie: </p>\n"
 "                    <ul>\n"
 "                        <li> Anonymizovaná geopozícia (zemepisná šírka a "
-"dĺžka) zaokrúhlené na približne. 100 m. </li>\n"
+"dĺžka) zaokrúhlené na približne 100 m. </li>\n"
 "                        <li> ID vášho zariadenia NodeMCU ESP8266 </li>\n"
 "                        <li> Daný číselný popis prostredia </li>\n"
 "                        <li> Výška senzora </li>\n"
@@ -813,7 +813,7 @@ msgstr ""
 "                    <ul>\n"
 "                        <li> Typ prehliadača / verzia prehliadača </li>\n"
 "                        <li> použitý operačný systém </li>\n"
-"                        <li> Adresa URL sprostredkovateľa </li>\n"
+"                        <li> URL adresa sprostredkovateľa </li>\n"
 "                        <li> Názov hostiteľa pristupujúceho počítača </li>\n"
 "                        <li> Čas požiadavky servera </li>\n"
 "                    </ul>\n"
@@ -823,11 +823,11 @@ msgstr ""
 "použitia.</p>\n"
 "                    <h2> Nevyžiadané reklamné maily </h2>\n"
 "                    <p> Týmto namietame proti použitiu kontaktných údajov "
-"zverejnených v rámci rozsahu imprintovej povinnosti na zasielanie "
-"nevyžiadaných reklamných a informačných materiálov. Prevádzkovatelia tejto "
-"webovej stránky si výslovne vyhradzujú právo podniknúť právne kroky proti "
-"nevyžiadanej pošte alebo e-mailom nevyžiadanej pošty a iných podobných "
-"reklamných materiálov. </p>\n"
+"zverejnených v rámci zákonnej povinnosti na zasielanie nevyžiadaných "
+"reklamných a informačných materiálov. Prevádzkovatelia tejto webovej stránky "
+"si výslovne vyhradzujú právo podniknúť právne kroky proti nevyžiadanej pošte "
+"alebo e-mailom nevyžiadanej pošty a iných, podobných reklamných materiálov. "
+"</p>\n"
 "                    "
 
 #: webapp/templates/recover-fail.html:13
@@ -961,8 +961,8 @@ msgid ""
 "the map below."
 msgstr ""
 "Čím presnejšie údaje máme, tým lepšie ich môžeme vyhodnotiť a tak posilniť "
-"vyhlásenia. Systém sa môže pokúsiť urobiť geolokáciu zo zadanej adresy, ale "
-"boli by sme radi, keby ste určili polohu pomocou mapy nižšie."
+"ich výpovednú hodnotu. Systém sa môže pokúsiť urobiť geolokáciu zo zadanej "
+"adresy, ale boli by sme radi, keby ste určili polohu pomocou mapy nižšie."
 
 #: webapp/templates/sensor-settings-form.html:89
 msgid "Lookup entered address"
@@ -1018,7 +1018,7 @@ msgid ""
 "a particulate matter sensor has been handed over to your control. Please log "
 "in with this mail address to take data and settings or to change them: "
 msgstr ""
-"snímač pevných znečisťujúcich látok bol prenesený pod vašu správu. Prosím, "
+"senzor pevných znečisťujúcich látok bol prenesený pod vašu správu. Prosím, "
 "prihláste sa pomocou tejto e-mailovej adresy, aby ste mohli upravovať "
 "nastavenia a prijímať dáta: "
 
@@ -1027,7 +1027,7 @@ msgid ""
 "If you have received a sensor by mistake, please report this at "
 "info@luftdaten.info."
 msgstr ""
-"Ak ste omylom dostali snímač, prosím, nahláste to na adresu info@luftdaten."
+"Ak ste omylom dostali senzor, prosím, nahláste to na adresu info@luftdaten."
 "info."
 
 #: webapp/templates/emails/sensor-registered.html:13
@@ -1149,7 +1149,7 @@ msgstr "Priezvisko"
 
 #: webapp/users/forms.py:120
 msgid "Save user data."
-msgstr "Uložiť údaje použivateľa."
+msgstr "Uložiť údaje používateľa."
 
 #: webapp/users/forms.py:124
 msgid "Old Password"
@@ -1165,4 +1165,4 @@ msgstr "Nové heslo (zopakujte)"
 
 #: webapp/users/views.py:38
 msgid "User data saved."
-msgstr "Údaje použivateľa uložené."
+msgstr "Údaje používateľa uložené."
