@@ -352,11 +352,11 @@ msgstr "Контакты: веб страница Ernesto Ruge:"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
 msgid "Donate for Luftdaten.info (Hardware, Software) now on Betterplace.org"
-msgstr ""
+msgstr "Поддержать проект sensor.community на сервисе Betterplace.org"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
 msgid "Donate for<br>Luftdaten.info<br>now on<br><span>Betterplace.org</span>"
-msgstr ""
+msgstr "Поддержать проект <br>sensor.community<br> на сервисе <br><span>Betterplace.org</span>"
 
 #: webapp/templates/index.html:9 webapp/templates/register-minimal.html:13
 msgid "Configure air quality sensor yourself"
@@ -364,15 +364,15 @@ msgstr "Настрой свой сенсор"
 
 #: webapp/templates/index.html:17
 msgid "Configure Luftdaten"
-msgstr "Настроить свой сенсор"
+msgstr "Зарегистрируй свой сенсор!"
 
 #: webapp/templates/index.html:18
 msgid ""
 "The main purpose of this page is to enable you, as the owner of a fine "
 "dust sensor, to configure the location and other parameters yourself."
 msgstr ""
-"Основная цель этой страницы - дать вам, владельцу датчика, возможность "
-"самостоятельно настраивать его параметры."
+"Основная цель этой страницы - предоставить владельцу датчика возможность "
+"зарегистрировать его адрес установки для отображения на карте."
 
 #: webapp/templates/index.html:19
 #, python-format
@@ -389,10 +389,10 @@ msgid ""
 "dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
 "Общую информацию можно найти на сайте <a "
-"href=\"%(home_url)s\">luftdaten.info</a>, а также <a "
+"href=\"%(home_url)s\">sensor.community</a>, а также <a "
 "href=\"%(manual_url)s\">инструкции по сборке</a>.\n"
-"            Данные сенсоров можно найти<a href=\"%(map_url)s\">на карте "
-"мелкодисперсных частиц</a> или <a href=\"%(archive_url)s\">загрузить в "
+"            Данные сенсоров можно найти <a href=\"%(map_url)s\">на карте "
+</a> или <a href=\"%(archive_url)s\">загрузить в "
 "формате CSV</a>."
 
 #: webapp/templates/index.html:33
@@ -405,7 +405,7 @@ msgid ""
 "Maker Movement and Citizen Science are leading to more and more people "
 "being given the opportunity to design the city themselves."
 msgstr ""
-"Города будущего должны принадлежать самим жителям.Новые информационные "
+"Города будущего должны принадлежать самим жителям. Новые информационные "
 "технологии доступные для самостоятельного использования и изготовления и "
 "гражданская наука позволяют вовлекать все больше и больше людей в жизнь "
 "города с тем, чтобы сделать ее лучше."
@@ -517,7 +517,7 @@ msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:11
 msgid "Meine Luftdaten"
-msgstr "Мой luftdaten.info"
+msgstr "Мой sensor.community"
 
 #: webapp/templates/meine-luftdaten.html:11
 msgid "Your personal area."
