@@ -392,7 +392,7 @@ msgstr ""
 "href=\"%(home_url)s\">sensor.community</a>, а также <a "
 "href=\"%(manual_url)s\">инструкции по сборке</a>.\n"
 "            Данные сенсоров можно найти <a href=\"%(map_url)s\">на карте "
-</a> или <a href=\"%(archive_url)s\">загрузить в "
+"</a> или <a href=\"%(archive_url)s\">загрузить в "
 "формате CSV</a>."
 
 #: webapp/templates/index.html:33

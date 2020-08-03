@@ -38,7 +38,6 @@ VALUE_TYPES = {
     'pressure_at_sealevel': ('Pa', _('Pressure at sea level')),
 }
 
-
 @personal.route('/meine-luftdaten')
 @personal.route('/dashboard')
 @login_required

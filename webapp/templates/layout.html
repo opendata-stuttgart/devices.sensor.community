@@ -78,7 +78,7 @@
                             {{ config['LANGUAGES'].get(current_language) }}
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            {% for code, name in config['LANGUAGES'].items() %}
+                            {% for code, name in config['LANGUAGES'].items()|sort() %}
                             <a class="dropdown-item{% if current_language == code %} active{% endif %}" href="?lang={{ code }}">{{ name }}</a>
                             {% endfor %}
                         </div>

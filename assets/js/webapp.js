@@ -13,12 +13,13 @@ $( document ).ready(function() {
 
       L.Icon.Default.imagePath = '/static/images/leaflet/';
         var map = L.map('sensor-settings-map', {center: mapCenter, zoom: luftdaten_storage.default_zoom});
-        L.tileLayer('https://maps.sensor.community/tiles/{z}/{x}/{y}.png', {
+        L.tileLayer('https://{s}.maps.sensor.community/{z}/{x}/{y}.png', {
             maxZoom: 18,
             attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
             '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
             id: 'examples.map-i875mjb7',
-            noWrap: true
+            noWrap: true,
+            subdomains: ["osmc1","osmc2","osmc3"]
         }).addTo(map);
         var marker = L.marker(mapCenter).addTo(map);
         var updateMarker = function (lat, lng) {
