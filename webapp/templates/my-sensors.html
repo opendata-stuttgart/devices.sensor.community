@@ -24,7 +24,7 @@
                 <td>{{ node.id }}</td>
                 <td class="hidden-sm-down">{{ node.uid }}</td>
                 <td>{{ node.name }}</td>
-                <td class="hidden-md-down">{{ node.created }} <br />{{ node.modified }}</td>
+                <td class="hidden-md-down">{{ node.created }} UTC <br />{{ node.modified }} UTC</td>
                 <td class="text-right">
                     <a class="btn btn-sm btn-info" href="{{ url_for('personal.sensor_data', id=node.id) }}">{{ _('Data') }}</a>
                     <a class="btn btn-sm btn-primary" href="{{ url_for('personal.sensor_settings', id=node.id) }}">{{ _('Settings') }} </a>
