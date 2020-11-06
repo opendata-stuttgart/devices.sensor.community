@@ -14,7 +14,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 import os
 
 PROJECT_NAME = "luftdaten"
-PROJECT_URL = 'https://meine.luftdaten.info'
+PROJECT_URL = 'https://devices.sensor.community'
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 PROJECT_VERSION = '0.1.0'
 LOG_DIR = os.path.abspath(os.path.join(PROJECT_ROOT, os.pardir, 'logs'))
@@ -26,7 +26,7 @@ ADMINS = ['david.lackovic@me.com']
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 SQLALCHEMY_ECHO = False
 
-MAIL_DEFAULT_SENDER = SECURITY_EMAIL_SENDER = MAILS_FROM = 'noreply@meine.luftdaten.info'
+MAIL_DEFAULT_SENDER = SECURITY_EMAIL_SENDER = MAILS_FROM = 'noreply@meine.Sensor.Community'
 MAIL_SERVER = 'smtp'
 MAIL_PORT = 25
 MAIL_USE_TLS = False

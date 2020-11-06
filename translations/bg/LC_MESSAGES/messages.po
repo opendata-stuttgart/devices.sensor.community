@@ -386,13 +386,13 @@ msgstr "Кликнете тук, за да <a href=\"%(login_url)s\">log in</a>.
 #, python-format
 msgid ""
 "General information can be found at <a "
-"href=\"%(home_url)s\">luftdaten.info</a>, as well as the <a "
+"href=\"%(home_url)s\">Sensor.Community</a>, as well as the <a "
 "href=\"%(manual_url)s\">building instructions</a>.\n"
 "            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
 "dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
 "Обща информация можете да намерите на <a "
-"href=\"%(home_url)s\">luftdaten.info</a>, както и <a "
+"href=\"%(home_url)s\">Sensor.Community</a>, както и <a "
 "href=\"%(manual_url)s\">инструкции за направа</a>.\n"
 "            Данните за сензора могат да бъдат намерени на <a href=\"%(map_url)s\">картата за "
 "финия прах</a> или <a href=\"%(archive_url)s\">да бъдат изтеглени като CSV файлове</a>."
@@ -719,7 +719,7 @@ msgid ""
 "                \n"
 "                    <h2>Account and sensor data</h2>\n"
 "                    <p>The measurement data of the sensors are collected "
-"on the server of the luftdaten.info and are publicly accessible to the "
+"on the server of the Sensor.Community and are publicly accessible to the "
 "company. The following information will be published:</p>\n"
 "                    <ul>\n"
 "                        <li>The anonymized geoposition (longitude and "
@@ -794,7 +794,7 @@ msgstr ""
 "                \n"
 "                    <h2>Данни за акаунта и сензора</h2>\n"
 "                    <p>Данните от измерванията на сензорите се събират на "
-"сървъра на luftdaten.info и са публично достъпни. Следващата "
+"сървъра на Sensor.Community и са публично достъпни. Следващата "
 "информация ще бъде публикувана:</p>\n"
 "                    <ul>\n"
 "                        <li>Анонимното геопозициониране (дължина и "
@@ -829,7 +829,7 @@ msgstr ""
 "                    <h2>Възражение срещу рекламни имейли</h2>\n"
 "                    <p>С настоящото ние възразяваме срещу използването на "
 "данни за контакт, публикувани в обхвата на задължението за отпечатване за "
-"изпращане на непоискани „рекламно-информационни материали". Операторите на този "
+"изпращане на непоискани „рекламно-информационни материали. Операторите на този "
 "уебсайт изрично си запазват правото да предприемат правни действия срещу "
 "нежелани имейли, спам и други подобни рекламни материали</p>"
 
@@ -937,7 +937,7 @@ msgid ""
 "an email about their\n"
 "                            new sensor."
 msgstr ""
-"Ако е посочен имейл адрес, собственикът ще бъде уведомен с имейл за 
+"Ако е посочен имейл адрес, собственикът ще бъде уведомен с имейл за "
 "новия си\n"
 "                            сензор."
 
@@ -986,10 +986,10 @@ msgstr "за да нулирате паролата си, моля използ�
 
 #: webapp/templates/emails/recover.html:14
 msgid ""
-"If you have not requested a new password on luftdaten.info, you can "
+"If you have not requested a new password on Sensor.Community, you can "
 "ignore this e-mail."
 msgstr ""
-"Ако не сте поискали нова парола на luftdaten.info, можете да "
+"Ако не сте поискали нова парола на Sensor.Community, можете да "
 "игнорирате този имейл."
 
 #: webapp/templates/emails/recover.html:15
@@ -1013,10 +1013,10 @@ msgstr ""
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
-"If you have not created an account on luftdaten.info, you can ignore this"
+"If you have not created an account on Sensor.Community, you can ignore this"
 " e-mail."
 msgstr ""
-"Ако не сте създали акаунт на luftdaten.info, можете да игнорирате този"
+"Ако не сте създали акаунт на Sensor.Community, можете да игнорирате този"
 " имейл."
 
 #: webapp/templates/emails/sensor-given.html:13
@@ -1032,10 +1032,10 @@ msgstr ""
 #: webapp/templates/emails/sensor-given.html:14
 msgid ""
 "If you have received a sensor by mistake, please report this at "
-"info@luftdaten.info."
+"tech@sensor.community."
 msgstr ""
 "Ако сте получили сензор по грешка, моля, докладвайте това на"
-"info@luftdaten.info."
+"tech@sensor.community."
 
 #: webapp/templates/emails/sensor-registered.html:13
 msgid ""
@@ -1048,10 +1048,10 @@ msgstr ""
 #: webapp/templates/emails/sensor-registered.html:14
 msgid ""
 "If the sensor was registered for you by mistake, please report this to "
-"info@luftdaten.info."
+"tech@sensor.community."
 msgstr ""
 "Ако сензорът е регистриран за вас по погрешка, моля, докладвайте за това "
-"info@luftdaten.info."
+"tech@sensor.community."
 
 #: webapp/templates/security/change_password.html:5
 msgid "Change password"
