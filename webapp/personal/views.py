@@ -73,6 +73,8 @@ def sensor_data(id):
             sensor.sensor_type_name = _('particulate matter sensor PMS7003')
         elif sensor.sensor_type_id == 37:
             sensor.sensor_type_name = _('particulate matter sensor SPS30')
+        elif sensor.sensor_type_id == 38:
+            sensor.sensor_type_name = _('particulate matter sensor HM3301')
         elif sensor.sensor_type_id == 9:
             sensor.sensor_type_name = _('temperature/humidity sensor DHT22')
         elif sensor.sensor_type_id == 8:

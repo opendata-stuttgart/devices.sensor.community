@@ -186,7 +186,7 @@ class SensorRegisterForm(SensorSettingsForm):
     )
     sensor_board = SelectField(
         _('Sensor Board'), [validators.InputRequired()],
-        choices=[('esp8266-', 'esp8266'), ('esp32-', 'esp32'), ('raspi-', 'raspi'), ('smogomierz-', 'smogomierz'), ('TTN-', 'TTN')],
+        choices=[('esp8266-', 'esp8266'), ('esp32-', 'esp32'), ('raspi-', 'raspi'), ('respire-', 'respire'), ('smogomierz-', 'smogomierz'), ('TTN-', 'TTN')],
         default='esp8266-',
         description=_('Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or the Smogomierz sensor version need to change this accordingly. Also in these cases the Sensor ID is the numeric part of the name only.')
     )
