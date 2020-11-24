@@ -1,4 +1,4 @@
-# meine luftdaten
+# devices.sensor.community
 sensor.community self-service registration portal.
 
 ## Translations
