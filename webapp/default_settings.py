@@ -88,6 +88,7 @@ SENSOR_TYPES = {
     26: "7",  # SHT30
     27: "7",  # SHT31
     28: "7",  # SHT35
+    39: "7",  # SHT85
     29: "15", # Lärm
     30: "17", # NO2-A43F
     31: "19", # Radiation SBM-20
