@@ -1,5 +1,5 @@
-# meine luftdaten
-luftdaten.info self-service registration portal.
+# devices.sensor.community
+sensor.community self-service registration portal.
 
 ## Translations
 
@@ -45,9 +45,9 @@ Basic development environment file can be copied from `.flaskenv.dist`.
     flask db upgrade
 
     # Create initial user and roles
-    flask users create testing@luftdaten.info --password password -a
+    flask users create testing@sensor.community --password password -a
     flask roles create admin
-    flask roles add testing@luftdaten.info admin
+    flask roles add testing@sensor.community admin
 
 ### Running
 

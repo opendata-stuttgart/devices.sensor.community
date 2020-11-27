@@ -85,7 +85,7 @@ def sensor_data(id):
             sensor.sensor_type_name = _('temperature/humidity/pressure sensor BME280')
 
         try:
-            # sensor_request = requests.get('http://api.luftdaten.info/static/v1/sensor/%s/' % (sensor.id))
+            # sensor_request = requests.get('http://api.sensor.community/static/v1/sensor/%s/' % (sensor.id))
             sensor_request = requests.get('http://127.0.0.1/v1/sensor/%s/' % (sensor.id))
             sensor_request.raise_for_status()
             sensor_request = sensor_request.json()

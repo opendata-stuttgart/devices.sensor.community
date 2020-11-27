@@ -1,11 +1,11 @@
-# Russian translations for luftdaten.info project.
+# Russian translations for Sensor.Community project.
 # Copyright (C) 2019
 # This file is distributed under the same license as the  project.
 # FIRST AUTHOR: Denis Kulandin <radiomgrs@gmail.com>, 2019.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  luftdaten.info\n"
+"Project-Id-Version:  Sensor.Community\n"
 "Report-Msgid-Bugs-To: radiomgrs@gmail.com\n"
 "POT-Creation-Date: 2019-10-06 22:07+0000\n"
 "PO-Revision-Date: 2019-04-06 16:02+0300\n"
@@ -383,7 +383,7 @@ msgstr "Нажмите сюда чтобы <a href=\"%(login_url)s\">войти<
 #, python-format
 msgid ""
 "General information can be found at <a "
-"href=\"%(home_url)s\">luftdaten.info</a>, as well as the <a "
+"href=\"%(home_url)s\">Sensor.Community</a>, as well as the <a "
 "href=\"%(manual_url)s\">building instructions</a>.\n"
 "            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
 "dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
@@ -721,7 +721,7 @@ msgid ""
 "                \n"
 "                    <h2>Account and sensor data</h2>\n"
 "                    <p>The measurement data of the sensors are collected "
-"on the server of the luftdaten.info and are publicly accessible to the "
+"on the server of the Sensor.Community and are publicly accessible to the "
 "company. The following information will be published:</p>\n"
 "                    <ul>\n"
 "                        <li>The anonymized geoposition (longitude and "
@@ -917,10 +917,10 @@ msgstr "для сброса вашего пароля пожалуйста пе�
 
 #: webapp/templates/emails/recover.html:14
 msgid ""
-"If you have not requested a new password on luftdaten.info, you can "
+"If you have not requested a new password on Sensor.Community, you can "
 "ignore this e-mail."
 msgstr ""
-"Если вы не запрашивали сброс пароля на сайте  luftdaten.info просто "
+"Если вы не запрашивали сброс пароля на сайте  Sensor.Community просто "
 "игнорируйте данное сообщение."
 
 #: webapp/templates/emails/recover.html:15
@@ -944,10 +944,10 @@ msgstr ""
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
-"If you have not created an account on luftdaten.info, you can ignore this"
+"If you have not created an account on Sensor.Community, you can ignore this"
 " e-mail."
 msgstr ""
-"Если вы не создали учетную запись на luftdaten.info, вы можете "
+"Если вы не создали учетную запись на Sensor.Community, вы можете "
 "игнорировать это электронное письмо."
 
 #: webapp/templates/emails/sensor-given.html:13
@@ -963,10 +963,10 @@ msgstr ""
 #: webapp/templates/emails/sensor-given.html:14
 msgid ""
 "If you have received a sensor by mistake, please report this at "
-"info@luftdaten.info."
+"tech@sensor.community."
 msgstr ""
 "Если вы получили датчик по ошибке, сообщите об этом по адресу "
-"info@luftdaten.info."
+"tech@sensor.community."
 
 #: webapp/templates/emails/sensor-registered.html:13
 msgid ""
@@ -980,10 +980,10 @@ msgstr ""
 #: webapp/templates/emails/sensor-registered.html:14
 msgid ""
 "If the sensor was registered for you by mistake, please report this to "
-"info@luftdaten.info."
+"tech@sensor.community."
 msgstr ""
 "Если датчик был зарегистрирован по ошибке, сообщите об этом по адресу "
-"info@luftdaten.info."
+"tech@sensor.community."
 
 #: webapp/templates/security/change_password.html:5
 msgid "Change password"
@@ -1281,12 +1281,12 @@ msgstr "Данные пользователя сохранены."
 #~ msgid ""
 #~ "The measurement data of the sensors "
 #~ "are collected on the server of the"
-#~ " luftdaten.info and are publicly accessible"
+#~ " Sensor.Community and are publicly accessible"
 #~ " to the company. The following "
 #~ "information will be published:"
 #~ msgstr ""
 #~ "Данные измерений датчиков собираются на "
-#~ "сервере luftdaten.info и являются публично "
+#~ "сервере Sensor.Community и являются публично "
 #~ "доступными. Будет опубликована следующая "
 #~ "информация:"
 
@@ -1398,7 +1398,7 @@ msgstr "Данные пользователя сохранены."
 #~ "подобные рекламные материалы."
 
 #~ msgid "Information and settings for the luftaten project"
-#~ msgstr "Информация и настройки для проекта luftdaten.info"
+#~ msgstr "Информация и настройки для проекта Sensor.Community"
 
 #~ msgid "Indoor Sensor"
 #~ msgstr "Внутренний сенсор"

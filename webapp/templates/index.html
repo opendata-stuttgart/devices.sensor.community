@@ -3,10 +3,9 @@
 {% block content %}
     <div class="fullwidth clearfix">
         <div id="topcontainer" class="bodycontainer clearfix">
-            <p><img src="/static/images/logo-v1-green.svg" alt="logo" height="100"/>
-              <span class="betterplace"><a title="{{ _('Donate for Luftdaten.info (Hardware, Software) now on Betterplace.org') }}" target="_blank" href="https://www.betterplace.org/de/projects/38071-fur-den-feinstaub-sensor-sds011-als-bastel-kit-spenden/">{{ _('Donate for<br>Luftdaten.info<br>now on<br><span>Betterplace.org</span>') }}</a></span>
-            </p>
             <h1><span class="title">{{ _('Configure air quality sensor yourself') }}</span></h1>
+            <span class="betterplace"><a title="{{ _('Donate for Sensor.Community (Hardware, Software) now on Betterplace.org') }}" target="_blank" href="https://www.betterplace.org/de/projects/38071-fur-den-feinstaub-sensor-sds011-als-bastel-kit-spenden/">{{ _('Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>') }}</a></span>
+
         </div>
     </div>
 
@@ -18,8 +17,8 @@
             <p>{{ _('The main purpose of this page is to enable you, as the owner of a fine dust sensor, to configure the location and other parameters yourself.') }}
             {% if not current_user.is_authenticated %}{% trans login_url=url_for('security.login') %}Click here to <a href="{{ login_url }}">log in</a>.{% endtrans %}{% endif %}</p>
             <p>
-            {% trans home_url='https://luftdaten.info', manual_url='https://luftdaten.info', map_url='https://maps.luftdaten.info', archive_url='https://archive.luftdaten.info' -%}
-            General information can be found at <a href="{{ home_url }}">luftdaten.info</a>, as well as the <a href="{{ manual_url }}">building instructions</a>.
+            {% trans home_url='https://sensor.community', manual_url='https://sensor.community', map_url='https://maps.sensor.community', archive_url='https://archive.sensor.community' -%}
+            General information can be found at <a href="{{ home_url }}">Sensor.Community</a> - formerly known as Luftdaten.info, as well as the <a href="{{ manual_url }}">building instructions</a>.
             Sensor data can be found on <a href="{{ map_url }}">the fine dust map</a> or <a href="{{ archive_url }}">be downloaded as CSVs</a>.
             {%- endtrans %}
             </p>
