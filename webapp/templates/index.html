@@ -18,7 +18,7 @@
             {% if not current_user.is_authenticated %}{% trans login_url=url_for('security.login') %}Click here to <a href="{{ login_url }}">log in</a>.{% endtrans %}{% endif %}</p>
             <p>
             {% trans home_url='https://sensor.community', manual_url='https://sensor.community', map_url='https://maps.sensor.community', archive_url='https://archive.sensor.community' -%}
-            General information can be found at <a href="{{ home_url }}">Sensor.Community</a>, as well as the <a href="{{ manual_url }}">building instructions</a>.
+            General information can be found at <a href="{{ home_url }}">Sensor.Community</a> - formerly known as Luftdaten.info, as well as the <a href="{{ manual_url }}">building instructions</a>.
             Sensor data can be found on <a href="{{ map_url }}">the fine dust map</a> or <a href="{{ archive_url }}">be downloaded as CSVs</a>.
             {%- endtrans %}
             </p>
