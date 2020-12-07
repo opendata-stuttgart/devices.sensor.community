@@ -24,12 +24,13 @@
 {{ render_field(form.sensor_position) }}
 {{ render_field(form.description) }}
 <h2>{{ _('Hardware configuration') }}</h2>
+<small>(click <a name="expert" onclick="toggle_expert()" style="color:blue;"> &gt;&gt;here&lt;&lt; </a> to enable expert fields)<br /><br /></small>
 {% for sensor in form.sensors %}
   <div class="row">
     {{ render_field(sensor.sensor_type, 'basic') }}
     {# this field needs to be renderer as optional in template, as it might be
     autopopulated in form validation #}
-    {{ render_field(sensor.pin, 'basic', 'col-md-2', required=False) }}
+    {{ render_field(sensor.pin, 'basic', 'col-md-2 xpin-field', required=False) }}
   </div>
 {% endfor %}
 <script type="text/javascript">
@@ -73,6 +74,14 @@ function orderSelect($element) {
     $element.selectedIndex = new_selected_item;
 }
 orderSelect(document.getElementById('location-country'));
+
+function toggle_expert() {
+	var fields = document.getElementsByClassName("xpin-field");
+	for(var i = 0; i < fields.length; i++) {
+	   fields[i].classList.toggle('xpin-visible');
+	}
+}
+
 </script>
 
 <div class="row">
