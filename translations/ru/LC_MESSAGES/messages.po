@@ -197,11 +197,11 @@ msgstr "ID сенсора"
 
 #: webapp/personal/forms.py:183
 msgid "Sensor ID may only contain digits and letters A to F"
-msgstr ""
+msgstr "Идентификатор сенсора содержит только цифры и латинцкие буквы от A до F"
 
 #: webapp/personal/forms.py:185
 msgid "The numeric part of the sensorname only"
-msgstr ""
+msgstr "Только цифровая часть идентификатора сенсора"
 
 #: webapp/personal/forms.py:188
 msgid "Sensor Board"
@@ -213,6 +213,9 @@ msgid ""
 "the Smogomierz sensor version need to change this accordingly. Also in "
 "these cases the Sensor ID is the numeric part of the name only."
 msgstr ""
+"Обычно используется плата esp8266. Для пользователей плат ESP32, Raspberry PI или"
+"сенсорной станции Smogomierz опция должна быть соответствующим образом изменена. Также в "
+"в этих случаях идентификатор датчика состоит только из чисел."
 
 #: webapp/personal/forms.py:196
 msgid "Recipient's e-mail address"
@@ -256,47 +259,47 @@ msgstr ""
 
 #: webapp/personal/views.py:38
 msgid "Pressure at sea level"
-msgstr ""
+msgstr "Давление на уровне моря"
 
 #: webapp/personal/views.py:64
 msgid "particulate matter sensor SDS011"
-msgstr ""
+msgstr "датчик твердых частиц SDS011"
 
 #: webapp/personal/views.py:66
 msgid "particulate matter sensor PMS1003"
-msgstr ""
+msgstr "датчик твердых частиц PMS1003"
 
 #: webapp/personal/views.py:68
 msgid "particulate matter sensor PMS3003"
-msgstr ""
+msgstr "датчик твердых частиц PMS3003"
 
 #: webapp/personal/views.py:70
 msgid "particulate matter sensor PMS5003"
-msgstr ""
+msgstr "датчик твердых частиц PMS5003"
 
 #: webapp/personal/views.py:72
 msgid "particulate matter sensor PMS6003"
-msgstr ""
+msgstr "датчик твердых частиц PMS6003"
 
 #: webapp/personal/views.py:74
 msgid "particulate matter sensor PMS7003"
-msgstr ""
+msgstr "датчик твердых частиц PMS7003"
 
 #: webapp/personal/views.py:76
 msgid "temperature/humidity sensor DHT22"
-msgstr ""
+msgstr "датчик температуры/ветра DHT22"
 
 #: webapp/personal/views.py:78
 msgid "temperature/pressure sensor BMP180"
-msgstr ""
+msgstr "датчик температуры/давления BMP180"
 
 #: webapp/personal/views.py:80
 msgid "temperature/pressure sensor BMP280"
-msgstr ""
+msgstr "датчик температуры/давления BMP280"
 
 #: webapp/personal/views.py:82
 msgid "temperature/humidity/pressure sensor BME280"
-msgstr ""
+msgstr "датчик температуры/давления/влажности BMP180"
 
 #: webapp/personal/views.py:140
 msgid "Settings saved successfully."
@@ -308,7 +311,7 @@ msgstr "Сенсор успешно зарегистрирован."
 
 #: webapp/personal/views.py:172
 msgid "This sensor ID is already registered."
-msgstr ""
+msgstr "Этот идентификатор сенсора уже зарегистирован"
 
 #: webapp/personal/views.py:186
 msgid "A fine dust sensor was transferred to you"
@@ -328,7 +331,7 @@ msgstr "вам надо сперва войти?"
 
 #: webapp/templates/imprint.html:8 webapp/templates/layout.html:110
 msgid "Imprint"
-msgstr "Imprint"
+msgstr "Контактные данные"
 
 #: webapp/templates/imprint.html:14
 msgid "Informations according to § 5 TMG"
@@ -461,11 +464,11 @@ msgstr "пользовательские настройки"
 
 #: webapp/templates/layout.html:14
 msgid "Information and settings for the luftdaten project"
-msgstr ""
+msgstr "Информация и настройки проекта sensor.community"
 
 #: webapp/templates/layout.html:55
 msgid "Home"
-msgstr "Домой"
+msgstr "На главную"
 
 #: webapp/templates/layout.html:58 webapp/templates/my-sensors.html:9
 msgid "My sensors"
@@ -513,7 +516,7 @@ msgstr "Сброс пароля"
 
 #: webapp/templates/login.html:12
 msgid "Configure air data sensor yourself"
-msgstr ""
+msgstr "Настройте свою сенсорную станцию"
 
 #: webapp/templates/meine-luftdaten.html:11
 msgid "Meine Luftdaten"
@@ -574,7 +577,7 @@ msgstr "на карте мелкодисперсных частиц."
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr ""
+msgstr "показать на карте"
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
@@ -655,7 +658,7 @@ msgstr "Имя"
 
 #: webapp/templates/my-sensors.html:17
 msgid "Created"
-msgstr ""
+msgstr "Создан"
 
 #: webapp/templates/my-sensors.html:17
 msgid "Last Update"
@@ -763,6 +766,77 @@ msgid ""
 "\n"
 "                    "
 msgstr ""
+"<p>Операторы этого интернет сервиса подходят к защите Ваших персональных данных "
+"со всей серьезностью. Мы обращаемся с Вашими личными данными конфиденциально и согласно "
+"правовым предписаниям по защите данных, а также в соответствии данному на сайте "
+"пояснению.</p>\n"
+"                    <p>Пользоваться нашим веб-сайтом, как правило, возможно "
+"без предоставления личных данных. Если на наших страницах собираются личные данные (например имя, "
+"адрес или электронная почта") то это делается опционально настолько, насколько это возможно. "
+"Эти данные не будут переданы третьим лицам без вашего явного согласия.</p>\n"
+"                    <p>Хотим отметить, что передача данных "
+"через Интернет (например, общение по электронной почте) может иметь потенциальные пробелы в безопасности. "
+"А посему полная защита данных от доступа третьих лиц не представляется "
+"возможной.</p>\n"
+"                    <h2>Информация, удаление, блокировка</h2>\n"
+"                    <p>Вы имеете право в любое время освободить информацию "
+"о Ваших сохраненных персональных данных, их происхождении и получателе, а также о "
+"целях обработки данных, а также право на корректировку, блокировку или "
+"удаление этих данных. Вы можете связаться с нами в любое время по адресу "
+"в разделе "Контакты" указанному для этих целей.</p>\n"
+"                    <h2>Cookie-файлы </h2>\n"
+"                    <p>На некоторых интернет-страницах используются так называемые Cookie-файлы. "
+"Cookie-файлы" не вредят вашему компьютеру и не содержат вирусов. Cookie-файлы "
+"служат для того, чтобы сделать наш сервис более удобным, эффективным и безопасным. "
+"Cookie-файлы - это небольшие текстовые файлы, которые сохраняет Ваш бразуер на Вашем компьютере.</p>\n"
+"                    <p>Большинство наших Cookie-файлов являются т.н. "сессионными" Cookie-файлами. "
+"Они автоматически удаляются в конце вашего визита на наш сервис. "
+"Другие Cookie-файлы остаются на ваше компьютере до тех пор, пока вы их не удалите. "
+"Они позволяют нам распознать ваш браузер при следующем посещении и не просить вас ввести пароль заного.</p>"
+"\n"
+"                \n"
+"                    <h2>Данные аккаунта и датчиков</h2>\n"
+"                    <p>Данные измерений датчиков собираются на сервере Sensor.Community и >
+"являются общедоступной информацией."
+"Будет опубликована следующая информация:</p>\n"
+"                    <ul>\n"
+"                        <li>Анонимизированная геопозиция (долгота и "
+"широта округленная до 100 м.</li>\n"
+"                        <li>Идентификатор вашей платы ESP8266 NodeMCU</li>\n"
+"                        <li>Указанные Вами числовые характеристики среды в "
+"месте установки измерительной станции</li>\n"
+"                        <li>Высота установки измерительной станции</li>\n"
+"                        <li>Описание в текстовом виде</li>\n"
+"                    </ul>\n"
+"                    <p>Следующие дополнительные данные будут использовант для внутренней обработки, но не будут опубликованы:</p>\n"
+"                    <ul>\n"
+"                        <li>Постовой адрес датчика</li>\n"
+"                        <li>Электронный адрес</li>\n"
+"                        <li>Ваша фамилия и имя</li>\n"
+"                    </ul>\n"
+"                    <h2>Лог-файлы сервера</h2>\n"
+"                    <p>Наш сервис автоматически собирает и хранит нижеуказанную информацию в "
+"так называемых лог-файлах сервера, которую ваш браузер автоматически передает нам. "
+"Это:</p>\n"
+"                    <ul>\n"
+"                        <li>Тип браузера / версия браузера</li>\n"
+"                        <li>использованная операционная система</li>\n"
+"                        <li>URL реферала</li>\n"
+"                        <li>Хост-имя подключающегося компьютера</li>\n"
+"                        <li>Время запроса сервера</li>\n"
+"                    </ul>\n"
+"                    <p>Эти данные не могут быть присвоены конкретным лицам. "
+"Эти данные не будут объединены с другими источниками данных. Мы оставляем за собой "
+"право впоследствии проверить эти данные, если нам станет известно о конкретных "
+"признаках их незаконного использования.</p>\n"
+"                    <h2>Противозаконная рекламная рассылка</h2>\n"
+"                    <p>Настоящим мы возражаем против использования контактных данных, "
+"опубликованных в рамках обязательства по публикации, для рассылки незапрашиваемых "
+"рекламных и информационных материалов. Владельцы этого сайта однозначно "
+"оставляют за собой право предпринимать правовые действия против незапрашиваемой "
+"рассылки или рассылки по электронной почте спама и других подобных рекламных материалов.</p>"
+"\n"
+"                    "
 
 #: webapp/templates/recover-fail.html:13
 msgid "Set password Error"
@@ -1569,6 +1643,7 @@ msgstr "Данные пользователя сохранены."
 #~ "these cases the Sensor ID is the"
 #~ " numeric part of the name only."
 #~ msgstr ""
+
 
 #~ msgid "Recipient's e-mail address"
 #~ msgstr "Электронная почта получателя"
