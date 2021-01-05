@@ -53,7 +53,7 @@ msgstr "Нямате разрешение за преглед на този ре
 #: flask_security/core.py:134
 #, python-format
 msgid "Thank you. Confirmation instructions have been sent to %(email)s."
-msgstr "Благодаря ви. Инструкциите за потвърждение бяха изпратени до %(email)."
+msgstr "Благодаря ви. Инструкциите за потвърждение бяха изпратени до %(email)s."
 
 #: flask_security/core.py:138
 msgid "Thank you. Your email has been confirmed."
