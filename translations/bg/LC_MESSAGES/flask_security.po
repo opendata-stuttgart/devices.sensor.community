@@ -95,7 +95,7 @@ msgid ""
 "You did not reset your password within %(within)s. New instructions have "
 "been sent to %(email)s."
 msgstr ""
-"Не сте нулирали паролата си в рамките на % (within)s сек. Новите инструкции“
+"Не сте нулирали паролата си в рамките на % (within)s сек. Новите инструкции"
 "са изпратени на %(email)."
 
 #: flask_security/core.py:158
@@ -117,7 +117,7 @@ msgid ""
 "You did not confirm your email within %(within)s. New instructions to "
 "confirm your email have been sent to %(email)s."
 msgstr ""
-"Не сте потвърдили имейла си в рамките на %(within)s сек. Нови инструкции “
+"Не сте потвърдили имейла си в рамките на %(within)s сек. Нови инструкции "
 "за потвърждение на имейла ви са изпратени на %(email)s."
 
 #: flask_security/core.py:168
@@ -126,7 +126,7 @@ msgid ""
 "You did not login within %(within)s. New instructions to login have been "
 "sent to %(email)s."
 msgstr ""
-"Не сте влезли в рамките на %(within)s сек. Нови инструкции за вход са“
+"Не сте влезли в рамките на %(within)s сек. Нови инструкции за вход са"
 "изпратени на %(email)s."
 
 #: flask_security/core.py:171
