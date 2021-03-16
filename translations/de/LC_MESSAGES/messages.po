@@ -574,7 +574,7 @@ msgstr ""
 "finden Sie hier "
 
 #: webapp/templates/my-sensor-data.html:11
-msgid "on the fine dust card again."
+msgid "on the fine dust map again"
 msgstr "auf der Feinstaub-Karte wieder"
 
 #: webapp/templates/my-sensor-data.html:19

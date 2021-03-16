@@ -533,7 +533,7 @@ msgid ""
 msgstr ""
 
 #: webapp/templates/my-sensor-data.html:11
-msgid "on the fine dust card again."
+msgid "on the fine dust map again"
 msgstr ""
 
 #: webapp/templates/my-sensor-data.html:19

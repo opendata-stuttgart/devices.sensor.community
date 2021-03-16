@@ -572,8 +572,8 @@ msgstr ""
 "сенсора отображается "
 
 #: webapp/templates/my-sensor-data.html:11
-msgid "on the fine dust card again."
-msgstr "на карте мелкодисперсных частиц."
+msgid "on the fine dust map again"
+msgstr "на карте мелкодисперсных частиц"
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
