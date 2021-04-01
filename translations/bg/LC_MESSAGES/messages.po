@@ -570,8 +570,8 @@ msgstr ""
 "също може да бъде намерен"
 
 #: webapp/templates/my-sensor-data.html:11
-msgid "on the fine dust card again."
-msgstr "на картата за фин прах."
+msgid "on the fine dust map again"
+msgstr "на картата за фин прах"
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
