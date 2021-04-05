@@ -211,7 +211,7 @@ def sensor_delete(id):
         node.inactive = 1
 
         current_app.logger.info(
-            '%s deleted node %s' % (current_user.email, id, form.email.data.lower()))
+            '%s deleted node %s' % (current_user.email, id))
 
         db.session.commit()
         return render_template('my-sensor-delete-success.html', node=node)
