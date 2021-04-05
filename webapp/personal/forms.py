@@ -211,4 +211,4 @@ class SensorGiveForm(FlaskForm):
                 _("You can't transfer the sensor to yourself"))
 
 class SensorDeleteForm(FlaskForm):
-    submit = SubmitField(_("Transfer sensor"))
+    submit = SubmitField(_("Delete sensor"))
