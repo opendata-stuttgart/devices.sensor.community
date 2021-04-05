@@ -207,8 +207,8 @@ def sensor_delete(id):
     node = get_object_or_404(Node, Node.id == id, Node.email == current_user.email)
     form = SensorDeleteForm()
     if form.validate_on_submit():
-        node.email = 'deleted_' + form.email.data.lower()
-        node.inactive = 1;
+        node.email = 'deleted_' + node.email
+        node.inactive = 1
 
         current_app.logger.info(
             '%s deleted node %s' % (current_user.email, id, form.email.data.lower()))
