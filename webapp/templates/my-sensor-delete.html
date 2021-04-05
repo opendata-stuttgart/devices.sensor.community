@@ -2,7 +2,7 @@
 {% from "_formhelpers.html" import render_field %}
 
 {% block content %}
-    <form method="POST" action="{{ url_for('.sensor_transfer', id=node.id) }}">
+    <form method="POST" action="{{ url_for('.sensor_delete', id=node.id) }}">
         <div class="row">
             <div class="col-md-12">
                 <h1>{{ _('Delete sensor %(node_id)s', node_id=node.uid) }}</h1>

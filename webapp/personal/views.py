@@ -203,9 +203,9 @@ def sensor_transfer(id):
 @personal.route('/my-sensor/<id>/delete', methods=['GET', 'POST'])
 @personal.route('/sensors/<id>/delete', methods=['GET', 'POST'])
 @login_required
-def sensor_transfer(id):
+def sensor_delete(id):
     node = get_object_or_404(Node, Node.id == id, Node.email == current_user.email)
-    form = SensorGiveForm()
+    form = SensorDeleteForm()
     if form.validate_on_submit():
         node.email = 'deleted_' + form.email.data.lower()
         node.inactive = 1;
