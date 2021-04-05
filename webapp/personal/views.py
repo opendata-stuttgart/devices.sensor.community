@@ -21,7 +21,7 @@ from datetime import datetime, timedelta
 import pytz
 import sqlalchemy.exc as exc
 
-from .forms import SensorGiveForm, SensorSettingsForm, SensorRegisterForm
+from .forms import SensorGiveForm, SensorSettingsForm, SensorRegisterForm, SensorDeleteForm
 from ..external_data.models import Node, SensorLocation, Sensor, SensorType
 from ..common.helpers import get_object_or_404, model_to_dict
 from ..extensions import mail, db
