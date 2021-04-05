@@ -209,3 +209,6 @@ class SensorGiveForm(FlaskForm):
         if field.data.lower().strip() == current_user.email.lower().strip():
             raise validators.ValidationError(
                 _("You can't transfer the sensor to yourself"))
+
+class SensorDeleteForm(FlaskForm):
+    submit = SubmitField(_("Transfer sensor"))

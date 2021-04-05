@@ -194,8 +194,26 @@ def sensor_transfer(id):
         )
         mail.send(msg)
         current_app.logger.info(
-            '%s gave node node %s to %s' % (current_user.email, id, form.email.data.lower()))
+            '%s gave node %s to %s' % (current_user.email, id, form.email.data.lower()))
 
         db.session.commit()
         return render_template('my-sensor-give-success.html', node=node)
     return render_template('my-sensor-give.html', node=node, form=form)
+    
+@personal.route('/my-sensor/<id>/delete', methods=['GET', 'POST'])
+@personal.route('/sensors/<id>/delete', methods=['GET', 'POST'])
+@login_required
+def sensor_transfer(id):
+    node = get_object_or_404(Node, Node.id == id, Node.email == current_user.email)
+    form = SensorGiveForm()
+    if form.validate_on_submit():
+        node.email = 'deleted_' + form.email.data.lower()
+        node.inactive = 1;
+
+        current_app.logger.info(
+            '%s deleted node %s' % (current_user.email, id, form.email.data.lower()))
+
+        db.session.commit()
+        return render_template('my-sensor-delete-success.html', node=node)
+    return render_template('my-sensor-delete.html', node=node, form=form)
+

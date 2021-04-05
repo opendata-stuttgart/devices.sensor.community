@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% from "_formhelpers.html" import render_field %}
+
+{% block content %}
+    <form method="POST" action="{{ url_for('.sensor_transfer', id=node.id) }}">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{{ _('Delete sensor %(node_id)s', node_id=node.uid) }}</h1>
+                <p>{{ _('Are you sure you want to delete this sensor?') }}  </p>
+                <p><strong>{{ _('Warning! After deleting you have no more control over the sensor!') }}  </strong></p>
+            </div>
+        </div>
+
+        <div class="row m-3">
+            <div class="col-md-6 offset-md-3">
+                {{ form.submit(class="form-control btn btn-primary") }}
+            </div>
+        </div>
+
+        <div class="row m-3">
+            <div class="col-md-6 offset-md-3">
+                <a href="/my-sensors" class="form-control btn btn-info">{{ _('Back to my sensors') }}</a>
+            </div>
+        </div>
+        {{ form.csrf_token }}
+    </form>
+{% endblock %}
