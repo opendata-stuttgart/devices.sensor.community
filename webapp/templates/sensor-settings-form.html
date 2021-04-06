@@ -26,13 +26,18 @@
 <h2>{{ _('Hardware configuration') }}</h2>
 <small>(click <a name="expert" onclick="toggle_expert()" style="color:blue;"> &gt;&gt;here&lt;&lt; </a> to enable expert fields)<br /><br /></small>
 {% for sensor in form.sensors %}
-  <div class="row">
+  <div class="row" id="component-{{ loop.index0 }}">
     {{ render_field(sensor.sensor_type, 'basic') }}
     {# this field needs to be renderer as optional in template, as it might be
     autopopulated in form validation #}
     {{ render_field(sensor.pin, 'basic', 'col-md-2 xpin-field', required=False) }}
+    <div class="form-group col-md-2 remove-button"{% if request.path != "/sensors/register" or loop.first %} style="display: none;"{% endif %}><label for="sensors-{{ loop.index0 }}-remove"> </label><input type="button" id="sensors-{{ loop.index0 }}-remove" name="sensors-{{ loop.index0 }}-remove" onclick="remove_component(this)" value="{{ _('remove') }}" class="form-control"></div>
   </div>
 {% endfor %}
+<div class="row" id="add_component_row">
+<input type="button" value="{{ _('add component') }}" name="add_component_button" id="add_component_button" onclick="add_component();">
+</div>
+<br/>
 <script type="text/javascript">
 var sensor_types = { {% for pin in types %}
 "{{ pin }}": {{ types[pin] }},
@@ -80,6 +85,26 @@ function toggle_expert() {
 	for(var i = 0; i < fields.length; i++) {
 	   fields[i].classList.toggle('xpin-visible');
 	}
+}
+
+function add_component() {
+    new_node = document.getElementById('component-0').cloneNode(true);
+    component_count = document.querySelectorAll('[id ^= component]').length;
+    new_node.innerHTML = new_node.innerHTML.replaceAll('sensors-0','sensors-' + component_count);
+    new_node.id='component-'+component_count;
+    new_node.getElementsByClassName('remove-button')[0].style = '';
+    button_node = document.getElementById('add_component_row');
+    button_node.parentNode.insertBefore(new_node,button_node);
+    return false;
+}
+
+function remove_component(node) {
+	node.parentNode.parentNode.remove();
+	for (i=0; i < document.querySelectorAll('[ id ^= component]').length;i++) {
+		document.querySelectorAll('[ id ^= component]')[i].id = 'component-'+i;
+		document.querySelectorAll('[ id ^= component]')[i].innerHTML = document.querySelectorAll('[ id ^= component]')[i].innerHTML.replace(/sensors-(\d*)/g,'sensors-'+i);
+	}
+	return false;
 }
 
 </script>
