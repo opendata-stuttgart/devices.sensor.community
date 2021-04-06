@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  Sensor.Community\n"
 "Report-Msgid-Bugs-To: radiomgrs@gmail.com\n"
-"POT-Creation-Date: 2019-10-06 22:07+0000\n"
+"POT-Creation-Date: 2021-04-06 23:50+0000\n"
 "PO-Revision-Date: 2019-04-06 16:02+0300\n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -213,9 +213,10 @@ msgid ""
 "the Smogomierz sensor version need to change this accordingly. Also in "
 "these cases the Sensor ID is the numeric part of the name only."
 msgstr ""
-"Обычно используется плата esp8266. Для пользователей плат ESP32, Raspberry PI или"
-"сенсорной станции Smogomierz опция должна быть соответствующим образом изменена. Также в "
-"в этих случаях идентификатор датчика состоит только из чисел."
+"Обычно используется плата esp8266. Для пользователей плат ESP32, "
+"Raspberry PI илисенсорной станции Smogomierz опция должна быть "
+"соответствующим образом изменена. Также в в этих случаях идентификатор "
+"датчика состоит только из чисел."
 
 #: webapp/personal/forms.py:196
 msgid "Recipient's e-mail address"
@@ -236,6 +237,10 @@ msgstr "Передать сенсор"
 #: webapp/personal/forms.py:211
 msgid "You can't transfer the sensor to yourself"
 msgstr "Вы не можете передать сенсор себе"
+
+#: webapp/personal/forms.py:214 webapp/templates/my-sensors.html:32
+msgid "Delete sensor"
+msgstr ""
 
 #: webapp/personal/views.py:33
 msgid "Fine dust 10 µm"
@@ -261,59 +266,67 @@ msgstr ""
 msgid "Pressure at sea level"
 msgstr "Давление на уровне моря"
 
-#: webapp/personal/views.py:64
+#: webapp/personal/views.py:63
 msgid "particulate matter sensor SDS011"
 msgstr "датчик твердых частиц SDS011"
 
-#: webapp/personal/views.py:66
+#: webapp/personal/views.py:65
 msgid "particulate matter sensor PMS1003"
 msgstr "датчик твердых частиц PMS1003"
 
-#: webapp/personal/views.py:68
+#: webapp/personal/views.py:67
 msgid "particulate matter sensor PMS3003"
 msgstr "датчик твердых частиц PMS3003"
 
-#: webapp/personal/views.py:70
+#: webapp/personal/views.py:69
 msgid "particulate matter sensor PMS5003"
 msgstr "датчик твердых частиц PMS5003"
 
-#: webapp/personal/views.py:72
+#: webapp/personal/views.py:71
 msgid "particulate matter sensor PMS6003"
 msgstr "датчик твердых частиц PMS6003"
 
-#: webapp/personal/views.py:74
+#: webapp/personal/views.py:73
 msgid "particulate matter sensor PMS7003"
 msgstr "датчик твердых частиц PMS7003"
 
-#: webapp/personal/views.py:76
+#: webapp/personal/views.py:75
+msgid "particulate matter sensor SPS30"
+msgstr ""
+
+#: webapp/personal/views.py:77
+msgid "particulate matter sensor HM3301"
+msgstr ""
+
+#: webapp/personal/views.py:79
 msgid "temperature/humidity sensor DHT22"
 msgstr "датчик температуры/ветра DHT22"
 
-#: webapp/personal/views.py:78
+#: webapp/personal/views.py:81
 msgid "temperature/pressure sensor BMP180"
 msgstr "датчик температуры/давления BMP180"
 
-#: webapp/personal/views.py:80
+#: webapp/personal/views.py:83
 msgid "temperature/pressure sensor BMP280"
 msgstr "датчик температуры/давления BMP280"
 
-#: webapp/personal/views.py:82
+#: webapp/personal/views.py:85
 msgid "temperature/humidity/pressure sensor BME280"
 msgstr "датчик температуры/давления/влажности BMP180"
 
-#: webapp/personal/views.py:140
+#: webapp/personal/views.py:143
 msgid "Settings saved successfully."
 msgstr "Настройки успешно сохранены."
 
-#: webapp/personal/views.py:168
+#: webapp/personal/views.py:171
 msgid "Sensor successfully registered."
 msgstr "Сенсор успешно зарегистрирован."
 
-#: webapp/personal/views.py:172
+#: webapp/personal/views.py:175
 msgid "This sensor ID is already registered."
 msgstr "Этот идентификатор сенсора уже зарегистирован"
 
-#: webapp/personal/views.py:186
+#: webapp/personal/views.py:189
 msgid "A fine dust sensor was transferred to you"
 msgstr "Сенсор был перенесен в ваш список"
 
@@ -353,23 +366,23 @@ msgstr "основано на концепте развития программ
 msgid "Contact: Website of Ernesto Ruge:"
 msgstr "Контакты: веб страница Ernesto Ruge:"
 
-#: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid "Donate for Luftdaten.info (Hardware, Software) now on Betterplace.org"
-msgstr "Поддержать проект sensor.community на сервисе Betterplace.org"
-
-#: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid "Donate for<br>Luftdaten.info<br>now on<br><span>Betterplace.org</span>"
-msgstr "Поддержать проект <br>sensor.community<br> на сервисе <br><span>Betterplace.org</span>"
-
-#: webapp/templates/index.html:9 webapp/templates/register-minimal.html:13
+#: webapp/templates/index.html:6 webapp/templates/register-minimal.html:13
 msgid "Configure air quality sensor yourself"
 msgstr "Настрой свой сенсор"
 
-#: webapp/templates/index.html:17
+#: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
+msgid "Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
+msgstr ""
+
+#: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
+msgid "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
+msgstr ""
+
+#: webapp/templates/index.html:16
 msgid "Configure Luftdaten"
 msgstr "Зарегистрируй свой сенсор!"
 
-#: webapp/templates/index.html:18
+#: webapp/templates/index.html:17
 msgid ""
 "The main purpose of this page is to enable you, as the owner of a fine "
 "dust sensor, to configure the location and other parameters yourself."
@@ -377,32 +390,27 @@ msgstr ""
 "Основная цель этой страницы - предоставить владельцу датчика возможность "
 "зарегистрировать его адрес установки для отображения на карте."
 
-#: webapp/templates/index.html:19
+#: webapp/templates/index.html:18
 #, python-format
 msgid "Click here to <a href=\"%(login_url)s\">log in</a>."
 msgstr "Нажмите сюда чтобы <a href=\"%(login_url)s\">войти</a>."
 
-#: webapp/templates/index.html:21
+#: webapp/templates/index.html:20
 #, python-format
 msgid ""
 "General information can be found at <a "
-"href=\"%(home_url)s\">Sensor.Community</a>, as well as the <a "
-"href=\"%(manual_url)s\">building instructions</a>.\n"
+"href=\"%(home_url)s\">Sensor.Community</a> - formerly known as "
+"Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building "
+"instructions</a>.\n"
 "            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
 "dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
-"Общую информацию можно найти на сайте <a "
-"href=\"%(home_url)s\">sensor.community</a>, а также <a "
-"href=\"%(manual_url)s\">инструкции по сборке</a>.\n"
-"            Данные сенсоров можно найти <a href=\"%(map_url)s\">на карте "
-"</a> или <a href=\"%(archive_url)s\">загрузить в "
-"формате CSV</a>."
 
-#: webapp/templates/index.html:33
+#: webapp/templates/index.html:32
 msgid "Join us!"
 msgstr "Присоединяйтесь!"
 
-#: webapp/templates/index.html:34
+#: webapp/templates/index.html:33
 msgid ""
 "The city of the future belongs to its citizens. The digital tools, the "
 "Maker Movement and Citizen Science are leading to more and more people "
@@ -413,11 +421,11 @@ msgstr ""
 "гражданская наука позволяют вовлекать все больше и больше людей в жизнь "
 "города с тем, чтобы сделать ее лучше."
 
-#: webapp/templates/index.html:36
+#: webapp/templates/index.html:35
 msgid "About the project"
 msgstr "О проекте"
 
-#: webapp/templates/index.html:37
+#: webapp/templates/index.html:36
 msgid ""
 "The OK Lab Stuttgart is part of the program Code for Germany of the Open "
 "Knowledge Foundation Germany. The aim of the program is to promote "
@@ -426,7 +434,7 @@ msgstr ""
 "Задача проекта развивать разработку решений в области свободного "
 "программного обеспечения (СПО), открытых данных и гражданской науки."
 
-#: webapp/templates/index.html:38
+#: webapp/templates/index.html:37
 msgid ""
 "Regional groups consisting of designers, developers, journalists and "
 "others meet regularly in Labs. They develop apps that inform, positively "
@@ -438,7 +446,7 @@ msgstr ""
 "приложения, которые информируют, положительно формируют и поддерживают "
 "общество и делают работу органов власти более прозрачной."
 
-#: webapp/templates/index.html:39
+#: webapp/templates/index.html:38
 msgid "Code a difference: Use your skills to improve your city!"
 msgstr "Используйте свой опыт для улучшения жизни в вашем городе!"
 
@@ -587,9 +595,34 @@ msgstr "Последнее обновление:"
 msgid "No current data are available for this sensor."
 msgstr "Нет актуальных данные для данного сенсора."
 
+#: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "Sensor"
 msgstr "Сенсор"
+
+#: webapp/templates/my-sensor-delete-success.html:13
+msgid "was deleted."
+msgstr ""
+
+#: webapp/templates/my-sensor-delete-success.html:14
+#: webapp/templates/my-sensor-delete.html:22
+#: webapp/templates/my-sensor-give-success.html:15
+#: webapp/templates/my-sensor-give.html:24
+msgid "Back to my sensors"
+msgstr "Обратно к моим сенсорам"
+
+#: webapp/templates/my-sensor-delete.html:8
+#, python-format
+msgid "Delete sensor %(node_id)s"
+msgstr ""
+
+#: webapp/templates/my-sensor-delete.html:9
+msgid "Are you sure you want to delete this sensor?"
+msgstr ""
+
+#: webapp/templates/my-sensor-delete.html:10
+msgid "Warning! After deleting you have no more control over the sensor!"
+msgstr ""
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "was handed over."
@@ -598,11 +631,6 @@ msgstr "был передан."
 #: webapp/templates/my-sensor-give-success.html:14
 msgid "An e-mail was sent to the new owner"
 msgstr "Эл. сообщение было послано новому владельцу"
-
-#: webapp/templates/my-sensor-give-success.html:15
-#: webapp/templates/my-sensor-give.html:24
-msgid "Back to my sensors"
-msgstr "Обратно к моим сенсорам"
 
 #: webapp/templates/my-sensor-give.html:8
 #, python-format
@@ -676,11 +704,11 @@ msgstr "Данные"
 msgid "Hand over sensor"
 msgstr "Передать сенсор"
 
-#: webapp/templates/my-sensors.html:35
+#: webapp/templates/my-sensors.html:36
 msgid "No sensors found"
 msgstr "Не найдено ни одного сенсора"
 
-#: webapp/templates/my-sensors.html:40
+#: webapp/templates/my-sensors.html:41
 msgid "Register new sensor"
 msgstr "Зарегистрировать новый сенсор"
 
@@ -766,58 +794,64 @@ msgid ""
 "\n"
 "                    "
 msgstr ""
-"<p>Операторы этого интернет сервиса подходят к защите Ваших персональных данных "
-"со всей серьезностью. Мы обращаемся с Вашими личными данными конфиденциально и согласно "
-"правовым предписаниям по защите данных, а также в соответствии данному на сайте "
-"пояснению.</p>\n"
-"                    <p>Пользоваться нашим веб-сайтом, как правило, возможно "
-"без предоставления личных данных. Если на наших страницах собираются личные данные (например имя, "
-"адрес или электронная почта") то это делается опционально настолько, насколько это возможно. "
-"Эти данные не будут переданы третьим лицам без вашего явного согласия.</p>\n"
-"                    <p>Хотим отметить, что передача данных "
-"через Интернет (например, общение по электронной почте) может иметь потенциальные пробелы в безопасности. "
-"А посему полная защита данных от доступа третьих лиц не представляется "
-"возможной.</p>\n"
+"<p>Операторы этого интернет сервиса подходят к защите Ваших персональных "
+"данных со всей серьезностью. Мы обращаемся с Вашими личными данными "
+"конфиденциально и согласно правовым предписаниям по защите данных, а "
+"также в соответствии данному на сайте пояснению.</p>\n"
+"                    <p>Пользоваться нашим веб-сайтом, как правило, "
+"возможно без предоставления личных данных. Если на наших страницах "
+"собираются личные данные (например имя, адрес или электронная почта\") то"
+" это делается опционально настолько, насколько это возможно. Эти данные "
+"не будут переданы третьим лицам без вашего явного согласия.</p>\n"
+"                    <p>Хотим отметить, что передача данных через Интернет"
+" (например, общение по электронной почте) может иметь потенциальные "
+"пробелы в безопасности. А посему полная защита данных от доступа третьих "
+"лиц не представляется возможной.</p>\n"
 "                    <h2>Информация, удаление, блокировка</h2>\n"
-"                    <p>Вы имеете право в любое время освободить информацию "
-"о Ваших сохраненных персональных данных, их происхождении и получателе, а также о "
-"целях обработки данных, а также право на корректировку, блокировку или "
-"удаление этих данных. Вы можете связаться с нами в любое время по адресу "
-"в разделе "Контакты" указанному для этих целей.</p>\n"
+"                    <p>Вы имеете право в любое время освободить "
+"информацию о Ваших сохраненных персональных данных, их происхождении и "
+"получателе, а также о целях обработки данных, а также право на "
+"корректировку, блокировку или удаление этих данных. Вы можете связаться с"
+" нами в любое время по адресу в разделе \"Контакты\" указанному для этих "
+"целей.</p>\n"
 "                    <h2>Cookie-файлы </h2>\n"
-"                    <p>На некоторых интернет-страницах используются так называемые Cookie-файлы. "
-"Cookie-файлы" не вредят вашему компьютеру и не содержат вирусов. Cookie-файлы "
-"служат для того, чтобы сделать наш сервис более удобным, эффективным и безопасным. "
-"Cookie-файлы - это небольшие текстовые файлы, которые сохраняет Ваш бразуер на Вашем компьютере.</p>\n"
-"                    <p>Большинство наших Cookie-файлов являются т.н. "сессионными" Cookie-файлами. "
-"Они автоматически удаляются в конце вашего визита на наш сервис. "
-"Другие Cookie-файлы остаются на ваше компьютере до тех пор, пока вы их не удалите. "
-"Они позволяют нам распознать ваш браузер при следующем посещении и не просить вас ввести пароль заного.</p>"
-"\n"
+"                    <p>На некоторых интернет-страницах используются так "
+"называемые Cookie-файлы. Cookie-файлы\" не вредят вашему компьютеру и не "
+"содержат вирусов. Cookie-файлы служат для того, чтобы сделать наш сервис "
+"более удобным, эффективным и безопасным. Cookie-файлы - это небольшие "
+"текстовые файлы, которые сохраняет Ваш бразуер на Вашем компьютере.</p>\n"
+"                    <p>Большинство наших Cookie-файлов являются т.н. "
+"\"сессионными\" Cookie-файлами. Они автоматически удаляются в конце "
+"вашего визита на наш сервис. Другие Cookie-файлы остаются на ваше "
+"компьютере до тех пор, пока вы их не удалите. Они позволяют нам "
+"распознать ваш браузер при следующем посещении и не просить вас ввести "
+"пароль заного.</p>\n"
 "                \n"
 "                    <h2>Данные аккаунта и датчиков</h2>\n"
-"                    <p>Данные измерений датчиков собираются на сервере Sensor.Community и >
-"являются общедоступной информацией."
-"Будет опубликована следующая информация:</p>\n"
+"                    <p>Данные измерений датчиков собираются на сервере "
+"Sensor.Community и являются общедоступной информацией.Будет опубликована "
+"следующая информация:</p>\n"
 "                    <ul>\n"
 "                        <li>Анонимизированная геопозиция (долгота и "
 "широта округленная до 100 м.</li>\n"
-"                        <li>Идентификатор вашей платы ESP8266 NodeMCU</li>\n"
-"                        <li>Указанные Вами числовые характеристики среды в "
-"месте установки измерительной станции</li>\n"
+"                        <li>Идентификатор вашей платы ESP8266 "
+"NodeMCU</li>\n"
+"                        <li>Указанные Вами числовые характеристики среды "
+"в месте установки измерительной станции</li>\n"
 "                        <li>Высота установки измерительной станции</li>\n"
 "                        <li>Описание в текстовом виде</li>\n"
 "                    </ul>\n"
-"                    <p>Следующие дополнительные данные будут использовант для внутренней обработки, но не будут опубликованы:</p>\n"
+"                    <p>Следующие дополнительные данные будут использовант"
+" для внутренней обработки, но не будут опубликованы:</p>\n"
 "                    <ul>\n"
 "                        <li>Постовой адрес датчика</li>\n"
 "                        <li>Электронный адрес</li>\n"
 "                        <li>Ваша фамилия и имя</li>\n"
 "                    </ul>\n"
 "                    <h2>Лог-файлы сервера</h2>\n"
-"                    <p>Наш сервис автоматически собирает и хранит нижеуказанную информацию в "
-"так называемых лог-файлах сервера, которую ваш браузер автоматически передает нам. "
-"Это:</p>\n"
+"                    <p>Наш сервис автоматически собирает и хранит "
+"нижеуказанную информацию в так называемых лог-файлах сервера, которую ваш"
+" браузер автоматически передает нам. Это:</p>\n"
 "                    <ul>\n"
 "                        <li>Тип браузера / версия браузера</li>\n"
 "                        <li>использованная операционная система</li>\n"
@@ -825,17 +859,18 @@ msgstr ""
 "                        <li>Хост-имя подключающегося компьютера</li>\n"
 "                        <li>Время запроса сервера</li>\n"
 "                    </ul>\n"
-"                    <p>Эти данные не могут быть присвоены конкретным лицам. "
-"Эти данные не будут объединены с другими источниками данных. Мы оставляем за собой "
-"право впоследствии проверить эти данные, если нам станет известно о конкретных "
-"признаках их незаконного использования.</p>\n"
-"                    <h2>Противозаконная рекламная рассылка</h2>\n"
-"                    <p>Настоящим мы возражаем против использования контактных данных, "
-"опубликованных в рамках обязательства по публикации, для рассылки незапрашиваемых "
-"рекламных и информационных материалов. Владельцы этого сайта однозначно "
-"оставляют за собой право предпринимать правовые действия против незапрашиваемой "
-"рассылки или рассылки по электронной почте спама и других подобных рекламных материалов.</p>"
+"                    <p>Эти данные не могут быть присвоены конкретным "
+"лицам. Эти данные не будут объединены с другими источниками данных. Мы "
+"оставляем за собой право впоследствии проверить эти данные, если нам "
+"станет известно о конкретных признаках их незаконного использования.</p>"
 "\n"
+"                    <h2>Противозаконная рекламная рассылка</h2>\n"
+"                    <p>Настоящим мы возражаем против использования "
+"контактных данных, опубликованных в рамках обязательства по публикации, "
+"для рассылки незапрашиваемых рекламных и информационных материалов. "
+"Владельцы этого сайта однозначно оставляют за собой право предпринимать "
+"правовые действия против незапрашиваемой рассылки или рассылки по "
+"электронной почте спама и других подобных рекламных материалов.</p>\n"
 "                    "
 
 #: webapp/templates/recover-fail.html:13
@@ -962,7 +997,15 @@ msgstr "Дополнительная информация"
 msgid "Hardware configuration"
 msgstr "Настройка аппаратного обеспечения"
 
-#: webapp/templates/sensor-settings-form.html:80
+#: webapp/templates/sensor-settings-form.html:34
+msgid "remove"
+msgstr ""
+
+#: webapp/templates/sensor-settings-form.html:38
+msgid "add component"
+msgstr ""
+
+#: webapp/templates/sensor-settings-form.html:114
 msgid ""
 "The more precise the data we have, the better we can evaluate the data "
 "and thus energize statements. The system can also try to make a "
@@ -974,9 +1017,13 @@ msgstr ""
 "вычислить вашу геопозицию, но мы будем рады, если вы укажете позицию с "
 "помощью карты ниже."
 
-#: webapp/templates/sensor-settings-form.html:89
+#: webapp/templates/sensor-settings-form.html:123
 msgid "Lookup entered address"
 msgstr "Найти введенный адрес"
+
+#: webapp/templates/sensor-settings-form.html:128
+msgid "Please check sensor position."
+msgstr ""
 
 #: webapp/templates/emails/recover.html:11
 #: webapp/templates/emails/register-existing.html:11
@@ -1003,10 +1050,8 @@ msgstr ""
 #: webapp/templates/emails/sensor-registered.html:15
 msgid ""
 "Sincerely,\n"
-"    Your Luftdaten.info team"
+"    Your Sensor.Community team"
 msgstr ""
-"С уважение,\n"
-"    Команда проекта Luftdaten.info"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
@@ -1018,8 +1063,8 @@ msgstr ""
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
-"If you have not created an account on Sensor.Community, you can ignore this"
-" e-mail."
+"If you have not created an account on Sensor.Community, you can ignore "
+"this e-mail."
 msgstr ""
 "Если вы не создали учетную запись на Sensor.Community, вы можете "
 "игнорировать это электронное письмо."
@@ -1355,13 +1400,13 @@ msgstr "Данные пользователя сохранены."
 #~ msgid ""
 #~ "The measurement data of the sensors "
 #~ "are collected on the server of the"
-#~ " Sensor.Community and are publicly accessible"
-#~ " to the company. The following "
-#~ "information will be published:"
+#~ " Sensor.Community and are publicly "
+#~ "accessible to the company. The following"
+#~ " information will be published:"
 #~ msgstr ""
 #~ "Данные измерений датчиков собираются на "
-#~ "сервере Sensor.Community и являются публично "
-#~ "доступными. Будет опубликована следующая "
+#~ "сервере Sensor.Community и являются публично"
+#~ " доступными. Будет опубликована следующая "
 #~ "информация:"
 
 #~ msgid ""
@@ -1644,7 +1689,6 @@ msgstr "Данные пользователя сохранены."
 #~ " numeric part of the name only."
 #~ msgstr ""
 
-
 #~ msgid "Recipient's e-mail address"
 #~ msgstr "Электронная почта получателя"
 
@@ -1751,4 +1795,38 @@ msgstr "Данные пользователя сохранены."
 
 #~ msgid "User data saved."
 #~ msgstr "Данные пользователя сохранены."
+
+#~ msgid "Donate for Luftdaten.info (Hardware, Software) now on Betterplace.org"
+#~ msgstr "Поддержать проект sensor.community на сервисе Betterplace.org"
+
+#~ msgid "Donate for<br>Luftdaten.info<br>now on<br><span>Betterplace.org</span>"
+#~ msgstr ""
+#~ "Поддержать проект <br>sensor.community<br> на "
+#~ "сервисе <br><span>Betterplace.org</span>"
+
+#~ msgid ""
+#~ "General information can be found at "
+#~ "<a href=\"%(home_url)s\">Sensor.Community</a>, as "
+#~ "well as the <a "
+#~ "href=\"%(manual_url)s\">building instructions</a>.\n"
+#~ "            Sensor data can be found "
+#~ "on <a href=\"%(map_url)s\">the fine dust "
+#~ "map</a> or <a href=\"%(archive_url)s\">be "
+#~ "downloaded as CSVs</a>."
+#~ msgstr ""
+#~ "Общую информацию можно найти на сайте"
+#~ " <a href=\"%(home_url)s\">sensor.community</a>, а "
+#~ "также <a href=\"%(manual_url)s\">инструкции по "
+#~ "сборке</a>.\n"
+#~ "            Данные сенсоров можно найти "
+#~ "<a href=\"%(map_url)s\">на карте </a> или "
+#~ "<a href=\"%(archive_url)s\">загрузить в формате "
+#~ "CSV</a>."
+
+#~ msgid ""
+#~ "Sincerely,\n"
+#~ "    Your Luftdaten.info team"
+#~ msgstr ""
+#~ "С уважение,\n"
+#~ "    Команда проекта Luftdaten.info"
 

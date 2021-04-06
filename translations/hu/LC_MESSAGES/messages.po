@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2019-10-06 22:07+0000\n"
+"POT-Creation-Date: 2021-04-06 23:50+0000\n"
 "PO-Revision-Date: 2019-02-08 15:22+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: hu\n"
@@ -88,8 +88,8 @@ msgid ""
 "No office space, but potential fine dust producers 1 = very little, 10 = "
 "very much."
 msgstr ""
-"Nincsenek ipari cégek, de lehetséges szálló por termelők száma 1 = nagyon kevés, 10 = "
-"nagyon sok"
+"Nincsenek ipari cégek, de lehetséges szálló por termelők száma 1 = nagyon"
+" kevés, 10 = nagyon sok"
 
 #: webapp/personal/forms.py:80
 msgid "How many private stoves or fireplaces are within a 100m radius?"
@@ -110,8 +110,8 @@ msgid ""
 "How close are those roads? 1 = very little further away, 10 = a lot of "
 "traffic right on your doorstep."
 msgstr ""
-"Milyen közel van az utca? 1 = Egy kicsit messzebb, 10 = Nagy forgalom"
-" már közvetlen az ajtó előtt."
+"Milyen közel van az utca? 1 = Egy kicsit messzebb, 10 = Nagy forgalom már"
+" közvetlen az ajtó előtt."
 
 #: webapp/personal/forms.py:118
 msgid "PIN"
@@ -156,10 +156,9 @@ msgid ""
 "irrelevant how big the street is, it is only about where the sensor is "
 "attached to the house."
 msgstr ""
-"1 = a kertben, jól elszigetelve az utcáktól, 10 = a "
-"szenzor a ház falán van közvetlenül az utcán. Ennél az értéknél "
-"nem számít, hogy az utca milyen nagy, csak az, hogy a szenzor. "
-"hol van a házon."
+"1 = a kertben, jól elszigetelve az utcáktól, 10 = a szenzor a ház falán "
+"van közvetlenül az utcán. Ennél az értéknél nem számít, hogy az utca "
+"milyen nagy, csak az, hogy a szenzor. hol van a házon."
 
 #: webapp/personal/forms.py:164
 msgid "Publish exact location"
@@ -168,8 +167,8 @@ msgstr "A pontos hely látható legyen?"
 #: webapp/personal/forms.py:165
 msgid "Reveal exact sensor location in public data and archives."
 msgstr ""
-"A publikus adatok között és az archívumban a szenzor pontos helye"
-"lesz látható."
+"A publikus adatok között és az archívumban a szenzor pontos helyelesz "
+"látható."
 
 #: webapp/personal/forms.py:168
 msgid "Inactive"
@@ -180,8 +179,8 @@ msgid ""
 "Mark sensor as inactive. No notifications will be sent when sensor goes "
 "offline."
 msgstr ""
-"Ha megjelölöd, hogy a szenzor inaktív, akkor ha a szenzortól nem kapunk adatokat,"
-"nem fogunk figyelemfelhívó üzenetet küldeni."
+"Ha megjelölöd, hogy a szenzor inaktív, akkor ha a szenzortól nem kapunk "
+"adatokat,nem fogunk figyelemfelhívó üzenetet küldeni."
 
 #: webapp/personal/forms.py:174
 msgid "Short description of location"
@@ -213,10 +212,9 @@ msgid ""
 "the Smogomierz sensor version need to change this accordingly. Also in "
 "these cases the Sensor ID is the numeric part of the name only."
 msgstr ""
-"Alapesetben ez esp8266. Ha ESP32-t, vagy Raspberri PI-t "
-"vagy Smogomierz szenzort használsz, akkor itt tudod beállítani. "
-"Ebben az esetben is a szenzor azonosító a szenzor nevéből "
-" csak a számok legyenek."
+"Alapesetben ez esp8266. Ha ESP32-t, vagy Raspberri PI-t vagy Smogomierz "
+"szenzort használsz, akkor itt tudod beállítani. Ebben az esetben is a "
+"szenzor azonosító a szenzor nevéből  csak a számok legyenek."
 
 #: webapp/personal/forms.py:196
 msgid "Recipient's e-mail address"
@@ -237,6 +235,10 @@ msgstr "Szenzor átadása másnak"
 #: webapp/personal/forms.py:211
 msgid "You can't transfer the sensor to yourself"
 msgstr "Saját magadnak nem adhatod át a szenzort."
+
+#: webapp/personal/forms.py:214 webapp/templates/my-sensors.html:32
+msgid "Delete sensor"
+msgstr ""
 
 #: webapp/personal/views.py:33
 msgid "Fine dust 10 µm"
@@ -262,59 +264,67 @@ msgstr "Légnyomás"
 msgid "Pressure at sea level"
 msgstr "Légnyomás a tengerszinten"
 
-#: webapp/personal/views.py:64
+#: webapp/personal/views.py:63
 msgid "particulate matter sensor SDS011"
 msgstr "Szálló por szenzor SDS011"
 
-#: webapp/personal/views.py:66
+#: webapp/personal/views.py:65
 msgid "particulate matter sensor PMS1003"
 msgstr "Szálló por szenzor PMS1003"
 
-#: webapp/personal/views.py:68
+#: webapp/personal/views.py:67
 msgid "particulate matter sensor PMS3003"
 msgstr "Szálló por szenzor 3003"
 
-#: webapp/personal/views.py:70
+#: webapp/personal/views.py:69
 msgid "particulate matter sensor PMS5003"
 msgstr "Szálló por szenzor 5003"
 
-#: webapp/personal/views.py:72
+#: webapp/personal/views.py:71
 msgid "particulate matter sensor PMS6003"
 msgstr "Szálló por szenzor 6003"
 
-#: webapp/personal/views.py:74
+#: webapp/personal/views.py:73
 msgid "particulate matter sensor PMS7003"
 msgstr "Szálló por szenzor PMS7003"
 
-#: webapp/personal/views.py:76
+#: webapp/personal/views.py:75
+msgid "particulate matter sensor SPS30"
+msgstr ""
+
+#: webapp/personal/views.py:77
+msgid "particulate matter sensor HM3301"
+msgstr ""
+
+#: webapp/personal/views.py:79
 msgid "temperature/humidity sensor DHT22"
 msgstr "Hőmérséklet/páratartalom szenzor DHT22"
 
-#: webapp/personal/views.py:78
+#: webapp/personal/views.py:81
 msgid "temperature/pressure sensor BMP180"
 msgstr "Hőmérséklet/légnyomás szenzor BMP180"
 
-#: webapp/personal/views.py:80
+#: webapp/personal/views.py:83
 msgid "temperature/pressure sensor BMP280"
 msgstr "Hőmérséklet/légnyomás szenzor BMP280"
 
-#: webapp/personal/views.py:82
+#: webapp/personal/views.py:85
 msgid "temperature/humidity/pressure sensor BME280"
 msgstr "Hőmérséklet/páratartalom/légnyomás szenzor BME280"
 
-#: webapp/personal/views.py:140
+#: webapp/personal/views.py:143
 msgid "Settings saved successfully."
 msgstr "A beállítások sikeresen mentve."
 
-#: webapp/personal/views.py:168
+#: webapp/personal/views.py:171
 msgid "Sensor successfully registered."
 msgstr "A szenzor regisztrációja sikeres."
 
-#: webapp/personal/views.py:172
+#: webapp/personal/views.py:175
 msgid "This sensor ID is already registered."
 msgstr "Ez a szenzor azonosító már regisztrálva van."
 
-#: webapp/personal/views.py:186
+#: webapp/personal/views.py:189
 msgid "A fine dust sensor was transferred to you"
 msgstr "Egy szálló por szenzort átadtak neked"
 
@@ -333,10 +343,6 @@ msgstr "először be kell jelentkezned."
 #: webapp/templates/imprint.html:8 webapp/templates/layout.html:110
 msgid "Imprint"
 msgstr "Impresszum"
-
-#
-# Translated to Hungarian until this point by @cskolly
-#
 
 #: webapp/templates/imprint.html:14
 msgid "Informations according to § 5 TMG"
@@ -358,23 +364,23 @@ msgstr "basierend auf dem Konzept und der Softwareentwicklung von Ernesto Ruge:"
 msgid "Contact: Website of Ernesto Ruge:"
 msgstr "Kontakt: Website von Ernesto Ruge: "
 
-#: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid "Donate for Luftdaten.info (Hardware, Software) now on Betterplace.org"
-msgstr "Jetzt für Luftdaten.info (Hardware, Software) spenden auf Betterplace.org"
-
-#: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid "Donate for<br>Luftdaten.info<br>now on<br><span>Betterplace.org</span>"
-msgstr "Jetzt für<br>Luftdaten.info<br>spenden auf<br><span>Betterplace.org</span>"
-
-#: webapp/templates/index.html:9 webapp/templates/register-minimal.html:13
+#: webapp/templates/index.html:6 webapp/templates/register-minimal.html:13
 msgid "Configure air quality sensor yourself"
 msgstr "Luftdaten-Sensor selbst konfigurieren"
 
-#: webapp/templates/index.html:17
+#: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
+msgid "Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
+msgstr ""
+
+#: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
+msgid "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
+msgstr ""
+
+#: webapp/templates/index.html:16
 msgid "Configure Luftdaten"
 msgstr "Luftdaten konfigurieren"
 
-#: webapp/templates/index.html:18
+#: webapp/templates/index.html:17
 msgid ""
 "The main purpose of this page is to enable you, as the owner of a fine "
 "dust sensor, to configure the location and other parameters yourself."
@@ -382,32 +388,27 @@ msgstr ""
 "Auf diesen Seiten können Sie Ihren Feinstaubsensor anmelden und die "
 "benötigten Daten wie Adresse, Position, Umgebung u.a. eintragen."
 
-#: webapp/templates/index.html:19
+#: webapp/templates/index.html:18
 #, python-format
 msgid "Click here to <a href=\"%(login_url)s\">log in</a>."
 msgstr "Klicken Sie hier für das <a href=\"%(login_url)s\">Login</a>"
 
-#: webapp/templates/index.html:21
+#: webapp/templates/index.html:20
 #, python-format
 msgid ""
 "General information can be found at <a "
-"href=\"%(home_url)s\">Sensor.Community</a>, as well as the <a "
-"href=\"%(manual_url)s\">building instructions</a>.\n"
+"href=\"%(home_url)s\">Sensor.Community</a> - formerly known as "
+"Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building "
+"instructions</a>.\n"
 "            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
 "dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
-"Generelle Informationen zum Projekt finden Sie auf <a "
-"href=\"%(home_url)s\">Sensor.Community</a>, ebenso die Bauanleitung für den"
-" Sensor.\n"
-"            Die Sensordaten finden Sie zum Beispiel auf <a "
-"href=\"%(map_url)s\">unserer Feinstaubkarte</a> oder in <a "
-"href=\"%(archive_url)s\">unserem Archiv</a>."
 
-#: webapp/templates/index.html:33
+#: webapp/templates/index.html:32
 msgid "Join us!"
 msgstr "Mach mit!"
 
-#: webapp/templates/index.html:34
+#: webapp/templates/index.html:33
 msgid ""
 "The city of the future belongs to its citizens. The digital tools, the "
 "Maker Movement and Citizen Science are leading to more and more people "
@@ -417,11 +418,11 @@ msgstr ""
 "Maker Bewegung und Citizen Science führen dazu, dass immer mehr Menschen "
 "die Möglichkeit erhalten, die Stadt selbst zu gestalten."
 
-#: webapp/templates/index.html:36
+#: webapp/templates/index.html:35
 msgid "About the project"
 msgstr "Über das Projekt"
 
-#: webapp/templates/index.html:37
+#: webapp/templates/index.html:36
 msgid ""
 "The OK Lab Stuttgart is part of the program Code for Germany of the Open "
 "Knowledge Foundation Germany. The aim of the program is to promote "
@@ -432,7 +433,7 @@ msgstr ""
 "Förderung von Entwicklungen in den Bereichen Transparenz, offene Daten "
 "und Citizen Science."
 
-#: webapp/templates/index.html:38
+#: webapp/templates/index.html:37
 msgid ""
 "Regional groups consisting of designers, developers, journalists and "
 "others meet regularly in Labs. They develop apps that inform, positively "
@@ -445,7 +446,7 @@ msgstr ""
 "und die Arbeit der Verwaltungen zu erleichtern und  Behörden "
 "transparenter zu machen."
 
-#: webapp/templates/index.html:39
+#: webapp/templates/index.html:38
 msgid "Code a difference: Use your skills to improve your city!"
 msgstr "Code a difference: Nutz‘ deine Fähigkeiten, um deine Stadt zu verbessern!"
 
@@ -595,9 +596,34 @@ msgstr "Letztes Update:"
 msgid "No current data are available for this sensor."
 msgstr "Zu diesem Sensor liegen keine aktuellen Daten vor."
 
+#: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "Sensor"
 msgstr "Sensor"
+
+#: webapp/templates/my-sensor-delete-success.html:13
+msgid "was deleted."
+msgstr ""
+
+#: webapp/templates/my-sensor-delete-success.html:14
+#: webapp/templates/my-sensor-delete.html:22
+#: webapp/templates/my-sensor-give-success.html:15
+#: webapp/templates/my-sensor-give.html:24
+msgid "Back to my sensors"
+msgstr "Zurück zu meinen Sensoren"
+
+#: webapp/templates/my-sensor-delete.html:8
+#, python-format
+msgid "Delete sensor %(node_id)s"
+msgstr ""
+
+#: webapp/templates/my-sensor-delete.html:9
+msgid "Are you sure you want to delete this sensor?"
+msgstr ""
+
+#: webapp/templates/my-sensor-delete.html:10
+msgid "Warning! After deleting you have no more control over the sensor!"
+msgstr ""
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "was handed over."
@@ -606,11 +632,6 @@ msgstr "wurde übergeben."
 #: webapp/templates/my-sensor-give-success.html:14
 msgid "An e-mail was sent to the new owner"
 msgstr "Eine E-Mail an den neuen Besitzer wurde gesendet"
-
-#: webapp/templates/my-sensor-give-success.html:15
-#: webapp/templates/my-sensor-give.html:24
-msgid "Back to my sensors"
-msgstr "Zurück zu meinen Sensoren"
 
 #: webapp/templates/my-sensor-give.html:8
 #, python-format
@@ -685,11 +706,11 @@ msgstr "Daten"
 msgid "Hand over sensor"
 msgstr "Sensor übergeben"
 
-#: webapp/templates/my-sensors.html:35
+#: webapp/templates/my-sensors.html:36
 msgid "No sensors found"
 msgstr "Keine Sensoren gefunden"
 
-#: webapp/templates/my-sensors.html:40
+#: webapp/templates/my-sensors.html:41
 msgid "Register new sensor"
 msgstr "Neuen Sensor registrieren"
 
@@ -971,7 +992,15 @@ msgstr "Zusätzliche Informationen"
 msgid "Hardware configuration"
 msgstr "Hardware-Konfiguration"
 
-#: webapp/templates/sensor-settings-form.html:80
+#: webapp/templates/sensor-settings-form.html:34
+msgid "remove"
+msgstr ""
+
+#: webapp/templates/sensor-settings-form.html:38
+msgid "add component"
+msgstr ""
+
+#: webapp/templates/sensor-settings-form.html:114
 msgid ""
 "The more precise the data we have, the better we can evaluate the data "
 "and thus energize statements. The system can also try to make a "
@@ -983,9 +1012,13 @@ msgstr ""
 "Geokoordinaten zu bestimmen. Es wäre aber schön, wenn Sie dies "
 "kontrollieren und gegebenenfalls korrigieren würden."
 
-#: webapp/templates/sensor-settings-form.html:89
+#: webapp/templates/sensor-settings-form.html:123
 msgid "Lookup entered address"
 msgstr "Eingegebene Adresse suchen"
+
+#: webapp/templates/sensor-settings-form.html:128
+msgid "Please check sensor position."
+msgstr ""
 
 #: webapp/templates/emails/recover.html:11
 #: webapp/templates/emails/register-existing.html:11
@@ -1012,10 +1045,8 @@ msgstr ""
 #: webapp/templates/emails/sensor-registered.html:15
 msgid ""
 "Sincerely,\n"
-"    Your Luftdaten.info team"
+"    Your Sensor.Community team"
 msgstr ""
-"Mit freundlichen Grüßen,\n"
-"    Ihr Team von Luftdaten.info"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
@@ -1027,11 +1058,11 @@ msgstr ""
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
-"If you have not created an account on Sensor.Community, you can ignore this"
-" e-mail."
+"If you have not created an account on Sensor.Community, you can ignore "
+"this e-mail."
 msgstr ""
-"Falls Sie keinen Account auf Sensor.Community erstellt haben, so können Sie"
-" diese E-Mail ignorieren."
+"Falls Sie keinen Account auf Sensor.Community erstellt haben, so können "
+"Sie diese E-Mail ignorieren."
 
 #: webapp/templates/emails/sensor-given.html:13
 msgid ""
@@ -1633,3 +1664,40 @@ msgstr "Nutzerdaten gespeichert."
 
 #~ msgid "User data saved."
 #~ msgstr "Nutzerdaten gespeichert."
+
+#~ msgid "Donate for Luftdaten.info (Hardware, Software) now on Betterplace.org"
+#~ msgstr ""
+#~ "Jetzt für Luftdaten.info (Hardware, Software)"
+#~ " spenden auf Betterplace.org"
+
+#~ msgid "Donate for<br>Luftdaten.info<br>now on<br><span>Betterplace.org</span>"
+#~ msgstr ""
+#~ "Jetzt für<br>Luftdaten.info<br>spenden "
+#~ "auf<br><span>Betterplace.org</span>"
+
+#~ msgid ""
+#~ "General information can be found at "
+#~ "<a href=\"%(home_url)s\">Sensor.Community</a>, as "
+#~ "well as the <a "
+#~ "href=\"%(manual_url)s\">building instructions</a>.\n"
+#~ "            Sensor data can be found "
+#~ "on <a href=\"%(map_url)s\">the fine dust "
+#~ "map</a> or <a href=\"%(archive_url)s\">be "
+#~ "downloaded as CSVs</a>."
+#~ msgstr ""
+#~ "Generelle Informationen zum Projekt finden "
+#~ "Sie auf <a "
+#~ "href=\"%(home_url)s\">Sensor.Community</a>, ebenso die "
+#~ "Bauanleitung für den Sensor.\n"
+#~ "            Die Sensordaten finden Sie "
+#~ "zum Beispiel auf <a "
+#~ "href=\"%(map_url)s\">unserer Feinstaubkarte</a> oder "
+#~ "in <a href=\"%(archive_url)s\">unserem Archiv</a>."
+
+#~ msgid ""
+#~ "Sincerely,\n"
+#~ "    Your Luftdaten.info team"
+#~ msgstr ""
+#~ "Mit freundlichen Grüßen,\n"
+#~ "    Ihr Team von Luftdaten.info"
+
