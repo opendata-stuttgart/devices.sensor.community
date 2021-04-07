@@ -238,7 +238,7 @@ msgstr "Du kannst den Sensor nicht auf dich selbst übertragen."
 
 #: webapp/personal/forms.py:214 webapp/templates/my-sensors.html:32
 msgid "Delete sensor"
-msgstr ""
+msgstr "Sensor löschen"
 
 #: webapp/personal/views.py:33
 msgid "Fine dust 10 µm"
@@ -290,11 +290,11 @@ msgstr "Feinstaub-Sensor PMS7003"
 
 #: webapp/personal/views.py:75
 msgid "particulate matter sensor SPS30"
-msgstr ""
+msgstr "Feinstaub-Sensor SPS30"
 
 #: webapp/personal/views.py:77
 msgid "particulate matter sensor HM3301"
-msgstr ""
+msgstr "Feinstaub-Sensor HM3301"
 
 #: webapp/personal/views.py:79
 msgid "temperature/humidity sensor DHT22"
@@ -370,11 +370,11 @@ msgstr "Luftdaten-Sensor selbst konfigurieren"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
 msgid "Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
-msgstr ""
+msgstr "Jetzt spenden für Sensor.Community (Hardware, Software) auf Betterplace.org"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
 msgid "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
-msgstr ""
+msgstr "Jetzt spenden für<br>Sensor.community<br> auf Betterplace.org</span>"
 
 #: webapp/templates/index.html:16
 msgid "Configure Luftdaten"
@@ -609,7 +609,7 @@ msgstr "Sensor"
 
 #: webapp/templates/my-sensor-delete-success.html:13
 msgid "was deleted."
-msgstr ""
+msgstr "wurde gelöscht"
 
 #: webapp/templates/my-sensor-delete-success.html:14
 #: webapp/templates/my-sensor-delete.html:22
@@ -621,15 +621,15 @@ msgstr "Zurück zu meinen Sensoren"
 #: webapp/templates/my-sensor-delete.html:8
 #, python-format
 msgid "Delete sensor %(node_id)s"
-msgstr ""
+msgstr "Lösche Sensor %(node_id)s"
 
 #: webapp/templates/my-sensor-delete.html:9
 msgid "Are you sure you want to delete this sensor?"
-msgstr ""
+msgstr "Sind Sie sicher, daß der Sensor gelöscht werden soll?"
 
 #: webapp/templates/my-sensor-delete.html:10
 msgid "Warning! After deleting you have no more control over the sensor!"
-msgstr ""
+msgstr "Achtung! Nach dem Löschen des Sensors haben Sie keinen Zugriff mehr darauf!"
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "was handed over."
@@ -1000,11 +1000,11 @@ msgstr "Hardware-Konfiguration"
 
 #: webapp/templates/sensor-settings-form.html:34
 msgid "remove"
-msgstr ""
+msgstr "entfernen"
 
 #: webapp/templates/sensor-settings-form.html:38
 msgid "add component"
-msgstr ""
+msgstr "Komponente hinzufügen"
 
 #: webapp/templates/sensor-settings-form.html:114
 msgid ""
@@ -1024,7 +1024,7 @@ msgstr "Eingegebene Adresse suchen"
 
 #: webapp/templates/sensor-settings-form.html:128
 msgid "Please check sensor position."
-msgstr ""
+msgstr "Bitte prüfen Sie die Sensor-Position."
 
 #: webapp/templates/emails/recover.html:11
 #: webapp/templates/emails/register-existing.html:11
@@ -1053,6 +1053,8 @@ msgid ""
 "Sincerely,\n"
 "    Your Sensor.Community team"
 msgstr ""
+"Mit freundlichen Grüßen,\n"
+"    Ihr Sensor.Community-Team "
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
@@ -1223,21 +1225,4 @@ msgstr "Neues Passwort (Wiederholung)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Nutzerdaten gespeichert."
-
-#~ msgid "Donate for Luftdaten.info (Hardware, Software) now on Betterplace.org"
-#~ msgstr ""
-#~ "Jetzt für Luftdaten.info (Hardware, Software)"
-#~ " spenden auf Betterplace.org"
-
-#~ msgid "Donate for<br>Luftdaten.info<br>now on<br><span>Betterplace.org</span>"
-#~ msgstr ""
-#~ "Jetzt für<br>Luftdaten.info<br>spenden "
-#~ "auf<br><span>Betterplace.org</span>"
-
-#~ msgid ""
-#~ "Sincerely,\n"
-#~ "    Your Luftdaten.info team"
-#~ msgstr ""
-#~ "Mit freundlichen Grüßen,\n"
-#~ "    Ihr Team von Luftdaten.info"
 
