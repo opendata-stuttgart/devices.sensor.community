@@ -637,7 +637,7 @@ msgstr ""
 
 #: webapp/templates/my-sensor-delete.html:11
 msgid "Also the chipID of this sensor will remain blocked for a new registration!"
-msgstr ""
+msgstr "Dabei wird die chipID nicht freigegeben und kann nicht neu registriert werden!"
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "was handed over."
@@ -1011,6 +1011,8 @@ msgid ""
 "click <a name=\"expert\" onclick=\"toggle_expert()\" "
 "style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> to enable expert fields"
 msgstr ""
+"Klicke <a name=\"expert\" onclick=\"toggle_expert()\" "
+"style=\"color:blue;\"> &gt;&gt;hier&lt;&lt; </a>, um die erweiterten Optionen anzuzeigen"
 
 #: webapp/templates/sensor-settings-form.html:34
 msgid "remove"
