@@ -24,7 +24,7 @@
 {{ render_field(form.sensor_position) }}
 {{ render_field(form.description) }}
 <h2>{{ _('Hardware configuration') }}</h2>
-<small>(click <a name="expert" onclick="toggle_expert()" style="color:blue;"> &gt;&gt;here&lt;&lt; </a> to enable expert fields)<br /><br /></small>
+<small>({{ _('click <a name="expert" onclick="toggle_expert()" style="color:blue;"> &gt;&gt;here&lt;&lt; </a> to enable expert fields') }})<br /><br /></small>
 {% for sensor in form.sensors %}
   <div class="row" id="component-{{ loop.index0 }}">
     {{ render_field(sensor.sensor_type, 'basic') }}

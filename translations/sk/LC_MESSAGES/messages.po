@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-10 23:01+0000\n"
+"POT-Creation-Date: 2021-04-10 23:10+0000\n"
 "PO-Revision-Date: 2020-03-28 22:26+0100\n"
 "Last-Translator: Ladislav <ladislav@ruzomberok.eu>\n"
 "Language: sk_SK\n"
@@ -988,6 +988,12 @@ msgstr "Doplňujúce informácie"
 #: webapp/templates/sensor-settings-form.html:26
 msgid "Hardware configuration"
 msgstr "Hardvérová konfigurácia"
+
+#: webapp/templates/sensor-settings-form.html:27
+msgid ""
+"click <a name=\"expert\" onclick=\"toggle_expert()\" "
+"style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> to enable expert fields"
+msgstr ""
 
 #: webapp/templates/sensor-settings-form.html:34
 msgid "remove"

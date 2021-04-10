@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-10 23:01+0000\n"
+"POT-Creation-Date: 2021-04-10 23:10+0000\n"
 "PO-Revision-Date: 2019-05-05 14:10+0200\n"
 "Last-Translator: Piotr Dobrowolski <admin@tastycode.pl>\n"
 "Language: pl_PL\n"
@@ -896,6 +896,12 @@ msgstr "Dodatkowe informacje"
 #: webapp/templates/sensor-settings-form.html:26
 msgid "Hardware configuration"
 msgstr "Konfiguracja sprzętu"
+
+#: webapp/templates/sensor-settings-form.html:27
+msgid ""
+"click <a name=\"expert\" onclick=\"toggle_expert()\" "
+"style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> to enable expert fields"
+msgstr ""
 
 #: webapp/templates/sensor-settings-form.html:34
 msgid "remove"
