@@ -96,6 +96,7 @@ SENSOR_TYPES = {
     36: "19", # Radiation Si22G
     37: "1",  # SPS30
     38: "1",  # HM3301
+    40: "17", # SCD30
 }
 
 # IDs of default SensorTypes assigned to node

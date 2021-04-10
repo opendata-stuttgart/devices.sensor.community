@@ -34,9 +34,11 @@
     <div class="form-group col-md-2 remove-button"{% if request.path != "/sensors/register" or loop.first %} style="display: none;"{% endif %}><label for="sensors-{{ loop.index0 }}-remove"> </label><input type="button" id="sensors-{{ loop.index0 }}-remove" name="sensors-{{ loop.index0 }}-remove" onclick="remove_component(this)" value="{{ _('remove') }}" class="form-control"></div>
   </div>
 {% endfor %}
+{% if request.path == "/sensors/register" %}
 <div class="row" id="add_component_row">
 <input type="button" value="{{ _('add component') }}" name="add_component_button" id="add_component_button" onclick="add_component();">
 </div>
+{% endif %}
 <br/>
 <script type="text/javascript">
 var sensor_types = { {% for pin in types %}
