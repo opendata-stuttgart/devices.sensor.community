@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-06 23:50+0000\n"
+"POT-Creation-Date: 2021-04-10 23:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -570,7 +570,7 @@ msgid "was deleted."
 msgstr ""
 
 #: webapp/templates/my-sensor-delete-success.html:14
-#: webapp/templates/my-sensor-delete.html:22
+#: webapp/templates/my-sensor-delete.html:23
 #: webapp/templates/my-sensor-give-success.html:15
 #: webapp/templates/my-sensor-give.html:24
 msgid "Back to my sensors"
@@ -587,6 +587,10 @@ msgstr ""
 
 #: webapp/templates/my-sensor-delete.html:10
 msgid "Warning! After deleting you have no more control over the sensor!"
+msgstr ""
+
+#: webapp/templates/my-sensor-delete.html:11
+msgid "Also the chipID of this sensor will remain blocked for a new registration!"
 msgstr ""
 
 #: webapp/templates/my-sensor-give-success.html:13
@@ -860,11 +864,11 @@ msgstr ""
 msgid "remove"
 msgstr ""
 
-#: webapp/templates/sensor-settings-form.html:38
+#: webapp/templates/sensor-settings-form.html:39
 msgid "add component"
 msgstr ""
 
-#: webapp/templates/sensor-settings-form.html:114
+#: webapp/templates/sensor-settings-form.html:116
 msgid ""
 "The more precise the data we have, the better we can evaluate the data "
 "and thus energize statements. The system can also try to make a "
@@ -872,11 +876,11 @@ msgid ""
 "specify the position with the map below."
 msgstr ""
 
-#: webapp/templates/sensor-settings-form.html:123
+#: webapp/templates/sensor-settings-form.html:125
 msgid "Lookup entered address"
 msgstr ""
 
-#: webapp/templates/sensor-settings-form.html:128
+#: webapp/templates/sensor-settings-form.html:130
 msgid "Please check sensor position."
 msgstr ""
 

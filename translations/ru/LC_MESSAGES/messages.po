@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  Sensor.Community\n"
 "Report-Msgid-Bugs-To: radiomgrs@gmail.com\n"
-"POT-Creation-Date: 2021-04-06 23:50+0000\n"
+"POT-Creation-Date: 2021-04-10 23:01+0000\n"
 "PO-Revision-Date: 2019-04-06 16:02+0300\n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -605,7 +605,7 @@ msgid "was deleted."
 msgstr ""
 
 #: webapp/templates/my-sensor-delete-success.html:14
-#: webapp/templates/my-sensor-delete.html:22
+#: webapp/templates/my-sensor-delete.html:23
 #: webapp/templates/my-sensor-give-success.html:15
 #: webapp/templates/my-sensor-give.html:24
 msgid "Back to my sensors"
@@ -622,6 +622,10 @@ msgstr ""
 
 #: webapp/templates/my-sensor-delete.html:10
 msgid "Warning! After deleting you have no more control over the sensor!"
+msgstr ""
+
+#: webapp/templates/my-sensor-delete.html:11
+msgid "Also the chipID of this sensor will remain blocked for a new registration!"
 msgstr ""
 
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1001,11 +1005,11 @@ msgstr "Настройка аппаратного обеспечения"
 msgid "remove"
 msgstr ""
 
-#: webapp/templates/sensor-settings-form.html:38
+#: webapp/templates/sensor-settings-form.html:39
 msgid "add component"
 msgstr ""
 
-#: webapp/templates/sensor-settings-form.html:114
+#: webapp/templates/sensor-settings-form.html:116
 msgid ""
 "The more precise the data we have, the better we can evaluate the data "
 "and thus energize statements. The system can also try to make a "
@@ -1017,11 +1021,11 @@ msgstr ""
 "вычислить вашу геопозицию, но мы будем рады, если вы укажете позицию с "
 "помощью карты ниже."
 
-#: webapp/templates/sensor-settings-form.html:123
+#: webapp/templates/sensor-settings-form.html:125
 msgid "Lookup entered address"
 msgstr "Найти введенный адрес"
 
-#: webapp/templates/sensor-settings-form.html:128
+#: webapp/templates/sensor-settings-form.html:130
 msgid "Please check sensor position."
 msgstr ""
 
