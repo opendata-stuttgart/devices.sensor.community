@@ -314,7 +314,7 @@ msgstr "Temperatur/Luftfeuchte/Luftdruck-Sensor BME280"
 
 #: webapp/personal/views.py:87
 msgid "temperature/humidity/CO₂ ppm sensor SCD30"
-msgstr ""
+msgstr "Temperatur/Luftfeuchte/CO₂ ppm Sensor SCD30"
 
 #: webapp/personal/views.py:145
 msgid "Settings saved successfully."
