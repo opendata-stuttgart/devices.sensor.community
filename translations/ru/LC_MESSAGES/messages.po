@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  Sensor.Community\n"
 "Report-Msgid-Bugs-To: radiomgrs@gmail.com\n"
-"POT-Creation-Date: 2021-04-10 23:10+0000\n"
+"POT-Creation-Date: 2021-04-11 01:37+0000\n"
 "PO-Revision-Date: 2019-04-06 16:02+0300\n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -314,19 +314,23 @@ msgstr "датчик температуры/давления BMP280"
 msgid "temperature/humidity/pressure sensor BME280"
 msgstr "датчик температуры/давления/влажности BMP180"
 
-#: webapp/personal/views.py:143
+#: webapp/personal/views.py:87
+msgid "temperature/humidity/CO₂ ppm sensor SCD30"
+msgstr ""
+
+#: webapp/personal/views.py:145
 msgid "Settings saved successfully."
 msgstr "Настройки успешно сохранены."
 
-#: webapp/personal/views.py:171
+#: webapp/personal/views.py:173
 msgid "Sensor successfully registered."
 msgstr "Сенсор успешно зарегистрирован."
 
-#: webapp/personal/views.py:175
+#: webapp/personal/views.py:177
 msgid "This sensor ID is already registered."
 msgstr "Этот идентификатор сенсора уже зарегистирован"
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:191
 msgid "A fine dust sensor was transferred to you"
 msgstr "Сенсор был перенесен в ваш список"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-10 23:10+0000\n"
+"POT-Creation-Date: 2021-04-11 01:37+0000\n"
 "PO-Revision-Date: 2019-02-08 15:22+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: hu\n"
@@ -312,19 +312,23 @@ msgstr "Hőmérséklet/légnyomás szenzor BMP280"
 msgid "temperature/humidity/pressure sensor BME280"
 msgstr "Hőmérséklet/páratartalom/légnyomás szenzor BME280"
 
-#: webapp/personal/views.py:143
+#: webapp/personal/views.py:87
+msgid "temperature/humidity/CO₂ ppm sensor SCD30"
+msgstr ""
+
+#: webapp/personal/views.py:145
 msgid "Settings saved successfully."
 msgstr "A beállítások sikeresen mentve."
 
-#: webapp/personal/views.py:171
+#: webapp/personal/views.py:173
 msgid "Sensor successfully registered."
 msgstr "A szenzor regisztrációja sikeres."
 
-#: webapp/personal/views.py:175
+#: webapp/personal/views.py:177
 msgid "This sensor ID is already registered."
 msgstr "Ez a szenzor azonosító már regisztrálva van."
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:191
 msgid "A fine dust sensor was transferred to you"
 msgstr "Egy szálló por szenzort átadtak neked"
 

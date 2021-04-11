@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-10 23:10+0000\n"
+"POT-Creation-Date: 2021-04-11 01:37+0000\n"
 "PO-Revision-Date: 2019-02-08 15:22+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -312,19 +312,23 @@ msgstr "Temperatur/Luftdruck-Sensor BMP280"
 msgid "temperature/humidity/pressure sensor BME280"
 msgstr "Temperatur/Luftfeuchte/Luftdruck-Sensor BME280"
 
-#: webapp/personal/views.py:143
+#: webapp/personal/views.py:87
+msgid "temperature/humidity/CO₂ ppm sensor SCD30"
+msgstr ""
+
+#: webapp/personal/views.py:145
 msgid "Settings saved successfully."
 msgstr "Einstellungen erfolgreich gespeichert."
 
-#: webapp/personal/views.py:171
+#: webapp/personal/views.py:173
 msgid "Sensor successfully registered."
 msgstr "Sensor erfolgreich registriert."
 
-#: webapp/personal/views.py:175
+#: webapp/personal/views.py:177
 msgid "This sensor ID is already registered."
 msgstr "Diese Sensor ID ist bereits registriert."
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:191
 msgid "A fine dust sensor was transferred to you"
 msgstr "Ein Feinstaubsensor wurde Ihnen übertragen"
 
@@ -637,7 +641,9 @@ msgstr ""
 
 #: webapp/templates/my-sensor-delete.html:11
 msgid "Also the chipID of this sensor will remain blocked for a new registration!"
-msgstr "Dabei wird die chipID nicht freigegeben und kann nicht neu registriert werden!"
+msgstr ""
+"Dabei wird die chipID nicht freigegeben und kann nicht neu registriert "
+"werden!"
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "was handed over."
@@ -1012,7 +1018,8 @@ msgid ""
 "style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> to enable expert fields"
 msgstr ""
 "Klicke <a name=\"expert\" onclick=\"toggle_expert()\" "
-"style=\"color:blue;\"> &gt;&gt;hier&lt;&lt; </a>, um die erweiterten Optionen anzuzeigen"
+"style=\"color:blue;\"> &gt;&gt;hier&lt;&lt; </a>, um die erweiterten "
+"Optionen anzuzeigen"
 
 #: webapp/templates/sensor-settings-form.html:34
 msgid "remove"

@@ -83,6 +83,8 @@ def sensor_data(id):
             sensor.sensor_type_name = _('temperature/pressure sensor BMP280')
         elif sensor.sensor_type_id == 17:
             sensor.sensor_type_name = _('temperature/humidity/pressure sensor BME280')
+        elif sensor.sensor_type_id == 40:
+            sensor.sensor_type_name = _('temperature/humidity/CO₂ ppm sensor SCD30')
 
         try:
             # sensor_request = requests.get('http://api.sensor.community/static/v1/sensor/%s/' % (sensor.id))
