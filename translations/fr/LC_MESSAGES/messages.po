@@ -241,7 +241,7 @@ msgstr "Vous ne pouvez pas transférer le détecteur vous-même"
 
 #: webapp/personal/forms.py:214 webapp/templates/my-sensors.html:32
 msgid "Delete sensor"
-msgstr ""
+msgstr "Supprimer le détecteur"
 
 #: webapp/personal/views.py:33
 msgid "Fine dust 10 µm"
@@ -269,55 +269,55 @@ msgstr "Pression au niveau de la mer"
 
 #: webapp/personal/views.py:63
 msgid "particulate matter sensor SDS011"
-msgstr ""
+msgstr "Détecteur de particules fines SDS011"
 
 #: webapp/personal/views.py:65
 msgid "particulate matter sensor PMS1003"
-msgstr ""
+msgstr "Détecteur de particules fines PMS1001"
 
 #: webapp/personal/views.py:67
 msgid "particulate matter sensor PMS3003"
-msgstr ""
+msgstr "Détecteur de particules fines PMS3001"
 
 #: webapp/personal/views.py:69
 msgid "particulate matter sensor PMS5003"
-msgstr ""
+msgstr "Détecteur de particules fines PMS5001"
 
 #: webapp/personal/views.py:71
 msgid "particulate matter sensor PMS6003"
-msgstr ""
+msgstr "Détecteur de particules fines PMS6001"
 
 #: webapp/personal/views.py:73
 msgid "particulate matter sensor PMS7003"
-msgstr ""
+msgstr "Détecteur de particules fines PMS7001"
 
 #: webapp/personal/views.py:75
 msgid "particulate matter sensor SPS30"
-msgstr ""
+msgstr "Détecteur de particules fines SPS30"
 
 #: webapp/personal/views.py:77
 msgid "particulate matter sensor HM3301"
-msgstr ""
+msgstr "Détecteur de particules fines HM3301"
 
 #: webapp/personal/views.py:79
 msgid "temperature/humidity sensor DHT22"
-msgstr ""
+msgstr "Thermomètre/hygromètre DHT22"
 
 #: webapp/personal/views.py:81
 msgid "temperature/pressure sensor BMP180"
-msgstr ""
+msgstr "Thermomètre/baromètre BMP180"
 
 #: webapp/personal/views.py:83
 msgid "temperature/pressure sensor BMP280"
-msgstr ""
+msgstr "Thermomètre/baromètre BMP280"
 
 #: webapp/personal/views.py:85
 msgid "temperature/humidity/pressure sensor BME280"
-msgstr ""
+msgstr "Thermomètre/hygromètre/baromètre BME280"
 
 #: webapp/personal/views.py:87
 msgid "temperature/humidity/CO₂ ppm sensor SCD30"
-msgstr ""
+msgstr "Thermomètre/hygromètre/ppm CO₂ SCD30"
 
 #: webapp/personal/views.py:145
 msgid "Settings saved successfully."
@@ -614,7 +614,7 @@ msgstr "Détecteur"
 
 #: webapp/templates/my-sensor-delete-success.html:13
 msgid "was deleted."
-msgstr ""
+msgstr "a été supprimé."
 
 #: webapp/templates/my-sensor-delete-success.html:14
 #: webapp/templates/my-sensor-delete.html:23
@@ -626,19 +626,19 @@ msgstr "Retour vers mon détecteur"
 #: webapp/templates/my-sensor-delete.html:8
 #, python-format
 msgid "Delete sensor %(node_id)s"
-msgstr ""
+msgstr "Supprimer le détecteur %(node_id)s"
 
 #: webapp/templates/my-sensor-delete.html:9
 msgid "Are you sure you want to delete this sensor?"
-msgstr ""
+msgstr "Voulez-vous vraiment supprimer ce détecteur ?"
 
 #: webapp/templates/my-sensor-delete.html:10
 msgid "Warning! After deleting you have no more control over the sensor!"
-msgstr ""
+msgstr "Attention ! Après la suppression, vous n'avez plus aucun contrôle sur le détecteur !"
 
 #: webapp/templates/my-sensor-delete.html:11
 msgid "Also the chipID of this sensor will remain blocked for a new registration!"
-msgstr ""
+msgstr "L'identifiant de la platine chipID sera bloqué pour tout nouvel enregistrement !"
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "was handed over."
@@ -1027,11 +1027,11 @@ msgstr ""
 
 #: webapp/templates/sensor-settings-form.html:34
 msgid "remove"
-msgstr ""
+msgstr "supprimer"
 
 #: webapp/templates/sensor-settings-form.html:39
 msgid "add component"
-msgstr ""
+msgstr "ajouter un élément"
 
 #: webapp/templates/sensor-settings-form.html:116
 msgid ""
@@ -1052,7 +1052,7 @@ msgstr "Chercher une adresse"
 
 #: webapp/templates/sensor-settings-form.html:130
 msgid "Please check sensor position."
-msgstr ""
+msgstr "Veuillez vérifier la position du détecteur."
 
 #: webapp/templates/emails/recover.html:11
 #: webapp/templates/emails/register-existing.html:11
@@ -1080,7 +1080,7 @@ msgstr ""
 msgid ""
 "Sincerely,\n"
 "    Your Sensor.Community team"
-msgstr ""
+msgstr "Cordialement,"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
@@ -1148,7 +1148,7 @@ msgstr "Récupération de mot de passe"
 
 #: webapp/templates/security/register_user.html:17
 msgid "please wait up to 30 min to receive the mail and check your spam folder"
-msgstr ""
+msgstr "Veuilez attendre environ une demi-heure pour la réception du courriel et vérifiez votre répertoire de spam."
 
 #: webapp/templates/security/reset_password.html:5
 msgid "Reset password"
