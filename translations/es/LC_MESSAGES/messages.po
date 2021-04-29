@@ -20,98 +20,99 @@ msgstr ""
 
 #: webapp/personal/forms.py:39
 msgid "Indoor Sensor"
-msgstr "Sensore interno"
+msgstr "Sensor de interior"
 
 #: webapp/personal/forms.py:41
 msgid "Street"
-msgstr "Via"
+msgstr "Calle"
 
 #: webapp/personal/forms.py:41
 msgid "Please enter the street name."
-msgstr "Si prega di inserire il nome della strada."
+msgstr "Por favor, introduzca el nombre de la calle."
 
 #: webapp/personal/forms.py:42
 msgid "Street number"
-msgstr "Numero civico"
+msgstr "Número de la calle"
 
 #: webapp/personal/forms.py:44
 msgid "Postal code"
-msgstr "Codice postale"
+msgstr "Código postal"
 
 #: webapp/personal/forms.py:44
 msgid "Please enter the postal code."
-msgstr "Si prega di inserire il codice postale."
+msgstr "Por favor, introduzca el código postal."
 
 #: webapp/personal/forms.py:46
 msgid "City"
-msgstr "Città"
+msgstr "Ciudad"
 
 #: webapp/personal/forms.py:46
 msgid "Please enter the city name."
-msgstr "Inserisci il nome della città."
+msgstr "Por favor, introduzca el nombre de la ciudad."
 
 #: webapp/personal/forms.py:49
 msgid "Country"
-msgstr "Paese"
+msgstr "País"
 
 #: webapp/personal/forms.py:52 webapp/personal/forms.py:54
 msgid "Please enter the country name."
-msgstr "Inserisci il nome del paese."
+msgstr "Introduzca el nombre del país."
 
 #: webapp/personal/forms.py:59
 msgid "Latitude"
-msgstr "Latitudine"
+msgstr "Latitud"
 
 #: webapp/personal/forms.py:60
 msgid "Please enter the latitude."
-msgstr "Si prega di inserire la latitudine."
+msgstr "Por favor, introduzca la latitud."
 
 #: webapp/personal/forms.py:61
 msgid "Longitude"
-msgstr "Longitudine"
+msgstr "Longitud"
 
 #: webapp/personal/forms.py:62
 msgid "Please enter the longitude."
-msgstr "Si prega di inserire la longitudine."
+msgstr "Por favor, introduzca la longitud."
 
 #: webapp/personal/forms.py:65
 msgid "How much industrial activity is there within a 100m radius?"
-msgstr "Quanta attività industriale c'è nel raggio di 100 metri?"
+msgstr "¿Qué actividad industrial hay en un radio de 100 metros?"
 
 #: webapp/personal/forms.py:74 webapp/personal/forms.py:89
 #: webapp/personal/forms.py:104
 msgid "Please enter the number between 1 and 10"
-msgstr "Inserisci il numero tra 1 e 10"
+msgstr "Introduzca el número entre 1 y 10"
 
 #: webapp/personal/forms.py:77
 msgid ""
 "No office space, but potential fine dust producers 1 = very little, 10 = "
 "very much."
 msgstr ""
-"Nessun ufficio, ma potenziali produttori di polveri sottili 1 = molto poco, "
-"10 = molto."
+"No hay espacio de oficina, pero los posibles productores de polvo fino 1 = "
+"muy poco, 10 = mucho."
 
 #: webapp/personal/forms.py:80
 msgid "How many private stoves or fireplaces are within a 100m radius?"
-msgstr "Quante stufe o caminetti privati ci sono nel raggio di 100 metri?"
+msgstr "¿Cuántas estufas o chimeneas privadas hay en un radio de 100 metros?"
 
 #: webapp/personal/forms.py:92
 msgid ""
 "Does it smell very much like such smoke in your area? 1 = very little, 10 = "
 "very much."
-msgstr "C'è molto odore di fumo nella tua zona? 1 = molto poco, 10 = molto."
+msgstr ""
+"¿Huele mucho a este tipo de humo en su zona? 1 = muy poco, 10 = mucho."
 
 #: webapp/personal/forms.py:95
 msgid "How much traffic is there within a 100m radius?"
-msgstr "Quanto traffico c'è nel raggio di 100 metri?"
+msgstr "¿Cuánto tráfico hay en un radio de 100 metros?"
 
 #: webapp/personal/forms.py:107
 msgid ""
 "How close are those roads? 1 = very little further away, 10 = a lot of "
 "traffic right on your doorstep."
 msgstr ""
-"Quanto sono vicine queste strade? 1 = molto poco lontano, 10 = un sacco di "
-"traffico proprio sulla porta di casa."
+"¿Cómo de cerca están esas carreteras? 1 = muy poco lejos, 10 = mucho tráfico"
+" justo en la puerta."
 
 #: webapp/personal/forms.py:118
 msgid "PIN"
@@ -119,35 +120,35 @@ msgstr "PIN"
 
 #: webapp/personal/forms.py:119
 msgid "For special use only"
-msgstr "Solo per uso speciale"
+msgstr "Sólo para uso especial"
 
 #: webapp/personal/forms.py:122
 msgid "Sensor Type"
-msgstr "Tipo di sensore"
+msgstr "Tipo de sensor"
 
 #: webapp/personal/forms.py:135
 msgid "Personal sensor name"
-msgstr "Nome del sensore personale"
+msgstr "Nombre del sensor personal"
 
 #: webapp/personal/forms.py:138
 msgid "Please enter the sensor name."
-msgstr "Inserire il nome del sensore."
+msgstr "Introduzca el nombre del sensor."
 
 #: webapp/personal/forms.py:141
 msgid "Only the sensor ID will be published."
-msgstr "Verrà pubblicato solo l'ID del sensore."
+msgstr "Sólo se publicará el ID del sensor."
 
 #: webapp/personal/forms.py:144
 msgid "Sensor level above ground (in cm)"
-msgstr "Livello del sensore dal suolo (in cm)"
+msgstr "Nivel del sensor sobre el suelo (en cm)"
 
 #: webapp/personal/forms.py:151
 msgid "NOT height above sea level!"
-msgstr "NON l'altezza sul livello del mare!"
+msgstr "NO la altura sobre el nivel del mar."
 
 #: webapp/personal/forms.py:154
 msgid "Sensor location relative to the traffic"
-msgstr "Posizione del sensore rispetto al traffico"
+msgstr "Ubicación del sensor en relación con el tráfico"
 
 #: webapp/personal/forms.py:161
 msgid ""
@@ -156,55 +157,55 @@ msgid ""
 " how big the street is, it is only about where the sensor is attached to the"
 " house."
 msgstr ""
-"1 = sul lato del giardino, molto ben schermato da tutte le strade, 10 = il "
-"sensore è sul muro di una casa direttamente sulla strada. Con questo valore "
-"è irrilevante quanto sia grande la strada, si tratta solo di dove il sensore"
-" è attaccato alla casa."
+"1 = en el lado del jardín, muy bien protegido de todas las calles, 10 = el "
+"sensor está en una pared de la casa directamente en la calle. Con este valor"
+" es irrelevante el tamaño de la calle, sólo se trata de dónde está pegado el"
+" sensor a la casa."
 
 #: webapp/personal/forms.py:164
 msgid "Publish exact location"
-msgstr "Pubblica la posizione esatta"
+msgstr "Publicar la ubicación exacta"
 
 #: webapp/personal/forms.py:165
 msgid "Reveal exact sensor location in public data and archives."
 msgstr ""
-"Rivela la posizione esatta del sensore nei dati e negli archivi pubblici."
+"Revelar la ubicación exacta del sensor en los datos y archivos públicos."
 
 #: webapp/personal/forms.py:168
 msgid "Inactive"
-msgstr "Inattivo"
+msgstr "Inactivo"
 
 #: webapp/personal/forms.py:169
 msgid ""
 "Mark sensor as inactive. No notifications will be sent when sensor goes "
 "offline."
 msgstr ""
-"Segna il sensore come inattivo. Nessuna notifica sarà inviata quando il "
-"sensore va offline."
+"Marcar el sensor como inactivo. No se enviarán notificaciones cuando el "
+"sensor se desconecte."
 
 #: webapp/personal/forms.py:174
 msgid "Short description of location"
-msgstr "Breve descrizione della posizione"
+msgstr "Breve descripción de la ubicación"
 
 #: webapp/personal/forms.py:176
 msgid "Save settings"
-msgstr "Salvare le impostazioni"
+msgstr "Guardar la configuración"
 
 #: webapp/personal/forms.py:181
 msgid "Sensor ID"
-msgstr "ID sensore"
+msgstr "Identificación del sensor"
 
 #: webapp/personal/forms.py:183
 msgid "Sensor ID may only contain digits and letters A to F"
-msgstr "L'ID del sensore può contenere solo cifre e lettere dalla A alla F"
+msgstr "El ID del sensor sólo puede contener dígitos y letras de la A a la F"
 
 #: webapp/personal/forms.py:185
 msgid "The numeric part of the sensorname only"
-msgstr "Solo la parte numerica del nome del sensore"
+msgstr "Sólo la parte numérica del nombre del sensor"
 
 #: webapp/personal/forms.py:188
 msgid "Sensor Board"
-msgstr "Scheda del sensore"
+msgstr "Tarjeta de sensores"
 
 #: webapp/personal/forms.py:191
 msgid ""
@@ -212,46 +213,46 @@ msgid ""
 "Smogomierz sensor version need to change this accordingly. Also in these "
 "cases the Sensor ID is the numeric part of the name only."
 msgstr ""
-"Normalmente questo dovrebbe essere esp8266. Gli utenti di schede ESP32, "
-"Raspberry PI o la versione del sensore Smogomierz devono cambiare questo di "
-"conseguenza. Anche in questi casi il Sensor ID è solo la parte numerica del "
-"nome."
+"Normalmente debería ser esp8266. Los usuarios de placas ESP32, Raspberry PI "
+"o la versión del sensor Smogomierz deben cambiar esto en consecuencia. "
+"También en estos casos el ID del sensor es la parte numérica del nombre "
+"solamente."
 
 #: webapp/personal/forms.py:196
 msgid "Recipient's e-mail address"
-msgstr "Indirizzo e-mail del destinatario"
+msgstr "Dirección de correo electrónico del destinatario"
 
 #: webapp/personal/forms.py:199
 msgid "Please enter e-mail address"
-msgstr "Inserisci l'indirizzo e-mail"
+msgstr "Por favor, introduzca la dirección de correo electrónico"
 
 #: webapp/personal/forms.py:202
 msgid "Please enter correct e-mail address"
-msgstr "Si prega di inserire l'indirizzo e-mail corretto"
+msgstr "Por favor, introduzca la dirección de correo electrónico correcta"
 
 #: webapp/personal/forms.py:206
 msgid "Transfer sensor"
-msgstr "Sensore di trasferimento"
+msgstr "Sensor de transferencia"
 
 #: webapp/personal/forms.py:211
 msgid "You can't transfer the sensor to yourself"
-msgstr "Non puoi trasferire il sensore a te stesso"
+msgstr "No puedes transferir el sensor a ti mismo"
 
 #: webapp/personal/forms.py:214 webapp/templates/my-sensors.html:32
 msgid "Delete sensor"
-msgstr "Cancellare il sensore"
+msgstr "Borrar sensor"
 
 #: webapp/personal/views.py:33
 msgid "Fine dust 10 µm"
-msgstr "Polvere fine 10 µm"
+msgstr "Polvo fino 10 µm"
 
 #: webapp/personal/views.py:34
 msgid "Fine dust 2.5 µm"
-msgstr "Polvere fine 2,5 µm"
+msgstr "Polvo fino 2,5 µm"
 
 #: webapp/personal/views.py:35
 msgid "Humidity"
-msgstr "Umidità"
+msgstr "Humedad"
 
 #: webapp/personal/views.py:36
 msgid "Temperature"
@@ -259,150 +260,149 @@ msgstr "Temperatura"
 
 #: webapp/personal/views.py:37
 msgid "Pressure"
-msgstr "Pressione"
+msgstr "Presión"
 
 #: webapp/personal/views.py:38
 msgid "Pressure at sea level"
-msgstr "Pressione a livello del mare"
+msgstr "Presión a nivel del mar"
 
 #: webapp/personal/views.py:63
 msgid "particulate matter sensor SDS011"
-msgstr "sensore di particolato SDS011"
+msgstr "sensor de partículas SDS011"
 
 #: webapp/personal/views.py:65
 msgid "particulate matter sensor PMS1003"
-msgstr "sensore di particolato PMS1003"
+msgstr "sensor de partículas PMS1003"
 
 #: webapp/personal/views.py:67
 msgid "particulate matter sensor PMS3003"
-msgstr "sensore di particolato PMS3003"
+msgstr "sensor de partículas PMS3003"
 
 #: webapp/personal/views.py:69
 msgid "particulate matter sensor PMS5003"
-msgstr "sensore di particolato PMS5003"
+msgstr "sensor de partículas PMS5003"
 
 #: webapp/personal/views.py:71
 msgid "particulate matter sensor PMS6003"
-msgstr "sensore di particolato PMS6003"
+msgstr "sensor de partículas PMS6003"
 
 #: webapp/personal/views.py:73
 msgid "particulate matter sensor PMS7003"
-msgstr "sensore di particolato PMS7003"
+msgstr "sensor de partículas PMS7003"
 
 #: webapp/personal/views.py:75
 msgid "particulate matter sensor SPS30"
-msgstr "sensore di particolato SPS30"
+msgstr "sensor de partículas SPS30"
 
 #: webapp/personal/views.py:77
 msgid "particulate matter sensor HM3301"
-msgstr "sensore di particolato HM3301"
+msgstr "sensor de partículas HM3301"
 
 #: webapp/personal/views.py:79
 msgid "temperature/humidity sensor DHT22"
-msgstr "sensore temperatura-umidità DHT22"
+msgstr "sensor de temperatura y humedad DHT22"
 
 #: webapp/personal/views.py:81
 msgid "temperature/pressure sensor BMP180"
-msgstr "sensore temperatura-pressione BMP180"
+msgstr "sensor de temperatura-presión BMP180"
 
 #: webapp/personal/views.py:83
 msgid "temperature/pressure sensor BMP280"
-msgstr "sensore temperatura-pressione BMP280"
+msgstr "sensor de temperatura-presión BMP280"
 
 #: webapp/personal/views.py:85
 msgid "temperature/humidity/pressure sensor BME280"
-msgstr "sensore di temperatura-umidità-pressione BME280"
+msgstr "sensor de temperatura-humedad-presión BME280"
 
 #: webapp/personal/views.py:87
 msgid "temperature/humidity/CO₂ ppm sensor SCD30"
-msgstr "sensore temperatura-umiditàCO₂ ppm SCD30"
+msgstr "sensor de temperatura-humedadCO₂ ppm SCD30"
 
 #: webapp/personal/views.py:145
 msgid "Settings saved successfully."
-msgstr "Impostazioni salvate con successo."
+msgstr "La configuración se ha guardado correctamente."
 
 #: webapp/personal/views.py:173
 msgid "Sensor successfully registered."
-msgstr "Sensore registrato con successo."
+msgstr "Sensor registrado con éxito."
 
 #: webapp/personal/views.py:177
 msgid "This sensor ID is already registered."
-msgstr "Questo ID sensore è già registrato."
+msgstr "Este ID de sensor ya está registrado."
 
 #: webapp/personal/views.py:191
 msgid "A fine dust sensor was transferred to you"
-msgstr "Un sensore di polvere sottile è stato trasferito a voi"
+msgstr "Se le transfirió un sensor de polvo fino"
 
 #: webapp/templates/401.html:8
 msgid "Access prohibited"
-msgstr "Accesso vietato"
+msgstr "Acceso prohibido"
 
 #: webapp/templates/401.html:9
 msgid "You may not access this page. Maybe "
-msgstr "Non puoi accedere a questa pagina. Forse"
+msgstr "No puede acceder a esta página. Quizás"
 
 #: webapp/templates/401.html:9
 msgid "you must first log in?"
-msgstr "devi prima fare il login?"
+msgstr "¿tiene que iniciar sesión primero?"
 
 #: webapp/templates/imprint.html:8 webapp/templates/layout.html:110
 msgid "Imprint"
-msgstr "Impronta"
+msgstr "Pie de imprenta"
 
 #: webapp/templates/imprint.html:14
 msgid "Informations according to § 5 TMG"
-msgstr "Informazioni secondo il § 5 TMG"
+msgstr "Información según el artículo 5 de la TMG"
 
 #: webapp/templates/imprint.html:21
 msgid "Represented by:"
-msgstr "Rappresentato da:"
+msgstr "Representado por:"
 
 #: webapp/templates/imprint.html:26
 msgid "Contact:"
-msgstr "Contatto:"
+msgstr "Contacto:"
 
 #: webapp/templates/imprint.html:32
 msgid "based on the concept and software development of Ernesto Ruge:"
-msgstr "basato sul concetto e lo sviluppo del software di Ernesto Ruge:"
+msgstr "basado en el concepto y el desarrollo de software de Ernesto Ruge:"
 
 #: webapp/templates/imprint.html:34
 msgid "Contact: Website of Ernesto Ruge:"
-msgstr "Contatto: Sito web di Ernesto Ruge:"
+msgstr "Contacto: Página web de Ernesto Ruge:"
 
 #: webapp/templates/index.html:6 webapp/templates/register-minimal.html:13
 msgid "Configure air quality sensor yourself"
-msgstr "Configura da solo il sensore di qualità dell'aria"
+msgstr "Configure usted mismo el sensor de calidad del aire"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
 msgid ""
 "Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
 msgstr ""
-"Donazioni per Sensor.Community (Hardware, Software) ora su Betterplace.org"
+"Donativo para Sensor.Community (Hardware, Software) ahora en Betterplace.org"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
 msgid ""
 "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
 msgstr ""
-"Dona per&lt;br&gt;Sensor.Community&lt;br&gt;ora "
-"su&lt;br&gt;&lt;span&gt;Betterplace.org&lt;span&gt;"
+"Done para<br>Sensor.Community<br>ahora en<br><span>Betterplace.org</span>"
 
 #: webapp/templates/index.html:16
 msgid "Configure Luftdaten"
-msgstr "Configurare i dati dell'aria"
+msgstr "Configurar los datos aéreos"
 
 #: webapp/templates/index.html:17
 msgid ""
 "The main purpose of this page is to enable you, as the owner of a fine dust "
 "sensor, to configure the location and other parameters yourself."
 msgstr ""
-"Lo scopo principale di questa pagina è di permetterti, come proprietario di "
-"un sensore di polveri sottili, di configurare tu stesso la posizione e altri"
-" parametri."
+"El objetivo principal de esta página es permitirle, como propietario de un "
+"sensor de polvo fino, configurar usted mismo la ubicación y otros "
+"parámetros."
 
 #: webapp/templates/index.html:18
 #, python-format
 msgid "Click here to <a href=\"%(login_url)s\">log in</a>."
-msgstr "Clicca qui per <a href=\"%(login_url)s\">log in</a>."
+msgstr "Haga clic aquí para <a href=\"%(login_url)s\">iniciar sesión</a>."
 
 #: webapp/templates/index.html:20
 #, python-format
@@ -410,12 +410,12 @@ msgid ""
 "General information can be found at <a href=\"%(home_url)s\">Sensor.Community</a> - formerly known as Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building instructions</a>.\n"
 "            Sensor data can be found on <a href=\"%(map_url)s\">the fine dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
-"Informazioni generali possono essere trovate su <a href=\"%(home_url)s\">Sensor.Community</a> - precedentemente noto come Luftdaten.info, così come le <a href=\"%(manual_url)s\">istruzioni per la costruzione</a>.\n"
-"            I dati dei sensori possono essere trovati su <a href=\"%(map_url)s\">la mappa delle polveri sottili</a> o <a href=\"%(archive_url)s\">essere scaricati come CSV</a>."
+"Puede encontrar información general en <a href=\"%(home_url)s\">Sensor.Community</a> - antes conocido como Luftdaten.info, así como las <a href=\"%(manual_url)s\">instrucciones de construcción</a>."
+"            Los datos de los sensores pueden encontrarse en <a href=\"%(map_url)s\">el mapa de polvo fino</a> o <a href=\"%(archive_url)s\">descargarse como CSV</a>."
 
 #: webapp/templates/index.html:32
 msgid "Join us!"
-msgstr "Unisciti a noi!"
+msgstr "¡Únase a nosotros!"
 
 #: webapp/templates/index.html:33
 msgid ""
@@ -423,13 +423,13 @@ msgid ""
 " Movement and Citizen Science are leading to more and more people being "
 "given the opportunity to design the city themselves."
 msgstr ""
-"La città del futuro appartiene ai suoi cittadini. Gli strumenti digitali, il"
-" Maker Movement e la Citizen Science stanno portando sempre più persone ad "
-"avere l'opportunità di progettare la città da sole."
+"La ciudad del futuro pertenece a sus ciudadanos. Las herramientas digitales,"
+" el Movimiento Maker y la Ciencia Ciudadana están llevando a que cada vez "
+"más personas tengan la oportunidad de diseñar la ciudad por sí mismas."
 
 #: webapp/templates/index.html:35
 msgid "About the project"
-msgstr "Il progetto"
+msgstr "Sobre el proyecto"
 
 #: webapp/templates/index.html:36
 msgid ""
@@ -437,10 +437,10 @@ msgid ""
 "Knowledge Foundation Germany. The aim of the program is to promote "
 "developments in the areas of transparency, Open Data and Citizen Science."
 msgstr ""
-"L'OK Lab Stuttgart fa parte del programma Code for Germany della Open "
-"Knowledge Foundation Germany. L'obiettivo del programma è quello di "
-"promuovere gli sviluppi nelle aree della trasparenza, degli Open Data e "
-"della Citizen Science."
+"El OK Lab Stuttgart forma parte del programa Code for Germany de la Open "
+"Knowledge Foundation Germany. El objetivo del programa es promover "
+"desarrollos en las áreas de transparencia, Datos Abiertos y Ciencia "
+"Ciudadana."
 
 #: webapp/templates/index.html:37
 msgid ""
@@ -449,57 +449,56 @@ msgid ""
 "support society and make the work of administrations and authorities more "
 "transparent."
 msgstr ""
-"Gruppi regionali composti da designer, sviluppatori, giornalisti e altri si "
-"incontrano regolarmente nei Labs. Sviluppano app che informano, modellano "
-"positivamente e sostengono la società e rendono il lavoro delle "
-"amministrazioni e delle autorità più trasparente."
+"Grupos regionales formados por diseñadores, desarrolladores, periodistas y "
+"otros se reúnen periódicamente en los laboratorios. Desarrollan aplicaciones"
+" que informan, dan forma positiva y apoyan a la sociedad y hacen más "
+"transparente el trabajo de las administraciones y autoridades."
 
 #: webapp/templates/index.html:38
 msgid "Code a difference: Use your skills to improve your city!"
-msgstr ""
-"Codifica la differenza: Usa le tue abilità per migliorare la tua città!"
+msgstr "Codifica la diferencia: Usa tus habilidades para mejorar tu ciudad."
 
 #: webapp/templates/invalid-email.html:8
 msgid "Unknown email address"
-msgstr "Indirizzo e-mail sconosciuto"
+msgstr "Dirección de correo electrónico desconocida"
 
 #: webapp/templates/invalid-email.html:9
 msgid "There are no sensors stored under this e-mail address."
-msgstr "Non ci sono sensori memorizzati sotto questo indirizzo e-mail."
+msgstr "No hay sensores almacenados en esta dirección de correo electrónico."
 
 #: webapp/templates/invalid-email.html:10
 msgid ""
 "If you are of the opinion that you have a sensor at this mail address, "
 "please send us an e-mail. Send an email to"
 msgstr ""
-"Se pensate di avere un sensore a questo indirizzo di posta, inviateci "
-"un'e-mail. Invia un'e-mail a"
+"Si cree que tiene un sensor en esta dirección de correo, envíenos un correo "
+"electrónico. Envíe un correo electrónico a"
 
 #: webapp/templates/layout.html:4
 msgid "user configuration"
-msgstr "configurazione utente"
+msgstr "configuración del usuario"
 
 #: webapp/templates/layout.html:14
 msgid "Information and settings for the luftdaten project"
-msgstr "Informazioni e impostazioni per il progetto luftdaten"
+msgstr "Información y configuración del proyecto luftdaten"
 
 #: webapp/templates/layout.html:55
 msgid "Home"
-msgstr "Casa"
+msgstr "Inicio"
 
 #: webapp/templates/layout.html:58 webapp/templates/my-sensors.html:9
 msgid "My sensors"
-msgstr "I miei sensori"
+msgstr "Mis sensores"
 
 #: webapp/templates/layout.html:59 webapp/templates/meine-luftdaten.html:20
 #: webapp/templates/my-password.html:10 webapp/templates/my-sensors.html:30
 #: webapp/templates/my-settings.html:13
 msgid "Settings"
-msgstr "Impostazioni"
+msgstr "Ajustes"
 
 #: webapp/templates/layout.html:60
 msgid "Password change"
-msgstr "Cambio di password"
+msgstr "Cambio de contraseña"
 
 #: webapp/templates/layout.html:63
 msgid "Massimporter"
@@ -507,150 +506,150 @@ msgstr "Massimporter"
 
 #: webapp/templates/layout.html:69 webapp/templates/meine-luftdaten.html:24
 msgid "Logout"
-msgstr "Logout"
+msgstr "Cierre de sesión"
 
 #: webapp/templates/layout.html:71 webapp/templates/security/login_user.html:7
 #: webapp/templates/security/send_login.html:5
 msgid "Login"
-msgstr "Accesso"
+msgstr "Inicio de sesión"
 
 #: webapp/templates/layout.html:72
 #: webapp/templates/security/login_user.html:17
 #: webapp/templates/security/register_user.html:5
 msgid "Register"
-msgstr "Registra"
+msgstr "Registro"
 
 #: webapp/templates/layout.html:111 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
-msgstr "Politica sulla privacy"
+msgstr "Política de privacidad"
 
 #: webapp/templates/login-with-password.html:68
 msgid "Back to e-mail login"
-msgstr "Ritorna all'accesso all'e-mail"
+msgstr "Volver al inicio de sesión de correo electrónico"
 
 #: webapp/templates/login-with-password.html:69
 msgid "Password Reset"
-msgstr "Ripristino della password"
+msgstr "Restablecimiento de la contraseña"
 
 #: webapp/templates/login.html:12
 msgid "Configure air data sensor yourself"
-msgstr "Configura da solo il sensore di dati dell'aria"
+msgstr "Configure usted mismo el sensor de datos del aire"
 
 #: webapp/templates/meine-luftdaten.html:11
 msgid "Meine Luftdaten"
-msgstr "I miei dati sull'aria"
+msgstr "Mis datos aéreos"
 
 #: webapp/templates/meine-luftdaten.html:11
 msgid "Your personal area."
-msgstr "La tua area personale."
+msgstr "Su área personal."
 
 #: webapp/templates/meine-luftdaten.html:18
 msgid "Sensors"
-msgstr "Sensori"
+msgstr "Sensores"
 
 #: webapp/templates/meine-luftdaten.html:19
 msgid "View and change sensor data and settings."
-msgstr "Visualizzare e modificare i dati e le impostazioni del sensore."
+msgstr "Vea y cambie los datos y los ajustes del sensor."
 
 #: webapp/templates/meine-luftdaten.html:21
 msgid "View and change data, notification settings and passwords."
 msgstr ""
-"Visualizzare e modificare i dati, le impostazioni di notifica e le password."
+"Ver y cambiar los datos, la configuración de las notificaciones y las "
+"contraseñas."
 
 #: webapp/templates/meine-luftdaten.html:22 webapp/users/forms.py:46
 #: webapp/users/forms.py:93
 msgid "Password"
-msgstr "Password"
+msgstr "Contraseña"
 
 #: webapp/templates/meine-luftdaten.html:23
 msgid "Change password."
-msgstr "Cambiare la password."
+msgstr "Cambiar la contraseña."
 
 #: webapp/templates/meine-luftdaten.html:25
 msgid "Logout."
-msgstr "Logout."
+msgstr "Cierre de sesión."
 
 #: webapp/templates/my-password.html:11
 msgid "Change your password."
-msgstr "Cambia la tua password."
+msgstr "Cambia tu contraseña."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr "Dati dal nodo"
+msgstr "Datos del nodo"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
 "Typically, two sensors are attached to each node: the fine dust sensor and the\n"
 "                        Humidity and temperature sensor. The sensor number can also be found"
 msgstr ""
-"Tipicamente, due sensori sono collegati ad ogni nodo: il sensore di polveri "
-"sottili e il sensore di umidità e temperatura. Il numero del sensore può "
-"anche essere trovato"
+"Normalmente, en cada nodo hay dos sensores: el sensor de polvo fino y el\n"
+"                        sensor de humedad y temperatura. El número de sensor también se puede encontrar"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr "sulla mappa delle polveri sottili di nuovo"
+msgstr "en el mapa de polvo fino de nuevo"
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr "mostra sulla mappa"
+msgstr "mostrar en el mapa"
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr "Ultimo aggiornamento:"
+msgstr "Última actualización:"
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr "Non sono disponibili dati attuali per questo sensore."
+msgstr "No hay datos actuales disponibles para este sensor."
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "Sensor"
-msgstr "Sensore"
+msgstr "Sensor"
 
 #: webapp/templates/my-sensor-delete-success.html:13
 msgid "was deleted."
-msgstr "è stato cancellato."
+msgstr "fue eliminado."
 
 #: webapp/templates/my-sensor-delete-success.html:14
 #: webapp/templates/my-sensor-delete.html:23
 #: webapp/templates/my-sensor-give-success.html:15
 #: webapp/templates/my-sensor-give.html:24
 msgid "Back to my sensors"
-msgstr "Torna ai miei sensori"
+msgstr "Volver a mis sensores"
 
 #: webapp/templates/my-sensor-delete.html:8
 #, python-format
 msgid "Delete sensor %(node_id)s"
-msgstr "Torna ai miei sensori"
+msgstr "Volver a mis sensores"
 
 #: webapp/templates/my-sensor-delete.html:9
 msgid "Are you sure you want to delete this sensor?"
-msgstr "Sei sicuro di voler eliminare questo sensore?"
+msgstr "¿Está seguro de que quiere eliminar este sensor?"
 
 #: webapp/templates/my-sensor-delete.html:10
 msgid "Warning! After deleting you have no more control over the sensor!"
-msgstr "Attenzione! Dopo la cancellazione non hai più controllo sul sensore!"
+msgstr "Advertencia Después de borrarlo, ya no tiene control sobre el sensor."
 
 #: webapp/templates/my-sensor-delete.html:11
 msgid ""
 "Also the chipID of this sensor will remain blocked for a new registration!"
 msgstr ""
-"Anche il chipID di questo sensore rimarrà bloccato per una nuova "
-"registrazione!"
+"También el chipID de este sensor permanecerá bloqueado para un nuevo "
+"registro."
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "was handed over."
-msgstr "è stato consegnato."
+msgstr "fue entregada."
 
 #: webapp/templates/my-sensor-give-success.html:14
 msgid "An e-mail was sent to the new owner"
-msgstr "Una e-mail è stata inviata al nuovo proprietario"
+msgstr "Se envió un correo electrónico al nuevo propietario"
 
 #: webapp/templates/my-sensor-give.html:8
 #, python-format
 msgid "Sensor %(node_id)s hand over"
-msgstr "Una e-mail è stata inviata al nuovo proprietario"
+msgstr "Se envió un correo electrónico al nuevo propietario"
 
 #: webapp/templates/my-sensor-give.html:9
 msgid ""
@@ -658,18 +657,18 @@ msgid ""
 "useful if you have ordered a sensor for a friend and want to transfer it to "
 "him or her."
 msgstr ""
-"Questo ti permette di trasferire i sensori ad un'altra persona. Questo è "
-"particolarmente utile se hai ordinato un sensore per un amico e vuoi "
-"trasferirlo a lui o a lei."
+"Esto le permite transferir sensores a otra persona. Esto es especialmente "
+"útil si has pedido un sensor para un amigo y quieres transferírselo."
 
 #: webapp/templates/my-sensor-give.html:10
 msgid "Warning! After the transfer you have no more control over the sensor!"
-msgstr "Attenzione! Dopo il trasferimento non hai più controllo sul sensore!"
+msgstr ""
+"¡Atención! Después de la transferencia ya no tiene control sobre el sensor."
 
 #: webapp/templates/my-sensor-settings.html:6
 #, python-format
 msgid "Settings of Node %(node_id)s"
-msgstr "Impostazioni del nodo %(node_id)s"
+msgstr "Configuración del nodo %(node_id)s"
 
 #: webapp/templates/my-sensor-settings.html:7
 msgid ""
@@ -678,55 +677,55 @@ msgid ""
 "also argue politically. It is therefore important that the basic sensor data"
 " is always kept up to date."
 msgstr ""
-"Con questo modulo è possibile mantenere aggiornati i dati del sensore. Si "
-"prega di notare che solo dati precisi possono portare a valutazioni precise "
-"con le quali possiamo anche argomentare politicamente. È quindi importante "
-"che i dati di base del sensore siano sempre aggiornati."
+"Con este formulario puede mantener los datos del sensor actualizados. Tenga "
+"en cuenta que sólo los datos precisos pueden conducir a evaluaciones "
+"precisas con las que también podemos argumentar políticamente. Por lo tanto,"
+" es importante que los datos básicos del sensor se mantengan siempre "
+"actualizados."
 
 #: webapp/templates/my-sensors.html:10
 msgid "All sensors assigned to your account can be found in this overview."
-msgstr ""
-"Tutti i sensori assegnati al suo account si trovano in questa panoramica."
+msgstr "Todos los sensores asignados a su cuenta se pueden encontrar en este resumen."
 
 #: webapp/templates/my-sensors.html:15
 msgid "Sensor UID"
-msgstr "UID del sensore"
+msgstr "Sensor UID"
 
 #: webapp/templates/my-sensors.html:16
 msgid "Name"
-msgstr "Nome"
+msgstr "Nombre"
 
 #: webapp/templates/my-sensors.html:17
 msgid "Created"
-msgstr "Creato"
+msgstr "Creado"
 
 #: webapp/templates/my-sensors.html:17
 msgid "Last Update"
-msgstr "Ultimo aggiornamento"
+msgstr "Última actualización"
 
 #: webapp/templates/my-sensors.html:18
 msgid "Functions"
-msgstr "Funzioni"
+msgstr "Funciones"
 
 #: webapp/templates/my-sensors.html:29
 msgid "Data"
-msgstr "Dati"
+msgstr "Datos"
 
 #: webapp/templates/my-sensors.html:31
 msgid "Hand over sensor"
-msgstr "Mano sul sensore"
+msgstr "Sensor de mano"
 
 #: webapp/templates/my-sensors.html:36
 msgid "No sensors found"
-msgstr "Nessun sensore trovato"
+msgstr "No se han encontrado sensores"
 
 #: webapp/templates/my-sensors.html:41
 msgid "Register new sensor"
-msgstr "Registrare un nuovo sensore"
+msgstr "Registrar un nuevo sensor"
 
 #: webapp/templates/my-settings.html:14
 msgid "Here you can change your settings."
-msgstr "Qui potete cambiare le vostre impostazioni."
+msgstr "Aquí puedes cambiar la configuración."
 
 #: webapp/templates/privacy-policy.html:13
 msgid ""
@@ -768,74 +767,109 @@ msgid ""
 "                    <p>We hereby object to the use of contact data published within the scope of the imprint obligation to send unsolicited advertising and information material. The operators of this website expressly reserve the right to take legal action against unsolicited mailing or e-mailing of spam and other similar advertising materials.</p>\n"
 "                    "
 msgstr ""
+"<p>Los operadores de estas páginas se toman muy en serio la protección de sus datos personales. Tratamos sus datos personales de forma confidencial y de acuerdo con las normas legales de protección de datos, así como con esta explicación sobre la protección de datos.</p>\n"
+"                    <p>El uso de nuestra página web es posible, por lo general, sin necesidad de proporcionar datos personales. En la medida en que se recojan datos personales (por ejemplo, nombre, dirección o direcciones de correo electrónico) en nuestras páginas, se hará siempre de forma voluntaria en la medida de lo posible. Estos datos no se transmitirán a terceros sin su consentimiento expreso.</p>\n"
+"                    <p>Deseamos señalar que la transmisión de datos a través de Internet (por ejemplo, la comunicación por correo electrónico) puede presentar lagunas de seguridad. Una protección completa de los datos contra el acceso de terceros no es posible.</p>\n"
+"                    <h2>Información, borrado, bloqueo</h2>\n"
+"                    <p>Usted tiene derecho en todo momento a recibir información gratuita sobre sus datos personales almacenados, su origen y destinatario y la finalidad del tratamiento de datos, así como el derecho a la corrección, el bloqueo o la eliminación de estos datos. Puede ponerse en contacto con nosotros en cualquier momento en la dirección indicada en el pie de imprenta para esta y otras cuestiones sobre el tema de los datos personales.</p>\n"
+"                    <h2>Cookies</h2>\n"
+"                    <p>Algunas de las páginas de Internet utilizan las llamadas cookies. Las cookies no dañan su ordenador y no contienen virus. Las cookies sirven para que nuestra oferta sea más fácil de usar, más efectiva y más segura. Las cookies son pequeños archivos de texto que su navegador almacena en su ordenador.</p>\n"
+"                    <p>La mayoría de las cookies que utilizamos son las llamadas \"cookies de sesión\". Se eliminan automáticamente al final de su visita. Otras cookies permanecen almacenadas en su terminal hasta que las elimine. Estas cookies nos permiten reconocer su navegador durante su próxima visita.</p>\n"
+"                \n"
+"                    <h2>Datos de la cuenta y de los sensores</h2>\n"
+"                    <p>Los datos de las mediciones de los sensores se recogen en el servidor de Sensor.Community y son de acceso público para la empresa. Se publicará la siguiente información:</p>\n"
+"                    <ul>\n"
+"                        <li>La geoposición anonimizada (longitud y latitud) redondeada a unos 100 m.</li>\n"
+"                        <li>El identificador de su placa ESP8266 NodeMCU</li>\n"
+"                        <li>La descripción numérica dada del entorno</li>\n"
+"                        <li>La altura del sensor</li>\n"
+"                        <li>La descripción en forma de texto</li>\n"
+"                    </ul>\n"
+"                    <p>Los siguientes datos adicionales se almacenarán para su tratamiento interno, pero no se publicarán:</p>\n"
+"                    <ul>\n"
+"                        <li>La dirección de correo electrónico</li>\n"
+"                        <li>Su nombre y apellidos</li>\n"
+"                    </ul>\n"
+"                    <h2>Archivos de registro del servidor</h2>\n"
+"                    <p>El proveedor de las páginas recoge y almacena automáticamente información en los llamados archivos de registro del servidor, que su navegador nos transmite automáticamente. Éstos son:</p>\n"
+"                    <ul>\a"
+"                        <li>Tipo de navegador/versión del navegador</li>\n"
+"                        <li>Sistema operativo utilizado</li>\n"
+"                        <li>Red de referencia</li>\n"
+"                        <li>Nombre de host del ordenador de acceso</li>\n"
+"                        <li>Hora de la solicitud del servidor</li>\n"
+"                    </ul>\n"
+"                    <p>Estos datos no pueden asignarse a personas concretas. Estos datos no se fusionarán con otras fuentes de datos. Nos reservamos el derecho a comprobar posteriormente estos datos si tenemos conocimiento de indicios concretos de uso ilegal.</p>\n"
+"                    <h2>Correos publicitarios contradictorios</h2>\n"
+"                    <p>Por la presente nos oponemos a la utilización de los datos de contacto publicados en el marco de la obligación del pie de imprenta para el envío de material publicitario e informativo no solicitado. Los operadores de este sitio web se reservan expresamente el derecho a emprender acciones legales contra el envío no solicitado de correos electrónicos no deseados y otros materiales publicitarios similares.</p>\n"
+"                    "
 
 #: webapp/templates/recover-fail.html:13
 msgid "Set password Error"
-msgstr "Impostare la password Errore"
+msgstr "Establecer contraseña Error"
 
 #: webapp/templates/recover-fail.html:14
 msgid ""
 "Unfortunately the link is not correct. Either it is too old, or it was not "
 "copied completely. Please try again."
 msgstr ""
-"Purtroppo il link non è corretto. O è troppo vecchio, o non è stato copiato "
-"completamente. Si prega di riprovare."
+"Lamentablemente, el enlace no es correcto. O bien es demasiado antiguo, o no"
+" se ha copiado completamente. Por favor, inténtelo de nuevo."
 
 #: webapp/templates/recover-mail-sent-again.html:13
 #: webapp/templates/recover-mail-sent.html:13
 msgid "Mail sent"
-msgstr "Posta inviata"
+msgstr "Correo enviado"
 
 #: webapp/templates/recover-mail-sent-again.html:14
 msgid "Please look into your mailbox to reset your password."
 msgstr ""
-"Per favore, guarda nella tua casella di posta elettronica per reimpostare la"
-" tua password."
+"Por favor, busque en su buzón de correo para restablecer su contraseña."
 
 #: webapp/templates/recover-mail-sent.html:14
 msgid ""
 "Your account was not active yet. Please look into your mailbox to reset your"
 " password and activate your account."
 msgstr ""
-"Il tuo account non è ancora attivo. Per favore guarda nella tua casella di "
-"posta elettronica per reimpostare la tua password e attivare il tuo account."
+"Su cuenta aún no está activa. Por favor, busque en su buzón de correo para "
+"restablecer su contraseña y activar su cuenta."
 
 #: webapp/templates/recover-set-password.html:14
 msgid "Set password"
-msgstr "Imposta la password"
+msgstr "Establecer contraseña"
 
 #: webapp/templates/recover.html:14
 msgid "Forgot Passwort?"
-msgstr "Hai dimenticato la password?"
+msgstr "¿Ha olvidado su contraseña?"
 
 #: webapp/templates/register-existing-wait-for-mail.html:13
 msgid "Activation required"
-msgstr "Attivazione richiesta"
+msgstr "Activación necesaria"
 
 #: webapp/templates/register-existing-wait-for-mail.html:14
 msgid ""
 "Since you are logging in for the first time, your e-mail address must be "
 "confirmed. Please look in your mailbox to get access to your sensors."
 msgstr ""
-"Poiché è la prima volta che accedi, il tuo indirizzo e-mail deve essere "
-"confermato. Cerca nella tua casella di posta elettronica per accedere ai "
-"tuoi sensori."
+"Como es la primera vez que se conecta, es necesario confirmar su dirección "
+"de correo electrónico. Por favor, busque en su buzón de correo para acceder "
+"a sus sensores."
 
 #: webapp/templates/register-minimal.html:25
 msgid "Registration"
-msgstr "Registrazione"
+msgstr "Registro"
 
 #: webapp/templates/sensor-import-status.html:13
 msgid "Sensor Mass Import: Status"
-msgstr "Importazione della massa del sensore: Stato"
+msgstr "Importación de masa del sensor: Estado"
 
 #: webapp/templates/sensor-import-status.html:14
 msgid ""
 "You can see all current imports in this overview. Click on Reload to update "
 "the status."
 msgstr ""
-"Puoi vedere tutte le importazioni in corso in questa panoramica. Clicca su "
-"Reload per aggiornare lo stato."
+"Puede ver todas las importaciones actuales en este resumen. Haga clic en "
+"Recargar para actualizar el estado."
 
 #: webapp/templates/sensor-import-status.html:18
 msgid "ID"
@@ -843,19 +877,19 @@ msgstr "ID"
 
 #: webapp/templates/sensor-import-status.html:19
 msgid "Data (Start)"
-msgstr "Dati (inizio)"
+msgstr "Datos (Inicio)"
 
 #: webapp/templates/sensor-import.html:15
 msgid "Sensor mass importer"
-msgstr "Importatore di massa del sensore"
+msgstr "Importador de masa de sensores"
 
 #: webapp/templates/sensor-import.html:16
 msgid ""
 "With this form new nodes can be imported in masses. One node per line is "
 "expected in the following format:"
 msgstr ""
-"Con questo modulo i nuovi nodi possono essere importati in massa. Un nodo "
-"per riga è previsto nel seguente formato:"
+"Con este formulario se pueden importar nuevos nodos en masa. Se espera un "
+"nodo por línea con el siguiente formato:"
 
 #: webapp/templates/sensor-import.html:18
 msgid ""
@@ -863,50 +897,49 @@ msgid ""
 "                            of the owner. If this is not fixed, only the Node-ID can be specified, which is\n"
 "                            E-mail must then be added later."
 msgstr ""
-"123456 è l'ID della scheda ESP8266, l'e-mail è l'indirizzo del futuro del "
-"proprietario. Se questo non è fissato, solo il Node-ID può essere "
-"specificato, che è E-mail deve poi essere aggiunto in seguito."
+"123456 es el ID de la placa ESP8266, el correo electrónico es la dirección\n"
+"                            del futuro del propietario. Si esto no es fijo, sólo se puede especificar el\n"
+"                            Node-ID, que es el correo electrónico debe ser añadido más tarde."
 
 #: webapp/templates/sensor-import.html:21
 msgid ""
 "If an email address has been specified, the owner will be notified with an email about their\n"
 "                            new sensor."
 msgstr ""
-"Se è stato specificato un indirizzo email, il proprietario sarà avvisato con"
-" una email sul suo nuovo sensore."
+"Si se ha especificado una dirección de correo electrónico, el propietario\n"
+"                            será notificado con un correo electrónico sobre su nuevo sensor."
 
 #: webapp/templates/sensor-register.html:6
 msgid "Sensor registration"
-msgstr "Registrazione del sensore"
+msgstr "Registro de sensores"
 
 #: webapp/templates/sensor-settings-form.html:1
 msgid "Basic Information"
-msgstr "Informazioni di base"
+msgstr "Información básica"
 
 #: webapp/templates/sensor-settings-form.html:21
 msgid "Additional Information"
-msgstr "Informazioni aggiuntive"
+msgstr "Información adicional"
 
 #: webapp/templates/sensor-settings-form.html:26
 msgid "Hardware configuration"
-msgstr "Configurazione dell'hardware"
+msgstr "Configuración del hardware"
 
 #: webapp/templates/sensor-settings-form.html:27
 msgid ""
 "click <a name=\"expert\" onclick=\"toggle_expert()\" style=\"color:blue;\"> "
 "&gt;&gt;here&lt;&lt; </a> to enable expert fields"
 msgstr ""
-"clicca &lt;a name=\"expert\" onclick=\"toggle_expert()\" "
-"style=\"color:blue;\"&gt; &amp;gt;&amp;gt;qui&amp;lt;&amp;lt; &lt;a&gt; per "
-"abilitare i campi esperti"
+"haga clic en <a name=\"expert\" onclick=\"toggle_expert()\" style=\"color:blue;\"> "
+"&gt;&gt;aquí&lt;&lt;  </a> para activar los campos de experto"
 
 #: webapp/templates/sensor-settings-form.html:34
 msgid "remove"
-msgstr "rimuovere"
+msgstr "eliminar"
 
 #: webapp/templates/sensor-settings-form.html:39
 msgid "add component"
-msgstr "aggiungi componente"
+msgstr "añadir componente"
 
 #: webapp/templates/sensor-settings-form.html:116
 msgid ""
@@ -915,37 +948,37 @@ msgid ""
 "of the address, but we would be happy if you would specify the position with"
 " the map below."
 msgstr ""
-"Più precisi sono i dati che abbiamo, meglio possiamo valutare i dati e "
-"quindi energizzare le dichiarazioni. Il sistema può anche tentare di "
-"ricavare una geoposizione dall'indirizzo, ma saremmo felici se lei "
-"specificasse la posizione con la mappa qui sotto."
+"Cuanto más precisos sean los datos que tenemos, mejor podremos evaluar los "
+"datos y así dinamizar las declaraciones. El sistema también puede intentar "
+"hacer una geoposición a partir de la dirección, pero estaríamos encantados "
+"de que nos especificara la posición con el mapa de abajo."
 
 #: webapp/templates/sensor-settings-form.html:125
 msgid "Lookup entered address"
-msgstr "Cerca l'indirizzo inserito"
+msgstr "Búsqueda de la dirección introducida"
 
 #: webapp/templates/sensor-settings-form.html:130
 msgid "Please check sensor position."
-msgstr "Si prega di controllare la posizione del sensore."
+msgstr "Por favor, compruebe la posición del sensor."
 
 #: webapp/templates/emails/recover.html:11
 #: webapp/templates/emails/register-existing.html:11
 #: webapp/templates/emails/sensor-given.html:11
 #: webapp/templates/emails/sensor-registered.html:11
 msgid "Hello,"
-msgstr "Salve,"
+msgstr "Hola,"
 
 #: webapp/templates/emails/recover.html:13
 msgid "to reset your password, please use the following URL:"
-msgstr "per reimpostare la tua password, utilizza il seguente URL:"
+msgstr "para restablecer su contraseña, utilice la siguiente URL:"
 
 #: webapp/templates/emails/recover.html:14
 msgid ""
 "If you have not requested a new password on Sensor.Community, you can ignore"
 " this e-mail."
 msgstr ""
-"Se non hai richiesto una nuova password su Sensor.Community, puoi ignorare "
-"questa e-mail."
+"Si no ha solicitado una nueva contraseña en Sensor.Community, puede ignorar "
+"este correo electrónico."
 
 #: webapp/templates/emails/recover.html:15
 #: webapp/templates/emails/register-existing.html:15
@@ -954,173 +987,174 @@ msgstr ""
 msgid ""
 "Sincerely,\n"
 "    Your Sensor.Community team"
-msgstr "Cordialmente, il vostro team Sensor.Community"
+msgstr "Atentamente,\n"
+"    su equipo de Sensor.Community"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
 "in order to manage your sensor in the future, we have created an account for"
 " you. Please enter a password under the following link: "
 msgstr ""
-"Per poter gestire il tuo sensore in futuro, abbiamo creato un account per "
-"te. Inserisci una password al seguente link:"
+"Para poder gestionar su sensor en el futuro, hemos creado una cuenta para "
+"usted. Por favor, introduzca una contraseña en el siguiente enlace:"
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
 "If you have not created an account on Sensor.Community, you can ignore this "
 "e-mail."
 msgstr ""
-"Se non hai creato un account su Sensor.Community, puoi ignorare questa "
-"e-mail."
+"Si no ha creado una cuenta en Sensor.Community, puede ignorar este correo "
+"electrónico."
 
 #: webapp/templates/emails/sensor-given.html:13
 msgid ""
 "a particulate matter sensor has been handed over to your control. Please log"
 " in with this mail address to take data and settings or to change them: "
 msgstr ""
-"un sensore di particolato è stato consegnato al vostro controllo. Accedete "
-"con questo indirizzo e-mail per prendere i dati e le impostazioni o per "
-"cambiarli:"
+"se ha entregado un sensor de partículas a su control. Por favor, inicie "
+"sesión con esta dirección de correo para tomar datos y ajustes o para "
+"modificarlos:"
 
 #: webapp/templates/emails/sensor-given.html:14
 msgid ""
 "If you have received a sensor by mistake, please report this at "
 "tech@sensor.community."
 msgstr ""
-"Se hai ricevuto un sensore per errore, segnalalo a tech@sensor.community."
+"Si ha recibido un sensor por error, infórmelo en tech@sensor.community."
 
 #: webapp/templates/emails/sensor-registered.html:13
 msgid ""
 "a fine dust sensor has been registered for you. Please log in with this mail"
 " address to take in or change data and settings: "
 msgstr ""
-"un sensore per polveri sottili è stato registrato per te. Si prega di "
-"accedere con questo indirizzo e-mail per prendere o modificare i dati e le "
-"impostazioni:"
+"se ha registrado un sensor de polvo fino para usted. Por favor, inicie "
+"sesión con esta dirección de correo electrónico para tomar o cambiar los "
+"datos y la configuración:"
 
 #: webapp/templates/emails/sensor-registered.html:14
 msgid ""
 "If the sensor was registered for you by mistake, please report this to "
 "tech@sensor.community."
 msgstr ""
-"Se il sensore è stato registrato per errore, segnalalo a "
-"tech@sensor.community."
+"Si el sensor fue registrado para usted por error, por favor informe de ello "
+"a tech@sensor.community."
 
 #: webapp/templates/security/change_password.html:5
 msgid "Change password"
-msgstr "Cambiare la password"
+msgstr "Cambiar contraseña"
 
 #: webapp/templates/security/forgot_password.html:5
 msgid "Send password reset instructions"
-msgstr "Invia le istruzioni per la reimpostazione della password"
+msgstr "Enviar instrucciones para restablecer la contraseña"
 
 #: webapp/templates/security/login_user.html:18
 msgid "Password reminder"
-msgstr "Promemoria della password"
+msgstr "Recordatorio de contraseña"
 
 #: webapp/templates/security/register_user.html:17
 msgid ""
 "please wait up to 30 min to receive the mail and check your spam folder"
 msgstr ""
-"si prega di attendere fino a 30 minuti per ricevere la posta e controllare "
-"la cartella spam"
+"por favor, espere hasta 30 minutos para recibir el correo y compruebe su "
+"carpeta de spam"
 
 #: webapp/templates/security/reset_password.html:5
 msgid "Reset password"
-msgstr "Ripristina la password"
+msgstr "Restablecer contraseña"
 
 #: webapp/templates/security/send_confirmation.html:5
 msgid "Resend confirmation instructions"
-msgstr "Invia nuovamente le istruzioni di conferma"
+msgstr "Reenviar las instrucciones de confirmación"
 
 #: webapp/users/forms.py:22 webapp/users/forms.py:36 webapp/users/forms.py:58
 #: webapp/users/forms.py:79
 msgid "E-Mail addresse"
-msgstr "Indirizzo e-mail"
+msgstr "Dirección de correo electrónico"
 
 #: webapp/users/forms.py:25 webapp/users/forms.py:39 webapp/users/forms.py:61
 #: webapp/users/forms.py:82
 msgid "Please enter an e-mail address."
-msgstr "Si prega di inserire un indirizzo e-mail."
+msgstr "Por favor, introduzca una dirección de correo electrónico."
 
 #: webapp/users/forms.py:28 webapp/users/forms.py:42 webapp/users/forms.py:64
 #: webapp/users/forms.py:85
 msgid "Please enter a correct e-mail address."
-msgstr "Si prega di inserire un indirizzo e-mail corretto."
+msgstr "Por favor, introduzca una dirección de correo electrónico correcta."
 
 #: webapp/users/forms.py:32
 msgid "next"
-msgstr "prossimo"
+msgstr "siguiente"
 
 #: webapp/users/forms.py:49 webapp/users/forms.py:96 webapp/users/forms.py:108
 #: webapp/users/forms.py:136
 msgid "Please enter a password."
-msgstr "Si prega di inserire una password."
+msgstr "Por favor, introduzca una contraseña."
 
 #: webapp/users/forms.py:53 webapp/users/forms.py:113
 msgid "Stay logged in."
-msgstr "Resta collegato."
+msgstr "Sigue conectado."
 
 #: webapp/users/forms.py:54
 msgid "login"
-msgstr "login"
+msgstr "acceso"
 
 #: webapp/users/forms.py:68
 msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>."
-msgstr "Sono d'accordo con la <a href=\"/privacy-policy\">Privacy policy</a>."
+msgstr "Acepto la <a href=\"/privacy-policy\">Política de privacidad</a>."
 
 #: webapp/users/forms.py:71
 msgid "Please agree to the privacy policy."
-msgstr "Si prega di accettare l'informativa sulla privacy."
+msgstr "Por favor, acepte la política de privacidad."
 
 #: webapp/users/forms.py:75
 msgid "register"
-msgstr "registrare"
+msgstr "registrar"
 
 #: webapp/users/forms.py:89
 msgid "Password request via email"
-msgstr "Richiesta di password via e-mail"
+msgstr "Solicitud de contraseña por correo electrónico"
 
 #: webapp/users/forms.py:101 webapp/users/forms.py:130
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr "Richiesta di password via e-mail"
+msgstr "Solicitud de contraseña por correo electrónico"
 
 #: webapp/users/forms.py:105
 msgid "Password (repeat)"
-msgstr "Password (ripetere)"
+msgstr "Contraseña (repetir)"
 
 #: webapp/users/forms.py:110 webapp/users/forms.py:137
 msgid "Passwords must be identical."
-msgstr "Le password devono essere identiche."
+msgstr "Las contraseñas deben ser idénticas."
 
 #: webapp/users/forms.py:114 webapp/users/forms.py:140
 msgid "Save Password"
-msgstr "Salvare la password"
+msgstr "Guardar contraseña"
 
 #: webapp/users/forms.py:118
 msgid "First name"
-msgstr "Nome"
+msgstr "Nombre"
 
 #: webapp/users/forms.py:119
 msgid "Last name"
-msgstr "Nome e cognome"
+msgstr "Apellido"
 
 #: webapp/users/forms.py:120
 msgid "Save user data."
-msgstr "Salvare i dati dell'utente."
+msgstr "Guardar los datos del usuario."
 
 #: webapp/users/forms.py:124
 msgid "Old Password"
-msgstr "Vecchia password"
+msgstr "Contraseña antigua"
 
 #: webapp/users/forms.py:125
 msgid "New password"
-msgstr "Nuova password"
+msgstr "Nueva contraseña"
 
 #: webapp/users/forms.py:134
 msgid "New password (repeat)"
-msgstr "Nuova password (ripetere)"
+msgstr "Nueva contraseña (repetir)"
 
 #: webapp/users/views.py:38
 msgid "User data saved."
-msgstr "Dati utente salvati."
+msgstr "Datos del usuario guardados."

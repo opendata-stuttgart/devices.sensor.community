@@ -1,0 +1,1171 @@
+# <language> translations for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-04-11 01:37+0000\n"
+"PO-Revision-Date: 2019-04-17 19:14+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: fr <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Generated-By: Babel 2.6.0\n"
+
+#: webapp/personal/forms.py:39
+msgid "Indoor Sensor"
+msgstr "Αισθητήρας εσωτερικού χώρου"
+
+#: webapp/personal/forms.py:41
+msgid "Street"
+msgstr "Οδός"
+
+#: webapp/personal/forms.py:41
+msgid "Please enter the street name."
+msgstr "Εισάγετε το όνομα της οδού."
+
+#: webapp/personal/forms.py:42
+msgid "Street number"
+msgstr "Αριθμός οδού"
+
+#: webapp/personal/forms.py:44
+msgid "Postal code"
+msgstr "Ταχυδρομικός κώδικας"
+
+#: webapp/personal/forms.py:44
+msgid "Please enter the postal code."
+msgstr "Εισάγετε τον ταχυδρομικό κώδικα."
+
+#: webapp/personal/forms.py:46
+msgid "City"
+msgstr "Πόλη"
+
+#: webapp/personal/forms.py:46
+msgid "Please enter the city name."
+msgstr "Εισάγετε το όνομα της πόλης."
+
+#: webapp/personal/forms.py:49
+msgid "Country"
+msgstr "Χώρα"
+
+#: webapp/personal/forms.py:52 webapp/personal/forms.py:54
+msgid "Please enter the country name."
+msgstr "Εισάγετε το όνομα της χώρας."
+
+#: webapp/personal/forms.py:59
+msgid "Latitude"
+msgstr "Γεωγραφικό πλάτος"
+
+#: webapp/personal/forms.py:60
+msgid "Please enter the latitude."
+msgstr "Εισάγετε το γεωγραφικό πλάτος."
+
+#: webapp/personal/forms.py:61
+msgid "Longitude"
+msgstr "Γεωγραφικό μήκος"
+
+#: webapp/personal/forms.py:62
+msgid "Please enter the longitude."
+msgstr "Εισάγετε το γεωγραφικό μήκος."
+
+#: webapp/personal/forms.py:65
+msgid "How much industrial activity is there within a 100m radius?"
+msgstr "Πόση βιομηχανική δραστηριότητα υπάρχει σε ακτίνα 100 μέτρων;"
+
+#: webapp/personal/forms.py:74 webapp/personal/forms.py:89
+#: webapp/personal/forms.py:104
+msgid "Please enter the number between 1 and 10"
+msgstr "Πληκτρολογήστε έναν αριθμό μεταξύ 1 και 10"
+
+#: webapp/personal/forms.py:77
+msgid ""
+"No office space, but potential fine dust producers 1 = very little, 10 = "
+"very much."
+msgstr ""
+"Δεν υπάρχει χώρος γραφείων, αλλά πιθανοί παραγωγοί λεπτόκοκκης σκόνης 1 = "
+"πολύ λίγο, 10 = πολύ."
+
+#: webapp/personal/forms.py:80
+msgid "How many private stoves or fireplaces are within a 100m radius?"
+msgstr "Πόσες ιδιωτικές σόμπες ή τζάκια υπάρχουν σε ακτίνα 100 μέτρων;"
+
+#: webapp/personal/forms.py:92
+msgid ""
+"Does it smell very much like such smoke in your area? 1 = very little, 10 = "
+"very much."
+msgstr ""
+"Μυρίζει πολύ σαν τέτοιος καπνός στην περιοχή σας; 1 = πολύ λίγο, 10 = πολύ."
+
+#: webapp/personal/forms.py:95
+msgid "How much traffic is there within a 100m radius?"
+msgstr "Πόση κίνηση υπάρχει σε ακτίνα 100 μέτρων;"
+
+#: webapp/personal/forms.py:107
+msgid ""
+"How close are those roads? 1 = very little further away, 10 = a lot of "
+"traffic right on your doorstep."
+msgstr ""
+"Πόσο κοντά είναι αυτοί οι δρόμοι; 1 = πολύ λίγο πιο μακριά, 10 = πολλή "
+"κίνηση ακριβώς στην πόρτα σας."
+
+#: webapp/personal/forms.py:118
+msgid "PIN"
+msgstr "PIN"
+
+#: webapp/personal/forms.py:119
+msgid "For special use only"
+msgstr "Μόνο για ειδική χρήση"
+
+#: webapp/personal/forms.py:122
+msgid "Sensor Type"
+msgstr "Τύπος αισθητήρα"
+
+#: webapp/personal/forms.py:135
+msgid "Personal sensor name"
+msgstr "Προσωπικό όνομα αισθητήρα"
+
+#: webapp/personal/forms.py:138
+msgid "Please enter the sensor name."
+msgstr "Εισάγετε το όνομα του αισθητήρα."
+
+#: webapp/personal/forms.py:141
+msgid "Only the sensor ID will be published."
+msgstr "Μόνο το αναγνωριστικό του αισθητήρα θα δημοσιευτεί."
+
+#: webapp/personal/forms.py:144
+msgid "Sensor level above ground (in cm)"
+msgstr "Στάθμη αισθητήρα πάνω από το έδαφος (σε cm)"
+
+#: webapp/personal/forms.py:151
+msgid "NOT height above sea level!"
+msgstr "ΟΧΙ το ύψος πάνω από το επίπεδο της θάλασσας!"
+
+#: webapp/personal/forms.py:154
+msgid "Sensor location relative to the traffic"
+msgstr "Θέση του αισθητήρα σε σχέση με την κυκλοφορία"
+
+#: webapp/personal/forms.py:161
+msgid ""
+"1 = on the garden side, very well shielded from all streets, 10 = the sensor"
+" is on a house wall directly on the street. With this value it is irrelevant"
+" how big the street is, it is only about where the sensor is attached to the"
+" house."
+msgstr ""
+"1 = στην πλευρά του κήπου, πολύ καλά προστατευμένη από όλους τους δρόμους, "
+"10 = ο αισθητήρας βρίσκεται σε τοίχο σπιτιού που βρίσκεται ακριβώς πάνω στο "
+"δρόμο. Με αυτή την τιμή δεν έχει σημασία πόσο μεγάλος είναι ο δρόμος, "
+"σημασία έχει μόνο το πού είναι προσαρτημένος ο αισθητήρας στο σπίτι."
+
+#: webapp/personal/forms.py:164
+msgid "Publish exact location"
+msgstr "Δημοσιεύστε την ακριβή τοποθεσία"
+
+#: webapp/personal/forms.py:165
+msgid "Reveal exact sensor location in public data and archives."
+msgstr ""
+"Αποκαλύψτε την ακριβή θέση του αισθητήρα σε δημόσια δεδομένα και αρχεία."
+
+#: webapp/personal/forms.py:168
+msgid "Inactive"
+msgstr "Ανενεργό"
+
+#: webapp/personal/forms.py:169
+msgid ""
+"Mark sensor as inactive. No notifications will be sent when sensor goes "
+"offline."
+msgstr ""
+"Σημειώστε τον αισθητήρα ως ανενεργό. Δεν θα αποστέλλονται ειδοποιήσεις όταν "
+"ο αισθητήρας τεθεί εκτός λειτουργίας."
+
+#: webapp/personal/forms.py:174
+msgid "Short description of location"
+msgstr "Σύντομη περιγραφή της τοποθεσίας"
+
+#: webapp/personal/forms.py:176
+msgid "Save settings"
+msgstr "Αποθήκευση ρυθμίσεων"
+
+#: webapp/personal/forms.py:181
+msgid "Sensor ID"
+msgstr "Αναγνωριστικό αισθητήρα"
+
+#: webapp/personal/forms.py:183
+msgid "Sensor ID may only contain digits and letters A to F"
+msgstr ""
+"Το αναγνωριστικό αισθητήρα μπορεί να περιέχει μόνο ψηφία και γράμματα A έως "
+"F"
+
+#: webapp/personal/forms.py:185
+msgid "The numeric part of the sensorname only"
+msgstr "Μόνο το αριθμητικό μέρος του sensorname"
+
+#: webapp/personal/forms.py:188
+msgid "Sensor Board"
+msgstr "Πλακέτα αισθητήρων"
+
+#: webapp/personal/forms.py:191
+msgid ""
+"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or the "
+"Smogomierz sensor version need to change this accordingly. Also in these "
+"cases the Sensor ID is the numeric part of the name only."
+msgstr ""
+"Κανονικά θα πρέπει να είναι esp8266. Οι χρήστες πλακετών ESP32, Raspberry PI"
+" ή της έκδοσης αισθητήρων Smogomierz πρέπει να αλλάξουν αυτό το πεδίο "
+"ανάλογα. Επίσης, σε αυτές τις περιπτώσεις το Sensor ID είναι μόνο το "
+"αριθμητικό μέρος του ονόματος."
+
+#: webapp/personal/forms.py:196
+msgid "Recipient's e-mail address"
+msgstr "Διεύθυνση ηλεκτρονικού ταχυδρομείου του παραλήπτη"
+
+#: webapp/personal/forms.py:199
+msgid "Please enter e-mail address"
+msgstr "Παρακαλώ εισάγετε τη διεύθυνση ηλεκτρονικού ταχυδρομείου"
+
+#: webapp/personal/forms.py:202
+msgid "Please enter correct e-mail address"
+msgstr "Παρακαλώ εισάγετε τη σωστή διεύθυνση e-mail"
+
+#: webapp/personal/forms.py:206
+msgid "Transfer sensor"
+msgstr "Αισθητήρας μεταφοράς"
+
+#: webapp/personal/forms.py:211
+msgid "You can't transfer the sensor to yourself"
+msgstr "Δεν μπορείτε να μεταφέρετε τον αισθητήρα στον εαυτό σας"
+
+#: webapp/personal/forms.py:214 webapp/templates/my-sensors.html:32
+msgid "Delete sensor"
+msgstr "Διαγραφή αισθητήρα"
+
+#: webapp/personal/views.py:33
+msgid "Fine dust 10 µm"
+msgstr "Λεπτή σκόνη 10 μm"
+
+#: webapp/personal/views.py:34
+msgid "Fine dust 2.5 µm"
+msgstr "Λεπτή σκόνη 2,5 μm"
+
+#: webapp/personal/views.py:35
+msgid "Humidity"
+msgstr "Υγρασία"
+
+#: webapp/personal/views.py:36
+msgid "Temperature"
+msgstr "Θερμοκρασία"
+
+#: webapp/personal/views.py:37
+msgid "Pressure"
+msgstr "Πίεση"
+
+#: webapp/personal/views.py:38
+msgid "Pressure at sea level"
+msgstr "Πίεση στο επίπεδο της θάλασσας"
+
+#: webapp/personal/views.py:63
+msgid "particulate matter sensor SDS011"
+msgstr "αισθητήρας σωματιδίων SDS011"
+
+#: webapp/personal/views.py:65
+msgid "particulate matter sensor PMS1003"
+msgstr "αισθητήρας σωματιδίων PMS1003"
+
+#: webapp/personal/views.py:67
+msgid "particulate matter sensor PMS3003"
+msgstr "αισθητήρας σωματιδίων PMS3003"
+
+#: webapp/personal/views.py:69
+msgid "particulate matter sensor PMS5003"
+msgstr "αισθητήρας σωματιδίων PMS5003"
+
+#: webapp/personal/views.py:71
+msgid "particulate matter sensor PMS6003"
+msgstr "αισθητήρας σωματιδίων PMS6003"
+
+#: webapp/personal/views.py:73
+msgid "particulate matter sensor PMS7003"
+msgstr "αισθητήρας σωματιδίων PMS7003"
+
+#: webapp/personal/views.py:75
+msgid "particulate matter sensor SPS30"
+msgstr "αισθητήρας σωματιδίων SPS30"
+
+#: webapp/personal/views.py:77
+msgid "particulate matter sensor HM3301"
+msgstr "αισθητήρας σωματιδίων HM3301"
+
+#: webapp/personal/views.py:79
+msgid "temperature/humidity sensor DHT22"
+msgstr "αισθητήρας θερμοκρασίας-υγρασίας DHT22"
+
+#: webapp/personal/views.py:81
+msgid "temperature/pressure sensor BMP180"
+msgstr "αισθητήρας πίεσης θερμοκρασίας BMP180"
+
+#: webapp/personal/views.py:83
+msgid "temperature/pressure sensor BMP280"
+msgstr "αισθητήρας πίεσης θερμοκρασίας BMP280"
+
+#: webapp/personal/views.py:85
+msgid "temperature/humidity/pressure sensor BME280"
+msgstr "Αισθητήρας θερμοκρασίας-υγρασίας-πίεσης BME280"
+
+#: webapp/personal/views.py:87
+msgid "temperature/humidity/CO₂ ppm sensor SCD30"
+msgstr "αισθητήρας θερμοκρασίας-υγρασίαςCO₂ ppm SCD30"
+
+#: webapp/personal/views.py:145
+msgid "Settings saved successfully."
+msgstr "Οι ρυθμίσεις αποθηκεύτηκαν με επιτυχία."
+
+#: webapp/personal/views.py:173
+msgid "Sensor successfully registered."
+msgstr "Ο αισθητήρας καταχωρήθηκε επιτυχώς."
+
+#: webapp/personal/views.py:177
+msgid "This sensor ID is already registered."
+msgstr "Αυτό το αναγνωριστικό αισθητήρα είναι ήδη καταχωρημένο."
+
+#: webapp/personal/views.py:191
+msgid "A fine dust sensor was transferred to you"
+msgstr "Ένας αισθητήρας λεπτής σκόνης μεταφέρθηκε σε εσάς"
+
+#: webapp/templates/401.html:8
+msgid "Access prohibited"
+msgstr "Απαγορεύεται η πρόσβαση"
+
+#: webapp/templates/401.html:9
+msgid "You may not access this page. Maybe "
+msgstr "Δεν μπορείτε να έχετε πρόσβαση σε αυτή τη σελίδα. Ίσως"
+
+#: webapp/templates/401.html:9
+msgid "you must first log in?"
+msgstr "πρέπει πρώτα να συνδεθείτε?"
+
+#: webapp/templates/imprint.html:8 webapp/templates/layout.html:110
+msgid "Imprint"
+msgstr "Εκτύπωση"
+
+#: webapp/templates/imprint.html:14
+msgid "Informations according to § 5 TMG"
+msgstr "Πληροφορίες σύμφωνα με την § 5 TMG"
+
+#: webapp/templates/imprint.html:21
+msgid "Represented by:"
+msgstr "Εκπροσωπείται από:"
+
+#: webapp/templates/imprint.html:26
+msgid "Contact:"
+msgstr "Επικοινωνία:"
+
+#: webapp/templates/imprint.html:32
+msgid "based on the concept and software development of Ernesto Ruge:"
+msgstr "με βάση την ιδέα και την ανάπτυξη λογισμικού του Ernesto Ruge:"
+
+#: webapp/templates/imprint.html:34
+msgid "Contact: Website of Ernesto Ruge:"
+msgstr "Επικοινωνία: Ruge:"
+
+#: webapp/templates/index.html:6 webapp/templates/register-minimal.html:13
+msgid "Configure air quality sensor yourself"
+msgstr "Διαμορφώστε μόνοι σας τον αισθητήρα ποιότητας αέρα"
+
+#: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
+msgid ""
+"Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
+msgstr ""
+"Δωρεά για Sensor.Community (Hardware, Software) τώρα στο Betterplace.org"
+
+#: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
+msgid ""
+"Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
+msgstr ""
+"Δωρεά για<br>Sensor.Community<br>τώρα στο<br>s<span>Betterplace.org</span>"
+
+#: webapp/templates/index.html:16
+msgid "Configure Luftdaten"
+msgstr "Διαμόρφωση δεδομένων αέρα"
+
+#: webapp/templates/index.html:17
+msgid ""
+"The main purpose of this page is to enable you, as the owner of a fine dust "
+"sensor, to configure the location and other parameters yourself."
+msgstr ""
+"Ο κύριος σκοπός αυτής της σελίδας είναι να μπορέσετε εσείς, ως ιδιοκτήτης "
+"ενός αισθητήρα λεπτής σκόνης, να ρυθμίσετε τη θέση και άλλες παραμέτρους."
+
+#: webapp/templates/index.html:18
+#, python-format
+msgid "Click here to <a href=\"%(login_url)s\">log in</a>."
+msgstr "Κάντε κλικ εδώ για να <a href=\"%(login_url)s\">συνδεθείτε</a>."
+
+#: webapp/templates/index.html:20
+#, python-format
+msgid ""
+"General information can be found at <a href=\"%(home_url)s\">Sensor.Community</a> - formerly known as Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building instructions</a>.\n"
+"            Sensor data can be found on <a href=\"%(map_url)s\">the fine dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
+msgstr ""
+"Γενικές πληροφορίες μπορείτε να βρείτε στη διεύθυνση <a href=\"%(home_url)s\">Sensor.Community</a> - παλαιότερα γνωστή ως Luftdaten.info, καθώς και τις <a href=\"%(manual_url)s\">οδηγίες κατασκευής</a>.\n"
+"            Τα δεδομένα των αισθητήρων μπορούν να βρεθούν στον <a href=\"%(map_url)s\">χάρτη λεπτόκοκκης σκόνης</a> ή <a href=\"%(archive_url)s\">να τα κατεβάσετε σε μορφή CSV</a>."
+
+#: webapp/templates/index.html:32
+msgid "Join us!"
+msgstr "Ελάτε μαζί μας!"
+
+#: webapp/templates/index.html:33
+msgid ""
+"The city of the future belongs to its citizens. The digital tools, the Maker"
+" Movement and Citizen Science are leading to more and more people being "
+"given the opportunity to design the city themselves."
+msgstr ""
+"Η πόλη του μέλλοντος ανήκει στους πολίτες της. Τα ψηφιακά εργαλεία, το "
+"κίνημα των κατασκευαστών και η επιστήμη των πολιτών οδηγούν στο να δίνεται "
+"σε όλο και περισσότερους ανθρώπους η ευκαιρία να σχεδιάσουν οι ίδιοι την "
+"πόλη."
+
+#: webapp/templates/index.html:35
+msgid "About the project"
+msgstr "Σχετικά με το έργο"
+
+#: webapp/templates/index.html:36
+msgid ""
+"The OK Lab Stuttgart is part of the program Code for Germany of the Open "
+"Knowledge Foundation Germany. The aim of the program is to promote "
+"developments in the areas of transparency, Open Data and Citizen Science."
+msgstr ""
+"Το OK Lab της Στουτγάρδης αποτελεί μέρος του προγράμματος Code for Germany "
+"του Ιδρύματος Ανοικτής Γνώσης της Γερμανίας. Στόχος του προγράμματος είναι η"
+" προώθηση των εξελίξεων στους τομείς της διαφάνειας, των ανοικτών δεδομένων "
+"και της επιστήμης των πολιτών."
+
+#: webapp/templates/index.html:37
+msgid ""
+"Regional groups consisting of designers, developers, journalists and others "
+"meet regularly in Labs. They develop apps that inform, positively shape and "
+"support society and make the work of administrations and authorities more "
+"transparent."
+msgstr ""
+"Οι περιφερειακές ομάδες που αποτελούνται από σχεδιαστές, προγραμματιστές, "
+"δημοσιογράφους και άλλους συναντώνται τακτικά στα Labs. Αναπτύσσουν "
+"εφαρμογές που ενημερώνουν, διαμορφώνουν θετικά και υποστηρίζουν την κοινωνία"
+" και καθιστούν το έργο των διοικήσεων και των αρχών πιο διαφανές."
+
+#: webapp/templates/index.html:38
+msgid "Code a difference: Use your skills to improve your city!"
+msgstr ""
+"Κωδικοποιήστε μια διαφορά: Χρησιμοποιήστε τις δεξιότητές σας για να "
+"βελτιώσετε την πόλη σας!"
+
+#: webapp/templates/invalid-email.html:8
+msgid "Unknown email address"
+msgstr "Άγνωστη διεύθυνση ηλεκτρονικού ταχυδρομείου"
+
+#: webapp/templates/invalid-email.html:9
+msgid "There are no sensors stored under this e-mail address."
+msgstr "Δεν υπάρχουν αισθητήρες αποθηκευμένοι σε αυτή τη διεύθυνση ηλεκτρονικού ταχυδρομείου."
+
+#: webapp/templates/invalid-email.html:10
+msgid ""
+"If you are of the opinion that you have a sensor at this mail address, "
+"please send us an e-mail. Send an email to"
+msgstr ""
+"Εάν πιστεύετε ότι έχετε έναν αισθητήρα σε αυτή τη διεύθυνση αλληλογραφίας, "
+"στείλτε μας ένα μήνυμα ηλεκτρονικού ταχυδρομείου. Στείλτε ένα email στη "
+"διεύθυνση"
+
+#: webapp/templates/layout.html:4
+msgid "user configuration"
+msgstr "ρύθμιση παραμέτρων χρήστη"
+
+#: webapp/templates/layout.html:14
+msgid "Information and settings for the luftdaten project"
+msgstr "Πληροφορίες και ρυθμίσεις για το έργο luftdaten"
+
+#: webapp/templates/layout.html:55
+msgid "Home"
+msgstr "Αρχική σελίδα"
+
+#: webapp/templates/layout.html:58 webapp/templates/my-sensors.html:9
+msgid "My sensors"
+msgstr "Οι αισθητήρες μου"
+
+#: webapp/templates/layout.html:59 webapp/templates/meine-luftdaten.html:20
+#: webapp/templates/my-password.html:10 webapp/templates/my-sensors.html:30
+#: webapp/templates/my-settings.html:13
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: webapp/templates/layout.html:60
+msgid "Password change"
+msgstr "Αλλαγή κωδικού πρόσβασης"
+
+#: webapp/templates/layout.html:63
+msgid "Massimporter"
+msgstr "Massimporter"
+
+#: webapp/templates/layout.html:69 webapp/templates/meine-luftdaten.html:24
+msgid "Logout"
+msgstr "Αποσύνδεση"
+
+#: webapp/templates/layout.html:71 webapp/templates/security/login_user.html:7
+#: webapp/templates/security/send_login.html:5
+msgid "Login"
+msgstr "Σύνδεση"
+
+#: webapp/templates/layout.html:72
+#: webapp/templates/security/login_user.html:17
+#: webapp/templates/security/register_user.html:5
+msgid "Register"
+msgstr "Εγγραφή"
+
+#: webapp/templates/layout.html:111 webapp/templates/privacy-policy.html:8
+msgid "Privacy Policy"
+msgstr "Πολιτική απορρήτου"
+
+#: webapp/templates/login-with-password.html:68
+msgid "Back to e-mail login"
+msgstr "Επιστροφή στην είσοδο e-mail"
+
+#: webapp/templates/login-with-password.html:69
+msgid "Password Reset"
+msgstr "Επαναφορά κωδικού πρόσβασης"
+
+#: webapp/templates/login.html:12
+msgid "Configure air data sensor yourself"
+msgstr "Διαμορφώστε μόνοι σας τον αισθητήρα δεδομένων αέρα"
+
+#: webapp/templates/meine-luftdaten.html:11
+msgid "Meine Luftdaten"
+msgstr "Τα δεδομένα μου για τον αέρα"
+
+#: webapp/templates/meine-luftdaten.html:11
+msgid "Your personal area."
+msgstr "Η προσωπική σας περιοχή."
+
+#: webapp/templates/meine-luftdaten.html:18
+msgid "Sensors"
+msgstr "Αισθητήρες"
+
+#: webapp/templates/meine-luftdaten.html:19
+msgid "View and change sensor data and settings."
+msgstr "Προβολή και αλλαγή των δεδομένων και των ρυθμίσεων του αισθητήρα."
+
+#: webapp/templates/meine-luftdaten.html:21
+msgid "View and change data, notification settings and passwords."
+msgstr "Προβολή και αλλαγή δεδομένων, ρυθμίσεων ειδοποιήσεων και κωδικών πρόσβασης."
+
+#: webapp/templates/meine-luftdaten.html:22 webapp/users/forms.py:46
+#: webapp/users/forms.py:93
+msgid "Password"
+msgstr "Κωδικός πρόσβασης"
+
+#: webapp/templates/meine-luftdaten.html:23
+msgid "Change password."
+msgstr "Αλλαγή κωδικού πρόσβασης."
+
+#: webapp/templates/meine-luftdaten.html:25
+msgid "Logout."
+msgstr "Αποσύνδεση."
+
+#: webapp/templates/my-password.html:11
+msgid "Change your password."
+msgstr "Αλλάξτε τον κωδικό πρόσβασής σας."
+
+#: webapp/templates/my-sensor-data.html:8
+msgid "Data from Node"
+msgstr "Δεδομένα από τον κόμβο"
+
+#: webapp/templates/my-sensor-data.html:9
+msgid ""
+"Typically, two sensors are attached to each node: the fine dust sensor and the\n"
+"                        Humidity and temperature sensor. The sensor number can also be found"
+msgstr ""
+"Συνήθως, σε κάθε κόμβο συνδέονται δύο αισθητήρες: ο αισθητήρας λεπτής σκόνης\n"
+"                        και ο αισθητήρας υγρασίας και θερμοκρασίας. Ο αριθμός του αισθητήρα μπορεί επίσης να βρεθεί"
+
+#: webapp/templates/my-sensor-data.html:11
+msgid "on the fine dust map again"
+msgstr "στο χάρτη της λεπτής σκόνης και πάλι"
+
+#: webapp/templates/my-sensor-data.html:19
+msgid "show on map"
+msgstr "Εμφάνιση στο χάρτη"
+
+#: webapp/templates/my-sensor-data.html:25
+msgid "Last updated:"
+msgstr "Τελευταία ενημέρωση:"
+
+#: webapp/templates/my-sensor-data.html:39
+msgid "No current data are available for this sensor."
+msgstr "Δεν υπάρχουν διαθέσιμα τρέχοντα δεδομένα για αυτόν τον αισθητήρα."
+
+#: webapp/templates/my-sensor-delete-success.html:13
+#: webapp/templates/my-sensor-give-success.html:13
+msgid "Sensor"
+msgstr "Αισθητήρας"
+
+#: webapp/templates/my-sensor-delete-success.html:13
+msgid "was deleted."
+msgstr "διαγράφηκε."
+
+#: webapp/templates/my-sensor-delete-success.html:14
+#: webapp/templates/my-sensor-delete.html:23
+#: webapp/templates/my-sensor-give-success.html:15
+#: webapp/templates/my-sensor-give.html:24
+msgid "Back to my sensors"
+msgstr "Επιστροφή στους αισθητήρες μου"
+
+#: webapp/templates/my-sensor-delete.html:8
+#, python-format
+msgid "Delete sensor %(node_id)s"
+msgstr "Επιστροφή στους αισθητήρες μου"
+
+#: webapp/templates/my-sensor-delete.html:9
+msgid "Are you sure you want to delete this sensor?"
+msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε αυτόν τον αισθητήρα;"
+
+#: webapp/templates/my-sensor-delete.html:10
+msgid "Warning! After deleting you have no more control over the sensor!"
+msgstr "Προειδοποίηση! Μετά τη διαγραφή δεν έχετε πλέον έλεγχο του αισθητήρα!"
+
+#: webapp/templates/my-sensor-delete.html:11
+msgid ""
+"Also the chipID of this sensor will remain blocked for a new registration!"
+msgstr ""
+"Επίσης, το chipID αυτού του αισθητήρα θα παραμείνει μπλοκαρισμένο για μια "
+"νέα εγγραφή!"
+
+#: webapp/templates/my-sensor-give-success.html:13
+msgid "was handed over."
+msgstr "παραδόθηκε."
+
+#: webapp/templates/my-sensor-give-success.html:14
+msgid "An e-mail was sent to the new owner"
+msgstr "Ένα e-mail εστάλη στον νέο ιδιοκτήτη"
+
+#: webapp/templates/my-sensor-give.html:8
+#, python-format
+msgid "Sensor %(node_id)s hand over"
+msgstr "Ένα e-mail εστάλη στον νέο ιδιοκτήτη"
+
+#: webapp/templates/my-sensor-give.html:9
+msgid ""
+"This allows you to transfer sensors to another person. This is especially "
+"useful if you have ordered a sensor for a friend and want to transfer it to "
+"him or her."
+msgstr ""
+"Αυτό σας επιτρέπει να μεταφέρετε αισθητήρες σε άλλο άτομο. Αυτό είναι "
+"ιδιαίτερα χρήσιμο αν έχετε παραγγείλει έναν αισθητήρα για έναν φίλο και "
+"θέλετε να τον μεταφέρετε σε αυτόν ή αυτήν."
+
+#: webapp/templates/my-sensor-give.html:10
+msgid "Warning! After the transfer you have no more control over the sensor!"
+msgstr "Προειδοποίηση! Μετά τη μεταφορά δεν έχετε πλέον έλεγχο του αισθητήρα!"
+
+#: webapp/templates/my-sensor-settings.html:6
+#, python-format
+msgid "Settings of Node %(node_id)s"
+msgstr "Ρυθμίσεις του κόμβου %(node_id)s"
+
+#: webapp/templates/my-sensor-settings.html:7
+msgid ""
+"With this form you can keep the data of the sensor up to date. Please note "
+"that only precise data can lead to precise evaluations with which we can "
+"also argue politically. It is therefore important that the basic sensor data"
+" is always kept up to date."
+msgstr ""
+"Με αυτή τη φόρμα μπορείτε να διατηρείτε τα δεδομένα του αισθητήρα "
+"ενημερωμένα. Λάβετε υπόψη ότι μόνο ακριβή δεδομένα μπορούν να οδηγήσουν σε "
+"ακριβείς αξιολογήσεις με τις οποίες μπορούμε επίσης να επιχειρηματολογήσουμε"
+" πολιτικά. Επομένως, είναι σημαντικό τα βασικά δεδομένα του αισθητήρα να "
+"είναι πάντα ενημερωμένα."
+
+#: webapp/templates/my-sensors.html:10
+msgid "All sensors assigned to your account can be found in this overview."
+msgstr "Σε αυτή την επισκόπηση μπορείτε να βρείτε όλους τους αισθητήρες που έχουν εκχωρηθεί στο λογαριασμό σας."
+
+#: webapp/templates/my-sensors.html:15
+msgid "Sensor UID"
+msgstr "UID αισθητήρα"
+
+#: webapp/templates/my-sensors.html:16
+msgid "Name"
+msgstr "Όνομα"
+
+#: webapp/templates/my-sensors.html:17
+msgid "Created"
+msgstr "Δημιουργήθηκε"
+
+#: webapp/templates/my-sensors.html:17
+msgid "Last Update"
+msgstr "Τελευταία ενημέρωση"
+
+#: webapp/templates/my-sensors.html:18
+msgid "Functions"
+msgstr "Λειτουργίες"
+
+#: webapp/templates/my-sensors.html:29
+msgid "Data"
+msgstr "Δεδομένα"
+
+#: webapp/templates/my-sensors.html:31
+msgid "Hand over sensor"
+msgstr "Παραδώστε τον αισθητήρα"
+
+#: webapp/templates/my-sensors.html:36
+msgid "No sensors found"
+msgstr "Δεν βρέθηκαν αισθητήρες"
+
+#: webapp/templates/my-sensors.html:41
+msgid "Register new sensor"
+msgstr "Καταχώρηση νέου αισθητήρα"
+
+#: webapp/templates/my-settings.html:14
+msgid "Here you can change your settings."
+msgstr "Εδώ μπορείτε να αλλάξετε τις ρυθμίσεις σας."
+
+#: webapp/templates/privacy-policy.html:13
+msgid ""
+"<p>The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and according to the legal data protection regulations as well as this data protection explanation.</p>\n"
+"                    <p>The use of our website is generally possible without providing personal data. Insofar as personal data (e.g. name, address or e-mail addresses) is collected on our pages, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent.</p>\n"
+"                    <p>We would like to point out that data transmission via the Internet (e.g. communication via e-mail) may have security gaps. A complete protection of the data against the access by third is not possible.</p>\n"
+"                    <h2>Information, deletion, blocking</h2>\n"
+"                    <p>You have the right at any time to free information about your stored personal data, their origin and recipient and the purpose of data processing as well as a right to correction, blocking or deletion of this data. You can contact us at any time at the address given in the imprint for this and other questions on the subject of personal data.</p>\n"
+"                    <h2>Cookies</h2>\n"
+"                    <p>Some of the Internet pages use so-called cookies. Cookies do not damage your computer and do not contain viruses. Cookies serve to make our offer more user-friendly, more effective and safer. Cookies are small text files that are stored on your computer by your browser.</p>\n"
+"                    <p>Most of the cookies we use are so-called \"session cookies\". They are automatically deleted at the end of your visit. Other cookies remain stored on your terminal until you delete them. These cookies enable us to recognize your browser during your next visit.</p>\n"
+"                \n"
+"                    <h2>Account and sensor data</h2>\n"
+"                    <p>The measurement data of the sensors are collected on the server of the Sensor.Community and are publicly accessible to the company. The following information will be published:</p>\n"
+"                    <ul>\n"
+"                        <li>The anonymized geoposition (longitude and latitude) rounded to approx. 100 m.</li>\n"
+"                        <li>The ID of your ESP8266 NodeMCU board</li>\n"
+"                        <li>The given numerical description of the environment</li>\n"
+"                        <li>The sensor height</li>\n"
+"                        <li>The description as text</li>\n"
+"                    </ul>\n"
+"                    <p>The following additional data will be stored for internal processing, but will not be published:</p>\n"
+"                    <ul>\n"
+"                        <li>The postal address of the sensor</li>\n"
+"                        <li>The e-mail address</li>\n"
+"                        <li>Your first and last name</li>\n"
+"                    </ul>\n"
+"                    <h2>Server log files</h2>\n"
+"                    <p>The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:</p>\n"
+"                    <ul>\n"
+"                        <li>Browser type / browser version</li>\n"
+"                        <li>used operating system</li>\n"
+"                        <li>Referrer URL</li>\n"
+"                        <li>Hostname of the accessing computer</li>\n"
+"                        <li>Time of the server request</li>\n"
+"                    </ul>\n"
+"                    <p>These data cannot be assigned to specific persons. This data will not be merged with other data sources. We reserve the right to subsequently check this data if we become aware of concrete indications of illegal use.</p>\n"
+"                    <h2>Contradiction advertising mails</h2>\n"
+"                    <p>We hereby object to the use of contact data published within the scope of the imprint obligation to send unsolicited advertising and information material. The operators of this website expressly reserve the right to take legal action against unsolicited mailing or e-mailing of spam and other similar advertising materials.</p>\n"
+"                    "
+msgstr ""
+"<p>Οι διαχειριστές αυτών των σελίδων λαμβάνουν πολύ σοβαρά υπόψη την προστασία των προσωπικών σας δεδομένων. Χειριζόμαστε τα προσωπικά σας δεδομένα εμπιστευτικά και σύμφωνα με τους νομικούς κανονισμούς περί προστασίας δεδομένων καθώς και την παρούσα επεξήγηση περί προστασίας δεδομένων.</p>\n"
+"                    <p>Η χρήση της ιστοσελίδας μας είναι γενικά δυνατή χωρίς την παροχή προσωπικών δεδομένων. Εφόσον συλλέγονται προσωπικά δεδομένα (π.χ. όνομα, διεύθυνση ή διευθύνσεις ηλεκτρονικού ταχυδρομείου) στις σελίδες μας, αυτό γίνεται πάντα σε εθελοντική βάση, στο μέτρο του δυνατού. Τα δεδομένα αυτά δεν διαβιβάζονται σε τρίτους χωρίς τη ρητή συγκατάθεσή σας.</p>\n"
+"                    <p>Θα θέλαμε να επισημάνουμε ότι η διαβίβαση δεδομένων μέσω του Διαδικτύου (π.χ. επικοινωνία μέσω ηλεκτρονικού ταχυδρομείου) ενδέχεται να παρουσιάζει κενά ασφαλείας. Η πλήρης προστασία των δεδομένων από την πρόσβαση τρίτων δεν είναι δυνατή.</p>\n"
+"                    <h2>Πληροφόρηση, διαγραφή, φραγή</h2>\n"
+"                    <p>Έχετε το δικαίωμα ανά πάσα στιγμή να λάβετε δωρεάν πληροφορίες σχετικά με τα αποθηκευμένα προσωπικά σας δεδομένα, την προέλευση και τον αποδέκτη τους και τον σκοπό της επεξεργασίας των δεδομένων, καθώς και το δικαίωμα διόρθωσης, αποκλεισμού ή διαγραφής αυτών των δεδομένων. Μπορείτε να επικοινωνήσετε μαζί μας ανά πάσα στιγμή στη διεύθυνση που αναφέρεται στο αποτύπωμα για αυτό και για άλλα ερωτήματα σχετικά με το θέμα των προσωπικών δεδομένων.</p>\n"
+"                    <h2>Cookies</h2>\n"
+"                    <p>Μερικές από τις σελίδες του Διαδικτύου χρησιμοποιούν τα λεγόμενα cookies. Τα cookies δεν προκαλούν βλάβη στον υπολογιστή σας και δεν περιέχουν ιούς. Τα cookies χρησιμεύουν για να κάνουν την προσφορά μας πιο φιλική προς το χρήστη, πιο αποτελεσματική και ασφαλέστερη. Τα cookies είναι μικρά αρχεία κειμένου που αποθηκεύονται στον υπολογιστή σας από το πρόγραμμα περιήγησής σας.</p>\n"
+"                    <p>Τα περισσότερα από τα cookies που χρησιμοποιούμε είναι τα λεγόμενα \"session cookies\". Διαγράφονται αυτόματα στο τέλος της επίσκεψής σας. Άλλα cookies παραμένουν αποθηκευμένα στο τερματικό σας μέχρι να τα διαγράψετε. Αυτά τα cookies μας επιτρέπουν να αναγνωρίσουμε το πρόγραμμα περιήγησής σας κατά την επόμενη επίσκεψή σας.</p>\n"
+"                \n"
+"                    <h2>Δεδομένα λογαριασμού και αισθητήρων</h2>\n"
+"                    <p>Τα δεδομένα μετρήσεων των αισθητήρων συλλέγονται στον διακομιστή της Sensor.Community και είναι δημόσια προσβάσιμα στην εταιρεία. Οι ακόλουθες πληροφορίες δημοσιεύονται:</p>\n"
+"                    <ul>\n"
+"                        <li>Η ανώνυμη γεωγραφική θέση (γεωγραφικό μήκος και πλάτος) στρογγυλοποιημένη σε περίπου 100 m.</li>\n"
+"                        <li>Το αναγνωριστικό της πλακέτας ESP8266 NodeMCU</li>\n"
+"                        <li>Η δεδομένη αριθμητική περιγραφή του περιβάλλοντος</li>\n"
+"                        <li>Το ύψος του αισθητήρα</li>\n"
+"                        <li>Η περιγραφή ως κείμενο</li>\n"
+"                    </ul>\n"
+"                    <p>Τα ακόλουθα πρόσθετα δεδομένα θα αποθηκεύονται για εσωτερική επεξεργασία, αλλά δεν θα δημοσιεύονται:</p>\n"
+"                    <ul>\n"
+"                        <li>Η ταχυδρομική διεύθυνση του αισθητήρα</li>\n"
+"                        <li>Η διεύθυνση ηλεκτρονικού ταχυδρομείου</li>\n"
+"                        <li>Το όνομα και το επώνυμό σας</li>\n"
+"                    </ul>\n"
+"                    <h2>Αρχεία καταγραφής του διακομιστή</h2>\n"
+"                    <p>Ο πάροχος των σελίδων συλλέγει και αποθηκεύει αυτόματα πληροφορίες στα λεγόμενα αρχεία καταγραφής διακομιστή, τα οποία το πρόγραμμα περιήγησής σας μεταδίδει αυτόματα σε εμάς. Αυτά είναι:</p>\n"
+"                    <ul>\n"
+"                        <li>Τύπος προγράμματος περιήγησης / έκδοση προγράμματος περιήγησης</li>\n"
+"                        <li>χρησιμοποιούμενο λειτουργικό σύστημα</li>\n"
+"                        <li>Διεύθυνση URL παραπομπής</li>\n"
+"                        <li>Όνομα κεντρικού υπολογιστή του υπολογιστή πρόσβασης</li>\n"
+"                        <li>Ώρα του αιτήματος του διακομιστή</li>\n"
+"                    </ul>\n"
+"                    <p>Αυτά τα δεδομένα δεν μπορούν να αποδοθούν σε συγκεκριμένα πρόσωπα. Τα δεδομένα αυτά δεν θα συγχωνευθούν με άλλες πηγές δεδομένων. Διατηρούμε το δικαίωμα να ελέγξουμε εκ των υστέρων τα δεδομένα αυτά, εάν αντιληφθούμε συγκεκριμένες ενδείξεις παράνομης χρήσης.</p>\n"
+"                    <h2>Αντιφατικά διαφημιστικά μηνύματα</h2>\n"
+"                    <p>Δια της παρούσης διαφωνούμε με τη χρήση των δεδομένων επικοινωνίας που δημοσιεύονται στο πλαίσιο της υποχρέωσης αποτύπωσης για την αποστολή ανεπιθύμητου διαφημιστικού και ενημερωτικού υλικού. Οι διαχειριστές του παρόντος δικτυακού τόπου επιφυλάσσονται ρητά του δικαιώματος να λάβουν νομικά μέτρα κατά της ανεπιθύμητης αποστολής ή αποστολής μέσω ηλεκτρονικού ταχυδρομείου ανεπιθύμητων μηνυμάτων και άλλου παρόμοιου διαφημιστικού υλικού.</p>\n"
+"                    "
+
+#: webapp/templates/recover-fail.html:13
+msgid "Set password Error"
+msgstr "Ορισμός κωδικού πρόσβασης Σφάλμα"
+
+#: webapp/templates/recover-fail.html:14
+msgid ""
+"Unfortunately the link is not correct. Either it is too old, or it was not "
+"copied completely. Please try again."
+msgstr ""
+"Δυστυχώς ο σύνδεσμος δεν είναι σωστός. Είτε είναι πολύ παλιός, είτε δεν έχει"
+" αντιγραφεί πλήρως. Παρακαλώ δοκιμάστε ξανά."
+
+#: webapp/templates/recover-mail-sent-again.html:13
+#: webapp/templates/recover-mail-sent.html:13
+msgid "Mail sent"
+msgstr "Αποστολή αλληλογραφίας"
+
+#: webapp/templates/recover-mail-sent-again.html:14
+msgid "Please look into your mailbox to reset your password."
+msgstr ""
+"Παρακαλούμε κοιτάξτε στο γραμματοκιβώτιό σας για να επαναφέρετε τον κωδικό "
+"πρόσβασής σας."
+
+#: webapp/templates/recover-mail-sent.html:14
+msgid ""
+"Your account was not active yet. Please look into your mailbox to reset your"
+" password and activate your account."
+msgstr ""
+"Ο λογαριασμός σας δεν ήταν ακόμα ενεργός. Παρακαλούμε κοιτάξτε το "
+"γραμματοκιβώτιό σας για να επαναφέρετε τον κωδικό πρόσβασής σας και να "
+"ενεργοποιήσετε το λογαριασμό σας."
+
+#: webapp/templates/recover-set-password.html:14
+msgid "Set password"
+msgstr "Ορισμός κωδικού πρόσβασης"
+
+#: webapp/templates/recover.html:14
+msgid "Forgot Passwort?"
+msgstr "Ξεχάσατε τον κωδικό πρόσβασης;"
+
+#: webapp/templates/register-existing-wait-for-mail.html:13
+msgid "Activation required"
+msgstr "Απαιτείται ενεργοποίηση"
+
+#: webapp/templates/register-existing-wait-for-mail.html:14
+msgid ""
+"Since you are logging in for the first time, your e-mail address must be "
+"confirmed. Please look in your mailbox to get access to your sensors."
+msgstr ""
+"Δεδομένου ότι συνδέεστε για πρώτη φορά, η διεύθυνση ηλεκτρονικού "
+"ταχυδρομείου σας πρέπει να επιβεβαιωθεί. Παρακαλούμε κοιτάξτε στο "
+"γραμματοκιβώτιό σας για να αποκτήσετε πρόσβαση στους αισθητήρες σας."
+
+#: webapp/templates/register-minimal.html:25
+msgid "Registration"
+msgstr "Εγγραφή"
+
+#: webapp/templates/sensor-import-status.html:13
+msgid "Sensor Mass Import: Status"
+msgstr "Εισαγωγή μάζας αισθητήρα: Κατάσταση"
+
+#: webapp/templates/sensor-import-status.html:14
+msgid ""
+"You can see all current imports in this overview. Click on Reload to update "
+"the status."
+msgstr ""
+"Μπορείτε να δείτε όλες τις τρέχουσες εισαγωγές σε αυτή την επισκόπηση. Κάντε"
+" κλικ στο Reload για να ενημερώσετε την κατάσταση."
+
+#: webapp/templates/sensor-import-status.html:18
+msgid "ID"
+msgstr "ID"
+
+#: webapp/templates/sensor-import-status.html:19
+msgid "Data (Start)"
+msgstr "Δεδομένα (Έναρξη)"
+
+#: webapp/templates/sensor-import.html:15
+msgid "Sensor mass importer"
+msgstr "Εισαγωγέας μάζας αισθητήρων"
+
+#: webapp/templates/sensor-import.html:16
+msgid ""
+"With this form new nodes can be imported in masses. One node per line is "
+"expected in the following format:"
+msgstr ""
+"Με αυτή τη φόρμα μπορούν να εισαχθούν μαζικά νέοι κόμβοι. Αναμένεται ένας "
+"κόμβος ανά γραμμή με την ακόλουθη μορφή:"
+
+#: webapp/templates/sensor-import.html:18
+msgid ""
+"123456 is the ID of the ESP8266 board, the e-mail is the address of the future\n"
+"                            of the owner. If this is not fixed, only the Node-ID can be specified, which is\n"
+"                            E-mail must then be added later."
+msgstr ""
+"123456 είναι το αναγνωριστικό της πλακέτας ESP8266, το e-mail είναι η\n"
+"                            διεύθυνση του μελλοντικού ιδιοκτήτη. Εάν αυτό δεν είναι σταθερό, μπορεί να\n"
+"                            καθοριστεί μόνο το Node-ID, το οποίο είναι το E-mail πρέπει να προστεθεί\n"
+"                            αργότερα."
+
+#: webapp/templates/sensor-import.html:21
+msgid ""
+"If an email address has been specified, the owner will be notified with an email about their\n"
+"                            new sensor."
+msgstr ""
+"Εάν έχει καθοριστεί μια διεύθυνση ηλεκτρονικού ταχυδρομείου, ο ιδιοκτήτης θα\n"
+"                            ειδοποιηθεί με ένα μήνυμα ηλεκτρονικού ταχυδρομείου σχετικά με τον νέο αισθητήρα του."
+
+#: webapp/templates/sensor-register.html:6
+msgid "Sensor registration"
+msgstr "Καταχώρηση αισθητήρα"
+
+#: webapp/templates/sensor-settings-form.html:1
+msgid "Basic Information"
+msgstr "Βασικές πληροφορίες"
+
+#: webapp/templates/sensor-settings-form.html:21
+msgid "Additional Information"
+msgstr "Πρόσθετες πληροφορίες"
+
+#: webapp/templates/sensor-settings-form.html:26
+msgid "Hardware configuration"
+msgstr "Διαμόρφωση υλικού"
+
+#: webapp/templates/sensor-settings-form.html:27
+msgid ""
+"click <a name=\"expert\" onclick=\"toggle_expert()\" style=\"color:blue;\"> "
+"&gt;&gt;here&lt;&lt; </a> to enable expert fields"
+msgstr ""
+"κάντε κλικ στο <a name=\"expert\" onclick=\"toggle_expert()\" style=\"color:blue;\"> "
+"&gt;&gt;here&lt;&lt; </a> για να ενεργοποιήσετε τα πεδία εμπειρογνωμόνων."
+
+#: webapp/templates/sensor-settings-form.html:34
+msgid "remove"
+msgstr "αφαιρέστε το"
+
+#: webapp/templates/sensor-settings-form.html:39
+msgid "add component"
+msgstr "προσθήκη εξαρτήματος"
+
+#: webapp/templates/sensor-settings-form.html:116
+msgid ""
+"The more precise the data we have, the better we can evaluate the data and "
+"thus energize statements. The system can also try to make a geoposition out "
+"of the address, but we would be happy if you would specify the position with"
+" the map below."
+msgstr ""
+"Όσο πιο ακριβή είναι τα δεδομένα που διαθέτουμε, τόσο καλύτερα μπορούμε να "
+"τα αξιολογήσουμε και να ενεργοποιήσουμε τις δηλώσεις. Το σύστημα μπορεί "
+"επίσης να προσπαθήσει να φτιάξει μια γεωγραφική θέση από τη διεύθυνση, αλλά "
+"θα ήμασταν ευτυχείς αν προσδιορίζατε τη θέση με τον παρακάτω χάρτη."
+
+#: webapp/templates/sensor-settings-form.html:125
+msgid "Lookup entered address"
+msgstr "Αναζήτηση εισαγόμενης διεύθυνσης"
+
+#: webapp/templates/sensor-settings-form.html:130
+msgid "Please check sensor position."
+msgstr "Ελέγξτε τη θέση του αισθητήρα."
+
+#: webapp/templates/emails/recover.html:11
+#: webapp/templates/emails/register-existing.html:11
+#: webapp/templates/emails/sensor-given.html:11
+#: webapp/templates/emails/sensor-registered.html:11
+msgid "Hello,"
+msgstr "Γεια σας,"
+
+#: webapp/templates/emails/recover.html:13
+msgid "to reset your password, please use the following URL:"
+msgstr ""
+"για να επαναφέρετε τον κωδικό πρόσβασής σας, χρησιμοποιήστε την ακόλουθη "
+"διεύθυνση URL:"
+
+#: webapp/templates/emails/recover.html:14
+msgid ""
+"If you have not requested a new password on Sensor.Community, you can ignore"
+" this e-mail."
+msgstr ""
+"Εάν δεν έχετε ζητήσει νέο κωδικό πρόσβασης στην Sensor.Community, μπορείτε "
+"να αγνοήσετε αυτό το e-mail."
+
+#: webapp/templates/emails/recover.html:15
+#: webapp/templates/emails/register-existing.html:15
+#: webapp/templates/emails/sensor-given.html:15
+#: webapp/templates/emails/sensor-registered.html:15
+msgid ""
+"Sincerely,\n"
+"    Your Sensor.Community team"
+msgstr "Ειλικρινά,\n"
+"    Η ομάδα σας Sensor.Community"
+
+#: webapp/templates/emails/register-existing.html:13
+msgid ""
+"in order to manage your sensor in the future, we have created an account for"
+" you. Please enter a password under the following link: "
+msgstr ""
+"για να μπορείτε να διαχειρίζεστε τον αισθητήρα σας στο μέλλον, δημιουργήσαμε"
+" έναν λογαριασμό για εσάς. Παρακαλούμε εισάγετε έναν κωδικό πρόσβασης στον "
+"ακόλουθο σύνδεσμο:"
+
+#: webapp/templates/emails/register-existing.html:14
+msgid ""
+"If you have not created an account on Sensor.Community, you can ignore this "
+"e-mail."
+msgstr ""
+"Εάν δεν έχετε δημιουργήσει λογαριασμό στην Sensor.Community, μπορείτε να "
+"αγνοήσετε αυτό το e-mail."
+
+#: webapp/templates/emails/sensor-given.html:13
+msgid ""
+"a particulate matter sensor has been handed over to your control. Please log"
+" in with this mail address to take data and settings or to change them: "
+msgstr ""
+"ένας αισθητήρας σωματιδίων έχει παραδοθεί στον έλεγχό σας. Παρακαλούμε "
+"συνδεθείτε με αυτή τη διεύθυνση ηλεκτρονικού ταχυδρομείου για να λάβετε "
+"δεδομένα και ρυθμίσεις ή να τις αλλάξετε:"
+
+#: webapp/templates/emails/sensor-given.html:14
+msgid ""
+"If you have received a sensor by mistake, please report this at "
+"tech@sensor.community."
+msgstr ""
+"Εάν λάβατε έναν αισθητήρα κατά λάθος, παρακαλείστε να το αναφέρετε στο "
+"tech@sensor.community."
+
+#: webapp/templates/emails/sensor-registered.html:13
+msgid ""
+"a fine dust sensor has been registered for you. Please log in with this mail"
+" address to take in or change data and settings: "
+msgstr ""
+"έχει καταχωρηθεί για εσάς ένας αισθητήρας λεπτής σκόνης. Παρακαλούμε "
+"συνδεθείτε με αυτή τη διεύθυνση ηλεκτρονικού ταχυδρομείου για να λάβετε ή να"
+" αλλάξετε δεδομένα και ρυθμίσεις:"
+
+#: webapp/templates/emails/sensor-registered.html:14
+msgid ""
+"If the sensor was registered for you by mistake, please report this to "
+"tech@sensor.community."
+msgstr ""
+"Εάν ο αισθητήρας καταχωρήθηκε για εσάς κατά λάθος, παρακαλούμε να το "
+"αναφέρετε στο tech@sensor.community."
+
+#: webapp/templates/security/change_password.html:5
+msgid "Change password"
+msgstr "Αλλαγή κωδικού πρόσβασης"
+
+#: webapp/templates/security/forgot_password.html:5
+msgid "Send password reset instructions"
+msgstr "Αποστολή οδηγιών επαναφοράς κωδικού πρόσβασης"
+
+#: webapp/templates/security/login_user.html:18
+msgid "Password reminder"
+msgstr "Υπενθύμιση κωδικού πρόσβασης"
+
+#: webapp/templates/security/register_user.html:17
+msgid ""
+"please wait up to 30 min to receive the mail and check your spam folder"
+msgstr ""
+"παρακαλούμε περιμένετε έως και 30 λεπτά για να λάβετε το μήνυμα και ελέγξτε "
+"το φάκελο ανεπιθύμητης αλληλογραφίας σας"
+
+#: webapp/templates/security/reset_password.html:5
+msgid "Reset password"
+msgstr "Επαναφορά κωδικού πρόσβασης"
+
+#: webapp/templates/security/send_confirmation.html:5
+msgid "Resend confirmation instructions"
+msgstr "Επαναποστολή οδηγιών επιβεβαίωσης"
+
+#: webapp/users/forms.py:22 webapp/users/forms.py:36 webapp/users/forms.py:58
+#: webapp/users/forms.py:79
+msgid "E-Mail addresse"
+msgstr "Διεύθυνση ηλεκτρονικού ταχυδρομείου"
+
+#: webapp/users/forms.py:25 webapp/users/forms.py:39 webapp/users/forms.py:61
+#: webapp/users/forms.py:82
+msgid "Please enter an e-mail address."
+msgstr "Εισάγετε μια διεύθυνση ηλεκτρονικού ταχυδρομείου."
+
+#: webapp/users/forms.py:28 webapp/users/forms.py:42 webapp/users/forms.py:64
+#: webapp/users/forms.py:85
+msgid "Please enter a correct e-mail address."
+msgstr "Παρακαλούμε εισάγετε μια σωστή διεύθυνση ηλεκτρονικού ταχυδρομείου."
+
+#: webapp/users/forms.py:32
+msgid "next"
+msgstr "επόμενη"
+
+#: webapp/users/forms.py:49 webapp/users/forms.py:96 webapp/users/forms.py:108
+#: webapp/users/forms.py:136
+msgid "Please enter a password."
+msgstr "Παρακαλώ εισάγετε έναν κωδικό πρόσβασης."
+
+#: webapp/users/forms.py:53 webapp/users/forms.py:113
+msgid "Stay logged in."
+msgstr "Μείνετε συνδεδεμένοι."
+
+#: webapp/users/forms.py:54
+msgid "login"
+msgstr "Σύνδεση"
+
+#: webapp/users/forms.py:68
+msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>."
+msgstr "Συμφωνώ με την <a href=\"/privacy-policy\">Πολιτική απορρήτου</a>."
+
+#: webapp/users/forms.py:71
+msgid "Please agree to the privacy policy."
+msgstr "Συμφωνήστε με την πολιτική απορρήτου."
+
+#: webapp/users/forms.py:75
+msgid "register"
+msgstr "μητρώο"
+
+#: webapp/users/forms.py:89
+msgid "Password request via email"
+msgstr "Αίτημα κωδικού πρόσβασης μέσω email"
+
+#: webapp/users/forms.py:101 webapp/users/forms.py:130
+#, python-format
+msgid "Password must consist of at least %s letters."
+msgstr "Αίτημα κωδικού πρόσβασης μέσω email"
+
+#: webapp/users/forms.py:105
+msgid "Password (repeat)"
+msgstr "Κωδικός πρόσβασης (επανάληψη)"
+
+#: webapp/users/forms.py:110 webapp/users/forms.py:137
+msgid "Passwords must be identical."
+msgstr "Οι κωδικοί πρόσβασης πρέπει να είναι πανομοιότυποι."
+
+#: webapp/users/forms.py:114 webapp/users/forms.py:140
+msgid "Save Password"
+msgstr "Αποθήκευση κωδικού πρόσβασης"
+
+#: webapp/users/forms.py:118
+msgid "First name"
+msgstr "Όνομα"
+
+#: webapp/users/forms.py:119
+msgid "Last name"
+msgstr "Επώνυμο"
+
+#: webapp/users/forms.py:120
+msgid "Save user data."
+msgstr "Αποθήκευση δεδομένων χρήστη."
+
+#: webapp/users/forms.py:124
+msgid "Old Password"
+msgstr "Παλιός κωδικός πρόσβασης"
+
+#: webapp/users/forms.py:125
+msgid "New password"
+msgstr "Νέος κωδικός πρόσβασης"
+
+#: webapp/users/forms.py:134
+msgid "New password (repeat)"
+msgstr "Νέος κωδικός πρόσβασης (επανάληψη)"
+
+#: webapp/users/views.py:38
+msgid "User data saved."
+msgstr "Αποθήκευση δεδομένων χρήστη."

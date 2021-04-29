@@ -65,7 +65,7 @@ class MinimalRegisterForm(FlaskForm):
             )
         ]
     )
-    privacy = BooleanField(_('I agree to the <a href="/privacy-policy">Privacy policy</a>'),
+    privacy = BooleanField(_('I agree to the <a href="/privacy-policy">Privacy policy</a>.'),
         [
             validators.DataRequired(
                 message=_('Please agree to the privacy policy.')

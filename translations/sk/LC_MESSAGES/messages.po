@@ -398,13 +398,11 @@ msgstr "Kliknite tu pre <a href=\"%(login_url)s\">prihlásenie</a>."
 #: webapp/templates/index.html:20
 #, python-format
 msgid ""
-"General information can be found at <a "
-"href=\"%(home_url)s\">Sensor.Community</a> - formerly known as "
-"Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building "
-"instructions</a>.\n"
-"            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
-"dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
+"General information can be found at <a href=\"%(home_url)s\">Sensor.Community</a> - formerly known as Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building instructions</a>.\n"
+"            Sensor data can be found on <a href=\"%(map_url)s\">the fine dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
+"Všeobecné informácie nájdete na <a href=\"%(home_url)s\">Sensor.Community</a> - predtým známe ako Luftdaten.info, ako aj <a href=\"%(manual_url)s\">návod na stavbu</a>.\n"
+"            Údaje zo snímačov možno nájsť na <a href=\"%(map_url)s\">mape jemného prachu</a> alebo <a href=\"%(archive_url)s\">je možné ich stiahnuť ako CSV</a>."
 
 #: webapp/templates/index.html:32
 msgid "Join us!"
@@ -1165,10 +1163,8 @@ msgid "login"
 msgstr "prihlásenie"
 
 #: webapp/users/forms.py:68
-msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>"
-msgstr ""
-"Súhlasím so <a href=\"/privacy-policy\">zásadami ochrany osobných "
-"údajov</a>"
+msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>."
+msgstr "Súhlasím so <a href=\"/privacy-policy\">zásadami ochrany osobných údajov</a>."
 
 #: webapp/users/forms.py:71
 msgid "Please agree to the privacy policy."
@@ -1226,38 +1222,3 @@ msgstr "Nové heslo (zopakujte)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Údaje používateľa uložené."
-
-#~ msgid "Donate for Luftdaten.info (Hardware, Software) now on Betterplace.org"
-#~ msgstr "Podporte Luftdaten.info (hardvér, softvér) na Betterplace.org"
-
-#~ msgid "Donate for<br>Luftdaten.info<br>now on<br><span>Betterplace.org</span>"
-#~ msgstr ""
-#~ "Prispejte <br> Luftdaten.info <br> teraz "
-#~ "na <br> <span>Betterplace.org</span>"
-
-#~ msgid ""
-#~ "General information can be found at "
-#~ "<a href=\"%(home_url)s\">Sensor.Community</a>, as "
-#~ "well as the <a "
-#~ "href=\"%(manual_url)s\">building instructions</a>.\n"
-#~ "            Sensor data can be found "
-#~ "on <a href=\"%(map_url)s\">the fine dust "
-#~ "map</a> or <a href=\"%(archive_url)s\">be "
-#~ "downloaded as CSVs</a>."
-#~ msgstr ""
-#~ "Všeobecné informácie nájdete na <a "
-#~ "href=\"%(home_url)s\">Sensor.Community</a> spolu s "
-#~ "<a href=\"%(manual_url)s\">návodom na "
-#~ "postavenie</a>. \n"
-#~ "Údaje zo senzoru nájdete na <a "
-#~ "href=\"%(map_url)s\">mape prachových častíc,</a> "
-#~ "alebo si <a href=\"%(archive_url)s\">ich "
-#~ "môžete stiahnuť vo formáte CSV</a>."
-
-#~ msgid ""
-#~ "Sincerely,\n"
-#~ "    Your Luftdaten.info team"
-#~ msgstr ""
-#~ "S pozdravom,\n"
-#~ "    Váš tím Luftdaten.info"
-

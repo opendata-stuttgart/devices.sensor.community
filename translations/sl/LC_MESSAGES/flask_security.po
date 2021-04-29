@@ -23,301 +23,299 @@ msgstr ""
 
 #: flask_security/core.py:99
 msgid "Login Required"
-msgstr "Login Requerido"
+msgstr "Zahtevana prijava"
 
 #: flask_security/core.py:100
 msgid "Welcome"
-msgstr "Bem-vindo"
+msgstr "Dobrodošli"
 
 #: flask_security/core.py:101
 msgid "Please confirm your email"
-msgstr "Por favor, confirme o seu e-mail"
+msgstr "Prosimo, potrdite svoj e-poštni naslov"
 
 #: flask_security/core.py:102
 msgid "Login instructions"
-msgstr "Instruções de login"
+msgstr "Navodila za prijavo"
 
 #: flask_security/core.py:103
 #: flask_security/templates/security/email/reset_notice.html:1
 msgid "Your password has been reset"
-msgstr "A sua palavra-passe foi redefinida"
+msgstr "Vaše geslo je bilo ponastavljeno"
 
 #: flask_security/core.py:104
 msgid "Your password has been changed"
-msgstr "A sua palavra-passe foi alterada"
+msgstr "Vaše geslo je bilo spremenjeno"
 
 #: flask_security/core.py:106
 msgid "Password reset instructions"
-msgstr "Instruções para redefinição de senha"
+msgstr "Navodila za ponastavitev gesla"
 
 #: flask_security/core.py:132
 msgid "You do not have permission to view this resource."
-msgstr "Não tem permissão para ver este recurso."
+msgstr "Nimate dovoljenja za ogled tega vira."
 
 #: flask_security/core.py:134
 #, python-format
 msgid "Thank you. Confirmation instructions have been sent to %(email)s."
-msgstr "Não tem permissão para ver este recurso."
+msgstr "Nimate dovoljenja za ogled tega vira."
 
 #: flask_security/core.py:138
 msgid "Thank you. Your email has been confirmed."
-msgstr "Obrigado. O seu e-mail foi confirmado."
+msgstr "Zahvaljujemo se vam. Vaše e-poštno sporočilo je bilo potrjeno."
 
 #: flask_security/core.py:140
 msgid "Your email has already been confirmed."
-msgstr "O seu e-mail já foi confirmado."
+msgstr "Vaše e-poštno sporočilo je bilo že potrjeno."
 
 #: flask_security/core.py:142
 msgid "Invalid confirmation token."
-msgstr "Ficha de confirmação inválida."
+msgstr "Nepravilen potrditveni žeton."
 
 #: flask_security/core.py:144
 #, python-format
 msgid "%(email)s is already associated with an account."
-msgstr "Ficha de confirmação inválida."
+msgstr "Nepravilen potrditveni žeton."
 
 #: flask_security/core.py:146
 msgid "Password does not match"
-msgstr "A palavra-passe não corresponde"
+msgstr "Geslo se ne ujema"
 
 #: flask_security/core.py:148
 msgid "Passwords do not match"
-msgstr "As palavras-passe não coincidem"
+msgstr "Gesla se ne ujemajo"
 
 #: flask_security/core.py:150
 msgid "Redirections outside the domain are forbidden"
-msgstr "São proibidas as redirecções fora do domínio"
+msgstr "Preusmeritve zunaj domene so prepovedane"
 
 #: flask_security/core.py:152
 #, python-format
 msgid "Instructions to reset your password have been sent to %(email)s."
-msgstr "São proibidas as redirecções fora do domínio"
+msgstr "Preusmeritve zunaj domene so prepovedane"
 
 #: flask_security/core.py:155
 #, python-format
 msgid ""
 "You did not reset your password within %(within)s. New instructions have "
 "been sent to %(email)s."
-msgstr "São proibidas as redirecções fora do domínio"
+msgstr "Preusmeritve zunaj domene so prepovedane"
 
 #: flask_security/core.py:158
 msgid "Invalid reset password token."
-msgstr "Ficha com senha inválida de reset."
+msgstr "Nepravilen žeton za ponastavitev gesla."
 
 #: flask_security/core.py:160
 msgid "Email requires confirmation."
-msgstr "O e-mail requer confirmação."
+msgstr "E-pošta zahteva potrditev."
 
 #: flask_security/core.py:162
 #, python-format
 msgid "Confirmation instructions have been sent to %(email)s."
-msgstr "O e-mail requer confirmação."
+msgstr "E-pošta zahteva potrditev."
 
 #: flask_security/core.py:164
 #, python-format
 msgid ""
 "You did not confirm your email within %(within)s. New instructions to "
 "confirm your email have been sent to %(email)s."
-msgstr "O e-mail requer confirmação."
+msgstr "E-pošta zahteva potrditev."
 
 #: flask_security/core.py:168
 #, python-format
 msgid ""
 "You did not login within %(within)s. New instructions to login have been "
 "sent to %(email)s."
-msgstr "O e-mail requer confirmação."
+msgstr "E-pošta zahteva potrditev."
 
 #: flask_security/core.py:171
 #, python-format
 msgid "Instructions to login have been sent to %(email)s."
-msgstr "O e-mail requer confirmação."
+msgstr "E-pošta zahteva potrditev."
 
 #: flask_security/core.py:173
 msgid "Invalid login token."
-msgstr "Ficha de login inválida."
+msgstr "Nepravilen žeton za prijavo."
 
 #: flask_security/core.py:175
 msgid "Account is disabled."
-msgstr "A conta está desactivada."
+msgstr "Račun je onemogočen."
 
 #: flask_security/core.py:177
 msgid "Email not provided"
-msgstr "Email não fornecido"
+msgstr "Elektronski naslov ni naveden"
 
 #: flask_security/core.py:179
 msgid "Invalid email address"
-msgstr "Endereço de e-mail inválido"
+msgstr "Nepravilen e-poštni naslov"
 
 #: flask_security/core.py:181
 msgid "Password not provided"
-msgstr "Senha não fornecida"
+msgstr "Geslo ni zagotovljeno"
 
 #: flask_security/core.py:183
 msgid "No password is set for this user"
-msgstr "Não é definida uma palavra-passe para este utilizador"
+msgstr "Za tega uporabnika ni nastavljeno geslo"
 
 #: flask_security/core.py:185
 msgid "Password must be at least 6 characters"
-msgstr "A palavra-passe deve ter pelo menos 6 caracteres"
+msgstr "Geslo mora vsebovati vsaj 6 znakov."
 
 #: flask_security/core.py:187
 msgid "Specified user does not exist"
-msgstr "O utilizador especificado não existe"
+msgstr "Navedeni uporabnik ne obstaja"
 
 #: flask_security/core.py:189
 msgid "Invalid password"
-msgstr "Palavra-passe inválida"
+msgstr "Nepravilno geslo"
 
 #: flask_security/core.py:191
 msgid "You have successfully logged in."
-msgstr "Conectou-se com sucesso."
+msgstr "Uspešno ste se prijavili."
 
 #: flask_security/core.py:193
 msgid "Forgot password?"
-msgstr "Esqueceu-se da palavra-passe?"
+msgstr "Ste pozabili geslo?"
 
 #: flask_security/core.py:195
 msgid ""
 "You successfully reset your password and you have been logged in "
 "automatically."
-msgstr ""
-"A sua palavra-passe foi redefinida com sucesso e a sua sessão foi iniciada "
-"automaticamente."
+msgstr "Uspešno ste ponastavili geslo in ste bili samodejno prijavljeni."
 
 #: flask_security/core.py:198
 msgid "Your new password must be different than your previous password."
-msgstr "A sua nova senha deve ser diferente da sua senha anterior."
+msgstr "Novo geslo mora biti drugačno od prejšnjega gesla."
 
 #: flask_security/core.py:201
 msgid "You successfully changed your password."
-msgstr "Alterou com sucesso a sua palavra-passe."
+msgstr "Uspešno ste spremenili geslo."
 
 #: flask_security/core.py:203
 msgid "Please log in to access this page."
-msgstr "Por favor, inicie sessão para aceder a esta página."
+msgstr "Za dostop do te strani se prijavite."
 
 #: flask_security/core.py:205
 msgid "Please reauthenticate to access this page."
-msgstr "Por favor, reautenticar para aceder a esta página."
+msgstr "Za dostop do te strani se ponovno potrdite."
 
 #: flask_security/forms.py:30
 msgid "Email Address"
-msgstr "Endereço de correio electrónico"
+msgstr "Elektronski naslov"
 
 #: flask_security/forms.py:31
 msgid "Password"
-msgstr "Senha"
+msgstr "Geslo"
 
 #: flask_security/forms.py:32
 msgid "Remember Me"
-msgstr "Recordar-me"
+msgstr "Zapomni si me"
 
 #: flask_security/forms.py:33 flask_security/templates/security/_menu.html:4
 #: flask_security/templates/security/login_user.html:3
 #: flask_security/templates/security/send_login.html:3
 msgid "Login"
-msgstr "Login"
+msgstr "Prijava"
 
 #: flask_security/forms.py:34 flask_security/templates/security/_menu.html:6
 #: flask_security/templates/security/register_user.html:3
 msgid "Register"
-msgstr "Registe-se"
+msgstr "Register"
 
 #: flask_security/forms.py:35
 msgid "Resend Confirmation Instructions"
-msgstr "Reenviar Instruções de Confirmação"
+msgstr "Navodila za ponovno pošiljanje potrditve"
 
 #: flask_security/forms.py:36
 msgid "Recover Password"
-msgstr "Recuperar Password"
+msgstr "Obnovitev gesla"
 
 #: flask_security/forms.py:37
 msgid "Reset Password"
-msgstr "Redefinir Palavra-passe"
+msgstr "Ponastavitev gesla"
 
 #: flask_security/forms.py:38
 msgid "Retype Password"
-msgstr "Repita a palavra-passe"
+msgstr "Ponovite geslo"
 
 #: flask_security/forms.py:39
 msgid "New Password"
-msgstr "Nova Palavra-passe"
+msgstr "Novo geslo"
 
 #: flask_security/forms.py:40
 msgid "Change Password"
-msgstr "Alterar Palavra-passe"
+msgstr "Sprememba gesla"
 
 #: flask_security/forms.py:41
 msgid "Send Login Link"
-msgstr "Enviar Ligação de Login"
+msgstr "Pošlji povezavo za prijavo"
 
 #: flask_security/templates/security/_menu.html:2
 msgid "Menu"
-msgstr "Menu"
+msgstr "Meni"
 
 #: flask_security/templates/security/_menu.html:9
 msgid "Forgot password"
-msgstr "Esqueci-me da palavra-passe"
+msgstr "Pozabljeno geslo"
 
 #: flask_security/templates/security/_menu.html:12
 msgid "Confirm account"
-msgstr "Confirmar conta"
+msgstr "Potrdite račun"
 
 #: flask_security/templates/security/change_password.html:3
 msgid "Change password"
-msgstr "Alterar palavra-passe"
+msgstr "Sprememba gesla"
 
 #: flask_security/templates/security/forgot_password.html:3
 msgid "Send password reset instructions"
-msgstr "Enviar instruções de redefinição de senha"
+msgstr "Pošlji navodila za ponastavitev gesla"
 
 #: flask_security/templates/security/reset_password.html:3
 msgid "Reset password"
-msgstr "Redefinir palavra-passe"
+msgstr "Ponastavitev gesla"
 
 #: flask_security/templates/security/send_confirmation.html:3
 msgid "Resend confirmation instructions"
-msgstr "Reenviar instruções de confirmação"
+msgstr "Ponovno pošljite navodila za potrditev"
 
 #: flask_security/templates/security/email/change_notice.html:1
 msgid "Your password has been changed."
-msgstr "A sua palavra-passe foi alterada."
+msgstr "Vaše geslo je bilo spremenjeno."
 
 #: flask_security/templates/security/email/change_notice.html:3
 msgid "If you did not change your password,"
-msgstr "Se não alterou a sua palavra-passe,"
+msgstr "Če gesla niste spremenili,"
 
 #: flask_security/templates/security/email/change_notice.html:3
 msgid "click here to reset it"
-msgstr "clique aqui para reinicializá-lo"
+msgstr "kliknite tukaj za ponastavitev"
 
 #: flask_security/templates/security/email/confirmation_instructions.html:1
 msgid "Please confirm your email through the link below:"
-msgstr "Por favor, confirme o seu e-mail através do link abaixo:"
+msgstr "Svojo e-pošto potrdite prek spodnje povezave:"
 
 #: flask_security/templates/security/email/confirmation_instructions.html:3
 #: flask_security/templates/security/email/welcome.html:6
 msgid "Confirm my account"
-msgstr "Confirmar a minha conta"
+msgstr "Potrdite moj račun"
 
 #: flask_security/templates/security/email/login_instructions.html:1
 #: flask_security/templates/security/email/welcome.html:1
 #, python-format
 msgid "Welcome %(email)s!"
-msgstr "Confirmar a minha conta"
+msgstr "Potrdite moj račun"
 
 #: flask_security/templates/security/email/login_instructions.html:3
 msgid "You can log into your account through the link below:"
-msgstr "Pode entrar na sua conta através do link abaixo:"
+msgstr "V svoj račun se lahko prijavite prek spodnje povezave:"
 
 #: flask_security/templates/security/email/login_instructions.html:5
 msgid "Login now"
-msgstr "Entrar agora"
+msgstr "Prijavite se zdaj"
 
 #: flask_security/templates/security/email/reset_instructions.html:1
 msgid "Click here to reset your password"
-msgstr "Clique aqui para redefinir a sua palavra-passe"
+msgstr "Kliknite tukaj za ponastavitev gesla"
 
 #: flask_security/templates/security/email/welcome.html:4
 msgid "You can confirm your email through the link below:"
-msgstr "Pode confirmar o seu e-mail através da ligação abaixo:"
+msgstr "Svojo e-pošto lahko potrdite prek spodnje povezave:"
