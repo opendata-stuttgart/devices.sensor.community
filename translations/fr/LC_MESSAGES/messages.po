@@ -292,8 +292,6 @@ msgid "particulate matter sensor PMS7003"
 msgstr "Détecteur de particules fines PMS7001"
 
 #: webapp/personal/views.py:75
-
-
 msgid "particulate matter sensor SPS30"
 msgstr "Détecteur de particules fines SPS30"
 
