@@ -292,6 +292,8 @@ msgid "particulate matter sensor PMS7003"
 msgstr "Détecteur de particules fines PMS7001"
 
 #: webapp/personal/views.py:75
+
+
 msgid "particulate matter sensor SPS30"
 msgstr "Détecteur de particules fines SPS30"
 
@@ -408,8 +410,11 @@ msgid ""
 "General information can be found at <a href=\"%(home_url)s\">Sensor.Community</a> - formerly known as Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building instructions</a>.\n"
 "            Sensor data can be found on <a href=\"%(map_url)s\">the fine dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
-"Vous pouvez trouvez toutes les informations sur <a href=\"%(home_url)s\">Sensor.Community</a> - préalablement nommé Luftdaten.info, ainsi que les <a href=\"%(manual_url)s\">instructions de montage</a>.\n"
-"            Les données sont disponibles sur <a href=\"%(map_url)s\">la carte des particules fines</a> ou comme <a href=\"%(archive_url)s\">fichiers .csv téléchargeables</a>."
+"Vous pouvez trouvez toutes les informations sur <a "
+"href=\"%(home_url)s\">Sensor.Community</a> - préalablement nommé "
+"Luftdaten.info, de mes que les <a href=\"%(manual_url)s\">instructions de montage</a>.\n"
+"            Les données sont disponibles sur <a href=\"%(map_url)s\">la carte des "
+"particules fines</a> ou comme <a href=\"%(archive_url)s\">fichiers .csv téléchargeables</a>."
 
 #: webapp/templates/index.html:32
 msgid "Join us!"
