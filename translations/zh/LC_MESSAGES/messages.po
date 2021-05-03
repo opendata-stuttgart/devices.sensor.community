@@ -1003,7 +1003,7 @@ msgstr "通过电子邮件申请密码"
 #: webapp/users/forms.py:101 webapp/users/forms.py:130
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr "密码必须至少包含％s个字母。"
+msgstr "密码必须至少包含 ％s 个字母。"
 
 #: webapp/users/forms.py:105
 msgid "Password (repeat)"

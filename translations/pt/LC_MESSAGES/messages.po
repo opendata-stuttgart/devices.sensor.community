@@ -1079,7 +1079,7 @@ msgstr "Pedido de senha via e-mail"
 #: webapp/users/forms.py:101 webapp/users/forms.py:130
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr "Pedido de senha via e-mail"
+msgstr "A senha deve conter pelo menos %s letras."
 
 #: webapp/users/forms.py:105
 msgid "Password (repeat)"
