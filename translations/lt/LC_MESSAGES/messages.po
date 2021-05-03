@@ -20,134 +20,136 @@ msgstr ""
 
 #: webapp/personal/forms.py:39
 msgid "Indoor Sensor"
-msgstr "Sensore interno"
+msgstr "Vidinis jutiklis"
 
 #: webapp/personal/forms.py:41
 msgid "Street"
-msgstr "Via"
+msgstr "Gatvė"
 
 #: webapp/personal/forms.py:41
 msgid "Please enter the street name."
-msgstr "Si prega di inserire il nome della strada."
+msgstr "Įveskite gatvės pavadinimą."
 
 #: webapp/personal/forms.py:42
 msgid "Street number"
-msgstr "Numero civico"
+msgstr "Gatvės numeris"
 
 #: webapp/personal/forms.py:44
 msgid "Postal code"
-msgstr "Codice postale"
+msgstr "Pašto kodas"
 
 #: webapp/personal/forms.py:44
 msgid "Please enter the postal code."
-msgstr "Si prega di inserire il codice postale."
+msgstr "Įveskite pašto kodą."
 
 #: webapp/personal/forms.py:46
 msgid "City"
-msgstr "Città"
+msgstr "Miestas"
 
 #: webapp/personal/forms.py:46
 msgid "Please enter the city name."
-msgstr "Inserisci il nome della città."
+msgstr "Įveskite miesto pavadinimą."
 
 #: webapp/personal/forms.py:49
 msgid "Country"
-msgstr "Paese"
+msgstr "Šalis"
 
 #: webapp/personal/forms.py:52 webapp/personal/forms.py:54
 msgid "Please enter the country name."
-msgstr "Inserisci il nome del paese."
+msgstr "Įveskite šalies pavadinimą."
 
 #: webapp/personal/forms.py:59
 msgid "Latitude"
-msgstr "Latitudine"
+msgstr "Platuma"
 
 #: webapp/personal/forms.py:60
 msgid "Please enter the latitude."
-msgstr "Si prega di inserire la latitudine."
+msgstr "Įveskite platumą."
 
 #: webapp/personal/forms.py:61
 msgid "Longitude"
-msgstr "Longitudine"
+msgstr "Ilguma"
 
 #: webapp/personal/forms.py:62
 msgid "Please enter the longitude."
-msgstr "Si prega di inserire la longitudine."
+msgstr "Įveskite ilgumą."
 
 #: webapp/personal/forms.py:65
 msgid "How much industrial activity is there within a 100m radius?"
-msgstr "Quanta attività industriale c'è nel raggio di 100 metri?"
+msgstr "Kiek pramoninės veiklos vykdoma 100 m spinduliu?"
 
 #: webapp/personal/forms.py:74 webapp/personal/forms.py:89
 #: webapp/personal/forms.py:104
 msgid "Please enter the number between 1 and 10"
-msgstr "Inserisci il numero tra 1 e 10"
+msgstr "Įveskite skaičių nuo 1 iki 10"
 
 #: webapp/personal/forms.py:77
 msgid ""
 "No office space, but potential fine dust producers 1 = very little, 10 = "
 "very much."
 msgstr ""
-"Nessun ufficio, ma potenziali produttori di polveri sottili 1 = molto poco, "
-"10 = molto."
+"Nėra biuro patalpų, tačiau galimi smulkių dulkių gamintojai 1 = labai mažai,"
+" 10 = labai daug."
 
 #: webapp/personal/forms.py:80
 msgid "How many private stoves or fireplaces are within a 100m radius?"
-msgstr "Quante stufe o caminetti privati ci sono nel raggio di 100 metri?"
+msgstr "Kiek privačių krosnių ar židinių yra 100 m spinduliu?"
 
 #: webapp/personal/forms.py:92
 msgid ""
 "Does it smell very much like such smoke in your area? 1 = very little, 10 = "
 "very much."
-msgstr "C'è molto odore di fumo nella tua zona? 1 = molto poco, 10 = molto."
+msgstr ""
+"Ar jūsų vietovėje jaučiamas labai panašus į tokių dūmų kvapas? 1 = labai "
+"mažai, 10 = labai daug."
 
 #: webapp/personal/forms.py:95
 msgid "How much traffic is there within a 100m radius?"
-msgstr "Quanto traffico c'è nel raggio di 100 metri?"
+msgstr "Kokio intensyvumo eismas vyksta 100 m spinduliu?"
 
 #: webapp/personal/forms.py:107
 msgid ""
 "How close are those roads? 1 = very little further away, 10 = a lot of "
 "traffic right on your doorstep."
 msgstr ""
-"Quanto sono vicine queste strade? 1 = molto poco lontano, 10 = un sacco di "
-"traffico proprio sulla porta di casa."
+"Kaip arti tie keliai? 1 = labai nedaug, 10 = didelis eismas prie pat jūsų "
+"namų slenksčio."
 
 #: webapp/personal/forms.py:118
 msgid "PIN"
-msgstr "PIN"
+msgstr "PIN KODAS"
 
 #: webapp/personal/forms.py:119
 msgid "For special use only"
-msgstr "Solo per uso speciale"
+msgstr "Tik specialiam naudojimui"
 
 #: webapp/personal/forms.py:122
 msgid "Sensor Type"
-msgstr "Tipo di sensore"
+msgstr "Jutiklio tipas"
 
 #: webapp/personal/forms.py:135
 msgid "Personal sensor name"
-msgstr "Nome del sensore personale"
+msgstr "Asmeninio jutiklio pavadinimas"
 
 #: webapp/personal/forms.py:138
 msgid "Please enter the sensor name."
-msgstr "Inserire il nome del sensore."
+msgstr "Įveskite jutiklio pavadinimą."
 
 #: webapp/personal/forms.py:141
 msgid "Only the sensor ID will be published."
-msgstr "Verrà pubblicato solo l'ID del sensore."
+msgstr "Bus skelbiamas tik jutiklio ID."
 
 #: webapp/personal/forms.py:144
 msgid "Sensor level above ground (in cm)"
-msgstr "Livello del sensore dal suolo (in cm)"
+msgstr "Jutiklio lygis virš žemės paviršiaus (cm)"
 
 #: webapp/personal/forms.py:151
 msgid "NOT height above sea level!"
-msgstr "NON l'altezza sul livello del mare!"
+msgstr "NE aukštis virš jūros lygio!"
 
 #: webapp/personal/forms.py:154
 msgid "Sensor location relative to the traffic"
-msgstr "Posizione del sensore rispetto al traffico"
+msgstr "Jutiklio vieta eismo atžvilgiu"
 
 #: webapp/personal/forms.py:161
 msgid ""
@@ -156,55 +158,53 @@ msgid ""
 " how big the street is, it is only about where the sensor is attached to the"
 " house."
 msgstr ""
-"1 = sul lato del giardino, molto ben schermato da tutte le strade, 10 = il "
-"sensore è sul muro di una casa direttamente sulla strada. Con questo valore "
-"è irrilevante quanto sia grande la strada, si tratta solo di dove il sensore"
-" è attaccato alla casa."
+"1 = iš sodo pusės, labai gerai apsaugotas nuo visų gatvių, 10 = jutiklis yra"
+" ant namo sienos tiesiai į gatvę. Naudojant šią reikšmę nesvarbu, kokio "
+"dydžio yra gatvė, svarbu tik tai, kur jutiklis pritvirtintas prie namo."
 
 #: webapp/personal/forms.py:164
 msgid "Publish exact location"
-msgstr "Pubblica la posizione esatta"
+msgstr "Skelbti tikslią vietą"
 
 #: webapp/personal/forms.py:165
 msgid "Reveal exact sensor location in public data and archives."
-msgstr ""
-"Rivela la posizione esatta del sensore nei dati e negli archivi pubblici."
+msgstr "atskleisti tikslią jutiklio vietą viešuose duomenyse ir archyvuose."
 
 #: webapp/personal/forms.py:168
 msgid "Inactive"
-msgstr "Inattivo"
+msgstr "Neaktyvus"
 
 #: webapp/personal/forms.py:169
 msgid ""
 "Mark sensor as inactive. No notifications will be sent when sensor goes "
 "offline."
 msgstr ""
-"Segna il sensore come inattivo. Nessuna notifica sarà inviata quando il "
-"sensore va offline."
+"Pažymėkite jutiklį kaip neaktyvų. Kai jutiklis bus išjungtas, pranešimai "
+"nebus siunčiami."
 
 #: webapp/personal/forms.py:174
 msgid "Short description of location"
-msgstr "Breve descrizione della posizione"
+msgstr "Trumpas vietos aprašymas"
 
 #: webapp/personal/forms.py:176
 msgid "Save settings"
-msgstr "Salvare le impostazioni"
+msgstr "Išsaugoti nustatymus"
 
 #: webapp/personal/forms.py:181
 msgid "Sensor ID"
-msgstr "ID sensore"
+msgstr "Jutiklio ID"
 
 #: webapp/personal/forms.py:183
 msgid "Sensor ID may only contain digits and letters A to F"
-msgstr "L'ID del sensore può contenere solo cifre e lettere dalla A alla F"
+msgstr "Jutiklio ID gali būti tik skaitmenys ir raidės nuo A iki F"
 
 #: webapp/personal/forms.py:185
 msgid "The numeric part of the sensorname only"
-msgstr "Solo la parte numerica del nome del sensore"
+msgstr "Tik skaitmeninė jutiklio pavadinimo dalis"
 
 #: webapp/personal/forms.py:188
 msgid "Sensor Board"
-msgstr "Scheda del sensore"
+msgstr "Jutiklio plokštė"
 
 #: webapp/personal/forms.py:191
 msgid ""
@@ -212,197 +212,196 @@ msgid ""
 "Smogomierz sensor version need to change this accordingly. Also in these "
 "cases the Sensor ID is the numeric part of the name only."
 msgstr ""
-"Normalmente questo dovrebbe essere esp8266. Gli utenti di schede ESP32, "
-"Raspberry PI o la versione del sensore Smogomierz devono cambiare questo di "
-"conseguenza. Anche in questi casi il Sensor ID è solo la parte numerica del "
-"nome."
+"Paprastai tai turėtų būti esp8266. ESP32 plokščių, Raspberry PI arba "
+"\"Smogomierz\" jutiklio versijos naudotojai turi tai atitinkamai pakeisti. "
+"Šiais atvejais jutiklio ID taip pat yra tik skaitmeninė pavadinimo dalis."
 
 #: webapp/personal/forms.py:196
 msgid "Recipient's e-mail address"
-msgstr "Indirizzo e-mail del destinatario"
+msgstr "Gavėjo el. pašto adresas"
 
 #: webapp/personal/forms.py:199
 msgid "Please enter e-mail address"
-msgstr "Inserisci l'indirizzo e-mail"
+msgstr "Įveskite el. pašto adresą"
 
 #: webapp/personal/forms.py:202
 msgid "Please enter correct e-mail address"
-msgstr "Si prega di inserire l'indirizzo e-mail corretto"
+msgstr "Įveskite teisingą el. pašto adresą"
 
 #: webapp/personal/forms.py:206
 msgid "Transfer sensor"
-msgstr "Sensore di trasferimento"
+msgstr "Perdavimo jutiklis"
 
 #: webapp/personal/forms.py:211
 msgid "You can't transfer the sensor to yourself"
-msgstr "Non puoi trasferire il sensore a te stesso"
+msgstr "Negalite perkelti jutiklio į save"
 
 #: webapp/personal/forms.py:214 webapp/templates/my-sensors.html:32
 msgid "Delete sensor"
-msgstr "Cancellare il sensore"
+msgstr "Ištrinti jutiklį"
 
 #: webapp/personal/views.py:33
 msgid "Fine dust 10 µm"
-msgstr "Polvere fine 10 µm"
+msgstr "Smulkios dulkės 10 µm"
 
 #: webapp/personal/views.py:34
 msgid "Fine dust 2.5 µm"
-msgstr "Polvere fine 2,5 µm"
+msgstr "Smulkios dulkės 2,5 µm"
 
 #: webapp/personal/views.py:35
 msgid "Humidity"
-msgstr "Umidità"
+msgstr "Drėgmė"
 
 #: webapp/personal/views.py:36
 msgid "Temperature"
-msgstr "Temperatura"
+msgstr "Temperatūra"
 
 #: webapp/personal/views.py:37
 msgid "Pressure"
-msgstr "Pressione"
+msgstr "Slėgis"
 
 #: webapp/personal/views.py:38
 msgid "Pressure at sea level"
-msgstr "Pressione a livello del mare"
+msgstr "Slėgis jūros lygyje"
 
 #: webapp/personal/views.py:63
 msgid "particulate matter sensor SDS011"
-msgstr "sensore di particolato SDS011"
+msgstr "kietųjų dalelių jutiklis SDS011"
 
 #: webapp/personal/views.py:65
 msgid "particulate matter sensor PMS1003"
-msgstr "sensore di particolato PMS1003"
+msgstr "kietųjų dalelių jutiklis PMS1003"
 
 #: webapp/personal/views.py:67
 msgid "particulate matter sensor PMS3003"
-msgstr "sensore di particolato PMS3003"
+msgstr "kietųjų dalelių jutiklis PMS3003"
 
 #: webapp/personal/views.py:69
 msgid "particulate matter sensor PMS5003"
-msgstr "sensore di particolato PMS5003"
+msgstr "kietųjų dalelių jutiklis PMS5003"
 
 #: webapp/personal/views.py:71
 msgid "particulate matter sensor PMS6003"
-msgstr "sensore di particolato PMS6003"
+msgstr "kietųjų dalelių jutiklis PMS6003"
 
 #: webapp/personal/views.py:73
 msgid "particulate matter sensor PMS7003"
-msgstr "sensore di particolato PMS7003"
+msgstr "kietųjų dalelių jutiklis PMS7003"
 
 #: webapp/personal/views.py:75
 msgid "particulate matter sensor SPS30"
-msgstr "sensore di particolato SPS30"
+msgstr "kietųjų dalelių jutiklis SPS30"
 
 #: webapp/personal/views.py:77
 msgid "particulate matter sensor HM3301"
-msgstr "sensore di particolato HM3301"
+msgstr "kietųjų dalelių jutiklis HM3301"
 
 #: webapp/personal/views.py:79
 msgid "temperature/humidity sensor DHT22"
-msgstr "sensore temperatura-umidità DHT22"
+msgstr "temperatūros ir drėgmės jutiklis DHT22"
 
 #: webapp/personal/views.py:81
 msgid "temperature/pressure sensor BMP180"
-msgstr "sensore temperatura-pressione BMP180"
+msgstr "temperatūros ir slėgio jutiklis BMP180"
 
 #: webapp/personal/views.py:83
 msgid "temperature/pressure sensor BMP280"
-msgstr "sensore temperatura-pressione BMP280"
+msgstr "temperatūros ir slėgio jutiklis BMP280"
 
 #: webapp/personal/views.py:85
 msgid "temperature/humidity/pressure sensor BME280"
-msgstr "sensore di temperatura-umidità-pressione BME280"
+msgstr "temperatūros, drėgmės, slėgio jutiklis BME280"
 
 #: webapp/personal/views.py:87
 msgid "temperature/humidity/CO₂ ppm sensor SCD30"
-msgstr "sensore temperatura-umiditàCO₂ ppm SCD30"
+msgstr "temperatūros ir drėgmėsCO₂ ppm jutiklis SCD30"
 
 #: webapp/personal/views.py:145
 msgid "Settings saved successfully."
-msgstr "Impostazioni salvate con successo."
+msgstr "Nustatymai sėkmingai išsaugoti."
 
 #: webapp/personal/views.py:173
 msgid "Sensor successfully registered."
-msgstr "Sensore registrato con successo."
+msgstr "Jutiklis sėkmingai užregistruotas."
 
 #: webapp/personal/views.py:177
 msgid "This sensor ID is already registered."
-msgstr "Questo ID sensore è già registrato."
+msgstr "Šis jutiklio ID jau užregistruotas."
 
 #: webapp/personal/views.py:191
 msgid "A fine dust sensor was transferred to you"
-msgstr "Un sensore di polvere sottile è stato trasferito a voi"
+msgstr "Jums buvo perduotas smulkių dulkių jutiklis"
 
 #: webapp/templates/401.html:8
 msgid "Access prohibited"
-msgstr "Accesso vietato"
+msgstr "Prieiga draudžiama"
 
 #: webapp/templates/401.html:9
 msgid "You may not access this page. Maybe "
-msgstr "Non puoi accedere a questa pagina. Forse"
+msgstr "Jūs negalite pasiekti šio puslapio. Galbūt"
 
 #: webapp/templates/401.html:9
 msgid "you must first log in?"
-msgstr "devi prima fare il login?"
+msgstr "pirmiausia turite prisijungti?"
 
 #: webapp/templates/imprint.html:8 webapp/templates/layout.html:110
 msgid "Imprint"
-msgstr "Impronta"
+msgstr "Atspaudas"
 
 #: webapp/templates/imprint.html:14
 msgid "Informations according to § 5 TMG"
-msgstr "Informazioni secondo il § 5 TMG"
+msgstr "Informacija pagal TMG 5 straipsnį"
 
 #: webapp/templates/imprint.html:21
 msgid "Represented by:"
-msgstr "Rappresentato da:"
+msgstr "Atstovauja:"
 
 #: webapp/templates/imprint.html:26
 msgid "Contact:"
-msgstr "Contatto:"
+msgstr "Susisiekite su:"
 
 #: webapp/templates/imprint.html:32
 msgid "based on the concept and software development of Ernesto Ruge:"
-msgstr "basato sul concetto e lo sviluppo del software di Ernesto Ruge:"
+msgstr "remiantis Ernesto Ruge koncepcija ir programinės įrangos kūrimu:"
 
 #: webapp/templates/imprint.html:34
 msgid "Contact: Website of Ernesto Ruge:"
-msgstr "Contatto: Sito web di Ernesto Ruge:"
+msgstr "Susisiekite su: Ernesto Ruge svetainė:"
 
 #: webapp/templates/index.html:6 webapp/templates/register-minimal.html:13
 msgid "Configure air quality sensor yourself"
-msgstr "Configura da solo il sensore di qualità dell'aria"
+msgstr "Patys konfigūruokite oro kokybės jutiklį"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
 msgid ""
 "Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
 msgstr ""
-"Donazioni per Sensor.Community (Hardware, Software) ora su Betterplace.org"
+"Paaukokite \"Sensor.Community\" (aparatinė ir programinė įranga) dabar "
+"Betterplace.org"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
 msgid ""
 "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
 msgstr ""
-"Dona per&lt;br&gt;Sensor.Community&lt;br&gt;ora "
-"su&lt;br&gt;&lt;span&gt;Betterplace.org&lt;span&gt;"
+"Paaukokite už&lt;br&gt;Sensor.Community&lt;br&gt;nuo "
+"šiol&lt;br&gt;&lt;span&gt;Betterplace.org&lt;span&gt;"
 
 #: webapp/templates/index.html:16
 msgid "Configure Luftdaten"
-msgstr "Configurare i dati dell'aria"
+msgstr "Oro duomenų konfigūravimas"
 
 #: webapp/templates/index.html:17
 msgid ""
 "The main purpose of this page is to enable you, as the owner of a fine dust "
 "sensor, to configure the location and other parameters yourself."
 msgstr ""
-"Lo scopo principale di questa pagina è di permetterti, come proprietario di "
-"un sensore di polveri sottili, di configurare tu stesso la posizione e altri"
-" parametri."
+"Pagrindinė šio puslapio paskirtis - suteikti jums, kaip smulkių dulkių "
+"jutiklio savininkui, galimybę pačiam konfigūruoti vietą ir kitus parametrus."
 
 #: webapp/templates/index.html:18
 #, python-format
 msgid "Click here to <a href=\"%(login_url)s\">log in</a>."
-msgstr "Clicca qui per <a href=\"%(login_url)s\">log in</a>."
+msgstr "Spustelėkite čia ir <a href=\"%(login_url)s\">prisijunkite</a>."
 
 #: webapp/templates/index.html:20
 #, python-format
@@ -410,12 +409,12 @@ msgid ""
 "General information can be found at <a href=\"%(home_url)s\">Sensor.Community</a> - formerly known as Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building instructions</a>.\n"
 "            Sensor data can be found on <a href=\"%(map_url)s\">the fine dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
-"Informazioni generali possono essere trovate su <a href=\"%(home_url)s\">Sensor.Community</a> - precedentemente noto come Luftdaten.info, così come le <a href=\"%(manual_url)s\">istruzioni per la costruzione</a>.\n"
-"            I dati dei sensori possono essere trovati su <a href=\"%(map_url)s\">la mappa delle polveri sottili</a> o <a href=\"%(archive_url)s\">essere scaricati come CSV</a>."
+"Bendros informacijos galima rasti <a href=\"%(home_url)s\">Sensor.Community</a> - anksčiau žinomame kaip Luftdaten.info, taip pat <a href=\"%(manual_url)s\">statybos instrukcijos</a>.\n"
+"            Jutiklių duomenis galima rasti <a href=\"%(map_url)s\">smulkių dulkių žemėlapyje</a> arba <a href=\"%(archive_url)s\">pasiimti CSV formatu</a>."
 
 #: webapp/templates/index.html:32
 msgid "Join us!"
-msgstr "Unisciti a noi!"
+msgstr "Prisijunkite prie mūsų!"
 
 #: webapp/templates/index.html:33
 msgid ""
@@ -423,13 +422,13 @@ msgid ""
 " Movement and Citizen Science are leading to more and more people being "
 "given the opportunity to design the city themselves."
 msgstr ""
-"La città del futuro appartiene ai suoi cittadini. Gli strumenti digitali, il"
-" Maker Movement e la Citizen Science stanno portando sempre più persone ad "
-"avere l'opportunità di progettare la città da sole."
+"Ateities miestas priklauso jo gyventojams. Skaitmeniniai įrankiai, \"Maker "
+"Movement\" ir \"Citizen Science\" lemia, kad vis daugiau žmonių turi "
+"galimybę patys kurti miestą."
 
 #: webapp/templates/index.html:35
 msgid "About the project"
-msgstr "Il progetto"
+msgstr "Apie projektą"
 
 #: webapp/templates/index.html:36
 msgid ""
@@ -437,10 +436,9 @@ msgid ""
 "Knowledge Foundation Germany. The aim of the program is to promote "
 "developments in the areas of transparency, Open Data and Citizen Science."
 msgstr ""
-"L'OK Lab Stuttgart fa parte del programma Code for Germany della Open "
-"Knowledge Foundation Germany. L'obiettivo del programma è quello di "
-"promuovere gli sviluppi nelle aree della trasparenza, degli Open Data e "
-"della Citizen Science."
+"\"OK Lab Stuttgart\" yra Atvirų žinių fondo Vokietijoje programos \"Code for"
+" Germany\" dalis. Programos tikslas - skatinti pokyčius skaidrumo, atvirų "
+"duomenų ir pilietinio mokslo srityse."
 
 #: webapp/templates/index.html:37
 msgid ""
@@ -449,208 +447,206 @@ msgid ""
 "support society and make the work of administrations and authorities more "
 "transparent."
 msgstr ""
-"Gruppi regionali composti da designer, sviluppatori, giornalisti e altri si "
-"incontrano regolarmente nei Labs. Sviluppano app che informano, modellano "
-"positivamente e sostengono la società e rendono il lavoro delle "
-"amministrazioni e delle autorità più trasparente."
+"\"Labs\" reguliariai susitinka regioninės grupės, kurias sudaro dizaineriai,"
+" kūrėjai, žurnalistai ir kiti. Jos kuria programėles, kurios informuoja, "
+"pozityviai formuoja ir palaiko visuomenę bei daro administracijos ir "
+"valdžios institucijų darbą skaidresnį."
 
 #: webapp/templates/index.html:38
 msgid "Code a difference: Use your skills to improve your city!"
 msgstr ""
-"Codifica la differenza: Usa le tue abilità per migliorare la tua città!"
+"Skirtumo kodas: Pasinaudokite savo įgūdžiais, kad pagerintumėte savo miestą!"
 
 #: webapp/templates/invalid-email.html:8
 msgid "Unknown email address"
-msgstr "Indirizzo e-mail sconosciuto"
+msgstr "Nežinomas el. pašto adresas"
 
 #: webapp/templates/invalid-email.html:9
 msgid "There are no sensors stored under this e-mail address."
-msgstr "Non ci sono sensori memorizzati sotto questo indirizzo e-mail."
+msgstr "Šiuo el. pašto adresu nesaugomi jokie jutikliai."
 
 #: webapp/templates/invalid-email.html:10
 msgid ""
 "If you are of the opinion that you have a sensor at this mail address, "
 "please send us an e-mail. Send an email to"
 msgstr ""
-"Se pensate di avere un sensore a questo indirizzo di posta, inviateci "
-"un'e-mail. Invia un'e-mail a"
+"Jei manote, kad šiuo adresu yra jutiklis, atsiųskite mums el. laišką. "
+"Siųskite el. laišką adresu"
 
 #: webapp/templates/layout.html:4
 msgid "user configuration"
-msgstr "configurazione utente"
+msgstr "naudotojo konfigūracija"
 
 #: webapp/templates/layout.html:14
 msgid "Information and settings for the luftdaten project"
-msgstr "Informazioni e impostazioni per il progetto luftdaten"
+msgstr "Luftdaten projekto informacija ir nustatymai"
 
 #: webapp/templates/layout.html:55
 msgid "Home"
-msgstr "Casa"
+msgstr "Pagrindinis"
 
 #: webapp/templates/layout.html:58 webapp/templates/my-sensors.html:9
 msgid "My sensors"
-msgstr "I miei sensori"
+msgstr "Mano jutikliai"
 
 #: webapp/templates/layout.html:59 webapp/templates/meine-luftdaten.html:20
 #: webapp/templates/my-password.html:10 webapp/templates/my-sensors.html:30
 #: webapp/templates/my-settings.html:13
 msgid "Settings"
-msgstr "Impostazioni"
+msgstr "Nustatymai"
 
 #: webapp/templates/layout.html:60
 msgid "Password change"
-msgstr "Cambio di password"
+msgstr "Slaptažodžio keitimas"
 
 #: webapp/templates/layout.html:63
 msgid "Massimporter"
-msgstr "Massimporter"
+msgstr "Masinis importuotojas"
 
 #: webapp/templates/layout.html:69 webapp/templates/meine-luftdaten.html:24
 msgid "Logout"
-msgstr "Logout"
+msgstr "Atsijungimas"
 
 #: webapp/templates/layout.html:71 webapp/templates/security/login_user.html:7
 #: webapp/templates/security/send_login.html:5
 msgid "Login"
-msgstr "Accesso"
+msgstr "Prisijungimas"
 
 #: webapp/templates/layout.html:72
 #: webapp/templates/security/login_user.html:17
 #: webapp/templates/security/register_user.html:5
 msgid "Register"
-msgstr "Registra"
+msgstr "Registruotis"
 
 #: webapp/templates/layout.html:111 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
-msgstr "Politica sulla privacy"
+msgstr "Privatumo politika"
 
 #: webapp/templates/login-with-password.html:68
 msgid "Back to e-mail login"
-msgstr "Ritorna all'accesso all'e-mail"
+msgstr "Grįžti į el. pašto prisijungimą"
 
 #: webapp/templates/login-with-password.html:69
 msgid "Password Reset"
-msgstr "Ripristino della password"
+msgstr "Slaptažodžio atkūrimas"
 
 #: webapp/templates/login.html:12
 msgid "Configure air data sensor yourself"
-msgstr "Configura da solo il sensore di dati dell'aria"
+msgstr "Konfigūruokite oro duomenų jutiklį patys"
 
 #: webapp/templates/meine-luftdaten.html:11
 msgid "Meine Luftdaten"
-msgstr "I miei dati sull'aria"
+msgstr ""
 
 #: webapp/templates/meine-luftdaten.html:11
 msgid "Your personal area."
-msgstr "La tua area personale."
+msgstr "Jūsų asmeninė sritis."
 
 #: webapp/templates/meine-luftdaten.html:18
 msgid "Sensors"
-msgstr "Sensori"
+msgstr "Jutikliai"
 
 #: webapp/templates/meine-luftdaten.html:19
 msgid "View and change sensor data and settings."
-msgstr "Visualizzare e modificare i dati e le impostazioni del sensore."
+msgstr "Peržiūrėkite ir keiskite jutiklio duomenis ir nustatymus."
 
 #: webapp/templates/meine-luftdaten.html:21
 msgid "View and change data, notification settings and passwords."
 msgstr ""
-"Visualizzare e modificare i dati, le impostazioni di notifica e le password."
+"Peržiūrėkite ir keiskite duomenis, pranešimų nustatymus ir slaptažodžius."
 
 #: webapp/templates/meine-luftdaten.html:22 webapp/users/forms.py:46
 #: webapp/users/forms.py:93
 msgid "Password"
-msgstr "Password"
+msgstr "Slaptažodis"
 
 #: webapp/templates/meine-luftdaten.html:23
 msgid "Change password."
-msgstr "Cambiare la password."
+msgstr "Pakeiskite slaptažodį."
 
 #: webapp/templates/meine-luftdaten.html:25
 msgid "Logout."
-msgstr "Logout."
+msgstr "Atsijungimas."
 
 #: webapp/templates/my-password.html:11
 msgid "Change your password."
-msgstr "Cambia la tua password."
+msgstr "Pakeiskite slaptažodį."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr "Dati dal nodo"
+msgstr "Duomenys iš mazgo"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
 "Typically, two sensors are attached to each node: the fine dust sensor and the\n"
 "                        Humidity and temperature sensor. The sensor number can also be found"
 msgstr ""
-"Tipicamente, due sensori sono collegati ad ogni nodo: il sensore di polveri "
-"sottili e il sensore di umidità e temperatura. Il numero del sensore può "
-"anche essere trovato"
+"Paprastai prie kiekvieno mazgo prijungiami du jutikliai: smulkių dulkių "
+"jutiklis ir drėgmės bei temperatūros jutiklis. Jutiklio numerį taip pat "
+"galima rasti"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr "sulla mappa delle polveri sottili di nuovo"
+msgstr "vėl smulkių dulkių žemėlapyje"
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr "mostra sulla mappa"
+msgstr "rodyti žemėlapyje"
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr "Ultimo aggiornamento:"
+msgstr "Paskutinį kartą atnaujinta:"
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr "Non sono disponibili dati attuali per questo sensore."
+msgstr "Dabartinių duomenų apie šį jutiklį nėra."
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "Sensor"
-msgstr "Sensore"
+msgstr "Jutiklis"
 
 #: webapp/templates/my-sensor-delete-success.html:13
 msgid "was deleted."
-msgstr "è stato cancellato."
+msgstr "buvo ištrintas."
 
 #: webapp/templates/my-sensor-delete-success.html:14
 #: webapp/templates/my-sensor-delete.html:23
 #: webapp/templates/my-sensor-give-success.html:15
 #: webapp/templates/my-sensor-give.html:24
 msgid "Back to my sensors"
-msgstr "Torna ai miei sensori"
+msgstr "Grįžti prie savo jutiklių"
 
 #: webapp/templates/my-sensor-delete.html:8
 #, python-format
 msgid "Delete sensor %(node_id)s"
-msgstr "Torna ai miei sensori"
+msgstr "Grįžti prie savo jutiklių"
 
 #: webapp/templates/my-sensor-delete.html:9
 msgid "Are you sure you want to delete this sensor?"
-msgstr "Sei sicuro di voler eliminare questo sensore?"
+msgstr "Ar tikrai norite ištrinti šį jutiklį?"
 
 #: webapp/templates/my-sensor-delete.html:10
 msgid "Warning! After deleting you have no more control over the sensor!"
-msgstr "Attenzione! Dopo la cancellazione non hai più controllo sul sensore!"
+msgstr "Įspėjimas! Ištrynę jutiklį nebegalėsite jo valdyti!"
 
 #: webapp/templates/my-sensor-delete.html:11
 msgid ""
 "Also the chipID of this sensor will remain blocked for a new registration!"
-msgstr ""
-"Anche il chipID di questo sensore rimarrà bloccato per una nuova "
-"registrazione!"
+msgstr "Be to, šio jutiklio lusto ID liks užblokuotas naujai registracijai!"
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "was handed over."
-msgstr "è stato consegnato."
+msgstr "buvo perduotas."
 
 #: webapp/templates/my-sensor-give-success.html:14
 msgid "An e-mail was sent to the new owner"
-msgstr "Una e-mail è stata inviata al nuovo proprietario"
+msgstr "Naujajam savininkui buvo išsiųstas el. laiškas"
 
 #: webapp/templates/my-sensor-give.html:8
 #, python-format
 msgid "Sensor %(node_id)s hand over"
-msgstr "Una e-mail è stata inviata al nuovo proprietario"
+msgstr "Naujajam savininkui buvo išsiųstas el. laiškas"
 
 #: webapp/templates/my-sensor-give.html:9
 msgid ""
@@ -658,18 +654,17 @@ msgid ""
 "useful if you have ordered a sensor for a friend and want to transfer it to "
 "him or her."
 msgstr ""
-"Questo ti permette di trasferire i sensori ad un'altra persona. Questo è "
-"particolarmente utile se hai ordinato un sensore per un amico e vuoi "
-"trasferirlo a lui o a lei."
+"Taip galite perkelti jutiklius kitam asmeniui. Tai ypač naudinga, jei "
+"jutiklį užsakėte draugui ir norite jį perduoti jam ar jai."
 
 #: webapp/templates/my-sensor-give.html:10
 msgid "Warning! After the transfer you have no more control over the sensor!"
-msgstr "Attenzione! Dopo il trasferimento non hai più controllo sul sensore!"
+msgstr "Įspėjimas! Po perkėlimo jutiklio nebekontroliuojate!"
 
 #: webapp/templates/my-sensor-settings.html:6
 #, python-format
 msgid "Settings of Node %(node_id)s"
-msgstr "Impostazioni del nodo %(node_id)s"
+msgstr "Mazgo %(node_id)s nustatymai"
 
 #: webapp/templates/my-sensor-settings.html:7
 msgid ""
@@ -678,55 +673,54 @@ msgid ""
 "also argue politically. It is therefore important that the basic sensor data"
 " is always kept up to date."
 msgstr ""
-"Con questo modulo è possibile mantenere aggiornati i dati del sensore. Si "
-"prega di notare che solo dati precisi possono portare a valutazioni precise "
-"con le quali possiamo anche argomentare politicamente. È quindi importante "
-"che i dati di base del sensore siano sempre aggiornati."
+"Naudodami šią formą galite nuolat atnaujinti jutiklio duomenis. Atkreipkite "
+"dėmesį, kad tik tikslūs duomenys gali padėti atlikti tikslius vertinimus, "
+"kuriais taip pat galime politiškai argumentuoti. Todėl svarbu, kad "
+"pagrindiniai jutiklio duomenys visada būtų atnaujinami."
 
 #: webapp/templates/my-sensors.html:10
 msgid "All sensors assigned to your account can be found in this overview."
-msgstr ""
-"Tutti i sensori assegnati al suo account si trovano in questa panoramica."
+msgstr "Šioje apžvalgoje rasite visus jūsų paskyrai priskirtus jutiklius."
 
 #: webapp/templates/my-sensors.html:15
 msgid "Sensor UID"
-msgstr "UID del sensore"
+msgstr "Jutiklio UID"
 
 #: webapp/templates/my-sensors.html:16
 msgid "Name"
-msgstr "Nome"
+msgstr "Pavadinimas"
 
 #: webapp/templates/my-sensors.html:17
 msgid "Created"
-msgstr "Creato"
+msgstr "Sukurta"
 
 #: webapp/templates/my-sensors.html:17
 msgid "Last Update"
-msgstr "Ultimo aggiornamento"
+msgstr "Paskutinis atnaujinimas"
 
 #: webapp/templates/my-sensors.html:18
 msgid "Functions"
-msgstr "Funzioni"
+msgstr "Funkcijos"
 
 #: webapp/templates/my-sensors.html:29
 msgid "Data"
-msgstr "Dati"
+msgstr "Duomenys"
 
 #: webapp/templates/my-sensors.html:31
 msgid "Hand over sensor"
-msgstr "Mano sul sensore"
+msgstr "Perduoti jutiklį"
 
 #: webapp/templates/my-sensors.html:36
 msgid "No sensors found"
-msgstr "Nessun sensore trovato"
+msgstr "Jutiklių nerasta"
 
 #: webapp/templates/my-sensors.html:41
 msgid "Register new sensor"
-msgstr "Registrare un nuovo sensore"
+msgstr "Užregistruoti naują jutiklį"
 
 #: webapp/templates/my-settings.html:14
 msgid "Here you can change your settings."
-msgstr "Qui potete cambiare le vostre impostazioni."
+msgstr "Čia galite keisti nustatymus."
 
 #: webapp/templates/privacy-policy.html:13
 msgid ""
@@ -771,71 +765,69 @@ msgstr ""
 
 #: webapp/templates/recover-fail.html:13
 msgid "Set password Error"
-msgstr "Impostare la password Errore"
+msgstr "Nustatyti slaptažodį Klaida"
 
 #: webapp/templates/recover-fail.html:14
 msgid ""
 "Unfortunately the link is not correct. Either it is too old, or it was not "
 "copied completely. Please try again."
 msgstr ""
-"Purtroppo il link non è corretto. O è troppo vecchio, o non è stato copiato "
-"completamente. Si prega di riprovare."
+"Deja, nuoroda nėra teisinga. Arba ji yra per sena, arba nebuvo visiškai "
+"nukopijuota. Pabandykite dar kartą."
 
 #: webapp/templates/recover-mail-sent-again.html:13
 #: webapp/templates/recover-mail-sent.html:13
 msgid "Mail sent"
-msgstr "Posta inviata"
+msgstr "Išsiųstas paštas"
 
 #: webapp/templates/recover-mail-sent-again.html:14
 msgid "Please look into your mailbox to reset your password."
-msgstr ""
-"Per favore, guarda nella tua casella di posta elettronica per reimpostare la"
-" tua password."
+msgstr "Pasižiūrėkite į savo pašto dėžutę ir iš naujo nustatykite slaptažodį."
 
 #: webapp/templates/recover-mail-sent.html:14
 msgid ""
 "Your account was not active yet. Please look into your mailbox to reset your"
 " password and activate your account."
 msgstr ""
-"Il tuo account non è ancora attivo. Per favore guarda nella tua casella di "
-"posta elettronica per reimpostare la tua password e attivare il tuo account."
+"Jūsų paskyra dar nebuvo aktyvi. Prašome pažvelgti į savo pašto dėžutę ir iš "
+"naujo nustatyti slaptažodį bei aktyvuoti paskyrą."
 
 #: webapp/templates/recover-set-password.html:14
 msgid "Set password"
-msgstr "Imposta la password"
+msgstr "Nustatyti slaptažodį"
 
 #: webapp/templates/recover.html:14
 msgid "Forgot Passwort?"
-msgstr "Hai dimenticato la password?"
+msgstr "Pamiršote slaptažodį?"
 
 #: webapp/templates/register-existing-wait-for-mail.html:13
 msgid "Activation required"
-msgstr "Attivazione richiesta"
+msgstr "Reikalingas aktyvavimas"
 
 #: webapp/templates/register-existing-wait-for-mail.html:14
 msgid ""
 "Since you are logging in for the first time, your e-mail address must be "
 "confirmed. Please look in your mailbox to get access to your sensors."
 msgstr ""
-"Poiché è la prima volta che accedi, il tuo indirizzo e-mail deve essere "
-"confermato. Cerca nella tua casella di posta elettronica per accedere ai "
-"tuoi sensori."
+"Kadangi prisijungiate pirmą kartą, jūsų el. pašto adresas turi būti "
+"patvirtintas. Ieškokite savo pašto dėžutėje, kad gautumėte prieigą prie savo"
+" jutiklių."
 
 #: webapp/templates/register-minimal.html:25
 msgid "Registration"
-msgstr "Registrazione"
+msgstr "Registracija"
 
 #: webapp/templates/sensor-import-status.html:13
 msgid "Sensor Mass Import: Status"
-msgstr "Importazione della massa del sensore: Stato"
+msgstr "Jutiklio masės importas: būsena"
 
 #: webapp/templates/sensor-import-status.html:14
 msgid ""
 "You can see all current imports in this overview. Click on Reload to update "
 "the status."
 msgstr ""
-"Puoi vedere tutte le importazioni in corso in questa panoramica. Clicca su "
-"Reload per aggiornare lo stato."
+"Šioje apžvalgoje galite peržiūrėti visus esamus importuojamus produktus. "
+"Norėdami atnaujinti būseną, spustelėkite Perkrauti."
 
 #: webapp/templates/sensor-import-status.html:18
 msgid "ID"
@@ -843,19 +835,19 @@ msgstr "ID"
 
 #: webapp/templates/sensor-import-status.html:19
 msgid "Data (Start)"
-msgstr "Dati (inizio)"
+msgstr "Duomenys (pradžia)"
 
 #: webapp/templates/sensor-import.html:15
 msgid "Sensor mass importer"
-msgstr "Importatore di massa del sensore"
+msgstr "Jutiklio masės importuotojas"
 
 #: webapp/templates/sensor-import.html:16
 msgid ""
 "With this form new nodes can be imported in masses. One node per line is "
 "expected in the following format:"
 msgstr ""
-"Con questo modulo i nuovi nodi possono essere importati in massa. Un nodo "
-"per riga è previsto nel seguente formato:"
+"Naudojant šią formą galima masiškai importuoti naujus mazgus. Vienoje "
+"eilutėje numatomas vienas mazgas tokiu formatu:"
 
 #: webapp/templates/sensor-import.html:18
 msgid ""
@@ -863,50 +855,50 @@ msgid ""
 "                            of the owner. If this is not fixed, only the Node-ID can be specified, which is\n"
 "                            E-mail must then be added later."
 msgstr ""
-"123456 è l'ID della scheda ESP8266, l'e-mail è l'indirizzo del futuro del "
-"proprietario. Se questo non è fissato, solo il Node-ID può essere "
-"specificato, che è E-mail deve poi essere aggiunto in seguito."
+"123456 yra ESP8266 plokštės ID, el. pašto adresas yra būsimo savininko "
+"adresas. Jei jis nėra nustatytas, galima nurodyti tik mazgo ID, o el. paštas"
+" turi būti pridėtas vėliau."
 
 #: webapp/templates/sensor-import.html:21
 msgid ""
 "If an email address has been specified, the owner will be notified with an email about their\n"
 "                            new sensor."
 msgstr ""
-"Se è stato specificato un indirizzo email, il proprietario sarà avvisato con"
-" una email sul suo nuovo sensore."
+"Jei buvo nurodytas el. pašto adresas, savininkui apie naująjį jutiklį bus "
+"pranešta el. paštu."
 
 #: webapp/templates/sensor-register.html:6
 msgid "Sensor registration"
-msgstr "Registrazione del sensore"
+msgstr "Jutiklio registracija"
 
 #: webapp/templates/sensor-settings-form.html:1
 msgid "Basic Information"
-msgstr "Informazioni di base"
+msgstr "Pagrindinė informacija"
 
 #: webapp/templates/sensor-settings-form.html:21
 msgid "Additional Information"
-msgstr "Informazioni aggiuntive"
+msgstr "Papildoma informacija"
 
 #: webapp/templates/sensor-settings-form.html:26
 msgid "Hardware configuration"
-msgstr "Configurazione dell'hardware"
+msgstr "Techninės įrangos konfigūracija"
 
 #: webapp/templates/sensor-settings-form.html:27
 msgid ""
 "click <a name=\"expert\" onclick=\"toggle_expert()\" style=\"color:blue;\"> "
 "&gt;&gt;here&lt;&lt; </a> to enable expert fields"
 msgstr ""
-"clicca &lt;a name=\"expert\" onclick=\"toggle_expert()\" "
-"style=\"color:blue;\"&gt; &amp;gt;&amp;gt;qui&amp;lt;&amp;lt; &lt;a&gt; per "
-"abilitare i campi esperti"
+"spustelėkite &lt;a name=\"expert\" onclick=\"toggle_expert()\" "
+"style=\"color:blue;\"&gt; &amp;gt;&amp;gt;here&amp;lt;&amp;lt;&amp;lt; "
+"&lt;a&gt;, kad įjungtumėte ekspertų laukus."
 
 #: webapp/templates/sensor-settings-form.html:34
 msgid "remove"
-msgstr "rimuovere"
+msgstr "pašalinti"
 
 #: webapp/templates/sensor-settings-form.html:39
 msgid "add component"
-msgstr "aggiungi componente"
+msgstr "pridėti komponentą"
 
 #: webapp/templates/sensor-settings-form.html:116
 msgid ""
@@ -915,37 +907,37 @@ msgid ""
 "of the address, but we would be happy if you would specify the position with"
 " the map below."
 msgstr ""
-"Più precisi sono i dati che abbiamo, meglio possiamo valutare i dati e "
-"quindi energizzare le dichiarazioni. Il sistema può anche tentare di "
-"ricavare una geoposizione dall'indirizzo, ma saremmo felici se lei "
-"specificasse la posizione con la mappa qui sotto."
+"Kuo tikslesnius duomenis turime, tuo geriau galime juos įvertinti ir taip "
+"sustiprinti teiginius. Sistema taip pat gali pabandyti iš adreso sudaryti "
+"geografinę padėtį, tačiau būtume laimingi, jei patikslintumėte padėtį "
+"naudodami toliau pateiktą žemėlapį."
 
 #: webapp/templates/sensor-settings-form.html:125
 msgid "Lookup entered address"
-msgstr "Cerca l'indirizzo inserito"
+msgstr "Įvesto adreso paieška"
 
 #: webapp/templates/sensor-settings-form.html:130
 msgid "Please check sensor position."
-msgstr "Si prega di controllare la posizione del sensore."
+msgstr "Patikrinkite jutiklio padėtį."
 
 #: webapp/templates/emails/recover.html:11
 #: webapp/templates/emails/register-existing.html:11
 #: webapp/templates/emails/sensor-given.html:11
 #: webapp/templates/emails/sensor-registered.html:11
 msgid "Hello,"
-msgstr "Salve,"
+msgstr "Sveiki,"
 
 #: webapp/templates/emails/recover.html:13
 msgid "to reset your password, please use the following URL:"
-msgstr "per reimpostare la tua password, utilizza il seguente URL:"
+msgstr "norėdami iš naujo nustatyti slaptažodį, naudokite šį URL adresą:"
 
 #: webapp/templates/emails/recover.html:14
 msgid ""
 "If you have not requested a new password on Sensor.Community, you can ignore"
 " this e-mail."
 msgstr ""
-"Se non hai richiesto una nuova password su Sensor.Community, puoi ignorare "
-"questa e-mail."
+"Jei Sensor.Community neprašėte naujo slaptažodžio, galite ignoruoti šį el. "
+"laišką."
 
 #: webapp/templates/emails/recover.html:15
 #: webapp/templates/emails/register-existing.html:15
@@ -954,173 +946,173 @@ msgstr ""
 msgid ""
 "Sincerely,\n"
 "    Your Sensor.Community team"
-msgstr "Cordialmente, il vostro team Sensor.Community"
+msgstr "Su pagarba, Jūsų Sensor.Community komanda"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
 "in order to manage your sensor in the future, we have created an account for"
 " you. Please enter a password under the following link: "
 msgstr ""
-"Per poter gestire il tuo sensore in futuro, abbiamo creato un account per "
-"te. Inserisci una password al seguente link:"
+"kad ateityje galėtumėte valdyti jutiklį, sukūrėme jums paskyrą. Įveskite "
+"slaptažodį pagal šią nuorodą:"
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
 "If you have not created an account on Sensor.Community, you can ignore this "
 "e-mail."
 msgstr ""
-"Se non hai creato un account su Sensor.Community, puoi ignorare questa "
-"e-mail."
+"Jei nesate susikūrę paskyros Sensor.Community, galite ignoruoti šį el. "
+"laišką."
 
 #: webapp/templates/emails/sensor-given.html:13
 msgid ""
 "a particulate matter sensor has been handed over to your control. Please log"
 " in with this mail address to take data and settings or to change them: "
 msgstr ""
-"un sensore di particolato è stato consegnato al vostro controllo. Accedete "
-"con questo indirizzo e-mail per prendere i dati e le impostazioni o per "
-"cambiarli:"
+"kietųjų dalelių jutiklis buvo perduotas jūsų kontrolei. Prisijunkite šiuo "
+"el. pašto adresu, kad galėtumėte priimti duomenis ir nustatymus arba juos "
+"pakeisti:"
 
 #: webapp/templates/emails/sensor-given.html:14
 msgid ""
 "If you have received a sensor by mistake, please report this at "
 "tech@sensor.community."
 msgstr ""
-"Se hai ricevuto un sensore per errore, segnalalo a tech@sensor.community."
+"Jei jutiklį gavote per klaidą, praneškite apie tai adresu "
+"tech@sensor.community."
 
 #: webapp/templates/emails/sensor-registered.html:13
 msgid ""
 "a fine dust sensor has been registered for you. Please log in with this mail"
 " address to take in or change data and settings: "
 msgstr ""
-"un sensore per polveri sottili è stato registrato per te. Si prega di "
-"accedere con questo indirizzo e-mail per prendere o modificare i dati e le "
-"impostazioni:"
+"užregistruotas smulkių dulkių jutiklis. Prisijunkite šiuo el. pašto adresu, "
+"kad galėtumėte įvesti arba pakeisti duomenis ir nustatymus:"
 
 #: webapp/templates/emails/sensor-registered.html:14
 msgid ""
 "If the sensor was registered for you by mistake, please report this to "
 "tech@sensor.community."
 msgstr ""
-"Se il sensore è stato registrato per errore, segnalalo a "
+"Jei jutiklis buvo užregistruotas per klaidą, praneškite apie tai adresu "
 "tech@sensor.community."
 
 #: webapp/templates/security/change_password.html:5
 msgid "Change password"
-msgstr "Cambiare la password"
+msgstr "Pakeisti slaptažodį"
 
 #: webapp/templates/security/forgot_password.html:5
 msgid "Send password reset instructions"
-msgstr "Invia le istruzioni per la reimpostazione della password"
+msgstr "Siųsti slaptažodžio atstatymo instrukcijas"
 
 #: webapp/templates/security/login_user.html:18
 msgid "Password reminder"
-msgstr "Promemoria della password"
+msgstr "Slaptažodžio priminimas"
 
 #: webapp/templates/security/register_user.html:17
 msgid ""
 "please wait up to 30 min to receive the mail and check your spam folder"
 msgstr ""
-"si prega di attendere fino a 30 minuti per ricevere la posta e controllare "
-"la cartella spam"
+"palaukite iki 30 min., kol gausite laišką, ir patikrinkite nepageidaujamų "
+"laiškų aplanką."
 
 #: webapp/templates/security/reset_password.html:5
 msgid "Reset password"
-msgstr "Ripristina la password"
+msgstr "Iš naujo nustatyti slaptažodį"
 
 #: webapp/templates/security/send_confirmation.html:5
 msgid "Resend confirmation instructions"
-msgstr "Invia nuovamente le istruzioni di conferma"
+msgstr "Pakartotinis patvirtinimo instrukcijų siuntimas"
 
 #: webapp/users/forms.py:22 webapp/users/forms.py:36 webapp/users/forms.py:58
 #: webapp/users/forms.py:79
 msgid "E-Mail addresse"
-msgstr "Indirizzo e-mail"
+msgstr "El. pašto adresas"
 
 #: webapp/users/forms.py:25 webapp/users/forms.py:39 webapp/users/forms.py:61
 #: webapp/users/forms.py:82
 msgid "Please enter an e-mail address."
-msgstr "Si prega di inserire un indirizzo e-mail."
+msgstr "Įveskite el. pašto adresą."
 
 #: webapp/users/forms.py:28 webapp/users/forms.py:42 webapp/users/forms.py:64
 #: webapp/users/forms.py:85
 msgid "Please enter a correct e-mail address."
-msgstr "Si prega di inserire un indirizzo e-mail corretto."
+msgstr "Įveskite teisingą el. pašto adresą."
 
 #: webapp/users/forms.py:32
 msgid "next"
-msgstr "prossimo"
+msgstr "Kitas"
 
 #: webapp/users/forms.py:49 webapp/users/forms.py:96 webapp/users/forms.py:108
 #: webapp/users/forms.py:136
 msgid "Please enter a password."
-msgstr "Si prega di inserire una password."
+msgstr "Įveskite slaptažodį."
 
 #: webapp/users/forms.py:53 webapp/users/forms.py:113
 msgid "Stay logged in."
-msgstr "Resta collegato."
+msgstr "Būkite prisijungę."
 
 #: webapp/users/forms.py:54
 msgid "login"
-msgstr "login"
+msgstr "prisijungimas"
 
 #: webapp/users/forms.py:68
 msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>."
-msgstr "Sono d'accordo con la <a href=\"/privacy-policy\">Privacy policy</a>."
+msgstr "Sutinku su <a href=\"/privacy-policy\">Privatumo politika</a>."
 
 #: webapp/users/forms.py:71
 msgid "Please agree to the privacy policy."
-msgstr "Si prega di accettare l'informativa sulla privacy."
+msgstr "Prašome sutikti su privatumo politika."
 
 #: webapp/users/forms.py:75
 msgid "register"
-msgstr "registrare"
+msgstr "registruoti"
 
 #: webapp/users/forms.py:89
 msgid "Password request via email"
-msgstr "Richiesta di password via e-mail"
+msgstr "Slaptažodžio užklausa el. paštu"
 
 #: webapp/users/forms.py:101 webapp/users/forms.py:130
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr "Richiesta di password via e-mail"
+msgstr "Slaptažodžio užklausa el. paštu"
 
 #: webapp/users/forms.py:105
 msgid "Password (repeat)"
-msgstr "Password (ripetere)"
+msgstr "Slaptažodis (pakartoti)"
 
 #: webapp/users/forms.py:110 webapp/users/forms.py:137
 msgid "Passwords must be identical."
-msgstr "Le password devono essere identiche."
+msgstr "Slaptažodžiai turi būti vienodi."
 
 #: webapp/users/forms.py:114 webapp/users/forms.py:140
 msgid "Save Password"
-msgstr "Salvare la password"
+msgstr "Išsaugoti slaptažodį"
 
 #: webapp/users/forms.py:118
 msgid "First name"
-msgstr "Nome"
+msgstr "Vardas ir pavardė"
 
 #: webapp/users/forms.py:119
 msgid "Last name"
-msgstr "Nome e cognome"
+msgstr "Pavardė"
 
 #: webapp/users/forms.py:120
 msgid "Save user data."
-msgstr "Salvare i dati dell'utente."
+msgstr "Išsaugoti naudotojo duomenis."
 
 #: webapp/users/forms.py:124
 msgid "Old Password"
-msgstr "Vecchia password"
+msgstr "Senasis slaptažodis"
 
 #: webapp/users/forms.py:125
 msgid "New password"
-msgstr "Nuova password"
+msgstr "Naujas slaptažodis"
 
 #: webapp/users/forms.py:134
 msgid "New password (repeat)"
-msgstr "Nuova password (ripetere)"
+msgstr "Naujas slaptažodis (pakartoti)"
 
 #: webapp/users/views.py:38
 msgid "User data saved."
-msgstr "Dati utente salvati."
+msgstr "Išsaugoti naudotojo duomenys."

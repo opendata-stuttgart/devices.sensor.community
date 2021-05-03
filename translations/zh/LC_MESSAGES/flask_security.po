@@ -23,301 +23,299 @@ msgstr ""
 
 #: flask_security/core.py:99
 msgid "Login Required"
-msgstr "Login Requerido"
+msgstr "需要登录"
 
 #: flask_security/core.py:100
 msgid "Welcome"
-msgstr "Bem-vindo"
+msgstr "欢迎光临"
 
 #: flask_security/core.py:101
 msgid "Please confirm your email"
-msgstr "Por favor, confirme o seu e-mail"
+msgstr "请确认您的电子邮件"
 
 #: flask_security/core.py:102
 msgid "Login instructions"
-msgstr "Instruções de login"
+msgstr "登录说明"
 
 #: flask_security/core.py:103
 #: flask_security/templates/security/email/reset_notice.html:1
 msgid "Your password has been reset"
-msgstr "A sua palavra-passe foi redefinida"
+msgstr "您的密码已被重置"
 
 #: flask_security/core.py:104
 msgid "Your password has been changed"
-msgstr "A sua palavra-passe foi alterada"
+msgstr "您的密码已被更改"
 
 #: flask_security/core.py:106
 msgid "Password reset instructions"
-msgstr "Instruções para redefinição de senha"
+msgstr "密码重置说明"
 
 #: flask_security/core.py:132
 msgid "You do not have permission to view this resource."
-msgstr "Não tem permissão para ver este recurso."
+msgstr "您没有权限查看此资源。"
 
 #: flask_security/core.py:134
 #, python-format
 msgid "Thank you. Confirmation instructions have been sent to %(email)s."
-msgstr "Não tem permissão para ver este recurso."
+msgstr "您没有权限查看此资源。"
 
 #: flask_security/core.py:138
 msgid "Thank you. Your email has been confirmed."
-msgstr "Obrigado. O seu e-mail foi confirmado."
+msgstr "谢谢您，您的电子邮件已被确认。您的电子邮件已被确认。"
 
 #: flask_security/core.py:140
 msgid "Your email has already been confirmed."
-msgstr "O seu e-mail já foi confirmado."
+msgstr "您的电子邮件已经被确认。"
 
 #: flask_security/core.py:142
 msgid "Invalid confirmation token."
-msgstr "Ficha de confirmação inválida."
+msgstr "无效的确认令牌。"
 
 #: flask_security/core.py:144
 #, python-format
 msgid "%(email)s is already associated with an account."
-msgstr "Ficha de confirmação inválida."
+msgstr "无效的确认令牌。"
 
 #: flask_security/core.py:146
 msgid "Password does not match"
-msgstr "A palavra-passe não corresponde"
+msgstr "密码不匹配"
 
 #: flask_security/core.py:148
 msgid "Passwords do not match"
-msgstr "As palavras-passe não coincidem"
+msgstr "密码不匹配"
 
 #: flask_security/core.py:150
 msgid "Redirections outside the domain are forbidden"
-msgstr "São proibidas as redirecções fora do domínio"
+msgstr "禁止重定向到域外。"
 
 #: flask_security/core.py:152
 #, python-format
 msgid "Instructions to reset your password have been sent to %(email)s."
-msgstr "São proibidas as redirecções fora do domínio"
+msgstr "禁止重定向到域外。"
 
 #: flask_security/core.py:155
 #, python-format
 msgid ""
 "You did not reset your password within %(within)s. New instructions have "
 "been sent to %(email)s."
-msgstr "São proibidas as redirecções fora do domínio"
+msgstr "禁止重定向到域外。"
 
 #: flask_security/core.py:158
 msgid "Invalid reset password token."
-msgstr "Ficha com senha inválida de reset."
+msgstr "重置密码令牌无效。"
 
 #: flask_security/core.py:160
 msgid "Email requires confirmation."
-msgstr "O e-mail requer confirmação."
+msgstr "电子邮件需要确认。"
 
 #: flask_security/core.py:162
 #, python-format
 msgid "Confirmation instructions have been sent to %(email)s."
-msgstr "O e-mail requer confirmação."
+msgstr "电子邮件需要确认。"
 
 #: flask_security/core.py:164
 #, python-format
 msgid ""
 "You did not confirm your email within %(within)s. New instructions to "
 "confirm your email have been sent to %(email)s."
-msgstr "O e-mail requer confirmação."
+msgstr "电子邮件需要确认。"
 
 #: flask_security/core.py:168
 #, python-format
 msgid ""
 "You did not login within %(within)s. New instructions to login have been "
 "sent to %(email)s."
-msgstr "O e-mail requer confirmação."
+msgstr "电子邮件需要确认。"
 
 #: flask_security/core.py:171
 #, python-format
 msgid "Instructions to login have been sent to %(email)s."
-msgstr "O e-mail requer confirmação."
+msgstr "电子邮件需要确认。"
 
 #: flask_security/core.py:173
 msgid "Invalid login token."
-msgstr "Ficha de login inválida."
+msgstr "无效的登录令牌。"
 
 #: flask_security/core.py:175
 msgid "Account is disabled."
-msgstr "A conta está desactivada."
+msgstr "帐户被禁用。"
 
 #: flask_security/core.py:177
 msgid "Email not provided"
-msgstr "Email não fornecido"
+msgstr "未提供电子邮件"
 
 #: flask_security/core.py:179
 msgid "Invalid email address"
-msgstr "Endereço de e-mail inválido"
+msgstr "无效的电子邮件地址"
 
 #: flask_security/core.py:181
 msgid "Password not provided"
-msgstr "Senha não fornecida"
+msgstr "未提供密码"
 
 #: flask_security/core.py:183
 msgid "No password is set for this user"
-msgstr "Não é definida uma palavra-passe para este utilizador"
+msgstr "没有为该用户设置密码"
 
 #: flask_security/core.py:185
 msgid "Password must be at least 6 characters"
-msgstr "A palavra-passe deve ter pelo menos 6 caracteres"
+msgstr "密码必须至少是6个字符"
 
 #: flask_security/core.py:187
 msgid "Specified user does not exist"
-msgstr "O utilizador especificado não existe"
+msgstr "指定的用户不存在"
 
 #: flask_security/core.py:189
 msgid "Invalid password"
-msgstr "Palavra-passe inválida"
+msgstr "密码无效"
 
 #: flask_security/core.py:191
 msgid "You have successfully logged in."
-msgstr "Conectou-se com sucesso."
+msgstr "您已成功登录。"
 
 #: flask_security/core.py:193
 msgid "Forgot password?"
-msgstr "Esqueceu-se da palavra-passe?"
+msgstr "忘记密码？"
 
 #: flask_security/core.py:195
 msgid ""
 "You successfully reset your password and you have been logged in "
 "automatically."
-msgstr ""
-"A sua palavra-passe foi redefinida com sucesso e a sua sessão foi iniciada "
-"automaticamente."
+msgstr "您成功重置了密码，并且您已经自动登录。"
 
 #: flask_security/core.py:198
 msgid "Your new password must be different than your previous password."
-msgstr "A sua nova senha deve ser diferente da sua senha anterior."
+msgstr "您的新密码必须与以前的密码不同。"
 
 #: flask_security/core.py:201
 msgid "You successfully changed your password."
-msgstr "Alterou com sucesso a sua palavra-passe."
+msgstr "你成功地更改了你的密码。"
 
 #: flask_security/core.py:203
 msgid "Please log in to access this page."
-msgstr "Por favor, inicie sessão para aceder a esta página."
+msgstr "请登录后访问本页面。"
 
 #: flask_security/core.py:205
 msgid "Please reauthenticate to access this page."
-msgstr "Por favor, reautenticar para aceder a esta página."
+msgstr "请重新认证以访问本页面。"
 
 #: flask_security/forms.py:30
 msgid "Email Address"
-msgstr "Endereço de correio electrónico"
+msgstr "电子邮件地址"
 
 #: flask_security/forms.py:31
 msgid "Password"
-msgstr "Senha"
+msgstr "密码"
 
 #: flask_security/forms.py:32
 msgid "Remember Me"
-msgstr "Recordar-me"
+msgstr "记住我"
 
 #: flask_security/forms.py:33 flask_security/templates/security/_menu.html:4
 #: flask_security/templates/security/login_user.html:3
 #: flask_security/templates/security/send_login.html:3
 msgid "Login"
-msgstr "Login"
+msgstr "登入"
 
 #: flask_security/forms.py:34 flask_security/templates/security/_menu.html:6
 #: flask_security/templates/security/register_user.html:3
 msgid "Register"
-msgstr "Registe-se"
+msgstr "注册"
 
 #: flask_security/forms.py:35
 msgid "Resend Confirmation Instructions"
-msgstr "Reenviar Instruções de Confirmação"
+msgstr "重新发送确认指令"
 
 #: flask_security/forms.py:36
 msgid "Recover Password"
-msgstr "Recuperar Password"
+msgstr "恢复密码"
 
 #: flask_security/forms.py:37
 msgid "Reset Password"
-msgstr "Redefinir Palavra-passe"
+msgstr "重置密码"
 
 #: flask_security/forms.py:38
 msgid "Retype Password"
-msgstr "Repita a palavra-passe"
+msgstr "重新输入密码"
 
 #: flask_security/forms.py:39
 msgid "New Password"
-msgstr "Nova Palavra-passe"
+msgstr "新密码"
 
 #: flask_security/forms.py:40
 msgid "Change Password"
-msgstr "Alterar Palavra-passe"
+msgstr "更改密码"
 
 #: flask_security/forms.py:41
 msgid "Send Login Link"
-msgstr "Enviar Ligação de Login"
+msgstr "发送登录链接"
 
 #: flask_security/templates/security/_menu.html:2
 msgid "Menu"
-msgstr "Menu"
+msgstr "菜单"
 
 #: flask_security/templates/security/_menu.html:9
 msgid "Forgot password"
-msgstr "Esqueci-me da palavra-passe"
+msgstr "忘记密码"
 
 #: flask_security/templates/security/_menu.html:12
 msgid "Confirm account"
-msgstr "Confirmar conta"
+msgstr "确认账户"
 
 #: flask_security/templates/security/change_password.html:3
 msgid "Change password"
-msgstr "Alterar palavra-passe"
+msgstr "更改密码"
 
 #: flask_security/templates/security/forgot_password.html:3
 msgid "Send password reset instructions"
-msgstr "Enviar instruções de redefinição de senha"
+msgstr "发送密码重置说明"
 
 #: flask_security/templates/security/reset_password.html:3
 msgid "Reset password"
-msgstr "Redefinir palavra-passe"
+msgstr "重置密码"
 
 #: flask_security/templates/security/send_confirmation.html:3
 msgid "Resend confirmation instructions"
-msgstr "Reenviar instruções de confirmação"
+msgstr "重新发送确认指令"
 
 #: flask_security/templates/security/email/change_notice.html:1
 msgid "Your password has been changed."
-msgstr "A sua palavra-passe foi alterada."
+msgstr "您的密码已被更改。"
 
 #: flask_security/templates/security/email/change_notice.html:3
 msgid "If you did not change your password,"
-msgstr "Se não alterou a sua palavra-passe,"
+msgstr "如果你没有修改密码。"
 
 #: flask_security/templates/security/email/change_notice.html:3
 msgid "click here to reset it"
-msgstr "clique aqui para reinicializá-lo"
+msgstr "点击这里重置"
 
 #: flask_security/templates/security/email/confirmation_instructions.html:1
 msgid "Please confirm your email through the link below:"
-msgstr "Por favor, confirme o seu e-mail através do link abaixo:"
+msgstr "请通过以下链接确认您的电子邮件。"
 
 #: flask_security/templates/security/email/confirmation_instructions.html:3
 #: flask_security/templates/security/email/welcome.html:6
 msgid "Confirm my account"
-msgstr "Confirmar a minha conta"
+msgstr "确认我的账户"
 
 #: flask_security/templates/security/email/login_instructions.html:1
 #: flask_security/templates/security/email/welcome.html:1
 #, python-format
 msgid "Welcome %(email)s!"
-msgstr "Confirmar a minha conta"
+msgstr "确认我的账户"
 
 #: flask_security/templates/security/email/login_instructions.html:3
 msgid "You can log into your account through the link below:"
-msgstr "Pode entrar na sua conta através do link abaixo:"
+msgstr "您可以通过以下链接登录您的账户。"
 
 #: flask_security/templates/security/email/login_instructions.html:5
 msgid "Login now"
-msgstr "Entrar agora"
+msgstr "现在登录"
 
 #: flask_security/templates/security/email/reset_instructions.html:1
 msgid "Click here to reset your password"
-msgstr "Clique aqui para redefinir a sua palavra-passe"
+msgstr "点击这里重置密码"
 
 #: flask_security/templates/security/email/welcome.html:4
 msgid "You can confirm your email through the link below:"
-msgstr "Pode confirmar o seu e-mail através da ligação abaixo:"
+msgstr "您可以通过以下链接确认您的电子邮件。"

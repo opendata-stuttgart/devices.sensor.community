@@ -23,301 +23,301 @@ msgstr ""
 
 #: flask_security/core.py:99
 msgid "Login Required"
-msgstr "Login Requerido"
+msgstr "Nepieciešams pieteikšanās"
 
 #: flask_security/core.py:100
 msgid "Welcome"
-msgstr "Bem-vindo"
+msgstr "Laipni lūdzam"
 
 #: flask_security/core.py:101
 msgid "Please confirm your email"
-msgstr "Por favor, confirme o seu e-mail"
+msgstr "Lūdzu, apstipriniet savu e-pasta adresi"
 
 #: flask_security/core.py:102
 msgid "Login instructions"
-msgstr "Instruções de login"
+msgstr "Pieslēgšanās norādījumi"
 
 #: flask_security/core.py:103
 #: flask_security/templates/security/email/reset_notice.html:1
 msgid "Your password has been reset"
-msgstr "A sua palavra-passe foi redefinida"
+msgstr "Jūsu parole ir atiestatīta"
 
 #: flask_security/core.py:104
 msgid "Your password has been changed"
-msgstr "A sua palavra-passe foi alterada"
+msgstr "Jūsu parole ir mainīta"
 
 #: flask_security/core.py:106
 msgid "Password reset instructions"
-msgstr "Instruções para redefinição de senha"
+msgstr "Paroles atiestatīšanas norādījumi"
 
 #: flask_security/core.py:132
 msgid "You do not have permission to view this resource."
-msgstr "Não tem permissão para ver este recurso."
+msgstr "Jums nav atļaujas skatīt šo resursu."
 
 #: flask_security/core.py:134
 #, python-format
 msgid "Thank you. Confirmation instructions have been sent to %(email)s."
-msgstr "Não tem permissão para ver este recurso."
+msgstr "Jums nav atļaujas skatīt šo resursu."
 
 #: flask_security/core.py:138
 msgid "Thank you. Your email has been confirmed."
-msgstr "Obrigado. O seu e-mail foi confirmado."
+msgstr "Paldies. Jūsu e-pasta vēstule ir apstiprināta."
 
 #: flask_security/core.py:140
 msgid "Your email has already been confirmed."
-msgstr "O seu e-mail já foi confirmado."
+msgstr "Jūsu e-pasta adrese jau ir apstiprināta."
 
 #: flask_security/core.py:142
 msgid "Invalid confirmation token."
-msgstr "Ficha de confirmação inválida."
+msgstr "Nederīgs apstiprinājuma žetons."
 
 #: flask_security/core.py:144
 #, python-format
 msgid "%(email)s is already associated with an account."
-msgstr "Ficha de confirmação inválida."
+msgstr "Nederīgs apstiprinājuma žetons."
 
 #: flask_security/core.py:146
 msgid "Password does not match"
-msgstr "A palavra-passe não corresponde"
+msgstr "Parole nesakrīt"
 
 #: flask_security/core.py:148
 msgid "Passwords do not match"
-msgstr "As palavras-passe não coincidem"
+msgstr "Paroles nesakrīt"
 
 #: flask_security/core.py:150
 msgid "Redirections outside the domain are forbidden"
-msgstr "São proibidas as redirecções fora do domínio"
+msgstr "Pārvirzīšana ārpus domēna ir aizliegta"
 
 #: flask_security/core.py:152
 #, python-format
 msgid "Instructions to reset your password have been sent to %(email)s."
-msgstr "São proibidas as redirecções fora do domínio"
+msgstr "Pārvirzīšana ārpus domēna ir aizliegta"
 
 #: flask_security/core.py:155
 #, python-format
 msgid ""
 "You did not reset your password within %(within)s. New instructions have "
 "been sent to %(email)s."
-msgstr "São proibidas as redirecções fora do domínio"
+msgstr "Pārvirzīšana ārpus domēna ir aizliegta"
 
 #: flask_security/core.py:158
 msgid "Invalid reset password token."
-msgstr "Ficha com senha inválida de reset."
+msgstr "Nederīgs paroles atiestatīšanas žetons."
 
 #: flask_security/core.py:160
 msgid "Email requires confirmation."
-msgstr "O e-mail requer confirmação."
+msgstr "E-pastam ir nepieciešams apstiprinājums."
 
 #: flask_security/core.py:162
 #, python-format
 msgid "Confirmation instructions have been sent to %(email)s."
-msgstr "O e-mail requer confirmação."
+msgstr "E-pastam ir nepieciešams apstiprinājums."
 
 #: flask_security/core.py:164
 #, python-format
 msgid ""
 "You did not confirm your email within %(within)s. New instructions to "
 "confirm your email have been sent to %(email)s."
-msgstr "O e-mail requer confirmação."
+msgstr "E-pastam ir nepieciešams apstiprinājums."
 
 #: flask_security/core.py:168
 #, python-format
 msgid ""
 "You did not login within %(within)s. New instructions to login have been "
 "sent to %(email)s."
-msgstr "O e-mail requer confirmação."
+msgstr "E-pastam ir nepieciešams apstiprinājums."
 
 #: flask_security/core.py:171
 #, python-format
 msgid "Instructions to login have been sent to %(email)s."
-msgstr "O e-mail requer confirmação."
+msgstr "E-pastam ir nepieciešams apstiprinājums."
 
 #: flask_security/core.py:173
 msgid "Invalid login token."
-msgstr "Ficha de login inválida."
+msgstr "Nederīgs pieteikšanās žetons."
 
 #: flask_security/core.py:175
 msgid "Account is disabled."
-msgstr "A conta está desactivada."
+msgstr "Konts ir atspējots."
 
 #: flask_security/core.py:177
 msgid "Email not provided"
-msgstr "Email não fornecido"
+msgstr "E-pasts nav sniegts"
 
 #: flask_security/core.py:179
 msgid "Invalid email address"
-msgstr "Endereço de e-mail inválido"
+msgstr "Nederīga e-pasta adrese"
 
 #: flask_security/core.py:181
 msgid "Password not provided"
-msgstr "Senha não fornecida"
+msgstr "Parole nav norādīta"
 
 #: flask_security/core.py:183
 msgid "No password is set for this user"
-msgstr "Não é definida uma palavra-passe para este utilizador"
+msgstr "Šim lietotājam nav iestatīta parole"
 
 #: flask_security/core.py:185
 msgid "Password must be at least 6 characters"
-msgstr "A palavra-passe deve ter pelo menos 6 caracteres"
+msgstr "Parolei jābūt vismaz 6 rakstzīmēm"
 
 #: flask_security/core.py:187
 msgid "Specified user does not exist"
-msgstr "O utilizador especificado não existe"
+msgstr "Norādītais lietotājs neeksistē"
 
 #: flask_security/core.py:189
 msgid "Invalid password"
-msgstr "Palavra-passe inválida"
+msgstr "Nederīga parole"
 
 #: flask_security/core.py:191
 msgid "You have successfully logged in."
-msgstr "Conectou-se com sucesso."
+msgstr "Jūs esat veiksmīgi pieteicies."
 
 #: flask_security/core.py:193
 msgid "Forgot password?"
-msgstr "Esqueceu-se da palavra-passe?"
+msgstr "Aizmirsāt paroli?"
 
 #: flask_security/core.py:195
 msgid ""
 "You successfully reset your password and you have been logged in "
 "automatically."
-msgstr ""
-"A sua palavra-passe foi redefinida com sucesso e a sua sessão foi iniciada "
-"automaticamente."
+msgstr "Jūs veiksmīgi atiestatījāt paroli un esat automātiski pieteicies."
 
 #: flask_security/core.py:198
 msgid "Your new password must be different than your previous password."
-msgstr "A sua nova senha deve ser diferente da sua senha anterior."
+msgstr "Jaunajai parolei ir jāatšķiras no iepriekšējās paroles."
 
 #: flask_security/core.py:201
 msgid "You successfully changed your password."
-msgstr "Alterou com sucesso a sua palavra-passe."
+msgstr "Jūs veiksmīgi nomainījāt paroli."
 
 #: flask_security/core.py:203
 msgid "Please log in to access this page."
-msgstr "Por favor, inicie sessão para aceder a esta página."
+msgstr "Lūdzu, autorizējieties, lai piekļūtu šai lapai."
 
 #: flask_security/core.py:205
 msgid "Please reauthenticate to access this page."
-msgstr "Por favor, reautenticar para aceder a esta página."
+msgstr "Lūdzu, atkārtoti autentificējieties, lai piekļūtu šai lapai."
 
 #: flask_security/forms.py:30
 msgid "Email Address"
-msgstr "Endereço de correio electrónico"
+msgstr "E-pasta adrese"
 
 #: flask_security/forms.py:31
 msgid "Password"
-msgstr "Senha"
+msgstr "Parole"
 
 #: flask_security/forms.py:32
 msgid "Remember Me"
-msgstr "Recordar-me"
+msgstr "Atceries mani"
 
 #: flask_security/forms.py:33 flask_security/templates/security/_menu.html:4
 #: flask_security/templates/security/login_user.html:3
 #: flask_security/templates/security/send_login.html:3
 msgid "Login"
-msgstr "Login"
+msgstr "Pieteikšanās"
 
 #: flask_security/forms.py:34 flask_security/templates/security/_menu.html:6
 #: flask_security/templates/security/register_user.html:3
 msgid "Register"
-msgstr "Registe-se"
+msgstr "Reģistrēties"
 
 #: flask_security/forms.py:35
 msgid "Resend Confirmation Instructions"
-msgstr "Reenviar Instruções de Confirmação"
+msgstr "Atkārtoti nosūtīt apstiprinājuma instrukcijas"
 
 #: flask_security/forms.py:36
 msgid "Recover Password"
-msgstr "Recuperar Password"
+msgstr "Atgūt paroli"
 
 #: flask_security/forms.py:37
 msgid "Reset Password"
-msgstr "Redefinir Palavra-passe"
+msgstr "Paroles atiestatīšana"
 
 #: flask_security/forms.py:38
 msgid "Retype Password"
-msgstr "Repita a palavra-passe"
+msgstr "Paroles atkārtota ievadīšana"
 
 #: flask_security/forms.py:39
 msgid "New Password"
-msgstr "Nova Palavra-passe"
+msgstr "Jauna parole"
 
 #: flask_security/forms.py:40
 msgid "Change Password"
-msgstr "Alterar Palavra-passe"
+msgstr "Mainīt paroli"
 
 #: flask_security/forms.py:41
 msgid "Send Login Link"
-msgstr "Enviar Ligação de Login"
+msgstr "Sūtīt pieteikšanās saiti"
 
 #: flask_security/templates/security/_menu.html:2
 msgid "Menu"
-msgstr "Menu"
+msgstr "Izvēlne"
 
 #: flask_security/templates/security/_menu.html:9
 msgid "Forgot password"
-msgstr "Esqueci-me da palavra-passe"
+msgstr "Aizmirsāt paroli"
 
 #: flask_security/templates/security/_menu.html:12
 msgid "Confirm account"
-msgstr "Confirmar conta"
+msgstr "Apstiprināt kontu"
 
 #: flask_security/templates/security/change_password.html:3
 msgid "Change password"
-msgstr "Alterar palavra-passe"
+msgstr "Mainīt paroli"
 
 #: flask_security/templates/security/forgot_password.html:3
 msgid "Send password reset instructions"
-msgstr "Enviar instruções de redefinição de senha"
+msgstr "Nosūtīt paroles atiestatīšanas norādījumus"
 
 #: flask_security/templates/security/reset_password.html:3
 msgid "Reset password"
-msgstr "Redefinir palavra-passe"
+msgstr "Paroles atiestatīšana"
 
 #: flask_security/templates/security/send_confirmation.html:3
 msgid "Resend confirmation instructions"
-msgstr "Reenviar instruções de confirmação"
+msgstr "Atkārtoti nosūtīt apstiprinājuma norādījumus"
 
 #: flask_security/templates/security/email/change_notice.html:1
 msgid "Your password has been changed."
-msgstr "A sua palavra-passe foi alterada."
+msgstr "Jūsu parole ir mainīta."
 
 #: flask_security/templates/security/email/change_notice.html:3
 msgid "If you did not change your password,"
-msgstr "Se não alterou a sua palavra-passe,"
+msgstr "Ja neesat mainījis paroli,"
 
 #: flask_security/templates/security/email/change_notice.html:3
 msgid "click here to reset it"
-msgstr "clique aqui para reinicializá-lo"
+msgstr "noklikšķiniet šeit, lai to atiestatītu"
 
 #: flask_security/templates/security/email/confirmation_instructions.html:1
 msgid "Please confirm your email through the link below:"
-msgstr "Por favor, confirme o seu e-mail através do link abaixo:"
+msgstr ""
+"Lūdzu, apstipriniet savu e-pasta adresi, izmantojot tālāk norādīto saiti:"
 
 #: flask_security/templates/security/email/confirmation_instructions.html:3
 #: flask_security/templates/security/email/welcome.html:6
 msgid "Confirm my account"
-msgstr "Confirmar a minha conta"
+msgstr "Apstiprināt manu kontu"
 
 #: flask_security/templates/security/email/login_instructions.html:1
 #: flask_security/templates/security/email/welcome.html:1
 #, python-format
 msgid "Welcome %(email)s!"
-msgstr "Confirmar a minha conta"
+msgstr "Apstiprināt manu kontu"
 
 #: flask_security/templates/security/email/login_instructions.html:3
 msgid "You can log into your account through the link below:"
-msgstr "Pode entrar na sua conta através do link abaixo:"
+msgstr "Varat pieteikties savā kontā, izmantojot tālāk norādīto saiti:"
 
 #: flask_security/templates/security/email/login_instructions.html:5
 msgid "Login now"
-msgstr "Entrar agora"
+msgstr "Pieslēdzies tagad"
 
 #: flask_security/templates/security/email/reset_instructions.html:1
 msgid "Click here to reset your password"
-msgstr "Clique aqui para redefinir a sua palavra-passe"
+msgstr "Noklikšķiniet šeit, lai atiestatītu paroli"
 
 #: flask_security/templates/security/email/welcome.html:4
 msgid "You can confirm your email through the link below:"
-msgstr "Pode confirmar o seu e-mail através da ligação abaixo:"
+msgstr ""
+"Savu e-pasta adresi varat apstiprināt, izmantojot tālāk norādīto saiti:"

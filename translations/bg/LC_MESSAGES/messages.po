@@ -1177,10 +1177,8 @@ msgid "login"
 msgstr "влизане"
 
 #: webapp/users/forms.py:68
-msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>"
-msgstr ""
-"Съгласен съм с <a href=\"/privacy-policy\"> Декларацията за "
-"поверителност</a>"
+msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>."
+msgstr "Съгласен съм с <a href=\"/privacy-policy\"> Декларацията за поверителност</a>."
 
 #: webapp/users/forms.py:71
 msgid "Please agree to the privacy policy."

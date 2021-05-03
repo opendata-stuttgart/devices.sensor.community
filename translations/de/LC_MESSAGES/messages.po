@@ -1189,8 +1189,8 @@ msgid "login"
 msgstr "Login"
 
 #: webapp/users/forms.py:68
-msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>"
-msgstr "Ich stimme den <a href=\"/datenschutz\">Datenschutzbestimmungen</a> zu"
+msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>."
+msgstr "Ich stimme den <a href=\"/datenschutz\">Datenschutzbestimmungen</a> zu."
 
 #: webapp/users/forms.py:71
 msgid "Please agree to the privacy policy."
