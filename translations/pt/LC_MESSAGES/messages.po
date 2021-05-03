@@ -666,7 +666,7 @@ msgstr ""
 #: webapp/templates/my-sensor-settings.html:6
 #, python-format
 msgid "Settings of Node %(node_id)s"
-msgstr "Definições do Nó %(nódulo_id)s"
+msgstr "Definições do Nó %(node_id)s"
 
 #: webapp/templates/my-sensor-settings.html:7
 msgid ""

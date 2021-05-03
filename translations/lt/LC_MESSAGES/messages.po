@@ -1075,7 +1075,7 @@ msgstr "Slaptažodžio užklausa el. paštu"
 #: webapp/users/forms.py:101 webapp/users/forms.py:130
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr "Slaptažodžio užklausa el. paštu"
+msgstr "Slaptažodį turi sudaryti bent %s raidės."
 
 #: webapp/users/forms.py:105
 msgid "Password (repeat)"

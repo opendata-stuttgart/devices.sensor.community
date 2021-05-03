@@ -1128,7 +1128,7 @@ msgstr "Αίτημα κωδικού πρόσβασης μέσω email"
 #: webapp/users/forms.py:101 webapp/users/forms.py:130
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr "Αίτημα κωδικού πρόσβασης μέσω email"
+msgstr "Ο κωδικός πρόσβασης πρέπει να αποτελείται από τουλάχιστον %s γράμματα."
 
 #: webapp/users/forms.py:105
 msgid "Password (repeat)"

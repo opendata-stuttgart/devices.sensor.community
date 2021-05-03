@@ -1085,7 +1085,7 @@ msgstr "Wachtwoord aanvragen via e-mail"
 #: webapp/users/forms.py:101 webapp/users/forms.py:130
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr "Wachtwoord aanvragen via e-mail"
+msgstr "Wachtwoord moet uit minimaal %s letters bestaan."
 
 #: webapp/users/forms.py:105
 msgid "Password (repeat)"

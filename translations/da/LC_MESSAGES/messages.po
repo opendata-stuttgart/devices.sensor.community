@@ -1111,7 +1111,7 @@ msgstr "Anmodning om adgangskode via e-mail"
 #: webapp/users/forms.py:101 webapp/users/forms.py:130
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr "Anmodning om adgangskode via e-mail"
+msgstr "Adgangskoden skal bestå af mindst %s bogstaver."
 
 #: webapp/users/forms.py:105
 msgid "Password (repeat)"

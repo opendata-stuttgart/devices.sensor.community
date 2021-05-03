@@ -1117,7 +1117,7 @@ msgstr "Solicitud de contraseña por correo electrónico"
 #: webapp/users/forms.py:101 webapp/users/forms.py:130
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr "Solicitud de contraseña por correo electrónico"
+msgstr "La contraseña debe constar de al menos %s letras."
 
 #: webapp/users/forms.py:105
 msgid "Password (repeat)"

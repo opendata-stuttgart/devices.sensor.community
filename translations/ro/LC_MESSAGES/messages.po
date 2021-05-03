@@ -1083,7 +1083,7 @@ msgstr "Solicitarea parolei prin e-mail"
 #: webapp/users/forms.py:101 webapp/users/forms.py:130
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr "Solicitarea parolei prin e-mail"
+msgstr "Parola trebuie să conțină cel puțin %s litere."
 
 #: webapp/users/forms.py:105
 msgid "Password (repeat)"

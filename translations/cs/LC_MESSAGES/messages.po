@@ -1106,7 +1106,7 @@ msgstr "Žádost o heslo e-mailem"
 #: webapp/users/forms.py:101 webapp/users/forms.py:130
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr "Žádost o heslo e-mailem"
+msgstr "Heslo musí obsahovat alespoň %s písmen."
 
 #: webapp/users/forms.py:105
 msgid "Password (repeat)"

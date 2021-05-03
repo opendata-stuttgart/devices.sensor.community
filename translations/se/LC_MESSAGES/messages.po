@@ -1074,7 +1074,7 @@ msgstr "Salasanapyyntö sähköpostitse"
 #: webapp/users/forms.py:101 webapp/users/forms.py:130
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr "Salasanapyyntö sähköpostitse"
+msgstr "Lösenordet måste bestå av minst %s bokstäver."
 
 #: webapp/users/forms.py:105
 msgid "Password (repeat)"

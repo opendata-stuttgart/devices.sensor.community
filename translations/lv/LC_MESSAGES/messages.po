@@ -1071,7 +1071,7 @@ msgstr "Paroles pieprasījums pa e-pastu"
 #: webapp/users/forms.py:101 webapp/users/forms.py:130
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr "Paroles pieprasījums pa e-pastu"
+msgstr "Parolē jābūt vismaz %s burtiem."
 
 #: webapp/users/forms.py:105
 msgid "Password (repeat)"

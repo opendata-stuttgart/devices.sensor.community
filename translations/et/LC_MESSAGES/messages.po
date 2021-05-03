@@ -1067,7 +1067,7 @@ msgstr "Salasõna taotlemine e-posti teel"
 #: webapp/users/forms.py:101 webapp/users/forms.py:130
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr "Salasõna taotlemine e-posti teel"
+msgstr "Parool peab koosnema vähemalt %s tähest."
 
 #: webapp/users/forms.py:105
 msgid "Password (repeat)"

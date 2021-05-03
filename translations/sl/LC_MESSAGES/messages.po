@@ -1108,7 +1108,7 @@ msgstr "Zahteva za geslo prek e-pošte"
 #: webapp/users/forms.py:101 webapp/users/forms.py:130
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr "Zahteva za geslo prek e-pošte"
+msgstr "Geslo mora biti sestavljeno iz vsaj %s črk."
 
 #: webapp/users/forms.py:105
 msgid "Password (repeat)"
