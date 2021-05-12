@@ -370,7 +370,7 @@ msgstr "现在Betterplace.org上为Sensor.Community（硬件、软件）捐款�
 msgid ""
 "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
 msgstr ""
-"现在就为&lt;br&gt;Sensor.Community&lt;br&gt;捐款&lt;br&gt;&lt;span&gt;Betterplace.org&lt;span&gt;。"
+"现在就为<br>Sensor.Community<br>捐款<br><span>Betterplace.org<span>。"
 
 #: webapp/templates/index.html:16
 msgid "Configure Luftdaten"

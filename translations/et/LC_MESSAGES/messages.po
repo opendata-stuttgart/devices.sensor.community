@@ -382,8 +382,8 @@ msgstr ""
 msgid ""
 "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
 msgstr ""
-"Annetada&lt;br&gt;Sensor.Community&lt;br&gt; "
-"nüüd&lt;br&gt;&lt;span&gt;Betterplace.org&lt;span&gt; kaudu."
+"Annetada<br>Sensor.Community<br> "
+"nüüd<br><span>Betterplace.org<span> kaudu."
 
 #: webapp/templates/index.html:16
 msgid "Configure Luftdaten"

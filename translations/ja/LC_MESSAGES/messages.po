@@ -371,7 +371,7 @@ msgstr "Betterplace.orgに掲載されたSensor.Community (ハードウェア、
 msgid ""
 "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
 msgstr ""
-"&lt;br&gt;Sensor.Communityへの寄付は&lt;br&gt;今すぐ&lt;br&gt;&lt;span&gt;Betterplace.org&lt;span&gt;で。"
+"<br>Sensor.Communityへの寄付は<br>今すぐ<br><span>Betterplace.org<span>で。"
 
 #: webapp/templates/index.html:16
 msgid "Configure Luftdaten"

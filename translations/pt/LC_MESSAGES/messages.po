@@ -381,8 +381,8 @@ msgstr ""
 msgid ""
 "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
 msgstr ""
-"Doar para&lt;br&gt;Sensor.Community&lt;br&gt;now "
-"on&lt;br&gt;span&gt;Betterplace.org&lt;span&gt;"
+"Doar para<br>Sensor.Community<br>now "
+"on<br><span>Betterplace.org<span>"
 
 #: webapp/templates/index.html:16
 msgid "Configure Luftdaten"
