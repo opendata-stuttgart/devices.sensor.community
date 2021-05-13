@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-13 14:17+0000\n"
+"POT-Creation-Date: 2021-05-13 16:14+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -269,58 +269,47 @@ msgstr "Πίεση"
 msgid "Pressure at sea level"
 msgstr "Πίεση στο επίπεδο της θάλασσας"
 
-#: webapp/personal/views.py:63 webapp/personal/views.py:65
-#: webapp/personal/views.py:67 webapp/personal/views.py:69
-#: webapp/personal/views.py:71 webapp/personal/views.py:73
-#: webapp/personal/views.py:75 webapp/personal/views.py:77
-#: webapp/personal/views.py:79 webapp/personal/views.py:81
-#: webapp/personal/views.py:83
+#: webapp/personal/views.py:42
 msgid "particulate matter sensor"
 msgstr ""
 
-#: webapp/personal/views.py:85 webapp/personal/views.py:87
-#: webapp/personal/views.py:89 webapp/personal/views.py:97
-#: webapp/personal/views.py:99 webapp/personal/views.py:101
-#: webapp/personal/views.py:103 webapp/personal/views.py:105
-#: webapp/personal/views.py:107 webapp/personal/views.py:109
-#: webapp/personal/views.py:111
+#: webapp/personal/views.py:43
 msgid "temperature/humidity sensor"
 msgstr ""
 
-#: webapp/personal/views.py:91 webapp/personal/views.py:93
+#: webapp/personal/views.py:44
 msgid "temperature/pressure sensor"
 msgstr ""
 
-#: webapp/personal/views.py:95
+#: webapp/personal/views.py:45
 msgid "temperature/humidity/pressure sensor"
 msgstr ""
 
-#: webapp/personal/views.py:113
+#: webapp/personal/views.py:46
 msgid "temperature/humidity/CO₂ ppm sensor"
 msgstr ""
 
-#: webapp/personal/views.py:115
+#: webapp/personal/views.py:47
 msgid "noise sensor"
 msgstr ""
 
-#: webapp/personal/views.py:117 webapp/personal/views.py:119
-#: webapp/personal/views.py:121
+#: webapp/personal/views.py:48
 msgid "radiation sensor"
 msgstr ""
 
-#: webapp/personal/views.py:179
+#: webapp/personal/views.py:189
 msgid "Settings saved successfully."
 msgstr "Οι ρυθμίσεις αποθηκεύτηκαν με επιτυχία."
 
-#: webapp/personal/views.py:207
+#: webapp/personal/views.py:217
 msgid "Sensor successfully registered."
 msgstr "Ο αισθητήρας καταχωρήθηκε επιτυχώς."
 
-#: webapp/personal/views.py:211
+#: webapp/personal/views.py:221
 msgid "This sensor ID is already registered."
 msgstr "Αυτό το αναγνωριστικό αισθητήρα είναι ήδη καταχωρημένο."
 
-#: webapp/personal/views.py:225
+#: webapp/personal/views.py:235
 msgid "A fine dust sensor was transferred to you"
 msgstr "Ένας αισθητήρας λεπτής σκόνης μεταφέρθηκε σε εσάς"
 
