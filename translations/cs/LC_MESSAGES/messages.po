@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-11 01:37+0000\n"
+"POT-Creation-Date: 2021-05-13 10:50+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.6.0\n"
 
 #: webapp/personal/forms.py:39
@@ -88,8 +88,8 @@ msgid ""
 "No office space, but potential fine dust producers 1 = very little, 10 = "
 "very much."
 msgstr ""
-"Žádné kancelářské prostory, ale potenciální výrobci jemného prachu 1 = velmi"
-" málo, 10 = velmi mnoho."
+"Žádné kancelářské prostory, ale potenciální výrobci jemného prachu 1 = "
+"velmi málo, 10 = velmi mnoho."
 
 #: webapp/personal/forms.py:80
 msgid "How many private stoves or fireplaces are within a 100m radius?"
@@ -97,8 +97,8 @@ msgstr "Kolik soukromých kamen nebo krbů se nachází v okruhu 100 m?"
 
 #: webapp/personal/forms.py:92
 msgid ""
-"Does it smell very much like such smoke in your area? 1 = very little, 10 = "
-"very much."
+"Does it smell very much like such smoke in your area? 1 = very little, 10"
+" = very much."
 msgstr ""
 "Je ve vaší oblasti takový kouř hodně cítit? 1 = velmi málo, 10 = velmi "
 "silně."
@@ -153,14 +153,14 @@ msgstr "Umístění snímače vzhledem k dopravě"
 
 #: webapp/personal/forms.py:161
 msgid ""
-"1 = on the garden side, very well shielded from all streets, 10 = the sensor"
-" is on a house wall directly on the street. With this value it is irrelevant"
-" how big the street is, it is only about where the sensor is attached to the"
-" house."
+"1 = on the garden side, very well shielded from all streets, 10 = the "
+"sensor is on a house wall directly on the street. With this value it is "
+"irrelevant how big the street is, it is only about where the sensor is "
+"attached to the house."
 msgstr ""
-"1 = na straně zahrady, velmi dobře stíněné od všech ulic, 10 = senzor je na "
-"zdi domu přímo na ulici. U této hodnoty není důležité, jak velká je ulice, "
-"jde pouze o to, kde je čidlo připojeno k domu."
+"1 = na straně zahrady, velmi dobře stíněné od všech ulic, 10 = senzor je "
+"na zdi domu přímo na ulici. U této hodnoty není důležité, jak velká je "
+"ulice, jde pouze o to, kde je čidlo připojeno k domu."
 
 #: webapp/personal/forms.py:164
 msgid "Publish exact location"
@@ -179,8 +179,8 @@ msgid ""
 "Mark sensor as inactive. No notifications will be sent when sensor goes "
 "offline."
 msgstr ""
-"Označte senzor jako neaktivní. Při vypnutí senzoru nebudou zasílána žádná "
-"oznámení."
+"Označte senzor jako neaktivní. Při vypnutí senzoru nebudou zasílána žádná"
+" oznámení."
 
 #: webapp/personal/forms.py:174
 msgid "Short description of location"
@@ -208,12 +208,12 @@ msgstr "Senzorová deska"
 
 #: webapp/personal/forms.py:191
 msgid ""
-"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or the "
-"Smogomierz sensor version need to change this accordingly. Also in these "
-"cases the Sensor ID is the numeric part of the name only."
+"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
+"the Smogomierz sensor version need to change this accordingly. Also in "
+"these cases the Sensor ID is the numeric part of the name only."
 msgstr ""
-"Normálně by to mělo být esp8266. Uživatelé desek ESP32, Raspberry PI nebo "
-"verze senzoru Smogomierz to musí odpovídajícím způsobem změnit. Také v "
+"Normálně by to mělo být esp8266. Uživatelé desek ESP32, Raspberry PI nebo"
+" verze senzoru Smogomierz to musí odpovídajícím způsobem změnit. Také v "
 "těchto případech je ID senzoru pouze číselná část názvu."
 
 #: webapp/personal/forms.py:196
@@ -265,70 +265,138 @@ msgid "Pressure at sea level"
 msgstr "Tlak na úrovni moře"
 
 #: webapp/personal/views.py:63
+msgid "particulate matter sensor PPD42NS"
+msgstr ""
+
+#: webapp/personal/views.py:65
 msgid "particulate matter sensor SDS011"
 msgstr "Senzor pevných částic SDS011"
 
-#: webapp/personal/views.py:65
+#: webapp/personal/views.py:67
+msgid "particulate matter sensor SDS021"
+msgstr ""
+
+#: webapp/personal/views.py:69
 msgid "particulate matter sensor PMS1003"
 msgstr "senzor pevných částic PMS1003"
 
-#: webapp/personal/views.py:67
+#: webapp/personal/views.py:71
 msgid "particulate matter sensor PMS3003"
 msgstr "senzor pevných částic PMS3003"
 
-#: webapp/personal/views.py:69
+#: webapp/personal/views.py:73
 msgid "particulate matter sensor PMS5003"
 msgstr "senzor pevných částic PMS5003"
 
-#: webapp/personal/views.py:71
+#: webapp/personal/views.py:75
 msgid "particulate matter sensor PMS6003"
 msgstr "senzor pevných částic PMS6003"
 
-#: webapp/personal/views.py:73
+#: webapp/personal/views.py:77
 msgid "particulate matter sensor PMS7003"
 msgstr "senzor pevných částic PMS7003"
 
-#: webapp/personal/views.py:75
+#: webapp/personal/views.py:79
 msgid "particulate matter sensor SPS30"
 msgstr "senzor pevných částic SPS30"
 
-#: webapp/personal/views.py:77
+#: webapp/personal/views.py:81
+msgid "particulate matter sensor HPM"
+msgstr ""
+
+#: webapp/personal/views.py:83
 msgid "particulate matter sensor HM3301"
 msgstr "senzor pevných částic HM3301"
 
-#: webapp/personal/views.py:79
+#: webapp/personal/views.py:85
+msgid "temperature/humidity sensor DS18S20"
+msgstr ""
+
+#: webapp/personal/views.py:87
+msgid "temperature/humidity sensor DS18B20"
+msgstr ""
+
+#: webapp/personal/views.py:89
 msgid "temperature/humidity sensor DHT22"
 msgstr "čidlo teploty a vlhkosti DHT22"
 
-#: webapp/personal/views.py:81
+#: webapp/personal/views.py:91
 msgid "temperature/pressure sensor BMP180"
 msgstr "snímač teploty a tlaku BMP180"
 
-#: webapp/personal/views.py:83
+#: webapp/personal/views.py:93
 msgid "temperature/pressure sensor BMP280"
 msgstr "snímač teploty a tlaku BMP280"
 
-#: webapp/personal/views.py:85
+#: webapp/personal/views.py:95
 msgid "temperature/humidity/pressure sensor BME280"
 msgstr "snímač teplotyvlhkostitlaku BME280"
 
-#: webapp/personal/views.py:87
+#: webapp/personal/views.py:97
+msgid "temperature/humidity sensor HTU21D"
+msgstr ""
+
+#: webapp/personal/views.py:99
+msgid "temperature/humidity sensor SHT10"
+msgstr ""
+
+#: webapp/personal/views.py:101
+msgid "temperature/humidity sensor SHT11"
+msgstr ""
+
+#: webapp/personal/views.py:103
+msgid "temperature/humidity sensor SHT15"
+msgstr ""
+
+#: webapp/personal/views.py:105
+msgid "temperature/humidity sensor SHT30"
+msgstr ""
+
+#: webapp/personal/views.py:107
+msgid "temperature/humidity sensor SHT31"
+msgstr ""
+
+#: webapp/personal/views.py:109
+msgid "temperature/humidity sensor SHT35"
+msgstr ""
+
+#: webapp/personal/views.py:111
+msgid "temperature/humidity sensor SHT85"
+msgstr ""
+
+#: webapp/personal/views.py:113
 msgid "temperature/humidity/CO₂ ppm sensor SCD30"
 msgstr "senzor teplotyvlhkostiCO₂ ppm SCD30"
 
-#: webapp/personal/views.py:145
+#: webapp/personal/views.py:115
+msgid "noise sensor DNMS"
+msgstr ""
+
+#: webapp/personal/views.py:117
+msgid "radiation sensor SBM-20"
+msgstr ""
+
+#: webapp/personal/views.py:119
+msgid "radiation sensor SBM-19"
+msgstr ""
+
+#: webapp/personal/views.py:121
+msgid "radiation sensor Si22G"
+msgstr ""
+
+#: webapp/personal/views.py:179
 msgid "Settings saved successfully."
 msgstr "Nastavení bylo úspěšně uloženo."
 
-#: webapp/personal/views.py:173
+#: webapp/personal/views.py:207
 msgid "Sensor successfully registered."
 msgstr "Senzor byl úspěšně zaregistrován."
 
-#: webapp/personal/views.py:177
+#: webapp/personal/views.py:211
 msgid "This sensor ID is already registered."
 msgstr "Toto ID senzoru je již zaregistrováno."
 
-#: webapp/personal/views.py:191
+#: webapp/personal/views.py:225
 msgid "A fine dust sensor was transferred to you"
 msgstr "Byl k vám přenesen jemný prachový senzor"
 
@@ -373,16 +441,14 @@ msgid "Configure air quality sensor yourself"
 msgstr "Vlastní konfigurace snímače kvality vzduchu"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid ""
-"Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
-msgstr ""
-"Přispějte na Sensor.Community (hardware, software) nyní na Betterplace.org"
+msgid "Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
+msgstr "Přispějte na Sensor.Community (hardware, software) nyní na Betterplace.org"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid ""
-"Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
+msgid "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
 msgstr ""
-"Přispějte pro<br>Sensor.Community<br>teď na<br><span>Betterplace.org</span>."
+"Přispějte pro<br>Sensor.Community<br>teď "
+"na<br><span>Betterplace.org</span>."
 
 #: webapp/templates/index.html:16
 msgid "Configure Luftdaten"
@@ -390,8 +456,8 @@ msgstr "Konfigurace údajů o vzduchu"
 
 #: webapp/templates/index.html:17
 msgid ""
-"The main purpose of this page is to enable you, as the owner of a fine dust "
-"sensor, to configure the location and other parameters yourself."
+"The main purpose of this page is to enable you, as the owner of a fine "
+"dust sensor, to configure the location and other parameters yourself."
 msgstr ""
 "Hlavním účelem této stránky je umožnit vám jako majiteli senzoru jemného "
 "prachu, abyste si sami nakonfigurovali umístění a další parametry."
@@ -404,12 +470,20 @@ msgstr "Klikněte zde pro <a href=\"%(login_url)s\">přihlášení</a>."
 #: webapp/templates/index.html:20
 #, python-format
 msgid ""
-"General information can be found at <a href=\"%(home_url)s\">Sensor.Community</a> - formerly known as Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building instructions</a>.\n"
-"            Sensor data can be found on <a href=\"%(map_url)s\">the fine dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
+"General information can be found at <a "
+"href=\"%(home_url)s\">Sensor.Community</a> - formerly known as "
+"Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building "
+"instructions</a>.\n"
+"            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
+"dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
-"Obecné informace naleznete na <a href=\"%(home_url)s\">Sensor.Community</a> - dříve známé jako Luftdaten.info, stejně jako <a href=\"%(manual_url)s\">návod k sestavení</a>.\n"
-"            Data ze senzorů lze nalézt na <a href=\"%(map_url)s\">mapě jemného prachu</a> nebo <a href=\"%(archive_url)s\">stáhnout ve formátu CSV</a>."
-
+"Obecné informace naleznete na <a "
+"href=\"%(home_url)s\">Sensor.Community</a> - dříve známé jako "
+"Luftdaten.info, stejně jako <a href=\"%(manual_url)s\">návod k "
+"sestavení</a>.\n"
+"            Data ze senzorů lze nalézt na <a href=\"%(map_url)s\">mapě "
+"jemného prachu</a> nebo <a href=\"%(archive_url)s\">stáhnout ve formátu "
+"CSV</a>."
 
 #: webapp/templates/index.html:32
 msgid "Join us!"
@@ -417,9 +491,9 @@ msgstr "Přidejte se k nám!"
 
 #: webapp/templates/index.html:33
 msgid ""
-"The city of the future belongs to its citizens. The digital tools, the Maker"
-" Movement and Citizen Science are leading to more and more people being "
-"given the opportunity to design the city themselves."
+"The city of the future belongs to its citizens. The digital tools, the "
+"Maker Movement and Citizen Science are leading to more and more people "
+"being given the opportunity to design the city themselves."
 msgstr ""
 "Město budoucnosti patří svým občanům. Digitální nástroje, hnutí Maker "
 "Movement a občanská věda vedou k tomu, že stále více lidí má možnost "
@@ -435,21 +509,21 @@ msgid ""
 "Knowledge Foundation Germany. The aim of the program is to promote "
 "developments in the areas of transparency, Open Data and Citizen Science."
 msgstr ""
-"OK Lab Stuttgart je součástí programu Code for Germany německé nadace Open "
-"Knowledge Foundation. Cílem programu je podporovat rozvoj v oblastech "
-"transparentnosti, otevřených dat a občanské vědy."
+"OK Lab Stuttgart je součástí programu Code for Germany německé nadace "
+"Open Knowledge Foundation. Cílem programu je podporovat rozvoj v "
+"oblastech transparentnosti, otevřených dat a občanské vědy."
 
 #: webapp/templates/index.html:37
 msgid ""
-"Regional groups consisting of designers, developers, journalists and others "
-"meet regularly in Labs. They develop apps that inform, positively shape and "
-"support society and make the work of administrations and authorities more "
-"transparent."
+"Regional groups consisting of designers, developers, journalists and "
+"others meet regularly in Labs. They develop apps that inform, positively "
+"shape and support society and make the work of administrations and "
+"authorities more transparent."
 msgstr ""
 "V laboratořích se pravidelně scházejí regionální skupiny složené z "
-"designérů, vývojářů, novinářů a dalších. Vyvíjejí aplikace, které informují,"
-" pozitivně formují a podporují společnost a zprůhledňují práci správních "
-"orgánů a úřadů."
+"designérů, vývojářů, novinářů a dalších. Vyvíjejí aplikace, které "
+"informují, pozitivně formují a podporují společnost a zprůhledňují práci "
+"správních orgánů a úřadů."
 
 #: webapp/templates/index.html:38
 msgid "Code a difference: Use your skills to improve your city!"
@@ -510,8 +584,7 @@ msgstr "Odhlášení"
 msgid "Login"
 msgstr "Přihlášení"
 
-#: webapp/templates/layout.html:72
-#: webapp/templates/security/login_user.html:17
+#: webapp/templates/layout.html:72 webapp/templates/security/login_user.html:17
 #: webapp/templates/security/register_user.html:5
 msgid "Register"
 msgstr "Registrace"
@@ -575,11 +648,15 @@ msgstr "Data z uzlu"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
-"Typically, two sensors are attached to each node: the fine dust sensor and the\n"
-"                        Humidity and temperature sensor. The sensor number can also be found"
+"Typically, two sensors are attached to each node: the fine dust sensor "
+"and the\n"
+"                        Humidity and temperature sensor. The sensor "
+"number can also be found"
 msgstr ""
-"Ke každému uzlu jsou obvykle připojeny dva senzory: senzor jemného prachu a\n"
-"                        senzor vlhkosti a teploty. Číslo čidla lze také zjistit"
+"Ke každému uzlu jsou obvykle připojeny dva senzory: senzor jemného prachu"
+" a\n"
+"                        senzor vlhkosti a teploty. Číslo čidla lze také "
+"zjistit"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
@@ -627,8 +704,7 @@ msgid "Warning! After deleting you have no more control over the sensor!"
 msgstr "Pozor! Po vymazání již nemáte nad senzorem žádnou kontrolu!"
 
 #: webapp/templates/my-sensor-delete.html:11
-msgid ""
-"Also the chipID of this sensor will remain blocked for a new registration!"
+msgid "Also the chipID of this sensor will remain blocked for a new registration!"
 msgstr "Také chipID tohoto senzoru zůstane pro novou registraci zablokováno!"
 
 #: webapp/templates/my-sensor-give-success.html:13
@@ -646,13 +722,13 @@ msgstr "Novému majiteli byl zaslán e-mail"
 
 #: webapp/templates/my-sensor-give.html:9
 msgid ""
-"This allows you to transfer sensors to another person. This is especially "
-"useful if you have ordered a sensor for a friend and want to transfer it to "
-"him or her."
+"This allows you to transfer sensors to another person. This is especially"
+" useful if you have ordered a sensor for a friend and want to transfer it"
+" to him or her."
 msgstr ""
 "To umožňuje přenést senzory na jinou osobu. To je užitečné zejména v "
-"případě, že jste si objednali snímač pro svého přítele a chcete jej na něj "
-"převést."
+"případě, že jste si objednali snímač pro svého přítele a chcete jej na "
+"něj převést."
 
 #: webapp/templates/my-sensor-give.html:10
 msgid "Warning! After the transfer you have no more control over the sensor!"
@@ -665,15 +741,15 @@ msgstr "Nastavení uzlu %(node_id)s"
 
 #: webapp/templates/my-sensor-settings.html:7
 msgid ""
-"With this form you can keep the data of the sensor up to date. Please note "
-"that only precise data can lead to precise evaluations with which we can "
-"also argue politically. It is therefore important that the basic sensor data"
-" is always kept up to date."
+"With this form you can keep the data of the sensor up to date. Please "
+"note that only precise data can lead to precise evaluations with which we"
+" can also argue politically. It is therefore important that the basic "
+"sensor data is always kept up to date."
 msgstr ""
-"Pomocí tohoto formuláře můžete udržovat data senzoru aktuální. Upozorňujeme,"
-" že pouze přesné údaje mohou vést k přesnému vyhodnocení, kterým můžeme také"
-" politicky argumentovat. Proto je důležité, aby základní údaje o senzoru "
-"byly vždy aktuální."
+"Pomocí tohoto formuláře můžete udržovat data senzoru aktuální. "
+"Upozorňujeme, že pouze přesné údaje mohou vést k přesnému vyhodnocení, "
+"kterým můžeme také politicky argumentovat. Proto je důležité, aby "
+"základní údaje o senzoru byly vždy aktuální."
 
 #: webapp/templates/my-sensors.html:10
 msgid "All sensors assigned to your account can be found in this overview."
@@ -721,32 +797,62 @@ msgstr "Zde můžete změnit nastavení."
 
 #: webapp/templates/privacy-policy.html:13
 msgid ""
-"<p>The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and according to the legal data protection regulations as well as this data protection explanation.</p>\n"
-"                    <p>The use of our website is generally possible without providing personal data. Insofar as personal data (e.g. name, address or e-mail addresses) is collected on our pages, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent.</p>\n"
-"                    <p>We would like to point out that data transmission via the Internet (e.g. communication via e-mail) may have security gaps. A complete protection of the data against the access by third is not possible.</p>\n"
+"<p>The operators of these pages take the protection of your personal data"
+" very seriously. We treat your personal data confidentially and according"
+" to the legal data protection regulations as well as this data protection"
+" explanation.</p>\n"
+"                    <p>The use of our website is generally possible "
+"without providing personal data. Insofar as personal data (e.g. name, "
+"address or e-mail addresses) is collected on our pages, this is always "
+"done on a voluntary basis as far as possible. This data will not be "
+"passed on to third parties without your express consent.</p>\n"
+"                    <p>We would like to point out that data transmission "
+"via the Internet (e.g. communication via e-mail) may have security gaps. "
+"A complete protection of the data against the access by third is not "
+"possible.</p>\n"
 "                    <h2>Information, deletion, blocking</h2>\n"
-"                    <p>You have the right at any time to free information about your stored personal data, their origin and recipient and the purpose of data processing as well as a right to correction, blocking or deletion of this data. You can contact us at any time at the address given in the imprint for this and other questions on the subject of personal data.</p>\n"
+"                    <p>You have the right at any time to free information"
+" about your stored personal data, their origin and recipient and the "
+"purpose of data processing as well as a right to correction, blocking or "
+"deletion of this data. You can contact us at any time at the address "
+"given in the imprint for this and other questions on the subject of "
+"personal data.</p>\n"
 "                    <h2>Cookies</h2>\n"
-"                    <p>Some of the Internet pages use so-called cookies. Cookies do not damage your computer and do not contain viruses. Cookies serve to make our offer more user-friendly, more effective and safer. Cookies are small text files that are stored on your computer by your browser.</p>\n"
-"                    <p>Most of the cookies we use are so-called \"session cookies\". They are automatically deleted at the end of your visit. Other cookies remain stored on your terminal until you delete them. These cookies enable us to recognize your browser during your next visit.</p>\n"
+"                    <p>Some of the Internet pages use so-called cookies. "
+"Cookies do not damage your computer and do not contain viruses. Cookies "
+"serve to make our offer more user-friendly, more effective and safer. "
+"Cookies are small text files that are stored on your computer by your "
+"browser.</p>\n"
+"                    <p>Most of the cookies we use are so-called \"session"
+" cookies\". They are automatically deleted at the end of your visit. "
+"Other cookies remain stored on your terminal until you delete them. These"
+" cookies enable us to recognize your browser during your next visit.</p>"
+"\n"
 "                \n"
 "                    <h2>Account and sensor data</h2>\n"
-"                    <p>The measurement data of the sensors are collected on the server of the Sensor.Community and are publicly accessible to the company. The following information will be published:</p>\n"
+"                    <p>The measurement data of the sensors are collected "
+"on the server of the Sensor.Community and are publicly accessible to the "
+"company. The following information will be published:</p>\n"
 "                    <ul>\n"
-"                        <li>The anonymized geoposition (longitude and latitude) rounded to approx. 100 m.</li>\n"
+"                        <li>The anonymized geoposition (longitude and "
+"latitude) rounded to approx. 100 m.</li>\n"
 "                        <li>The ID of your ESP8266 NodeMCU board</li>\n"
-"                        <li>The given numerical description of the environment</li>\n"
+"                        <li>The given numerical description of the "
+"environment</li>\n"
 "                        <li>The sensor height</li>\n"
 "                        <li>The description as text</li>\n"
 "                    </ul>\n"
-"                    <p>The following additional data will be stored for internal processing, but will not be published:</p>\n"
+"                    <p>The following additional data will be stored for "
+"internal processing, but will not be published:</p>\n"
 "                    <ul>\n"
 "                        <li>The postal address of the sensor</li>\n"
 "                        <li>The e-mail address</li>\n"
 "                        <li>Your first and last name</li>\n"
 "                    </ul>\n"
 "                    <h2>Server log files</h2>\n"
-"                    <p>The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:</p>\n"
+"                    <p>The provider of the pages automatically collects "
+"and stores information in so-called server log files, which your browser "
+"automatically transmits to us. These are:</p>\n"
 "                    <ul>\n"
 "                        <li>Browser type / browser version</li>\n"
 "                        <li>used operating system</li>\n"
@@ -754,37 +860,73 @@ msgid ""
 "                        <li>Hostname of the accessing computer</li>\n"
 "                        <li>Time of the server request</li>\n"
 "                    </ul>\n"
-"                    <p>These data cannot be assigned to specific persons. This data will not be merged with other data sources. We reserve the right to subsequently check this data if we become aware of concrete indications of illegal use.</p>\n"
+"                    <p>These data cannot be assigned to specific persons."
+" This data will not be merged with other data sources. We reserve the "
+"right to subsequently check this data if we become aware of concrete "
+"indications of illegal use.</p>\n"
 "                    <h2>Contradiction advertising mails</h2>\n"
-"                    <p>We hereby object to the use of contact data published within the scope of the imprint obligation to send unsolicited advertising and information material. The operators of this website expressly reserve the right to take legal action against unsolicited mailing or e-mailing of spam and other similar advertising materials.</p>\n"
+"                    <p>We hereby object to the use of contact data "
+"published within the scope of the imprint obligation to send unsolicited "
+"advertising and information material. The operators of this website "
+"expressly reserve the right to take legal action against unsolicited "
+"mailing or e-mailing of spam and other similar advertising materials.</p>"
+"\n"
 "                    "
 msgstr ""
-"<p>Provozovatelé těchto stránek berou ochranu vašich osobních údajů velmi vážně. S vašimi osobními údaji zacházíme důvěrně a v souladu s právními předpisy o ochraně osobních údajů i s tímto vysvětlením o ochraně osobních údajů.</p>\n"
-"                    <p>Používání našich webových stránek je obecně možné bez poskytnutí osobních údajů. Pokud jsou na našich stránkách shromažďovány osobní údaje (např. jméno, adresa nebo e-mailová adresa), děje se tak vždy pokud možno dobrovolně. Tyto údaje nebudou bez vašeho výslovného souhlasu předávány třetím stranám.</p>\n"
-"                    <p>Rádi bychom upozornili, že přenos dat přes internet (např. komunikace prostřednictvím e-mailu) může mít bezpečnostní mezery. Úplná ochrana údajů před přístupem třetích osob není možná.</p>\n"
+"<p>Provozovatelé těchto stránek berou ochranu vašich osobních údajů velmi"
+" vážně. S vašimi osobními údaji zacházíme důvěrně a v souladu s právními "
+"předpisy o ochraně osobních údajů i s tímto vysvětlením o ochraně "
+"osobních údajů.</p>\n"
+"                    <p>Používání našich webových stránek je obecně možné "
+"bez poskytnutí osobních údajů. Pokud jsou na našich stránkách "
+"shromažďovány osobní údaje (např. jméno, adresa nebo e-mailová adresa), "
+"děje se tak vždy pokud možno dobrovolně. Tyto údaje nebudou bez vašeho "
+"výslovného souhlasu předávány třetím stranám.</p>\n"
+"                    <p>Rádi bychom upozornili, že přenos dat přes "
+"internet (např. komunikace prostřednictvím e-mailu) může mít bezpečnostní"
+" mezery. Úplná ochrana údajů před přístupem třetích osob není možná.</p>"
+"\n"
 "                    <h2>Informace, mazání, blokování</h2>\n"
-"                    <p>Máte právo kdykoli bezplatně získat informace o svých uložených osobních údajích, jejich původu a příjemci a účelu zpracování údajů, jakož i právo na opravu, zablokování nebo vymazání těchto údajů. V případě těchto a dalších otázek týkajících se osobních údajů nás můžete kdykoli kontaktovat na adrese uvedené v tiráži.</p>\n"
+"                    <p>Máte právo kdykoli bezplatně získat informace o "
+"svých uložených osobních údajích, jejich původu a příjemci a účelu "
+"zpracování údajů, jakož i právo na opravu, zablokování nebo vymazání "
+"těchto údajů. V případě těchto a dalších otázek týkajících se osobních "
+"údajů nás můžete kdykoli kontaktovat na adrese uvedené v tiráži.</p>\n"
 "                    <h2>Sušenky</h2>\n"
-"                    <p>Některé internetové stránky používají tzv. cookies. Cookies nepoškozují váš počítač a neobsahují viry. Cookies slouží k tomu, aby naše nabídka byla uživatelsky přívětivější, efektivnější a bezpečnější. Soubory cookie jsou malé textové soubory, které prohlížeč ukládá do vašeho počítače.</p>\n"
-"                    <p>Většina souborů cookie, které používáme, jsou takzvané \"session cookies\". Po ukončení vaší návštěvy se automaticky vymažou. Ostatní soubory cookie zůstávají uloženy ve vašem terminálu, dokud je neodstraníte. Tyto soubory cookie nám umožňují rozpoznat váš prohlížeč při vaší další návštěvě.</p>\n "
-"                \n"
+"                    <p>Některé internetové stránky používají tzv. "
+"cookies. Cookies nepoškozují váš počítač a neobsahují viry. Cookies "
+"slouží k tomu, aby naše nabídka byla uživatelsky přívětivější, "
+"efektivnější a bezpečnější. Soubory cookie jsou malé textové soubory, "
+"které prohlížeč ukládá do vašeho počítače.</p>\n"
+"                    <p>Většina souborů cookie, které používáme, jsou "
+"takzvané \"session cookies\". Po ukončení vaší návštěvy se automaticky "
+"vymažou. Ostatní soubory cookie zůstávají uloženy ve vašem terminálu, "
+"dokud je neodstraníte. Tyto soubory cookie nám umožňují rozpoznat váš "
+"prohlížeč při vaší další návštěvě.</p>\n"
+"                 \n"
 "                    <h2>Údaje o účtu a senzorech</h2>\n"
-"                    <p>Údaje o měření senzorů jsou shromažďovány na serveru Sensor.Community a jsou veřejně přístupné společnosti. Zveřejněny budou následující informace:</p>\n"
+"                    <p>Údaje o měření senzorů jsou shromažďovány na "
+"serveru Sensor.Community a jsou veřejně přístupné společnosti. Zveřejněny"
+" budou následující informace:</p>\n"
 "                    <ul>\n"
-"                        <li>Anonymizovaná geopoloha (zeměpisná délka a šířka) zaokrouhlená na přibližně 100 m.</li>\n"
+"                        <li>Anonymizovaná geopoloha (zeměpisná délka a "
+"šířka) zaokrouhlená na přibližně 100 m.</li>\n"
 "                      <li>ID vaší desky ESP8266 NodeMCU</li>\n"
 "                        <li>Uvedený číselný popis prostředí</li>\n"
 "                        <li>Výška senzoru</li>\n"
 "                        <li>Popis jako text</li>\n"
 "                    </ul>\n"
-"                    <p>Následující další údaje budou uloženy pro interní zpracování, ale nebudou zveřejněny:</p>\n"
+"                    <p>Následující další údaje budou uloženy pro interní "
+"zpracování, ale nebudou zveřejněny:</p>\n"
 "                    <ul>\n"
 "                        <li>Poštovní adresa snímače</li>\n"
 "                       <li>Emailová adresa</li>\n"
 "                        <li>Vaše jméno a příjmení</li>\n"
 "                    </ul>\n"
 "                    <h2>Soubory protokolu serveru</h2>\n"
-"                    <p>Provozovatel stránek automaticky shromažďuje a ukládá informace do tzv. souborů protokolu serveru, které nám váš prohlížeč automaticky předává. Jsou to:</p>\n"
+"                    <p>Provozovatel stránek automaticky shromažďuje a "
+"ukládá informace do tzv. souborů protokolu serveru, které nám váš "
+"prohlížeč automaticky předává. Jsou to:</p>\n"
 "                    <ul>\n"
 "                        <li>Typ prohlížeče / verze prohlížeče</li>\n"
 "                        <li>používaný operační systém</li>\n"
@@ -792,9 +934,17 @@ msgstr ""
 "                        <li>Název hostitele přistupujícího počítače</li>\n"
 "                        <li>Čas požadavku na server</li>\n"
 "                    </ul>\n"
-"                    <p>Tyto údaje nelze přiřadit ke konkrétním osobám. Tyto údaje nebudou sloučeny s jinými zdroji dat. Vyhrazujeme si právo tyto údaje dodatečně zkontrolovat, pokud zjistíme konkrétní náznaky nezákonného použití.</p>\n"
+"                    <p>Tyto údaje nelze přiřadit ke konkrétním osobám. "
+"Tyto údaje nebudou sloučeny s jinými zdroji dat. Vyhrazujeme si právo "
+"tyto údaje dodatečně zkontrolovat, pokud zjistíme konkrétní náznaky "
+"nezákonného použití.</p>\n"
 "                    <h2>Závadné reklamní e-maily</h2>\n"
-"                    <p>Souhlasíme s použitím kontaktních údajů zveřejněných v rámci povinnosti otisku k zasílání nevyžádaných reklamních a informačních materiálů. Provozovatelé těchto webových stránek si výslovně vyhrazují právo podniknout právní kroky proti nevyžádanému rozesílání nevyžádané pošty nebo e-mailů a jiných podobných reklamních materiálů.</p>\n"
+"                    <p>Souhlasíme s použitím kontaktních údajů "
+"zveřejněných v rámci povinnosti otisku k zasílání nevyžádaných reklamních"
+" a informačních materiálů. Provozovatelé těchto webových stránek si "
+"výslovně vyhrazují právo podniknout právní kroky proti nevyžádanému "
+"rozesílání nevyžádané pošty nebo e-mailů a jiných podobných reklamních "
+"materiálů.</p>\n"
 "                    "
 
 #: webapp/templates/recover-fail.html:13
@@ -803,8 +953,8 @@ msgstr "Nastavení hesla Chyba"
 
 #: webapp/templates/recover-fail.html:14
 msgid ""
-"Unfortunately the link is not correct. Either it is too old, or it was not "
-"copied completely. Please try again."
+"Unfortunately the link is not correct. Either it is too old, or it was "
+"not copied completely. Please try again."
 msgstr ""
 "Odkaz bohužel není správný. Buď je příliš starý, nebo nebyl úplně "
 "zkopírován. Zkuste to prosím znovu."
@@ -820,11 +970,11 @@ msgstr "Podívejte se prosím do své poštovní schránky a obnovte své heslo.
 
 #: webapp/templates/recover-mail-sent.html:14
 msgid ""
-"Your account was not active yet. Please look into your mailbox to reset your"
-" password and activate your account."
+"Your account was not active yet. Please look into your mailbox to reset "
+"your password and activate your account."
 msgstr ""
-"Váš účet ještě nebyl aktivní. Podívejte se prosím do své poštovní schránky, "
-"abyste mohli obnovit heslo a aktivovat svůj účet."
+"Váš účet ještě nebyl aktivní. Podívejte se prosím do své poštovní "
+"schránky, abyste mohli obnovit heslo a aktivovat svůj účet."
 
 #: webapp/templates/recover-set-password.html:14
 msgid "Set password"
@@ -857,11 +1007,11 @@ msgstr "Import hmotnosti snímače: Stav"
 
 #: webapp/templates/sensor-import-status.html:14
 msgid ""
-"You can see all current imports in this overview. Click on Reload to update "
-"the status."
+"You can see all current imports in this overview. Click on Reload to "
+"update the status."
 msgstr ""
-"V tomto přehledu si můžete prohlédnout všechny aktuální importy. Kliknutím "
-"na Znovu načíst aktualizujete stav."
+"V tomto přehledu si můžete prohlédnout všechny aktuální importy. "
+"Kliknutím na Znovu načíst aktualizujete stav."
 
 #: webapp/templates/sensor-import-status.html:18
 msgid "ID"
@@ -880,22 +1030,27 @@ msgid ""
 "With this form new nodes can be imported in masses. One node per line is "
 "expected in the following format:"
 msgstr ""
-"Pomocí tohoto formuláře lze hromadně importovat nové uzly. Na každém řádku "
-"se očekává jeden uzel v následujícím formátu:"
+"Pomocí tohoto formuláře lze hromadně importovat nové uzly. Na každém "
+"řádku se očekává jeden uzel v následujícím formátu:"
 
 #: webapp/templates/sensor-import.html:18
 msgid ""
-"123456 is the ID of the ESP8266 board, the e-mail is the address of the future\n"
-"                            of the owner. If this is not fixed, only the Node-ID can be specified, which is\n"
+"123456 is the ID of the ESP8266 board, the e-mail is the address of the "
+"future\n"
+"                            of the owner. If this is not fixed, only the "
+"Node-ID can be specified, which is\n"
 "                            E-mail must then be added later."
 msgstr ""
-"123456 je ID desky ESP8266, e-mail je adresa budoucího majitele. Pokud není\n"
-"                            tato hodnota pevně stanovena, lze zadat pouze Node-ID, což je E-mail, který\n"
+"123456 je ID desky ESP8266, e-mail je adresa budoucího majitele. Pokud "
+"není\n"
+"                            tato hodnota pevně stanovena, lze zadat pouze"
+" Node-ID, což je E-mail, který\n"
 "                            je pak nutné doplnit později."
 
 #: webapp/templates/sensor-import.html:21
 msgid ""
-"If an email address has been specified, the owner will be notified with an email about their\n"
+"If an email address has been specified, the owner will be notified with "
+"an email about their\n"
 "                            new sensor."
 msgstr ""
 "Pokud byla zadána e-mailová adresa, bude vlastník o svém novém senzoru\n"
@@ -923,7 +1078,8 @@ msgid ""
 "style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> to enable expert fields"
 msgstr ""
 "klikněte na <a name=\"expert\" onclick=\"toggle_expert()\" "
-"style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> pro zapnutí expertních polí."
+"style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> pro zapnutí expertních "
+"polí."
 
 #: webapp/templates/sensor-settings-form.html:34
 msgid "remove"
@@ -935,14 +1091,15 @@ msgstr "přidat komponentu"
 
 #: webapp/templates/sensor-settings-form.html:116
 msgid ""
-"The more precise the data we have, the better we can evaluate the data and "
-"thus energize statements. The system can also try to make a geoposition out "
-"of the address, but we would be happy if you would specify the position with"
-" the map below."
+"The more precise the data we have, the better we can evaluate the data "
+"and thus energize statements. The system can also try to make a "
+"geoposition out of the address, but we would be happy if you would "
+"specify the position with the map below."
 msgstr ""
-"Čím přesnější údaje máme k dispozici, tím lépe je můžeme vyhodnotit, a tak "
-"dodat výrokům energii. Systém se také může pokusit z adresy vytvořit "
-"geopozici, ale budeme rádi, když polohu upřesníte pomocí níže uvedené mapy."
+"Čím přesnější údaje máme k dispozici, tím lépe je můžeme vyhodnotit, a "
+"tak dodat výrokům energii. Systém se také může pokusit z adresy vytvořit "
+"geopozici, ale budeme rádi, když polohu upřesníte pomocí níže uvedené "
+"mapy."
 
 #: webapp/templates/sensor-settings-form.html:125
 msgid "Lookup entered address"
@@ -965,11 +1122,11 @@ msgstr "pro obnovení hesla použijte následující adresu URL:"
 
 #: webapp/templates/emails/recover.html:14
 msgid ""
-"If you have not requested a new password on Sensor.Community, you can ignore"
-" this e-mail."
+"If you have not requested a new password on Sensor.Community, you can "
+"ignore this e-mail."
 msgstr ""
-"Pokud jste si na stránkách Sensor.Community nevyžádali nové heslo, můžete "
-"tento e-mail ignorovat."
+"Pokud jste si na stránkách Sensor.Community nevyžádali nové heslo, můžete"
+" tento e-mail ignorovat."
 
 #: webapp/templates/emails/recover.html:15
 #: webapp/templates/emails/register-existing.html:15
@@ -978,32 +1135,34 @@ msgstr ""
 msgid ""
 "Sincerely,\n"
 "    Your Sensor.Community team"
-msgstr "S pozdravem,\n"
+msgstr ""
+"S pozdravem,\n"
 "    Váš tým Sensor.Community"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
-"in order to manage your sensor in the future, we have created an account for"
-" you. Please enter a password under the following link: "
+"in order to manage your sensor in the future, we have created an account "
+"for you. Please enter a password under the following link: "
 msgstr ""
-"abychom mohli v budoucnu spravovat váš senzor, vytvořili jsme pro vás účet. "
-"Zadejte prosím heslo pod následujícím odkazem:"
+"abychom mohli v budoucnu spravovat váš senzor, vytvořili jsme pro vás "
+"účet. Zadejte prosím heslo pod následujícím odkazem:"
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
-"If you have not created an account on Sensor.Community, you can ignore this "
-"e-mail."
+"If you have not created an account on Sensor.Community, you can ignore "
+"this e-mail."
 msgstr ""
 "Pokud jste si na Sensor.Community nevytvořili účet, můžete tento e-mail "
 "ignorovat."
 
 #: webapp/templates/emails/sensor-given.html:13
 msgid ""
-"a particulate matter sensor has been handed over to your control. Please log"
-" in with this mail address to take data and settings or to change them: "
+"a particulate matter sensor has been handed over to your control. Please "
+"log in with this mail address to take data and settings or to change "
+"them: "
 msgstr ""
-"senzor pevných částic byl předán vaší kontrole. Pro převzetí dat a nastavení"
-" nebo jejich změnu se přihlaste pomocí této e-mailové adresy:"
+"senzor pevných částic byl předán vaší kontrole. Pro převzetí dat a "
+"nastavení nebo jejich změnu se přihlaste pomocí této e-mailové adresy:"
 
 #: webapp/templates/emails/sensor-given.html:14
 msgid ""
@@ -1015,19 +1174,20 @@ msgstr ""
 
 #: webapp/templates/emails/sensor-registered.html:13
 msgid ""
-"a fine dust sensor has been registered for you. Please log in with this mail"
-" address to take in or change data and settings: "
+"a fine dust sensor has been registered for you. Please log in with this "
+"mail address to take in or change data and settings: "
 msgstr ""
-"byl pro vás zaregistrován senzor jemného prachu. Přihlaste se prosím touto "
-"poštovní adresou, abyste mohli přijímat nebo měnit údaje a nastavení:"
+"byl pro vás zaregistrován senzor jemného prachu. Přihlaste se prosím "
+"touto poštovní adresou, abyste mohli přijímat nebo měnit údaje a "
+"nastavení:"
 
 #: webapp/templates/emails/sensor-registered.html:14
 msgid ""
 "If the sensor was registered for you by mistake, please report this to "
 "tech@sensor.community."
 msgstr ""
-"Pokud byl snímač omylem zaregistrován pro vás, nahlaste tuto skutečnost na "
-"adrese tech@sensor.community."
+"Pokud byl snímač omylem zaregistrován pro vás, nahlaste tuto skutečnost "
+"na adrese tech@sensor.community."
 
 #: webapp/templates/security/change_password.html:5
 msgid "Change password"
@@ -1042,10 +1202,10 @@ msgid "Password reminder"
 msgstr "Připomenutí hesla"
 
 #: webapp/templates/security/register_user.html:17
-msgid ""
-"please wait up to 30 min to receive the mail and check your spam folder"
+msgid "please wait up to 30 min to receive the mail and check your spam folder"
 msgstr ""
-"vyčkejte prosím až 30 minut na přijetí pošty a zkontrolujte si složku se spamem."
+"vyčkejte prosím až 30 minut na přijetí pošty a zkontrolujte si složku se "
+"spamem."
 
 #: webapp/templates/security/reset_password.html:5
 msgid "Reset password"
@@ -1089,7 +1249,9 @@ msgstr "přihlášení"
 
 #: webapp/users/forms.py:68
 msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>."
-msgstr "Souhlasím se <a href=\"/privacy-policy\">Zásadami ochrany osobních údajů</a>."
+msgstr ""
+"Souhlasím se <a href=\"/privacy-policy\">Zásadami ochrany osobních "
+"údajů</a>."
 
 #: webapp/users/forms.py:71
 msgid "Please agree to the privacy policy."
@@ -1147,3 +1309,4 @@ msgstr "Nové heslo (opakování)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Uložená uživatelská data."
+

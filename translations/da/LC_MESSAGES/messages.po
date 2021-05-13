@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-11 01:37+0000\n"
+"POT-Creation-Date: 2021-05-13 10:50+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.6.0\n"
 
 #: webapp/personal/forms.py:39
@@ -94,16 +94,16 @@ msgstr ""
 #: webapp/personal/forms.py:80
 msgid "How many private stoves or fireplaces are within a 100m radius?"
 msgstr ""
-"Hvor mange private brændeovne eller ildsteder er der inden for en radius af "
-"100 m?"
+"Hvor mange private brændeovne eller ildsteder er der inden for en radius "
+"af 100 m?"
 
 #: webapp/personal/forms.py:92
 msgid ""
-"Does it smell very much like such smoke in your area? 1 = very little, 10 = "
-"very much."
+"Does it smell very much like such smoke in your area? 1 = very little, 10"
+" = very much."
 msgstr ""
-"Lugter det meget af sådan en røg i dit område? 1 = meget lidt, 10 = meget "
-"meget."
+"Lugter det meget af sådan en røg i dit område? 1 = meget lidt, 10 = meget"
+" meget."
 
 #: webapp/personal/forms.py:95
 msgid "How much traffic is there within a 100m radius?"
@@ -114,8 +114,8 @@ msgid ""
 "How close are those roads? 1 = very little further away, 10 = a lot of "
 "traffic right on your doorstep."
 msgstr ""
-"Hvor tæt er disse veje? 1 = meget lidt længere væk, 10 = meget trafik lige "
-"uden for din dør."
+"Hvor tæt er disse veje? 1 = meget lidt længere væk, 10 = meget trafik "
+"lige uden for din dør."
 
 #: webapp/personal/forms.py:118
 msgid "PIN"
@@ -155,10 +155,10 @@ msgstr "Sensorens placering i forhold til trafikken"
 
 #: webapp/personal/forms.py:161
 msgid ""
-"1 = on the garden side, very well shielded from all streets, 10 = the sensor"
-" is on a house wall directly on the street. With this value it is irrelevant"
-" how big the street is, it is only about where the sensor is attached to the"
-" house."
+"1 = on the garden side, very well shielded from all streets, 10 = the "
+"sensor is on a house wall directly on the street. With this value it is "
+"irrelevant how big the street is, it is only about where the sensor is "
+"attached to the house."
 msgstr ""
 "1 = på havesiden, meget godt afskærmet fra alle gader, 10 = sensoren er "
 "placeret på en husmur direkte ud til gaden. Med denne værdi er det "
@@ -182,8 +182,8 @@ msgid ""
 "Mark sensor as inactive. No notifications will be sent when sensor goes "
 "offline."
 msgstr ""
-"Markér sensoren som inaktiv. Der sendes ingen meddelelser, når sensoren går "
-"offline."
+"Markér sensoren som inaktiv. Der sendes ingen meddelelser, når sensoren "
+"går offline."
 
 #: webapp/personal/forms.py:174
 msgid "Short description of location"
@@ -211,13 +211,14 @@ msgstr "Sensor Board"
 
 #: webapp/personal/forms.py:191
 msgid ""
-"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or the "
-"Smogomierz sensor version need to change this accordingly. Also in these "
-"cases the Sensor ID is the numeric part of the name only."
+"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
+"the Smogomierz sensor version need to change this accordingly. Also in "
+"these cases the Sensor ID is the numeric part of the name only."
 msgstr ""
-"Normalt skal dette være esp8266. Brugere af ESP32-kort, Raspberry PI eller "
-"Smogomierz-sensorversionen skal ændre dette i overensstemmelse hermed. Også "
-"i disse tilfælde er sensor-ID kun den numeriske del af navnet."
+"Normalt skal dette være esp8266. Brugere af ESP32-kort, Raspberry PI "
+"eller Smogomierz-sensorversionen skal ændre dette i overensstemmelse "
+"hermed. Også i disse tilfælde er sensor-ID kun den numeriske del af "
+"navnet."
 
 #: webapp/personal/forms.py:196
 msgid "Recipient's e-mail address"
@@ -268,70 +269,138 @@ msgid "Pressure at sea level"
 msgstr "Tryk på havniveau"
 
 #: webapp/personal/views.py:63
+msgid "particulate matter sensor PPD42NS"
+msgstr ""
+
+#: webapp/personal/views.py:65
 msgid "particulate matter sensor SDS011"
 msgstr "partikelføler SDS011"
 
-#: webapp/personal/views.py:65
+#: webapp/personal/views.py:67
+msgid "particulate matter sensor SDS021"
+msgstr ""
+
+#: webapp/personal/views.py:69
 msgid "particulate matter sensor PMS1003"
 msgstr "partikelstofsensor PMS1003"
 
-#: webapp/personal/views.py:67
+#: webapp/personal/views.py:71
 msgid "particulate matter sensor PMS3003"
 msgstr "partikelstofsensor PMS3003"
 
-#: webapp/personal/views.py:69
+#: webapp/personal/views.py:73
 msgid "particulate matter sensor PMS5003"
 msgstr "partikelføler PMS5003"
 
-#: webapp/personal/views.py:71
+#: webapp/personal/views.py:75
 msgid "particulate matter sensor PMS6003"
 msgstr "partikelstofsensor PMS6003"
 
-#: webapp/personal/views.py:73
+#: webapp/personal/views.py:77
 msgid "particulate matter sensor PMS7003"
 msgstr "partikelføler PMS7003"
 
-#: webapp/personal/views.py:75
+#: webapp/personal/views.py:79
 msgid "particulate matter sensor SPS30"
 msgstr "partikelføler SPS30"
 
-#: webapp/personal/views.py:77
+#: webapp/personal/views.py:81
+msgid "particulate matter sensor HPM"
+msgstr ""
+
+#: webapp/personal/views.py:83
 msgid "particulate matter sensor HM3301"
 msgstr "partikelstofsensor HM3301"
 
-#: webapp/personal/views.py:79
+#: webapp/personal/views.py:85
+msgid "temperature/humidity sensor DS18S20"
+msgstr ""
+
+#: webapp/personal/views.py:87
+msgid "temperature/humidity sensor DS18B20"
+msgstr ""
+
+#: webapp/personal/views.py:89
 msgid "temperature/humidity sensor DHT22"
 msgstr "temperatur-fugtighedssensor DHT22"
 
-#: webapp/personal/views.py:81
+#: webapp/personal/views.py:91
 msgid "temperature/pressure sensor BMP180"
 msgstr "temperaturtryksensor BMP180"
 
-#: webapp/personal/views.py:83
+#: webapp/personal/views.py:93
 msgid "temperature/pressure sensor BMP280"
 msgstr "temperaturtryksensor BMP280"
 
-#: webapp/personal/views.py:85
+#: webapp/personal/views.py:95
 msgid "temperature/humidity/pressure sensor BME280"
 msgstr "temperaturfugtfugttryksensor BME280"
 
-#: webapp/personal/views.py:87
+#: webapp/personal/views.py:97
+msgid "temperature/humidity sensor HTU21D"
+msgstr ""
+
+#: webapp/personal/views.py:99
+msgid "temperature/humidity sensor SHT10"
+msgstr ""
+
+#: webapp/personal/views.py:101
+msgid "temperature/humidity sensor SHT11"
+msgstr ""
+
+#: webapp/personal/views.py:103
+msgid "temperature/humidity sensor SHT15"
+msgstr ""
+
+#: webapp/personal/views.py:105
+msgid "temperature/humidity sensor SHT30"
+msgstr ""
+
+#: webapp/personal/views.py:107
+msgid "temperature/humidity sensor SHT31"
+msgstr ""
+
+#: webapp/personal/views.py:109
+msgid "temperature/humidity sensor SHT35"
+msgstr ""
+
+#: webapp/personal/views.py:111
+msgid "temperature/humidity sensor SHT85"
+msgstr ""
+
+#: webapp/personal/views.py:113
 msgid "temperature/humidity/CO₂ ppm sensor SCD30"
 msgstr "temperatur-fugtCO₂ ppm-sensor SCD30"
 
-#: webapp/personal/views.py:145
+#: webapp/personal/views.py:115
+msgid "noise sensor DNMS"
+msgstr ""
+
+#: webapp/personal/views.py:117
+msgid "radiation sensor SBM-20"
+msgstr ""
+
+#: webapp/personal/views.py:119
+msgid "radiation sensor SBM-19"
+msgstr ""
+
+#: webapp/personal/views.py:121
+msgid "radiation sensor Si22G"
+msgstr ""
+
+#: webapp/personal/views.py:179
 msgid "Settings saved successfully."
 msgstr "Indstillingerne er gemt med succes."
 
-#: webapp/personal/views.py:173
+#: webapp/personal/views.py:207
 msgid "Sensor successfully registered."
 msgstr "Sensor registreret med succes."
 
-#: webapp/personal/views.py:177
+#: webapp/personal/views.py:211
 msgid "This sensor ID is already registered."
 msgstr "Dette sensor-ID er allerede registreret."
 
-#: webapp/personal/views.py:191
+#: webapp/personal/views.py:225
 msgid "A fine dust sensor was transferred to you"
 msgstr "En sensor med fint støv blev overført til dig"
 
@@ -376,15 +445,12 @@ msgid "Configure air quality sensor yourself"
 msgstr "Konfigurer selv luftkvalitetssensoren"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid ""
-"Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
+msgid "Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
 msgstr "Donér til Sensor.Community (Hardware, Software) nu på Betterplace.org"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid ""
-"Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
-msgstr ""
-"Donér til<br>Sensor.Community<br>nu på<br><span>Betterplace.org</span>"
+msgid "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
+msgstr "Donér til<br>Sensor.Community<br>nu på<br><span>Betterplace.org</span>"
 
 #: webapp/templates/index.html:16
 msgid "Configure Luftdaten"
@@ -392,11 +458,11 @@ msgstr "Konfigurere luftdata"
 
 #: webapp/templates/index.html:17
 msgid ""
-"The main purpose of this page is to enable you, as the owner of a fine dust "
-"sensor, to configure the location and other parameters yourself."
+"The main purpose of this page is to enable you, as the owner of a fine "
+"dust sensor, to configure the location and other parameters yourself."
 msgstr ""
-"Hovedformålet med denne side er at gøre det muligt for dig som ejer af en "
-"finstøvssensor selv at konfigurere placeringen og andre parametre."
+"Hovedformålet med denne side er at gøre det muligt for dig som ejer af en"
+" finstøvssensor selv at konfigurere placeringen og andre parametre."
 
 #: webapp/templates/index.html:18
 #, python-format
@@ -406,11 +472,19 @@ msgstr "Klik her for at <a href=\"%(login_url)s\">logge ind</a>."
 #: webapp/templates/index.html:20
 #, python-format
 msgid ""
-"General information can be found at <a href=\"%(home_url)s\">Sensor.Community</a> - formerly known as Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building instructions</a>.\n"
-"            Sensor data can be found on <a href=\"%(map_url)s\">the fine dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
+"General information can be found at <a "
+"href=\"%(home_url)s\">Sensor.Community</a> - formerly known as "
+"Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building "
+"instructions</a>.\n"
+"            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
+"dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
-"Generelle oplysninger kan findes på <a href=\"%(home_url)s\">Sensor.Community</a> - tidligere kendt som Luftdaten.info, samt på <a href=\"%(manual_url)s\">byggevejledning</a>.\n"
-"            Sensordata kan findes på <a href=\"%(map_url)s\">finkortet over fint støv</a> eller <a href=\"%(archive_url)s\">kan downloades som CSV-filer</a>."
+"Generelle oplysninger kan findes på <a "
+"href=\"%(home_url)s\">Sensor.Community</a> - tidligere kendt som "
+"Luftdaten.info, samt på <a href=\"%(manual_url)s\">byggevejledning</a>.\n"
+"            Sensordata kan findes på <a href=\"%(map_url)s\">finkortet "
+"over fint støv</a> eller <a href=\"%(archive_url)s\">kan downloades som "
+"CSV-filer</a>."
 
 #: webapp/templates/index.html:32
 msgid "Join us!"
@@ -418,13 +492,13 @@ msgstr "Vær med!"
 
 #: webapp/templates/index.html:33
 msgid ""
-"The city of the future belongs to its citizens. The digital tools, the Maker"
-" Movement and Citizen Science are leading to more and more people being "
-"given the opportunity to design the city themselves."
+"The city of the future belongs to its citizens. The digital tools, the "
+"Maker Movement and Citizen Science are leading to more and more people "
+"being given the opportunity to design the city themselves."
 msgstr ""
-"Fremtidens by tilhører dens borgere. De digitale værktøjer, Maker-bevægelsen"
-" og Citizen Science fører til, at flere og flere mennesker får mulighed for "
-"selv at designe byen."
+"Fremtidens by tilhører dens borgere. De digitale værktøjer, Maker-"
+"bevægelsen og Citizen Science fører til, at flere og flere mennesker får "
+"mulighed for selv at designe byen."
 
 #: webapp/templates/index.html:35
 msgid "About the project"
@@ -442,15 +516,15 @@ msgstr ""
 
 #: webapp/templates/index.html:37
 msgid ""
-"Regional groups consisting of designers, developers, journalists and others "
-"meet regularly in Labs. They develop apps that inform, positively shape and "
-"support society and make the work of administrations and authorities more "
-"transparent."
+"Regional groups consisting of designers, developers, journalists and "
+"others meet regularly in Labs. They develop apps that inform, positively "
+"shape and support society and make the work of administrations and "
+"authorities more transparent."
 msgstr ""
-"Regionale grupper bestående af designere, udviklere, journalister og andre "
-"mødes regelmæssigt i laboratorier. De udvikler apps, der informerer, former "
-"og støtter samfundet på en positiv måde og gør forvaltningernes og "
-"myndighedernes arbejde mere gennemsigtigt."
+"Regionale grupper bestående af designere, udviklere, journalister og "
+"andre mødes regelmæssigt i laboratorier. De udvikler apps, der "
+"informerer, former og støtter samfundet på en positiv måde og gør "
+"forvaltningernes og myndighedernes arbejde mere gennemsigtigt."
 
 #: webapp/templates/index.html:38
 msgid "Code a difference: Use your skills to improve your city!"
@@ -469,8 +543,8 @@ msgid ""
 "If you are of the opinion that you have a sensor at this mail address, "
 "please send us an e-mail. Send an email to"
 msgstr ""
-"Hvis du mener, at du har en sensor på denne mailadresse, bedes du sende os "
-"en e-mail. Send en e-mail til"
+"Hvis du mener, at du har en sensor på denne mailadresse, bedes du sende "
+"os en e-mail. Send en e-mail til"
 
 #: webapp/templates/layout.html:4
 msgid "user configuration"
@@ -511,8 +585,7 @@ msgstr "Logout"
 msgid "Login"
 msgstr "Login"
 
-#: webapp/templates/layout.html:72
-#: webapp/templates/security/login_user.html:17
+#: webapp/templates/layout.html:72 webapp/templates/security/login_user.html:17
 #: webapp/templates/security/register_user.html:5
 msgid "Register"
 msgstr "Registrer"
@@ -576,10 +649,13 @@ msgstr "Data fra knudepunkt"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
-"Typically, two sensors are attached to each node: the fine dust sensor and the\n"
-"                        Humidity and temperature sensor. The sensor number can also be found"
+"Typically, two sensors are attached to each node: the fine dust sensor "
+"and the\n"
+"                        Humidity and temperature sensor. The sensor "
+"number can also be found"
 msgstr ""
-"Typisk er der to sensorer tilsluttet hver knudepunkt: Fint støv-sensoren og\n"
+"Typisk er der to sensorer tilsluttet hver knudepunkt: Fint støv-sensoren "
+"og\n"
 "fugt- og temperatursensoren. Sensornummeret kan også findes"
 
 #: webapp/templates/my-sensor-data.html:11
@@ -628,10 +704,8 @@ msgid "Warning! After deleting you have no more control over the sensor!"
 msgstr "Advarsel! Efter sletning har du ikke længere kontrol over sensoren!"
 
 #: webapp/templates/my-sensor-delete.html:11
-msgid ""
-"Also the chipID of this sensor will remain blocked for a new registration!"
-msgstr ""
-"Også denne sensors chipID vil forblive blokeret for en ny registrering!"
+msgid "Also the chipID of this sensor will remain blocked for a new registration!"
+msgstr "Også denne sensors chipID vil forblive blokeret for en ny registrering!"
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "was handed over."
@@ -648,18 +722,17 @@ msgstr "Der blev sendt en e-mail til den nye ejer"
 
 #: webapp/templates/my-sensor-give.html:9
 msgid ""
-"This allows you to transfer sensors to another person. This is especially "
-"useful if you have ordered a sensor for a friend and want to transfer it to "
-"him or her."
+"This allows you to transfer sensors to another person. This is especially"
+" useful if you have ordered a sensor for a friend and want to transfer it"
+" to him or her."
 msgstr ""
-"Dette giver dig mulighed for at overføre sensorer til en anden person. Dette"
-" er især nyttigt, hvis du har bestilt en sensor til en ven og ønsker at "
-"overføre den til ham eller hende."
+"Dette giver dig mulighed for at overføre sensorer til en anden person. "
+"Dette er især nyttigt, hvis du har bestilt en sensor til en ven og ønsker"
+" at overføre den til ham eller hende."
 
 #: webapp/templates/my-sensor-give.html:10
 msgid "Warning! After the transfer you have no more control over the sensor!"
-msgstr ""
-"Advarsel! Efter overførslen har du ikke længere kontrol over sensoren!"
+msgstr "Advarsel! Efter overførslen har du ikke længere kontrol over sensoren!"
 
 #: webapp/templates/my-sensor-settings.html:6
 #, python-format
@@ -668,20 +741,19 @@ msgstr "Indstillinger for knude %(node_id)s"
 
 #: webapp/templates/my-sensor-settings.html:7
 msgid ""
-"With this form you can keep the data of the sensor up to date. Please note "
-"that only precise data can lead to precise evaluations with which we can "
-"also argue politically. It is therefore important that the basic sensor data"
-" is always kept up to date."
+"With this form you can keep the data of the sensor up to date. Please "
+"note that only precise data can lead to precise evaluations with which we"
+" can also argue politically. It is therefore important that the basic "
+"sensor data is always kept up to date."
 msgstr ""
-"Med denne formular kan du holde sensorens data opdateret. Bemærk venligst, "
-"at kun præcise data kan føre til præcise vurderinger, som vi også kan "
-"argumentere politisk med. Det er derfor vigtigt, at de grundlæggende "
-"sensordata altid holdes ajour."
+"Med denne formular kan du holde sensorens data opdateret. Bemærk "
+"venligst, at kun præcise data kan føre til præcise vurderinger, som vi "
+"også kan argumentere politisk med. Det er derfor vigtigt, at de "
+"grundlæggende sensordata altid holdes ajour."
 
 #: webapp/templates/my-sensors.html:10
 msgid "All sensors assigned to your account can be found in this overview."
-msgstr ""
-"Du kan finde alle sensorer, der er tildelt din konto, i denne oversigt."
+msgstr "Du kan finde alle sensorer, der er tildelt din konto, i denne oversigt."
 
 #: webapp/templates/my-sensors.html:15
 msgid "Sensor UID"
@@ -725,32 +797,62 @@ msgstr "Her kan du ændre dine indstillinger."
 
 #: webapp/templates/privacy-policy.html:13
 msgid ""
-"<p>The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and according to the legal data protection regulations as well as this data protection explanation.</p>\n"
-"                    <p>The use of our website is generally possible without providing personal data. Insofar as personal data (e.g. name, address or e-mail addresses) is collected on our pages, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent.</p>\n"
-"                    <p>We would like to point out that data transmission via the Internet (e.g. communication via e-mail) may have security gaps. A complete protection of the data against the access by third is not possible.</p>\n"
+"<p>The operators of these pages take the protection of your personal data"
+" very seriously. We treat your personal data confidentially and according"
+" to the legal data protection regulations as well as this data protection"
+" explanation.</p>\n"
+"                    <p>The use of our website is generally possible "
+"without providing personal data. Insofar as personal data (e.g. name, "
+"address or e-mail addresses) is collected on our pages, this is always "
+"done on a voluntary basis as far as possible. This data will not be "
+"passed on to third parties without your express consent.</p>\n"
+"                    <p>We would like to point out that data transmission "
+"via the Internet (e.g. communication via e-mail) may have security gaps. "
+"A complete protection of the data against the access by third is not "
+"possible.</p>\n"
 "                    <h2>Information, deletion, blocking</h2>\n"
-"                    <p>You have the right at any time to free information about your stored personal data, their origin and recipient and the purpose of data processing as well as a right to correction, blocking or deletion of this data. You can contact us at any time at the address given in the imprint for this and other questions on the subject of personal data.</p>\n"
+"                    <p>You have the right at any time to free information"
+" about your stored personal data, their origin and recipient and the "
+"purpose of data processing as well as a right to correction, blocking or "
+"deletion of this data. You can contact us at any time at the address "
+"given in the imprint for this and other questions on the subject of "
+"personal data.</p>\n"
 "                    <h2>Cookies</h2>\n"
-"                    <p>Some of the Internet pages use so-called cookies. Cookies do not damage your computer and do not contain viruses. Cookies serve to make our offer more user-friendly, more effective and safer. Cookies are small text files that are stored on your computer by your browser.</p>\n"
-"                    <p>Most of the cookies we use are so-called \"session cookies\". They are automatically deleted at the end of your visit. Other cookies remain stored on your terminal until you delete them. These cookies enable us to recognize your browser during your next visit.</p>\n"
+"                    <p>Some of the Internet pages use so-called cookies. "
+"Cookies do not damage your computer and do not contain viruses. Cookies "
+"serve to make our offer more user-friendly, more effective and safer. "
+"Cookies are small text files that are stored on your computer by your "
+"browser.</p>\n"
+"                    <p>Most of the cookies we use are so-called \"session"
+" cookies\". They are automatically deleted at the end of your visit. "
+"Other cookies remain stored on your terminal until you delete them. These"
+" cookies enable us to recognize your browser during your next visit.</p>"
+"\n"
 "                \n"
 "                    <h2>Account and sensor data</h2>\n"
-"                    <p>The measurement data of the sensors are collected on the server of the Sensor.Community and are publicly accessible to the company. The following information will be published:</p>\n"
+"                    <p>The measurement data of the sensors are collected "
+"on the server of the Sensor.Community and are publicly accessible to the "
+"company. The following information will be published:</p>\n"
 "                    <ul>\n"
-"                        <li>The anonymized geoposition (longitude and latitude) rounded to approx. 100 m.</li>\n"
+"                        <li>The anonymized geoposition (longitude and "
+"latitude) rounded to approx. 100 m.</li>\n"
 "                        <li>The ID of your ESP8266 NodeMCU board</li>\n"
-"                        <li>The given numerical description of the environment</li>\n"
+"                        <li>The given numerical description of the "
+"environment</li>\n"
 "                        <li>The sensor height</li>\n"
 "                        <li>The description as text</li>\n"
 "                    </ul>\n"
-"                    <p>The following additional data will be stored for internal processing, but will not be published:</p>\n"
+"                    <p>The following additional data will be stored for "
+"internal processing, but will not be published:</p>\n"
 "                    <ul>\n"
 "                        <li>The postal address of the sensor</li>\n"
 "                        <li>The e-mail address</li>\n"
 "                        <li>Your first and last name</li>\n"
 "                    </ul>\n"
 "                    <h2>Server log files</h2>\n"
-"                    <p>The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:</p>\n"
+"                    <p>The provider of the pages automatically collects "
+"and stores information in so-called server log files, which your browser "
+"automatically transmits to us. These are:</p>\n"
 "                    <ul>\n"
 "                        <li>Browser type / browser version</li>\n"
 "                        <li>used operating system</li>\n"
@@ -758,47 +860,94 @@ msgid ""
 "                        <li>Hostname of the accessing computer</li>\n"
 "                        <li>Time of the server request</li>\n"
 "                    </ul>\n"
-"                    <p>These data cannot be assigned to specific persons. This data will not be merged with other data sources. We reserve the right to subsequently check this data if we become aware of concrete indications of illegal use.</p>\n"
+"                    <p>These data cannot be assigned to specific persons."
+" This data will not be merged with other data sources. We reserve the "
+"right to subsequently check this data if we become aware of concrete "
+"indications of illegal use.</p>\n"
 "                    <h2>Contradiction advertising mails</h2>\n"
-"                    <p>We hereby object to the use of contact data published within the scope of the imprint obligation to send unsolicited advertising and information material. The operators of this website expressly reserve the right to take legal action against unsolicited mailing or e-mailing of spam and other similar advertising materials.</p>\n"
+"                    <p>We hereby object to the use of contact data "
+"published within the scope of the imprint obligation to send unsolicited "
+"advertising and information material. The operators of this website "
+"expressly reserve the right to take legal action against unsolicited "
+"mailing or e-mailing of spam and other similar advertising materials.</p>"
+"\n"
 "                    "
 msgstr ""
-"<p>Den, der driver disse sider, tager beskyttelsen af dine personlige oplysninger meget alvorligt. Vi behandler dine personlige data fortroligt og i overensstemmelse med de lovmæssige databeskyttelsesbestemmelser samt denne databeskyttelseserklæring.</p>\n"
-"                    <p>Brugen af vores hjemmeside er generelt mulig uden at oplyse personoplysninger. I det omfang der indsamles personoplysninger (f.eks. navn, adresse eller e-mailadresser) på vores sider, sker det så vidt muligt altid på frivillig basis. Disse data videregives ikke til tredjemand uden dit udtrykkelige samtykke.</p>\n"
-"                    <p>Vi vil gerne gøre opmærksom på, at dataoverførsel via internettet (f.eks. kommunikation via e-mail) kan have sikkerhedshuller. En fuldstændig beskyttelse af dataene mod adgang for tredjemand er ikke mulig.</p>\n"
+"<p>Den, der driver disse sider, tager beskyttelsen af dine personlige "
+"oplysninger meget alvorligt. Vi behandler dine personlige data fortroligt"
+" og i overensstemmelse med de lovmæssige databeskyttelsesbestemmelser "
+"samt denne databeskyttelseserklæring.</p>\n"
+"                    <p>Brugen af vores hjemmeside er generelt mulig uden "
+"at oplyse personoplysninger. I det omfang der indsamles personoplysninger"
+" (f.eks. navn, adresse eller e-mailadresser) på vores sider, sker det så "
+"vidt muligt altid på frivillig basis. Disse data videregives ikke til "
+"tredjemand uden dit udtrykkelige samtykke.</p>\n"
+"                    <p>Vi vil gerne gøre opmærksom på, at dataoverførsel "
+"via internettet (f.eks. kommunikation via e-mail) kan have "
+"sikkerhedshuller. En fuldstændig beskyttelse af dataene mod adgang for "
+"tredjemand er ikke mulig.</p>\n"
 "                    <h2>Information, sletning, blokering</h2>\n"
-"                    <p>Du har til enhver tid ret til gratis at få oplysninger om dine lagrede personoplysninger, deres oprindelse og modtager og formålet med databehandlingen samt ret til berigtigelse, blokering eller sletning af disse oplysninger. Du kan til enhver tid kontakte os på den adresse, der er angivet i aftrykket, for at få svar på dette og andre spørgsmål vedrørende personoplysninger.</p>\n"
+"                    <p>Du har til enhver tid ret til gratis at få "
+"oplysninger om dine lagrede personoplysninger, deres oprindelse og "
+"modtager og formålet med databehandlingen samt ret til berigtigelse, "
+"blokering eller sletning af disse oplysninger. Du kan til enhver tid "
+"kontakte os på den adresse, der er angivet i aftrykket, for at få svar på"
+" dette og andre spørgsmål vedrørende personoplysninger.</p>\n"
 "                    <h2>Cookies</h2>\n"
-"                    <p>Nogle af vores internetsider anvender såkaldte cookies. Cookies skader ikke din computer og indeholder ikke virus. Cookies tjener til at gøre vores tilbud mere brugervenligt, mere effektivt og mere sikkert. Cookies er små tekstfiler, der gemmes på din computer af din browser.</p>\n"
-"                    <p>De fleste af de cookies, vi bruger, er såkaldte \"session cookies\". De slettes automatisk ved afslutningen af dit besøg. Andre cookies forbliver gemt på din terminal, indtil du sletter dem. Disse cookies gør det muligt for os at genkende din browser ved dit næste besøg.</p>\n"
+"                    <p>Nogle af vores internetsider anvender såkaldte "
+"cookies. Cookies skader ikke din computer og indeholder ikke virus. "
+"Cookies tjener til at gøre vores tilbud mere brugervenligt, mere "
+"effektivt og mere sikkert. Cookies er små tekstfiler, der gemmes på din "
+"computer af din browser.</p>\n"
+"                    <p>De fleste af de cookies, vi bruger, er såkaldte "
+"\"session cookies\". De slettes automatisk ved afslutningen af dit besøg."
+" Andre cookies forbliver gemt på din terminal, indtil du sletter dem. "
+"Disse cookies gør det muligt for os at genkende din browser ved dit næste"
+" besøg.</p>\n"
 "                \n"
 "                    <h2>Konto- og sensordata</h2>\n"
-"                    <p>Måledataene fra sensorerne indsamles på Sensor.Communitys server og er offentligt tilgængelige for virksomheden. Følgende oplysninger vil blive offentliggjort:</p>\n"
+"                    <p>Måledataene fra sensorerne indsamles på "
+"Sensor.Communitys server og er offentligt tilgængelige for virksomheden. "
+"Følgende oplysninger vil blive offentliggjort:</p>\n"
 "                    <ul>\n"
-"                        <li>Den anonymiserede geoposition (længdegrad og breddegrad) afrundet til ca. 100 m.</li>\n"
+"                        <li>Den anonymiserede geoposition (længdegrad og "
+"breddegrad) afrundet til ca. 100 m.</li>\n"
 "                        <li>ID'et for dit ESP8266 NodeMCU-kort</li>\n"
-"                        <li>Den givne numeriske beskrivelse af omgivelserne</li>\n"
+"                        <li>Den givne numeriske beskrivelse af "
+"omgivelserne</li>\n"
 "                        <li>Sensorhøjden</li>\n"
 "                        <li>Beskrivelsen som tekst</li>\n"
 "                    </ul>\n"
-"                    <p>Følgende yderligere data vil blive gemt til intern behandling, men vil ikke blive offentliggjort:</p>\n"
+"                    <p>Følgende yderligere data vil blive gemt til intern"
+" behandling, men vil ikke blive offentliggjort:</p>\n"
 "                    <ul>\n"
 "                        <li>Sensorens postadresse</li>\n"
 "                        <li>E-mailadresse</li>\n"
 "                        <li>Dit for- og efternavn</li>\n"
 "                    </ul>\n"
 "                    <h2>Serverens logfiler</h2>\n"
-"                    <p>Sidens udbyder indsamler og gemmer automatisk oplysninger i såkaldte serverlogfiler, som din browser automatisk overfører til os. Disse er:</p>\n"
+"                    <p>Sidens udbyder indsamler og gemmer automatisk "
+"oplysninger i såkaldte serverlogfiler, som din browser automatisk "
+"overfører til os. Disse er:</p>\n"
 "                    <ul>\n"
 "                        <li>Browser type / browser version</li>\n"
 "                        <li>brugt operativsystem</li>\n"
 "                        <li>Referrer URL</li>\n"
-"                        <li>Hostname på den computer, der tilgår computeren</li>\n"
+"                        <li>Hostname på den computer, der tilgår "
+"computeren</li>\n"
 "                        <li>Tidspunkt for serveranmodningen</li>\n"
 "                    </ul>\n"
-"                    <p>Disse data kan ikke tildeles specifikke personer. Disse data vil ikke blive slået sammen med andre datakilder. Vi forbeholder os ret til efterfølgende at kontrollere disse data, hvis vi får kendskab til konkrete tegn på ulovlig brug.</p>\n"
+"                    <p>Disse data kan ikke tildeles specifikke personer. "
+"Disse data vil ikke blive slået sammen med andre datakilder. Vi "
+"forbeholder os ret til efterfølgende at kontrollere disse data, hvis vi "
+"får kendskab til konkrete tegn på ulovlig brug.</p>\n"
 "                    <h2>Sammenfaldende reklamemails</h2>\n"
-"                    <p>Vi gør hermed indsigelse mod, at kontaktoplysninger, der er offentliggjort inden for rammerne af impressumspligten, anvendes til at sende uopfordret reklame- og informationsmateriale. Operatørerne af dette websted forbeholder sig udtrykkeligt retten til at tage retslige skridt mod uopfordret udsendelse af spam og lignende reklamemateriale pr. post eller e-mail.</p>\n"
+"                    <p>Vi gør hermed indsigelse mod, at "
+"kontaktoplysninger, der er offentliggjort inden for rammerne af "
+"impressumspligten, anvendes til at sende uopfordret reklame- og "
+"informationsmateriale. Operatørerne af dette websted forbeholder sig "
+"udtrykkeligt retten til at tage retslige skridt mod uopfordret udsendelse"
+" af spam og lignende reklamemateriale pr. post eller e-mail.</p>\n"
 "                    "
 
 #: webapp/templates/recover-fail.html:13
@@ -807,11 +956,11 @@ msgstr "Indstille adgangskode Fejl"
 
 #: webapp/templates/recover-fail.html:14
 msgid ""
-"Unfortunately the link is not correct. Either it is too old, or it was not "
-"copied completely. Please try again."
+"Unfortunately the link is not correct. Either it is too old, or it was "
+"not copied completely. Please try again."
 msgstr ""
-"Desværre er linket ikke korrekt. Enten er det for gammelt, eller også blev "
-"det ikke kopieret fuldstændigt. Prøv venligst igen."
+"Desværre er linket ikke korrekt. Enten er det for gammelt, eller også "
+"blev det ikke kopieret fuldstændigt. Prøv venligst igen."
 
 #: webapp/templates/recover-mail-sent-again.html:13
 #: webapp/templates/recover-mail-sent.html:13
@@ -824,11 +973,11 @@ msgstr "Se venligst i din postkasse for at nulstille din adgangskode."
 
 #: webapp/templates/recover-mail-sent.html:14
 msgid ""
-"Your account was not active yet. Please look into your mailbox to reset your"
-" password and activate your account."
+"Your account was not active yet. Please look into your mailbox to reset "
+"your password and activate your account."
 msgstr ""
-"Din konto var ikke aktiv endnu. Se venligst i din postkasse for at nulstille"
-" din adgangskode og aktivere din konto."
+"Din konto var ikke aktiv endnu. Se venligst i din postkasse for at "
+"nulstille din adgangskode og aktivere din konto."
 
 #: webapp/templates/recover-set-password.html:14
 msgid "Set password"
@@ -847,8 +996,8 @@ msgid ""
 "Since you are logging in for the first time, your e-mail address must be "
 "confirmed. Please look in your mailbox to get access to your sensors."
 msgstr ""
-"Da det er første gang, du logger ind, skal din e-mailadresse bekræftes. Se "
-"venligst i din postkasse for at få adgang til dine sensorer."
+"Da det er første gang, du logger ind, skal din e-mailadresse bekræftes. "
+"Se venligst i din postkasse for at få adgang til dine sensorer."
 
 #: webapp/templates/register-minimal.html:25
 msgid "Registration"
@@ -860,11 +1009,11 @@ msgstr "Import af sensormasse: Status"
 
 #: webapp/templates/sensor-import-status.html:14
 msgid ""
-"You can see all current imports in this overview. Click on Reload to update "
-"the status."
+"You can see all current imports in this overview. Click on Reload to "
+"update the status."
 msgstr ""
-"Du kan se alle aktuelle importer i denne oversigt. Klik på Genindlæs for at "
-"opdatere status."
+"Du kan se alle aktuelle importer i denne oversigt. Klik på Genindlæs for "
+"at opdatere status."
 
 #: webapp/templates/sensor-import-status.html:18
 msgid "ID"
@@ -883,25 +1032,30 @@ msgid ""
 "With this form new nodes can be imported in masses. One node per line is "
 "expected in the following format:"
 msgstr ""
-"Med denne formular kan nye knuder importeres i massevis. Der forventes en "
-"knude pr. linje i følgende format:"
+"Med denne formular kan nye knuder importeres i massevis. Der forventes en"
+" knude pr. linje i følgende format:"
 
 #: webapp/templates/sensor-import.html:18
 msgid ""
-"123456 is the ID of the ESP8266 board, the e-mail is the address of the future\n"
-"                            of the owner. If this is not fixed, only the Node-ID can be specified, which is\n"
+"123456 is the ID of the ESP8266 board, the e-mail is the address of the "
+"future\n"
+"                            of the owner. If this is not fixed, only the "
+"Node-ID can be specified, which is\n"
 "                            E-mail must then be added later."
 msgstr ""
 "123456 er ID'et for ESP8266-kortet, e-mailen er adressen på ejerens\n"
-"                            fremtidige adresse. Hvis dette ikke er fastsat, kan kun Node-ID angives, som\n"
+"                            fremtidige adresse. Hvis dette ikke er "
+"fastsat, kan kun Node-ID angives, som\n"
 "                            er E-mail skal så tilføjes senere."
 
 #: webapp/templates/sensor-import.html:21
 msgid ""
-"If an email address has been specified, the owner will be notified with an email about their\n"
+"If an email address has been specified, the owner will be notified with "
+"an email about their\n"
 "                            new sensor."
 msgstr ""
-"Hvis der er angivet en e-mailadresse, får ejeren en e-mail med besked om sin\n"
+"Hvis der er angivet en e-mailadresse, får ejeren en e-mail med besked om "
+"sin\n"
 "                            nye sensor."
 
 #: webapp/templates/sensor-register.html:6
@@ -922,8 +1076,8 @@ msgstr "Konfiguration af hardware"
 
 #: webapp/templates/sensor-settings-form.html:27
 msgid ""
-"click <a name=\"expert\" onclick=\"toggle_expert()\" style=\"color:blue;\"> "
-"&gt;&gt;here&lt;&lt; </a> to enable expert fields"
+"click <a name=\"expert\" onclick=\"toggle_expert()\" "
+"style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> to enable expert fields"
 msgstr ""
 "Klik på &lt;a name=\"expert\" onclick=\"toggle_expert()\" "
 "style=\"color:blue;\"&gt; &amp;gt;&amp;gt;her&amp;lt;&amp;lt;&amp;lt; "
@@ -939,15 +1093,15 @@ msgstr "tilføje komponent"
 
 #: webapp/templates/sensor-settings-form.html:116
 msgid ""
-"The more precise the data we have, the better we can evaluate the data and "
-"thus energize statements. The system can also try to make a geoposition out "
-"of the address, but we would be happy if you would specify the position with"
-" the map below."
+"The more precise the data we have, the better we can evaluate the data "
+"and thus energize statements. The system can also try to make a "
+"geoposition out of the address, but we would be happy if you would "
+"specify the position with the map below."
 msgstr ""
-"Jo mere præcise data vi har, jo bedre kan vi evaluere dataene og dermed give"
-" energi til vores udsagn. Systemet kan også forsøge at lave en geoposition "
-"ud fra adressen, men vi vil være glade for, hvis du vil angive positionen "
-"med nedenstående kort."
+"Jo mere præcise data vi har, jo bedre kan vi evaluere dataene og dermed "
+"give energi til vores udsagn. Systemet kan også forsøge at lave en "
+"geoposition ud fra adressen, men vi vil være glade for, hvis du vil "
+"angive positionen med nedenstående kort."
 
 #: webapp/templates/sensor-settings-form.html:125
 msgid "Lookup entered address"
@@ -970,11 +1124,11 @@ msgstr "for at nulstille din adgangskode, skal du bruge følgende URL:"
 
 #: webapp/templates/emails/recover.html:14
 msgid ""
-"If you have not requested a new password on Sensor.Community, you can ignore"
-" this e-mail."
+"If you have not requested a new password on Sensor.Community, you can "
+"ignore this e-mail."
 msgstr ""
-"Hvis du ikke har anmodet om en ny adgangskode på Sensor.Community, kan du "
-"ignorere denne e-mail."
+"Hvis du ikke har anmodet om en ny adgangskode på Sensor.Community, kan du"
+" ignorere denne e-mail."
 
 #: webapp/templates/emails/recover.html:15
 #: webapp/templates/emails/register-existing.html:15
@@ -983,48 +1137,50 @@ msgstr ""
 msgid ""
 "Sincerely,\n"
 "    Your Sensor.Community team"
-msgstr "Med venlig hilsen,\n"
+msgstr ""
+"Med venlig hilsen,\n"
 "    dit Sensor.Community-team"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
-"in order to manage your sensor in the future, we have created an account for"
-" you. Please enter a password under the following link: "
+"in order to manage your sensor in the future, we have created an account "
+"for you. Please enter a password under the following link: "
 msgstr ""
-"for at kunne administrere din sensor i fremtiden har vi oprettet en konto "
-"til dig. Indtast venligst en adgangskode under følgende link:"
+"for at kunne administrere din sensor i fremtiden har vi oprettet en konto"
+" til dig. Indtast venligst en adgangskode under følgende link:"
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
-"If you have not created an account on Sensor.Community, you can ignore this "
-"e-mail."
+"If you have not created an account on Sensor.Community, you can ignore "
+"this e-mail."
 msgstr ""
 "Hvis du ikke har oprettet en konto på Sensor.Community, kan du ignorere "
 "denne e-mail."
 
 #: webapp/templates/emails/sensor-given.html:13
 msgid ""
-"a particulate matter sensor has been handed over to your control. Please log"
-" in with this mail address to take data and settings or to change them: "
+"a particulate matter sensor has been handed over to your control. Please "
+"log in with this mail address to take data and settings or to change "
+"them: "
 msgstr ""
-"en partikelføler er blevet overdraget til din kontrol. Log venligst ind med "
-"denne mailadresse for at hente data og indstillinger eller ændre dem:"
+"en partikelføler er blevet overdraget til din kontrol. Log venligst ind "
+"med denne mailadresse for at hente data og indstillinger eller ændre dem:"
 
 #: webapp/templates/emails/sensor-given.html:14
 msgid ""
 "If you have received a sensor by mistake, please report this at "
 "tech@sensor.community."
 msgstr ""
-"Hvis du har modtaget en sensor ved en fejltagelse, skal du anmelde dette på "
-"tech@sensor.community."
+"Hvis du har modtaget en sensor ved en fejltagelse, skal du anmelde dette "
+"på tech@sensor.community."
 
 #: webapp/templates/emails/sensor-registered.html:13
 msgid ""
-"a fine dust sensor has been registered for you. Please log in with this mail"
-" address to take in or change data and settings: "
+"a fine dust sensor has been registered for you. Please log in with this "
+"mail address to take in or change data and settings: "
 msgstr ""
-"Der er registreret en sensor til fint støv til dig. Du skal logge ind med "
-"denne mailadresse for at indlæse eller ændre data og indstillinger:"
+"Der er registreret en sensor til fint støv til dig. Du skal logge ind med"
+" denne mailadresse for at indlæse eller ændre data og indstillinger:"
 
 #: webapp/templates/emails/sensor-registered.html:14
 msgid ""
@@ -1047,10 +1203,10 @@ msgid "Password reminder"
 msgstr "Påmindelse om adgangskode"
 
 #: webapp/templates/security/register_user.html:17
-msgid ""
-"please wait up to 30 min to receive the mail and check your spam folder"
+msgid "please wait up to 30 min to receive the mail and check your spam folder"
 msgstr ""
-"vent venligst op til 30 minutter på at modtage mailen og tjek din spam-mappe"
+"vent venligst op til 30 minutter på at modtage mailen og tjek din spam-"
+"mappe"
 
 #: webapp/templates/security/reset_password.html:5
 msgid "Reset password"
@@ -1152,3 +1308,4 @@ msgstr "Ny adgangskode (gentag)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Brugerdata gemt."
+

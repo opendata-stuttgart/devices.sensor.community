@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-11 01:37+0000\n"
+"POT-Creation-Date: 2021-05-13 10:50+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.6.0\n"
 
 #: webapp/personal/forms.py:39
@@ -88,8 +88,8 @@ msgid ""
 "No office space, but potential fine dust producers 1 = very little, 10 = "
 "very much."
 msgstr ""
-"Nu există spații de birouri, dar potențialul producătorilor de praf fin 1 = "
-"foarte puțin, 10 = foarte mult."
+"Nu există spații de birouri, dar potențialul producătorilor de praf fin 1"
+" = foarte puțin, 10 = foarte mult."
 
 #: webapp/personal/forms.py:80
 msgid "How many private stoves or fireplaces are within a 100m radius?"
@@ -97,11 +97,11 @@ msgstr "Câte sobe sau șeminee private se află pe o rază de 100 m?"
 
 #: webapp/personal/forms.py:92
 msgid ""
-"Does it smell very much like such smoke in your area? 1 = very little, 10 = "
-"very much."
+"Does it smell very much like such smoke in your area? 1 = very little, 10"
+" = very much."
 msgstr ""
-"Miroase foarte mult a astfel de fum în zona dumneavoastră? 1 = foarte puțin,"
-" 10 = foarte mult."
+"Miroase foarte mult a astfel de fum în zona dumneavoastră? 1 = foarte "
+"puțin, 10 = foarte mult."
 
 #: webapp/personal/forms.py:95
 msgid "How much traffic is there within a 100m radius?"
@@ -153,15 +153,15 @@ msgstr "Poziția senzorului în raport cu traficul"
 
 #: webapp/personal/forms.py:161
 msgid ""
-"1 = on the garden side, very well shielded from all streets, 10 = the sensor"
-" is on a house wall directly on the street. With this value it is irrelevant"
-" how big the street is, it is only about where the sensor is attached to the"
-" house."
+"1 = on the garden side, very well shielded from all streets, 10 = the "
+"sensor is on a house wall directly on the street. With this value it is "
+"irrelevant how big the street is, it is only about where the sensor is "
+"attached to the house."
 msgstr ""
-"1 = pe partea dinspre grădină, foarte bine protejat de toate străzile, 10 = "
-"senzorul este amplasat pe peretele unei case, direct pe stradă. Cu această "
-"valoare este irelevant cât de mare este strada, contează doar unde este "
-"atașat senzorul la casă."
+"1 = pe partea dinspre grădină, foarte bine protejat de toate străzile, 10"
+" = senzorul este amplasat pe peretele unei case, direct pe stradă. Cu "
+"această valoare este irelevant cât de mare este strada, contează doar "
+"unde este atașat senzorul la casă."
 
 #: webapp/personal/forms.py:164
 msgid "Publish exact location"
@@ -180,8 +180,8 @@ msgid ""
 "Mark sensor as inactive. No notifications will be sent when sensor goes "
 "offline."
 msgstr ""
-"Marcați senzorul ca fiind inactiv. Nu vor fi trimise notificări atunci când "
-"senzorul devine offline."
+"Marcați senzorul ca fiind inactiv. Nu vor fi trimise notificări atunci "
+"când senzorul devine offline."
 
 #: webapp/personal/forms.py:174
 msgid "Short description of location"
@@ -209,14 +209,14 @@ msgstr "Placa de senzori"
 
 #: webapp/personal/forms.py:191
 msgid ""
-"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or the "
-"Smogomierz sensor version need to change this accordingly. Also in these "
-"cases the Sensor ID is the numeric part of the name only."
+"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
+"the Smogomierz sensor version need to change this accordingly. Also in "
+"these cases the Sensor ID is the numeric part of the name only."
 msgstr ""
-"În mod normal, acesta ar trebui să fie esp8266. Utilizatorii de plăci ESP32,"
-" Raspberry PI sau versiunea de senzor Smogomierz trebuie să schimbe acest "
-"lucru în mod corespunzător. De asemenea, în aceste cazuri, ID-ul senzorului "
-"este doar partea numerică a numelui."
+"În mod normal, acesta ar trebui să fie esp8266. Utilizatorii de plăci "
+"ESP32, Raspberry PI sau versiunea de senzor Smogomierz trebuie să schimbe"
+" acest lucru în mod corespunzător. De asemenea, în aceste cazuri, ID-ul "
+"senzorului este doar partea numerică a numelui."
 
 #: webapp/personal/forms.py:196
 msgid "Recipient's e-mail address"
@@ -267,70 +267,138 @@ msgid "Pressure at sea level"
 msgstr "Presiunea la nivelul mării"
 
 #: webapp/personal/views.py:63
+msgid "particulate matter sensor PPD42NS"
+msgstr ""
+
+#: webapp/personal/views.py:65
 msgid "particulate matter sensor SDS011"
 msgstr "senzor de particule în suspensie SDS011"
 
-#: webapp/personal/views.py:65
+#: webapp/personal/views.py:67
+msgid "particulate matter sensor SDS021"
+msgstr ""
+
+#: webapp/personal/views.py:69
 msgid "particulate matter sensor PMS1003"
 msgstr "senzor de particule în suspensie PMS1003"
 
-#: webapp/personal/views.py:67
+#: webapp/personal/views.py:71
 msgid "particulate matter sensor PMS3003"
 msgstr "senzor de particule în suspensie PMS3003"
 
-#: webapp/personal/views.py:69
+#: webapp/personal/views.py:73
 msgid "particulate matter sensor PMS5003"
 msgstr "senzor de particule în suspensie PMS5003"
 
-#: webapp/personal/views.py:71
+#: webapp/personal/views.py:75
 msgid "particulate matter sensor PMS6003"
 msgstr "senzor de particule PMS6003"
 
-#: webapp/personal/views.py:73
+#: webapp/personal/views.py:77
 msgid "particulate matter sensor PMS7003"
 msgstr "senzor de particule PMS7003"
 
-#: webapp/personal/views.py:75
+#: webapp/personal/views.py:79
 msgid "particulate matter sensor SPS30"
 msgstr "senzor de particule în suspensie SPS30"
 
-#: webapp/personal/views.py:77
+#: webapp/personal/views.py:81
+msgid "particulate matter sensor HPM"
+msgstr ""
+
+#: webapp/personal/views.py:83
 msgid "particulate matter sensor HM3301"
 msgstr "senzor de particule în suspensie HM3301"
 
-#: webapp/personal/views.py:79
+#: webapp/personal/views.py:85
+msgid "temperature/humidity sensor DS18S20"
+msgstr ""
+
+#: webapp/personal/views.py:87
+msgid "temperature/humidity sensor DS18B20"
+msgstr ""
+
+#: webapp/personal/views.py:89
 msgid "temperature/humidity sensor DHT22"
 msgstr "senzor de temperatură-umiditate DHT22"
 
-#: webapp/personal/views.py:81
+#: webapp/personal/views.py:91
 msgid "temperature/pressure sensor BMP180"
 msgstr "senzor de temperatură-presiune BMP180"
 
-#: webapp/personal/views.py:83
+#: webapp/personal/views.py:93
 msgid "temperature/pressure sensor BMP280"
 msgstr "senzor de temperatură-presiune BMP280"
 
-#: webapp/personal/views.py:85
+#: webapp/personal/views.py:95
 msgid "temperature/humidity/pressure sensor BME280"
 msgstr "temperaturăumiditatepresiune senzor de presiune BME280"
 
-#: webapp/personal/views.py:87
+#: webapp/personal/views.py:97
+msgid "temperature/humidity sensor HTU21D"
+msgstr ""
+
+#: webapp/personal/views.py:99
+msgid "temperature/humidity sensor SHT10"
+msgstr ""
+
+#: webapp/personal/views.py:101
+msgid "temperature/humidity sensor SHT11"
+msgstr ""
+
+#: webapp/personal/views.py:103
+msgid "temperature/humidity sensor SHT15"
+msgstr ""
+
+#: webapp/personal/views.py:105
+msgid "temperature/humidity sensor SHT30"
+msgstr ""
+
+#: webapp/personal/views.py:107
+msgid "temperature/humidity sensor SHT31"
+msgstr ""
+
+#: webapp/personal/views.py:109
+msgid "temperature/humidity sensor SHT35"
+msgstr ""
+
+#: webapp/personal/views.py:111
+msgid "temperature/humidity sensor SHT85"
+msgstr ""
+
+#: webapp/personal/views.py:113
 msgid "temperature/humidity/CO₂ ppm sensor SCD30"
 msgstr "temperatură-umiditateCO₂ senzor ppm SCD30"
 
-#: webapp/personal/views.py:145
+#: webapp/personal/views.py:115
+msgid "noise sensor DNMS"
+msgstr ""
+
+#: webapp/personal/views.py:117
+msgid "radiation sensor SBM-20"
+msgstr ""
+
+#: webapp/personal/views.py:119
+msgid "radiation sensor SBM-19"
+msgstr ""
+
+#: webapp/personal/views.py:121
+msgid "radiation sensor Si22G"
+msgstr ""
+
+#: webapp/personal/views.py:179
 msgid "Settings saved successfully."
 msgstr "Setările au fost salvate cu succes."
 
-#: webapp/personal/views.py:173
+#: webapp/personal/views.py:207
 msgid "Sensor successfully registered."
 msgstr "Senzorul a fost înregistrat cu succes."
 
-#: webapp/personal/views.py:177
+#: webapp/personal/views.py:211
 msgid "This sensor ID is already registered."
 msgstr "Acest ID de senzor este deja înregistrat."
 
-#: webapp/personal/views.py:191
+#: webapp/personal/views.py:225
 msgid "A fine dust sensor was transferred to you"
 msgstr "Un senzor de praf fin a fost transferat la tine"
 
@@ -375,14 +443,13 @@ msgid "Configure air quality sensor yourself"
 msgstr "Configurați singur senzorul de calitate a aerului"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid ""
-"Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
+msgid "Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
 msgstr ""
-"Donează pentru Sensor.Community (Hardware, Software) acum pe Betterplace.org"
+"Donează pentru Sensor.Community (Hardware, Software) acum pe "
+"Betterplace.org"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid ""
-"Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
+msgid "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
 msgstr ""
 "Donează pentru<br>Sensor.Community<br>acum "
 "pe<br><span>Betterplace.org<span>."
@@ -393,12 +460,12 @@ msgstr "Configurarea datelor aeriene"
 
 #: webapp/templates/index.html:17
 msgid ""
-"The main purpose of this page is to enable you, as the owner of a fine dust "
-"sensor, to configure the location and other parameters yourself."
+"The main purpose of this page is to enable you, as the owner of a fine "
+"dust sensor, to configure the location and other parameters yourself."
 msgstr ""
 "Scopul principal al acestei pagini este de a vă permite, în calitate de "
-"proprietar al unui senzor de praf fin, să configurați singur locația și alți"
-" parametri."
+"proprietar al unui senzor de praf fin, să configurați singur locația și "
+"alți parametri."
 
 #: webapp/templates/index.html:18
 #, python-format
@@ -408,11 +475,20 @@ msgstr "Faceți clic aici pentru <a href=\"%(login_url)s\">log in</a>."
 #: webapp/templates/index.html:20
 #, python-format
 msgid ""
-"General information can be found at <a href=\"%(home_url)s\">Sensor.Community</a> - formerly known as Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building instructions</a>.\n"
-"            Sensor data can be found on <a href=\"%(map_url)s\">the fine dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
+"General information can be found at <a "
+"href=\"%(home_url)s\">Sensor.Community</a> - formerly known as "
+"Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building "
+"instructions</a>.\n"
+"            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
+"dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
-"Informații generale pot fi găsite la <a href=\"%(home_url)s\">Sensor.Community</a> - cunoscut anterior sub numele de Luftdaten.info, precum și la <a href=\"%(manual_url)s\">instrucțiuni de construcție</a>.\n"
-"            Datele senzorilor pot fi găsite pe <a href=\"%(map_url)s\">carta prafului fin</a> sau <a href=\"%(archive_url)s\">pot fi descărcate ca CSV-uri</a>."
+"Informații generale pot fi găsite la <a "
+"href=\"%(home_url)s\">Sensor.Community</a> - cunoscut anterior sub numele"
+" de Luftdaten.info, precum și la <a href=\"%(manual_url)s\">instrucțiuni "
+"de construcție</a>.\n"
+"            Datele senzorilor pot fi găsite pe <a "
+"href=\"%(map_url)s\">carta prafului fin</a> sau <a "
+"href=\"%(archive_url)s\">pot fi descărcate ca CSV-uri</a>."
 
 #: webapp/templates/index.html:32
 msgid "Join us!"
@@ -420,13 +496,13 @@ msgstr "Alăturați-vă nouă!"
 
 #: webapp/templates/index.html:33
 msgid ""
-"The city of the future belongs to its citizens. The digital tools, the Maker"
-" Movement and Citizen Science are leading to more and more people being "
-"given the opportunity to design the city themselves."
+"The city of the future belongs to its citizens. The digital tools, the "
+"Maker Movement and Citizen Science are leading to more and more people "
+"being given the opportunity to design the city themselves."
 msgstr ""
-"Orașul viitorului aparține cetățenilor săi. Instrumentele digitale, Mișcarea"
-" Maker și Știința Cetățenească conduc la faptul că din ce în ce mai mulți "
-"oameni au posibilitatea de a proiecta ei înșiși orașul."
+"Orașul viitorului aparține cetățenilor săi. Instrumentele digitale, "
+"Mișcarea Maker și Știința Cetățenească conduc la faptul că din ce în ce "
+"mai mulți oameni au posibilitatea de a proiecta ei înșiși orașul."
 
 #: webapp/templates/index.html:35
 msgid "About the project"
@@ -438,21 +514,21 @@ msgid ""
 "Knowledge Foundation Germany. The aim of the program is to promote "
 "developments in the areas of transparency, Open Data and Citizen Science."
 msgstr ""
-"OK Lab Stuttgart face parte din programul Code for Germany al Fundației Open"
-" Knowledge Germania. Scopul programului este de a promova evoluțiile în "
-"domeniile transparenței, datelor deschise și științei cetățenești."
+"OK Lab Stuttgart face parte din programul Code for Germany al Fundației "
+"Open Knowledge Germania. Scopul programului este de a promova evoluțiile "
+"în domeniile transparenței, datelor deschise și științei cetățenești."
 
 #: webapp/templates/index.html:37
 msgid ""
-"Regional groups consisting of designers, developers, journalists and others "
-"meet regularly in Labs. They develop apps that inform, positively shape and "
-"support society and make the work of administrations and authorities more "
-"transparent."
+"Regional groups consisting of designers, developers, journalists and "
+"others meet regularly in Labs. They develop apps that inform, positively "
+"shape and support society and make the work of administrations and "
+"authorities more transparent."
 msgstr ""
-"Grupurile regionale formate din designeri, dezvoltatori, jurnaliști și alții"
-" se întâlnesc în mod regulat în Labs. Aceștia dezvoltă aplicații care "
-"informează, modelează în mod pozitiv și sprijină societatea și fac mai "
-"transparentă activitatea administrațiilor și a autorităților."
+"Grupurile regionale formate din designeri, dezvoltatori, jurnaliști și "
+"alții se întâlnesc în mod regulat în Labs. Aceștia dezvoltă aplicații "
+"care informează, modelează în mod pozitiv și sprijină societatea și fac "
+"mai transparentă activitatea administrațiilor și a autorităților."
 
 #: webapp/templates/index.html:38
 msgid "Code a difference: Use your skills to improve your city!"
@@ -473,8 +549,8 @@ msgid ""
 "If you are of the opinion that you have a sensor at this mail address, "
 "please send us an e-mail. Send an email to"
 msgstr ""
-"Dacă sunteți de părere că aveți un senzor la această adresă de e-mail, vă "
-"rugăm să ne trimiteți un e-mail. Trimiteți un e-mail la"
+"Dacă sunteți de părere că aveți un senzor la această adresă de e-mail, vă"
+" rugăm să ne trimiteți un e-mail. Trimiteți un e-mail la"
 
 #: webapp/templates/layout.html:4
 msgid "user configuration"
@@ -515,8 +591,7 @@ msgstr "Logout"
 msgid "Login"
 msgstr "Autentificare"
 
-#: webapp/templates/layout.html:72
-#: webapp/templates/security/login_user.html:17
+#: webapp/templates/layout.html:72 webapp/templates/security/login_user.html:17
 #: webapp/templates/security/register_user.html:5
 msgid "Register"
 msgstr "Înregistrare"
@@ -580,12 +655,14 @@ msgstr "Date de la nod"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
-"Typically, two sensors are attached to each node: the fine dust sensor and the\n"
-"                        Humidity and temperature sensor. The sensor number can also be found"
+"Typically, two sensors are attached to each node: the fine dust sensor "
+"and the\n"
+"                        Humidity and temperature sensor. The sensor "
+"number can also be found"
 msgstr ""
-"În mod obișnuit, la fiecare nod sunt atașați doi senzori: senzorul de praf "
-"fin și senzorul de umiditate și temperatură. Numărul senzorului poate fi, de"
-" asemenea, găsit"
+"În mod obișnuit, la fiecare nod sunt atașați doi senzori: senzorul de "
+"praf fin și senzorul de umiditate și temperatură. Numărul senzorului "
+"poate fi, de asemenea, găsit"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
@@ -633,8 +710,7 @@ msgid "Warning! After deleting you have no more control over the sensor!"
 msgstr "Atenție! După ștergere, nu mai aveți control asupra senzorului!"
 
 #: webapp/templates/my-sensor-delete.html:11
-msgid ""
-"Also the chipID of this sensor will remain blocked for a new registration!"
+msgid "Also the chipID of this sensor will remain blocked for a new registration!"
 msgstr ""
 "De asemenea, chipID-ul acestui senzor va rămâne blocat pentru o nouă "
 "înregistrare!"
@@ -654,13 +730,13 @@ msgstr "Un e-mail a fost trimis noului proprietar"
 
 #: webapp/templates/my-sensor-give.html:9
 msgid ""
-"This allows you to transfer sensors to another person. This is especially "
-"useful if you have ordered a sensor for a friend and want to transfer it to "
-"him or her."
+"This allows you to transfer sensors to another person. This is especially"
+" useful if you have ordered a sensor for a friend and want to transfer it"
+" to him or her."
 msgstr ""
-"Acest lucru vă permite să transferați senzorii către o altă persoană. Acest "
-"lucru este util mai ales dacă ați comandat un senzor pentru un prieten și "
-"doriți să i-l transferați acestuia."
+"Acest lucru vă permite să transferați senzorii către o altă persoană. "
+"Acest lucru este util mai ales dacă ați comandat un senzor pentru un "
+"prieten și doriți să i-l transferați acestuia."
 
 #: webapp/templates/my-sensor-give.html:10
 msgid "Warning! After the transfer you have no more control over the sensor!"
@@ -673,21 +749,22 @@ msgstr "Setări ale nodului %(node_id)s"
 
 #: webapp/templates/my-sensor-settings.html:7
 msgid ""
-"With this form you can keep the data of the sensor up to date. Please note "
-"that only precise data can lead to precise evaluations with which we can "
-"also argue politically. It is therefore important that the basic sensor data"
-" is always kept up to date."
+"With this form you can keep the data of the sensor up to date. Please "
+"note that only precise data can lead to precise evaluations with which we"
+" can also argue politically. It is therefore important that the basic "
+"sensor data is always kept up to date."
 msgstr ""
 "Cu ajutorul acestui formular puteți menține datele senzorului la zi. Vă "
-"rugăm să rețineți că numai datele precise pot duce la evaluări precise cu "
-"care putem argumenta și din punct de vedere politic. Prin urmare, este "
-"important ca datele de bază ale senzorului să fie întotdeauna actualizate."
+"rugăm să rețineți că numai datele precise pot duce la evaluări precise cu"
+" care putem argumenta și din punct de vedere politic. Prin urmare, este "
+"important ca datele de bază ale senzorului să fie întotdeauna "
+"actualizate."
 
 #: webapp/templates/my-sensors.html:10
 msgid "All sensors assigned to your account can be found in this overview."
 msgstr ""
-"Toți senzorii atribuiți contului dvs. pot fi găsiți în această prezentare "
-"generală."
+"Toți senzorii atribuiți contului dvs. pot fi găsiți în această prezentare"
+" generală."
 
 #: webapp/templates/my-sensors.html:15
 msgid "Sensor UID"
@@ -731,32 +808,62 @@ msgstr "Aici vă puteți modifica setările."
 
 #: webapp/templates/privacy-policy.html:13
 msgid ""
-"<p>The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and according to the legal data protection regulations as well as this data protection explanation.</p>\n"
-"                    <p>The use of our website is generally possible without providing personal data. Insofar as personal data (e.g. name, address or e-mail addresses) is collected on our pages, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent.</p>\n"
-"                    <p>We would like to point out that data transmission via the Internet (e.g. communication via e-mail) may have security gaps. A complete protection of the data against the access by third is not possible.</p>\n"
+"<p>The operators of these pages take the protection of your personal data"
+" very seriously. We treat your personal data confidentially and according"
+" to the legal data protection regulations as well as this data protection"
+" explanation.</p>\n"
+"                    <p>The use of our website is generally possible "
+"without providing personal data. Insofar as personal data (e.g. name, "
+"address or e-mail addresses) is collected on our pages, this is always "
+"done on a voluntary basis as far as possible. This data will not be "
+"passed on to third parties without your express consent.</p>\n"
+"                    <p>We would like to point out that data transmission "
+"via the Internet (e.g. communication via e-mail) may have security gaps. "
+"A complete protection of the data against the access by third is not "
+"possible.</p>\n"
 "                    <h2>Information, deletion, blocking</h2>\n"
-"                    <p>You have the right at any time to free information about your stored personal data, their origin and recipient and the purpose of data processing as well as a right to correction, blocking or deletion of this data. You can contact us at any time at the address given in the imprint for this and other questions on the subject of personal data.</p>\n"
+"                    <p>You have the right at any time to free information"
+" about your stored personal data, their origin and recipient and the "
+"purpose of data processing as well as a right to correction, blocking or "
+"deletion of this data. You can contact us at any time at the address "
+"given in the imprint for this and other questions on the subject of "
+"personal data.</p>\n"
 "                    <h2>Cookies</h2>\n"
-"                    <p>Some of the Internet pages use so-called cookies. Cookies do not damage your computer and do not contain viruses. Cookies serve to make our offer more user-friendly, more effective and safer. Cookies are small text files that are stored on your computer by your browser.</p>\n"
-"                    <p>Most of the cookies we use are so-called \"session cookies\". They are automatically deleted at the end of your visit. Other cookies remain stored on your terminal until you delete them. These cookies enable us to recognize your browser during your next visit.</p>\n"
+"                    <p>Some of the Internet pages use so-called cookies. "
+"Cookies do not damage your computer and do not contain viruses. Cookies "
+"serve to make our offer more user-friendly, more effective and safer. "
+"Cookies are small text files that are stored on your computer by your "
+"browser.</p>\n"
+"                    <p>Most of the cookies we use are so-called \"session"
+" cookies\". They are automatically deleted at the end of your visit. "
+"Other cookies remain stored on your terminal until you delete them. These"
+" cookies enable us to recognize your browser during your next visit.</p>"
+"\n"
 "                \n"
 "                    <h2>Account and sensor data</h2>\n"
-"                    <p>The measurement data of the sensors are collected on the server of the Sensor.Community and are publicly accessible to the company. The following information will be published:</p>\n"
+"                    <p>The measurement data of the sensors are collected "
+"on the server of the Sensor.Community and are publicly accessible to the "
+"company. The following information will be published:</p>\n"
 "                    <ul>\n"
-"                        <li>The anonymized geoposition (longitude and latitude) rounded to approx. 100 m.</li>\n"
+"                        <li>The anonymized geoposition (longitude and "
+"latitude) rounded to approx. 100 m.</li>\n"
 "                        <li>The ID of your ESP8266 NodeMCU board</li>\n"
-"                        <li>The given numerical description of the environment</li>\n"
+"                        <li>The given numerical description of the "
+"environment</li>\n"
 "                        <li>The sensor height</li>\n"
 "                        <li>The description as text</li>\n"
 "                    </ul>\n"
-"                    <p>The following additional data will be stored for internal processing, but will not be published:</p>\n"
+"                    <p>The following additional data will be stored for "
+"internal processing, but will not be published:</p>\n"
 "                    <ul>\n"
 "                        <li>The postal address of the sensor</li>\n"
 "                        <li>The e-mail address</li>\n"
 "                        <li>Your first and last name</li>\n"
 "                    </ul>\n"
 "                    <h2>Server log files</h2>\n"
-"                    <p>The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:</p>\n"
+"                    <p>The provider of the pages automatically collects "
+"and stores information in so-called server log files, which your browser "
+"automatically transmits to us. These are:</p>\n"
 "                    <ul>\n"
 "                        <li>Browser type / browser version</li>\n"
 "                        <li>used operating system</li>\n"
@@ -764,47 +871,97 @@ msgid ""
 "                        <li>Hostname of the accessing computer</li>\n"
 "                        <li>Time of the server request</li>\n"
 "                    </ul>\n"
-"                    <p>These data cannot be assigned to specific persons. This data will not be merged with other data sources. We reserve the right to subsequently check this data if we become aware of concrete indications of illegal use.</p>\n"
+"                    <p>These data cannot be assigned to specific persons."
+" This data will not be merged with other data sources. We reserve the "
+"right to subsequently check this data if we become aware of concrete "
+"indications of illegal use.</p>\n"
 "                    <h2>Contradiction advertising mails</h2>\n"
-"                    <p>We hereby object to the use of contact data published within the scope of the imprint obligation to send unsolicited advertising and information material. The operators of this website expressly reserve the right to take legal action against unsolicited mailing or e-mailing of spam and other similar advertising materials.</p>\n"
+"                    <p>We hereby object to the use of contact data "
+"published within the scope of the imprint obligation to send unsolicited "
+"advertising and information material. The operators of this website "
+"expressly reserve the right to take legal action against unsolicited "
+"mailing or e-mailing of spam and other similar advertising materials.</p>"
+"\n"
 "                    "
 msgstr ""
-"<p>Operatorii acestor pagini iau foarte în serios protecția datelor dumneavoastră personale. Tratăm datele dvs. personale în mod confidențial și în conformitate cu reglementările legale privind protecția datelor, precum și cu această explicație privind protecția datelor.</p>\n"
-"                    <p>Utilizarea paginii noastre de internet este, în general, posibilă fără a furniza date cu caracter personal. În măsura în care pe paginile noastre sunt colectate date cu caracter personal (de exemplu, nume, adresă sau adrese de e-mail), acest lucru se face întotdeauna în mod voluntar, în măsura în care este posibil. Aceste date nu vor fi transmise unor terțe părți fără consimțământul dumneavoastră expres.</p>\n"
-"                    <p>Am dori să subliniem faptul că transmiterea de date prin intermediul internetului (de exemplu, comunicarea prin e-mail) poate avea lacune de securitate. O protecție completă a datelor împotriva accesului de către terți nu este posibilă.</p>\n"
+"<p>Operatorii acestor pagini iau foarte în serios protecția datelor "
+"dumneavoastră personale. Tratăm datele dvs. personale în mod confidențial"
+" și în conformitate cu reglementările legale privind protecția datelor, "
+"precum și cu această explicație privind protecția datelor.</p>\n"
+"                    <p>Utilizarea paginii noastre de internet este, în "
+"general, posibilă fără a furniza date cu caracter personal. În măsura în "
+"care pe paginile noastre sunt colectate date cu caracter personal (de "
+"exemplu, nume, adresă sau adrese de e-mail), acest lucru se face "
+"întotdeauna în mod voluntar, în măsura în care este posibil. Aceste date "
+"nu vor fi transmise unor terțe părți fără consimțământul dumneavoastră "
+"expres.</p>\n"
+"                    <p>Am dori să subliniem faptul că transmiterea de "
+"date prin intermediul internetului (de exemplu, comunicarea prin e-mail) "
+"poate avea lacune de securitate. O protecție completă a datelor împotriva"
+" accesului de către terți nu este posibilă.</p>\n"
 "                    <h2>Informare, ștergere, blocare</h2>\n"
-"                    <p>Aveți dreptul în orice moment la informații gratuite cu privire la datele dvs. personale stocate, la originea și destinatarul acestora și la scopul prelucrării datelor, precum și un drept de corectare, blocare sau ștergere a acestor date. Ne puteți contacta în orice moment la adresa indicată în amprenta pentru aceasta și alte întrebări pe tema datelor cu caracter personal.</p>\n"
+"                    <p>Aveți dreptul în orice moment la informații "
+"gratuite cu privire la datele dvs. personale stocate, la originea și "
+"destinatarul acestora și la scopul prelucrării datelor, precum și un "
+"drept de corectare, blocare sau ștergere a acestor date. Ne puteți "
+"contacta în orice moment la adresa indicată în amprenta pentru aceasta și"
+" alte întrebări pe tema datelor cu caracter personal.</p>\n"
 "                    <h2>Cookies</h2>\n"
-"                    <p>Câteva dintre paginile de internet utilizează așa-numitele cookie-uri. Cookie-urile nu vă deteriorează calculatorul și nu conțin viruși. Cookie-urile servesc pentru a face oferta noastră mai ușor de utilizat, mai eficientă și mai sigură. Cookie-urile sunt mici fișiere text care sunt stocate pe computerul dumneavoastră de către browserul dumneavoastră.</p>\n"
-"                    <p>Majoritatea cookie-urilor pe care le folosim sunt așa-numitele \"cookie-uri de sesiune\". Acestea sunt șterse automat la sfârșitul vizitei dumneavoastră. Alte cookie-uri rămân stocate pe terminalul dvs. până când le ștergeți. Aceste cookie-uri ne permit să vă recunoaștem browserul în timpul următoarei dvs. vizite.</p>\n""
-"                \n"
+"                    <p>Câteva dintre paginile de internet utilizează așa-"
+"numitele cookie-uri. Cookie-urile nu vă deteriorează calculatorul și nu "
+"conțin viruși. Cookie-urile servesc pentru a face oferta noastră mai ușor"
+" de utilizat, mai eficientă și mai sigură. Cookie-urile sunt mici fișiere"
+" text care sunt stocate pe computerul dumneavoastră de către browserul "
+"dumneavoastră.</p>\n"
+"                    <p>Majoritatea cookie-urilor pe care le folosim sunt "
+"așa-numitele \"cookie-uri de sesiune\". Acestea sunt șterse automat la "
+"sfârșitul vizitei dumneavoastră. Alte cookie-uri rămân stocate pe "
+"terminalul dvs. până când le ștergeți. Aceste cookie-uri ne permit să vă "
+"recunoaștem browserul în timpul următoarei dvs. vizite.</p>\n"
+"\"                \n"
 "                    <h2>Datele contului și ale senzorilor</h2>\n"
-"                    <p>Datele de măsurare ale senzorilor sunt colectate pe serverul Sensor.Community și sunt accesibile public pentru companie. Următoarele informații vor fi publicate:</p>\n"
+"                    <p>Datele de măsurare ale senzorilor sunt colectate "
+"pe serverul Sensor.Community și sunt accesibile public pentru companie. "
+"Următoarele informații vor fi publicate:</p>\n"
 "                    <ul>\n"
-"                        <li>Geopoziția anonimizată (longitudine și latitudine) rotunjită la aproximativ 100 m.</li>\n"
+"                        <li>Geopoziția anonimizată (longitudine și "
+"latitudine) rotunjită la aproximativ 100 m.</li>\n"
 "                        <li>Identificarea plăcii ESP8266 NodeMCU</li>\n"
 "                        <li>Descrierea numerică dată a mediului</li>\n"
 "                        <li>Înălțimea senzorului</li>\n"
 "                        <li>Descrierea sub formă de text</li>\n"
 "                    </ul>\n"
-"                    <p> Următoarele date suplimentare vor fi stocate pentru procesare internă, dar nu vor fi publicate:</p>\n"
+"                    <p> Următoarele date suplimentare vor fi stocate "
+"pentru procesare internă, dar nu vor fi publicate:</p>\n"
 "                    <ul>\n"
 "                        <li>Adresa poștală a senzorului</li>\n"
 "                        <li>Adresa de e-mail</li>\n"
 "                        <li>Numele și prenumele dumneavoastră</li>\n"
 "                    </ul>\n"
 "                    <h2>Filele de jurnal ale serverului</h2>\n"
-"                    <p>Furnizorul paginilor colectează și stochează automat informații în așa-numitele fișiere jurnal de server, pe care browserul dvs. ni le transmite automat. Acestea sunt:</p>\n"
+"                    <p>Furnizorul paginilor colectează și stochează "
+"automat informații în așa-numitele fișiere jurnal de server, pe care "
+"browserul dvs. ni le transmite automat. Acestea sunt:</p>\n"
 "                    <ul>\n"
-"                        <li>Tipul de browser / versiunea browserului</li>\n"
+"                        <li>Tipul de browser / versiunea browserului</li>"
+"\n"
 "                        <li>Sistemul de operare utilizat</li>\n"
 "                        <li>Referrer URL</li>\n"
-"                        <li>Numele de gazdă al computerului care accesează</li>\n"
+"                        <li>Numele de gazdă al computerului care "
+"accesează</li>\n"
 "                        <li>Time of the server request</li>\n"
 "                    </ul>\n"
-"                    <p>Aceste date nu pot fi atribuite unor persoane specifice. Aceste date nu vor fi fuzionate cu alte surse de date. Ne rezervăm dreptul de a verifica ulterior aceste date dacă luăm cunoștință de indicii concrete de utilizare ilegală.</p>\n"
+"                    <p>Aceste date nu pot fi atribuite unor persoane "
+"specifice. Aceste date nu vor fi fuzionate cu alte surse de date. Ne "
+"rezervăm dreptul de a verifica ulterior aceste date dacă luăm cunoștință "
+"de indicii concrete de utilizare ilegală.</p>\n"
 "                    <h2>Mailuri publicitare contradictorii</h2>\n"
-"                    <p>Prin prezenta ne opunem utilizării datelor de contact publicate în cadrul obligației de amprentă pentru a trimite materiale publicitare și de informare nesolicitate. Operatorii acestui site web își rezervă în mod expres dreptul de a lua măsuri legale împotriva trimiterii nesolicitate prin poștă sau prin e-mail a spam-ului și a altor materiale publicitare similare.</p>\n"
+"                    <p>Prin prezenta ne opunem utilizării datelor de "
+"contact publicate în cadrul obligației de amprentă pentru a trimite "
+"materiale publicitare și de informare nesolicitate. Operatorii acestui "
+"site web își rezervă în mod expres dreptul de a lua măsuri legale "
+"împotriva trimiterii nesolicitate prin poștă sau prin e-mail a spam-ului "
+"și a altor materiale publicitare similare.</p>\n"
 "                    "
 
 #: webapp/templates/recover-fail.html:13
@@ -813,8 +970,8 @@ msgstr "Setați parola Eroare"
 
 #: webapp/templates/recover-fail.html:14
 msgid ""
-"Unfortunately the link is not correct. Either it is too old, or it was not "
-"copied completely. Please try again."
+"Unfortunately the link is not correct. Either it is too old, or it was "
+"not copied completely. Please try again."
 msgstr ""
 "Din păcate, link-ul nu este corect. Fie este prea vechi, fie nu a fost "
 "copiat complet. Vă rugăm să încercați din nou."
@@ -830,11 +987,11 @@ msgstr "Vă rugăm să vă uitați în cutia poștală pentru a vă reseta parol
 
 #: webapp/templates/recover-mail-sent.html:14
 msgid ""
-"Your account was not active yet. Please look into your mailbox to reset your"
-" password and activate your account."
+"Your account was not active yet. Please look into your mailbox to reset "
+"your password and activate your account."
 msgstr ""
-"Contul dvs. nu era încă activ. Vă rugăm să vă uitați în căsuța dvs. poștală "
-"pentru a vă reseta parola și a vă activa contul."
+"Contul dvs. nu era încă activ. Vă rugăm să vă uitați în căsuța dvs. "
+"poștală pentru a vă reseta parola și a vă activa contul."
 
 #: webapp/templates/recover-set-password.html:14
 msgid "Set password"
@@ -854,8 +1011,8 @@ msgid ""
 "confirmed. Please look in your mailbox to get access to your sensors."
 msgstr ""
 "Deoarece vă conectați pentru prima dată, adresa dvs. de e-mail trebuie "
-"confirmată. Vă rugăm să vă uitați în cutia poștală pentru a avea acces la "
-"senzori."
+"confirmată. Vă rugăm să vă uitați în cutia poștală pentru a avea acces la"
+" senzori."
 
 #: webapp/templates/register-minimal.html:25
 msgid "Registration"
@@ -867,8 +1024,8 @@ msgstr "Masa senzorului Import: Stare"
 
 #: webapp/templates/sensor-import-status.html:14
 msgid ""
-"You can see all current imports in this overview. Click on Reload to update "
-"the status."
+"You can see all current imports in this overview. Click on Reload to "
+"update the status."
 msgstr ""
 "Puteți vedea toate importurile curente în această prezentare generală. "
 "Faceți clic pe Reîncărcare pentru a actualiza starea."
@@ -890,22 +1047,26 @@ msgid ""
 "With this form new nodes can be imported in masses. One node per line is "
 "expected in the following format:"
 msgstr ""
-"Cu acest formular se pot importa noduri noi în masă. Se așteaptă un nod pe "
-"linie în următorul format:"
+"Cu acest formular se pot importa noduri noi în masă. Se așteaptă un nod "
+"pe linie în următorul format:"
 
 #: webapp/templates/sensor-import.html:18
 msgid ""
-"123456 is the ID of the ESP8266 board, the e-mail is the address of the future\n"
-"                            of the owner. If this is not fixed, only the Node-ID can be specified, which is\n"
+"123456 is the ID of the ESP8266 board, the e-mail is the address of the "
+"future\n"
+"                            of the owner. If this is not fixed, only the "
+"Node-ID can be specified, which is\n"
 "                            E-mail must then be added later."
 msgstr ""
 "123456 este ID-ul plăcii ESP8266, iar e-mail-ul este adresa de e-mail a "
-"viitorului proprietar. Dacă acest lucru nu este fixat, poate fi specificat "
-"doar ID-ul nodului, care este E-mail-ul trebuie adăugat ulterior."
+"viitorului proprietar. Dacă acest lucru nu este fixat, poate fi "
+"specificat doar ID-ul nodului, care este E-mail-ul trebuie adăugat "
+"ulterior."
 
 #: webapp/templates/sensor-import.html:21
 msgid ""
-"If an email address has been specified, the owner will be notified with an email about their\n"
+"If an email address has been specified, the owner will be notified with "
+"an email about their\n"
 "                            new sensor."
 msgstr ""
 "Dacă a fost specificată o adresă de e-mail, proprietarul va fi notificat "
@@ -929,11 +1090,12 @@ msgstr "Configurație hardware"
 
 #: webapp/templates/sensor-settings-form.html:27
 msgid ""
-"click <a name=\"expert\" onclick=\"toggle_expert()\" style=\"color:blue;\"> "
-"&gt;&gt;here&lt;&lt; </a> to enable expert fields"
+"click <a name=\"expert\" onclick=\"toggle_expert()\" "
+"style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> to enable expert fields"
 msgstr ""
-"faceți clic pe <a name=\"expert\" onclick=\"toggle_expert()\" style=\"color:blue;\"> "
-"&gt;&gt;aicilt;&lt; </a> pentru a activa câmpurile de expert"
+"faceți clic pe <a name=\"expert\" onclick=\"toggle_expert()\" "
+"style=\"color:blue;\"> &gt;&gt;aicilt;&lt; </a> pentru a activa câmpurile"
+" de expert"
 
 #: webapp/templates/sensor-settings-form.html:34
 msgid "remove"
@@ -945,15 +1107,15 @@ msgstr "adăugare componentă"
 
 #: webapp/templates/sensor-settings-form.html:116
 msgid ""
-"The more precise the data we have, the better we can evaluate the data and "
-"thus energize statements. The system can also try to make a geoposition out "
-"of the address, but we would be happy if you would specify the position with"
-" the map below."
+"The more precise the data we have, the better we can evaluate the data "
+"and thus energize statements. The system can also try to make a "
+"geoposition out of the address, but we would be happy if you would "
+"specify the position with the map below."
 msgstr ""
 "Cu cât avem date mai precise, cu atât mai bine putem evalua datele și, "
-"astfel, putem dinamiza declarațiile. Sistemul poate încerca, de asemenea, să"
-" facă o geopoziție din adresă, dar am fi bucuroși dacă ați preciza poziția "
-"cu ajutorul hărții de mai jos."
+"astfel, putem dinamiza declarațiile. Sistemul poate încerca, de asemenea,"
+" să facă o geopoziție din adresă, dar am fi bucuroși dacă ați preciza "
+"poziția cu ajutorul hărții de mai jos."
 
 #: webapp/templates/sensor-settings-form.html:125
 msgid "Lookup entered address"
@@ -972,16 +1134,15 @@ msgstr "Bună ziua,"
 
 #: webapp/templates/emails/recover.html:13
 msgid "to reset your password, please use the following URL:"
-msgstr ""
-"pentru a vă reseta parola, vă rugăm să utilizați următoarea adresă URL:"
+msgstr "pentru a vă reseta parola, vă rugăm să utilizați următoarea adresă URL:"
 
 #: webapp/templates/emails/recover.html:14
 msgid ""
-"If you have not requested a new password on Sensor.Community, you can ignore"
-" this e-mail."
+"If you have not requested a new password on Sensor.Community, you can "
+"ignore this e-mail."
 msgstr ""
-"Dacă nu ați solicitat o nouă parolă pe Sensor.Community, puteți ignora acest"
-" e-mail."
+"Dacă nu ați solicitat o nouă parolă pe Sensor.Community, puteți ignora "
+"acest e-mail."
 
 #: webapp/templates/emails/recover.html:15
 #: webapp/templates/emails/register-existing.html:15
@@ -994,44 +1155,46 @@ msgstr "Cu stimă, echipa dumneavoastră Sensor.Community"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
-"in order to manage your sensor in the future, we have created an account for"
-" you. Please enter a password under the following link: "
+"in order to manage your sensor in the future, we have created an account "
+"for you. Please enter a password under the following link: "
 msgstr ""
 "pentru a vă gestiona senzorul în viitor, am creat un cont pentru "
 "dumneavoastră. Vă rugăm să introduceți o parolă la următorul link:"
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
-"If you have not created an account on Sensor.Community, you can ignore this "
-"e-mail."
+"If you have not created an account on Sensor.Community, you can ignore "
+"this e-mail."
 msgstr ""
-"Dacă nu v-ați creat un cont pe Sensor.Community, puteți ignora acest e-mail."
+"Dacă nu v-ați creat un cont pe Sensor.Community, puteți ignora acest "
+"e-mail."
 
 #: webapp/templates/emails/sensor-given.html:13
 msgid ""
-"a particulate matter sensor has been handed over to your control. Please log"
-" in with this mail address to take data and settings or to change them: "
+"a particulate matter sensor has been handed over to your control. Please "
+"log in with this mail address to take data and settings or to change "
+"them: "
 msgstr ""
-"un senzor de particule în suspensie a fost predat controlului dumneavoastră."
-" Vă rugăm să vă conectați cu această adresă de e-mail pentru a prelua datele"
-" și setările sau pentru a le modifica:"
+"un senzor de particule în suspensie a fost predat controlului "
+"dumneavoastră. Vă rugăm să vă conectați cu această adresă de e-mail "
+"pentru a prelua datele și setările sau pentru a le modifica:"
 
 #: webapp/templates/emails/sensor-given.html:14
 msgid ""
 "If you have received a sensor by mistake, please report this at "
 "tech@sensor.community."
 msgstr ""
-"Dacă ați primit un senzor din greșeală, vă rugăm să raportați acest lucru la"
-" tech@sensor.community."
+"Dacă ați primit un senzor din greșeală, vă rugăm să raportați acest lucru"
+" la tech@sensor.community."
 
 #: webapp/templates/emails/sensor-registered.html:13
 msgid ""
-"a fine dust sensor has been registered for you. Please log in with this mail"
-" address to take in or change data and settings: "
+"a fine dust sensor has been registered for you. Please log in with this "
+"mail address to take in or change data and settings: "
 msgstr ""
 "a fost înregistrat pentru dvs. un senzor de praf fin. Vă rugăm să vă "
-"conectați cu această adresă de e-mail pentru a prelua sau modifica datele și"
-" setările:"
+"conectați cu această adresă de e-mail pentru a prelua sau modifica datele"
+" și setările:"
 
 #: webapp/templates/emails/sensor-registered.html:14
 msgid ""
@@ -1054,8 +1217,7 @@ msgid "Password reminder"
 msgstr "Reamintire parolă"
 
 #: webapp/templates/security/register_user.html:17
-msgid ""
-"please wait up to 30 min to receive the mail and check your spam folder"
+msgid "please wait up to 30 min to receive the mail and check your spam folder"
 msgstr ""
 "vă rugăm să așteptați până la 30 de minute pentru a primi e-mailul și "
 "verificați dosarul de spam."
@@ -1102,7 +1264,9 @@ msgstr "login"
 
 #: webapp/users/forms.py:68
 msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>."
-msgstr "Sunt de acord cu <a href=\"/privacy-policy\">Politica de confidențialitate</a>."
+msgstr ""
+"Sunt de acord cu <a href=\"/privacy-policy\">Politica de "
+"confidențialitate</a>."
 
 #: webapp/users/forms.py:71
 msgid "Please agree to the privacy policy."
@@ -1160,3 +1324,4 @@ msgstr "Parolă nouă (repetați)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Datele utilizatorului sunt salvate."
+

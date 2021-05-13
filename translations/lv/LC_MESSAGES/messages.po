@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-11 01:37+0000\n"
+"POT-Creation-Date: 2021-05-13 10:50+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.6.0\n"
 
 #: webapp/personal/forms.py:39
@@ -88,8 +88,8 @@ msgid ""
 "No office space, but potential fine dust producers 1 = very little, 10 = "
 "very much."
 msgstr ""
-"Nav biroja telpu, bet iespējami smalko putekļu ražotāji 1 = ļoti maz, 10 = "
-"ļoti daudz."
+"Nav biroja telpu, bet iespējami smalko putekļu ražotāji 1 = ļoti maz, 10 "
+"= ļoti daudz."
 
 #: webapp/personal/forms.py:80
 msgid "How many private stoves or fireplaces are within a 100m radius?"
@@ -97,8 +97,8 @@ msgstr "Cik privātās krāsnis vai kamīni atrodas 100 m rādiusā?"
 
 #: webapp/personal/forms.py:92
 msgid ""
-"Does it smell very much like such smoke in your area? 1 = very little, 10 = "
-"very much."
+"Does it smell very much like such smoke in your area? 1 = very little, 10"
+" = very much."
 msgstr ""
 "Vai jūsu reģionā ir ļoti jūtama šādu dūmu smaka? 1 = ļoti maz, 10 = ļoti "
 "daudz."
@@ -112,8 +112,8 @@ msgid ""
 "How close are those roads? 1 = very little further away, 10 = a lot of "
 "traffic right on your doorstep."
 msgstr ""
-"Cik tuvu ir šie ceļi? 1 = pavisam nedaudz tālāk, 10 = liela satiksme tieši "
-"pie jūsu durvīm."
+"Cik tuvu ir šie ceļi? 1 = pavisam nedaudz tālāk, 10 = liela satiksme "
+"tieši pie jūsu durvīm."
 
 #: webapp/personal/forms.py:118
 msgid "PIN"
@@ -153,14 +153,15 @@ msgstr "Sensora atrašanās vieta attiecībā pret satiksmi"
 
 #: webapp/personal/forms.py:161
 msgid ""
-"1 = on the garden side, very well shielded from all streets, 10 = the sensor"
-" is on a house wall directly on the street. With this value it is irrelevant"
-" how big the street is, it is only about where the sensor is attached to the"
-" house."
+"1 = on the garden side, very well shielded from all streets, 10 = the "
+"sensor is on a house wall directly on the street. With this value it is "
+"irrelevant how big the street is, it is only about where the sensor is "
+"attached to the house."
 msgstr ""
-"1 = dārza pusē, ļoti labi pasargāts no visām ielām, 10 = sensors atrodas uz "
-"mājas sienas tieši uz ielas. Izmantojot šo vērtību, nav svarīgi, cik liela "
-"ir iela, svarīgi ir tikai tas, kur sensors ir piestiprināts pie mājas."
+"1 = dārza pusē, ļoti labi pasargāts no visām ielām, 10 = sensors atrodas "
+"uz mājas sienas tieši uz ielas. Izmantojot šo vērtību, nav svarīgi, cik "
+"liela ir iela, svarīgi ir tikai tas, kur sensors ir piestiprināts pie "
+"mājas."
 
 #: webapp/personal/forms.py:164
 msgid "Publish exact location"
@@ -179,8 +180,8 @@ msgid ""
 "Mark sensor as inactive. No notifications will be sent when sensor goes "
 "offline."
 msgstr ""
-"Atzīmējiet sensoru kā neaktīvu. Ja sensors būs izslēgts no tīkla, paziņojumi"
-" netiks nosūtīti."
+"Atzīmējiet sensoru kā neaktīvu. Ja sensors būs izslēgts no tīkla, "
+"paziņojumi netiks nosūtīti."
 
 #: webapp/personal/forms.py:174
 msgid "Short description of location"
@@ -208,9 +209,9 @@ msgstr "Sensoru padome"
 
 #: webapp/personal/forms.py:191
 msgid ""
-"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or the "
-"Smogomierz sensor version need to change this accordingly. Also in these "
-"cases the Sensor ID is the numeric part of the name only."
+"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
+"the Smogomierz sensor version need to change this accordingly. Also in "
+"these cases the Sensor ID is the numeric part of the name only."
 msgstr ""
 "Parasti tam vajadzētu būt esp8266. ESP32 plates, aveņu PI vai Smogomierz "
 "sensora versijas lietotājiem tas attiecīgi jāmaina. Arī šajos gadījumos "
@@ -265,70 +266,138 @@ msgid "Pressure at sea level"
 msgstr "Spiediens jūras līmenī"
 
 #: webapp/personal/views.py:63
+msgid "particulate matter sensor PPD42NS"
+msgstr ""
+
+#: webapp/personal/views.py:65
 msgid "particulate matter sensor SDS011"
 msgstr "cieto daļiņu sensors SDS011"
 
-#: webapp/personal/views.py:65
+#: webapp/personal/views.py:67
+msgid "particulate matter sensor SDS021"
+msgstr ""
+
+#: webapp/personal/views.py:69
 msgid "particulate matter sensor PMS1003"
 msgstr "cieto daļiņu sensors PMS1003"
 
-#: webapp/personal/views.py:67
+#: webapp/personal/views.py:71
 msgid "particulate matter sensor PMS3003"
 msgstr "cieto daļiņu sensors PMS3003"
 
-#: webapp/personal/views.py:69
+#: webapp/personal/views.py:73
 msgid "particulate matter sensor PMS5003"
 msgstr "cieto daļiņu sensors PMS5003"
 
-#: webapp/personal/views.py:71
+#: webapp/personal/views.py:75
 msgid "particulate matter sensor PMS6003"
 msgstr "cieto daļiņu sensors PMS6003"
 
-#: webapp/personal/views.py:73
+#: webapp/personal/views.py:77
 msgid "particulate matter sensor PMS7003"
 msgstr "daļiņu sensors PMS7003"
 
-#: webapp/personal/views.py:75
+#: webapp/personal/views.py:79
 msgid "particulate matter sensor SPS30"
 msgstr "daļiņu sensors SPS30"
 
-#: webapp/personal/views.py:77
+#: webapp/personal/views.py:81
+msgid "particulate matter sensor HPM"
+msgstr ""
+
+#: webapp/personal/views.py:83
 msgid "particulate matter sensor HM3301"
 msgstr "makrodaļiņu sensors HM3301"
 
-#: webapp/personal/views.py:79
+#: webapp/personal/views.py:85
+msgid "temperature/humidity sensor DS18S20"
+msgstr ""
+
+#: webapp/personal/views.py:87
+msgid "temperature/humidity sensor DS18B20"
+msgstr ""
+
+#: webapp/personal/views.py:89
 msgid "temperature/humidity sensor DHT22"
 msgstr "temperatūras un mitruma sensors DHT22"
 
-#: webapp/personal/views.py:81
+#: webapp/personal/views.py:91
 msgid "temperature/pressure sensor BMP180"
 msgstr "temperatūrasspiediena sensors BMP180"
 
-#: webapp/personal/views.py:83
+#: webapp/personal/views.py:93
 msgid "temperature/pressure sensor BMP280"
 msgstr "temperatūras spiediena sensors BMP280"
 
-#: webapp/personal/views.py:85
+#: webapp/personal/views.py:95
 msgid "temperature/humidity/pressure sensor BME280"
 msgstr "temperatūras, mitruma, spiediena sensors BME280"
 
-#: webapp/personal/views.py:87
+#: webapp/personal/views.py:97
+msgid "temperature/humidity sensor HTU21D"
+msgstr ""
+
+#: webapp/personal/views.py:99
+msgid "temperature/humidity sensor SHT10"
+msgstr ""
+
+#: webapp/personal/views.py:101
+msgid "temperature/humidity sensor SHT11"
+msgstr ""
+
+#: webapp/personal/views.py:103
+msgid "temperature/humidity sensor SHT15"
+msgstr ""
+
+#: webapp/personal/views.py:105
+msgid "temperature/humidity sensor SHT30"
+msgstr ""
+
+#: webapp/personal/views.py:107
+msgid "temperature/humidity sensor SHT31"
+msgstr ""
+
+#: webapp/personal/views.py:109
+msgid "temperature/humidity sensor SHT35"
+msgstr ""
+
+#: webapp/personal/views.py:111
+msgid "temperature/humidity sensor SHT85"
+msgstr ""
+
+#: webapp/personal/views.py:113
 msgid "temperature/humidity/CO₂ ppm sensor SCD30"
 msgstr "temperatūras un mitrumaCO₂ ppm sensors SCD30"
 
-#: webapp/personal/views.py:145
+#: webapp/personal/views.py:115
+msgid "noise sensor DNMS"
+msgstr ""
+
+#: webapp/personal/views.py:117
+msgid "radiation sensor SBM-20"
+msgstr ""
+
+#: webapp/personal/views.py:119
+msgid "radiation sensor SBM-19"
+msgstr ""
+
+#: webapp/personal/views.py:121
+msgid "radiation sensor Si22G"
+msgstr ""
+
+#: webapp/personal/views.py:179
 msgid "Settings saved successfully."
 msgstr "Iestatījumi ir veiksmīgi saglabāti."
 
-#: webapp/personal/views.py:173
+#: webapp/personal/views.py:207
 msgid "Sensor successfully registered."
 msgstr "Sensors veiksmīgi reģistrēts."
 
-#: webapp/personal/views.py:177
+#: webapp/personal/views.py:211
 msgid "This sensor ID is already registered."
 msgstr "Šis sensora ID jau ir reģistrēts."
 
-#: webapp/personal/views.py:191
+#: webapp/personal/views.py:225
 msgid "A fine dust sensor was transferred to you"
 msgstr "Jums tika nodots smalks putekļu sensors"
 
@@ -373,18 +442,14 @@ msgid "Configure air quality sensor yourself"
 msgstr "Gaisa kvalitātes sensora konfigurēšana"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid ""
-"Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
+msgid "Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
 msgstr ""
 "Ziedot par Sensor.Community (aparatūra, programmatūra) tagad vietnē "
 "Betterplace.org"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid ""
-"Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
-msgstr ""
-"Ziedot par<br>Sensor.Community<br>jau "
-"tagad<br><span>Betterplace.org<span>"
+msgid "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
+msgstr "Ziedot par<br>Sensor.Community<br>jau tagad<br><span>Betterplace.org<span>"
 
 #: webapp/templates/index.html:16
 msgid "Configure Luftdaten"
@@ -392,11 +457,11 @@ msgstr "Gaisa datu konfigurēšana"
 
 #: webapp/templates/index.html:17
 msgid ""
-"The main purpose of this page is to enable you, as the owner of a fine dust "
-"sensor, to configure the location and other parameters yourself."
+"The main purpose of this page is to enable you, as the owner of a fine "
+"dust sensor, to configure the location and other parameters yourself."
 msgstr ""
-"Šīs lapas galvenais mērķis ir ļaut jums kā smalko putekļu sensora īpašniekam"
-" pašam konfigurēt atrašanās vietu un citus parametrus."
+"Šīs lapas galvenais mērķis ir ļaut jums kā smalko putekļu sensora "
+"īpašniekam pašam konfigurēt atrašanās vietu un citus parametrus."
 
 #: webapp/templates/index.html:18
 #, python-format
@@ -406,11 +471,20 @@ msgstr "Noklikšķiniet šeit, lai <a href=\"%(login_url)s\">pierakstītos</a>."
 #: webapp/templates/index.html:20
 #, python-format
 msgid ""
-"General information can be found at <a href=\"%(home_url)s\">Sensor.Community</a> - formerly known as Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building instructions</a>.\n"
-"            Sensor data can be found on <a href=\"%(map_url)s\">the fine dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
+"General information can be found at <a "
+"href=\"%(home_url)s\">Sensor.Community</a> - formerly known as "
+"Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building "
+"instructions</a>.\n"
+"            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
+"dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
-"Vispārīgu informāciju var atrast <a href=\"%(home_url)s\">Sensor.Community</a> - agrāk pazīstams kā Luftdaten.info, kā arī <a href=\"%(manual_url)s\">būvniecības instrukcijas</a>.\n"
-"            Sensoru datus var atrast <a href=\"%(map_url)s\">smalko putekļu kartē</a> vai <a href=\"%(archive_url)s\">iegādāties CSV formātā</a>."
+"Vispārīgu informāciju var atrast <a "
+"href=\"%(home_url)s\">Sensor.Community</a> - agrāk pazīstams kā "
+"Luftdaten.info, kā arī <a href=\"%(manual_url)s\">būvniecības "
+"instrukcijas</a>.\n"
+"            Sensoru datus var atrast <a href=\"%(map_url)s\">smalko "
+"putekļu kartē</a> vai <a href=\"%(archive_url)s\">iegādāties CSV "
+"formātā</a>."
 
 #: webapp/templates/index.html:32
 msgid "Join us!"
@@ -418,13 +492,13 @@ msgstr "Pievienojieties mums!"
 
 #: webapp/templates/index.html:33
 msgid ""
-"The city of the future belongs to its citizens. The digital tools, the Maker"
-" Movement and Citizen Science are leading to more and more people being "
-"given the opportunity to design the city themselves."
+"The city of the future belongs to its citizens. The digital tools, the "
+"Maker Movement and Citizen Science are leading to more and more people "
+"being given the opportunity to design the city themselves."
 msgstr ""
-"Nākotnes pilsēta pieder tās iedzīvotājiem. Digitālie rīki, Maker kustība un "
-"pilsoniskā zinātne veicina to, ka arvien vairāk cilvēkiem tiek dota iespēja "
-"pašiem veidot pilsētu."
+"Nākotnes pilsēta pieder tās iedzīvotājiem. Digitālie rīki, Maker kustība "
+"un pilsoniskā zinātne veicina to, ka arvien vairāk cilvēkiem tiek dota "
+"iespēja pašiem veidot pilsētu."
 
 #: webapp/templates/index.html:35
 msgid "About the project"
@@ -436,26 +510,25 @@ msgid ""
 "Knowledge Foundation Germany. The aim of the program is to promote "
 "developments in the areas of transparency, Open Data and Citizen Science."
 msgstr ""
-"OK Lab Štutgartē ir daļa no Atvērto zināšanu fonda Vācijas programmas Code "
-"for Germany. Programmas mērķis ir veicināt attīstību pārredzamības, atvērto "
-"datu un pilsoniskās zinātnes jomās."
+"OK Lab Štutgartē ir daļa no Atvērto zināšanu fonda Vācijas programmas "
+"Code for Germany. Programmas mērķis ir veicināt attīstību pārredzamības, "
+"atvērto datu un pilsoniskās zinātnes jomās."
 
 #: webapp/templates/index.html:37
 msgid ""
-"Regional groups consisting of designers, developers, journalists and others "
-"meet regularly in Labs. They develop apps that inform, positively shape and "
-"support society and make the work of administrations and authorities more "
-"transparent."
+"Regional groups consisting of designers, developers, journalists and "
+"others meet regularly in Labs. They develop apps that inform, positively "
+"shape and support society and make the work of administrations and "
+"authorities more transparent."
 msgstr ""
-"Laboratorijās regulāri tiekas reģionālās grupas, kurās ietilpst dizaineri, "
-"izstrādātāji, žurnālisti un citi. Tās izstrādā lietotnes, kas informē, "
-"pozitīvi veido un atbalsta sabiedrību un padara pārvaldes un iestāžu darbu "
-"pārredzamāku."
+"Laboratorijās regulāri tiekas reģionālās grupas, kurās ietilpst "
+"dizaineri, izstrādātāji, žurnālisti un citi. Tās izstrādā lietotnes, kas "
+"informē, pozitīvi veido un atbalsta sabiedrību un padara pārvaldes un "
+"iestāžu darbu pārredzamāku."
 
 #: webapp/templates/index.html:38
 msgid "Code a difference: Use your skills to improve your city!"
-msgstr ""
-"Atšķirības kods: Izmantojiet savas prasmes, lai uzlabotu savu pilsētu!"
+msgstr "Atšķirības kods: Izmantojiet savas prasmes, lai uzlabotu savu pilsētu!"
 
 #: webapp/templates/invalid-email.html:8
 msgid "Unknown email address"
@@ -512,8 +585,7 @@ msgstr "Pieteikšanās"
 msgid "Login"
 msgstr "Pieteikšanās"
 
-#: webapp/templates/layout.html:72
-#: webapp/templates/security/login_user.html:17
+#: webapp/templates/layout.html:72 webapp/templates/security/login_user.html:17
 #: webapp/templates/security/register_user.html:5
 msgid "Register"
 msgstr "Reģistrēties"
@@ -577,11 +649,13 @@ msgstr "Dati no mezgla"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
-"Typically, two sensors are attached to each node: the fine dust sensor and the\n"
-"                        Humidity and temperature sensor. The sensor number can also be found"
+"Typically, two sensors are attached to each node: the fine dust sensor "
+"and the\n"
+"                        Humidity and temperature sensor. The sensor "
+"number can also be found"
 msgstr ""
-"Parasti katram mezglam tiek pievienoti divi sensori: smalko putekļu sensors "
-"un mitruma un temperatūras sensors. Sensora numuru var atrast arī"
+"Parasti katram mezglam tiek pievienoti divi sensori: smalko putekļu "
+"sensors un mitruma un temperatūras sensors. Sensora numuru var atrast arī"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
@@ -629,8 +703,7 @@ msgid "Warning! After deleting you have no more control over the sensor!"
 msgstr "Brīdinājums! Pēc dzēšanas jums vairs nav kontroles pār sensoru!"
 
 #: webapp/templates/my-sensor-delete.html:11
-msgid ""
-"Also the chipID of this sensor will remain blocked for a new registration!"
+msgid "Also the chipID of this sensor will remain blocked for a new registration!"
 msgstr "Arī šī sensora chipID paliks bloķēts jaunai reģistrācijai!"
 
 #: webapp/templates/my-sensor-give-success.html:13
@@ -648,12 +721,12 @@ msgstr "Jaunajam īpašniekam tika nosūtīts e-pasts"
 
 #: webapp/templates/my-sensor-give.html:9
 msgid ""
-"This allows you to transfer sensors to another person. This is especially "
-"useful if you have ordered a sensor for a friend and want to transfer it to "
-"him or her."
+"This allows you to transfer sensors to another person. This is especially"
+" useful if you have ordered a sensor for a friend and want to transfer it"
+" to him or her."
 msgstr ""
-"Tas ļauj pārsūtīt sensorus citai personai. Tas ir īpaši noderīgi, ja esat "
-"pasūtījis sensoru draugam un vēlaties to nodot viņam vai viņai."
+"Tas ļauj pārsūtīt sensorus citai personai. Tas ir īpaši noderīgi, ja esat"
+" pasūtījis sensoru draugam un vēlaties to nodot viņam vai viņai."
 
 #: webapp/templates/my-sensor-give.html:10
 msgid "Warning! After the transfer you have no more control over the sensor!"
@@ -666,15 +739,15 @@ msgstr "Mezgla iestatījumi %(node_id)s"
 
 #: webapp/templates/my-sensor-settings.html:7
 msgid ""
-"With this form you can keep the data of the sensor up to date. Please note "
-"that only precise data can lead to precise evaluations with which we can "
-"also argue politically. It is therefore important that the basic sensor data"
-" is always kept up to date."
+"With this form you can keep the data of the sensor up to date. Please "
+"note that only precise data can lead to precise evaluations with which we"
+" can also argue politically. It is therefore important that the basic "
+"sensor data is always kept up to date."
 msgstr ""
-"Izmantojot šo veidlapu, varat atjaunināt sensora datus. Lūdzu, ņemiet vērā, "
-"ka tikai precīzi dati var sniegt precīzus novērtējumus, ar kuriem mēs varam "
-"arī politiski argumentēt. Tāpēc ir svarīgi, lai sensora pamatdati vienmēr "
-"būtu aktuāli."
+"Izmantojot šo veidlapu, varat atjaunināt sensora datus. Lūdzu, ņemiet "
+"vērā, ka tikai precīzi dati var sniegt precīzus novērtējumus, ar kuriem "
+"mēs varam arī politiski argumentēt. Tāpēc ir svarīgi, lai sensora "
+"pamatdati vienmēr būtu aktuāli."
 
 #: webapp/templates/my-sensors.html:10
 msgid "All sensors assigned to your account can be found in this overview."
@@ -722,32 +795,62 @@ msgstr "Šeit varat mainīt iestatījumus."
 
 #: webapp/templates/privacy-policy.html:13
 msgid ""
-"<p>The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and according to the legal data protection regulations as well as this data protection explanation.</p>\n"
-"                    <p>The use of our website is generally possible without providing personal data. Insofar as personal data (e.g. name, address or e-mail addresses) is collected on our pages, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent.</p>\n"
-"                    <p>We would like to point out that data transmission via the Internet (e.g. communication via e-mail) may have security gaps. A complete protection of the data against the access by third is not possible.</p>\n"
+"<p>The operators of these pages take the protection of your personal data"
+" very seriously. We treat your personal data confidentially and according"
+" to the legal data protection regulations as well as this data protection"
+" explanation.</p>\n"
+"                    <p>The use of our website is generally possible "
+"without providing personal data. Insofar as personal data (e.g. name, "
+"address or e-mail addresses) is collected on our pages, this is always "
+"done on a voluntary basis as far as possible. This data will not be "
+"passed on to third parties without your express consent.</p>\n"
+"                    <p>We would like to point out that data transmission "
+"via the Internet (e.g. communication via e-mail) may have security gaps. "
+"A complete protection of the data against the access by third is not "
+"possible.</p>\n"
 "                    <h2>Information, deletion, blocking</h2>\n"
-"                    <p>You have the right at any time to free information about your stored personal data, their origin and recipient and the purpose of data processing as well as a right to correction, blocking or deletion of this data. You can contact us at any time at the address given in the imprint for this and other questions on the subject of personal data.</p>\n"
+"                    <p>You have the right at any time to free information"
+" about your stored personal data, their origin and recipient and the "
+"purpose of data processing as well as a right to correction, blocking or "
+"deletion of this data. You can contact us at any time at the address "
+"given in the imprint for this and other questions on the subject of "
+"personal data.</p>\n"
 "                    <h2>Cookies</h2>\n"
-"                    <p>Some of the Internet pages use so-called cookies. Cookies do not damage your computer and do not contain viruses. Cookies serve to make our offer more user-friendly, more effective and safer. Cookies are small text files that are stored on your computer by your browser.</p>\n"
-"                    <p>Most of the cookies we use are so-called \"session cookies\". They are automatically deleted at the end of your visit. Other cookies remain stored on your terminal until you delete them. These cookies enable us to recognize your browser during your next visit.</p>\n"
+"                    <p>Some of the Internet pages use so-called cookies. "
+"Cookies do not damage your computer and do not contain viruses. Cookies "
+"serve to make our offer more user-friendly, more effective and safer. "
+"Cookies are small text files that are stored on your computer by your "
+"browser.</p>\n"
+"                    <p>Most of the cookies we use are so-called \"session"
+" cookies\". They are automatically deleted at the end of your visit. "
+"Other cookies remain stored on your terminal until you delete them. These"
+" cookies enable us to recognize your browser during your next visit.</p>"
+"\n"
 "                \n"
 "                    <h2>Account and sensor data</h2>\n"
-"                    <p>The measurement data of the sensors are collected on the server of the Sensor.Community and are publicly accessible to the company. The following information will be published:</p>\n"
+"                    <p>The measurement data of the sensors are collected "
+"on the server of the Sensor.Community and are publicly accessible to the "
+"company. The following information will be published:</p>\n"
 "                    <ul>\n"
-"                        <li>The anonymized geoposition (longitude and latitude) rounded to approx. 100 m.</li>\n"
+"                        <li>The anonymized geoposition (longitude and "
+"latitude) rounded to approx. 100 m.</li>\n"
 "                        <li>The ID of your ESP8266 NodeMCU board</li>\n"
-"                        <li>The given numerical description of the environment</li>\n"
+"                        <li>The given numerical description of the "
+"environment</li>\n"
 "                        <li>The sensor height</li>\n"
 "                        <li>The description as text</li>\n"
 "                    </ul>\n"
-"                    <p>The following additional data will be stored for internal processing, but will not be published:</p>\n"
+"                    <p>The following additional data will be stored for "
+"internal processing, but will not be published:</p>\n"
 "                    <ul>\n"
 "                        <li>The postal address of the sensor</li>\n"
 "                        <li>The e-mail address</li>\n"
 "                        <li>Your first and last name</li>\n"
 "                    </ul>\n"
 "                    <h2>Server log files</h2>\n"
-"                    <p>The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:</p>\n"
+"                    <p>The provider of the pages automatically collects "
+"and stores information in so-called server log files, which your browser "
+"automatically transmits to us. These are:</p>\n"
 "                    <ul>\n"
 "                        <li>Browser type / browser version</li>\n"
 "                        <li>used operating system</li>\n"
@@ -755,47 +858,92 @@ msgid ""
 "                        <li>Hostname of the accessing computer</li>\n"
 "                        <li>Time of the server request</li>\n"
 "                    </ul>\n"
-"                    <p>These data cannot be assigned to specific persons. This data will not be merged with other data sources. We reserve the right to subsequently check this data if we become aware of concrete indications of illegal use.</p>\n"
+"                    <p>These data cannot be assigned to specific persons."
+" This data will not be merged with other data sources. We reserve the "
+"right to subsequently check this data if we become aware of concrete "
+"indications of illegal use.</p>\n"
 "                    <h2>Contradiction advertising mails</h2>\n"
-"                    <p>We hereby object to the use of contact data published within the scope of the imprint obligation to send unsolicited advertising and information material. The operators of this website expressly reserve the right to take legal action against unsolicited mailing or e-mailing of spam and other similar advertising materials.</p>\n"
+"                    <p>We hereby object to the use of contact data "
+"published within the scope of the imprint obligation to send unsolicited "
+"advertising and information material. The operators of this website "
+"expressly reserve the right to take legal action against unsolicited "
+"mailing or e-mailing of spam and other similar advertising materials.</p>"
+"\n"
 "                    "
 msgstr ""
-"<p>Šo lapu operatori ļoti nopietni izturas pret jūsu personas datu aizsardzību. Mēs rīkojamies ar jūsu personas datiem konfidenciāli un saskaņā ar tiesiskajiem datu aizsardzības noteikumiem, kā arī šo datu aizsardzības paskaidrojumu.</p>\n"
-"                    <p>Mūsu tīmekļa vietnes izmantošana parasti ir iespējama, nesniedzot personas datus. Ciktāl mūsu lapās tiek vākti personas dati (piemēram, vārds, uzvārds, adrese vai e-pasta adrese), tas vienmēr tiek darīts pēc iespējas brīvprātīgi. Šie dati netiks nodoti trešajām personām bez jūsu skaidras piekrišanas.</p>\n"
-"                    <p>Mēs vēlamies norādīt, ka datu pārraidei internetā (piemēram, saziņai, izmantojot e-pastu) var būt drošības nepilnības. Pilnīga datu aizsardzība pret trešo personu piekļuvi nav iespējama.</p>\n"
+"<p>Šo lapu operatori ļoti nopietni izturas pret jūsu personas datu "
+"aizsardzību. Mēs rīkojamies ar jūsu personas datiem konfidenciāli un "
+"saskaņā ar tiesiskajiem datu aizsardzības noteikumiem, kā arī šo datu "
+"aizsardzības paskaidrojumu.</p>\n"
+"                    <p>Mūsu tīmekļa vietnes izmantošana parasti ir "
+"iespējama, nesniedzot personas datus. Ciktāl mūsu lapās tiek vākti "
+"personas dati (piemēram, vārds, uzvārds, adrese vai e-pasta adrese), tas "
+"vienmēr tiek darīts pēc iespējas brīvprātīgi. Šie dati netiks nodoti "
+"trešajām personām bez jūsu skaidras piekrišanas.</p>\n"
+"                    <p>Mēs vēlamies norādīt, ka datu pārraidei internetā "
+"(piemēram, saziņai, izmantojot e-pastu) var būt drošības nepilnības. "
+"Pilnīga datu aizsardzība pret trešo personu piekļuvi nav iespējama.</p>\n"
 "                    <h2>Informēšana, dzēšana, bloķēšana</h2>\n"
-"                    <p>Jums ir tiesības jebkurā laikā bez maksas saņemt informāciju par jūsu saglabātajiem personas datiem, to izcelsmi un saņēmēju un datu apstrādes mērķi, kā arī tiesības uz šo datu labošanu, bloķēšanu vai dzēšanu. Par šo un citiem jautājumiem par personas datiem jūs varat jebkurā laikā sazināties ar mums, izmantojot drukā norādīto adresi.</p>\n"
+"                    <p>Jums ir tiesības jebkurā laikā bez maksas saņemt "
+"informāciju par jūsu saglabātajiem personas datiem, to izcelsmi un "
+"saņēmēju un datu apstrādes mērķi, kā arī tiesības uz šo datu labošanu, "
+"bloķēšanu vai dzēšanu. Par šo un citiem jautājumiem par personas datiem "
+"jūs varat jebkurā laikā sazināties ar mums, izmantojot drukā norādīto "
+"adresi.</p>\n"
 "                    <h2>Sīkdatnes</h2>\n"
-"                    <p>Ja dažās interneta lapās tiek izmantotas tā sauktās sīkdatnes. Sīkdatnes nebojā jūsu datoru un nesatur vīrusus. Sīkdatnes kalpo, lai padarītu mūsu piedāvājumu lietotājam draudzīgāku, efektīvāku un drošāku. Sīkdatnes ir nelieli teksta faili, ko pārlūkprogramma saglabā jūsu datorā.</p>\n"
-"                    <p>Vairums mūsu izmantoto sīkfailu ir tā sauktie \"sesijas sīkfaili\". Tās tiek automātiski dzēstas pēc jūsu apmeklējuma beigām. Citas sīkdatnes paliek saglabātas jūsu terminālī, līdz jūs tās dzēsīsiet. Šīs sīkdatnes ļauj mums atpazīt jūsu pārlūkprogrammu nākamā apmeklējuma laikā.</p>\n"
+"                    <p>Ja dažās interneta lapās tiek izmantotas tā "
+"sauktās sīkdatnes. Sīkdatnes nebojā jūsu datoru un nesatur vīrusus. "
+"Sīkdatnes kalpo, lai padarītu mūsu piedāvājumu lietotājam draudzīgāku, "
+"efektīvāku un drošāku. Sīkdatnes ir nelieli teksta faili, ko "
+"pārlūkprogramma saglabā jūsu datorā.</p>\n"
+"                    <p>Vairums mūsu izmantoto sīkfailu ir tā sauktie "
+"\"sesijas sīkfaili\". Tās tiek automātiski dzēstas pēc jūsu apmeklējuma "
+"beigām. Citas sīkdatnes paliek saglabātas jūsu terminālī, līdz jūs tās "
+"dzēsīsiet. Šīs sīkdatnes ļauj mums atpazīt jūsu pārlūkprogrammu nākamā "
+"apmeklējuma laikā.</p>\n"
 "                \n"
 "                    <h2>Konta un sensoru dati</h2>\n"
-"                    <p>Sensoru mērījumu dati tiek apkopoti Sensor.Community serverī un ir publiski pieejami uzņēmumam. Tiek publicēta šāda informācija:</p>\n"
+"                    <p>Sensoru mērījumu dati tiek apkopoti "
+"Sensor.Community serverī un ir publiski pieejami uzņēmumam. Tiek "
+"publicēta šāda informācija:</p>\n"
 "                    <ul>\n"
-"                        <li>Anonimizētā ģeopozīcija (ģeogrāfiskais garums un platums), noapaļota līdz aptuveni 100 m.</li>\n"
+"                        <li>Anonimizētā ģeopozīcija (ģeogrāfiskais garums"
+" un platums), noapaļota līdz aptuveni 100 m.</li>\n"
 "                        <li>Tavas ESP8266 NodeMCU plates ID</li>\n"
 "                        <li>Dotais skaitliskais vides apraksts</li>\n"
 "                        <li>Sensora augstums</li>\n"
 "                        <li>Apraksts kā teksts</li>\n"
 "                    </ul>\n"
-"                    <p>Šādi papildu dati tiks saglabāti iekšējai apstrādei, bet netiks publicēti:</p>\n"
+"                    <p>Šādi papildu dati tiks saglabāti iekšējai "
+"apstrādei, bet netiks publicēti:</p>\n"
 "                    <ul>\n"
-"                        <li>Sensora pasta adrese</li>\n " "
-"                        <li>E-pasta adrese</li>\n"
+"                        <li>Sensora pasta adrese</li>\n"
+" \"                         <li>E-pasta adrese</li>\n"
 "                        <li>Jūsu vārds un uzvārds</li>\n"
 "                    </ul>\n"
 "                    <h2>Servera žurnāla faili</h2>\n"
-"                    <p>Šī lapu nodrošinātājs automātiski vāc un saglabā informāciju tā sauktajos servera žurnāla failos, ko jūsu pārlūkprogramma automātiski nosūta mums. Tie ir:</p>\n"
+"                    <p>Šī lapu nodrošinātājs automātiski vāc un saglabā "
+"informāciju tā sauktajos servera žurnāla failos, ko jūsu pārlūkprogramma "
+"automātiski nosūta mums. Tie ir:</p>\n"
 "                    <ul>\n"
-"                        <li>Pārlūkprogrammas tips / pārlūkprogrammas versija</li>\n"
+"                        <li>Pārlūkprogrammas tips / pārlūkprogrammas "
+"versija</li>\n"
 "                        <li>izmantotā operētājsistēma</li>\n"
 "                        <li>Referera URL</li>\n"
 "                        <li>Pieejošā datora viesvietas nosaukums</li>\n"
 "                        <li>Servera pieprasījuma laiks</li>\n"
 "                    </ul>\n"
-"                    <p>Šos datus nevar piešķirt konkrētām personām. Šie dati netiks apvienoti ar citiem datu avotiem. Mēs paturam tiesības vēlāk pārbaudīt šos datus, ja uzzināsim par konkrētām nelikumīgas izmantošanas pazīmēm.</p>\n"
+"                    <p>Šos datus nevar piešķirt konkrētām personām. Šie "
+"dati netiks apvienoti ar citiem datu avotiem. Mēs paturam tiesības vēlāk "
+"pārbaudīt šos datus, ja uzzināsim par konkrētām nelikumīgas izmantošanas "
+"pazīmēm.</p>\n"
 "                    <h2>Pretrunu reklāmas vēstules</h2>\n"
-"                    <p>Ar šo mēs iebilstam pret iespieddarbu pienākuma ietvaros publicēto kontaktinformācijas datu izmantošanu, lai nosūtītu nepieprasītus reklāmas un informatīvos materiālus. Šīs tīmekļa vietnes operatori nepārprotami patur tiesības vērsties tiesā pret nevēlamu surogātpasta un citu līdzīgu reklāmas materiālu sūtīšanu vai nosūtīšanu pa e-pastu.</p>\n"
+"                    <p>Ar šo mēs iebilstam pret iespieddarbu pienākuma "
+"ietvaros publicēto kontaktinformācijas datu izmantošanu, lai nosūtītu "
+"nepieprasītus reklāmas un informatīvos materiālus. Šīs tīmekļa vietnes "
+"operatori nepārprotami patur tiesības vērsties tiesā pret nevēlamu "
+"surogātpasta un citu līdzīgu reklāmas materiālu sūtīšanu vai nosūtīšanu "
+"pa e-pastu.</p>\n"
 "                    "
 
 #: webapp/templates/recover-fail.html:13
@@ -804,11 +952,11 @@ msgstr "Iestatīt paroli Kļūda"
 
 #: webapp/templates/recover-fail.html:14
 msgid ""
-"Unfortunately the link is not correct. Either it is too old, or it was not "
-"copied completely. Please try again."
+"Unfortunately the link is not correct. Either it is too old, or it was "
+"not copied completely. Please try again."
 msgstr ""
-"Diemžēl saite nav pareiza. Vai nu tā ir pārāk veca, vai arī tā nav pilnībā "
-"nokopēta. Lūdzu, mēģiniet vēlreiz."
+"Diemžēl saite nav pareiza. Vai nu tā ir pārāk veca, vai arī tā nav "
+"pilnībā nokopēta. Lūdzu, mēģiniet vēlreiz."
 
 #: webapp/templates/recover-mail-sent-again.html:13
 #: webapp/templates/recover-mail-sent.html:13
@@ -821,8 +969,8 @@ msgstr "Lūdzu, ielūkojieties savā pastkastītē, lai atiestatītu paroli."
 
 #: webapp/templates/recover-mail-sent.html:14
 msgid ""
-"Your account was not active yet. Please look into your mailbox to reset your"
-" password and activate your account."
+"Your account was not active yet. Please look into your mailbox to reset "
+"your password and activate your account."
 msgstr ""
 "Jūsu konts vēl nebija aktīvs. Lūdzu, ielūkojieties savā pastkastītē, lai "
 "atjaunotu paroli un aktivizētu kontu."
@@ -857,11 +1005,11 @@ msgstr "Sensora masas imports: statuss"
 
 #: webapp/templates/sensor-import-status.html:14
 msgid ""
-"You can see all current imports in this overview. Click on Reload to update "
-"the status."
+"You can see all current imports in this overview. Click on Reload to "
+"update the status."
 msgstr ""
-"Šajā pārskatā varat apskatīt visus pašreizējos importētos dokumentus. Lai "
-"atjauninātu statusu, noklikšķiniet uz Pārlādēt."
+"Šajā pārskatā varat apskatīt visus pašreizējos importētos dokumentus. Lai"
+" atjauninātu statusu, noklikšķiniet uz Pārlādēt."
 
 #: webapp/templates/sensor-import-status.html:18
 msgid "ID"
@@ -880,26 +1028,29 @@ msgid ""
 "With this form new nodes can be imported in masses. One node per line is "
 "expected in the following format:"
 msgstr ""
-"Izmantojot šo veidlapu, var masveidā importēt jaunus mezglus. Katrā rindā ir"
-" paredzēts viens mezgls šādā formātā:"
+"Izmantojot šo veidlapu, var masveidā importēt jaunus mezglus. Katrā rindā"
+" ir paredzēts viens mezgls šādā formātā:"
 
 #: webapp/templates/sensor-import.html:18
 msgid ""
-"123456 is the ID of the ESP8266 board, the e-mail is the address of the future\n"
-"                            of the owner. If this is not fixed, only the Node-ID can be specified, which is\n"
+"123456 is the ID of the ESP8266 board, the e-mail is the address of the "
+"future\n"
+"                            of the owner. If this is not fixed, only the "
+"Node-ID can be specified, which is\n"
 "                            E-mail must then be added later."
 msgstr ""
-"123456 ir ESP8266 plates ID, e-pasta adrese ir īpašnieka nākotnes adrese. Ja"
-" tas nav fiksēts, var norādīt tikai mezgla ID, un e-pasta adrese jāpievieno "
-"vēlāk."
+"123456 ir ESP8266 plates ID, e-pasta adrese ir īpašnieka nākotnes adrese."
+" Ja tas nav fiksēts, var norādīt tikai mezgla ID, un e-pasta adrese "
+"jāpievieno vēlāk."
 
 #: webapp/templates/sensor-import.html:21
 msgid ""
-"If an email address has been specified, the owner will be notified with an email about their\n"
+"If an email address has been specified, the owner will be notified with "
+"an email about their\n"
 "                            new sensor."
 msgstr ""
-"Ja ir norādīta e-pasta adrese, īpašniekam tiks nosūtīts e-pasta paziņojums "
-"par jauno sensoru."
+"Ja ir norādīta e-pasta adrese, īpašniekam tiks nosūtīts e-pasta "
+"paziņojums par jauno sensoru."
 
 #: webapp/templates/sensor-register.html:6
 msgid "Sensor registration"
@@ -919,11 +1070,12 @@ msgstr "Aparatūras konfigurācija"
 
 #: webapp/templates/sensor-settings-form.html:27
 msgid ""
-"click <a name=\"expert\" onclick=\"toggle_expert()\" style=\"color:blue;\"> "
-"&gt;&gt;here&lt;&lt; </a> to enable expert fields"
+"click <a name=\"expert\" onclick=\"toggle_expert()\" "
+"style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> to enable expert fields"
 msgstr ""
-"noklikšķiniet uz <a name=\"expert\" onclick=\"toggle_expert()\" style=\"color:blue;\"> "
-"&gt;&gt;šeit&lt;&lt; </a> lai iespējotu ekspertu laukus."
+"noklikšķiniet uz <a name=\"expert\" onclick=\"toggle_expert()\" "
+"style=\"color:blue;\"> &gt;&gt;šeit&lt;&lt; </a> lai iespējotu ekspertu "
+"laukus."
 
 #: webapp/templates/sensor-settings-form.html:34
 msgid "remove"
@@ -935,15 +1087,15 @@ msgstr "pievienot komponentu"
 
 #: webapp/templates/sensor-settings-form.html:116
 msgid ""
-"The more precise the data we have, the better we can evaluate the data and "
-"thus energize statements. The system can also try to make a geoposition out "
-"of the address, but we would be happy if you would specify the position with"
-" the map below."
+"The more precise the data we have, the better we can evaluate the data "
+"and thus energize statements. The system can also try to make a "
+"geoposition out of the address, but we would be happy if you would "
+"specify the position with the map below."
 msgstr ""
 "Jo precīzāki dati ir mūsu rīcībā, jo labāk mēs varam tos novērtēt un "
-"tādējādi enerģiskāk formulēt paziņojumus. Sistēma var arī mēģināt no adreses"
-" izveidot ģeopozīciju, taču mēs būtu priecīgi, ja jūs precizētu atrašanās "
-"vietu, izmantojot zemāk redzamo karti."
+"tādējādi enerģiskāk formulēt paziņojumus. Sistēma var arī mēģināt no "
+"adreses izveidot ģeopozīciju, taču mēs būtu priecīgi, ja jūs precizētu "
+"atrašanās vietu, izmantojot zemāk redzamo karti."
 
 #: webapp/templates/sensor-settings-form.html:125
 msgid "Lookup entered address"
@@ -966,11 +1118,11 @@ msgstr "lai atiestatītu paroli, lūdzu, izmantojiet šo URL adresi:"
 
 #: webapp/templates/emails/recover.html:14
 msgid ""
-"If you have not requested a new password on Sensor.Community, you can ignore"
-" this e-mail."
+"If you have not requested a new password on Sensor.Community, you can "
+"ignore this e-mail."
 msgstr ""
-"Ja vietnē Sensor.Community neesat pieprasījis jaunu paroli, šo e-pastu varat"
-" ignorēt."
+"Ja vietnē Sensor.Community neesat pieprasījis jaunu paroli, šo e-pastu "
+"varat ignorēt."
 
 #: webapp/templates/emails/recover.html:15
 #: webapp/templates/emails/register-existing.html:15
@@ -983,27 +1135,28 @@ msgstr "Ar cieņu, Jūsu Sensor.Community komanda"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
-"in order to manage your sensor in the future, we have created an account for"
-" you. Please enter a password under the following link: "
+"in order to manage your sensor in the future, we have created an account "
+"for you. Please enter a password under the following link: "
 msgstr ""
-"lai turpmāk varētu pārvaldīt sensoru, esam izveidojuši jūsu kontu. Lūdzu, "
-"ievadiet paroli šajā saitē:"
+"lai turpmāk varētu pārvaldīt sensoru, esam izveidojuši jūsu kontu. Lūdzu,"
+" ievadiet paroli šajā saitē:"
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
-"If you have not created an account on Sensor.Community, you can ignore this "
-"e-mail."
+"If you have not created an account on Sensor.Community, you can ignore "
+"this e-mail."
 msgstr ""
 "Ja neesat izveidojis kontu vietnē Sensor.Community, varat ignorēt šo "
 "e-pastu."
 
 #: webapp/templates/emails/sensor-given.html:13
 msgid ""
-"a particulate matter sensor has been handed over to your control. Please log"
-" in with this mail address to take data and settings or to change them: "
+"a particulate matter sensor has been handed over to your control. Please "
+"log in with this mail address to take data and settings or to change "
+"them: "
 msgstr ""
-"daļiņu sensors ir nodots jūsu kontrolei. Lai noņemtu datus un iestatījumus "
-"vai tos mainītu, piesakieties, izmantojot šo e-pasta adresi:"
+"daļiņu sensors ir nodots jūsu kontrolei. Lai noņemtu datus un "
+"iestatījumus vai tos mainītu, piesakieties, izmantojot šo e-pasta adresi:"
 
 #: webapp/templates/emails/sensor-given.html:14
 msgid ""
@@ -1015,11 +1168,11 @@ msgstr ""
 
 #: webapp/templates/emails/sensor-registered.html:13
 msgid ""
-"a fine dust sensor has been registered for you. Please log in with this mail"
-" address to take in or change data and settings: "
+"a fine dust sensor has been registered for you. Please log in with this "
+"mail address to take in or change data and settings: "
 msgstr ""
-"jums ir reģistrēts smalko putekļu sensors. Lai ievadītu vai mainītu datus un"
-" iestatījumus, lūdzu, piesakieties, izmantojot šo e-pasta adresi:"
+"jums ir reģistrēts smalko putekļu sensors. Lai ievadītu vai mainītu datus"
+" un iestatījumus, lūdzu, piesakieties, izmantojot šo e-pasta adresi:"
 
 #: webapp/templates/emails/sensor-registered.html:14
 msgid ""
@@ -1042,8 +1195,7 @@ msgid "Password reminder"
 msgstr "Paroles atgādinājums"
 
 #: webapp/templates/security/register_user.html:17
-msgid ""
-"please wait up to 30 min to receive the mail and check your spam folder"
+msgid "please wait up to 30 min to receive the mail and check your spam folder"
 msgstr ""
 "lūdzu, pagaidiet līdz 30 minūtēm, lai saņemtu pastu, un pārbaudiet savu "
 "surogātpasta mapi."
@@ -1148,3 +1300,4 @@ msgstr "Jauna parole (atkārtot)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Lietotāja datu saglabāšana."
+

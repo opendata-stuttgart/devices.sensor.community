@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-11 01:37+0000\n"
+"POT-Creation-Date: 2021-05-13 10:50+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.6.0\n"
 
 #: webapp/personal/forms.py:39
@@ -95,8 +95,8 @@ msgstr "方圆100米内有多少个私人炉子或壁炉？"
 
 #: webapp/personal/forms.py:92
 msgid ""
-"Does it smell very much like such smoke in your area? 1 = very little, 10 = "
-"very much."
+"Does it smell very much like such smoke in your area? 1 = very little, 10"
+" = very much."
 msgstr "在你的地区，是否有非常多的这种烟味？1=非常少，10=非常多。"
 
 #: webapp/personal/forms.py:95
@@ -147,12 +147,11 @@ msgstr "传感器相对于交通的位置"
 
 #: webapp/personal/forms.py:161
 msgid ""
-"1 = on the garden side, very well shielded from all streets, 10 = the sensor"
-" is on a house wall directly on the street. With this value it is irrelevant"
-" how big the street is, it is only about where the sensor is attached to the"
-" house."
-msgstr ""
-"1=在花园一侧，对所有街道都有很好的遮挡，10=传感器在直接对着街道的房子墙上。有了这个值，街道有多大就无关紧要了，它只关系到传感器连接到房子的位置。"
+"1 = on the garden side, very well shielded from all streets, 10 = the "
+"sensor is on a house wall directly on the street. With this value it is "
+"irrelevant how big the street is, it is only about where the sensor is "
+"attached to the house."
+msgstr "1=在花园一侧，对所有街道都有很好的遮挡，10=传感器在直接对着街道的房子墙上。有了这个值，街道有多大就无关紧要了，它只关系到传感器连接到房子的位置。"
 
 #: webapp/personal/forms.py:164
 msgid "Publish exact location"
@@ -198,9 +197,9 @@ msgstr "传感器板"
 
 #: webapp/personal/forms.py:191
 msgid ""
-"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or the "
-"Smogomierz sensor version need to change this accordingly. Also in these "
-"cases the Sensor ID is the numeric part of the name only."
+"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
+"the Smogomierz sensor version need to change this accordingly. Also in "
+"these cases the Sensor ID is the numeric part of the name only."
 msgstr ""
 "通常情况下，这应该是esp8266。ESP32板、Raspberry "
 "PI或Smogomierz传感器版本的用户需要相应地改变这个。另外，在这些情况下，传感器ID只是名称的数字部分。"
@@ -254,70 +253,138 @@ msgid "Pressure at sea level"
 msgstr "海平面上的压力"
 
 #: webapp/personal/views.py:63
+msgid "particulate matter sensor PPD42NS"
+msgstr ""
+
+#: webapp/personal/views.py:65
 msgid "particulate matter sensor SDS011"
 msgstr "颗粒物传感器SDS011"
 
-#: webapp/personal/views.py:65
+#: webapp/personal/views.py:67
+msgid "particulate matter sensor SDS021"
+msgstr ""
+
+#: webapp/personal/views.py:69
 msgid "particulate matter sensor PMS1003"
 msgstr "颗粒物传感器PMS1003"
 
-#: webapp/personal/views.py:67
+#: webapp/personal/views.py:71
 msgid "particulate matter sensor PMS3003"
 msgstr "颗粒物传感器PMS3003"
 
-#: webapp/personal/views.py:69
+#: webapp/personal/views.py:73
 msgid "particulate matter sensor PMS5003"
 msgstr "颗粒物传感器PMS5003"
 
-#: webapp/personal/views.py:71
+#: webapp/personal/views.py:75
 msgid "particulate matter sensor PMS6003"
 msgstr "颗粒物传感器PMS6003"
 
-#: webapp/personal/views.py:73
+#: webapp/personal/views.py:77
 msgid "particulate matter sensor PMS7003"
 msgstr "颗粒物传感器PMS7003"
 
-#: webapp/personal/views.py:75
+#: webapp/personal/views.py:79
 msgid "particulate matter sensor SPS30"
 msgstr "颗粒物传感器SPS30"
 
-#: webapp/personal/views.py:77
+#: webapp/personal/views.py:81
+msgid "particulate matter sensor HPM"
+msgstr ""
+
+#: webapp/personal/views.py:83
 msgid "particulate matter sensor HM3301"
 msgstr "颗粒物传感器HM3301"
 
-#: webapp/personal/views.py:79
+#: webapp/personal/views.py:85
+msgid "temperature/humidity sensor DS18S20"
+msgstr ""
+
+#: webapp/personal/views.py:87
+msgid "temperature/humidity sensor DS18B20"
+msgstr ""
+
+#: webapp/personal/views.py:89
 msgid "temperature/humidity sensor DHT22"
 msgstr "温湿度传感器DHT22"
 
-#: webapp/personal/views.py:81
+#: webapp/personal/views.py:91
 msgid "temperature/pressure sensor BMP180"
 msgstr "温度压力传感器BMP180"
 
-#: webapp/personal/views.py:83
+#: webapp/personal/views.py:93
 msgid "temperature/pressure sensor BMP280"
 msgstr "温度-压力传感器BMP280"
 
-#: webapp/personal/views.py:85
+#: webapp/personal/views.py:95
 msgid "temperature/humidity/pressure sensor BME280"
 msgstr "温度-湿度-压力传感器BME280"
 
-#: webapp/personal/views.py:87
+#: webapp/personal/views.py:97
+msgid "temperature/humidity sensor HTU21D"
+msgstr ""
+
+#: webapp/personal/views.py:99
+msgid "temperature/humidity sensor SHT10"
+msgstr ""
+
+#: webapp/personal/views.py:101
+msgid "temperature/humidity sensor SHT11"
+msgstr ""
+
+#: webapp/personal/views.py:103
+msgid "temperature/humidity sensor SHT15"
+msgstr ""
+
+#: webapp/personal/views.py:105
+msgid "temperature/humidity sensor SHT30"
+msgstr ""
+
+#: webapp/personal/views.py:107
+msgid "temperature/humidity sensor SHT31"
+msgstr ""
+
+#: webapp/personal/views.py:109
+msgid "temperature/humidity sensor SHT35"
+msgstr ""
+
+#: webapp/personal/views.py:111
+msgid "temperature/humidity sensor SHT85"
+msgstr ""
+
+#: webapp/personal/views.py:113
 msgid "temperature/humidity/CO₂ ppm sensor SCD30"
 msgstr "温度湿度CO₂ ppm传感器SCD30"
 
-#: webapp/personal/views.py:145
+#: webapp/personal/views.py:115
+msgid "noise sensor DNMS"
+msgstr ""
+
+#: webapp/personal/views.py:117
+msgid "radiation sensor SBM-20"
+msgstr ""
+
+#: webapp/personal/views.py:119
+msgid "radiation sensor SBM-19"
+msgstr ""
+
+#: webapp/personal/views.py:121
+msgid "radiation sensor Si22G"
+msgstr ""
+
+#: webapp/personal/views.py:179
 msgid "Settings saved successfully."
 msgstr "设置成功保存。"
 
-#: webapp/personal/views.py:173
+#: webapp/personal/views.py:207
 msgid "Sensor successfully registered."
 msgstr "传感器成功注册。"
 
-#: webapp/personal/views.py:177
+#: webapp/personal/views.py:211
 msgid "This sensor ID is already registered."
 msgstr "该传感器ID已被注册。"
 
-#: webapp/personal/views.py:191
+#: webapp/personal/views.py:225
 msgid "A fine dust sensor was transferred to you"
 msgstr "一个细小的灰尘传感器被转移给你"
 
@@ -362,15 +429,12 @@ msgid "Configure air quality sensor yourself"
 msgstr "自己配置空气质量传感器"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid ""
-"Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
+msgid "Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
 msgstr "现在Betterplace.org上为Sensor.Community（硬件、软件）捐款。"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid ""
-"Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
-msgstr ""
-"现在就为<br>Sensor.Community<br>捐款<br><span>Betterplace.org<span>。"
+msgid "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
+msgstr "现在就为<br>Sensor.Community<br>捐款<br><span>Betterplace.org<span>。"
 
 #: webapp/templates/index.html:16
 msgid "Configure Luftdaten"
@@ -378,8 +442,8 @@ msgstr "配置空气数据"
 
 #: webapp/templates/index.html:17
 msgid ""
-"The main purpose of this page is to enable you, as the owner of a fine dust "
-"sensor, to configure the location and other parameters yourself."
+"The main purpose of this page is to enable you, as the owner of a fine "
+"dust sensor, to configure the location and other parameters yourself."
 msgstr "本页的主要目的是让您作为微尘传感器的所有者，能够自己配置位置和其他参数。"
 
 #: webapp/templates/index.html:18
@@ -390,11 +454,18 @@ msgstr "点击这里<a href=\"%(login_url)s\">登录</a>。"
 #: webapp/templates/index.html:20
 #, python-format
 msgid ""
-"General information can be found at <a href=\"%(home_url)s\">Sensor.Community</a> - formerly known as Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building instructions</a>.\n"
-"            Sensor data can be found on <a href=\"%(map_url)s\">the fine dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
+"General information can be found at <a "
+"href=\"%(home_url)s\">Sensor.Community</a> - formerly known as "
+"Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building "
+"instructions</a>.\n"
+"            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
+"dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
-"一般信息可以在<a href=\"%(home_url)s\">Sensor.Community</a>--以前称为Luftdaten.info，以及<a href=\"%(manual_url)s\">建造说明</a>.n"
-"            传感器数据可以在<a href=\"%(map_url)s\">微尘图</a>上找到，或者<a href=\"%(archive_url)s\">被下载为CSV文件</a>。"
+"一般信息可以在<a "
+"href=\"%(home_url)s\">Sensor.Community</a>--以前称为Luftdaten.info，以及<a "
+"href=\"%(manual_url)s\">建造说明</a>.n            传感器数据可以在<a "
+"href=\"%(map_url)s\">微尘图</a>上找到，或者<a "
+"href=\"%(archive_url)s\">被下载为CSV文件</a>。"
 
 #: webapp/templates/index.html:32
 msgid "Join us!"
@@ -402,9 +473,9 @@ msgstr "加入我们!"
 
 #: webapp/templates/index.html:33
 msgid ""
-"The city of the future belongs to its citizens. The digital tools, the Maker"
-" Movement and Citizen Science are leading to more and more people being "
-"given the opportunity to design the city themselves."
+"The city of the future belongs to its citizens. The digital tools, the "
+"Maker Movement and Citizen Science are leading to more and more people "
+"being given the opportunity to design the city themselves."
 msgstr "未来的城市是属于市民的。数字工具、创客运动和公民科学正在使越来越多的人获得自己设计城市的机会。"
 
 #: webapp/templates/index.html:35
@@ -416,17 +487,15 @@ msgid ""
 "The OK Lab Stuttgart is part of the program Code for Germany of the Open "
 "Knowledge Foundation Germany. The aim of the program is to promote "
 "developments in the areas of transparency, Open Data and Citizen Science."
-msgstr ""
-"斯图加特OK实验室是德国开放知识基金会Code for Germany项目的一部分。该计划的目的是促进透明度、开放数据和公民科学领域的发展。"
+msgstr "斯图加特OK实验室是德国开放知识基金会Code for Germany项目的一部分。该计划的目的是促进透明度、开放数据和公民科学领域的发展。"
 
 #: webapp/templates/index.html:37
 msgid ""
-"Regional groups consisting of designers, developers, journalists and others "
-"meet regularly in Labs. They develop apps that inform, positively shape and "
-"support society and make the work of administrations and authorities more "
-"transparent."
-msgstr ""
-"由设计师、开发人员、记者和其他人员组成的区域小组定期在实验室开会。他们开发的应用程序为社会提供信息、积极塑造和支持，并使行政部门和当局的工作更加透明。"
+"Regional groups consisting of designers, developers, journalists and "
+"others meet regularly in Labs. They develop apps that inform, positively "
+"shape and support society and make the work of administrations and "
+"authorities more transparent."
+msgstr "由设计师、开发人员、记者和其他人员组成的区域小组定期在实验室开会。他们开发的应用程序为社会提供信息、积极塑造和支持，并使行政部门和当局的工作更加透明。"
 
 #: webapp/templates/index.html:38
 msgid "Code a difference: Use your skills to improve your city!"
@@ -485,8 +554,7 @@ msgstr "登出"
 msgid "Login"
 msgstr "登录"
 
-#: webapp/templates/layout.html:72
-#: webapp/templates/security/login_user.html:17
+#: webapp/templates/layout.html:72 webapp/templates/security/login_user.html:17
 #: webapp/templates/security/register_user.html:5
 msgid "Register"
 msgstr "注册"
@@ -550,8 +618,10 @@ msgstr "节点的数据"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
-"Typically, two sensors are attached to each node: the fine dust sensor and the\n"
-"                        Humidity and temperature sensor. The sensor number can also be found"
+"Typically, two sensors are attached to each node: the fine dust sensor "
+"and the\n"
+"                        Humidity and temperature sensor. The sensor "
+"number can also be found"
 msgstr "通常情况下，每个节点上都有两个传感器：微尘传感器以及湿度和温度传感器。传感器的编号也可以找到"
 
 #: webapp/templates/my-sensor-data.html:11
@@ -600,8 +670,7 @@ msgid "Warning! After deleting you have no more control over the sensor!"
 msgstr "警告! 删除后，您将不再有对传感器的控制权!"
 
 #: webapp/templates/my-sensor-delete.html:11
-msgid ""
-"Also the chipID of this sensor will remain blocked for a new registration!"
+msgid "Also the chipID of this sensor will remain blocked for a new registration!"
 msgstr "同时，该传感器的chipID将在新的注册中保持封锁!"
 
 #: webapp/templates/my-sensor-give-success.html:13
@@ -619,9 +688,9 @@ msgstr "向新主人发送了一封电子邮件"
 
 #: webapp/templates/my-sensor-give.html:9
 msgid ""
-"This allows you to transfer sensors to another person. This is especially "
-"useful if you have ordered a sensor for a friend and want to transfer it to "
-"him or her."
+"This allows you to transfer sensors to another person. This is especially"
+" useful if you have ordered a sensor for a friend and want to transfer it"
+" to him or her."
 msgstr "这使你可以将传感器转让给另一个人。如果你为一个朋友订购了一个传感器，并想把它转让给他或她，这特别有用。"
 
 #: webapp/templates/my-sensor-give.html:10
@@ -635,12 +704,11 @@ msgstr "节点%(node_id)s的设置"
 
 #: webapp/templates/my-sensor-settings.html:7
 msgid ""
-"With this form you can keep the data of the sensor up to date. Please note "
-"that only precise data can lead to precise evaluations with which we can "
-"also argue politically. It is therefore important that the basic sensor data"
-" is always kept up to date."
-msgstr ""
-"通过这个表格，你可以保持传感器的数据更新。请注意，只有精确的数据才能导致精确的评价，我们也可以用它来进行政治上的争论。因此，重要的是，传感器的基本数据要始终保持更新。"
+"With this form you can keep the data of the sensor up to date. Please "
+"note that only precise data can lead to precise evaluations with which we"
+" can also argue politically. It is therefore important that the basic "
+"sensor data is always kept up to date."
+msgstr "通过这个表格，你可以保持传感器的数据更新。请注意，只有精确的数据才能导致精确的评价，我们也可以用它来进行政治上的争论。因此，重要的是，传感器的基本数据要始终保持更新。"
 
 #: webapp/templates/my-sensors.html:10
 msgid "All sensors assigned to your account can be found in this overview."
@@ -688,32 +756,62 @@ msgstr "在这里，你可以改变你的设置。"
 
 #: webapp/templates/privacy-policy.html:13
 msgid ""
-"<p>The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and according to the legal data protection regulations as well as this data protection explanation.</p>\n"
-"                    <p>The use of our website is generally possible without providing personal data. Insofar as personal data (e.g. name, address or e-mail addresses) is collected on our pages, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent.</p>\n"
-"                    <p>We would like to point out that data transmission via the Internet (e.g. communication via e-mail) may have security gaps. A complete protection of the data against the access by third is not possible.</p>\n"
+"<p>The operators of these pages take the protection of your personal data"
+" very seriously. We treat your personal data confidentially and according"
+" to the legal data protection regulations as well as this data protection"
+" explanation.</p>\n"
+"                    <p>The use of our website is generally possible "
+"without providing personal data. Insofar as personal data (e.g. name, "
+"address or e-mail addresses) is collected on our pages, this is always "
+"done on a voluntary basis as far as possible. This data will not be "
+"passed on to third parties without your express consent.</p>\n"
+"                    <p>We would like to point out that data transmission "
+"via the Internet (e.g. communication via e-mail) may have security gaps. "
+"A complete protection of the data against the access by third is not "
+"possible.</p>\n"
 "                    <h2>Information, deletion, blocking</h2>\n"
-"                    <p>You have the right at any time to free information about your stored personal data, their origin and recipient and the purpose of data processing as well as a right to correction, blocking or deletion of this data. You can contact us at any time at the address given in the imprint for this and other questions on the subject of personal data.</p>\n"
+"                    <p>You have the right at any time to free information"
+" about your stored personal data, their origin and recipient and the "
+"purpose of data processing as well as a right to correction, blocking or "
+"deletion of this data. You can contact us at any time at the address "
+"given in the imprint for this and other questions on the subject of "
+"personal data.</p>\n"
 "                    <h2>Cookies</h2>\n"
-"                    <p>Some of the Internet pages use so-called cookies. Cookies do not damage your computer and do not contain viruses. Cookies serve to make our offer more user-friendly, more effective and safer. Cookies are small text files that are stored on your computer by your browser.</p>\n"
-"                    <p>Most of the cookies we use are so-called \"session cookies\". They are automatically deleted at the end of your visit. Other cookies remain stored on your terminal until you delete them. These cookies enable us to recognize your browser during your next visit.</p>\n"
+"                    <p>Some of the Internet pages use so-called cookies. "
+"Cookies do not damage your computer and do not contain viruses. Cookies "
+"serve to make our offer more user-friendly, more effective and safer. "
+"Cookies are small text files that are stored on your computer by your "
+"browser.</p>\n"
+"                    <p>Most of the cookies we use are so-called \"session"
+" cookies\". They are automatically deleted at the end of your visit. "
+"Other cookies remain stored on your terminal until you delete them. These"
+" cookies enable us to recognize your browser during your next visit.</p>"
+"\n"
 "                \n"
 "                    <h2>Account and sensor data</h2>\n"
-"                    <p>The measurement data of the sensors are collected on the server of the Sensor.Community and are publicly accessible to the company. The following information will be published:</p>\n"
+"                    <p>The measurement data of the sensors are collected "
+"on the server of the Sensor.Community and are publicly accessible to the "
+"company. The following information will be published:</p>\n"
 "                    <ul>\n"
-"                        <li>The anonymized geoposition (longitude and latitude) rounded to approx. 100 m.</li>\n"
+"                        <li>The anonymized geoposition (longitude and "
+"latitude) rounded to approx. 100 m.</li>\n"
 "                        <li>The ID of your ESP8266 NodeMCU board</li>\n"
-"                        <li>The given numerical description of the environment</li>\n"
+"                        <li>The given numerical description of the "
+"environment</li>\n"
 "                        <li>The sensor height</li>\n"
 "                        <li>The description as text</li>\n"
 "                    </ul>\n"
-"                    <p>The following additional data will be stored for internal processing, but will not be published:</p>\n"
+"                    <p>The following additional data will be stored for "
+"internal processing, but will not be published:</p>\n"
 "                    <ul>\n"
 "                        <li>The postal address of the sensor</li>\n"
 "                        <li>The e-mail address</li>\n"
 "                        <li>Your first and last name</li>\n"
 "                    </ul>\n"
 "                    <h2>Server log files</h2>\n"
-"                    <p>The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:</p>\n"
+"                    <p>The provider of the pages automatically collects "
+"and stores information in so-called server log files, which your browser "
+"automatically transmits to us. These are:</p>\n"
 "                    <ul>\n"
 "                        <li>Browser type / browser version</li>\n"
 "                        <li>used operating system</li>\n"
@@ -721,22 +819,40 @@ msgid ""
 "                        <li>Hostname of the accessing computer</li>\n"
 "                        <li>Time of the server request</li>\n"
 "                    </ul>\n"
-"                    <p>These data cannot be assigned to specific persons. This data will not be merged with other data sources. We reserve the right to subsequently check this data if we become aware of concrete indications of illegal use.</p>\n"
+"                    <p>These data cannot be assigned to specific persons."
+" This data will not be merged with other data sources. We reserve the "
+"right to subsequently check this data if we become aware of concrete "
+"indications of illegal use.</p>\n"
 "                    <h2>Contradiction advertising mails</h2>\n"
-"                    <p>We hereby object to the use of contact data published within the scope of the imprint obligation to send unsolicited advertising and information material. The operators of this website expressly reserve the right to take legal action against unsolicited mailing or e-mailing of spam and other similar advertising materials.</p>\n"
+"                    <p>We hereby object to the use of contact data "
+"published within the scope of the imprint obligation to send unsolicited "
+"advertising and information material. The operators of this website "
+"expressly reserve the right to take legal action against unsolicited "
+"mailing or e-mailing of spam and other similar advertising materials.</p>"
+"\n"
 "                    "
 msgstr ""
 "<p>这些网页的运营商非常重视对您的个人数据的保护。我们根据法律规定的数据保护条例以及本数据保护解释，保密地处理您的个人数据。</p>\n"
-"                    <p>使用我们的网站通常不需要提供个人数据。只要在我们的网页上收集个人数据（如姓名、地址或电子邮件地址），这都是尽可能在自愿的基础上进行的。未经您的明确同意，这些数据将不会被传递给第三方。</p>\n"
-"                    <p>我们想指出的是，通过互联网进行的数据传输（例如，通过电子邮件进行的通信）可能存在安全漏洞。完全保护数据免受第三方访问是不可能的。</p>\n"
+"                    "
+"<p>使用我们的网站通常不需要提供个人数据。只要在我们的网页上收集个人数据（如姓名、地址或电子邮件地址），这都是尽可能在自愿的基础上进行的。未经您的明确同意，这些数据将不会被传递给第三方。</p>"
+"\n"
+"                    "
+"<p>我们想指出的是，通过互联网进行的数据传输（例如，通过电子邮件进行的通信）可能存在安全漏洞。完全保护数据免受第三方访问是不可能的。</p>\n"
 "                    <h2>信息、删除、阻止</h2>\n"
-"                    <p>您有权在任何时候免费获得有关您存储的个人数据、其来源和接收者以及数据处理目的的信息，并有权更正、阻止或删除这些数据。您可以在任何时候通过印记中给出的地址与我们联系，了解这个问题和其他关于个人数据的问题。</p>\n"
+"                    "
+"<p>您有权在任何时候免费获得有关您存储的个人数据、其来源和接收者以及数据处理目的的信息，并有权更正、阻止或删除这些数据。您可以在任何时候通过印记中给出的地址与我们联系，了解这个问题和其他关于个人数据的问题。</p>"
+"\n"
 "                    <h2>Cookies</h2>\n"
-"                    <p>一些互联网网页使用所谓的Cookies。Cookies不会损害您的计算机，也不包含病毒。Cookies的作用是使我们的服务更方便用户，更有效和更安全。Cookies是小的文本文件，由你的浏览器存储在你的电脑上。</p>\n"
-"                    <p>我们使用的大多数cookies是所谓的 \"会话cookies\"。它们会在您的访问结束后自动删除。其他的cookies会一直保存在您的终端上，直到您删除它们。这些cookie使我们能够在您下次访问时识别您的浏览器。</p>\n"
+"                    "
+"<p>一些互联网网页使用所谓的Cookies。Cookies不会损害您的计算机，也不包含病毒。Cookies的作用是使我们的服务更方便用户，更有效和更安全。Cookies是小的文本文件，由你的浏览器存储在你的电脑上。</p>"
+"\n"
+"                    <p>我们使用的大多数cookies是所谓的 "
+"\"会话cookies\"。它们会在您的访问结束后自动删除。其他的cookies会一直保存在您的终端上，直到您删除它们。这些cookie使我们能够在您下次访问时识别您的浏览器。</p>"
+"\n"
 "                \n"
 "                    <h2>账户和传感器数据</h2>\n"
-"                    <p>传感器的测量数据被收集在Sensor.Community的服务器上，并且可以公开访问。以下信息将被公布：</p>\n"
+"                    "
+"<p>传感器的测量数据被收集在Sensor.Community的服务器上，并且可以公开访问。以下信息将被公布：</p>\n"
 "                    <ul>\n"
 "                        <li>匿名的地理位置（经度和纬度），四舍五入到大约100米。</li>\n"
 "                        <li>您的ESP8266 NodeMCU板的ID</li>\n"
@@ -751,7 +867,8 @@ msgstr ""
 "                        <li>你的名字和姓氏</li>\n"
 "                    </ul>\n"
 "                    <h2>服务器日志文件</h2>\n"
-"                    <p>网页的提供者会自动收集并储存在所谓的服务器日志文件中，您的浏览器会自动将这些信息传送给我们。这些是：</p>\n"
+"                    "
+"<p>网页的提供者会自动收集并储存在所谓的服务器日志文件中，您的浏览器会自动将这些信息传送给我们。这些是：</p>\n"
 "                    <ul>\n"
 "                        <li>浏览器类型/浏览器版本</li>\n"
 "                        <li>使用的操作系统</li>\n"
@@ -759,9 +876,12 @@ msgstr ""
 "                        <li>访问计算机的主机名</li>\n"
 "                        <li>服务器请求的时间</li>\n"
 "                    </ul>\n"
-"                    <p>这些数据不能分配给特定的人。这些数据将不会与其他数据来源合并。如果我们意识到有非法使用的具体迹象，我们保留随后检查这些数据的权利。</p>\n"
+"                    "
+"<p>这些数据不能分配给特定的人。这些数据将不会与其他数据来源合并。如果我们意识到有非法使用的具体迹象，我们保留随后检查这些数据的权利。</p>"
+"\n"
 "                    <h2>矛盾的广告邮件</h2>\n"
-"                    <p>我们在此反对使用在印记义务范围内公布的联系数据来发送未经请求的广告和信息材料。本网站的经营者明确保留采取法律行动的权利，反对未经请求而邮寄或发送垃圾邮件和其他类似的广告材料。</p>n"
+"                    "
+"<p>我们在此反对使用在印记义务范围内公布的联系数据来发送未经请求的广告和信息材料。本网站的经营者明确保留采取法律行动的权利，反对未经请求而邮寄或发送垃圾邮件和其他类似的广告材料。</p>n"
 "                    "
 
 #: webapp/templates/recover-fail.html:13
@@ -770,8 +890,8 @@ msgstr "设置密码错误"
 
 #: webapp/templates/recover-fail.html:14
 msgid ""
-"Unfortunately the link is not correct. Either it is too old, or it was not "
-"copied completely. Please try again."
+"Unfortunately the link is not correct. Either it is too old, or it was "
+"not copied completely. Please try again."
 msgstr "不幸的是，这个链接并不正确。要么它太旧了，要么它没有被完全复制。请再试一次。"
 
 #: webapp/templates/recover-mail-sent-again.html:13
@@ -785,8 +905,8 @@ msgstr "请查看你的邮箱，重新设置你的密码。"
 
 #: webapp/templates/recover-mail-sent.html:14
 msgid ""
-"Your account was not active yet. Please look into your mailbox to reset your"
-" password and activate your account."
+"Your account was not active yet. Please look into your mailbox to reset "
+"your password and activate your account."
 msgstr "你的账户还没有激活。请查看您的邮箱，重新设置您的密码并激活您的账户。"
 
 #: webapp/templates/recover-set-password.html:14
@@ -817,8 +937,8 @@ msgstr "传感器质量导入：状态"
 
 #: webapp/templates/sensor-import-status.html:14
 msgid ""
-"You can see all current imports in this overview. Click on Reload to update "
-"the status."
+"You can see all current imports in this overview. Click on Reload to "
+"update the status."
 msgstr "你可以在这个概览中看到所有当前的进口。点击 \"重新加载 \"来更新状态。"
 
 #: webapp/templates/sensor-import-status.html:18
@@ -841,15 +961,17 @@ msgstr "通过这个表格，新的节点可以被大量地导入。每行预计
 
 #: webapp/templates/sensor-import.html:18
 msgid ""
-"123456 is the ID of the ESP8266 board, the e-mail is the address of the future\n"
-"                            of the owner. If this is not fixed, only the Node-ID can be specified, which is\n"
+"123456 is the ID of the ESP8266 board, the e-mail is the address of the "
+"future\n"
+"                            of the owner. If this is not fixed, only the "
+"Node-ID can be specified, which is\n"
 "                            E-mail must then be added later."
-msgstr ""
-"123456是ESP8266板的ID，E-mail是主人未来的地址。如果这一点不固定，只能指定Node-ID，这时E-mail必须在以后添加。"
+msgstr "123456是ESP8266板的ID，E-mail是主人未来的地址。如果这一点不固定，只能指定Node-ID，这时E-mail必须在以后添加。"
 
 #: webapp/templates/sensor-import.html:21
 msgid ""
-"If an email address has been specified, the owner will be notified with an email about their\n"
+"If an email address has been specified, the owner will be notified with "
+"an email about their\n"
 "                            new sensor."
 msgstr "如果指定了电子邮件地址，所有者将收到关于他们的新传感器的电子邮件通知。"
 
@@ -871,8 +993,8 @@ msgstr "硬件配置"
 
 #: webapp/templates/sensor-settings-form.html:27
 msgid ""
-"click <a name=\"expert\" onclick=\"toggle_expert()\" style=\"color:blue;\"> "
-"&gt;&gt;here&lt;&lt; </a> to enable expert fields"
+"click <a name=\"expert\" onclick=\"toggle_expert()\" "
+"style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> to enable expert fields"
 msgstr ""
 "点击 <a name=\"expert\" onclick=\"toggle_expert()\" style=\"color:blue;\"> "
 "&gt;&gt;here&lt;&lt; </a> 来启用专家字段。"
@@ -887,12 +1009,11 @@ msgstr "添加组件"
 
 #: webapp/templates/sensor-settings-form.html:116
 msgid ""
-"The more precise the data we have, the better we can evaluate the data and "
-"thus energize statements. The system can also try to make a geoposition out "
-"of the address, but we would be happy if you would specify the position with"
-" the map below."
-msgstr ""
-"我们拥有的数据越精确，我们就能更好地评估数据，从而为报表注入活力。系统也可以尝试将地址做成一个地理定位，但如果你能用下面的地图指定位置，我们会很高兴。"
+"The more precise the data we have, the better we can evaluate the data "
+"and thus energize statements. The system can also try to make a "
+"geoposition out of the address, but we would be happy if you would "
+"specify the position with the map below."
+msgstr "我们拥有的数据越精确，我们就能更好地评估数据，从而为报表注入活力。系统也可以尝试将地址做成一个地理定位，但如果你能用下面的地图指定位置，我们会很高兴。"
 
 #: webapp/templates/sensor-settings-form.html:125
 msgid "Lookup entered address"
@@ -915,8 +1036,8 @@ msgstr "来重设密码，请使用以下网址。"
 
 #: webapp/templates/emails/recover.html:14
 msgid ""
-"If you have not requested a new password on Sensor.Community, you can ignore"
-" this e-mail."
+"If you have not requested a new password on Sensor.Community, you can "
+"ignore this e-mail."
 msgstr "如果您没有在Sensor.Community上申请一个新的密码，您可以忽略这封邮件。"
 
 #: webapp/templates/emails/recover.html:15
@@ -930,20 +1051,21 @@ msgstr "真诚的，你的Sensor.Community团队"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
-"in order to manage your sensor in the future, we have created an account for"
-" you. Please enter a password under the following link: "
+"in order to manage your sensor in the future, we have created an account "
+"for you. Please enter a password under the following link: "
 msgstr "为了在将来管理您的传感器，我们为您创建了一个账户。请在以下链接中输入密码。"
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
-"If you have not created an account on Sensor.Community, you can ignore this "
-"e-mail."
+"If you have not created an account on Sensor.Community, you can ignore "
+"this e-mail."
 msgstr "如果您没有在Sensor.Community上创建一个账户，您可以忽略这封邮件。"
 
 #: webapp/templates/emails/sensor-given.html:13
 msgid ""
-"a particulate matter sensor has been handed over to your control. Please log"
-" in with this mail address to take data and settings or to change them: "
+"a particulate matter sensor has been handed over to your control. Please "
+"log in with this mail address to take data and settings or to change "
+"them: "
 msgstr "一个颗粒物传感器已经移交给你控制。请用这个邮件地址登录，以获取数据和设置，或改变它们。"
 
 #: webapp/templates/emails/sensor-given.html:14
@@ -954,8 +1076,8 @@ msgstr "如果你错误地收到了一个传感器，请通过tech@sensor.commun
 
 #: webapp/templates/emails/sensor-registered.html:13
 msgid ""
-"a fine dust sensor has been registered for you. Please log in with this mail"
-" address to take in or change data and settings: "
+"a fine dust sensor has been registered for you. Please log in with this "
+"mail address to take in or change data and settings: "
 msgstr "一个微尘传感器已经为您注册。请用这个邮件地址登录，以录入或改变数据和设置。"
 
 #: webapp/templates/emails/sensor-registered.html:14
@@ -977,8 +1099,7 @@ msgid "Password reminder"
 msgstr "密码提醒"
 
 #: webapp/templates/security/register_user.html:17
-msgid ""
-"please wait up to 30 min to receive the mail and check your spam folder"
+msgid "please wait up to 30 min to receive the mail and check your spam folder"
 msgstr "请等待30分钟以收到邮件，并检查您的垃圾邮件文件夹。"
 
 #: webapp/templates/security/reset_password.html:5
@@ -1081,3 +1202,4 @@ msgstr "新密码(重复)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "保存的用户数据。"
+

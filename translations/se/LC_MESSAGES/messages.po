@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-04-11 01:37+0000\n"
+"POT-Creation-Date: 2021-05-13 10:50+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "Generated-By: Babel 2.6.0\n"
 
 #: webapp/personal/forms.py:39
@@ -97,11 +97,11 @@ msgstr "Kuinka monta yksityistä kiuasta tai takkaa on 100 metrin säteellä?"
 
 #: webapp/personal/forms.py:92
 msgid ""
-"Does it smell very much like such smoke in your area? 1 = very little, 10 = "
-"very much."
+"Does it smell very much like such smoke in your area? 1 = very little, 10"
+" = very much."
 msgstr ""
-"Haiseeko alueellanne hyvin paljon tällaiselta savulta? 1 = hyvin vähän, 10 ="
-" erittäin paljon."
+"Haiseeko alueellanne hyvin paljon tällaiselta savulta? 1 = hyvin vähän, "
+"10 = erittäin paljon."
 
 #: webapp/personal/forms.py:95
 msgid "How much traffic is there within a 100m radius?"
@@ -153,14 +153,15 @@ msgstr "Anturin sijainti suhteessa liikenteeseen"
 
 #: webapp/personal/forms.py:161
 msgid ""
-"1 = on the garden side, very well shielded from all streets, 10 = the sensor"
-" is on a house wall directly on the street. With this value it is irrelevant"
-" how big the street is, it is only about where the sensor is attached to the"
-" house."
+"1 = on the garden side, very well shielded from all streets, 10 = the "
+"sensor is on a house wall directly on the street. With this value it is "
+"irrelevant how big the street is, it is only about where the sensor is "
+"attached to the house."
 msgstr ""
 "1 = puutarhan puolella, hyvin suojassa kaikilta kaduilta, 10 = anturi on "
-"talon seinässä suoraan kadulle päin. Tällä arvolla ei ole merkitystä, kuinka"
-" suuri katu on, kyse on vain siitä, missä anturi on kiinnitetty taloon."
+"talon seinässä suoraan kadulle päin. Tällä arvolla ei ole merkitystä, "
+"kuinka suuri katu on, kyse on vain siitä, missä anturi on kiinnitetty "
+"taloon."
 
 #: webapp/personal/forms.py:164
 msgid "Publish exact location"
@@ -168,8 +169,7 @@ msgstr "Julkaise tarkka sijainti"
 
 #: webapp/personal/forms.py:165
 msgid "Reveal exact sensor location in public data and archives."
-msgstr ""
-"Paljastaa anturin tarkan sijainnin julkisissa tiedoissa ja arkistoissa."
+msgstr "Paljastaa anturin tarkan sijainnin julkisissa tiedoissa ja arkistoissa."
 
 #: webapp/personal/forms.py:168
 msgid "Inactive"
@@ -180,8 +180,8 @@ msgid ""
 "Mark sensor as inactive. No notifications will be sent when sensor goes "
 "offline."
 msgstr ""
-"Merkitse anturi inaktiiviseksi. Ilmoituksia ei lähetetä, kun anturi poistuu "
-"käytöstä."
+"Merkitse anturi inaktiiviseksi. Ilmoituksia ei lähetetä, kun anturi "
+"poistuu käytöstä."
 
 #: webapp/personal/forms.py:174
 msgid "Short description of location"
@@ -209,13 +209,13 @@ msgstr "Anturikortti"
 
 #: webapp/personal/forms.py:191
 msgid ""
-"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or the "
-"Smogomierz sensor version need to change this accordingly. Also in these "
-"cases the Sensor ID is the numeric part of the name only."
+"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
+"the Smogomierz sensor version need to change this accordingly. Also in "
+"these cases the Sensor ID is the numeric part of the name only."
 msgstr ""
-"Normaalisti tämän pitäisi olla esp8266. ESP32-levyjen, Raspberry PI:n tai "
-"Smogomierz-anturiversion käyttäjien on muutettava tämä vastaavasti. Myös "
-"näissä tapauksissa Sensor ID on vain nimen numeerinen osa."
+"Normaalisti tämän pitäisi olla esp8266. ESP32-levyjen, Raspberry PI:n tai"
+" Smogomierz-anturiversion käyttäjien on muutettava tämä vastaavasti. Myös"
+" näissä tapauksissa Sensor ID on vain nimen numeerinen osa."
 
 #: webapp/personal/forms.py:196
 msgid "Recipient's e-mail address"
@@ -266,70 +266,138 @@ msgid "Pressure at sea level"
 msgstr "Paine merenpinnan tasolla"
 
 #: webapp/personal/views.py:63
+msgid "particulate matter sensor PPD42NS"
+msgstr ""
+
+#: webapp/personal/views.py:65
 msgid "particulate matter sensor SDS011"
 msgstr "hiukkasanturi SDS011"
 
-#: webapp/personal/views.py:65
+#: webapp/personal/views.py:67
+msgid "particulate matter sensor SDS021"
+msgstr ""
+
+#: webapp/personal/views.py:69
 msgid "particulate matter sensor PMS1003"
 msgstr "hiukkasanturi PMS1003"
 
-#: webapp/personal/views.py:67
+#: webapp/personal/views.py:71
 msgid "particulate matter sensor PMS3003"
 msgstr "hiukkasanturi PMS3003"
 
-#: webapp/personal/views.py:69
+#: webapp/personal/views.py:73
 msgid "particulate matter sensor PMS5003"
 msgstr "hiukkasanturi PMS5003"
 
-#: webapp/personal/views.py:71
+#: webapp/personal/views.py:75
 msgid "particulate matter sensor PMS6003"
 msgstr "hiukkasanturi PMS6003"
 
-#: webapp/personal/views.py:73
+#: webapp/personal/views.py:77
 msgid "particulate matter sensor PMS7003"
 msgstr "hiukkasanturi PMS7003"
 
-#: webapp/personal/views.py:75
+#: webapp/personal/views.py:79
 msgid "particulate matter sensor SPS30"
 msgstr "hiukkasanturi SPS30"
 
-#: webapp/personal/views.py:77
+#: webapp/personal/views.py:81
+msgid "particulate matter sensor HPM"
+msgstr ""
+
+#: webapp/personal/views.py:83
 msgid "particulate matter sensor HM3301"
 msgstr "hiukkasanturi HM3301"
 
-#: webapp/personal/views.py:79
+#: webapp/personal/views.py:85
+msgid "temperature/humidity sensor DS18S20"
+msgstr ""
+
+#: webapp/personal/views.py:87
+msgid "temperature/humidity sensor DS18B20"
+msgstr ""
+
+#: webapp/personal/views.py:89
 msgid "temperature/humidity sensor DHT22"
 msgstr "lämpötila-kosteusanturi DHT22"
 
-#: webapp/personal/views.py:81
+#: webapp/personal/views.py:91
 msgid "temperature/pressure sensor BMP180"
 msgstr "lämpötila-paineanturi BMP180"
 
-#: webapp/personal/views.py:83
+#: webapp/personal/views.py:93
 msgid "temperature/pressure sensor BMP280"
 msgstr "lämpötila-paineanturi BMP280"
 
-#: webapp/personal/views.py:85
+#: webapp/personal/views.py:95
 msgid "temperature/humidity/pressure sensor BME280"
 msgstr "lämpötila-kosteuspaineanturi BME280"
 
-#: webapp/personal/views.py:87
+#: webapp/personal/views.py:97
+msgid "temperature/humidity sensor HTU21D"
+msgstr ""
+
+#: webapp/personal/views.py:99
+msgid "temperature/humidity sensor SHT10"
+msgstr ""
+
+#: webapp/personal/views.py:101
+msgid "temperature/humidity sensor SHT11"
+msgstr ""
+
+#: webapp/personal/views.py:103
+msgid "temperature/humidity sensor SHT15"
+msgstr ""
+
+#: webapp/personal/views.py:105
+msgid "temperature/humidity sensor SHT30"
+msgstr ""
+
+#: webapp/personal/views.py:107
+msgid "temperature/humidity sensor SHT31"
+msgstr ""
+
+#: webapp/personal/views.py:109
+msgid "temperature/humidity sensor SHT35"
+msgstr ""
+
+#: webapp/personal/views.py:111
+msgid "temperature/humidity sensor SHT85"
+msgstr ""
+
+#: webapp/personal/views.py:113
 msgid "temperature/humidity/CO₂ ppm sensor SCD30"
 msgstr "lämpötila-kosteusCO₂ ppm-anturi SCD30"
 
-#: webapp/personal/views.py:145
+#: webapp/personal/views.py:115
+msgid "noise sensor DNMS"
+msgstr ""
+
+#: webapp/personal/views.py:117
+msgid "radiation sensor SBM-20"
+msgstr ""
+
+#: webapp/personal/views.py:119
+msgid "radiation sensor SBM-19"
+msgstr ""
+
+#: webapp/personal/views.py:121
+msgid "radiation sensor Si22G"
+msgstr ""
+
+#: webapp/personal/views.py:179
 msgid "Settings saved successfully."
 msgstr "Asetukset tallennettu onnistuneesti."
 
-#: webapp/personal/views.py:173
+#: webapp/personal/views.py:207
 msgid "Sensor successfully registered."
 msgstr "Anturi rekisteröity onnistuneesti."
 
-#: webapp/personal/views.py:177
+#: webapp/personal/views.py:211
 msgid "This sensor ID is already registered."
 msgstr "Tämä anturitunnus on jo rekisteröity."
 
-#: webapp/personal/views.py:191
+#: webapp/personal/views.py:225
 msgid "A fine dust sensor was transferred to you"
 msgstr "Hieno pölyanturi siirrettiin sinulle"
 
@@ -374,15 +442,13 @@ msgid "Configure air quality sensor yourself"
 msgstr "Konfiguroi ilmanlaatuanturi itse"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid ""
-"Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
+msgid "Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
 msgstr ""
 "Lahjoita Sensor.Community (Laitteisto, Ohjelmisto) nyt Betterplace.org-"
 "sivustolla"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid ""
-"Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
+msgid "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
 msgstr ""
 "Lahjoita <br>Sensor.Community<br> nyt osoitteessa "
 "<br><span>Betterplace.org<span>."
@@ -393,8 +459,8 @@ msgstr "Konfiguroi ilmatiedot"
 
 #: webapp/templates/index.html:17
 msgid ""
-"The main purpose of this page is to enable you, as the owner of a fine dust "
-"sensor, to configure the location and other parameters yourself."
+"The main purpose of this page is to enable you, as the owner of a fine "
+"dust sensor, to configure the location and other parameters yourself."
 msgstr ""
 "Tämän sivun päätarkoituksena on, että voit hienopölyanturin omistajana "
 "määrittää sijainnin ja muut parametrit itse."
@@ -407,11 +473,19 @@ msgstr "Klikkaa tästä <a href=\"%(login_url)s\">kirjaudu sisään</a>."
 #: webapp/templates/index.html:20
 #, python-format
 msgid ""
-"General information can be found at <a href=\"%(home_url)s\">Sensor.Community</a> - formerly known as Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building instructions</a>.\n"
-"            Sensor data can be found on <a href=\"%(map_url)s\">the fine dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
+"General information can be found at <a "
+"href=\"%(home_url)s\">Sensor.Community</a> - formerly known as "
+"Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building "
+"instructions</a>.\n"
+"            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
+"dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
 msgstr ""
-"Yleistä tietoa löytyy osoitteesta <a href=\"%(home_url)s\">Sensor.Community</a> - aiemmin tunnettu nimellä Luftdaten.info, sekä <a href=\"%(manual_url)s\">rakennusohjeet</a>.\n"
-"            Sensoritiedot löytyvät <a href=\"%(map_url)s\">hienopölykartalta</a> tai <a href=\"%(archive_url)s\">latattavissa CSV-tiedostoina</a>."
+"Yleistä tietoa löytyy osoitteesta <a "
+"href=\"%(home_url)s\">Sensor.Community</a> - aiemmin tunnettu nimellä "
+"Luftdaten.info, sekä <a href=\"%(manual_url)s\">rakennusohjeet</a>.\n"
+"            Sensoritiedot löytyvät <a "
+"href=\"%(map_url)s\">hienopölykartalta</a> tai <a "
+"href=\"%(archive_url)s\">latattavissa CSV-tiedostoina</a>."
 
 #: webapp/templates/index.html:32
 msgid "Join us!"
@@ -419,13 +493,13 @@ msgstr "Liity meihin!"
 
 #: webapp/templates/index.html:33
 msgid ""
-"The city of the future belongs to its citizens. The digital tools, the Maker"
-" Movement and Citizen Science are leading to more and more people being "
-"given the opportunity to design the city themselves."
+"The city of the future belongs to its citizens. The digital tools, the "
+"Maker Movement and Citizen Science are leading to more and more people "
+"being given the opportunity to design the city themselves."
 msgstr ""
-"Tulevaisuuden kaupunki kuuluu sen asukkaille. Digitaaliset työkalut, Maker "
-"Movement ja Citizen Science johtavat siihen, että yhä useammat ihmiset "
-"saavat mahdollisuuden suunnitella kaupunkia itse."
+"Tulevaisuuden kaupunki kuuluu sen asukkaille. Digitaaliset työkalut, "
+"Maker Movement ja Citizen Science johtavat siihen, että yhä useammat "
+"ihmiset saavat mahdollisuuden suunnitella kaupunkia itse."
 
 #: webapp/templates/index.html:35
 msgid "About the project"
@@ -437,16 +511,16 @@ msgid ""
 "Knowledge Foundation Germany. The aim of the program is to promote "
 "developments in the areas of transparency, Open Data and Citizen Science."
 msgstr ""
-"OK Lab Stuttgart on osa Saksan Open Knowledge Foundationin Code for Germany "
-"-ohjelmaa. Ohjelman tavoitteena on edistää kehitystä avoimuuden, avoimen "
-"datan ja kansalaistutkimuksen aloilla."
+"OK Lab Stuttgart on osa Saksan Open Knowledge Foundationin Code for "
+"Germany -ohjelmaa. Ohjelman tavoitteena on edistää kehitystä avoimuuden, "
+"avoimen datan ja kansalaistutkimuksen aloilla."
 
 #: webapp/templates/index.html:37
 msgid ""
-"Regional groups consisting of designers, developers, journalists and others "
-"meet regularly in Labs. They develop apps that inform, positively shape and "
-"support society and make the work of administrations and authorities more "
-"transparent."
+"Regional groups consisting of designers, developers, journalists and "
+"others meet regularly in Labs. They develop apps that inform, positively "
+"shape and support society and make the work of administrations and "
+"authorities more transparent."
 msgstr ""
 "Suunnittelijoista, kehittäjistä, toimittajista ja muista koostuvat "
 "alueelliset ryhmät kokoontuvat säännöllisesti Labsissa. Ne kehittävät "
@@ -470,8 +544,9 @@ msgid ""
 "If you are of the opinion that you have a sensor at this mail address, "
 "please send us an e-mail. Send an email to"
 msgstr ""
-"Jos olet sitä mieltä, että sinulla on tunnistin tässä sähköpostiosoitteessa,"
-" lähetä meille sähköpostia. Lähetä sähköpostia osoitteeseen"
+"Jos olet sitä mieltä, että sinulla on tunnistin tässä "
+"sähköpostiosoitteessa, lähetä meille sähköpostia. Lähetä sähköpostia "
+"osoitteeseen"
 
 #: webapp/templates/layout.html:4
 msgid "user configuration"
@@ -512,8 +587,7 @@ msgstr "Kirjaudu ulos"
 msgid "Login"
 msgstr "Kirjaudu sisään"
 
-#: webapp/templates/layout.html:72
-#: webapp/templates/security/login_user.html:17
+#: webapp/templates/layout.html:72 webapp/templates/security/login_user.html:17
 #: webapp/templates/security/register_user.html:5
 msgid "Register"
 msgstr "Rekisteröi"
@@ -577,11 +651,13 @@ msgstr "Solmun tiedot"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
-"Typically, two sensors are attached to each node: the fine dust sensor and the\n"
-"                        Humidity and temperature sensor. The sensor number can also be found"
+"Typically, two sensors are attached to each node: the fine dust sensor "
+"and the\n"
+"                        Humidity and temperature sensor. The sensor "
+"number can also be found"
 msgstr ""
-"Kumpaankin solmuun liitetään tyypillisesti kaksi anturia: hienopölyanturi "
-"sekä kosteus- ja lämpötila-anturi. Anturin numero löytyy myös"
+"Kumpaankin solmuun liitetään tyypillisesti kaksi anturia: hienopölyanturi"
+" sekä kosteus- ja lämpötila-anturi. Anturin numero löytyy myös"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
@@ -629,10 +705,8 @@ msgid "Warning! After deleting you have no more control over the sensor!"
 msgstr "Varoitus! Poistamisen jälkeen et voi enää hallita anturia!"
 
 #: webapp/templates/my-sensor-delete.html:11
-msgid ""
-"Also the chipID of this sensor will remain blocked for a new registration!"
-msgstr ""
-"Myös tämän anturin chipID pysyy estettynä uutta rekisteröintiä varten!"
+msgid "Also the chipID of this sensor will remain blocked for a new registration!"
+msgstr "Myös tämän anturin chipID pysyy estettynä uutta rekisteröintiä varten!"
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "was handed over."
@@ -649,9 +723,9 @@ msgstr "Uudelle omistajalle lähetettiin sähköposti"
 
 #: webapp/templates/my-sensor-give.html:9
 msgid ""
-"This allows you to transfer sensors to another person. This is especially "
-"useful if you have ordered a sensor for a friend and want to transfer it to "
-"him or her."
+"This allows you to transfer sensors to another person. This is especially"
+" useful if you have ordered a sensor for a friend and want to transfer it"
+" to him or her."
 msgstr ""
 "Näin voit siirtää antureita toiselle henkilölle. Tämä on erityisen "
 "hyödyllistä, jos olet tilannut anturin ystävällesi ja haluat siirtää sen "
@@ -668,15 +742,15 @@ msgstr "Solmun %(node_id)s asetukset"
 
 #: webapp/templates/my-sensor-settings.html:7
 msgid ""
-"With this form you can keep the data of the sensor up to date. Please note "
-"that only precise data can lead to precise evaluations with which we can "
-"also argue politically. It is therefore important that the basic sensor data"
-" is always kept up to date."
+"With this form you can keep the data of the sensor up to date. Please "
+"note that only precise data can lead to precise evaluations with which we"
+" can also argue politically. It is therefore important that the basic "
+"sensor data is always kept up to date."
 msgstr ""
-"Tällä lomakkeella voit pitää anturin tiedot ajan tasalla. Huomaa, että vain "
-"tarkat tiedot johtavat tarkkoihin arvioihin, joiden avulla voimme myös "
-"argumentoida poliittisesti. Siksi on tärkeää, että anturin perustiedot "
-"pidetään aina ajan tasalla."
+"Tällä lomakkeella voit pitää anturin tiedot ajan tasalla. Huomaa, että "
+"vain tarkat tiedot johtavat tarkkoihin arvioihin, joiden avulla voimme "
+"myös argumentoida poliittisesti. Siksi on tärkeää, että anturin "
+"perustiedot pidetään aina ajan tasalla."
 
 #: webapp/templates/my-sensors.html:10
 msgid "All sensors assigned to your account can be found in this overview."
@@ -724,32 +798,62 @@ msgstr "Täällä voit muuttaa asetuksia."
 
 #: webapp/templates/privacy-policy.html:13
 msgid ""
-"<p>The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and according to the legal data protection regulations as well as this data protection explanation.</p>\n"
-"                    <p>The use of our website is generally possible without providing personal data. Insofar as personal data (e.g. name, address or e-mail addresses) is collected on our pages, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent.</p>\n"
-"                    <p>We would like to point out that data transmission via the Internet (e.g. communication via e-mail) may have security gaps. A complete protection of the data against the access by third is not possible.</p>\n"
+"<p>The operators of these pages take the protection of your personal data"
+" very seriously. We treat your personal data confidentially and according"
+" to the legal data protection regulations as well as this data protection"
+" explanation.</p>\n"
+"                    <p>The use of our website is generally possible "
+"without providing personal data. Insofar as personal data (e.g. name, "
+"address or e-mail addresses) is collected on our pages, this is always "
+"done on a voluntary basis as far as possible. This data will not be "
+"passed on to third parties without your express consent.</p>\n"
+"                    <p>We would like to point out that data transmission "
+"via the Internet (e.g. communication via e-mail) may have security gaps. "
+"A complete protection of the data against the access by third is not "
+"possible.</p>\n"
 "                    <h2>Information, deletion, blocking</h2>\n"
-"                    <p>You have the right at any time to free information about your stored personal data, their origin and recipient and the purpose of data processing as well as a right to correction, blocking or deletion of this data. You can contact us at any time at the address given in the imprint for this and other questions on the subject of personal data.</p>\n"
+"                    <p>You have the right at any time to free information"
+" about your stored personal data, their origin and recipient and the "
+"purpose of data processing as well as a right to correction, blocking or "
+"deletion of this data. You can contact us at any time at the address "
+"given in the imprint for this and other questions on the subject of "
+"personal data.</p>\n"
 "                    <h2>Cookies</h2>\n"
-"                    <p>Some of the Internet pages use so-called cookies. Cookies do not damage your computer and do not contain viruses. Cookies serve to make our offer more user-friendly, more effective and safer. Cookies are small text files that are stored on your computer by your browser.</p>\n"
-"                    <p>Most of the cookies we use are so-called \"session cookies\". They are automatically deleted at the end of your visit. Other cookies remain stored on your terminal until you delete them. These cookies enable us to recognize your browser during your next visit.</p>\n"
+"                    <p>Some of the Internet pages use so-called cookies. "
+"Cookies do not damage your computer and do not contain viruses. Cookies "
+"serve to make our offer more user-friendly, more effective and safer. "
+"Cookies are small text files that are stored on your computer by your "
+"browser.</p>\n"
+"                    <p>Most of the cookies we use are so-called \"session"
+" cookies\". They are automatically deleted at the end of your visit. "
+"Other cookies remain stored on your terminal until you delete them. These"
+" cookies enable us to recognize your browser during your next visit.</p>"
+"\n"
 "                \n"
 "                    <h2>Account and sensor data</h2>\n"
-"                    <p>The measurement data of the sensors are collected on the server of the Sensor.Community and are publicly accessible to the company. The following information will be published:</p>\n"
+"                    <p>The measurement data of the sensors are collected "
+"on the server of the Sensor.Community and are publicly accessible to the "
+"company. The following information will be published:</p>\n"
 "                    <ul>\n"
-"                        <li>The anonymized geoposition (longitude and latitude) rounded to approx. 100 m.</li>\n"
+"                        <li>The anonymized geoposition (longitude and "
+"latitude) rounded to approx. 100 m.</li>\n"
 "                        <li>The ID of your ESP8266 NodeMCU board</li>\n"
-"                        <li>The given numerical description of the environment</li>\n"
+"                        <li>The given numerical description of the "
+"environment</li>\n"
 "                        <li>The sensor height</li>\n"
 "                        <li>The description as text</li>\n"
 "                    </ul>\n"
-"                    <p>The following additional data will be stored for internal processing, but will not be published:</p>\n"
+"                    <p>The following additional data will be stored for "
+"internal processing, but will not be published:</p>\n"
 "                    <ul>\n"
 "                        <li>The postal address of the sensor</li>\n"
 "                        <li>The e-mail address</li>\n"
 "                        <li>Your first and last name</li>\n"
 "                    </ul>\n"
 "                    <h2>Server log files</h2>\n"
-"                    <p>The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:</p>\n"
+"                    <p>The provider of the pages automatically collects "
+"and stores information in so-called server log files, which your browser "
+"automatically transmits to us. These are:</p>\n"
 "                    <ul>\n"
 "                        <li>Browser type / browser version</li>\n"
 "                        <li>used operating system</li>\n"
@@ -757,37 +861,74 @@ msgid ""
 "                        <li>Hostname of the accessing computer</li>\n"
 "                        <li>Time of the server request</li>\n"
 "                    </ul>\n"
-"                    <p>These data cannot be assigned to specific persons. This data will not be merged with other data sources. We reserve the right to subsequently check this data if we become aware of concrete indications of illegal use.</p>\n"
+"                    <p>These data cannot be assigned to specific persons."
+" This data will not be merged with other data sources. We reserve the "
+"right to subsequently check this data if we become aware of concrete "
+"indications of illegal use.</p>\n"
 "                    <h2>Contradiction advertising mails</h2>\n"
-"                    <p>We hereby object to the use of contact data published within the scope of the imprint obligation to send unsolicited advertising and information material. The operators of this website expressly reserve the right to take legal action against unsolicited mailing or e-mailing of spam and other similar advertising materials.</p>\n"
+"                    <p>We hereby object to the use of contact data "
+"published within the scope of the imprint obligation to send unsolicited "
+"advertising and information material. The operators of this website "
+"expressly reserve the right to take legal action against unsolicited "
+"mailing or e-mailing of spam and other similar advertising materials.</p>"
+"\n"
 "                    "
 msgstr ""
-"<p>Tämän sivun ylläpitäjät suhtautuvat henkilötietojesi suojaamiseen erittäin vakavasti. Käsittelemme henkilötietojasi luottamuksellisesti ja lakisääteisten tietosuojasäännösten sekä tämän tietosuojaselosteen mukaisesti.</p>\n"
-"                    <p>Sivujemme käyttö on yleensä mahdollista ilman henkilötietojen antamista. Siltä osin kuin sivuillamme kerätään henkilötietoja (esim. nimi, osoite tai sähköpostiosoite), se tapahtuu aina vapaaehtoisesti niin pitkälle kuin mahdollista. Näitä tietoja ei luovuteta kolmansille osapuolille ilman nimenomaista suostumustasi.</p>\n"
-"                    <p>Haluamme huomauttaa, että Internetin kautta tapahtuvassa tiedonsiirrossa (esim. sähköpostiviestinnässä) voi olla tietoturva-aukkoja. Tietojen täydellinen suojaaminen kolmansien pääsyä vastaan ei ole mahdollista.</p>\n"
+"<p>Tämän sivun ylläpitäjät suhtautuvat henkilötietojesi suojaamiseen "
+"erittäin vakavasti. Käsittelemme henkilötietojasi luottamuksellisesti ja "
+"lakisääteisten tietosuojasäännösten sekä tämän tietosuojaselosteen "
+"mukaisesti.</p>\n"
+"                    <p>Sivujemme käyttö on yleensä mahdollista ilman "
+"henkilötietojen antamista. Siltä osin kuin sivuillamme kerätään "
+"henkilötietoja (esim. nimi, osoite tai sähköpostiosoite), se tapahtuu "
+"aina vapaaehtoisesti niin pitkälle kuin mahdollista. Näitä tietoja ei "
+"luovuteta kolmansille osapuolille ilman nimenomaista suostumustasi.</p>\n"
+"                    <p>Haluamme huomauttaa, että Internetin kautta "
+"tapahtuvassa tiedonsiirrossa (esim. sähköpostiviestinnässä) voi olla "
+"tietoturva-aukkoja. Tietojen täydellinen suojaaminen kolmansien pääsyä "
+"vastaan ei ole mahdollista.</p>\n"
 "                    <h2>Tiedottaminen, poistaminen, estäminen</h2>\n"
-"                    <p>Sinulla on milloin tahansa oikeus saada ilmaiseksi tietoa tallennetuista henkilötiedoistasi, niiden alkuperästä ja vastaanottajasta sekä tietojenkäsittelyn tarkoituksesta sekä oikeus näiden tietojen korjaamiseen, estämiseen tai poistamiseen. Voit ottaa meihin yhteyttä milloin tahansa painatuksessa mainittuun osoitteeseen tätä ja muita henkilötietoihin liittyviä kysymyksiä varten.</p>\n"
+"                    <p>Sinulla on milloin tahansa oikeus saada ilmaiseksi"
+" tietoa tallennetuista henkilötiedoistasi, niiden alkuperästä ja "
+"vastaanottajasta sekä tietojenkäsittelyn tarkoituksesta sekä oikeus "
+"näiden tietojen korjaamiseen, estämiseen tai poistamiseen. Voit ottaa "
+"meihin yhteyttä milloin tahansa painatuksessa mainittuun osoitteeseen "
+"tätä ja muita henkilötietoihin liittyviä kysymyksiä varten.</p>\n"
 "                    <h2>Keksejä</h2>\n"
-"                    <p>Tietyillä Internet-sivuilla käytetään niin sanottuja evästeitä. Evästeet eivät vahingoita tietokonettasi eivätkä sisällä viruksia. Evästeiden tarkoituksena on tehdä tarjonnastamme käyttäjäystävällisempi, tehokkaampi ja turvallisempi. Evästeet ovat pieniä tekstitiedostoja, jotka selaimesi tallentaa tietokoneellesi.</p>\n"
-"                    <p>Vähän kaikki käyttämämme evästeet ovat niin sanottuja \"istuntoevästeitä\". Ne poistetaan automaattisesti vierailun päätyttyä. Muut evästeet säilyvät päätelaitteellasi, kunnes poistat ne. Näiden evästeiden avulla voimme tunnistaa selaimesi seuraavan vierailusi aikana.</p>\n"
+"                    <p>Tietyillä Internet-sivuilla käytetään niin "
+"sanottuja evästeitä. Evästeet eivät vahingoita tietokonettasi eivätkä "
+"sisällä viruksia. Evästeiden tarkoituksena on tehdä tarjonnastamme "
+"käyttäjäystävällisempi, tehokkaampi ja turvallisempi. Evästeet ovat "
+"pieniä tekstitiedostoja, jotka selaimesi tallentaa tietokoneellesi.</p>\n"
+"                    <p>Vähän kaikki käyttämämme evästeet ovat niin "
+"sanottuja \"istuntoevästeitä\". Ne poistetaan automaattisesti vierailun "
+"päätyttyä. Muut evästeet säilyvät päätelaitteellasi, kunnes poistat ne. "
+"Näiden evästeiden avulla voimme tunnistaa selaimesi seuraavan vierailusi "
+"aikana.</p>\n"
 "                \n"
 "                    <h2>Tili ja anturitiedot</h2>\n"
-"                    <p>Sensoreiden mittaustiedot kerätään Sensor.Communityn palvelimelle ja ne ovat julkisesti yrityksen käytettävissä. Seuraavat tiedot julkaistaan:</p>\n"
+"                    <p>Sensoreiden mittaustiedot kerätään "
+"Sensor.Communityn palvelimelle ja ne ovat julkisesti yrityksen "
+"käytettävissä. Seuraavat tiedot julkaistaan:</p>\n"
 "                    <ul>\n"
-"                        <li>Anonymisoitu maantieteellinen sijainti (pituus- ja leveysaste) pyöristettynä noin 100 metriin.</li>\n"
+"                        <li>Anonymisoitu maantieteellinen sijainti "
+"(pituus- ja leveysaste) pyöristettynä noin 100 metriin.</li>\n"
 "                        <li> ESP8266 NodeMCU -levyn tunnus</li>\n"
 "                        <li>Ympäristön annettu numeerinen kuvaus</li>\n"
 "                        <li>Asensorin korkeus</li>\n"
 "                        <li>Kuvaus tekstinä</li>\n"
 "                    </ul>\n"
-"                    <p>Seuraavat lisätiedot tallennetaan sisäistä käsittelyä varten, mutta niitä ei julkaista:</p>\n"
+"                    <p>Seuraavat lisätiedot tallennetaan sisäistä "
+"käsittelyä varten, mutta niitä ei julkaista:</p>\n"
 "                    <ul>\n"
 "                        <li>Tunnistimen postiosoite</li>\n"
 "                        <li>Sähköpostiosoite</li>\n"
 "                        <li>Esi- ja sukunimesi</li>\n"
 "                    </ul>\n"
 "                    <h2>Palvelimen lokitiedostot</h2>\n"
-"                    <p>Sivujen tarjoaja kerää ja tallentaa automaattisesti tietoja niin sanottuihin palvelinlokitiedostoihin, jotka selaimesi välittää automaattisesti meille. Nämä ovat:</p>\n"
+"                    <p>Sivujen tarjoaja kerää ja tallentaa "
+"automaattisesti tietoja niin sanottuihin palvelinlokitiedostoihin, jotka "
+"selaimesi välittää automaattisesti meille. Nämä ovat:</p>\n"
 "                    <ul>\n"
 "                        <li>selaimen tyyppi / selaimen versio</li>\n"
 "                        <li>käytetty käyttöjärjestelmä</li>\n"
@@ -795,9 +936,17 @@ msgstr ""
 "                        <li>Käyttävän tietokoneen isäntänimi</li>\n"
 "                        <li>Palvelinpyynnön aika</li>\n"
 "                    </ul>\n"
-"                    <p>Tietoja ei voida osoittaa tietyille henkilöille. Näitä tietoja ei yhdistetä muihin tietolähteisiin. Pidätämme oikeuden tarkastaa nämä tiedot jälkikäteen, jos saamme tietoisiksemme konkreettisia viitteitä laittomasta käytöstä.</p>\n"
+"                    <p>Tietoja ei voida osoittaa tietyille henkilöille. "
+"Näitä tietoja ei yhdistetä muihin tietolähteisiin. Pidätämme oikeuden "
+"tarkastaa nämä tiedot jälkikäteen, jos saamme tietoisiksemme "
+"konkreettisia viitteitä laittomasta käytöstä.</p>\n"
 "                    <h2>Ristiriitaiset mainospostit</h2>\n"
-"                    <p>Vastustamme täten painatusvelvoitteen puitteissa julkaistujen yhteystietojen käyttöä ei-toivotun mainos- ja tiedotusmateriaalin lähettämiseen. Tämän verkkosivuston ylläpitäjät varaavat nimenomaisesti oikeuden ryhtyä oikeudellisiin toimenpiteisiin roskapostin ja muun vastaavanlaisen mainosmateriaalin ei-toivottua lähettämistä tai sähköpostitse lähettämistä vastaan.</p>\n"
+"                    <p>Vastustamme täten painatusvelvoitteen puitteissa "
+"julkaistujen yhteystietojen käyttöä ei-toivotun mainos- ja "
+"tiedotusmateriaalin lähettämiseen. Tämän verkkosivuston ylläpitäjät "
+"varaavat nimenomaisesti oikeuden ryhtyä oikeudellisiin toimenpiteisiin "
+"roskapostin ja muun vastaavanlaisen mainosmateriaalin ei-toivottua "
+"lähettämistä tai sähköpostitse lähettämistä vastaan.</p>\n"
 "                    "
 
 #: webapp/templates/recover-fail.html:13
@@ -806,11 +955,11 @@ msgstr "Aseta salasana Virhe"
 
 #: webapp/templates/recover-fail.html:14
 msgid ""
-"Unfortunately the link is not correct. Either it is too old, or it was not "
-"copied completely. Please try again."
+"Unfortunately the link is not correct. Either it is too old, or it was "
+"not copied completely. Please try again."
 msgstr ""
-"Valitettavasti linkki ei ole oikea. Joko se on liian vanha tai sitä ei ole "
-"kopioitu kokonaan. Yritä uudelleen."
+"Valitettavasti linkki ei ole oikea. Joko se on liian vanha tai sitä ei "
+"ole kopioitu kokonaan. Yritä uudelleen."
 
 #: webapp/templates/recover-mail-sent-again.html:13
 #: webapp/templates/recover-mail-sent.html:13
@@ -823,8 +972,8 @@ msgstr "Katso postilaatikkoosi salasanasi palauttamista varten."
 
 #: webapp/templates/recover-mail-sent.html:14
 msgid ""
-"Your account was not active yet. Please look into your mailbox to reset your"
-" password and activate your account."
+"Your account was not active yet. Please look into your mailbox to reset "
+"your password and activate your account."
 msgstr ""
 "Tilisi ei ollut vielä aktiivinen. Katso postilaatikkoosi, jotta voit "
 "palauttaa salasanasi ja aktivoida tilisi."
@@ -859,8 +1008,8 @@ msgstr "Anturin massan tuonti: Tila"
 
 #: webapp/templates/sensor-import-status.html:14
 msgid ""
-"You can see all current imports in this overview. Click on Reload to update "
-"the status."
+"You can see all current imports in this overview. Click on Reload to "
+"update the status."
 msgstr ""
 "Tässä yleiskatsauksessa näet kaikki nykyiset tuonnit. Päivitä tila "
 "napsauttamalla uudelleen."
@@ -882,26 +1031,29 @@ msgid ""
 "With this form new nodes can be imported in masses. One node per line is "
 "expected in the following format:"
 msgstr ""
-"Tällä lomakkeella voidaan tuoda uusia solmuja massoittain. Yksi solmu per "
-"rivi odotetaan seuraavassa muodossa:"
+"Tällä lomakkeella voidaan tuoda uusia solmuja massoittain. Yksi solmu per"
+" rivi odotetaan seuraavassa muodossa:"
 
 #: webapp/templates/sensor-import.html:18
 msgid ""
-"123456 is the ID of the ESP8266 board, the e-mail is the address of the future\n"
-"                            of the owner. If this is not fixed, only the Node-ID can be specified, which is\n"
+"123456 is the ID of the ESP8266 board, the e-mail is the address of the "
+"future\n"
+"                            of the owner. If this is not fixed, only the "
+"Node-ID can be specified, which is\n"
 "                            E-mail must then be added later."
 msgstr ""
-"123456 on ESP8266-levyn tunnus, sähköposti on omistajan tuleva osoite. Jos "
-"tätä ei ole määritetty, voidaan määrittää vain Node-ID, joka on Sähköposti "
-"on sitten lisättävä myöhemmin."
+"123456 on ESP8266-levyn tunnus, sähköposti on omistajan tuleva osoite. "
+"Jos tätä ei ole määritetty, voidaan määrittää vain Node-ID, joka on "
+"Sähköposti on sitten lisättävä myöhemmin."
 
 #: webapp/templates/sensor-import.html:21
 msgid ""
-"If an email address has been specified, the owner will be notified with an email about their\n"
+"If an email address has been specified, the owner will be notified with "
+"an email about their\n"
 "                            new sensor."
 msgstr ""
-"Jos sähköpostiosoite on määritetty, omistajalle lähetetään sähköpostiviesti "
-"uudesta anturista."
+"Jos sähköpostiosoite on määritetty, omistajalle lähetetään "
+"sähköpostiviesti uudesta anturista."
 
 #: webapp/templates/sensor-register.html:6
 msgid "Sensor registration"
@@ -921,11 +1073,12 @@ msgstr "Laitteiston kokoonpano"
 
 #: webapp/templates/sensor-settings-form.html:27
 msgid ""
-"click <a name=\"expert\" onclick=\"toggle_expert()\" style=\"color:blue;\"> "
-"&gt;&gt;here&lt;&lt; </a> to enable expert fields"
+"click <a name=\"expert\" onclick=\"toggle_expert()\" "
+"style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> to enable expert fields"
 msgstr ""
-"klikkaa <a name=\"expert\" onclick=\"toggle_expert()\" style=\"color:blue;\"> "
-"&gt;&gt;here&lt;lt; </a> ottaaksesi asiantuntijakentät käyttöön."
+"klikkaa <a name=\"expert\" onclick=\"toggle_expert()\" "
+"style=\"color:blue;\"> &gt;&gt;here&lt;lt; </a> ottaaksesi "
+"asiantuntijakentät käyttöön."
 
 #: webapp/templates/sensor-settings-form.html:34
 msgid "remove"
@@ -937,15 +1090,15 @@ msgstr "lisää komponentti"
 
 #: webapp/templates/sensor-settings-form.html:116
 msgid ""
-"The more precise the data we have, the better we can evaluate the data and "
-"thus energize statements. The system can also try to make a geoposition out "
-"of the address, but we would be happy if you would specify the position with"
-" the map below."
+"The more precise the data we have, the better we can evaluate the data "
+"and thus energize statements. The system can also try to make a "
+"geoposition out of the address, but we would be happy if you would "
+"specify the position with the map below."
 msgstr ""
-"Mitä tarkemmat tiedot meillä on, sitä paremmin voimme arvioida tietoja ja "
-"siten antaa lausuntoja. Järjestelmä voi myös yrittää tehdä osoitteesta "
-"geopaikannuksen, mutta olisimme tyytyväisiä, jos täsmentäisit sijainnin alla"
-" olevan kartan avulla."
+"Mitä tarkemmat tiedot meillä on, sitä paremmin voimme arvioida tietoja ja"
+" siten antaa lausuntoja. Järjestelmä voi myös yrittää tehdä osoitteesta "
+"geopaikannuksen, mutta olisimme tyytyväisiä, jos täsmentäisit sijainnin "
+"alla olevan kartan avulla."
 
 #: webapp/templates/sensor-settings-form.html:125
 msgid "Lookup entered address"
@@ -968,11 +1121,11 @@ msgstr "Jos haluat palauttaa salasanasi, käytä seuraavaa URL-osoitetta:"
 
 #: webapp/templates/emails/recover.html:14
 msgid ""
-"If you have not requested a new password on Sensor.Community, you can ignore"
-" this e-mail."
+"If you have not requested a new password on Sensor.Community, you can "
+"ignore this e-mail."
 msgstr ""
-"Jos et ole pyytänyt uutta salasanaa Sensor.community-sivustolla, voit jättää"
-" tämän sähköpostiviestin huomiotta."
+"Jos et ole pyytänyt uutta salasanaa Sensor.community-sivustolla, voit "
+"jättää tämän sähköpostiviestin huomiotta."
 
 #: webapp/templates/emails/recover.html:15
 #: webapp/templates/emails/register-existing.html:15
@@ -985,24 +1138,25 @@ msgstr "Ystävällisin terveisin, Sensor.Community-tiimisi"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
-"in order to manage your sensor in the future, we have created an account for"
-" you. Please enter a password under the following link: "
+"in order to manage your sensor in the future, we have created an account "
+"for you. Please enter a password under the following link: "
 msgstr ""
-"olemme luoneet sinulle tilin, jotta voit hallita anturiasi tulevaisuudessa. "
-"Syötä salasana seuraavan linkin kautta:"
+"olemme luoneet sinulle tilin, jotta voit hallita anturiasi "
+"tulevaisuudessa. Syötä salasana seuraavan linkin kautta:"
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
-"If you have not created an account on Sensor.Community, you can ignore this "
-"e-mail."
+"If you have not created an account on Sensor.Community, you can ignore "
+"this e-mail."
 msgstr ""
 "Jos et ole luonut tiliä Sensor.Communityyn, voit jättää tämän "
 "sähköpostiviestin huomiotta."
 
 #: webapp/templates/emails/sensor-given.html:13
 msgid ""
-"a particulate matter sensor has been handed over to your control. Please log"
-" in with this mail address to take data and settings or to change them: "
+"a particulate matter sensor has been handed over to your control. Please "
+"log in with this mail address to take data and settings or to change "
+"them: "
 msgstr ""
 "hiukkasanturi on luovutettu valvontaasi. Kirjaudu sisään tällä "
 "sähköpostiosoitteella ottaaksesi tietoja ja asetuksia tai muuttaaksesi "
@@ -1018,8 +1172,8 @@ msgstr ""
 
 #: webapp/templates/emails/sensor-registered.html:13
 msgid ""
-"a fine dust sensor has been registered for you. Please log in with this mail"
-" address to take in or change data and settings: "
+"a fine dust sensor has been registered for you. Please log in with this "
+"mail address to take in or change data and settings: "
 msgstr ""
 "sinulle on rekisteröity hieno pölyanturi. Kirjaudu sisään tällä "
 "sähköpostiosoitteella ottaaksesi tai muuttaaksesi tietoja ja asetuksia:"
@@ -1029,8 +1183,8 @@ msgid ""
 "If the sensor was registered for you by mistake, please report this to "
 "tech@sensor.community."
 msgstr ""
-"Jos anturi on rekisteröity sinulle vahingossa, ilmoita siitä osoitteeseen "
-"tech@sensor.community."
+"Jos anturi on rekisteröity sinulle vahingossa, ilmoita siitä osoitteeseen"
+" tech@sensor.community."
 
 #: webapp/templates/security/change_password.html:5
 msgid "Change password"
@@ -1045,8 +1199,7 @@ msgid "Password reminder"
 msgstr "Salasanan muistutus"
 
 #: webapp/templates/security/register_user.html:17
-msgid ""
-"please wait up to 30 min to receive the mail and check your spam folder"
+msgid "please wait up to 30 min to receive the mail and check your spam folder"
 msgstr ""
 "odota enintään 30 minuuttia saadaksesi sähköpostin ja tarkista "
 "roskapostikansiosi."
@@ -1151,3 +1304,4 @@ msgstr "Uusi salasana (toista)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Käyttäjätiedot tallennettu."
+
