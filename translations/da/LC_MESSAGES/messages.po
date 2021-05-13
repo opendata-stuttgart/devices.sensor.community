@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-13 10:50+0000\n"
+"POT-Creation-Date: 2021-05-13 13:19+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -268,124 +268,43 @@ msgstr "Tryk"
 msgid "Pressure at sea level"
 msgstr "Tryk på havniveau"
 
-#: webapp/personal/views.py:63
-msgid "particulate matter sensor PPD42NS"
-msgstr ""
-
-#: webapp/personal/views.py:65
-msgid "particulate matter sensor SDS011"
-msgstr "partikelføler SDS011"
-
-#: webapp/personal/views.py:67
-msgid "particulate matter sensor SDS021"
-msgstr ""
-
-#: webapp/personal/views.py:69
-msgid "particulate matter sensor PMS1003"
-msgstr "partikelstofsensor PMS1003"
-
-#: webapp/personal/views.py:71
-msgid "particulate matter sensor PMS3003"
-msgstr "partikelstofsensor PMS3003"
-
-#: webapp/personal/views.py:73
-msgid "particulate matter sensor PMS5003"
-msgstr "partikelføler PMS5003"
-
-#: webapp/personal/views.py:75
-msgid "particulate matter sensor PMS6003"
-msgstr "partikelstofsensor PMS6003"
-
-#: webapp/personal/views.py:77
-msgid "particulate matter sensor PMS7003"
-msgstr "partikelføler PMS7003"
-
-#: webapp/personal/views.py:79
-msgid "particulate matter sensor SPS30"
-msgstr "partikelføler SPS30"
-
-#: webapp/personal/views.py:81
-msgid "particulate matter sensor HPM"
-msgstr ""
-
+#: webapp/personal/views.py:63 webapp/personal/views.py:65
+#: webapp/personal/views.py:67 webapp/personal/views.py:69
+#: webapp/personal/views.py:71 webapp/personal/views.py:73
+#: webapp/personal/views.py:75 webapp/personal/views.py:77
+#: webapp/personal/views.py:79 webapp/personal/views.py:81
 #: webapp/personal/views.py:83
-msgid "particulate matter sensor HM3301"
-msgstr "partikelstofsensor HM3301"
-
-#: webapp/personal/views.py:85
-msgid "temperature/humidity sensor DS18S20"
+msgid "particulate matter sensor"
 msgstr ""
 
-#: webapp/personal/views.py:87
-msgid "temperature/humidity sensor DS18B20"
+#: webapp/personal/views.py:85 webapp/personal/views.py:87
+#: webapp/personal/views.py:89 webapp/personal/views.py:97
+#: webapp/personal/views.py:99 webapp/personal/views.py:101
+#: webapp/personal/views.py:103 webapp/personal/views.py:105
+#: webapp/personal/views.py:107 webapp/personal/views.py:109
+#: webapp/personal/views.py:111
+msgid "temperature/humidity sensor"
 msgstr ""
 
-#: webapp/personal/views.py:89
-msgid "temperature/humidity sensor DHT22"
-msgstr "temperatur-fugtighedssensor DHT22"
-
-#: webapp/personal/views.py:91
-msgid "temperature/pressure sensor BMP180"
-msgstr "temperaturtryksensor BMP180"
-
-#: webapp/personal/views.py:93
-msgid "temperature/pressure sensor BMP280"
-msgstr "temperaturtryksensor BMP280"
+#: webapp/personal/views.py:91 webapp/personal/views.py:93
+msgid "temperature/pressure sensor"
+msgstr ""
 
 #: webapp/personal/views.py:95
-msgid "temperature/humidity/pressure sensor BME280"
-msgstr "temperaturfugtfugttryksensor BME280"
-
-#: webapp/personal/views.py:97
-msgid "temperature/humidity sensor HTU21D"
-msgstr ""
-
-#: webapp/personal/views.py:99
-msgid "temperature/humidity sensor SHT10"
-msgstr ""
-
-#: webapp/personal/views.py:101
-msgid "temperature/humidity sensor SHT11"
-msgstr ""
-
-#: webapp/personal/views.py:103
-msgid "temperature/humidity sensor SHT15"
-msgstr ""
-
-#: webapp/personal/views.py:105
-msgid "temperature/humidity sensor SHT30"
-msgstr ""
-
-#: webapp/personal/views.py:107
-msgid "temperature/humidity sensor SHT31"
-msgstr ""
-
-#: webapp/personal/views.py:109
-msgid "temperature/humidity sensor SHT35"
-msgstr ""
-
-#: webapp/personal/views.py:111
-msgid "temperature/humidity sensor SHT85"
+msgid "temperature/humidity/pressure sensor"
 msgstr ""
 
 #: webapp/personal/views.py:113
-msgid "temperature/humidity/CO₂ ppm sensor SCD30"
-msgstr "temperatur-fugtCO₂ ppm-sensor SCD30"
+msgid "temperature/humidity/CO₂ ppm sensor"
+msgstr ""
 
 #: webapp/personal/views.py:115
-msgid "noise sensor DNMS"
+msgid "noise sensor"
 msgstr ""
 
-#: webapp/personal/views.py:117
-msgid "radiation sensor SBM-20"
-msgstr ""
-
-#: webapp/personal/views.py:119
-msgid "radiation sensor SBM-19"
-msgstr ""
-
+#: webapp/personal/views.py:117 webapp/personal/views.py:119
 #: webapp/personal/views.py:121
-msgid "radiation sensor Si22G"
+msgid "radiation sensor"
 msgstr ""
 
 #: webapp/personal/views.py:179
@@ -1308,4 +1227,94 @@ msgstr "Ny adgangskode (gentag)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Brugerdata gemt."
+
+#~ msgid "particulate matter sensor PPD42NS"
+#~ msgstr ""
+
+#~ msgid "particulate matter sensor SDS011"
+#~ msgstr "partikelføler SDS011"
+
+#~ msgid "particulate matter sensor SDS021"
+#~ msgstr ""
+
+#~ msgid "particulate matter sensor PMS1003"
+#~ msgstr "partikelstofsensor PMS1003"
+
+#~ msgid "particulate matter sensor PMS3003"
+#~ msgstr "partikelstofsensor PMS3003"
+
+#~ msgid "particulate matter sensor PMS5003"
+#~ msgstr "partikelføler PMS5003"
+
+#~ msgid "particulate matter sensor PMS6003"
+#~ msgstr "partikelstofsensor PMS6003"
+
+#~ msgid "particulate matter sensor PMS7003"
+#~ msgstr "partikelføler PMS7003"
+
+#~ msgid "particulate matter sensor SPS30"
+#~ msgstr "partikelføler SPS30"
+
+#~ msgid "particulate matter sensor HPM"
+#~ msgstr ""
+
+#~ msgid "particulate matter sensor HM3301"
+#~ msgstr "partikelstofsensor HM3301"
+
+#~ msgid "temperature/humidity sensor DS18S20"
+#~ msgstr ""
+
+#~ msgid "temperature/humidity sensor DS18B20"
+#~ msgstr ""
+
+#~ msgid "temperature/humidity sensor DHT22"
+#~ msgstr "temperatur-fugtighedssensor DHT22"
+
+#~ msgid "temperature/pressure sensor BMP180"
+#~ msgstr "temperaturtryksensor BMP180"
+
+#~ msgid "temperature/pressure sensor BMP280"
+#~ msgstr "temperaturtryksensor BMP280"
+
+#~ msgid "temperature/humidity/pressure sensor BME280"
+#~ msgstr "temperaturfugtfugttryksensor BME280"
+
+#~ msgid "temperature/humidity sensor HTU21D"
+#~ msgstr ""
+
+#~ msgid "temperature/humidity sensor SHT10"
+#~ msgstr ""
+
+#~ msgid "temperature/humidity sensor SHT11"
+#~ msgstr ""
+
+#~ msgid "temperature/humidity sensor SHT15"
+#~ msgstr ""
+
+#~ msgid "temperature/humidity sensor SHT30"
+#~ msgstr ""
+
+#~ msgid "temperature/humidity sensor SHT31"
+#~ msgstr ""
+
+#~ msgid "temperature/humidity sensor SHT35"
+#~ msgstr ""
+
+#~ msgid "temperature/humidity sensor SHT85"
+#~ msgstr ""
+
+#~ msgid "temperature/humidity/CO₂ ppm sensor SCD30"
+#~ msgstr "temperatur-fugtCO₂ ppm-sensor SCD30"
+
+#~ msgid "noise sensor DNMS"
+#~ msgstr ""
+
+#~ msgid "radiation sensor SBM-20"
+#~ msgstr ""
+
+#~ msgid "radiation sensor SBM-19"
+#~ msgstr ""
+
+#~ msgid "radiation sensor Si22G"
+#~ msgstr ""
 
