@@ -271,7 +271,7 @@ msgstr "Luftdruck auf Meereshöhe"
 #: webapp/personal/views.py:79 webapp/personal/views.py:81
 #: webapp/personal/views.py:83
 msgid "particulate matter sensor"
-msgstr ""
+msgstr "Feinstaub-Sensor"
 
 #: webapp/personal/views.py:85 webapp/personal/views.py:87
 #: webapp/personal/views.py:89 webapp/personal/views.py:97
@@ -280,28 +280,28 @@ msgstr ""
 #: webapp/personal/views.py:107 webapp/personal/views.py:109
 #: webapp/personal/views.py:111
 msgid "temperature/humidity sensor"
-msgstr ""
+msgstr "Temperatur/Luftfeuchte-Sensor"
 
 #: webapp/personal/views.py:91 webapp/personal/views.py:93
 msgid "temperature/pressure sensor"
-msgstr ""
+msgstr "Temperatur/Luftdruck-Sensor"
 
 #: webapp/personal/views.py:95
 msgid "temperature/humidity/pressure sensor"
-msgstr ""
+msgstr "Temperatur/Luftfeuchte/Luftdruck-Sensor"
 
 #: webapp/personal/views.py:113
 msgid "temperature/humidity/CO₂ ppm sensor"
-msgstr ""
+msgstr "Temperatur/Luftfeuchte/CO₂-Sensor"
 
 #: webapp/personal/views.py:115
 msgid "noise sensor"
-msgstr ""
+msgstr "Lärm-Sensor"
 
 #: webapp/personal/views.py:117 webapp/personal/views.py:119
 #: webapp/personal/views.py:121
 msgid "radiation sensor"
-msgstr ""
+msgstr "Strahlungssensor"
 
 #: webapp/personal/views.py:179
 msgid "Settings saved successfully."
@@ -1235,94 +1235,3 @@ msgstr "Neues Passwort (Wiederholung)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Nutzerdaten gespeichert."
-
-#~ msgid "particulate matter sensor PPD42NS"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor SDS011"
-#~ msgstr "Feinstaub-Sensor SDS011"
-
-#~ msgid "particulate matter sensor SDS021"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor PMS1003"
-#~ msgstr "Feinstaub-Sensor PMS1003"
-
-#~ msgid "particulate matter sensor PMS3003"
-#~ msgstr "Feinstaub-Sensor 3003"
-
-#~ msgid "particulate matter sensor PMS5003"
-#~ msgstr "Feinstaub-Sensor 5003"
-
-#~ msgid "particulate matter sensor PMS6003"
-#~ msgstr "Feinstaub-Sensor 6003"
-
-#~ msgid "particulate matter sensor PMS7003"
-#~ msgstr "Feinstaub-Sensor PMS7003"
-
-#~ msgid "particulate matter sensor SPS30"
-#~ msgstr "Feinstaub-Sensor SPS30"
-
-#~ msgid "particulate matter sensor HPM"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor HM3301"
-#~ msgstr "Feinstaub-Sensor HM3301"
-
-#~ msgid "temperature/humidity sensor DS18S20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DS18B20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DHT22"
-#~ msgstr "Temperatur/Luftfeuchte-Sensor DHT22"
-
-#~ msgid "temperature/pressure sensor BMP180"
-#~ msgstr "Temperatur/Luftdruck-Sensor BMP180"
-
-#~ msgid "temperature/pressure sensor BMP280"
-#~ msgstr "Temperatur/Luftdruck-Sensor BMP280"
-
-#~ msgid "temperature/humidity/pressure sensor BME280"
-#~ msgstr "Temperatur/Luftfeuchte/Luftdruck-Sensor BME280"
-
-#~ msgid "temperature/humidity sensor HTU21D"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT10"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT11"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT15"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT30"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT31"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT35"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT85"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity/CO₂ ppm sensor SCD30"
-#~ msgstr "Temperatur/Luftfeuchte/CO₂ ppm Sensor SCD30"
-
-#~ msgid "noise sensor DNMS"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-20"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-19"
-#~ msgstr ""
-
-#~ msgid "radiation sensor Si22G"
-#~ msgstr ""
-
