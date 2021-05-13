@@ -59,8 +59,12 @@ def sensor_data(id):
     node = get_object_or_404(Node, Node.id == id, Node.email == current_user.email)
     sensors = node.sensors
     for sensor in sensors:
-        if sensor.sensor_type_id == 14:
+        if sensor.sensor_type_id == 1:
+            sensor.sensor_type_name = _('particulate matter sensor PPD42NS')
+        elif sensor.sensor_type_id == 14:
             sensor.sensor_type_name = _('particulate matter sensor SDS011')
+        elif sensor.sensor_type_id == 18:
+            sensor.sensor_type_name = _('particulate matter sensor SDS021')
         elif sensor.sensor_type_id == 21:
             sensor.sensor_type_name = _('particulate matter sensor PMS1003')
         elif sensor.sensor_type_id == 16:
@@ -73,8 +77,14 @@ def sensor_data(id):
             sensor.sensor_type_name = _('particulate matter sensor PMS7003')
         elif sensor.sensor_type_id == 37:
             sensor.sensor_type_name = _('particulate matter sensor SPS30')
+        elif sensor.sensor_type_id == 25:
+            sensor.sensor_type_name = _('particulate matter sensor HPM')
         elif sensor.sensor_type_id == 38:
             sensor.sensor_type_name = _('particulate matter sensor HM3301')
+        elif sensor.sensor_type_id == 12:
+            sensor.sensor_type_name = _('temperature/humidity sensor DS18S20')
+        elif sensor.sensor_type_id == 13:
+            sensor.sensor_type_name = _('temperature/humidity sensor DS18B20')
         elif sensor.sensor_type_id == 9:
             sensor.sensor_type_name = _('temperature/humidity sensor DHT22')
         elif sensor.sensor_type_id == 8:
@@ -83,8 +93,32 @@ def sensor_data(id):
             sensor.sensor_type_name = _('temperature/pressure sensor BMP280')
         elif sensor.sensor_type_id == 17:
             sensor.sensor_type_name = _('temperature/humidity/pressure sensor BME280')
+        elif sensor.sensor_type_id == 19:
+            sensor.sensor_type_name = _('temperature/humidity sensor HTU21D')
+        elif sensor.sensor_type_id == 4:
+            sensor.sensor_type_name = _('temperature/humidity sensor SHT10')
+        elif sensor.sensor_type_id == 5:
+            sensor.sensor_type_name = _('temperature/humidity sensor SHT11')
+        elif sensor.sensor_type_id == 6:
+            sensor.sensor_type_name = _('temperature/humidity sensor SHT15')
+        elif sensor.sensor_type_id == 26:
+            sensor.sensor_type_name = _('temperature/humidity sensor SHT30')
+        elif sensor.sensor_type_id == 27:
+            sensor.sensor_type_name = _('temperature/humidity sensor SHT31')
+        elif sensor.sensor_type_id == 28:
+            sensor.sensor_type_name = _('temperature/humidity sensor SHT35')
+        elif sensor.sensor_type_id == 39:
+            sensor.sensor_type_name = _('temperature/humidity sensor SHT85')
         elif sensor.sensor_type_id == 40:
             sensor.sensor_type_name = _('temperature/humidity/CO₂ ppm sensor SCD30')
+        elif sensor.sensor_type_id == 29:
+            sensor.sensor_type_name = _('noise sensor DNMS')
+        elif sensor.sensor_type_id == 31:
+            sensor.sensor_type_name = _('radiation sensor SBM-20')
+        elif sensor.sensor_type_id == 35:
+            sensor.sensor_type_name = _('radiation sensor SBM-19')
+        elif sensor.sensor_type_id == 36:
+            sensor.sensor_type_name = _('radiation sensor Si22G')
 
         try:
             # sensor_request = requests.get('http://api.sensor.community/static/v1/sensor/%s/' % (sensor.id))
