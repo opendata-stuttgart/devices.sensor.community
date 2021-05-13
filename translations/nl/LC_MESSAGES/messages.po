@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-13 16:14+0000\n"
+"POT-Creation-Date: 2021-05-13 20:49+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -296,19 +296,19 @@ msgstr ""
 msgid "radiation sensor"
 msgstr ""
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:219
 msgid "Settings saved successfully."
 msgstr "Instellingen succesvol opgeslagen."
 
-#: webapp/personal/views.py:217
+#: webapp/personal/views.py:247
 msgid "Sensor successfully registered."
 msgstr "Sensor succesvol geregistreerd."
 
-#: webapp/personal/views.py:221
+#: webapp/personal/views.py:251
 msgid "This sensor ID is already registered."
 msgstr "Deze sensor ID is al geregistreerd."
 
-#: webapp/personal/views.py:235
+#: webapp/personal/views.py:265
 msgid "A fine dust sensor was transferred to you"
 msgstr "Een fijnstof sensor werd naar u overgebracht"
 
@@ -555,7 +555,7 @@ msgstr "Verander je wachtwoord."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr "Gegevens van knooppunt"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -564,25 +564,22 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
-"Gewoonlijk zijn op elk knooppunt twee sensoren aangesloten: de "
-"fijnstofsensor en de vochtigheids- en temperatuursensor. Het sensornummer"
-" kan ook worden gevonden"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr "op de fijnstofkaart weer"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr "toon op kaart"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr "Laatst bijgewerkt:"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr "Voor deze sensor zijn geen actuele gegevens beschikbaar."
+msgstr ""
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1313,4 +1310,32 @@ msgstr "Gebruikersgegevens opgeslagen."
 
 #~ msgid "radiation sensor Si22G"
 #~ msgstr ""
+
+#~ msgid "Data from Node"
+#~ msgstr "Gegevens van knooppunt"
+
+#~ msgid ""
+#~ "Typically, two sensors are attached to"
+#~ " each node: the fine dust sensor "
+#~ "and the\n"
+#~ "                        Humidity and temperature "
+#~ "sensor. The sensor number can also "
+#~ "be found"
+#~ msgstr ""
+#~ "Gewoonlijk zijn op elk knooppunt twee"
+#~ " sensoren aangesloten: de fijnstofsensor en"
+#~ " de vochtigheids- en temperatuursensor. Het"
+#~ " sensornummer kan ook worden gevonden"
+
+#~ msgid "on the fine dust map again"
+#~ msgstr "op de fijnstofkaart weer"
+
+#~ msgid "show on map"
+#~ msgstr "toon op kaart"
+
+#~ msgid "Last updated:"
+#~ msgstr "Laatst bijgewerkt:"
+
+#~ msgid "No current data are available for this sensor."
+#~ msgstr "Voor deze sensor zijn geen actuele gegevens beschikbaar."
 

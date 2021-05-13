@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-13 16:14+0000\n"
+"POT-Creation-Date: 2021-05-13 20:49+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -282,19 +282,19 @@ msgstr ""
 msgid "radiation sensor"
 msgstr ""
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:219
 msgid "Settings saved successfully."
 msgstr "設定の保存に成功しました。"
 
-#: webapp/personal/views.py:217
+#: webapp/personal/views.py:247
 msgid "Sensor successfully registered."
 msgstr "センサーの登録が完了しました。"
 
-#: webapp/personal/views.py:221
+#: webapp/personal/views.py:251
 msgid "This sensor ID is already registered."
 msgstr "このセンサーIDはすでに登録されています。"
 
-#: webapp/personal/views.py:235
+#: webapp/personal/views.py:265
 msgid "A fine dust sensor was transferred to you"
 msgstr "ファインダストセンサーが転送されてきた"
 
@@ -526,7 +526,7 @@ msgstr "パスワードの変更"
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr "ノードからのデータ"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -534,23 +534,23 @@ msgid ""
 "and the\n"
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
-msgstr "一般的に、各ノードには「微細なほこりセンサー」と「湿度・温度センサー」の2つのセンサーが取り付けられています。センサーの番号は、次のようにも確認できます。"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr "ファインダストマップで再び"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr "地図で見る"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr "最終更新日"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr "現在、このセンサーのデータはありません。"
+msgstr ""
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1213,4 +1213,28 @@ msgstr "ユーザーデータの保存"
 
 #~ msgid "radiation sensor Si22G"
 #~ msgstr ""
+
+#~ msgid "Data from Node"
+#~ msgstr "ノードからのデータ"
+
+#~ msgid ""
+#~ "Typically, two sensors are attached to"
+#~ " each node: the fine dust sensor "
+#~ "and the\n"
+#~ "                        Humidity and temperature "
+#~ "sensor. The sensor number can also "
+#~ "be found"
+#~ msgstr "一般的に、各ノードには「微細なほこりセンサー」と「湿度・温度センサー」の2つのセンサーが取り付けられています。センサーの番号は、次のようにも確認できます。"
+
+#~ msgid "on the fine dust map again"
+#~ msgstr "ファインダストマップで再び"
+
+#~ msgid "show on map"
+#~ msgstr "地図で見る"
+
+#~ msgid "Last updated:"
+#~ msgstr "最終更新日"
+
+#~ msgid "No current data are available for this sensor."
+#~ msgstr "現在、このセンサーのデータはありません。"
 

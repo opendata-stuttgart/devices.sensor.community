@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-13 16:14+0000\n"
+"POT-Creation-Date: 2021-05-13 20:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -277,19 +277,19 @@ msgstr ""
 msgid "radiation sensor"
 msgstr ""
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:219
 msgid "Settings saved successfully."
 msgstr ""
 
-#: webapp/personal/views.py:217
+#: webapp/personal/views.py:247
 msgid "Sensor successfully registered."
 msgstr ""
 
-#: webapp/personal/views.py:221
+#: webapp/personal/views.py:251
 msgid "This sensor ID is already registered."
 msgstr ""
 
-#: webapp/personal/views.py:235
+#: webapp/personal/views.py:265
 msgid "A fine dust sensor was transferred to you"
 msgstr ""
 

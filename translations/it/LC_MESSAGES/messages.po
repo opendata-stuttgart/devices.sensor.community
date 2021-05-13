@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-13 16:14+0000\n"
+"POT-Creation-Date: 2021-05-13 20:49+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -292,19 +292,19 @@ msgstr ""
 msgid "radiation sensor"
 msgstr ""
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:219
 msgid "Settings saved successfully."
 msgstr "Impostazioni salvate con successo."
 
-#: webapp/personal/views.py:217
+#: webapp/personal/views.py:247
 msgid "Sensor successfully registered."
 msgstr "Sensore registrato con successo."
 
-#: webapp/personal/views.py:221
+#: webapp/personal/views.py:251
 msgid "This sensor ID is already registered."
 msgstr "Questo ID sensore è già registrato."
 
-#: webapp/personal/views.py:235
+#: webapp/personal/views.py:265
 msgid "A fine dust sensor was transferred to you"
 msgstr "Un sensore di polvere sottile è stato trasferito a voi"
 
@@ -554,7 +554,7 @@ msgstr "Cambia la tua password."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr "Dati dal nodo"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -563,25 +563,22 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
-"Tipicamente, due sensori sono collegati ad ogni nodo: il sensore di "
-"polveri sottili e il sensore di umidità e temperatura. Il numero del "
-"sensore può anche essere trovato"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr "sulla mappa delle polveri sottili di nuovo"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr "mostra sulla mappa"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr "Ultimo aggiornamento:"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr "Non sono disponibili dati attuali per questo sensore."
+msgstr ""
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1310,4 +1307,33 @@ msgstr "Dati utente salvati."
 
 #~ msgid "radiation sensor Si22G"
 #~ msgstr ""
+
+#~ msgid "Data from Node"
+#~ msgstr "Dati dal nodo"
+
+#~ msgid ""
+#~ "Typically, two sensors are attached to"
+#~ " each node: the fine dust sensor "
+#~ "and the\n"
+#~ "                        Humidity and temperature "
+#~ "sensor. The sensor number can also "
+#~ "be found"
+#~ msgstr ""
+#~ "Tipicamente, due sensori sono collegati "
+#~ "ad ogni nodo: il sensore di "
+#~ "polveri sottili e il sensore di "
+#~ "umidità e temperatura. Il numero del "
+#~ "sensore può anche essere trovato"
+
+#~ msgid "on the fine dust map again"
+#~ msgstr "sulla mappa delle polveri sottili di nuovo"
+
+#~ msgid "show on map"
+#~ msgstr "mostra sulla mappa"
+
+#~ msgid "Last updated:"
+#~ msgstr "Ultimo aggiornamento:"
+
+#~ msgid "No current data are available for this sensor."
+#~ msgstr "Non sono disponibili dati attuali per questo sensore."
 

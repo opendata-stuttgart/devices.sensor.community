@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-13 16:14+0000\n"
+"POT-Creation-Date: 2021-05-13 20:49+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -294,19 +294,19 @@ msgstr ""
 msgid "radiation sensor"
 msgstr ""
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:219
 msgid "Settings saved successfully."
 msgstr "Nustatymai sėkmingai išsaugoti."
 
-#: webapp/personal/views.py:217
+#: webapp/personal/views.py:247
 msgid "Sensor successfully registered."
 msgstr "Jutiklis sėkmingai užregistruotas."
 
-#: webapp/personal/views.py:221
+#: webapp/personal/views.py:251
 msgid "This sensor ID is already registered."
 msgstr "Šis jutiklio ID jau užregistruotas."
 
-#: webapp/personal/views.py:235
+#: webapp/personal/views.py:265
 msgid "A fine dust sensor was transferred to you"
 msgstr "Jums buvo perduotas smulkių dulkių jutiklis"
 
@@ -559,7 +559,7 @@ msgstr "Pakeiskite slaptažodį."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr "Duomenys iš mazgo"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -568,25 +568,22 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
-"Paprastai prie kiekvieno mazgo prijungiami du jutikliai: smulkių dulkių "
-"jutiklis ir drėgmės bei temperatūros jutiklis. Jutiklio numerį taip pat "
-"galima rasti"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr "vėl smulkių dulkių žemėlapyje"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr "rodyti žemėlapyje"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr "Paskutinį kartą atnaujinta:"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr "Dabartinių duomenų apie šį jutiklį nėra."
+msgstr ""
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1306,4 +1303,32 @@ msgstr "Išsaugoti naudotojo duomenys."
 
 #~ msgid "radiation sensor Si22G"
 #~ msgstr ""
+
+#~ msgid "Data from Node"
+#~ msgstr "Duomenys iš mazgo"
+
+#~ msgid ""
+#~ "Typically, two sensors are attached to"
+#~ " each node: the fine dust sensor "
+#~ "and the\n"
+#~ "                        Humidity and temperature "
+#~ "sensor. The sensor number can also "
+#~ "be found"
+#~ msgstr ""
+#~ "Paprastai prie kiekvieno mazgo prijungiami "
+#~ "du jutikliai: smulkių dulkių jutiklis ir"
+#~ " drėgmės bei temperatūros jutiklis. "
+#~ "Jutiklio numerį taip pat galima rasti"
+
+#~ msgid "on the fine dust map again"
+#~ msgstr "vėl smulkių dulkių žemėlapyje"
+
+#~ msgid "show on map"
+#~ msgstr "rodyti žemėlapyje"
+
+#~ msgid "Last updated:"
+#~ msgstr "Paskutinį kartą atnaujinta:"
+
+#~ msgid "No current data are available for this sensor."
+#~ msgstr "Dabartinių duomenų apie šį jutiklį nėra."
 

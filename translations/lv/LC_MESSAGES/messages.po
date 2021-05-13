@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-13 16:14+0000\n"
+"POT-Creation-Date: 2021-05-13 20:49+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -293,19 +293,19 @@ msgstr ""
 msgid "radiation sensor"
 msgstr ""
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:219
 msgid "Settings saved successfully."
 msgstr "Iestatījumi ir veiksmīgi saglabāti."
 
-#: webapp/personal/views.py:217
+#: webapp/personal/views.py:247
 msgid "Sensor successfully registered."
 msgstr "Sensors veiksmīgi reģistrēts."
 
-#: webapp/personal/views.py:221
+#: webapp/personal/views.py:251
 msgid "This sensor ID is already registered."
 msgstr "Šis sensora ID jau ir reģistrēts."
 
-#: webapp/personal/views.py:235
+#: webapp/personal/views.py:265
 msgid "A fine dust sensor was transferred to you"
 msgstr "Jums tika nodots smalks putekļu sensors"
 
@@ -553,7 +553,7 @@ msgstr "Mainiet paroli."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr "Dati no mezgla"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -562,24 +562,22 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
-"Parasti katram mezglam tiek pievienoti divi sensori: smalko putekļu "
-"sensors un mitruma un temperatūras sensors. Sensora numuru var atrast arī"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr "atkal smalko putekļu kartē"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr "parādīt kartē"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr "Pēdējo reizi atjaunināts:"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr "Pašlaik dati par šo sensoru nav pieejami."
+msgstr ""
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1298,4 +1296,32 @@ msgstr "Lietotāja datu saglabāšana."
 
 #~ msgid "radiation sensor Si22G"
 #~ msgstr ""
+
+#~ msgid "Data from Node"
+#~ msgstr "Dati no mezgla"
+
+#~ msgid ""
+#~ "Typically, two sensors are attached to"
+#~ " each node: the fine dust sensor "
+#~ "and the\n"
+#~ "                        Humidity and temperature "
+#~ "sensor. The sensor number can also "
+#~ "be found"
+#~ msgstr ""
+#~ "Parasti katram mezglam tiek pievienoti "
+#~ "divi sensori: smalko putekļu sensors un"
+#~ " mitruma un temperatūras sensors. Sensora"
+#~ " numuru var atrast arī"
+
+#~ msgid "on the fine dust map again"
+#~ msgstr "atkal smalko putekļu kartē"
+
+#~ msgid "show on map"
+#~ msgstr "parādīt kartē"
+
+#~ msgid "Last updated:"
+#~ msgstr "Pēdējo reizi atjaunināts:"
+
+#~ msgid "No current data are available for this sensor."
+#~ msgstr "Pašlaik dati par šo sensoru nav pieejami."
 

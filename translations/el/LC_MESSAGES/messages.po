@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-13 16:14+0000\n"
+"POT-Creation-Date: 2021-05-13 20:49+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -297,19 +297,19 @@ msgstr ""
 msgid "radiation sensor"
 msgstr ""
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:219
 msgid "Settings saved successfully."
 msgstr "Οι ρυθμίσεις αποθηκεύτηκαν με επιτυχία."
 
-#: webapp/personal/views.py:217
+#: webapp/personal/views.py:247
 msgid "Sensor successfully registered."
 msgstr "Ο αισθητήρας καταχωρήθηκε επιτυχώς."
 
-#: webapp/personal/views.py:221
+#: webapp/personal/views.py:251
 msgid "This sensor ID is already registered."
 msgstr "Αυτό το αναγνωριστικό αισθητήρα είναι ήδη καταχωρημένο."
 
-#: webapp/personal/views.py:235
+#: webapp/personal/views.py:265
 msgid "A fine dust sensor was transferred to you"
 msgstr "Ένας αισθητήρας λεπτής σκόνης μεταφέρθηκε σε εσάς"
 
@@ -565,7 +565,7 @@ msgstr "Αλλάξτε τον κωδικό πρόσβασής σας."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr "Δεδομένα από τον κόμβο"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -574,26 +574,22 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
-"Συνήθως, σε κάθε κόμβο συνδέονται δύο αισθητήρες: ο αισθητήρας λεπτής "
-"σκόνης\n"
-"                        και ο αισθητήρας υγρασίας και θερμοκρασίας. Ο "
-"αριθμός του αισθητήρα μπορεί επίσης να βρεθεί"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr "στο χάρτη της λεπτής σκόνης και πάλι"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr "Εμφάνιση στο χάρτη"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr "Τελευταία ενημέρωση:"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr "Δεν υπάρχουν διαθέσιμα τρέχοντα δεδομένα για αυτόν τον αισθητήρα."
+msgstr ""
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1345,4 +1341,34 @@ msgstr "Αποθήκευση δεδομένων χρήστη."
 
 #~ msgid "radiation sensor Si22G"
 #~ msgstr ""
+
+#~ msgid "Data from Node"
+#~ msgstr "Δεδομένα από τον κόμβο"
+
+#~ msgid ""
+#~ "Typically, two sensors are attached to"
+#~ " each node: the fine dust sensor "
+#~ "and the\n"
+#~ "                        Humidity and temperature "
+#~ "sensor. The sensor number can also "
+#~ "be found"
+#~ msgstr ""
+#~ "Συνήθως, σε κάθε κόμβο συνδέονται δύο"
+#~ " αισθητήρες: ο αισθητήρας λεπτής σκόνης"
+#~ "\n"
+#~ "                        και ο αισθητήρας "
+#~ "υγρασίας και θερμοκρασίας. Ο αριθμός του"
+#~ " αισθητήρα μπορεί επίσης να βρεθεί"
+
+#~ msgid "on the fine dust map again"
+#~ msgstr "στο χάρτη της λεπτής σκόνης και πάλι"
+
+#~ msgid "show on map"
+#~ msgstr "Εμφάνιση στο χάρτη"
+
+#~ msgid "Last updated:"
+#~ msgstr "Τελευταία ενημέρωση:"
+
+#~ msgid "No current data are available for this sensor."
+#~ msgstr "Δεν υπάρχουν διαθέσιμα τρέχοντα δεδομένα για αυτόν τον αισθητήρα."
 

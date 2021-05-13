@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-13 16:14+0000\n"
+"POT-Creation-Date: 2021-05-13 20:49+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -280,19 +280,19 @@ msgstr ""
 msgid "radiation sensor"
 msgstr ""
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:219
 msgid "Settings saved successfully."
 msgstr "设置成功保存。"
 
-#: webapp/personal/views.py:217
+#: webapp/personal/views.py:247
 msgid "Sensor successfully registered."
 msgstr "传感器成功注册。"
 
-#: webapp/personal/views.py:221
+#: webapp/personal/views.py:251
 msgid "This sensor ID is already registered."
 msgstr "该传感器ID已被注册。"
 
-#: webapp/personal/views.py:235
+#: webapp/personal/views.py:265
 msgid "A fine dust sensor was transferred to you"
 msgstr "一个细小的灰尘传感器被转移给你"
 
@@ -522,7 +522,7 @@ msgstr "改变你的密码。"
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr "节点的数据"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -530,23 +530,23 @@ msgid ""
 "and the\n"
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
-msgstr "通常情况下，每个节点上都有两个传感器：微尘传感器以及湿度和温度传感器。传感器的编号也可以找到"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr "在微尘地图上再次出现"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr "在地图上显示"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr "最后更新。"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr "目前没有该传感器的数据。"
+msgstr ""
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1200,4 +1200,28 @@ msgstr "保存的用户数据。"
 
 #~ msgid "radiation sensor Si22G"
 #~ msgstr ""
+
+#~ msgid "Data from Node"
+#~ msgstr "节点的数据"
+
+#~ msgid ""
+#~ "Typically, two sensors are attached to"
+#~ " each node: the fine dust sensor "
+#~ "and the\n"
+#~ "                        Humidity and temperature "
+#~ "sensor. The sensor number can also "
+#~ "be found"
+#~ msgstr "通常情况下，每个节点上都有两个传感器：微尘传感器以及湿度和温度传感器。传感器的编号也可以找到"
+
+#~ msgid "on the fine dust map again"
+#~ msgstr "在微尘地图上再次出现"
+
+#~ msgid "show on map"
+#~ msgstr "在地图上显示"
+
+#~ msgid "Last updated:"
+#~ msgstr "最后更新。"
+
+#~ msgid "No current data are available for this sensor."
+#~ msgstr "目前没有该传感器的数据。"
 

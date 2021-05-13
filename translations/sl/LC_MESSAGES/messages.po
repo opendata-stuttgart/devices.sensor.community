@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-13 16:14+0000\n"
+"POT-Creation-Date: 2021-05-13 20:49+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -292,19 +292,19 @@ msgstr ""
 msgid "radiation sensor"
 msgstr ""
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:219
 msgid "Settings saved successfully."
 msgstr "Nastavitve so bile uspešno shranjene."
 
-#: webapp/personal/views.py:217
+#: webapp/personal/views.py:247
 msgid "Sensor successfully registered."
 msgstr "Senzor je bil uspešno registriran."
 
-#: webapp/personal/views.py:221
+#: webapp/personal/views.py:251
 msgid "This sensor ID is already registered."
 msgstr "Ta ID senzorja je že registriran."
 
-#: webapp/personal/views.py:235
+#: webapp/personal/views.py:265
 msgid "A fine dust sensor was transferred to you"
 msgstr "Senzor za droben prah je bil prenesen na vas"
 
@@ -554,7 +554,7 @@ msgstr "Spremenite geslo."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr "Podatki iz vozlišča"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -563,26 +563,22 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
-"Običajno sta na vsako vozlišče priključena dva senzorja: senzor finega "
-"prahu\n"
-"                        ter senzor vlažnosti in temperature. Številko "
-"senzorja lahko najdete tudi"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr "na zemljevidu drobnega prahu"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr "Prikaži na zemljevidu"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr "Nazadnje posodobljeno:"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr "Trenutni podatki za ta senzor niso na voljo."
+msgstr ""
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1306,4 +1302,34 @@ msgstr "Shranjeni uporabniški podatki."
 
 #~ msgid "radiation sensor Si22G"
 #~ msgstr ""
+
+#~ msgid "Data from Node"
+#~ msgstr "Podatki iz vozlišča"
+
+#~ msgid ""
+#~ "Typically, two sensors are attached to"
+#~ " each node: the fine dust sensor "
+#~ "and the\n"
+#~ "                        Humidity and temperature "
+#~ "sensor. The sensor number can also "
+#~ "be found"
+#~ msgstr ""
+#~ "Običajno sta na vsako vozlišče "
+#~ "priključena dva senzorja: senzor finega "
+#~ "prahu\n"
+#~ "                        ter senzor vlažnosti "
+#~ "in temperature. Številko senzorja lahko "
+#~ "najdete tudi"
+
+#~ msgid "on the fine dust map again"
+#~ msgstr "na zemljevidu drobnega prahu"
+
+#~ msgid "show on map"
+#~ msgstr "Prikaži na zemljevidu"
+
+#~ msgid "Last updated:"
+#~ msgstr "Nazadnje posodobljeno:"
+
+#~ msgid "No current data are available for this sensor."
+#~ msgstr "Trenutni podatki za ta senzor niso na voljo."
 

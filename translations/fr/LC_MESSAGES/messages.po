@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-13 16:14+0000\n"
+"POT-Creation-Date: 2021-05-13 20:49+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -295,19 +295,19 @@ msgstr ""
 msgid "radiation sensor"
 msgstr ""
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:219
 msgid "Settings saved successfully."
 msgstr "Configuration enregistrée avec succès"
 
-#: webapp/personal/views.py:217
+#: webapp/personal/views.py:247
 msgid "Sensor successfully registered."
 msgstr "Détecteur enregistré avec succès"
 
-#: webapp/personal/views.py:221
+#: webapp/personal/views.py:251
 msgid "This sensor ID is already registered."
 msgstr "Cet ID de capteur est déjà enregistré."
 
-#: webapp/personal/views.py:235
+#: webapp/personal/views.py:265
 msgid "A fine dust sensor was transferred to you"
 msgstr "On vous a transféré un détecteur de particules fines"
 
@@ -560,7 +560,7 @@ msgstr "Changer le mot de passe."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr "Données du nœud"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -569,26 +569,22 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
-"Normalement, deux détecteurs sont attaché à chaque nœud : le capteur de "
-"particules fines et le\n"
-" capteur d'humidité relative et de température. Le numéro du détecteur "
-"peut aussi être retrouvé "
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr "sur la platine"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr "voir sur la carte"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr "Dernière mise à jour : "
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr "Actuellement, il n'y a aucune information disponible pour ce détecteur."
+msgstr ""
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1329,4 +1325,34 @@ msgstr "Informations utilisateur sauvegardées"
 
 #~ msgid "radiation sensor Si22G"
 #~ msgstr ""
+
+#~ msgid "Data from Node"
+#~ msgstr "Données du nœud"
+
+#~ msgid ""
+#~ "Typically, two sensors are attached to"
+#~ " each node: the fine dust sensor "
+#~ "and the\n"
+#~ "                        Humidity and temperature "
+#~ "sensor. The sensor number can also "
+#~ "be found"
+#~ msgstr ""
+#~ "Normalement, deux détecteurs sont attaché "
+#~ "à chaque nœud : le capteur de "
+#~ "particules fines et le\n"
+#~ " capteur d'humidité relative et de "
+#~ "température. Le numéro du détecteur peut"
+#~ " aussi être retrouvé "
+
+#~ msgid "on the fine dust map again"
+#~ msgstr "sur la platine"
+
+#~ msgid "show on map"
+#~ msgstr "voir sur la carte"
+
+#~ msgid "Last updated:"
+#~ msgstr "Dernière mise à jour : "
+
+#~ msgid "No current data are available for this sensor."
+#~ msgstr "Actuellement, il n'y a aucune information disponible pour ce détecteur."
 

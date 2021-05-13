@@ -70,65 +70,95 @@ def sensor_data(id):
     sensors = node.sensors
     for sensor in sensors:
         if sensor.sensor_type_id == 1:
-            sensor.sensor_type_name = SENSOR_TYPES["PM"] + " PPD42NS"
+            sensor.sensor_type_name = SENSOR_TYPES["PM"]
+            sensor.sensor_type_id = 'PPD42NS'
         elif sensor.sensor_type_id == 14:
-            sensor.sensor_type_name = SENSOR_TYPES["PM"] + " SDS011"
+            sensor.sensor_type_name = SENSOR_TYPES["PM"]
+            sensor.sensor_type_id = 'SDS011'
         elif sensor.sensor_type_id == 18:
-            sensor.sensor_type_name = SENSOR_TYPES["PM"] + " SDS021"
+            sensor.sensor_type_name = SENSOR_TYPES["PM"]
+            sensor.sensor_type_id = 'SDS021'
         elif sensor.sensor_type_id == 21:
-            sensor.sensor_type_name = SENSOR_TYPES["PM"] + " PMS1003"
+            sensor.sensor_type_name = SENSOR_TYPES["PM"]
+            sensor.sensor_type_id = 'PMS1003'
         elif sensor.sensor_type_id == 16:
-            sensor.sensor_type_name = SENSOR_TYPES["PM"] + " PMS3003"
+            sensor.sensor_type_name = SENSOR_TYPES["PM"]
+            sensor.sensor_type_id = 'PMS3003'
         elif sensor.sensor_type_id == 23:
-            sensor.sensor_type_name = SENSOR_TYPES["PM"] + " PMS5003"
+            sensor.sensor_type_name = SENSOR_TYPES["PM"]
+            sensor.sensor_type_id = 'PMS5003'
         elif sensor.sensor_type_id == 24:
-            sensor.sensor_type_name = SENSOR_TYPES["PM"] + " PMS6003"
+            sensor.sensor_type_name = SENSOR_TYPES["PM"]
+            sensor.sensor_type_id = 'PMS6003'
         elif sensor.sensor_type_id == 22:
-            sensor.sensor_type_name = SENSOR_TYPES["PM"] + " PMS7003"
+            sensor.sensor_type_name = SENSOR_TYPES["PM"]
+            sensor.sensor_type_id = 'PMS7003'
         elif sensor.sensor_type_id == 37:
-            sensor.sensor_type_name = SENSOR_TYPES["PM"] + " SPS30"
+            sensor.sensor_type_name = SENSOR_TYPES["PM"]
+            sensor.sensor_type_id = 'SPS30'
         elif sensor.sensor_type_id == 25:
-            sensor.sensor_type_name = SENSOR_TYPES["PM"] + " HPM"
+            sensor.sensor_type_name = SENSOR_TYPES["PM"]
+            sensor.sensor_type_id = 'HPM'
         elif sensor.sensor_type_id == 38:
-            sensor.sensor_type_name = SENSOR_TYPES["PM"] + " HM3301"
+            sensor.sensor_type_name = SENSOR_TYPES["PM"]
+            sensor.sensor_type_id = 'HM3301'
         elif sensor.sensor_type_id == 12:
-            sensor.sensor_type_name = SENSOR_TYPES["TH"] + ' DS18S20'
+            sensor.sensor_type_name = SENSOR_TYPES["TH"]
+            sensor.sensor_type_id = 'DS18S20'
         elif sensor.sensor_type_id == 13:
-            sensor.sensor_type_name = SENSOR_TYPES["TH"] + ' DS18B20'
+            sensor.sensor_type_name = SENSOR_TYPES["TH"]
+            sensor.sensor_type_id = 'DS18B20'
         elif sensor.sensor_type_id == 9:
-            sensor.sensor_type_name = SENSOR_TYPES["TH"] + ' DHT22'
+            sensor.sensor_type_name = SENSOR_TYPES["TH"]
+            sensor.sensor_type_id = 'DHT22'
         elif sensor.sensor_type_id == 8:
-            sensor.sensor_type_name = SENSOR_TYPES["TP"] + ' BMP180'
+            sensor.sensor_type_name = SENSOR_TYPES["TP"]
+            sensor.sensor_type_id = 'BMP180'
         elif sensor.sensor_type_id == 20:
-            sensor.sensor_type_name = SENSOR_TYPES["TP"] + ' BMP280'
+            sensor.sensor_type_name = SENSOR_TYPES["TP"]
+            sensor.sensor_type_id = 'BMP280'
         elif sensor.sensor_type_id == 17:
-            sensor.sensor_type_name = SENSOR_TYPES["THP"] + ' BME280'
+            sensor.sensor_type_name = SENSOR_TYPES["THP"]
+            sensor.sensor_type_id = 'BME280'
         elif sensor.sensor_type_id == 19:
-            sensor.sensor_type_name = SENSOR_TYPES["TH"] + ' HTU21D'
+            sensor.sensor_type_name = SENSOR_TYPES["TH"]
+            sensor.sensor_type_id = 'HTU21D'
         elif sensor.sensor_type_id == 4:
-            sensor.sensor_type_name = SENSOR_TYPES["TH"] + ' SHT10'
+            sensor.sensor_type_name = SENSOR_TYPES["TH"]
+            sensor.sensor_type_id = 'SHT10'
         elif sensor.sensor_type_id == 5:
-            sensor.sensor_type_name = SENSOR_TYPES["TH"] + ' SHT11'
+            sensor.sensor_type_name = SENSOR_TYPES["TH"]
+            sensor.sensor_type_id = 'SHT11'
         elif sensor.sensor_type_id == 6:
-            sensor.sensor_type_name = SENSOR_TYPES["TH"] + ' SHT15'
+            sensor.sensor_type_name = SENSOR_TYPES["TH"]
+            sensor.sensor_type_id = 'SHT15'
         elif sensor.sensor_type_id == 26:
-            sensor.sensor_type_name = SENSOR_TYPES["TH"] + ' SHT30'
+            sensor.sensor_type_name = SENSOR_TYPES["TH"]
+            sensor.sensor_type_id = 'SHT30'
         elif sensor.sensor_type_id == 27:
-            sensor.sensor_type_name = SENSOR_TYPES["TH"] + ' SHT31'
+            sensor.sensor_type_name = SENSOR_TYPES["TH"]
+            sensor.sensor_type_id = 'SHT31'
         elif sensor.sensor_type_id == 28:
-            sensor.sensor_type_name = SENSOR_TYPES["TH"] + ' SHT35'
+            sensor.sensor_type_name = SENSOR_TYPES["TH"]
+            sensor.sensor_type_id = 'SHT35'
         elif sensor.sensor_type_id == 39:
-            sensor.sensor_type_name = SENSOR_TYPES["TH"] + ' SHT85'
+            sensor.sensor_type_name = SENSOR_TYPES["TH"]
+            sensor.sensor_type_id = 'SHT85'
         elif sensor.sensor_type_id == 40:
-            sensor.sensor_type_name = SENSOR_TYPES["THCO2"] + ' SCD30'
+            sensor.sensor_type_name = SENSOR_TYPES["THCO2"]
+            sensor.sensor_type_id = 'SCD30'
         elif sensor.sensor_type_id == 29:
-            sensor.sensor_type_name = SENSOR_TYPES["NOISE"] + ' DNMS'
+            sensor.sensor_type_name = SENSOR_TYPES["NOISE"]
+            sensor.sensor_type_id = 'DNMS'
         elif sensor.sensor_type_id == 31:
-            sensor.sensor_type_name = SENSOR_TYPES["RADIATION"] + ' SBM-20'
+            sensor.sensor_type_name = SENSOR_TYPES["RADIATION"]
+            sensor.sensor_type_id = 'SBM-20'
         elif sensor.sensor_type_id == 35:
-            sensor.sensor_type_name = SENSOR_TYPES["RADIATION"] + ' SBM-19'
+            sensor.sensor_type_name = SENSOR_TYPES["RADIATION"]
+            sensor.sensor_type_id = 'SBM-19'
         elif sensor.sensor_type_id == 36:
-            sensor.sensor_type_name = SENSOR_TYPES["RADIATION"] + ' Si22G'
+            sensor.sensor_type_name = SENSOR_TYPES["RADIATION"]
+            sensor.sensor_type_id = 'Si22G'
 
         try:
             # sensor_request = requests.get('http://api.sensor.community/static/v1/sensor/%s/' % (sensor.id))

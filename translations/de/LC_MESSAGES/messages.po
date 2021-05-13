@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-13 16:14+0000\n"
+"POT-Creation-Date: 2021-05-13 20:49+0000\n"
 "PO-Revision-Date: 2019-02-08 15:22+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -292,19 +292,19 @@ msgstr "Lärm-Sensor"
 msgid "radiation sensor"
 msgstr "Strahlungssensor"
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:219
 msgid "Settings saved successfully."
 msgstr "Einstellungen erfolgreich gespeichert."
 
-#: webapp/personal/views.py:217
+#: webapp/personal/views.py:247
 msgid "Sensor successfully registered."
 msgstr "Sensor erfolgreich registriert."
 
-#: webapp/personal/views.py:221
+#: webapp/personal/views.py:251
 msgid "This sensor ID is already registered."
 msgstr "Diese Sensor ID ist bereits registriert."
 
-#: webapp/personal/views.py:235
+#: webapp/personal/views.py:265
 msgid "A fine dust sensor was transferred to you"
 msgstr "Ein Feinstaubsensor wurde Ihnen übertragen"
 
@@ -555,7 +555,7 @@ msgstr "Passwort ändern."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr "Daten von Node"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -564,25 +564,22 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
-"Typischerweise sind 2 Sensoren pro Gerät angeschlossen: der "
-"Feinstaubsensor und ein Temperatur/Luftfeuchte-Sensor. Die Sensor IDs "
-"finden Sie hier "
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr "auf der Feinstaub-Karte wieder"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr "auf der Karte zeigen"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr "Letztes Update:"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr "Zu diesem Sensor liegen keine aktuellen Daten vor."
+msgstr ""
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1224,4 +1221,32 @@ msgstr "Neues Passwort (Wiederholung)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Nutzerdaten gespeichert."
+
+#~ msgid "Data from Node"
+#~ msgstr "Daten von Node"
+
+#~ msgid ""
+#~ "Typically, two sensors are attached to"
+#~ " each node: the fine dust sensor "
+#~ "and the\n"
+#~ "                        Humidity and temperature "
+#~ "sensor. The sensor number can also "
+#~ "be found"
+#~ msgstr ""
+#~ "Typischerweise sind 2 Sensoren pro Gerät"
+#~ " angeschlossen: der Feinstaubsensor und ein"
+#~ " Temperatur/Luftfeuchte-Sensor. Die Sensor "
+#~ "IDs finden Sie hier "
+
+#~ msgid "on the fine dust map again"
+#~ msgstr "auf der Feinstaub-Karte wieder"
+
+#~ msgid "show on map"
+#~ msgstr "auf der Karte zeigen"
+
+#~ msgid "Last updated:"
+#~ msgstr "Letztes Update:"
+
+#~ msgid "No current data are available for this sensor."
+#~ msgstr "Zu diesem Sensor liegen keine aktuellen Daten vor."
 

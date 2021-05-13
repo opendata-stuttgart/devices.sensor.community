@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  Sensor.Community\n"
 "Report-Msgid-Bugs-To: radiomgrs@gmail.com\n"
-"POT-Creation-Date: 2021-05-13 16:14+0000\n"
+"POT-Creation-Date: 2021-05-13 20:49+0000\n"
 "PO-Revision-Date: 2019-04-06 16:02+0300\n"
 "Last-Translator: \n"
 "Language: ru\n"
@@ -294,19 +294,19 @@ msgstr ""
 msgid "radiation sensor"
 msgstr ""
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:219
 msgid "Settings saved successfully."
 msgstr "Настройки успешно сохранены."
 
-#: webapp/personal/views.py:217
+#: webapp/personal/views.py:247
 msgid "Sensor successfully registered."
 msgstr "Сенсор успешно зарегистрирован."
 
-#: webapp/personal/views.py:221
+#: webapp/personal/views.py:251
 msgid "This sensor ID is already registered."
 msgstr "Этот идентификатор сенсора уже зарегистирован"
 
-#: webapp/personal/views.py:235
+#: webapp/personal/views.py:265
 msgid "A fine dust sensor was transferred to you"
 msgstr "Сенсор был перенесен в ваш список"
 
@@ -551,7 +551,7 @@ msgstr "Измените пароль."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr "Данные из Node"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -560,26 +560,22 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
-"Обычно, два сенсора присоединены к одному устройству: сенсор "
-"мелкодисперсных частиц и\n"
-"                        сенсор влажности и температуры. Номер каждого "
-"сенсора отображается "
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr "на карте мелкодисперсных частиц"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr "показать на карте"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr "Последнее обновление:"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr "Нет актуальных данные для данного сенсора."
+msgstr ""
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1308,4 +1304,34 @@ msgstr "Данные пользователя сохранены."
 
 #~ msgid "radiation sensor Si22G"
 #~ msgstr ""
+
+#~ msgid "Data from Node"
+#~ msgstr "Данные из Node"
+
+#~ msgid ""
+#~ "Typically, two sensors are attached to"
+#~ " each node: the fine dust sensor "
+#~ "and the\n"
+#~ "                        Humidity and temperature "
+#~ "sensor. The sensor number can also "
+#~ "be found"
+#~ msgstr ""
+#~ "Обычно, два сенсора присоединены к "
+#~ "одному устройству: сенсор мелкодисперсных "
+#~ "частиц и\n"
+#~ "                        сенсор влажности и "
+#~ "температуры. Номер каждого сенсора "
+#~ "отображается "
+
+#~ msgid "on the fine dust map again"
+#~ msgstr "на карте мелкодисперсных частиц"
+
+#~ msgid "show on map"
+#~ msgstr "показать на карте"
+
+#~ msgid "Last updated:"
+#~ msgstr "Последнее обновление:"
+
+#~ msgid "No current data are available for this sensor."
+#~ msgstr "Нет актуальных данные для данного сенсора."
 

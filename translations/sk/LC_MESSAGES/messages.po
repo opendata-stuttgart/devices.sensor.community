@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-13 16:14+0000\n"
+"POT-Creation-Date: 2021-05-13 20:49+0000\n"
 "PO-Revision-Date: 2020-03-28 22:26+0100\n"
 "Last-Translator: Ladislav <ladislav@ruzomberok.eu>\n"
 "Language: sk_SK\n"
@@ -290,19 +290,19 @@ msgstr ""
 msgid "radiation sensor"
 msgstr ""
 
-#: webapp/personal/views.py:189
+#: webapp/personal/views.py:219
 msgid "Settings saved successfully."
 msgstr "Nastavenia boli úspešne uložené."
 
-#: webapp/personal/views.py:217
+#: webapp/personal/views.py:247
 msgid "Sensor successfully registered."
 msgstr "Senzor bol úspešne zaregistrovaný."
 
-#: webapp/personal/views.py:221
+#: webapp/personal/views.py:251
 msgid "This sensor ID is already registered."
 msgstr "Toto ID senzora je už zaregistrované."
 
-#: webapp/personal/views.py:235
+#: webapp/personal/views.py:265
 msgid "A fine dust sensor was transferred to you"
 msgstr "Bol vám prenesený senzor prachových častíc"
 
@@ -547,7 +547,7 @@ msgstr "Zmeňte si heslo."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr "Údaje z uzla"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -556,26 +556,22 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
-"Obvykle sú ku každému uzlu pripojené dva senzory: senzor jemného prachu a"
-"\n"
-"                        senzor vlhkosti s teplotou. Nájdete tiež číslo "
-"senzora"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr "opäť na kartu prachových častíc."
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr "zobraziť na mape"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr "Posledná aktualizácia:"
+msgstr ""
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr "Pre tento senzor nie sú k dispozícii žiadne aktuálne údaje."
+msgstr ""
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1298,4 +1294,33 @@ msgstr "Údaje používateľa uložené."
 
 #~ msgid "radiation sensor Si22G"
 #~ msgstr ""
+
+#~ msgid "Data from Node"
+#~ msgstr "Údaje z uzla"
+
+#~ msgid ""
+#~ "Typically, two sensors are attached to"
+#~ " each node: the fine dust sensor "
+#~ "and the\n"
+#~ "                        Humidity and temperature "
+#~ "sensor. The sensor number can also "
+#~ "be found"
+#~ msgstr ""
+#~ "Obvykle sú ku každému uzlu pripojené "
+#~ "dva senzory: senzor jemného prachu a"
+#~ "\n"
+#~ "                        senzor vlhkosti s "
+#~ "teplotou. Nájdete tiež číslo senzora"
+
+#~ msgid "on the fine dust map again"
+#~ msgstr "opäť na kartu prachových častíc."
+
+#~ msgid "show on map"
+#~ msgstr "zobraziť na mape"
+
+#~ msgid "Last updated:"
+#~ msgstr "Posledná aktualizácia:"
+
+#~ msgid "No current data are available for this sensor."
+#~ msgstr "Pre tento senzor nie sú k dispozícii žiadne aktuálne údaje."
 
