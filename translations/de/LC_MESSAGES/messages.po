@@ -555,7 +555,7 @@ msgstr "Passwort ändern."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr ""
+msgstr "Daten von Node"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -564,22 +564,26 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
+"Typischerweise sind 2 Sensoren pro Gerät"
+" angeschlossen: der Feinstaubsensor und ein"
+" Temperatur/Luftfeuchte-Sensor. Die Sensor "
+"IDs finden Sie hier "
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr ""
+msgstr "auf der Feinstaub-Karte wieder"
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr ""
+msgstr "auf der Karte zeigen"
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr ""
+msgstr "Letztes Update:"
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr ""
+msgstr "Zu diesem Sensor liegen keine aktuellen Daten vor."
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1221,32 +1225,4 @@ msgstr "Neues Passwort (Wiederholung)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Nutzerdaten gespeichert."
-
-#~ msgid "Data from Node"
-#~ msgstr "Daten von Node"
-
-#~ msgid ""
-#~ "Typically, two sensors are attached to"
-#~ " each node: the fine dust sensor "
-#~ "and the\n"
-#~ "                        Humidity and temperature "
-#~ "sensor. The sensor number can also "
-#~ "be found"
-#~ msgstr ""
-#~ "Typischerweise sind 2 Sensoren pro Gerät"
-#~ " angeschlossen: der Feinstaubsensor und ein"
-#~ " Temperatur/Luftfeuchte-Sensor. Die Sensor "
-#~ "IDs finden Sie hier "
-
-#~ msgid "on the fine dust map again"
-#~ msgstr "auf der Feinstaub-Karte wieder"
-
-#~ msgid "show on map"
-#~ msgstr "auf der Karte zeigen"
-
-#~ msgid "Last updated:"
-#~ msgstr "Letztes Update:"
-
-#~ msgid "No current data are available for this sensor."
-#~ msgstr "Zu diesem Sensor liegen keine aktuellen Daten vor."
 

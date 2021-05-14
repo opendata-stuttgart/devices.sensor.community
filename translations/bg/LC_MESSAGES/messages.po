@@ -548,7 +548,7 @@ msgstr "Променете паролата си."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr ""
+msgstr "Данни от Node"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -557,22 +557,28 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
+"Обикновено два сензора са прикрепени към"
+" всеки възел: сензор за фин прах "
+"и \n"
+"                        влажност и температурен "
+"сензор. Номерът на сензора също може "
+"да бъде намерен"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr ""
+msgstr "на картата за фин прах"
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr ""
+msgstr "показано на картата"
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr ""
+msgstr "Последна актуализация:"
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr ""
+msgstr "Няма налични текущи данни за този сензор."
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1040,6 +1046,8 @@ msgid ""
 "Sincerely,\n"
 "    Your Sensor.Community team"
 msgstr ""
+"Ваш,\n"
+"    Sensor.Community"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
@@ -1210,41 +1218,3 @@ msgstr "Нова парола (повторение)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Потребителските данни са запазени."
-
-#~ msgid ""
-#~ "Sincerely,\n"
-#~ "    Your Luftdaten.info team"
-#~ msgstr ""
-#~ "Ваш,\n"
-#~ "    Luftdaten.info"
-
-#~ msgid "Data from Node"
-#~ msgstr "Данни от Node"
-
-#~ msgid ""
-#~ "Typically, two sensors are attached to"
-#~ " each node: the fine dust sensor "
-#~ "and the\n"
-#~ "                        Humidity and temperature "
-#~ "sensor. The sensor number can also "
-#~ "be found"
-#~ msgstr ""
-#~ "Обикновено два сензора са прикрепени към"
-#~ " всеки възел: сензор за фин прах "
-#~ "и \n"
-#~ "                        влажност и температурен "
-#~ "сензор. Номерът на сензора също може "
-#~ "да бъде намерен"
-
-#~ msgid "on the fine dust map again"
-#~ msgstr "на картата за фин прах"
-
-#~ msgid "show on map"
-#~ msgstr "показано на картата"
-
-#~ msgid "Last updated:"
-#~ msgstr "Последна актуализация:"
-
-#~ msgid "No current data are available for this sensor."
-#~ msgstr "Няма налични текущи данни за този сензор."
-

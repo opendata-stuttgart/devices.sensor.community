@@ -266,23 +266,23 @@ msgstr "Tlak na úrovni moře"
 
 #: webapp/personal/views.py:42
 msgid "particulate matter sensor"
-msgstr ""
+msgstr "Senzor pevných částic"
 
 #: webapp/personal/views.py:43
 msgid "temperature/humidity sensor"
-msgstr ""
+msgstr "idlo teploty/vlhkosti"
 
 #: webapp/personal/views.py:44
 msgid "temperature/pressure sensor"
-msgstr ""
+msgstr "snímač teploty/tlaku"
 
 #: webapp/personal/views.py:45
 msgid "temperature/humidity/pressure sensor"
-msgstr ""
+msgstr "snímač teploty/vlhkosti/tlaku"
 
 #: webapp/personal/views.py:46
 msgid "temperature/humidity/CO₂ ppm sensor"
-msgstr ""
+msgstr "senzor teploty/vlhkosti/CO₂ ppm"
 
 #: webapp/personal/views.py:47
 msgid "noise sensor"
@@ -552,7 +552,7 @@ msgstr "Změňte si heslo."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr ""
+msgstr "Data z uzlu"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -561,22 +561,27 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
+"Ke každému uzlu jsou obvykle připojeny"
+" dva senzory: senzor jemného prachu a"
+"\n"
+"                        senzor vlhkosti a "
+"teploty. Číslo čidla lze také zjistit"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr ""
+msgstr "na mapě jemného prachu"
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr ""
+msgstr "zobrazit na mapě"
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr ""
+msgstr "Poslední aktualizace:"
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr ""
+msgstr "Pro tento senzor nejsou k dispozici žádné aktuální údaje."
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1213,123 +1218,3 @@ msgstr "Nové heslo (opakování)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Uložená uživatelská data."
-
-#~ msgid "particulate matter sensor PPD42NS"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor SDS011"
-#~ msgstr "Senzor pevných částic SDS011"
-
-#~ msgid "particulate matter sensor SDS021"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor PMS1003"
-#~ msgstr "senzor pevných částic PMS1003"
-
-#~ msgid "particulate matter sensor PMS3003"
-#~ msgstr "senzor pevných částic PMS3003"
-
-#~ msgid "particulate matter sensor PMS5003"
-#~ msgstr "senzor pevných částic PMS5003"
-
-#~ msgid "particulate matter sensor PMS6003"
-#~ msgstr "senzor pevných částic PMS6003"
-
-#~ msgid "particulate matter sensor PMS7003"
-#~ msgstr "senzor pevných částic PMS7003"
-
-#~ msgid "particulate matter sensor SPS30"
-#~ msgstr "senzor pevných částic SPS30"
-
-#~ msgid "particulate matter sensor HPM"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor HM3301"
-#~ msgstr "senzor pevných částic HM3301"
-
-#~ msgid "temperature/humidity sensor DS18S20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DS18B20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DHT22"
-#~ msgstr "čidlo teploty a vlhkosti DHT22"
-
-#~ msgid "temperature/pressure sensor BMP180"
-#~ msgstr "snímač teploty a tlaku BMP180"
-
-#~ msgid "temperature/pressure sensor BMP280"
-#~ msgstr "snímač teploty a tlaku BMP280"
-
-#~ msgid "temperature/humidity/pressure sensor BME280"
-#~ msgstr "snímač teplotyvlhkostitlaku BME280"
-
-#~ msgid "temperature/humidity sensor HTU21D"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT10"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT11"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT15"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT30"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT31"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT35"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT85"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity/CO₂ ppm sensor SCD30"
-#~ msgstr "senzor teplotyvlhkostiCO₂ ppm SCD30"
-
-#~ msgid "noise sensor DNMS"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-20"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-19"
-#~ msgstr ""
-
-#~ msgid "radiation sensor Si22G"
-#~ msgstr ""
-
-#~ msgid "Data from Node"
-#~ msgstr "Data z uzlu"
-
-#~ msgid ""
-#~ "Typically, two sensors are attached to"
-#~ " each node: the fine dust sensor "
-#~ "and the\n"
-#~ "                        Humidity and temperature "
-#~ "sensor. The sensor number can also "
-#~ "be found"
-#~ msgstr ""
-#~ "Ke každému uzlu jsou obvykle připojeny"
-#~ " dva senzory: senzor jemného prachu a"
-#~ "\n"
-#~ "                        senzor vlhkosti a "
-#~ "teploty. Číslo čidla lze také zjistit"
-
-#~ msgid "on the fine dust map again"
-#~ msgstr "na mapě jemného prachu"
-
-#~ msgid "show on map"
-#~ msgstr "zobrazit na mapě"
-
-#~ msgid "Last updated:"
-#~ msgstr "Poslední aktualizace:"
-
-#~ msgid "No current data are available for this sensor."
-#~ msgstr "Pro tento senzor nejsou k dispozici žádné aktuální údaje."
-
