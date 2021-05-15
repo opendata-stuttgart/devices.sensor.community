@@ -289,7 +289,7 @@ msgstr "Si no has cambiado tu contraseña,"
 
 #: flask_security/templates/security/email/change_notice.html:3
 msgid "click here to reset it"
-msgstr "haga clic aquí para restablecerlo"
+msgstr "haga clic aquí para restablecerla"
 
 #: flask_security/templates/security/email/confirmation_instructions.html:1
 msgid "Please confirm your email through the link below:"
