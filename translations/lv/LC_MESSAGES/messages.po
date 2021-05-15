@@ -267,23 +267,23 @@ msgstr "Spiediens jūras līmenī"
 
 #: webapp/personal/views.py:42
 msgid "particulate matter sensor"
-msgstr ""
+msgstr "cieto daļiņu sensors"
 
 #: webapp/personal/views.py:43
 msgid "temperature/humidity sensor"
-msgstr ""
+msgstr "temperatūras un mitruma sensors"
 
 #: webapp/personal/views.py:44
 msgid "temperature/pressure sensor"
-msgstr ""
+msgstr "temperatūras spiediena sensors"
 
 #: webapp/personal/views.py:45
 msgid "temperature/humidity/pressure sensor"
-msgstr ""
+msgstr "temperatūras, mitruma, spiediena sensors"
 
 #: webapp/personal/views.py:46
 msgid "temperature/humidity/CO₂ ppm sensor"
-msgstr ""
+msgstr "temperatūras un mitruma CO₂ ppm sensors"
 
 #: webapp/personal/views.py:47
 msgid "noise sensor"
@@ -553,7 +553,7 @@ msgstr "Mainiet paroli."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr ""
+msgstr "Dati no mezgla"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -562,22 +562,26 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
+"Parasti katram mezglam tiek pievienoti "
+"divi sensori: smalko putekļu sensors un"
+" mitruma un temperatūras sensors. Sensora"
+" numuru var atrast arī"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr ""
+msgstr "atkal smalko putekļu kartē"
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr ""
+msgstr "parādīt kartē"
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr ""
+msgstr "Pēdējo reizi atjaunināts:"
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr ""
+msgstr "Pašlaik dati par šo sensoru nav pieejami."
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1206,122 +1210,3 @@ msgstr "Jauna parole (atkārtot)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Lietotāja datu saglabāšana."
-
-#~ msgid "particulate matter sensor PPD42NS"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor SDS011"
-#~ msgstr "cieto daļiņu sensors SDS011"
-
-#~ msgid "particulate matter sensor SDS021"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor PMS1003"
-#~ msgstr "cieto daļiņu sensors PMS1003"
-
-#~ msgid "particulate matter sensor PMS3003"
-#~ msgstr "cieto daļiņu sensors PMS3003"
-
-#~ msgid "particulate matter sensor PMS5003"
-#~ msgstr "cieto daļiņu sensors PMS5003"
-
-#~ msgid "particulate matter sensor PMS6003"
-#~ msgstr "cieto daļiņu sensors PMS6003"
-
-#~ msgid "particulate matter sensor PMS7003"
-#~ msgstr "daļiņu sensors PMS7003"
-
-#~ msgid "particulate matter sensor SPS30"
-#~ msgstr "daļiņu sensors SPS30"
-
-#~ msgid "particulate matter sensor HPM"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor HM3301"
-#~ msgstr "makrodaļiņu sensors HM3301"
-
-#~ msgid "temperature/humidity sensor DS18S20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DS18B20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DHT22"
-#~ msgstr "temperatūras un mitruma sensors DHT22"
-
-#~ msgid "temperature/pressure sensor BMP180"
-#~ msgstr "temperatūrasspiediena sensors BMP180"
-
-#~ msgid "temperature/pressure sensor BMP280"
-#~ msgstr "temperatūras spiediena sensors BMP280"
-
-#~ msgid "temperature/humidity/pressure sensor BME280"
-#~ msgstr "temperatūras, mitruma, spiediena sensors BME280"
-
-#~ msgid "temperature/humidity sensor HTU21D"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT10"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT11"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT15"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT30"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT31"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT35"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT85"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity/CO₂ ppm sensor SCD30"
-#~ msgstr "temperatūras un mitrumaCO₂ ppm sensors SCD30"
-
-#~ msgid "noise sensor DNMS"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-20"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-19"
-#~ msgstr ""
-
-#~ msgid "radiation sensor Si22G"
-#~ msgstr ""
-
-#~ msgid "Data from Node"
-#~ msgstr "Dati no mezgla"
-
-#~ msgid ""
-#~ "Typically, two sensors are attached to"
-#~ " each node: the fine dust sensor "
-#~ "and the\n"
-#~ "                        Humidity and temperature "
-#~ "sensor. The sensor number can also "
-#~ "be found"
-#~ msgstr ""
-#~ "Parasti katram mezglam tiek pievienoti "
-#~ "divi sensori: smalko putekļu sensors un"
-#~ " mitruma un temperatūras sensors. Sensora"
-#~ " numuru var atrast arī"
-
-#~ msgid "on the fine dust map again"
-#~ msgstr "atkal smalko putekļu kartē"
-
-#~ msgid "show on map"
-#~ msgstr "parādīt kartē"
-
-#~ msgid "Last updated:"
-#~ msgstr "Pēdējo reizi atjaunināts:"
-
-#~ msgid "No current data are available for this sensor."
-#~ msgstr "Pašlaik dati par šo sensoru nav pieejami."
-

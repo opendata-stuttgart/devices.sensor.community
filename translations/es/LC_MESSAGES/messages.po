@@ -10,8 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2021-05-13 20:49+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: fr\n"
-"Language-Team: fr <LL@li.org>\n"
+"Language: es\n"
+"Language-Team: es <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -266,23 +266,23 @@ msgstr "Presión a nivel del mar"
 
 #: webapp/personal/views.py:42
 msgid "particulate matter sensor"
-msgstr ""
+msgstr "sensor de partículas"
 
 #: webapp/personal/views.py:43
 msgid "temperature/humidity sensor"
-msgstr ""
+msgstr "sensor de temperatura y humedad"
 
 #: webapp/personal/views.py:44
 msgid "temperature/pressure sensor"
-msgstr ""
+msgstr "sensor de temperatura y presión"
 
 #: webapp/personal/views.py:45
 msgid "temperature/humidity/pressure sensor"
-msgstr ""
+msgstr "sensor de temperatura/humedad/presión"
 
 #: webapp/personal/views.py:46
 msgid "temperature/humidity/CO₂ ppm sensor"
-msgstr ""
+msgstr "sensor de temperatura/humedad/CO₂ ppm"
 
 #: webapp/personal/views.py:47
 msgid "noise sensor"
@@ -556,7 +556,7 @@ msgstr "Cambia tu contraseña."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr ""
+msgstr "Datos del nodo"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -565,22 +565,28 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
+"Normalmente, en cada nodo hay dos "
+"sensores: el sensor de polvo fino "
+"y el\n"
+"                        sensor de humedad y"
+" temperatura. El número de sensor "
+"también se puede encontrar"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr ""
+msgstr "en el mapa de polvo fino de nuevo"
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr ""
+msgstr "mostrar en el mapa"
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr ""
+msgstr "Última actualización:"
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr ""
+msgstr "No hay datos actuales disponibles para este sensor."
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1229,124 +1235,3 @@ msgstr "Nueva contraseña (repetir)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Datos del usuario guardados."
-
-#~ msgid "particulate matter sensor PPD42NS"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor SDS011"
-#~ msgstr "sensor de partículas SDS011"
-
-#~ msgid "particulate matter sensor SDS021"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor PMS1003"
-#~ msgstr "sensor de partículas PMS1003"
-
-#~ msgid "particulate matter sensor PMS3003"
-#~ msgstr "sensor de partículas PMS3003"
-
-#~ msgid "particulate matter sensor PMS5003"
-#~ msgstr "sensor de partículas PMS5003"
-
-#~ msgid "particulate matter sensor PMS6003"
-#~ msgstr "sensor de partículas PMS6003"
-
-#~ msgid "particulate matter sensor PMS7003"
-#~ msgstr "sensor de partículas PMS7003"
-
-#~ msgid "particulate matter sensor SPS30"
-#~ msgstr "sensor de partículas SPS30"
-
-#~ msgid "particulate matter sensor HPM"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor HM3301"
-#~ msgstr "sensor de partículas HM3301"
-
-#~ msgid "temperature/humidity sensor DS18S20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DS18B20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DHT22"
-#~ msgstr "sensor de temperatura y humedad DHT22"
-
-#~ msgid "temperature/pressure sensor BMP180"
-#~ msgstr "sensor de temperatura-presión BMP180"
-
-#~ msgid "temperature/pressure sensor BMP280"
-#~ msgstr "sensor de temperatura-presión BMP280"
-
-#~ msgid "temperature/humidity/pressure sensor BME280"
-#~ msgstr "sensor de temperatura-humedad-presión BME280"
-
-#~ msgid "temperature/humidity sensor HTU21D"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT10"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT11"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT15"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT30"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT31"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT35"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT85"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity/CO₂ ppm sensor SCD30"
-#~ msgstr "sensor de temperatura-humedadCO₂ ppm SCD30"
-
-#~ msgid "noise sensor DNMS"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-20"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-19"
-#~ msgstr ""
-
-#~ msgid "radiation sensor Si22G"
-#~ msgstr ""
-
-#~ msgid "Data from Node"
-#~ msgstr "Datos del nodo"
-
-#~ msgid ""
-#~ "Typically, two sensors are attached to"
-#~ " each node: the fine dust sensor "
-#~ "and the\n"
-#~ "                        Humidity and temperature "
-#~ "sensor. The sensor number can also "
-#~ "be found"
-#~ msgstr ""
-#~ "Normalmente, en cada nodo hay dos "
-#~ "sensores: el sensor de polvo fino "
-#~ "y el\n"
-#~ "                        sensor de humedad y"
-#~ " temperatura. El número de sensor "
-#~ "también se puede encontrar"
-
-#~ msgid "on the fine dust map again"
-#~ msgstr "en el mapa de polvo fino de nuevo"
-
-#~ msgid "show on map"
-#~ msgstr "mostrar en el mapa"
-
-#~ msgid "Last updated:"
-#~ msgstr "Última actualización:"
-
-#~ msgid "No current data are available for this sensor."
-#~ msgstr "No hay datos actuales disponibles para este sensor."
-

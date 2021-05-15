@@ -256,23 +256,23 @@ msgstr "海面上の圧力"
 
 #: webapp/personal/views.py:42
 msgid "particulate matter sensor"
-msgstr ""
+msgstr "粒子状物質センサー"
 
 #: webapp/personal/views.py:43
 msgid "temperature/humidity sensor"
-msgstr ""
+msgstr "温湿度センサー"
 
 #: webapp/personal/views.py:44
 msgid "temperature/pressure sensor"
-msgstr ""
+msgstr "温度圧力センサー"
 
 #: webapp/personal/views.py:45
 msgid "temperature/humidity/pressure sensor"
-msgstr ""
+msgstr "温度・湿度・圧力センサー"
 
 #: webapp/personal/views.py:46
 msgid "temperature/humidity/CO₂ ppm sensor"
-msgstr ""
+msgstr "温湿度CO₂ ppmセンサー"
 
 #: webapp/personal/views.py:47
 msgid "noise sensor"
@@ -526,7 +526,7 @@ msgstr "パスワードの変更"
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr ""
+msgstr "ノードからのデータ"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -534,23 +534,23 @@ msgid ""
 "and the\n"
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
-msgstr ""
+msgstr "一般的に、各ノードには「微細なほこりセンサー」と「湿度・温度センサー」の2つのセンサーが取り付けられています。センサーの番号は、次のようにも確認できます。"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr ""
+msgstr "ァインダストマップで再び"
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr ""
+msgstr "地図で見る"
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr ""
+msgstr "最終更新日"
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr ""
+msgstr "現在、このセンサーのデータはありません。"
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1123,118 +1123,3 @@ msgstr "新しいパスワード（繰り返し"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "ユーザーデータの保存"
-
-#~ msgid "particulate matter sensor PPD42NS"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor SDS011"
-#~ msgstr "粒子状物質センサー SDS011"
-
-#~ msgid "particulate matter sensor SDS021"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor PMS1003"
-#~ msgstr "粒子状物質センサー PMS1003"
-
-#~ msgid "particulate matter sensor PMS3003"
-#~ msgstr "粒子状物質センサー PMS3003"
-
-#~ msgid "particulate matter sensor PMS5003"
-#~ msgstr "粒子状物質センサー PMS5003"
-
-#~ msgid "particulate matter sensor PMS6003"
-#~ msgstr "粒子状物質センサー PMS6003"
-
-#~ msgid "particulate matter sensor PMS7003"
-#~ msgstr "粒子状物質センサー PMS7003"
-
-#~ msgid "particulate matter sensor SPS30"
-#~ msgstr "粒子状物質センサーSPS30"
-
-#~ msgid "particulate matter sensor HPM"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor HM3301"
-#~ msgstr "粒子状物質センサー HM3301"
-
-#~ msgid "temperature/humidity sensor DS18S20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DS18B20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DHT22"
-#~ msgstr "温湿度センサー DHT22"
-
-#~ msgid "temperature/pressure sensor BMP180"
-#~ msgstr "温度圧力センサー BMP180"
-
-#~ msgid "temperature/pressure sensor BMP280"
-#~ msgstr "温度圧力センサー BMP280"
-
-#~ msgid "temperature/humidity/pressure sensor BME280"
-#~ msgstr "温度・湿度・圧力センサー BME280"
-
-#~ msgid "temperature/humidity sensor HTU21D"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT10"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT11"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT15"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT30"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT31"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT35"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT85"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity/CO₂ ppm sensor SCD30"
-#~ msgstr "温湿度CO₂ ppmセンサー SCD30"
-
-#~ msgid "noise sensor DNMS"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-20"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-19"
-#~ msgstr ""
-
-#~ msgid "radiation sensor Si22G"
-#~ msgstr ""
-
-#~ msgid "Data from Node"
-#~ msgstr "ノードからのデータ"
-
-#~ msgid ""
-#~ "Typically, two sensors are attached to"
-#~ " each node: the fine dust sensor "
-#~ "and the\n"
-#~ "                        Humidity and temperature "
-#~ "sensor. The sensor number can also "
-#~ "be found"
-#~ msgstr "一般的に、各ノードには「微細なほこりセンサー」と「湿度・温度センサー」の2つのセンサーが取り付けられています。センサーの番号は、次のようにも確認できます。"
-
-#~ msgid "on the fine dust map again"
-#~ msgstr "ファインダストマップで再び"
-
-#~ msgid "show on map"
-#~ msgstr "地図で見る"
-
-#~ msgid "Last updated:"
-#~ msgstr "最終更新日"
-
-#~ msgid "No current data are available for this sensor."
-#~ msgstr "現在、このセンサーのデータはありません。"
-
