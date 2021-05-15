@@ -266,23 +266,23 @@ msgstr "Pressão ao nível do mar"
 
 #: webapp/personal/views.py:42
 msgid "particulate matter sensor"
-msgstr ""
+msgstr "sensor de partículas em suspensão"
 
 #: webapp/personal/views.py:43
 msgid "temperature/humidity sensor"
-msgstr ""
+msgstr "sensor de temperatura/humidade"
 
 #: webapp/personal/views.py:44
 msgid "temperature/pressure sensor"
-msgstr ""
+msgstr "sensor de temperatura/pressão"
 
 #: webapp/personal/views.py:45
 msgid "temperature/humidity/pressure sensor"
-msgstr ""
+msgstr "sensor de temperatura/humidade/pressão"
 
 #: webapp/personal/views.py:46
 msgid "temperature/humidity/CO₂ ppm sensor"
-msgstr ""
+msgstr "sensor de temperatura/humidade/CO₂ ppm"
 
 #: webapp/personal/views.py:47
 msgid "noise sensor"
@@ -554,7 +554,7 @@ msgstr "Altere a sua palavra-passe."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr ""
+msgstr "Dados do Nó"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -563,22 +563,27 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
+"Tipicamente, dois sensores são ligados a"
+" cada nó: o sensor de poeira "
+"fina e o sensor de humidade e "
+"temperatura. O número do sensor também"
+" pode ser encontrado"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr ""
+msgstr "no mapa do pó fino novamente"
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr ""
+msgstr "mostrar no mapa"
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr ""
+msgstr "Última actualização:"
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr ""
+msgstr "Não estão disponíveis dados actuais para este sensor."
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1215,123 +1220,3 @@ msgstr "Nova palavra-passe (repetir)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Dados do utilizador guardados."
-
-#~ msgid "particulate matter sensor PPD42NS"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor SDS011"
-#~ msgstr "sensor de partículas em suspensão SDS011"
-
-#~ msgid "particulate matter sensor SDS021"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor PMS1003"
-#~ msgstr "sensor de partículas em suspensão PMS1003"
-
-#~ msgid "particulate matter sensor PMS3003"
-#~ msgstr "sensor de partículas em suspensão PMS3003"
-
-#~ msgid "particulate matter sensor PMS5003"
-#~ msgstr "sensor de matéria particulada PMS5003"
-
-#~ msgid "particulate matter sensor PMS6003"
-#~ msgstr "sensor de matéria particulada PMS6003"
-
-#~ msgid "particulate matter sensor PMS7003"
-#~ msgstr "sensor de partículas em suspensão PMS7003"
-
-#~ msgid "particulate matter sensor SPS30"
-#~ msgstr "sensor de partículas em suspensão SPS30"
-
-#~ msgid "particulate matter sensor HPM"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor HM3301"
-#~ msgstr "sensor de partículas HM3301"
-
-#~ msgid "temperature/humidity sensor DS18S20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DS18B20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DHT22"
-#~ msgstr "sensor de humidade térmica DHT22"
-
-#~ msgid "temperature/pressure sensor BMP180"
-#~ msgstr "sensor de pressão de temperatura BMP180"
-
-#~ msgid "temperature/pressure sensor BMP280"
-#~ msgstr "sensor de pressão de temperatura BMP280"
-
-#~ msgid "temperature/humidity/pressure sensor BME280"
-#~ msgstr "sensor de temperatura-pressão BME280"
-
-#~ msgid "temperature/humidity sensor HTU21D"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT10"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT11"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT15"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT30"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT31"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT35"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT85"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity/CO₂ ppm sensor SCD30"
-#~ msgstr "temperaturehumidityCO₂ sensor ppm SCD30"
-
-#~ msgid "noise sensor DNMS"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-20"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-19"
-#~ msgstr ""
-
-#~ msgid "radiation sensor Si22G"
-#~ msgstr ""
-
-#~ msgid "Data from Node"
-#~ msgstr "Dados do Nó"
-
-#~ msgid ""
-#~ "Typically, two sensors are attached to"
-#~ " each node: the fine dust sensor "
-#~ "and the\n"
-#~ "                        Humidity and temperature "
-#~ "sensor. The sensor number can also "
-#~ "be found"
-#~ msgstr ""
-#~ "Tipicamente, dois sensores são ligados a"
-#~ " cada nó: o sensor de poeira "
-#~ "fina e o sensor de humidade e "
-#~ "temperatura. O número do sensor também"
-#~ " pode ser encontrado"
-
-#~ msgid "on the fine dust map again"
-#~ msgstr "no mapa do pó fino novamente"
-
-#~ msgid "show on map"
-#~ msgstr "mostrar no mapa"
-
-#~ msgid "Last updated:"
-#~ msgstr "Última actualização:"
-
-#~ msgid "No current data are available for this sensor."
-#~ msgstr "Não estão disponíveis dados actuais para este sensor."
-

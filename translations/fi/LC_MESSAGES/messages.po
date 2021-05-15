@@ -10,8 +10,8 @@ msgstr ""
 "POT-Creation-Date: 2021-05-13 20:49+0000\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: fr\n"
-"Language-Team: fr <LL@li.org>\n"
+"Language: fi\n"
+"Language-Team: fi <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -24,7 +24,7 @@ msgstr "Sisäilma-anturi"
 
 #: webapp/personal/forms.py:41
 msgid "Street"
-msgstr "Street"
+msgstr "Kadun"
 
 #: webapp/personal/forms.py:41
 msgid "Please enter the street name."
@@ -267,23 +267,23 @@ msgstr "Paine merenpinnan tasolla"
 
 #: webapp/personal/views.py:42
 msgid "particulate matter sensor"
-msgstr ""
+msgstr "hiukkasanturi"
 
 #: webapp/personal/views.py:43
 msgid "temperature/humidity sensor"
-msgstr ""
+msgstr "lämpötila-kosteusanturi"
 
 #: webapp/personal/views.py:44
 msgid "temperature/pressure sensor"
-msgstr ""
+msgstr "lämpötila-paineanturi"
 
 #: webapp/personal/views.py:45
 msgid "temperature/humidity/pressure sensor"
-msgstr ""
+msgstr "lämpötila-kosteuspaineanturi"
 
 #: webapp/personal/views.py:46
 msgid "temperature/humidity/CO₂ ppm sensor"
-msgstr ""
+msgstr "lämpötila-kosteus-CO₂ ppm-anturi"
 
 #: webapp/personal/views.py:47
 msgid "noise sensor"
@@ -555,7 +555,7 @@ msgstr "Vaihda salasanasi."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr ""
+msgstr "Solmun tiedot"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -564,22 +564,26 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
+"Kumpaankin solmuun liitetään tyypillisesti "
+"kaksi anturia: hienopölyanturi sekä kosteus-"
+" ja lämpötila-anturi. Anturin numero "
+"löytyy myös"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr ""
+msgstr "hienojakoisen pölyn kartalla uudelleen"
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr ""
+msgstr "näytä kartalla"
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr ""
+msgstr "Viimeksi päivitetty:"
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr ""
+msgstr "Tästä anturista ei ole saatavilla nykyisiä tietoja."
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1210,122 +1214,3 @@ msgstr "Uusi salasana (toista)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Käyttäjätiedot tallennettu."
-
-#~ msgid "particulate matter sensor PPD42NS"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor SDS011"
-#~ msgstr "hiukkasanturi SDS011"
-
-#~ msgid "particulate matter sensor SDS021"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor PMS1003"
-#~ msgstr "hiukkasanturi PMS1003"
-
-#~ msgid "particulate matter sensor PMS3003"
-#~ msgstr "hiukkasanturi PMS3003"
-
-#~ msgid "particulate matter sensor PMS5003"
-#~ msgstr "hiukkasanturi PMS5003"
-
-#~ msgid "particulate matter sensor PMS6003"
-#~ msgstr "hiukkasanturi PMS6003"
-
-#~ msgid "particulate matter sensor PMS7003"
-#~ msgstr "hiukkasanturi PMS7003"
-
-#~ msgid "particulate matter sensor SPS30"
-#~ msgstr "hiukkasanturi SPS30"
-
-#~ msgid "particulate matter sensor HPM"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor HM3301"
-#~ msgstr "hiukkasanturi HM3301"
-
-#~ msgid "temperature/humidity sensor DS18S20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DS18B20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DHT22"
-#~ msgstr "lämpötila-kosteusanturi DHT22"
-
-#~ msgid "temperature/pressure sensor BMP180"
-#~ msgstr "lämpötila-paineanturi BMP180"
-
-#~ msgid "temperature/pressure sensor BMP280"
-#~ msgstr "lämpötila-paineanturi BMP280"
-
-#~ msgid "temperature/humidity/pressure sensor BME280"
-#~ msgstr "lämpötila-kosteuspaineanturi BME280"
-
-#~ msgid "temperature/humidity sensor HTU21D"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT10"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT11"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT15"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT30"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT31"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT35"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT85"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity/CO₂ ppm sensor SCD30"
-#~ msgstr "lämpötila-kosteusCO₂ ppm-anturi SCD30"
-
-#~ msgid "noise sensor DNMS"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-20"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-19"
-#~ msgstr ""
-
-#~ msgid "radiation sensor Si22G"
-#~ msgstr ""
-
-#~ msgid "Data from Node"
-#~ msgstr "Solmun tiedot"
-
-#~ msgid ""
-#~ "Typically, two sensors are attached to"
-#~ " each node: the fine dust sensor "
-#~ "and the\n"
-#~ "                        Humidity and temperature "
-#~ "sensor. The sensor number can also "
-#~ "be found"
-#~ msgstr ""
-#~ "Kumpaankin solmuun liitetään tyypillisesti "
-#~ "kaksi anturia: hienopölyanturi sekä kosteus-"
-#~ " ja lämpötila-anturi. Anturin numero "
-#~ "löytyy myös"
-
-#~ msgid "on the fine dust map again"
-#~ msgstr "hienojakoisen pölyn kartalla uudelleen"
-
-#~ msgid "show on map"
-#~ msgstr "näytä kartalla"
-
-#~ msgid "Last updated:"
-#~ msgstr "Viimeksi päivitetty:"
-
-#~ msgid "No current data are available for this sensor."
-#~ msgstr "Tästä anturista ei ole saatavilla nykyisiä tietoja."
-

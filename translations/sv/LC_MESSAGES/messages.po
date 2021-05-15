@@ -269,23 +269,23 @@ msgstr "Tryck på havsnivå"
 
 #: webapp/personal/views.py:42
 msgid "particulate matter sensor"
-msgstr ""
+msgstr "Partikelsensor"
 
 #: webapp/personal/views.py:43
 msgid "temperature/humidity sensor"
-msgstr ""
+msgstr "temperatur/fuktighets-sensor"
 
 #: webapp/personal/views.py:44
 msgid "temperature/pressure sensor"
-msgstr ""
+msgstr "temperatur/tryck-sensor"
 
 #: webapp/personal/views.py:45
 msgid "temperature/humidity/pressure sensor"
-msgstr ""
+msgstr "temperatur/fuktighets/tryck-sensor"
 
 #: webapp/personal/views.py:46
 msgid "temperature/humidity/CO₂ ppm sensor"
-msgstr ""
+msgstr "temperatur/fuktighets/CO₂ ppm-sensor"
 
 #: webapp/personal/views.py:47
 msgid "noise sensor"
@@ -552,7 +552,7 @@ msgstr "Ändra ditt lösenord."
 
 #: webapp/templates/my-sensor-data.html:8
 msgid "Data from Node"
-msgstr ""
+msgstr "Uppgifter från noden"
 
 #: webapp/templates/my-sensor-data.html:9
 msgid ""
@@ -561,22 +561,27 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
+"Vanligtvis är två sensorer anslutna till"
+" varje nod: en sensor för fint "
+"damm och en sensor för fuktighet "
+"och temperatur. Sensornumret kan också "
+"hittas"
 
 #: webapp/templates/my-sensor-data.html:11
 msgid "on the fine dust map again"
-msgstr ""
+msgstr "på kartan över fint damm igen"
 
 #: webapp/templates/my-sensor-data.html:19
 msgid "show on map"
-msgstr ""
+msgstr "visa på kartan"
 
 #: webapp/templates/my-sensor-data.html:25
 msgid "Last updated:"
-msgstr ""
+msgstr "Senast uppdaterad:"
 
 #: webapp/templates/my-sensor-data.html:39
 msgid "No current data are available for this sensor."
-msgstr ""
+msgstr "Inga aktuella data finns tillgängliga för denna sensor."
 
 #: webapp/templates/my-sensor-delete-success.html:13
 #: webapp/templates/my-sensor-give-success.html:13
@@ -1213,123 +1218,3 @@ msgstr "Nytt lösenord (upprepa)"
 #: webapp/users/views.py:38
 msgid "User data saved."
 msgstr "Användardata sparas."
-
-#~ msgid "particulate matter sensor PPD42NS"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor SDS011"
-#~ msgstr "Partikelsensor SDS011"
-
-#~ msgid "particulate matter sensor SDS021"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor PMS1003"
-#~ msgstr "Partikelsensor PMS1003"
-
-#~ msgid "particulate matter sensor PMS3003"
-#~ msgstr "Partikelsensor PMS3003"
-
-#~ msgid "particulate matter sensor PMS5003"
-#~ msgstr "Partikelsensor PMS5003"
-
-#~ msgid "particulate matter sensor PMS6003"
-#~ msgstr "Partikelsensor PMS6003"
-
-#~ msgid "particulate matter sensor PMS7003"
-#~ msgstr "Partikelsensor PMS7003"
-
-#~ msgid "particulate matter sensor SPS30"
-#~ msgstr "Partikelsensor SPS30."
-
-#~ msgid "particulate matter sensor HPM"
-#~ msgstr ""
-
-#~ msgid "particulate matter sensor HM3301"
-#~ msgstr "Partikelsensor HM3301"
-
-#~ msgid "temperature/humidity sensor DS18S20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DS18B20"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor DHT22"
-#~ msgstr "temperatur-fuktighetssensor DHT22"
-
-#~ msgid "temperature/pressure sensor BMP180"
-#~ msgstr "temperaturtryckgivare BMP180"
-
-#~ msgid "temperature/pressure sensor BMP280"
-#~ msgstr "temperaturtryckgivare BMP280"
-
-#~ msgid "temperature/humidity/pressure sensor BME280"
-#~ msgstr "temperaturfuktighettryckgivare BME280"
-
-#~ msgid "temperature/humidity sensor HTU21D"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT10"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT11"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT15"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT30"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT31"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT35"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity sensor SHT85"
-#~ msgstr ""
-
-#~ msgid "temperature/humidity/CO₂ ppm sensor SCD30"
-#~ msgstr "temperaturfuktighetCO₂ ppm-sensor SCD30"
-
-#~ msgid "noise sensor DNMS"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-20"
-#~ msgstr ""
-
-#~ msgid "radiation sensor SBM-19"
-#~ msgstr ""
-
-#~ msgid "radiation sensor Si22G"
-#~ msgstr ""
-
-#~ msgid "Data from Node"
-#~ msgstr "Uppgifter från noden"
-
-#~ msgid ""
-#~ "Typically, two sensors are attached to"
-#~ " each node: the fine dust sensor "
-#~ "and the\n"
-#~ "                        Humidity and temperature "
-#~ "sensor. The sensor number can also "
-#~ "be found"
-#~ msgstr ""
-#~ "Vanligtvis är två sensorer anslutna till"
-#~ " varje nod: en sensor för fint "
-#~ "damm och en sensor för fuktighet "
-#~ "och temperatur. Sensornumret kan också "
-#~ "hittas"
-
-#~ msgid "on the fine dust map again"
-#~ msgstr "på kartan över fint damm igen"
-
-#~ msgid "show on map"
-#~ msgstr "visa på kartan"
-
-#~ msgid "Last updated:"
-#~ msgstr "Senast uppdaterad:"
-
-#~ msgid "No current data are available for this sensor."
-#~ msgstr "Inga aktuella data finns tillgängliga för denna sensor."
-
