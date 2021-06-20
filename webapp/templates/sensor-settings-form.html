@@ -2,7 +2,7 @@
 
 {{ render_field(form.name) }}
 {% if  request.path != "/sensors/register" %}
-{{ render_field(form.inactive) }}
+    {{ render_field(form.inactive) }}
 {% endif %}
 {% set location = form.location %}
 <div class="row">
@@ -24,92 +24,47 @@
 {{ render_field(form.sensor_position) }}
 {{ render_field(form.description) }}
 <h2>{{ _('Hardware configuration') }}</h2>
-<small>({{ _('click <a name="expert" onclick="toggle_expert()" style="color:blue;"> &gt;&gt;here&lt;&lt; </a> to enable expert fields') }})<br /><br /></small>
+<small>({{ _('click <a name="expert" onclick="toggle_expert()" style="color:blue;"> &gt;&gt;here&lt;&lt; </a> to enable expert fields') }})<br/><br/></small>
 {% for sensor in form.sensors %}
-  <div class="row" id="component-{{ loop.index0 }}">
-    {{ render_field(sensor.sensor_type, 'basic') }}
-    {# this field needs to be renderer as optional in template, as it might be
+    <div class="row" id="component-{{ loop.index0 }}">
+        {{ render_field(sensor.sensor_type, 'basic') }}
+        {# this field needs to be renderer as optional in template, as it might be
     autopopulated in form validation #}
-    {{ render_field(sensor.pin, 'basic', 'col-md-2 xpin-field', required=False) }}
-    <div class="form-group col-md-2 remove-button"{% if request.path != "/sensors/register" or loop.first %} style="display: none;"{% endif %}><label for="sensors-{{ loop.index0 }}-remove"> </label><input type="button" id="sensors-{{ loop.index0 }}-remove" name="sensors-{{ loop.index0 }}-remove" onclick="remove_component(this)" value="{{ _('remove') }}" class="form-control"></div>
-  </div>
+        {{ render_field(sensor.pin, 'basic', 'col-md-2 xpin-field', required=False) }}
+        <div class="form-group col-md-2 remove-button"{% if request.path != "/sensors/register" or loop.first %}
+             style="display: none;"{% endif %}><label for="sensors-{{ loop.index0 }}-remove"> </label><input
+                type="button" id="sensors-{{ loop.index0 }}-remove" name="sensors-{{ loop.index0 }}-remove"
+                onclick="remove_component(this)" value="{{ _('remove') }}" class="form-control"></div>
+    </div>
 {% endfor %}
 {% if request.path == "/sensors/register" %}
-<div class="row" id="add_component_row">
-<input type="button" value="{{ _('add component') }}" name="add_component_button" id="add_component_button" onclick="add_component();">
-</div>
+    <div class="row" id="add_component_row">
+        <input type="button" value="{{ _('add component') }}" name="add_component_button" id="add_component_button"
+               onclick="add_component();">
+    </div>
 {% endif %}
 <br/>
-<script type="text/javascript">
-var sensor_types = { {% for pin in types %}
-"{{ pin }}": {{ types[pin] }},
-{% endfor%}
-};
-var sensors = document.querySelectorAll('[id$="sensor_type"]');
-for (i=0;i<sensors.length;i++) {
-	sensors[i].onchange = function(){document.getElementById(this.getAttribute('id').replace('sensor_type','pin')).value = sensor_types[this.value];};
-{% if  request.path == "/sensors/register" %}
-	document.getElementById(sensors[i].getAttribute('id').replace('sensor_type','pin')).value = sensor_types[sensors[i].value];
+
+<h2>{{ _('Add Sensor') }}</h2>
+{% if request.path != "/sensors/register" %}
+    <div class="row" id="component-new">
+        {{ render_field(formAddSensor.sensor_type, 'basic') }}
+        {# this field needs to be renderer as optional in template, as it might be
+    autopopulated in form validation #}
+        {{ render_field(formAddSensor.pin, 'basic', 'col-md-2 xpin-visible', required=True) }}
+        <div class="form-group col-md-2 remove-button"
+             style="display: none;"><label for="sensors-new-remove"> </label><input
+                type="button" id="sensors-new-remove" name="sensors-new-remove"
+                onclick="remove_component(this)" value="{{ _('remove') }}" class="form-control"></div>
+    </div>
+
+    <div class="form-group col-md-6 offset-md-3">
+        {#     <input type="submit" name="submit-formAddSensor" class="form-control btn btn-primary">#}
+        <input type="submit" name="addSensor" class="form-control btn btn-primary">
+        {#        {{ formAddSensor.submit(class="form-control btn btn-primary") }}#}
+    </div>
 {% endif %}
-}
 
-function orderSelect($element) {
-    var selected_item = $element.selectedIndex;
-    var selected_lang = $element.options[selected_item].value;
-    var options   = $element.getElementsByTagName('option'),
-        n_options = options.length,
-        temp = [],
-        parts,
-        i,
-        new_selected_item;
-
-    for(i = n_options; i --;) {
-        temp[i] = options[i].text + " || " + options[i].value ; 
-    }
-
-    temp.sort();
-
-    for(i = n_options; i --;) {
-        parts = temp[i].split(' || ');
-
-        options[i].text  = parts[0];
-        options[i].value = parts[1]; 
-	if (options[i].value == selected_lang) {
-		new_selected_item = i;
-        }
-    }
-    $element.selectedIndex = new_selected_item;
-}
-orderSelect(document.getElementById('location-country'));
-
-function toggle_expert() {
-	var fields = document.getElementsByClassName("xpin-field");
-	for(var i = 0; i < fields.length; i++) {
-	   fields[i].classList.toggle('xpin-visible');
-	}
-}
-
-function add_component() {
-    new_node = document.getElementById('component-0').cloneNode(true);
-    component_count = document.querySelectorAll('[id ^= component]').length;
-    new_node.innerHTML = new_node.innerHTML.replaceAll('sensors-0','sensors-' + component_count);
-    new_node.id='component-'+component_count;
-    new_node.getElementsByClassName('remove-button')[0].style = '';
-    button_node = document.getElementById('add_component_row');
-    button_node.parentNode.insertBefore(new_node,button_node);
-    return false;
-}
-
-function remove_component(node) {
-	node.parentNode.parentNode.remove();
-	for (i=0; i < document.querySelectorAll('[ id ^= component]').length;i++) {
-		document.querySelectorAll('[ id ^= component]')[i].id = 'component-'+i;
-		document.querySelectorAll('[ id ^= component]')[i].innerHTML = document.querySelectorAll('[ id ^= component]')[i].innerHTML.replace(/sensors-(\d*)/g,'sensors-'+i);
-	}
-	return false;
-}
-
-</script>
 
 <div class="row">
     <div class="col-md-12">
@@ -118,16 +73,17 @@ function remove_component(node) {
 </div>
 
 <div class="row">
-  {{ render_field(location.latitude, 'basic', 'col-md-4') }}
-  {{ render_field(location.longitude, 'basic', 'col-md-4') }}
-  <div class="col">
-    <label class="control-label">&nbsp;</label>
-    <button type="button" class="btn btn-default btn-block" id="sensor-setting-use-address">{{ _('Lookup entered address') }}</button>
-  </div>
+    {{ render_field(location.latitude, 'basic', 'col-md-4') }}
+    {{ render_field(location.longitude, 'basic', 'col-md-4') }}
+    <div class="col">
+        <label class="control-label">&nbsp;</label>
+        <button type="button" class="btn btn-default btn-block"
+                id="sensor-setting-use-address">{{ _('Lookup entered address') }}</button>
+    </div>
 </div>
 <div class="row">
     <div class="col-md-12" id="sensor-setting-location-not-found-msg" style="display: none; color: red">
-	{{ _('Please check sensor position.') }}
+        {{ _('Please check sensor position.') }}
     </div>
 </div>
 
@@ -139,8 +95,88 @@ function remove_component(node) {
 
 <div class="row m-3">
     <div class="form-group col-md-6 offset-md-3">
-        {{ form.submit(class="form-control btn btn-primary") }}
+        {% if request.path == "/sensors/register" %}
+            {{ form.submit(class="form-control btn btn-primary") }}
+      {% else %}
+            <input type="submit" name="update" class="form-control btn btn-primary">
+        {% endif %}
+
     </div>
 </div>
 
+<script type="text/javascript">
+    var sensor_types = { {% for pin in types %}
+            "{{ pin }}": {{ types[pin] }},
+        {% endfor%}
+    };
+    var sensors = document.querySelectorAll('[id$="sensor_type"]');
+    for (i = 0; i < sensors.length; i++) {
+        sensors[i].onchange = function () {
+            document.getElementById(this.getAttribute('id').replace('sensor_type', 'pin')).value = sensor_types[this.value];
+        };
+        {% if  request.path == "/sensors/register" %}
+            document.getElementById(sensors[i].getAttribute('id').replace('sensor_type', 'pin')).value = sensor_types[sensors[i].value];
+        {% endif %}
+    }
+
+    function orderSelect($element) {
+        var selected_item = $element.selectedIndex;
+        var selected_lang = $element.options[selected_item].value;
+        var options = $element.getElementsByTagName('option'),
+            n_options = options.length,
+            temp = [],
+            parts,
+            i,
+            new_selected_item;
+
+        for (i = n_options; i--;) {
+            temp[i] = options[i].text + " || " + options[i].value;
+        }
+
+        temp.sort();
+
+        for (i = n_options; i--;) {
+            parts = temp[i].split(' || ');
+
+            options[i].text = parts[0];
+            options[i].value = parts[1];
+            if (options[i].value == selected_lang) {
+                new_selected_item = i;
+            }
+        }
+        $element.selectedIndex = new_selected_item;
+    }
+
+    orderSelect(document.getElementById('location-country'));
+
+    function toggle_expert() {
+        var fields = document.getElementsByClassName("xpin-field");
+        for (var i = 0; i < fields.length; i++) {
+            fields[i].classList.toggle('xpin-visible');
+        }
+    }
+
+    function add_component() {
+        new_node = document.getElementById('component-0').cloneNode(true);
+        component_count = document.querySelectorAll('[id ^= component]').length;
+        new_node.innerHTML = new_node.innerHTML.replaceAll('sensors-0', 'sensors-' + component_count);
+        new_node.id = 'component-' + component_count;
+        new_node.getElementsByClassName('remove-button')[0].style = '';
+        button_node = document.getElementById('add_component_row');
+        button_node.parentNode.insertBefore(new_node, button_node);
+        return false;
+    }
+
+    function remove_component(node) {
+        node.parentNode.parentNode.remove();
+        for (i = 0; i < document.querySelectorAll('[ id ^= component]').length; i++) {
+            document.querySelectorAll('[ id ^= component]')[i].id = 'component-' + i;
+            document.querySelectorAll('[ id ^= component]')[i].innerHTML = document.querySelectorAll('[ id ^= component]')[i].innerHTML.replace(/sensors-(\d*)/g, 'sensors-' + i);
+        }
+        return false;
+    }
+
+</script>
 {{ form.csrf_token }}
+
+

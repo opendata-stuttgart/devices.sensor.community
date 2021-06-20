@@ -11,7 +11,7 @@ Redistribution and use in source and binary forms, with or without modification,
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
-from flask import (Flask, Blueprint, render_template, current_app, flash, url_for, redirect, session)
+from flask import (Flask, Blueprint, request, render_template, current_app, flash, url_for, redirect, session)
 from flask_login import current_user, login_required
 from flask_mail import Message
 from flask_babel import lazy_gettext as _
@@ -21,11 +21,10 @@ from datetime import datetime, timedelta
 import pytz
 import sqlalchemy.exc as exc
 
-from .forms import SensorGiveForm, SensorSettingsForm, SensorRegisterForm, SensorDeleteForm
+from .forms import SensorGiveForm, SensorSettingsForm, SensorRegisterForm, SensorDeleteForm, SensorAddForm
 from ..external_data.models import Node, SensorLocation, Sensor, SensorType
 from ..common.helpers import get_object_or_404, model_to_dict
 from ..extensions import mail, db
-
 
 personal = Blueprint('personal', __name__)
 
@@ -47,6 +46,7 @@ SENSOR_TYPES = {
     'NOISE': _('noise sensor'),
     'RADIATION': _('radiation sensor'),
 }
+
 
 @personal.route('/meine-luftdaten')
 @personal.route('/dashboard')
@@ -193,8 +193,10 @@ def sensor_data(id):
 def sensor_settings(id):
     node = get_object_or_404(Node, Node.id == id, Node.email == current_user.email)
     form = SensorSettingsForm(obj=node)
+    form_add_sensor = SensorAddForm()
 
-    if form.validate_on_submit():
+    if "update" in request.form and form.validate_on_submit():
+        print("form is submitted")
         update_delta = timedelta(
             seconds=current_app.config['SENSOR_LOCATION_UPDATE_INTERVAL'])
 
@@ -213,13 +215,38 @@ def sensor_settings(id):
             if old_d == new_d:
                 # No location field has been changed, revert back to original
                 node.location = old_location
-
+        print(f'form {form.submit.data}')
+        print(f'formAddSensor {form_add_sensor.submit.data}')
         db.session.commit()
         current_app.logger.info('%s updated node %s' % (current_user.email, id))
         flash(_('Settings saved successfully.'), 'success')
         return redirect(url_for('.sensor_list'))
 
-    return render_template('my-sensor-settings.html', node=node, form=form, types=current_app.config['SENSOR_TYPES'])
+    if "addSensor" in request.form and form_add_sensor.validate():
+        print("form_add_sensor is submitted")
+        # sensor_fields = [f.short_name for f in form_add_sensor.submit.data]
+        # sensor_fields = [f.short_name for f in form_add_sensor.sensors]
+        # sensor_fields = [Sensor() for _ in form_add_sensor.sensors]
+
+        try:
+            print(f'sensor type: {form_add_sensor.sensor_type.data}')
+            print(f'pin: {form_add_sensor.pin.data}')
+            st = 20
+            sensor = Sensor(sensor_type_id=st, node_id=id, pin=form_add_sensor.pin.data)
+            # print(f'---------------------------------')
+            db.session.add(sensor)
+            db.session.commit()
+            print(f'---------------------------------')
+
+            flash(_('Sensor successfully registered.'), 'success')
+            return redirect(url_for('.sensor_list'))
+        except exc.IntegrityError:
+            db.session.rollback()
+            flash(_('This sensor ID is already registered.'), 'warning')
+
+    return render_template('my-sensor-settings.html', node=node, form=form, formAddSensor=form_add_sensor,
+                           types=current_app.config[
+                               'SENSOR_TYPES'])
 
 
 @personal.route('/sensors/register', methods=['GET', 'POST'])
@@ -231,6 +258,7 @@ def sensor_register():
     ]})
 
     if form.validate_on_submit():
+        print("register form is submitted")
         node = Node(location=SensorLocation(), sensors=[
             Sensor() for _ in form.sensors
         ])
@@ -263,11 +291,11 @@ def sensor_transfer(id):
         node.email = form.email.data.lower()
 
         msg = Message(_('A fine dust sensor was transferred to you'),
-            sender=current_app.config['MAILS_FROM'],
-            recipients=[form.email.data.lower()],
-            html=render_template('emails/sensor-given.html',
-            login_url="%s/login" % (current_app.config['PROJECT_URL']))
-        )
+                      sender=current_app.config['MAILS_FROM'],
+                      recipients=[form.email.data.lower()],
+                      html=render_template('emails/sensor-given.html',
+                                           login_url="%s/login" % (current_app.config['PROJECT_URL']))
+                      )
         mail.send(msg)
         current_app.logger.info(
             '%s gave node %s to %s' % (current_user.email, id, form.email.data.lower()))
@@ -275,7 +303,8 @@ def sensor_transfer(id):
         db.session.commit()
         return render_template('my-sensor-give-success.html', node=node)
     return render_template('my-sensor-give.html', node=node, form=form)
-    
+
+
 @personal.route('/my-sensor/<id>/delete', methods=['GET', 'POST'])
 @personal.route('/sensors/<id>/delete', methods=['GET', 'POST'])
 @login_required
@@ -292,4 +321,3 @@ def sensor_delete(id):
         db.session.commit()
         return render_template('my-sensor-delete-success.html', node=node)
     return render_template('my-sensor-delete.html', node=node, form=form)
-
