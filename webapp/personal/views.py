@@ -215,8 +215,7 @@ def sensor_settings(id):
             if old_d == new_d:
                 # No location field has been changed, revert back to original
                 node.location = old_location
-        print(f'form {form.submit.data}')
-        print(f'formAddSensor {form_add_sensor.submit.data}')
+
         db.session.commit()
         current_app.logger.info('%s updated node %s' % (current_user.email, id))
         flash(_('Settings saved successfully.'), 'success')
@@ -224,13 +223,11 @@ def sensor_settings(id):
 
     if "addSensor" in request.form and form_add_sensor.validate():
         print("form_add_sensor is submitted")
-        # sensor_fields = [f.short_name for f in form_add_sensor.submit.data]
+        sensor_fields = form_add_sensor.submit.data
         # sensor_fields = [f.short_name for f in form_add_sensor.sensors]
-        # sensor_fields = [Sensor() for _ in form_add_sensor.sensors]
+        print(f'sensor type: {form_add_sensor.sensor_type.data}')
 
         try:
-            print(f'sensor type: {form_add_sensor.sensor_type.data}')
-            print(f'pin: {form_add_sensor.pin.data}')
             st = 20
             sensor = Sensor(sensor_type_id=st, node_id=id, pin=form_add_sensor.pin.data)
             # print(f'---------------------------------')

@@ -45,7 +45,7 @@
 {% endif %}
 <br/>
 
-<h2>{{ _('Add Sensor') }}</h2>
+<h4>{{ _('Add Sensor') }}</h4>
 {% if request.path != "/sensors/register" %}
     <div class="row" id="component-new">
         {{ render_field(formAddSensor.sensor_type, 'basic') }}
