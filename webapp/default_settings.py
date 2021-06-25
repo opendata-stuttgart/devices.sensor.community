@@ -19,7 +19,7 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 PROJECT_VERSION = '0.1.0'
 LOG_DIR = os.path.abspath(os.path.join(PROJECT_ROOT, os.pardir, 'logs'))
 
-DEBUG = False
+DEBUG = True
 
 ADMINS = ['david.lackovic@me.com']
 
@@ -53,9 +53,9 @@ SECURITY_I18N_DIRNAME = os.path.join(PROJECT_ROOT, '..', 'translations')
 SECURITY_POST_LOGIN_VIEW = 'personal.sensor_list'
 
 # Docker defaults
-SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://devel:devel@mysql/devel'
+SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:password@127.0.0.1:3307/userdb'
 SQLALCHEMY_BINDS = {
-    'external': 'mysql+pymysql://external:external@mysql/external',
+    'external': 'mysql+pymysql://root:password@127.0.0.1:3306/external',
 }
 
 # Predefined sensor PINs
