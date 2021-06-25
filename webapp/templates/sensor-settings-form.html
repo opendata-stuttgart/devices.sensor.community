@@ -48,21 +48,14 @@
 <h4>{{ _('Add Sensor') }}</h4>
 {% if request.path != "/sensors/register" %}
     <div class="row" id="component-new">
-        {{ render_field(formAddSensor.sensor_type, 'basic') }}
+        {{ render_field(formAddSensor.sensor_type, 'basic', 'col-md-6') }}
         {# this field needs to be renderer as optional in template, as it might be
     autopopulated in form validation #}
-        {{ render_field(formAddSensor.pin, 'basic', 'col-md-2 xpin-visible', required=True) }}
-        <div class="form-group col-md-2 remove-button"
-             style="display: none;"><label for="sensors-new-remove"> </label><input
-                type="button" id="sensors-new-remove" name="sensors-new-remove"
-                onclick="remove_component(this)" value="{{ _('remove') }}" class="form-control"></div>
+        {{ render_field(formAddSensor.pin, 'basic', 'col-md-2 xpin-visible', required=False) }}
+        <input type="submit" name="addSensor" class="form-control btn btn-primary col-md-4" style="margin-top: 32px"
+               value="Add sensor">
     </div>
 
-    <div class="form-group col-md-6 offset-md-3">
-        {#     <input type="submit" name="submit-formAddSensor" class="form-control btn btn-primary">#}
-        <input type="submit" name="addSensor" class="form-control btn btn-primary">
-        {#        {{ formAddSensor.submit(class="form-control btn btn-primary") }}#}
-    </div>
 {% endif %}
 
 
@@ -97,8 +90,8 @@
     <div class="form-group col-md-6 offset-md-3">
         {% if request.path == "/sensors/register" %}
             {{ form.submit(class="form-control btn btn-primary") }}
-      {% else %}
-            <input type="submit" name="update" class="form-control btn btn-primary">
+        {% else %}
+            <input type="submit" name="update" class="form-control btn btn-primary" value="Update settings">
         {% endif %}
 
     </div>

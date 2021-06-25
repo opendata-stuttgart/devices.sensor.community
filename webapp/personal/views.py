@@ -196,13 +196,11 @@ def sensor_settings(id):
     form_add_sensor = SensorAddForm()
 
     if "update" in request.form and form.validate_on_submit():
-        print("form is submitted")
         update_delta = timedelta(
             seconds=current_app.config['SENSOR_LOCATION_UPDATE_INTERVAL'])
 
         if node.location.modified > datetime.utcnow() - update_delta:
-            # This node's location has been modified recently, update it in
-            # place
+            # This node's location has been modified recently, update it in place
             form.populate_obj(node)
         else:
             old_location = node.location
@@ -213,7 +211,7 @@ def sensor_settings(id):
             new_d = model_to_dict(node.location, only_fields=location_fields)
             old_d = model_to_dict(old_location, only_fields=location_fields)
             if old_d == new_d:
-                # No location field has been changed, revert back to original
+                # No location field has been changed, revert to original
                 node.location = old_location
 
         db.session.commit()
@@ -222,18 +220,11 @@ def sensor_settings(id):
         return redirect(url_for('.sensor_list'))
 
     if "addSensor" in request.form and form_add_sensor.validate():
-        print("form_add_sensor is submitted")
-        sensor_fields = form_add_sensor.submit.data
-        # sensor_fields = [f.short_name for f in form_add_sensor.sensors]
-        print(f'sensor type: {form_add_sensor.sensor_type.data}')
-
         try:
-            st = 20
+            st = SensorType.query.filter(SensorType.name == str(form_add_sensor.sensor_type.data)).first().id
             sensor = Sensor(sensor_type_id=st, node_id=id, pin=form_add_sensor.pin.data)
-            # print(f'---------------------------------')
             db.session.add(sensor)
             db.session.commit()
-            print(f'---------------------------------')
 
             flash(_('Sensor successfully registered.'), 'success')
             return redirect(url_for('.sensor_list'))
@@ -242,8 +233,7 @@ def sensor_settings(id):
             flash(_('This sensor ID is already registered.'), 'warning')
 
     return render_template('my-sensor-settings.html', node=node, form=form, formAddSensor=form_add_sensor,
-                           types=current_app.config[
-                               'SENSOR_TYPES'])
+                           types=current_app.config['SENSOR_TYPES'])
 
 
 @personal.route('/sensors/register', methods=['GET', 'POST'])
@@ -255,7 +245,6 @@ def sensor_register():
     ]})
 
     if form.validate_on_submit():
-        print("register form is submitted")
         node = Node(location=SensorLocation(), sensors=[
             Sensor() for _ in form.sensors
         ])
