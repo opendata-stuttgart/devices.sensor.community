@@ -1,0 +1,166 @@
+{% block header %}
+    <div class="bg-brand-green sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-4 relative">
+            <div class="flex justify-between py-5 lg:justify-start lg:space-x-10 font-semibold text-brand-white">
+                <div class="lg:w-0 lg:flex-1 mr-40 justify-end">
+                    <a class="block uppercase " href="/">
+                        <img alt="sensor community logo" class="h-8 w-auto" src="/static/images/signet.svg">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar"
+                        aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <nav class="hidden lg:flex space-x-10">
+                    {% macro navbar_link(href, title=None, general=False) %}
+                        <a class="text-base leading-6 {% if href == request.endpoint and (general or request
+                        .view_args == kwargs) %} {% endif %}"
+                           href="{{ url_for(href, **kwargs) }}">
+                            {% if not title %}{{ caller() }}{% else %}{{ title }}{% endif %}
+                        </a>
+                    {% endmacro %}
+
+                    {% if current_user.is_authenticated %}
+                        {{ navbar_link('personal.sensor_list', _('My sensors')) }}
+                        {{ navbar_link('users.settings', _('Settings')) }}
+                        {{ navbar_link('security.change_password', _('Password change')) }}
+
+                        {% if current_user.has_role('Administrator') %}
+                            <li class="nav-item"><a class="nav-link"
+                                                    href="/admin/sensor-import">{{ _('Massimporter') }} </a></li>
+                        {% endif %}
+                    {% endif %}
+                    <div class="pr-40"></div>
+                </nav>
+                <div class="hidden lg:flex items-center justify-end space-x-8 lg:flex-1 lg:w-0 z-50 -mt-2">
+                    {#                    <div class="flex">#}
+                    {#                        <a href="https://github.com/opendata-stuttgart/"#}
+                    {#                           target="_blank" class="mr-1 font-light">#}
+                    {#                            GitHub#}
+                    {#                        </a>#}
+                    {#                        <span class="transform -rotate-45">&rarr;</span>#}
+                    {#                    </div>#}
+                    {#                    <div class="flex">#}
+                    {#                        <a href="https://sensor.community/" target="_blank" class="mr-1 font-light">#}
+                    {#                            Mainpage#}
+                    {#                        </a>#}
+                    {#                        <span class="transform -rotate-45">&rarr;</span>#}
+                    {#                    </div>#}
+
+                    {#  Todo: add language swticher #}
+                    <div class="relative inline-block text-left">
+                        <div>
+                            {% with current_language = get_locale().language %}
+                                <button type="button"
+                                        class="inline-flex justify-center w-full rounded-md shadow-sm
+                                px-4 py-2 text-brand-white bg-brand-green text-sm font-light"
+                                        id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                    {{ config['LANGUAGES'].get(current_language) }}
+                                    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 20 20"
+                                         fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                              clip-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                                </div>
+
+                                <!--
+								  Dropdown menu, show/hide based on menu state.
+
+								  Entering: "transition ease-out duration-100"
+									From: "transform opacity-0 scale-95"
+									To: "transform opacity-100 scale-100"
+								  Leaving: "transition ease-in duration-75"
+									From: "transform opacity-100 scale-100"
+									To: "transform opacity-0 scale-95"
+								-->
+                                <div class="hidden origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-brand-white
+                    ring-1 ring-black
+                    ring-opacity-5 focus:outline-none"
+                                     role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                                     tabindex="-1">
+                                    <div class="py-1" role="none">
+                                        {% for code, name in config['LANGUAGES'].items()|sort() %}
+                                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                            <a href="?lang={{ code }}"
+                                               class="text-gray-700 block px-4 py-2 text-sm {% if current_language == code %} active{% endif %}"
+                                               role="menuitem" tabindex="-1"
+                                               id="menu-item-0">{{ name }}</a>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            {% endwith %}
+                    </div>
+                    {% if current_user.is_authenticated %}
+                        {{ navbar_link('security.logout', _('Logout')) }}
+                    {% else %}
+                        {{ navbar_link('security.login', _('Login')) }}
+                        {{ navbar_link('security.register', _('Register')) }}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Mobile menu-->
+    <div class="bg-brand-green sticky top-20 z-40">
+        <div class="bg-brand-green h-screen absolute -mt-10 inset-x-0 transition transform origin-top-right lg:hidden { menu.open ? 'block opacity-100 translate-y-0 ease-out' : 'hidden opacity-0 -translate-y-1 ease-in' } transition  duration-200">
+            <div class="divide-y-2">
+                <div class="mt-10 px-5 space-y-6 text-brand-white">
+                    <nav class="grid">
+                        {% macro navbar_link(href, title=None, general=False) %}
+                            <a class="flex py-4"
+                               href="{{ url_for(href, **kwargs) }}">
+                                <div class="text-2xl leading-6 font-bold flex-1">
+                                    {% if not title %}{{ caller() }}{% else %}{{ title }}{% endif %}
+                                </div>
+                                <span class="text-2xl">&nbsp&rarr;</span>
+                            </a>
+                        {% endmacro %}
+
+                    {% if current_user.is_authenticated %}
+                        {{ navbar_link('personal.sensor_list', _('My sensors')) }}
+                        {{ navbar_link('users.settings', _('Settings')) }}
+                        {{ navbar_link('security.change_password', _('Password change')) }}
+
+                        {% if current_user.has_role('Administrator') %}
+                            <li class="nav-item"><a class="nav-link"
+                                                    href="/admin/sensor-import">{{ _('Massimporter') }} </a></li>
+                        {% endif %}
+                    {% endif %}
+
+                        <hr class="my-3">
+
+                        <a class="flex py-3"
+                           href="{lang}/sensors/">
+                    <span class="text-base font-extralight">
+                        Github
+                    </span>
+                            <span class="transform -rotate-45">&rarr;</span>
+                        </a>
+
+                        <a class="flex py-3"
+                           href="{lang}/sensors/">
+                    <span class="text-base font-extralight">
+                        Main Base
+                    </span>
+                            <span class="transform -rotate-45">&rarr;</span>
+                        </a>
+
+                        <a class="flex py-3"
+                           href="{lang}/sensors/">
+                    <span class="text-base font-extralight">
+                        Map
+                    </span>
+                            <span class="transform -rotate-45">&rarr;</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
