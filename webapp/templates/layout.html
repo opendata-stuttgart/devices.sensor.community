@@ -29,8 +29,7 @@
     {% endblock %}
 
     {% block styles %}
-        <link rel="stylesheet" href="/static/css/webapp.min.css?v={{ config['PROJECT_VERSION'] }}">
-        <link rel="stylesheet" href="/static/fonts/fonts.css?v={{ config['PROJECT_VERSION'] }}">
+        <link rel="stylesheet" href="/static/css/webapp.css">
     {% endblock %}
 </head>
 <body class="{% block bodyclass %}default{% endblock %}">
@@ -95,7 +94,7 @@
     </nav>
 {% endblock %}
 
-<div id="content" class="container">
+<div>
     {% include "messages.html" %}
     {% block content %}
     {% endblock %}

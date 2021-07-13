@@ -68,12 +68,6 @@ To create new database migration:
 
 Flask environment can be overriden by modifying `docker-compose.yml` only.
 
-### Gulp automatic rebuilds
-To start automatic CSS/JS rebuilds on change use this:
-
-    docker-compose run --rm gulp npm start
-
-
 ### Create new language
 ##### extract text and `lazy_gettext()` functions
 
