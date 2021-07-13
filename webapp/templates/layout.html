@@ -15,8 +15,6 @@
 
             <link rel="manifest" href="/static/favicons/manifest.json">
             <link rel="shortcut icon" href="/static/favicons/favicon.ico">
-
-
         {% endblock %}
 
         {% block styles %}
@@ -26,14 +24,10 @@
     <body class="{% block bodyclass %}default{% endblock %}">
         {% include "navbar.html" %}
         {% include "messages.html" %}
-
         <div class="py-16">
             {% block content %}{% endblock %}
         </div>
-
         {% include "footer.html" %}
-
-
         {% block scripts %}
             <script type="text/javascript" src="/static/js/webapp.min.js?v={{ config['PROJECT_VERSION'] }}"></script>
         {% endblock %}

@@ -13,7 +13,7 @@
     "build": "npx tailwindcss-cli@latest build -i ./static/css/tailwind.css -o ./static/css/webapp.css",
     "watch": "TAILWIND_MODE=watch NODE_ENV=development postcss ./static/css/tailwind.css -o ./static/css/webapp.css -w"
   },
-  "devDependencies": {
+  "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "@tailwindcss/forms": "^0.3.3",
     "@tailwindcss/typography": "^0.4.1",

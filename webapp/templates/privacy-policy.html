@@ -1,26 +1,25 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <div class="fullwidth clearfix">
-        <div id="maincont" class="bodycontainer clearfix">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>{{ _('Privacy Policy') }}</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    {{ _('<p>The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and according to the legal data protection regulations as well as this data protection explanation.</p>
-                    <p>The use of our website is generally possible without providing personal data. Insofar as personal data (e.g. name, address or e-mail addresses) is collected on our pages, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent.</p>
-                    <p>We would like to point out that data transmission via the Internet (e.g. communication via e-mail) may have security gaps. A complete protection of the data against the access by third is not possible.</p>
+    <div class="relative py-16 overflow-hidden">
+    <div class="relative px-4 sm:px-6 lg:px-8">
+        <div class="text-lg max-w-prose mx-auto">
+            <h1 class="text-4xl font-extrabold sm:text-5xl sm:tracking-tight">
+                {{ _('Privacy Policy') }}
+            </h1>
+            <div class="mt-6 prose prose-indigo prose-lg mx-auto">
+                {{ _('<div>The operators of these pages take the protection of your personal data very seriously. We treat
+            your personal data confidentially and according to the legal data protection regulations as well as this data protection explanation.</div>
+                    <div>The use of our website is generally possible without providing personal data. Insofar as personal data (e.g. name, address or e-mail addresses) is collected on our pages, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent.</div>
+                    <div>We would like to point out that data transmission via the Internet (e.g. communication via e-mail) may have security gaps. A complete protection of the data against the access by third is not possible.</div>
                     <h2>Information, deletion, blocking</h2>
-                    <p>You have the right at any time to free information about your stored personal data, their origin and recipient and the purpose of data processing as well as a right to correction, blocking or deletion of this data. You can contact us at any time at the address given in the imprint for this and other questions on the subject of personal data.</p>
+                    <div>You have the right at any time to free information about your stored personal data, their origin and recipient and the purpose of data processing as well as a right to correction, blocking or deletion of this data. You can contact us at any time at the address given in the imprint for this and other questions on the subject of personal data.</div>
                     <h2>Cookies</h2>
-                    <p>Some of the Internet pages use so-called cookies. Cookies do not damage your computer and do not contain viruses. Cookies serve to make our offer more user-friendly, more effective and safer. Cookies are small text files that are stored on your computer by your browser.</p>
-                    <p>Most of the cookies we use are so-called "session cookies". They are automatically deleted at the end of your visit. Other cookies remain stored on your terminal until you delete them. These cookies enable us to recognize your browser during your next visit.</p>
-                
+                    <div>Some of the Internet pages use so-called cookies. Cookies do not damage your computer and do not contain viruses. Cookies serve to make our offer more user-friendly, more effective and safer. Cookies are small text files that are stored on your computer by your browser.</div>
+                    <div>Most of the cookies we use are so-called "session cookies". They are automatically deleted at the end of your visit. Other cookies remain stored on your terminal until you delete them. These cookies enable us to recognize your browser during your next visit.</div>
+
                     <h2>Account and sensor data</h2>
-                    <p>The measurement data of the sensors are collected on the server of the Sensor.Community and are publicly accessible to the company. The following information will be published:</p>
+                    <div>The measurement data of the sensors are collected on the server of the Sensor.Community and are publicly accessible to the company. The following information will be published:</div>
                     <ul>
                         <li>The anonymized geoposition (longitude and latitude) rounded to approx. 100 m.</li>
                         <li>The ID of your ESP8266 NodeMCU board</li>
@@ -28,14 +27,14 @@
                         <li>The sensor height</li>
                         <li>The description as text</li>
                     </ul>
-                    <p>The following additional data will be stored for internal processing, but will not be published:</p>
+                    <div>The following additional data will be stored for internal processing, but will not be published:</div>
                     <ul>
                         <li>The postal address of the sensor</li>
                         <li>The e-mail address</li>
                         <li>Your first and last name</li>
                     </ul>
                     <h2>Server log files</h2>
-                    <p>The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:</p>
+                    <div>The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:</div>
                     <ul>
                         <li>Browser type / browser version</li>
                         <li>used operating system</li>
@@ -43,11 +42,10 @@
                         <li>Hostname of the accessing computer</li>
                         <li>Time of the server request</li>
                     </ul>
-                    <p>These data cannot be assigned to specific persons. This data will not be merged with other data sources. We reserve the right to subsequently check this data if we become aware of concrete indications of illegal use.</p>
+                    <div>These data cannot be assigned to specific persons. This data will not be merged with other data sources. We reserve the right to subsequently check this data if we become aware of concrete indications of illegal use.</div>
                     <h2>Contradiction advertising mails</h2>
-                    <p>We hereby object to the use of contact data published within the scope of the imprint obligation to send unsolicited advertising and information material. The operators of this website expressly reserve the right to take legal action against unsolicited mailing or e-mailing of spam and other similar advertising materials.</p>
-                    ') }}
-                </div>
+                    <div>We hereby object to the use of contact data published within the scope of the imprint obligation to send unsolicited advertising and information material. The operators of this website expressly reserve the right to take legal action against unsolicited mailing or e-mailing of spam and other similar advertising materials.</div>
+                    ') }}
             </div>
         </div>
     </div>
