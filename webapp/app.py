@@ -12,18 +12,17 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 """
 
 import os
-from flask import Flask, request, render_template, g
 
-from .common import Response
-from .common import constants as COMMON_CONSTANTS
-from .common.filter import register_global_filters
-from .frontend import frontend
-from .personal import personal
-from .users import users
-from .models import User, Role
-from .extensions import db, csrf, mail, babel, security, migrate
+from flask import Flask
+
 from .babel import create_module as babel_create_module
 from .common.context_processor import register_context_processor
+from .common.filter import register_global_filters
+from .extensions import db, csrf, mail, security, migrate
+from .frontend import frontend
+from .models import User, Role
+from .personal import personal
+from .users import users
 
 __all__ = ['launch']
 
@@ -35,7 +34,6 @@ DEFAULT_BLUEPRINTS = [
 
 
 def launch(config=None, app_name=None, blueprints=None):
-
     """Create a Flask app."""
 
     if blueprints is None:
@@ -85,7 +83,7 @@ def configure_extensions(app):
     mail.init_app(app)
 
     # flask-babel
-    #babel.init_app(app)
+    # babel.init_app(app)
 
     from flask_security import SQLAlchemyUserDatastore
     security.init_app(app, SQLAlchemyUserDatastore(db, User, Role))
@@ -95,17 +93,20 @@ def configure_blueprints(app, blueprints):
     for blueprint in blueprints:
         app.register_blueprint(blueprint)
 
+
 def configure_filters(app):
     register_global_filters(app)
 
+
 def configure_context_processor(app):
     register_context_processor(app)
+
 
 def configure_logging(app):
     if not os.path.exists(app.config['LOG_DIR']):
         os.makedirs(app.config['LOG_DIR'])
 
-    from logging import INFO, DEBUG, ERROR, handlers, Formatter
+    from logging import DEBUG, ERROR, handlers, Formatter
     app.logger.setLevel(DEBUG)
 
     info_log = os.path.join(app.config['LOG_DIR'], 'info.log')
@@ -134,6 +135,7 @@ def configure_hook(app):
 
 def configure_error_handlers(app):
     pass
+
 
 """
   @app.errorhandler(500)

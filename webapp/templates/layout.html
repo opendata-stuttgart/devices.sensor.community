@@ -38,9 +38,10 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="container">
             <a class="navbar-brand" href="/">
-            <img src="/static/images/logo-v1-white.svg" alt="" class="d-inline-block align-top" height="30">
+                <img src="/static/images/logo-v1-white.svg" alt="" class="d-inline-block align-top" height="30">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar"
+                    aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -48,24 +49,26 @@
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     {% macro navbar_link(href, title=None, general=False) %}
                         <li class="nav-item{% if href == request.endpoint and (general or request.view_args == kwargs) %} active{% endif %}">
-                        <a href="{{ url_for(href, **kwargs) }}" class="nav-link">{% if not title %}{{ caller() }}{% else %}{{ title }}{% endif %}</a>
+                            <a href="{{ url_for(href, **kwargs) }}" class="nav-link">
+                                {% if not title %}{{ caller() }}{% else %}{{ title }}{% endif %}</a>
                         </li>
                     {% endmacro %}
 
                     {{ navbar_link('frontend.index', _('Home')) }}
 
-                    {% if current_user.is_authenticated  %}
+                    {% if current_user.is_authenticated %}
                         {{ navbar_link('personal.sensor_list', _('My sensors')) }}
                         {{ navbar_link('users.settings', _('Settings')) }}
                         {{ navbar_link('security.change_password', _('Password change')) }}
 
                         {% if current_user.has_role('Administrator') %}
-                            <li class="nav-item"><a class="nav-link" href="/admin/sensor-import">{{ _('Massimporter') }} </a></li>
+                            <li class="nav-item"><a class="nav-link"
+                                                    href="/admin/sensor-import">{{ _('Massimporter') }} </a></li>
                         {% endif %}
                     {% endif %}
                 </ul>
                 <ul class="navbar-nav mt-2 mt-lg-0">
-                    {% if current_user.is_authenticated  %}
+                    {% if current_user.is_authenticated %}
                         {{ navbar_link('security.logout', _('Logout')) }}
                     {% else %}
                         {{ navbar_link('security.login', _('Login')) }}
@@ -74,14 +77,16 @@
 
                     <li class="nav-item dropdown">
                         {% with current_language = get_locale().language %}
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{ config['LANGUAGES'].get(current_language) }}
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            {% for code, name in config['LANGUAGES'].items()|sort() %}
-                            <a class="dropdown-item{% if current_language == code %} active{% endif %}" href="?lang={{ code }}">{{ name }}</a>
-                            {% endfor %}
-                        </div>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ config['LANGUAGES'].get(current_language) }}
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                {% for code, name in config['LANGUAGES'].items()|sort() %}
+                                    <a class="dropdown-item{% if current_language == code %} active{% endif %}"
+                                       href="?lang={{ code }}">{{ name }}</a>
+                                {% endfor %}
+                            </div>
                         {% endwith %}
                     </li>
                 </ul>

@@ -26,7 +26,6 @@ from ..external_data.models import Node, SensorLocation, Sensor, SensorType
 from ..common.helpers import get_object_or_404, model_to_dict
 from ..extensions import mail, db
 
-
 personal = Blueprint('personal', __name__)
 
 VALUE_TYPES = {
@@ -47,12 +46,6 @@ SENSOR_TYPES = {
     'NOISE': _('noise sensor'),
     'RADIATION': _('radiation sensor'),
 }
-
-@personal.route('/meine-luftdaten')
-@personal.route('/dashboard')
-@login_required
-def dashboard():
-    return render_template('meine-luftdaten.html')
 
 
 @personal.route('/my-sensors')
@@ -263,11 +256,11 @@ def sensor_transfer(id):
         node.email = form.email.data.lower()
 
         msg = Message(_('A fine dust sensor was transferred to you'),
-            sender=current_app.config['MAILS_FROM'],
-            recipients=[form.email.data.lower()],
-            html=render_template('emails/sensor-given.html',
-            login_url="%s/login" % (current_app.config['PROJECT_URL']))
-        )
+                      sender=current_app.config['MAILS_FROM'],
+                      recipients=[form.email.data.lower()],
+                      html=render_template('emails/sensor-given.html',
+                                           login_url="%s/login" % (current_app.config['PROJECT_URL']))
+                      )
         mail.send(msg)
         current_app.logger.info(
             '%s gave node %s to %s' % (current_user.email, id, form.email.data.lower()))
@@ -275,7 +268,8 @@ def sensor_transfer(id):
         db.session.commit()
         return render_template('my-sensor-give-success.html', node=node)
     return render_template('my-sensor-give.html', node=node, form=form)
-    
+
+
 @personal.route('/my-sensor/<id>/delete', methods=['GET', 'POST'])
 @personal.route('/sensors/<id>/delete', methods=['GET', 'POST'])
 @login_required
@@ -292,4 +286,3 @@ def sensor_delete(id):
         db.session.commit()
         return render_template('my-sensor-delete-success.html', node=node)
     return render_template('my-sensor-delete.html', node=node, form=form)
-

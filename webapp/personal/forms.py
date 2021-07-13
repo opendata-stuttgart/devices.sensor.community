@@ -51,7 +51,7 @@ class SensorLocationForm(FlaskForm):
             validators.InputRequired(
                 message=_('Please enter the country name.'),
             ),
-            validators.NoneOf(['--'], message=_('Please enter the country name.'),)
+            validators.NoneOf(['--'], message=_('Please enter the country name.'), )
         ],
         choices=country_codes,
     )
@@ -104,13 +104,15 @@ class SensorLocationForm(FlaskForm):
                 message=_('Please enter the number between 1 and 10'),
             )
         ],
-        description=_('How close are those roads? 1 = very little further away, 10 = a lot of traffic right on your doorstep.'),
+        description=_(
+            'How close are those roads? 1 = very little further away, 10 = a lot of traffic right on your doorstep.'),
     )
 
 
 def fetch_sensor_types():
     # Custom order just to pronounce default types
-    return SensorType.query.order_by(SensorType.uid.asc()).filter(SensorType.id.in_(app.config["SENSOR_TYPES"].keys())).all()
+    return SensorType.query.order_by(SensorType.uid.asc()).filter(
+        SensorType.id.in_(app.config["SENSOR_TYPES"].keys())).all()
 
 
 class SensorForm(FlaskForm):
@@ -158,7 +160,8 @@ class SensorSettingsForm(FlaskForm):
             # )
             validators.Optional()
         ],
-        description=_('1 = on the garden side, very well shielded from all streets, 10 = the sensor is on a house wall directly on the street. With this value it is irrelevant how big the street is, it is only about where the sensor is attached to the house.')
+        description=_(
+            '1 = on the garden side, very well shielded from all streets, 10 = the sensor is on a house wall directly on the street. With this value it is irrelevant how big the street is, it is only about where the sensor is attached to the house.')
     )
     exact_location = BooleanField(
         _('Publish exact location'),
@@ -186,10 +189,13 @@ class SensorRegisterForm(SensorSettingsForm):
     )
     sensor_board = SelectField(
         _('Sensor Board'), [validators.InputRequired()],
-        choices=[('esp8266-', 'esp8266'), ('esp32-', 'esp32'), ('raspi-', 'raspi'), ('respire-', 'respire'), ('smogomierz-', 'smogomierz'), ('TTN-', 'TTN')],
+        choices=[('esp8266-', 'esp8266'), ('esp32-', 'esp32'), ('raspi-', 'raspi'), ('respire-', 'respire'),
+                 ('smogomierz-', 'smogomierz'), ('TTN-', 'TTN')],
         default='esp8266-',
-        description=_('Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or the Smogomierz sensor version need to change this accordingly. Also in these cases the Sensor ID is the numeric part of the name only.')
+        description=_(
+            'Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or the Smogomierz sensor version need to change this accordingly. Also in these cases the Sensor ID is the numeric part of the name only.')
     )
+
 
 class SensorGiveForm(FlaskForm):
     email = StringField(
@@ -209,6 +215,7 @@ class SensorGiveForm(FlaskForm):
         if field.data.lower().strip() == current_user.email.lower().strip():
             raise validators.ValidationError(
                 _("You can't transfer the sensor to yourself"))
+
 
 class SensorDeleteForm(FlaskForm):
     submit = SubmitField(_("Delete sensor"))
