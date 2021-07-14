@@ -15,25 +15,24 @@
                   Sensor.Community
                 </span>
                 </div>
-                <div class="mt-6">
-                    <div class="mt-6 sm:max-w-xl">
-                        <h1 class="text-5xl font-extrabold text-black tracking-tight sm:text-5xl">
-                            {{ _('Configure air quality sensor yourself') }}
-                        </h1>
+                <div class="mt-6 sm:max-w-xl">
+                    <h1 class="text-5xl font-extrabold text-black tracking-tight sm:text-5xl">
+                        {{ _('Configure your air quality sensor yourself') }}
+                    </h1>
+                    <div class="hidden md:inline">
                         <div class="hidden md:inline">
                             <p class="mt-6 text-xl antialiased">
                                 {{ _('The main purpose of this page is to enable you, as the owner of a fine dust sensor, to configure the location and other parameters yourself.') }}
                             </p>
-                            <h2>{{ _('Join us!') }} </h2>
                             <p class="mt-6 text-xl antialiased">
                                 {{ _('The city of the future belongs to its citizens. The digital tools, the Maker Movement and Citizen Science are leading to more and more people being given the opportunity to design the city themselves.') }}</p>
                             <br>
-                            <h2>{{ _('About the project') }}</h2>
-                            <p class="mt-6 text-xl antialiased">
-                                {{ _('The OK Lab Stuttgart is part of the program Code for Germany of the Open Knowledge Foundation Germany. The aim of the program is to promote developments in the areas of transparency, Open Data and Citizen Science.') }}</p>
-                            <p class="mt-6 text-xl antialiased">
-                                {{ _('Regional groups consisting of designers, developers, journalists and others meet regularly in Labs. They develop apps that inform, positively shape and support society and make the work of administrations and authorities more transparent.') }} </p>
-                            <h4>{{ _('Code a difference: Use your skills to improve your city!') }}</h4>
+                            <p class="mt-6 text-xl antialiased font-bold">{{ _('Code a difference: Use your skills to
+                            improve your city!') }}</p>
+                            <a href="https://sensor.community/de/" target="_blank" class="mt-6 text-xl antialiased
+                            text-brand-funcRed">Find
+                                out more about Sensor.Community</a>
+
                         </div>
                     </div>
                 </div>
@@ -70,7 +69,7 @@
                     <div class="relative sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
                         <div class="mt-24 rounded-2xl flex">
                             <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20
-                            xl:px-24 bg-gray-100 ">
+                            bg-gray-100 ">
                                 <div class="mx-auto w-full max-w-sm">
                                     <div>
                                         <h2 class="text-3xl font-extrabold text-gray-900">
@@ -133,9 +132,7 @@
 
                                                 <div>
                                                     <button type="submit">
-                                                        {{ render_submit(login_user_form.submit, wide=True, class_='bg-brand-green text-brand-white flex justify-center p-4 border rounded-full shadow-sm text-sm
-                                                            font-medium text-white hover:bg-brand-green-dark px-12 py-4') }}
-                                                    </button>
+                                                         {{ (login_user_form.submit(class='bg-brand-green text-brand-white flex justify-center p-4 border rounded-full shadow-sm text-sm font-medium text-white hover:bg-brand-green-dark px-12 py-4')) }}</button>
 
                                                 </div>
                                             </form>
@@ -148,5 +145,4 @@
                 </div>
             </div>
         </div>
-    </div>
 {% endblock %}

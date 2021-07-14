@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{% block title %}{{ _('user configuration') }} - Sensor.Community {% endblock %}</title>
+        <title>{% block title %}{{ _('Configure your air quality sensor yourself') }} - Sensor.Community {% endblock %}</title>
         {% block head %}
             <meta charset="utf-8"/>
             <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
             <meta name="description" content="{% block meta_description %}{% endblock %}"/>
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <meta property="og:title" content="Configure your sensor by yourself - Sensor.Community"/>
+            <meta property="og:title" content="Configure your air quality sensor yourself - Sensor.Community"/>
             <meta property="og:type" content="website"/>
             <meta property="og:url" content="https://sensor.community/"/>
             <meta property="og:description" content="{{ _('Information and settings for the luftdaten project') }} ."/>
@@ -24,7 +24,7 @@
     <body class="{% block bodyclass %}default{% endblock %}">
         {% include "navbar.html" %}
         {% include "messages.html" %}
-        <div class="py-16">
+        <div class="pt-8 pb-24">
             {% block content %}{% endblock %}
         </div>
         {% include "footer.html" %}
