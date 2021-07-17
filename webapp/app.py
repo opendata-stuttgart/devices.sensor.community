@@ -83,7 +83,7 @@ def configure_extensions(app):
     mail.init_app(app)
 
     # flask-babel
-    # babel.init_app(app)
+    #babel.init_app(app)
 
     from flask_security import SQLAlchemyUserDatastore
     security.init_app(app, SQLAlchemyUserDatastore(db, User, Role))

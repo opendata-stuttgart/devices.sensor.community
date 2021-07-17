@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
     purge: {
-        enable: false,
+        enable: true,
         purge: ['./webapp/templates/**/*.html'],
         content: ["./webapp/templates/*.html"],
     },
@@ -56,9 +56,6 @@ module.exports = {
         },
     },
     variants: {
-        extend: {
-            backgroundColor: ["active"],
-        },
     },
     plugins: [
         require('tailwindcss/colors'),

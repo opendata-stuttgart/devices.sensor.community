@@ -4,23 +4,23 @@
 
 @layer components {
     .btn {
-        @apply inline-block px-12 py-3 rounded-2xl focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm cursor-pointer;
+        @apply border inline-block px-12 py-2 rounded-2xl focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm cursor-pointer transition duration-500 ease-in-out;
     }
 
     .btn-primary {
-        @apply border shadow-sm text-brand-white bg-brand-green hover:bg-brand-white hover:text-brand-green-dark focus:ring-2 focus:ring-offset-1 focus:ring-brand-green;
+        @apply shadow-sm text-brand-white bg-brand-green hover:bg-brand-white hover:border-brand-green hover:text-brand-green-dark focus:ring-2 focus:ring-offset-1 focus:ring-brand-green;
     }
 
     .btn-secondary {
-        @apply bg-gray-300 text-gray-800 hover:bg-gray-200 focus:ring-gray-300 focus:ring-opacity-50 active:bg-gray-400;
+        @apply bg-gray-300 text-gray-800 hover:bg-gray-200 focus:ring-gray-300 focus:ring-opacity-50;
     }
 
     .btn-small {
-        @apply inline-flex items-center px-4 py-2 border shadow-sm text-sm font-medium rounded-md cursor-pointer
+        @apply border inline-flex items-center px-4 py-2 shadow-sm text-sm font-medium rounded-md cursor-pointer transition duration-500 ease-in-out;
     }
 
     .btn-small-primary {
-        @apply text-brand-white bg-brand-green hover:bg-brand-white hover:text-brand-green-dark focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand-green
+        @apply bg-brand-green text-brand-white hover:bg-brand-white hover:text-brand-green-dark focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand-green
     }
 
     .btn-small-secondary {
@@ -32,7 +32,7 @@
     }
 
     .input-field {
-        @apply mt-1 focus:ring-brand-green block w-full sm:text-sm border-gray-300 rounded-md placeholder-opacity-50 placeholder-gray-500
+        @apply focus:ring-brand-green py-2 block w-full sm:text-sm border-gray-300 rounded-md placeholder-opacity-50 placeholder-gray-500
     }
 
 }
@@ -204,7 +204,6 @@
         opacity: 0
     }
 }
-
 
 .xpin-field {
     display: none

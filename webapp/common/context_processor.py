@@ -1,4 +1,4 @@
-from flask_babel import get_locale
+from flask_babelex import get_locale
 
 
 def register_context_processor(app):
