@@ -65,10 +65,12 @@
                                     class="btn-small btn-small-primary">{{ _ ('Lookup entered address') }}
                             </button>
                         </div>
-
                         <div class="col-span-6 bg-brand-yellowLight mt-4">
                             <div id="sensor-settings-map" class="w-full h-56 overflow-hidden">
                             </div>
+                        </div>
+                        <div class="col-span-6 mt-4">
+                            <p class="text-sm text-gray-500">{{ _('The system can also try to make a geoposition out of the address, but we would be happy if you would specify the position with the map below.') }} </p>
                         </div>
                     </div>
                 </div>
@@ -100,11 +102,11 @@
                             {{ render_field(form.exact_location) }}
                         </div>
 
-                        <div class="col-span-3">
+                        <div class="col-span-6 md:col-span-3">
                             {{ render_field(form.height, placeholder="7 m") }}
                         </div>
 
-                        <div class="col-span-3">
+                        <div class="col-span-6 col-span-3">
                             {{ render_field(form.sensor_position) }}
                         </div>
 
@@ -137,18 +139,18 @@
             <div class="shadow overflow-hidden sm:rounded-md">
                 <div class="px-4 py-5 bg-brand-white sm:p-6">
                     {% for sensor in form.sensors %}
-                        <div id="component-{{ loop.index0 }}" class="grid grid-cols-6 gap-6 pb-3">
-                            <div class="col-span-2">
+                        <div id="component-{{ loop.index0 }}" class="grid grid-cols-6 py-3">
+                            <div class="col-span-6 md:col-span-2">
                                 {{ sensor.sensor_type(class="bg-brand-white relative w-full border border-gray-300 rounded-md shadow-sm p-3 text-left  cursor-default focus:outline-none focus:ring-1 focus:ring-brand-green focus:border-brand-green sm:text-sm") }}</div>
-                            <div class="col-span-1">
+                            <div class="col-span-6 md:col-span-1">
                                 {{ sensor.pin( class='xpin-field input-field', required=False) }}
                             </div>
-                            <div class="col-span-1">
+                            <div class="md:col-span-1">
                             </div>
-                            <div class="remove-button col-span-2  mt-1"{% if request.path !=
+                            <div class="remove-button col-span-6 md:col-span-2 mt-1"{% if request.path !=
                             "/sensors/register" or
                             loop.first %}
-                                style="display: none;" {% endif %}>
+                                 style="display: none;" {% endif %}>
                                 <label for="sensors-{{ loop.index0 }}-remove"> </label>
                                 <input type="button" id="sensors-{{ loop.index0 }}-remove"
                                        name="sensors-{{ loop.index0 }}-remove"
@@ -159,8 +161,8 @@
                         </div>
                     {% endfor %}
                     {% if request.path == "/sensors/register" %}
-                        <div id="add_component_row">
-                            <input type="button" value="{{ _('add component') }}"
+                        <div id="add_component_row" class="mt-2">
+                            <input type="button" value="{{ _('Add component') }}"
                                    name="add_component_button"
                                    id="add_component_button"
                                    onclick="add_component();" class="btn-small btn-small-secondary">
@@ -170,7 +172,7 @@
                 <div class="px-4 py-3 bg-gray-50 sm:px-6 flex ">
                     <a type="submit" onclick="toggle_expert()" name="expert"
                        class="btn-small btn-small-secondary mr-4">
-                        {{ _('click to enable expert fields') }}
+                        {{ _('Enable expert fields') }}
                     </a>
                 </div>
             </div>

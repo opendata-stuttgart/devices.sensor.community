@@ -88,27 +88,17 @@
                                             </td>
                                             <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                                 <a href="{{ url_for('personal.sensor_data', id=node.id) }}"
-                                                   class="inline-flex items-center px-4 py-2 border border-transparent text-sm
-                                       font-medium rounded-md shadow-sm hover:bg-brand-green
-                                       hover:text-brand-white">{{ _
+                                                   class="btn-small btn-small-secondary">{{ _
                                        ('Data') }}</a>
                                                 <a href="{{ url_for('personal.sensor_data', id=node.id) }}"
-                                                   class="inline-flex items-center px-4 py-2 border border-transparent text-sm
-                                       font-medium rounded-md shadow-sm hover:bg-brand-green
-                                       hover:text-brand-white">{{ _
+                                                   class="btn-small btn-small-secondary">{{ _
                                        ('Settings') }} </a>
                                                 <a href="{{ url_for('personal.sensor_transfer', id=node.id) }}"
-                                                   class="inline-flex items-center px-4 py-2 border border-transparent text-sm
-                                       font-medium rounded-md shadow-sm hover:bg-brand-green
-                                       hover:text-brand-white">{{ _
+                                                   class="btn-small btn-small-secondary">{{ _
                                        ('Hand
                 over sensor') }}</a>
                                                 <a href="{{ url_for('personal.sensor_delete', id=node.id) }}"
-                                                   class="inline-flex items-center px-4 py-2 border border-transparent text-sm
-                                       font-medium rounded-md shadow-sm hover:bg-brand-funcRed
-                                       hover:text-brand-white">{{ _
-                                       ('Delete
-                sensor') }}</a>
+                                                   class="btn-small btn-small-delete">{{ _ ('Delete sensor') }}</a>
                                             </td>
                                         </tr>
                                     {% endfor %}
@@ -122,6 +112,5 @@
         </div>
     </div>
     <div class="lg:relative lg:py-32"></div>
-
 
 {% endblock %}

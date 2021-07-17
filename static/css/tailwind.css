@@ -8,7 +8,7 @@
     }
 
     .btn-primary {
-        @apply border shadow-sm text-brand-white bg-brand-green hover:bg-brand-white hover:text-brand-green-dark focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand-green;
+        @apply border shadow-sm text-brand-white bg-brand-green hover:bg-brand-white hover:text-brand-green-dark focus:ring-2 focus:ring-offset-1 focus:ring-brand-green;
     }
 
     .btn-secondary {
@@ -16,17 +16,19 @@
     }
 
     .btn-small {
-        @apply relative inline-flex items-center px-4 py-2 border shadow-sm text-sm font-medium rounded-md cursor-pointer
+        @apply inline-flex items-center px-4 py-2 border shadow-sm text-sm font-medium rounded-md cursor-pointer
     }
 
     .btn-small-primary {
         @apply text-brand-white bg-brand-green hover:bg-brand-white hover:text-brand-green-dark focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand-green
     }
+
     .btn-small-secondary {
-        @apply bg-brand-white text-gray-800 hover:bg-gray-200 hover:text-brand-green focus:ring-gray-300 focus:ring-opacity-50 active:bg-gray-400;
+        @apply bg-brand-white text-brand-black hover:bg-brand-green hover:text-brand-white;
     }
+
     .btn-small-delete {
-        @apply bg-brand-white text-brand-funcRed hover:text-brand-white hover:bg-brand-funcRed focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-brand-funcRed
+        @apply bg-brand-white text-brand-black hover:text-brand-white hover:bg-brand-funcRed;
     }
 
     .input-field {

@@ -11,7 +11,7 @@
             {% if field.type == 'BooleanField' %}
                 <div class="relative flex items-start">
                     <div class="flex items-center h-5">
-                        {{ field(class='focus:ring-brand-green h-5 w-5 text-indigo-600 border-gray-300 rounded') }}
+                        {{ field(class='focus:ring-brand-green h-7 w-7 text-indigo-600 border-gray-300 rounded') }}
                     </div>
                     <div class="ml-3 text-sm">
                         {{ field.label(class="font-medium text-gray-700") }}
@@ -38,11 +38,11 @@
                     {% endif %}
                     {{ field(class="input-field" + (" is-invalid" if field.errors else ""), **kwargs) }}
                 </div>
-                {% if not field.type == 'BooleanField' %}
+
                     <small class="mt-2 text-xs text-gray-500">
                         {{ field.description }}
                     </small>
-                {% endif %}
+
                 {% if field.errors %}
                     <p class="text-brand-funcRed mt-2 text-xs text-gray-500">
                         {% for error in field.errors %}

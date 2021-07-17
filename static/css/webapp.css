@@ -1031,8 +1031,6 @@ input::placeholder {
 }
 
 .btn-primary:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
@@ -1042,7 +1040,6 @@ input::placeholder {
 }
 
 .btn-small {
-  position: relative;
   display: inline-flex;
   cursor: pointer;
   align-items: center;
@@ -1097,33 +1094,22 @@ input::placeholder {
 
 .btn-small-secondary:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
-}
-
-.btn-small-secondary:active {
-  --tw-bg-opacity: 1;
-  background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+  background-color: rgba(8, 73, 69, var(--tw-bg-opacity));
 }
 
 .btn-small-secondary {
   --tw-text-opacity: 1;
-  color: rgba(31, 41, 55, var(--tw-text-opacity));
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
 .btn-small-secondary:hover {
   --tw-text-opacity: 1;
-  color: rgba(8, 73, 69, var(--tw-text-opacity));
-}
-
-.btn-small-secondary:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(209, 213, 219, var(--tw-ring-opacity));
-  --tw-ring-opacity: 0.5;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
 .btn-small-delete {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity))
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
 .btn-small-delete:hover {
@@ -1133,23 +1119,12 @@ input::placeholder {
 
 .btn-small-delete {
   --tw-text-opacity: 1;
-  color: rgba(233, 53, 89, var(--tw-text-opacity));
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
 .btn-small-delete:hover {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
-.btn-small-delete:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(233, 53, 89, var(--tw-ring-opacity));
-  --tw-ring-offset-width: 1px;
 }
 
 .input-field {
@@ -1401,6 +1376,10 @@ input::placeholder {
 
 .h-6 {
   height: 1.5rem;
+}
+
+.h-7 {
+  height: 1.75rem;
 }
 
 .h-8 {
@@ -1826,6 +1805,10 @@ input::placeholder {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
 }
 
+.via-gray-50 {
+  --tw-gradient-stops: var(--tw-gradient-from), #f9fafb, var(--tw-gradient-to, rgba(249, 250, 251, 0));
+}
+
 .to-gray-50 {
   --tw-gradient-to: #f9fafb;
 }
@@ -1899,11 +1882,6 @@ input::placeholder {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .py-12 {
@@ -2541,6 +2519,10 @@ input::placeholder {
 
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 
   .md\:mt-0 {
