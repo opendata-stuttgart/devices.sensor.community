@@ -117,7 +117,7 @@ class RecoverSetForm(FlaskForm):
 class UserDataForm(FlaskForm):
     first_name = TextField(_('First name'))
     last_name = TextField(_('Last name'))
-    submit = SubmitField(_('Save user data.'))
+    submit = SubmitField(_('Save user data'))
 
 
 class UserPasswordForm(FlaskForm):

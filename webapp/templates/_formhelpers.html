@@ -1,73 +1,63 @@
-{% macro render_field(field, style='horizontal', class=None) %}
-    {# TODO: unify this #}
-    {% if style == 'basic' %}
-        <div class="form-group{% if field.errors %} has-danger{% endif %} {{ class if class != None else 'col' }}">
-        {{ field.label(class='control-label') }}
-        {{ field(class="form-control" + (" is-invalid" if field.errors else ""), **kwargs) }}
-        {% if field.errors %}
-        <div class="invalid-feedback">
-            {% for error in field.errors %}
-                {{ error }}
-            {% endfor %}
-        </div>
+{% macro render_field(field, style="", class=None) %}
+    {# TODO: add dropdown #}
+    <div class="pb-3 {% if field.errors %} text-brand-funcRed {% endif %}">
+        {% if not field.type == 'BooleanField' %}
+            <label class="block text-sm font-medium text-gray-700">
+                {{ field.label }}
+            </label>
         {% endif %}
-        {% if field.description %}
-        <small class="form-text text-muted">
-            {{ field.description }}
-        </small>
-        {% endif %}
-    </div>
-    {% elif style == 'horizontal' %}
-    <div class="form-group row{% if field.errors %} has-danger{% endif %}">
-        {% if field.type == 'BooleanField' %}
-        <div class="col offset-md-4">
-            <div class="form-check">
-                {{ field(class='form-check-input') }}
-                {{ field.label(class='form-check-label') }}
-            </div>
-            {% if field.description %}
-            <small class="form-text text-muted">
-                {{ field.description }}
-            </small>
+        {# Checkbox #}
+        <div class="mt-1">
+            {% if field.type == 'BooleanField' %}
+                <div class="relative flex items-start">
+                    <div class="flex items-center h-5">
+                        {{ field(class='focus:ring-brand-green h-5 w-5 text-indigo-600 border-gray-300 rounded') }}
+                    </div>
+                    <div class="ml-3 text-sm">
+                        {{ field.label(class="font-medium text-gray-700") }}
+                        <span class="text-gray-500">{{ field.description }}</span>
+                    </div>
+                </div>
+                {# Textarea #}
+            {% elif field.type == 'TextAreaField' %}
+                {{ field(class='form-textarea mt-1 block w-full border bg-gray-50 border-gray-300 rounded-md focus:ring-brand-green block w-full sm:text-sm border-gray-300 rounded-md') }}
+                {# Dropdown Field #}
+            {% elif field.type == 'SelectField' %}
+                <div class="mt-1 flex rounded-md shadow-sm">
+                    {{ field(class_="bg-brand-white relative w-full border border-gray-300 rounded-md shadow-sm p-3
+        text-left  cursor-default focus:outline-none focus:ring-1 focus:ring-brand-green focus:border-brand-green
+        sm:text-sm", **kwargs) }}
+                </div>
+            {% else %}
+                {# Everything else #}
+                <div class="mt-1 flex rounded-md shadow-sm">
+                    {% if style == "prefix" %}
+                        <span class="inline-flex items-center px-3 bg-gray-50 text-gray-500 text-sm">
+                    airRohr-
+                  </span>
+                    {% endif %}
+                    {{ field(class="input-field" + (" is-invalid" if field.errors else ""), **kwargs) }}
+                </div>
+                {% if not field.type == 'BooleanField' %}
+                    <small class="mt-2 text-xs text-gray-500">
+                        {{ field.description }}
+                    </small>
+                {% endif %}
+                {% if field.errors %}
+                    <p class="text-brand-funcRed mt-2 text-xs text-gray-500">
+                        {% for error in field.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </p>
+                {% endif %}
             {% endif %}
         </div>
-        {% else %}
-        {{ field.label(class='col-form-label col-md-4') }}
-        <div class="col">
-        {{ field(class="form-control" + (" is-invalid" if field.errors else ""), **kwargs) }}
-        {% if field.errors %}
-        <div class="invalid-feedback">
-            {% for error in field.errors %}
-                {{ error }}
-            {% endfor %}
-        </div>
-        {% endif %}
-        {% if field.description %}
-        <small class="form-text text-muted">
-            {{ field.description }}
-        </small>
-        {% endif %}
-        </div>
-        {% endif %}
     </div>
-    {% elif style == 'wide' %}
-    {{ field.label(class_='sr-only') }}{{ field(class_='form-control' + (' is-invalid' if field.errors else ''), placeholder=field.label.text, **kwargs) }}
-    {% if field.errors %}
-    {% for error in field.errors %}
-        <div class="invalid-feedback">{{ error }}</div>
-    {% endfor %}
-    {% endif %}
-    {% endif %}
+
 {% endmacro %}
 
-{% macro render_submit(field, wide=False) %}
-{% if not wide %}
-    <div class="row m-3">
-        <div class="col-md-6 offset-md-3">
-{% endif %}
-            {{ field(class="form-control btn btn-primary", **kwargs) }}
-{% if not wide %}
-        </div>
+{% macro render_submit(field, small=False) %}
+    <div class="mt-4">
+        {{ field(class="{% if not small %} btn btn-primary {% endif %}", **kwargs) }}
     </div>
-{% endif %}
 {% endmacro %}

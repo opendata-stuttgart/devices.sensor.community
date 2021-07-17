@@ -4,29 +4,34 @@
 
 {% block content %}
     <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-32">
-        <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid lg:grid-cols-2 lg:gap-24">
-            <div class="mt-10">
-                <div class="inline-flex space-x-4">
-                    <img alt="sensor community logo" class="h-8 w-auto"
-                         src="/static/images/signet.svg">
-                    <span class="py-1 font-semibold text-brand-yellow tracking-wide uppercase">
+    <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid
+        lg:grid-cols-2 lg:gap-24">
+        <div class="mt-10">
+            <div class="inline-flex space-x-4">
+                <img alt="sensor community logo" class="h-8 w-auto"
+                     src="/static/images/signet.svg">
+                <span class="py-1 font-semibold text-brand-yellow tracking-wide uppercase">
                   Sensor.Community
                 </span>
-                </div>
-                <div class="mt-6 sm:max-w-xl">
-                    <h1 class="text-5xl font-extrabold text-black tracking-tight sm:text-5xl">
-                        {{ _('Create your account') }}
-                    </h1>
-                    <div class=" hidden md:inline ">
-                        <p class="my-6 text-xl antialiased text-brand-black">
+            </div>
+            <div class="mt-6 sm:max-w-xl">
+                <h1 class="text-5xl font-extrabold text-black tracking-tight sm:text-5xl">
+                    {{ _('Create your account') }}
+                </h1>
+                <div class="hidden md:inline">
+                    <div class="hidden md:inline">
+                        <p class="mt-6 text-xl antialiased">
                             {{ _('The main purpose of this page is to enable you, as the owner of a fine dust sensor, to configure the location and other parameters yourself.') }}
                         </p>
-                        <h2 class="text-3xl font-extrabold text-black tracking-tight sm:text-3xl">
-                            {{ _('Join us!') }}
-                        </h2>
-                        <p class="mt-6 text-xl antialiased text-brand-black">{{ _('The city of the future belongs to its citizens.
-                        The digital tools, the Maker
-                        Movement and Citizen Science are leading to more and more people being given the opportunity to design the city themselves.') }} </p>
+                        <p class="mt-6 text-xl antialiased">
+                            {{ _('The city of the future belongs to its citizens. The digital tools, the Maker Movement and Citizen Science are leading to more and more people being given the opportunity to design the city themselves.') }}</p>
+                        <br>
+                        <p class="mt-6 text-xl antialiased font-bold">{{ _('Code a difference: Use your skills to
+                            improve your city!') }}</p>
+                        <a href="https://sensor.community/de/" target="_blank" class="mt-6 text-xl antialiased
+                            text-brand-funcRed">Find
+                            out more about Sensor.Community</a>
+
                     </div>
                 </div>
             </div>
@@ -62,61 +67,52 @@
 
                 <div class="relative sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
                     <div class="mt-24 rounded-2xl flex">
-                        <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20
-                            bg-gray-100 ">
+                        <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20                      bg-gray-100">
                             <div class="mx-auto w-full max-w-sm">
-                                <div class="mt-6">
-                                    <form action="{{ url_for_security('register') }}" method="POST"
-                                          name="register_user_form"
-                                          class="space-y-6">
-                                        {{ register_user_form.hidden_tag() }}
-                                        <div class="space-y-1">
-                                            <label for="email" class="block text-sm font-medium text-gray-700">
-                                                Email address
-                                            </label>
-                                            <div class="mt-1">
-                                                {#                                        <input id="email" name="email" type="email" autocomplete="email"#}
-                                                {#                                               required#}
-                                                {#                                               class="appearance-none block w-full px-3 py-2 border border-gray-300#}
-                                                {#                                               rounded-md shadow-sm placeholder-gray-400 focus:outline-none#}
-                                                {#                                               focus:ring-brand-green focus:border-brand-green sm:text-sm">#}
-                                                {{ render_field_with_errors(register_user_form.email,style='wide', type='email') }}
+                                <div>
+                                    <h2 class="text-3xl font-extrabold text-gray-900">
+                                        {{ _('Sign in to your account') }}
+                                    </h2>
+                                    <p class="mt-2 text-sm text-gray-600">
+                                        or
+                                        <a href="{{ url_for_security('register') }}"
+                                           class="font-medium text-brand-funcRed">{{ _('create an account') }}</a>
+                                    </p>
+                                </div>
+
+                                <div class="mt-8">
+                                    <div class="mt-6">
+                                        <form action="{{ url_for_security('register') }}" method="POST"
+                                              name="register_user_form"
+                                              class="space-y-6">
+                                            {{ register_user_form.hidden_tag() }}
+                                            <div class="space-y-1">
+                                                <div class="mt-1">
+                                                    {{ render_field_with_errors(register_user_form.email, type='email') }}
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div>
-                                            <label for="password"
-                                                   class="block text-sm font-medium text-gray-700">
-                                                Password
-                                            </label>
-                                            <div class="mt-1">
-                                                {#                                        <input id="password" name="password" type="password"#}
-                                                {#                                               autocomplete="current-password" required#}
-                                                {#                                               class="appearance-none block w-full px-3 py-2 border border-gray-300#}
-                                                {#                                               rounded-md shadow-sm placeholder-gray-400 focus:outline-none#}
-                                                {#                                               focus:ring-brand-green focus:border-brand-green sm:text-sm">#}
+                                            <div>
+                                                <div class="mt-1">
+                                                    {{ render_field_with_errors(register_user_form.password) }}
+                                                    {% if register_user_form.password_confirm %}
+                                                        {{ render_field_with_errors(register_user_form.password_confirm) }}
+                                                    {% endif %}
 
-                                                {{ render_field_with_errors(register_user_form.password, style='wide') }}
-                                                {% if register_user_form.password_confirm %}
-                                                    {{ render_field_with_errors(register_user_form.password_confirm) }}
-                                                {% endif %}
+                                                </div>
+                                            </div>
+                                            <div class="flex items-center justify-between py-5">
+                                                <strong class="text-brand-funcRed text-sm">{{ _('Pleas wait up
+                                                        to 30 min. Check your spam folder') }}</strong>
+                                            </div>
 
+                                            <div>
+                                                <button type="submit">
+                                                    {{ render_field(register_user_form.submit) }}</button>
 
                                             </div>
-                                        </div>
-
-                                        <div class="flex items-center justify-between">
-                                            <strong class="text-brand-funcRed text-sm">{{ _('Please wait up to 30
-                                                min and check your spam folder') }}</strong>
-                                        </div>
-
-                                        <div>
-                                            <button type="submit">
-                                                {{ (register_user_form.submit(class='bg-brand-green text-brand-white flex justify-center p-4 border rounded-full shadow-sm text-sm
-                                                            font-medium text-white hover:bg-brand-green-dark px-12 py-4')) }}
-                                            </button>
-                                        </div>
-                                    </form>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -126,5 +122,3 @@
         </div>
     </div>
 {% endblock %}
-
-

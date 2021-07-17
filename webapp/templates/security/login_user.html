@@ -68,8 +68,7 @@
 
                     <div class="relative sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
                         <div class="mt-24 rounded-2xl flex">
-                            <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20
-                            bg-gray-100 ">
+                            <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20                      bg-gray-100">
                                 <div class="mx-auto w-full max-w-sm">
                                     <div>
                                         <h2 class="text-3xl font-extrabold text-gray-900">
@@ -89,29 +88,15 @@
                                                   class="space-y-6">
                                                 {{ login_user_form.hidden_tag() }}
                                                 <div class="space-y-1">
-                                                    <label for="email" class="block text-sm font-medium text-gray-700">
-                                                        Email address
-                                                    </label>
                                                     <div class="mt-1">
-                                                        {#                                        <input id="email" name="email" type="email" autocomplete="email"#}
-                                                        {#                                               required#}
-                                                        {#                                               class="appearance-none block w-full px-3 py-2 border border-gray-300#}
-                                                        {#                                               rounded-md shadow-sm placeholder-gray-400 focus:outline-none#}
-                                                        {#                                               focus:ring-brand-green focus:border-brand-green sm:text-sm">#}
-
-                                                        {{ render_field_with_errors(login_user_form.email, type='email', style='wide') }}
+                                                        {{ render_field_with_errors(login_user_form.email,
+                                                        type="email")}}
                                                     </div>
                                                 </div>
 
                                                 <div>
-                                                    <label for="password"
-                                                           class="block text-sm font-medium text-gray-700">
-                                                        Password
-                                                    </label>
                                                     <div class="mt-1">
-                                                        {{ login_user_form.password (class_='appearance-none block
-                                                        w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm
-                                                        placeholder-gray-400 focus:outline-none focus:ring-brand-green focus:border-brand-green sm:text-sm') }}
+                                                        {{ render_field_with_errors(login_user_form.password) }}
 
                                                     </div>
                                                 </div>
@@ -132,7 +117,8 @@
 
                                                 <div>
                                                     <button type="submit">
-                                                         {{ (login_user_form.submit(class='bg-brand-green text-brand-white flex justify-center p-4 border rounded-full shadow-sm text-sm font-medium text-white hover:bg-brand-green-dark px-12 py-4')) }}</button>
+                                                        {{ render_field(login_user_form.submit) }}
+                                                    </button>
 
                                                 </div>
                                             </form>

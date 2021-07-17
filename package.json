@@ -9,8 +9,8 @@
   "author": "David Lackovic",
   "license": "BSD-3-Clause",
   "scripts": {
-    "build:prod": "NODE_ENV=production postcss ./static/css/tailwind.css -o ./static/css/webapp.css",
-    "build": "npx tailwindcss-cli@latest build -i ./static/css/tailwind.css -o ./static/css/webapp.css",
+    "build": "NODE_ENV=production postcss ./static/css/tailwind.css -o ./static/css/webapp.css",
+    "dontUse": "npx tailwindcss-cli@latest build -i ./static/css/tailwind.css -o ./static/css/webapp.css",
     "watch": "TAILWIND_MODE=watch NODE_ENV=development postcss ./static/css/tailwind.css -o ./static/css/webapp.css -w"
   },
   "dependencies": {

@@ -165,7 +165,7 @@ class SensorSettingsForm(FlaskForm):
     )
     exact_location = BooleanField(
         _('Publish exact location'),
-        description=_('Reveal exact sensor location in public data and archives.'),
+        description=_('will reveal exact sensor location in public data and archives.'),
     )
     inactive = BooleanField(
         _('Inactive'),
@@ -192,8 +192,7 @@ class SensorRegisterForm(SensorSettingsForm):
         choices=[('esp8266-', 'esp8266'), ('esp32-', 'esp32'), ('raspi-', 'raspi'), ('respire-', 'respire'),
                  ('smogomierz-', 'smogomierz'), ('TTN-', 'TTN')],
         default='esp8266-',
-        description=_(
-            'Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or the Smogomierz sensor version need to change this accordingly. Also in these cases the Sensor ID is the numeric part of the name only.')
+        description=_('Normally esp8266. If not, please check which board you own. Also in these cases the Sensor ID is the numeric part of the name only.')
     )
 
 
