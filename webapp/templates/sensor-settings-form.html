@@ -1,146 +1,426 @@
-<h2>{{ _('Basic Information') }} </h2>
-
-{{ render_field(form.name) }}
-{% if  request.path != "/sensors/register" %}
-{{ render_field(form.inactive) }}
-{% endif %}
-{% set location = form.location %}
-<div class="row">
-    {{ render_field(location.street_name, 'basic') }}
-    {{ render_field(location.street_number, 'basic') }}
-    {{ render_field(location.indoor, 'basic', 'col-md-2') }}
-</div>
-
-<div class="row">
-    {{ render_field(location.postalcode, 'basic', 'col-md-3') }}
-    {{ render_field(location.city, 'basic', 'col-md-5') }}
-    {{ render_field(location.country, 'basic') }}
-</div>
+<div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-12 bg-gray-50">
+    <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl">
 
 
-<h2>{{ _('Additional Information') }}  </h2>
-{{ render_field(form.exact_location) }}
-{{ render_field(form.height) }}
-{{ render_field(form.sensor_position) }}
-{{ render_field(form.description) }}
-<h2>{{ _('Hardware configuration') }}</h2>
-<small>({{ _('click <a name="expert" onclick="toggle_expert()" style="color:blue;"> &gt;&gt;here&lt;&lt; </a> to enable expert fields') }})<br /><br /></small>
-{% for sensor in form.sensors %}
-  <div class="row" id="component-{{ loop.index0 }}">
-    {{ render_field(sensor.sensor_type, 'basic') }}
-    {# this field needs to be renderer as optional in template, as it might be
+        <div class="mt-10 sm:mt-0">
+            <div class="md:grid md:grid-cols-3 md:gap-6">
+                <div class="md:col-span-1">
+                    <div class="px-4 sm:px-0">
+                        <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Basic Information') }}</h3>
+                        <p class="mt-1 text-sm text-gray-600">
+                            This information <strong> won't be displayed publicly</strong>,
+                            location will be
+                            randomized. You can choose any name for the sensor, this is to help you distinguish between
+                            multiple owned sensors.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-5 md:mt-0 md:col-span-2">
+                    <form action="#" method="POST">
+                        <div class="shadow overflow-hidden sm:rounded-md">
+                            <div class="px-4 py-5 bg-brand-white sm:p-6">
+                                <div class="grid grid-cols-6 gap-6">
+                                    <div class="col-span-6 sm:col-span-3">
+                                        <label for="first-name" class="block text-sm font-medium text-gray-700">Name of
+                                            your sensor</label>
+                                        {# <input type="text" name="first-name" id="first-name" autocomplete="given-name"#}
+                                        {# class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">#}
+                                        {{ render_field(form.name) }}
+                                    </div>
+
+                                    <div class="col-span-6 sm:col-span-3">
+                                        {% if  request.path != "/sensors/register" %}
+                                            <div class="flex items-center h-6">
+                                                <input id="comments" aria-describedby="comments-description"
+                                                       name="comments"
+                                                       type="checkbox"
+                                                       class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded">
+                                            </div>
+                                            <div class="ml-3 text-sm">
+                                                <label for="comments" class="font-medium text-gray-700">Set
+                                                    inactive</label>
+                                                <p id="comments-description" class="text-gray-500">Get notified when
+                                                    someones posts a comment on a posting.</p>
+                                            </div>
+                                            {{ render_field(form.inactive) }} {% endif %}
+                                    </div>
+
+                                    {% set location = form.location %}
+                                    <div class="col-span-6 sm:col-span-3">
+                                        <label for="last-name" class="block text-sm font-medium text-gray-700">Last
+                                            name</label>
+                                        {# <input type="text" name="last-name" id="last-name" autocomplete="family-name"#}
+                                        {# class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full #}
+                                        {# shadow-sm sm:text-sm border-gray-300 rounded-md"> #}
+                                        {{ render_field(location.indoor, 'basic') }}
+                                    </div>
+
+
+                                    <div class="col-span-6">
+                                        <div class="col-span-6">
+                                            <label for="street-address" class="block text-sm font-medium text-gray-700">Street
+                                                name</label>
+                                            {#                                    <input type="text" name="street-address" id="street-address"#}
+                                            {#                                           autocomplete="street-address"#}
+                                            {#                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">#}
+                                            {{ render_field(location.street_name, 'basic') }}
+
+                                        </div>
+
+                                        <div class="col-span-6 sm:col-span-3">
+                                            <label for="last-name" class="block text-sm font-medium text-gray-700">Last
+                                                name</label>
+                                            {#                                        <input type="text" name="last-name" id="last-name" autocomplete="family-name"#}
+                                            {#                                               class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">#}
+                                            {{ render_field(location.street_number, 'basic') }}
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                                        <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+                                        {#                                    <input type="text" name="city" id="city"#}
+                                        {#                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">#}
+                                        {{ render_field(location.city, 'basic', 'col-md-5') }}
+                                    </div>
+
+                                    <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                        <label for="state" class="block text-sm font-medium text-gray-700">State /
+                                            Country</label>
+                                        {#                                    <input type="text" name="state" id="state"#}
+                                        {#                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">#}
+
+                                        {{ render_field(location.country, 'basic') }}
+                                    </div>
+
+                                    <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                        <label for="postal-code" class="block text-sm font-medium text-gray-700">ZIP /
+                                            Postal</label>
+                                        {#                                    <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code"#}
+                                        {#                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">#}
+                                        {{ render_field(location.postalcode, 'basic', 'col-md-3') }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden sm:block" aria-hidden="true">
+            <div class="py-5">
+                <div class="border-t border-gray-200"></div>
+            </div>
+        </div>
+
+        <div class="mt-10 sm:mt-0">
+            <div class="md:grid md:grid-cols-3 md:gap-6">
+                <div class="md:col-span-1">
+                    <div class="px-4 sm:px-0">
+                        <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Additional Information') }} </h3>
+                        <p class="mt-1 text-sm text-gray-600">
+                            Use a permanent address where you can receive mail.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-5 md:mt-0 md:col-span-2">
+                    <div class="shadow overflow-hidden sm:rounded-md">
+                        <div class="px-4 py-5 bg-brand-white sm:p-6">
+                            <div class="grid grid-cols-6 gap-6">
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="first-name" class="block text-sm font-medium text-gray-700">First
+                                        name</label>
+                                    {#                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"#}
+                                    {#                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">#}
+
+                                    {{ render_field(form.exact_location) }}
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="last-name" class="block text-sm font-medium text-gray-700">Last
+                                        name</label>
+                                    {#                                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"#}
+                                    {#                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">#}
+                                    {{ render_field(form.height) }}
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-4">
+                                    <label for="email-address" class="block text-sm font-medium text-gray-700">Email
+                                        address</label>
+                                    {#                                    <input type="text" name="email-address" id="email-address" autocomplete="email"#}
+                                    {#                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">#}
+                                    {{ render_field(form.sensor_position) }}
+                                </div>
+
+                                <div class="col-span-6">
+                                    <label for="street-address" class="block text-sm font-medium text-gray-700">Street
+                                        address</label>
+                                    {#                                    <input type="text" name="street-address" id="street-address"#}
+                                    {#                                           autocomplete="street-address"#}
+                                    {#                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">#}
+                                    {{ render_field(form.description) }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden sm:block" aria-hidden="true">
+            <div class="py-5">
+                <div class="border-t border-gray-200"></div>
+            </div>
+        </div>
+
+        <div class="mt-10 sm:mt-0">
+            <div class="md:grid md:grid-cols-3 md:gap-6">
+                <div class="md:col-span-1">
+                    <div class="px-4 sm:px-0">
+                        <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Hardware configuration') }}</h3>
+                        <p class="mt-1 text-sm text-gray-600">
+                            Use a permanent address where you can receive mail.
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-5 md:mt-0 md:col-span-2">
+                    <div class="shadow overflow-hidden sm:rounded-md">
+                        <div class="px-4 py-5 bg-brand-white sm:p-6">
+                            <div class="grid grid-cols-6 gap-6">
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="first-name" class="block text-sm font-medium text-gray-700">First
+                                        name</label>
+                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="last-name" class="block text-sm font-medium text-gray-700">Last
+                                        name</label>
+                                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-4">
+                                    <label for="email-address" class="block text-sm font-medium text-gray-700">Email
+                                        address</label>
+                                    <input type="text" name="email-address" id="email-address" autocomplete="email"
+                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="country" class="block text-sm font-medium text-gray-700">Country /
+                                        Region</label>
+                                    <select id="country" name="country" autocomplete="country"
+                                            class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                        <option>United States</option>
+                                        <option>Canada</option>
+                                        <option>Mexico</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-span-6">
+                                    <label for="street-address" class="block text-sm font-medium text-gray-700">Street
+                                        address</label>
+                                    <input type="text" name="street-address" id="street-address"
+                                           autocomplete="street-address"
+                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+                                    <label for="city" class="block text-sm font-medium text-gray-700">City</label>
+                                    <input type="text" name="city" id="city"
+                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                    <label for="state" class="block text-sm font-medium text-gray-700">State /
+                                        Province</label>
+                                    <input type="text" name="state" id="state"
+                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                                    <label for="postal-code" class="block text-sm font-medium text-gray-700">ZIP /
+                                        Postal</label>
+                                    <input type="text" name="postal-code" id="postal-code" autocomplete="postal-code"
+                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                            <button type="submit"
+                                    class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                Save
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="hidden sm:block" aria-hidden="true">
+            <div class="py-5">
+                <div class="border-t border-gray-200"></div>
+            </div>
+        </div>
+
+        <div class="mt-10 sm:mt-0">
+            <div class="md:grid md:grid-cols-3 md:gap-6">
+                <div class="md:col-span-1">
+                    <div class="px-4 sm:px-0">
+                        <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Hardware configuration') }}</h3>
+                        <p class="mt-1 text-sm text-gray-600">
+                            {{ _('The more precise the data we have, the better we can evaluate the data and thus energize statements. The system can also try to make a geoposition out of the address, but we would be happy if you would specify the position with the map below.') }}
+                        </p>
+                    </div>
+                </div>
+                <div class="mt-5 md:mt-0 md:col-span-2">
+                    <div class="shadow overflow-hidden sm:rounded-md">
+                        <div class="px-4 py-5 bg-brand-white sm:p-6">
+                            <div class="grid grid-cols-6 gap-6">
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="first-name" class="block text-sm font-medium text-gray-700">First
+                                        name</label>
+                                    {#                                    <input type="text" name="first-name" id="first-name" autocomplete="given-name"#}
+                                    {#                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full
+shadow-sm sm:text-sm border-gray-300 rounded-md">#} {{ render_field(location.latitude, 'basic', 'col-md-4') }}
+
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label for="last-name" class="block text-sm font-medium text-gray-700">Last
+                                        name</label>
+                                    {#                                    <input type="text" name="last-name" id="last-name" autocomplete="family-name"#}
+                                    {#                                           class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full
+shadow-sm sm:text-sm border-gray-300 rounded-md">#} {{ render_field(location.longitude, 'basic', 'col-md-4') }}
+                                </div>
+                                <div class="col-span-6 sm:col-span-3">
+                                    <label class="control-label">&nbsp;</label>
+                                    <button type="button" class="inline-flex justify-center py-2 px-4 border
+                                    border-brand-green border-2
+                            shadow-sm text-sm font-medium text-brand-white rounded-md text-brand-green bg-brand-white
+                            hover:bg-brand-green-dark hover:text-brand-white focus:outline-none focus:ring-2 focus:ring-offset-2
+                            focus:ring-brand-green">{{ _('Lookup entered address') }}</button>
+                                </div>
+
+                                <div class="col-span-6 sm:col-span-3 lg:col-span-2 bg-brand-yellowLight w-full">
+                                    <div id="sensor-settings-map" class="w-full h-64 overflow-hidden"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                            {{ form.submit(class="inline-flex justify-center py-2 px-4 border border-transparent
+                            shadow-sm text-sm font-medium text-brand-white rounded-md text-white bg-brand-green
+                            hover:bg-brand-green-dark focus:outline-none focus:ring-2 focus:ring-offset-2
+                            focus:ring-brand-green") }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{ form.csrf_token }}
+
+
+        <h2>{{ _('Hardware configuration') }}</h2>
+        <small>({{ _('click <a name="expert" onclick="toggle_expert()" style="color:blue;"> &gt;&gt;here&lt;&lt; </a> to enable expert fields') }})<br/><br/></small>
+        {% for sensor in form.sensors %}
+            <div class="row" id="component-{{ loop.index0 }}">
+                {{ render_field(sensor.sensor_type, 'basic') }}
+                {# this field needs to be renderer as optional in template, as it might be
     autopopulated in form validation #}
-    {{ render_field(sensor.pin, 'basic', 'col-md-2 xpin-field', required=False) }}
-    <div class="form-group col-md-2 remove-button"{% if request.path != "/sensors/register" or loop.first %} style="display: none;"{% endif %}><label for="sensors-{{ loop.index0 }}-remove"> </label><input type="button" id="sensors-{{ loop.index0 }}-remove" name="sensors-{{ loop.index0 }}-remove" onclick="remove_component(this)" value="{{ _('remove') }}" class="form-control"></div>
-  </div>
-{% endfor %}
-{% if request.path == "/sensors/register" %}
-<div class="row" id="add_component_row">
-<input type="button" value="{{ _('add component') }}" name="add_component_button" id="add_component_button" onclick="add_component();">
-</div>
-{% endif %}
-<br/>
+                {{ render_field(sensor.pin, 'basic', 'col-md-2 xpin-field', required=False) }}
+                <div class="form-group col-md-2 remove-button"{% if request.path != "/sensors/register" or loop.first %}
+                     style="display: none;"{% endif %}><label for="sensors-{{ loop.index0 }}-remove"> </label><input
+                        type="button" id="sensors-{{ loop.index0 }}-remove" name="sensors-{{ loop.index0 }}-remove"
+                        onclick="remove_component(this)" value="{{ _('remove') }}" class="form-control"></div>
+            </div>
+        {% endfor %}
+        {% if request.path == "/sensors/register" %}
+            <div class="row" id="add_component_row">
+                <input type="button" value="{{ _('add component') }}" name="add_component_button"
+                       id="add_component_button"
+                       onclick="add_component();">
+            </div>
+        {% endif %}
+        <br/>
+
+
 <script type="text/javascript">
-var sensor_types = { {% for pin in types %}
-"{{ pin }}": {{ types[pin] }},
-{% endfor%}
-};
-var sensors = document.querySelectorAll('[id$="sensor_type"]');
-for (i=0;i<sensors.length;i++) {
-	sensors[i].onchange = function(){document.getElementById(this.getAttribute('id').replace('sensor_type','pin')).value = sensor_types[this.value];};
-{% if  request.path == "/sensors/register" %}
-	document.getElementById(sensors[i].getAttribute('id').replace('sensor_type','pin')).value = sensor_types[sensors[i].value];
-{% endif %}
-}
-
-function orderSelect($element) {
-    var selected_item = $element.selectedIndex;
-    var selected_lang = $element.options[selected_item].value;
-    var options   = $element.getElementsByTagName('option'),
-        n_options = options.length,
-        temp = [],
-        parts,
-        i,
-        new_selected_item;
-
-    for(i = n_options; i --;) {
-        temp[i] = options[i].text + " || " + options[i].value ; 
+    var sensor_types = { {% for pin in types %}
+            "{{ pin }}": {{ types[pin] }},
+        {% endfor%}
+    };
+    var sensors = document.querySelectorAll('[id$="sensor_type"]');
+    for (i = 0; i < sensors.length; i++) {
+        sensors[i].onchange = function () {
+            document.getElementById(this.getAttribute('id').replace('sensor_type', 'pin')).value = sensor_types[this.value];
+        };
+        {% if  request.path == "/sensors/register" %}
+            document.getElementById(sensors[i].getAttribute('id').replace('sensor_type', 'pin')).value = sensor_types[sensors[i].value];
+        {% endif %}
     }
 
-    temp.sort();
+    function orderSelect($element) {
+        var selected_item = $element.selectedIndex;
+        var selected_lang = $element.options[selected_item].value;
+        var options = $element.getElementsByTagName('option'),
+            n_options = options.length,
+            temp = [],
+            parts,
+            i,
+            new_selected_item;
 
-    for(i = n_options; i --;) {
-        parts = temp[i].split(' || ');
+        for (i = n_options; i--;) {
+            temp[i] = options[i].text + " || " + options[i].value;
+        }
 
-        options[i].text  = parts[0];
-        options[i].value = parts[1]; 
-	if (options[i].value == selected_lang) {
-		new_selected_item = i;
+        temp.sort();
+
+        for (i = n_options; i--;) {
+            parts = temp[i].split(' || ');
+
+            options[i].text = parts[0];
+            options[i].value = parts[1];
+            if (options[i].value == selected_lang) {
+                new_selected_item = i;
+            }
+        }
+        $element.selectedIndex = new_selected_item;
+    }
+
+    orderSelect(document.getElementById('location-country'));
+
+    function toggle_expert() {
+        var fields = document.getElementsByClassName("xpin-field");
+        for (var i = 0; i < fields.length; i++) {
+            fields[i].classList.toggle('xpin-visible');
         }
     }
-    $element.selectedIndex = new_selected_item;
-}
-orderSelect(document.getElementById('location-country'));
 
-function toggle_expert() {
-	var fields = document.getElementsByClassName("xpin-field");
-	for(var i = 0; i < fields.length; i++) {
-	   fields[i].classList.toggle('xpin-visible');
-	}
-}
+    function add_component() {
+        new_node = document.getElementById('component-0').cloneNode(true);
+        component_count = document.querySelectorAll('[id ^= component]').length;
+        new_node.innerHTML = new_node.innerHTML.replaceAll('sensors-0', 'sensors-' + component_count);
+        new_node.id = 'component-' + component_count;
+        new_node.getElementsByClassName('remove-button')[0].style = '';
+        button_node = document.getElementById('add_component_row');
+        button_node.parentNode.insertBefore(new_node, button_node);
+        return false;
+    }
 
-function add_component() {
-    new_node = document.getElementById('component-0').cloneNode(true);
-    component_count = document.querySelectorAll('[id ^= component]').length;
-    new_node.innerHTML = new_node.innerHTML.replaceAll('sensors-0','sensors-' + component_count);
-    new_node.id='component-'+component_count;
-    new_node.getElementsByClassName('remove-button')[0].style = '';
-    button_node = document.getElementById('add_component_row');
-    button_node.parentNode.insertBefore(new_node,button_node);
-    return false;
-}
-
-function remove_component(node) {
-	node.parentNode.parentNode.remove();
-	for (i=0; i < document.querySelectorAll('[ id ^= component]').length;i++) {
-		document.querySelectorAll('[ id ^= component]')[i].id = 'component-'+i;
-		document.querySelectorAll('[ id ^= component]')[i].innerHTML = document.querySelectorAll('[ id ^= component]')[i].innerHTML.replace(/sensors-(\d*)/g,'sensors-'+i);
-	}
-	return false;
-}
+    function remove_component(node) {
+        node.parentNode.parentNode.remove();
+        for (i = 0; i < document.querySelectorAll('[ id ^= component]').length; i++) {
+            document.querySelectorAll('[ id ^= component]')[i].id = 'component-' + i;
+            document.querySelectorAll('[ id ^= component]')[i].innerHTML = document.querySelectorAll('[ id ^= component]')[i].innerHTML.replace(/sensors-(\d*)/g, 'sensors-' + i);
+        }
+        return false;
+    }
 
 </script>
 
-<div class="row">
-    <div class="col-md-12">
-        <p>{{ _('The more precise the data we have, the better we can evaluate the data and thus energize statements. The system can also try to make a geoposition out of the address, but we would be happy if you would specify the position with the map below.') }} </p>
-    </div>
-</div>
-
-<div class="row">
-  {{ render_field(location.latitude, 'basic', 'col-md-4') }}
-  {{ render_field(location.longitude, 'basic', 'col-md-4') }}
-  <div class="col">
-    <label class="control-label">&nbsp;</label>
-    <button type="button" class="btn btn-default btn-block" id="sensor-setting-use-address">{{ _('Lookup entered address') }}</button>
-  </div>
-</div>
-<div class="row">
-    <div class="col-md-12" id="sensor-setting-location-not-found-msg" style="display: none; color: red">
-	{{ _('Please check sensor position.') }}
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-12">
-        <div id="sensor-settings-map"></div>
-    </div>
-</div>
-
-<div class="row m-3">
-    <div class="form-group col-md-6 offset-md-3">
-        {{ form.submit(class="form-control btn btn-primary") }}
-    </div>
-</div>
-
-{{ form.csrf_token }}

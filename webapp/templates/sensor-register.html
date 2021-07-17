@@ -2,10 +2,51 @@
 {% from "_formhelpers.html" import render_field %}
 
 {% block content %}
+    <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-12 bg-gradient-to-b from-brand-white to-gray-50">
+        <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl">
+            <div class="mt-10">
+                <div class="mt-6">
+                    <div class="mt-6 sm:max-w-xl">
+                        <h1 class="text-5xl font-extrabold text-black tracking-tight sm:text-5xl">
+                            {{ _('Sensor ID') }}
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <form id="sensor-setting-form" action="{{ url_for('.sensor_register') }}" method="POST">
-        <h1>{{ _('Sensor registration') }}</h1>
-        {{ render_field(form.sensor_id) }}
-        {{ render_field(form.sensor_board) }}
+        <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-12 bg-gray-50">
+            <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl">
+                <div class="md:grid md:grid-cols-3 md:gap-6">
+                    <div class="md:col-span-1">
+                        <div class="px-4 sm:px-0">
+                            <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Sensor registration') }}</h3>
+                            <p class="mt-1 text-sm text-gray-600">
+                                {{ _('The Sensor ID is the chip id of the NodeMCU that you noted down before') }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-5 md:mt-0 md:col-span-2">
+                        <div class="shadow sm:rounded-md sm:overflow-hidden">
+                            <div class="px-4 py-5 bg-brand-white space-y-6 sm:p-6">
+                                <div class="grid grid-cols-2 gap-6 flex">
+                                    <div class="mt-1 flex rounded-md shadow-sm">
+                                        <span class="mt-8 pr-4 text-xl text-gray-900">airRohr-</span>
+                                        {{ render_field(form.sensor_id) }}
+                                    </div>
+                                </div>
+                                <div class="col-span-3 sm:col-span-2">
+                                    {{ render_field(form.sensor_board) }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         {% include "sensor-settings-form.html" with context %}
     </form>
+
 {% endblock %}
