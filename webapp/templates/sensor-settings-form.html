@@ -4,11 +4,9 @@
             <div class="px-4 sm:px-0">
                 <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Basic Information') }}</h3>
                 <p class="mt-1 text-sm text-gray-600">
-                    {{ _('The more precise the data we have, the better we can evaluate the data and thus energize statements. The system can also try to make a geoposition out of the address, but we would be happy if you would specify the position with the map below.') }}
-                    This information <strong> won't be displayed publicly</strong>,
-                    location will be
-                    randomized. You can choose any name for the sensor, this is to help you distinguish between
-                    multiple owned sensors.
+                    {{ _('Please note that only precise data can lead to precise evaluations with which we can also argue politically. It is therefore important that the basic sensor data is always kept up to date. ') }}
+                    {{ _('This information <strong> won\'t be displayed publicly</strong>, location will be randomized. You can choose any name for the sensor, this is to help you distinguish between
+                    multiple owned sensors.') }}
                 </p>
             </div>
         </div>
@@ -22,7 +20,7 @@
                         </div>
 
                         {% if  request.path != "/sensors/register" %}
-                            <div class="col-span-6 sm:col-span-3">
+                            <div class="col-span-6">
                                 {{ render_field(form.inactive) }}
                             </div>
                         {% endif %}
