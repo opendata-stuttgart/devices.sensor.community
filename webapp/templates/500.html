@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:pt-32">
+        <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid
+        lg:grid-cols-2 lg:gap-24">
+            <div class="mt-10">
+                <div class="inline-flex space-x-4">
+                    <img alt="sensor community logo" class="h-8 w-auto"
+                         src="/static/images/signet.svg">
+                    <span class="py-1 font-semibold text-brand-yellow tracking-wide uppercase">
+                  Sensor.Community
+                </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sm:mx-auto sm:max-w-3xl sm:px-6">
+            <div class="sm:relative pb-8 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                <div class="hidden sm:block">
+                    <svg class="absolute top-8 right-1/2 -mr-3 lg:m-0 lg:left-0" fill="none" height="392"
+                         viewBox="0 0 404 392"
+                         width="404">
+                        <defs>
+                            <pattern height="20" id="837c3e70-6c3a-44e6-8854-cc48c737b659"
+                                     patternUnits="userSpaceOnUse"
+                                     width="20" x="0"
+                                     y="0">
+                                <rect class="text-gray-200" fill="currentColor" height="4" width="4" x="0" y="0"/>
+                            </pattern>
+                        </defs>
+                        <rect fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)" height="392" width="404"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="relative mx-auto">
+            <div class="rounded-2xl flex">
+                <div class="flex-1 flex flex-col justify-center px-4 sm:px-6 lg:flex-none lg:px-20">
+                    <div class="mx-auto w-full max-w-7xl">
+                        <div class="px-4 py-16 sm:px-6 sm:py-24 md:grid md:place-items-center lg:px-8">
+                            <div class="max-w-max mx-auto">
+                                <main class="sm:flex">
+                                    <p class="text-4xl font-extrabold text-indigo-600 sm:text-5xl">404</p>
+                                    <div class="sm:ml-6">
+                                        <div class="sm:border-l sm:border-gray-200 sm:pl-6">
+                                            <h1 class="text-4xl font-extrabold text-brand-black tracking-tight sm:text-5xl">
+                                                {{ _('Internal Server Error') }}</h1>
+                                            <p class="mt-1"> {{ _('We have some technical issues. Please come back
+                                            later') }}</p>
+                                            <p class="mt-6">
+                                                {{ _('If you landed by accident here, then check out our main page to find some information.') }}</p>
+                                            <a href="https://sensor.community/de/" target="_blank" class="mt-6
+                                            text-brand-funcRed">{{ _('Find out more about Sensor.Community') }}</a>
+                                        </div>
+                                        <div class="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
+                                            <a href="/" class="btn-small btn-primary">
+                                                {{ _('Go back home') }}
+                                            </a>
+                                            <a href="tech@Sensor.Community"
+                                               class="btn-small btn-small-secondary">
+                                                {{ _('Contact support') }}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

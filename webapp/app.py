@@ -13,7 +13,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 
 import os
 
-from flask import Flask
+from flask import Flask, render_template
 
 from .babel import create_module as babel_create_module
 from .common.context_processor import register_context_processor
@@ -83,7 +83,7 @@ def configure_extensions(app):
     mail.init_app(app)
 
     # flask-babel
-    #babel.init_app(app)
+    # babel.init_app(app)
 
     from flask_security import SQLAlchemyUserDatastore
     security.init_app(app, SQLAlchemyUserDatastore(db, User, Role))
@@ -134,27 +134,27 @@ def configure_hook(app):
 
 
 def configure_error_handlers(app):
-    pass
+    @app.errorhandler(500)
+    def server_error_page(error):
+        # return Response.make_error_resp(msg=str(error), code=500)
+        return render_template("500.html")
 
+    # @app.errorhandler(422)
+    # def semantic_error(error):
+    #     # return Response.make_error_resp(msg=str(error.description), code=422)
+    #     return render_template("422.html")
 
-"""
-  @app.errorhandler(500)
-  def server_error_page(error):
-    return Response.make_error_resp(msg=str(error), code=500)
+    @app.errorhandler(404)
+    def page_not_found(error):
+        # return Response.make_error_resp(msg=str(error.description), code=404)
+        return render_template("404.html")
 
-  @app.errorhandler(422)
-  def semantic_error(error):
-    return Response.make_error_resp(msg=str(error.description), code=422)
+    @app.errorhandler(403)
+    def page_forbidden(error):
+        # return Response.make_error_resp(msg=str(error.description), code=403)
+        return render_template("403.html")
 
-  @app.errorhandler(404)
-  def page_not_found(error):
-    return Response.make_error_resp(msg=str(error.description), code=404)
-
-  @app.errorhandler(403)
-  def page_forbidden(error):
-    return Response.make_error_resp(msg=str(error.description), code=403)
-
-  @app.errorhandler(400)
-  def page_bad_request(error):
-    return Response.make_error_resp(msg=str(error.description), code=400)
-"""
+    @app.errorhandler(400)
+    def page_bad_request(error):
+        # return Response.make_error_resp(msg=str(error.description), code=400)
+        return render_template("400.html")
