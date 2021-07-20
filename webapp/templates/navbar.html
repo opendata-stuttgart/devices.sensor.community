@@ -1,7 +1,7 @@
 {% block header %}
-    <div class="bg-brand-green sticky top-0 z-40">
+    <div class="bg-brand-green sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 lg:px-4 relative">
-            <div class="flex justify-between py-5 lg:justify-start lg:space-x-10 font-semibold text-brand-white">
+            <div class="flex justify-between py-4 lg:justify-start lg:space-x-10 font-semibold text-brand-white">
                 <div class="lg:w-0 lg:flex-1 justify-end">
                     <a class="block uppercase " href="/">
                         <img alt="sensor community logo" class="h-8 w-auto" src="/static/images/signet.svg">
@@ -72,7 +72,6 @@
                             {{ navbar_link('security.logout', _('Logout')) }}
                         {% endif %}
                     </div>
-
                 </div>
                 <div class="flex justify-between font-semibold text-brand-white lg:hidden">
                     <div class="flex">
@@ -109,22 +108,19 @@
                     </div>
 
                     <div class="m-1.5 mx-2 border-r-2 border-brand-white"></div>
-                    <button id="mobileMenuButton"
-                            class="inline-flex items-center justify-center p-2 rounded-md text-brand-white -mr-2 -my-2"
-                            type="button">
-                        <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                             stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M4 6h16M4 12h16M4 18h16"/>
+                    <div id="mobileMenuButton" class="inline-flex items-center justify-center p-2 rounded-md text-brand-white">
+                        <svg class="h-7 w-7">
+                            <line id="top" x1="0" y1="2" x2="22" y2="2"></line>
+                            <line id="middle" x1="0" y1="10" x2="22" y2="10"></line>
+                            <line id="bottom" x1="0" y1="18" x2="22" y2="18"></line>
                         </svg>
-                    </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!--Mobile menu-->
-    {# Todo: JavaScript to open and close menu #}
     <div id="mobileMenu" class="hidden bg-brand-green sticky top-0 z-50">
         <div class="bg-brand-green h-screen absolute inset-x-0 transition transform origin-top-right lg:hidden transition duration-200">
             <div class="divide-y-2">
@@ -185,17 +181,13 @@
 <script type="text/javascript">
     {# https://www.freecodecamp.org/news/how-to-create-a-dropdown-menu-with-css-and-javascript/  #}
 
-    function toggleMenuDisplay(selector) {
+    function toggleMenuDisplay(selector, className) {
         const menu = document.querySelector(selector);
         const icon = document.querySelector('#languageDropdown .chevron');
+        const mobileMenu = document.querySelector('#mobileMenuButton');
 
-        toggleClass(menu, 'hidden');
+        toggleClass(menu, className);
         toggleSVGClass(icon, 'rotate-180');
-    }
-
-    function toggleMobileMenu() {
-        const menu = document.querySelector('#mobile-menu')
-        toggleClass(menu, 'hidden');
     }
 
     function toggleClass(elem, className) {
@@ -221,9 +213,38 @@
     const mobileMenu = document.querySelector('#mobileMenuButton');
 
     dropdownTitle.addEventListener('click', function () {
-        toggleMenuDisplay('.dropdown')
+        toggleMenuDisplay('.dropdown', "hidden")
     });
     mobileMenu.addEventListener('click', function () {
-        toggleMenuDisplay('#mobileMenu')
+        toggleMenuDisplay("#mobileMenuButton", "open")
+        toggleMenuDisplay('#mobileMenu', "hidden")
     });
 </script>
+
+<style>
+    #mobileMenuButton svg {
+        transition: transform 0.15s ease-in-out;
+    }
+
+    #mobileMenuButton svg line {
+        stroke: currentColor;
+        stroke-width: 2;
+        transition: transform 0.15s ease-in-out
+    }
+
+    #mobileMenuButton.open svg {
+        transform: scale(1)
+    }
+
+    #mobileMenuButton.open #top {
+        transform: translate(5px, 3px) rotate(45deg)
+    }
+
+    #mobileMenuButton.open #middle {
+        opacity: 0;
+    }
+
+    #mobileMenuButton.open #bottom {
+        transform: translate(-10px, 7px) rotate(-45deg)
+    }
+</style>
