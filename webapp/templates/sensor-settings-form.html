@@ -124,7 +124,7 @@
                 <div class="px-4 sm:px-0">
                     <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Hardware configuration') }}</h3>
                     <p class="mt-1 text-sm text-gray-600">
-                        This is where you configure your sensor
+                        {{ _('This is where you configure your sensor') }}
                     </p>
                 </div>
             </div>
@@ -164,14 +164,19 @@
                         {% if request.path != "/sensors/register" %}
                             <div class="border border-b border-gray-200 my-4"></div>
                             <div class="grid grid-cols-6 gap-y-6 gap-x-3" id="component-new">
-                                <div class="col-span-3">
+                                <div class="col-span-6 md:col-span-1 mt-2 md:mt-7">
+                                    {{ _('Add Sensor') }}
+                                </div>
+                                <div class="col-span-6 md:col-span-2">
                                     {{ render_field(formAddSensor.sensor_type) }}
                                 </div>
-                                <div class="col-span-3">
+                                <div class="col-span-6 md:col-span-2">
                                     {{ render_field(formAddSensor.pin, 'xpin-visible', required=False) }}
                                 </div>
+                                <div class="col-span-6 md:col-span-1 -mt-1 md:mt-6">
                                 <input type="submit" name="addSensor" class="btn-small btn-small-secondary"
                                        value="Add sensor">
+                                </div>
                             </div>
                         {% endif %}
                     </div>

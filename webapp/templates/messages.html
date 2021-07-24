@@ -2,70 +2,29 @@
     {% if messages %}
         {% for category, message in messages %}
             <div class="alert-banner inset-x-0 mt-5 transform ease-out duration-300 transition float">
-            <input type="checkbox" class="hidden" id="banneralert">
-            <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+                <input type="checkbox" class="hidden" id="banneralert">
+                <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
 
-            {% if category == 'success' %}
-                <div class="p-2 rounded-lg bg-brand-funcLime shadow-lg sm:p-3">
-                <div class="flex items-center justify-between flex-wrap">
-                <div class="w-0 flex-1 flex items-center">
-                <span class="flex p-2 rounded-lg bg-brand-white">
-                <svg class="h-6 w-6 text-brand-funcLime" xmlns="http://www.w3.org/2000/svg"
-                     fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-            </svg>
-
-
-            {% elif category == 'warning' %}
-                <div class="p-2 rounded-lg bg-brand-funcRed shadow-lg sm:p-3">
-                <div class="flex items-center justify-between flex-wrap">
-                <div class="w-0 flex-1 flex items-center">
-                <span class="flex p-2 rounded-lg bg-brand-white">
-                <svg class="h-6 w-6 text-white text-brand-yellow" xmlns="http://www.w3.org/2000/svg"
-                     fill="none"
-                     viewBox="0 0 24 24"
-                     stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/>
-            </svg>
-
-            {% elif category == 'danger' %}
-                <div class="p-2 rounded-lg bg-brand-funcRed shadow-lg sm:p-3">
-                <div class="flex items-center justify-between flex-wrap">
-                <div class="w-0 flex-1 flex items-center">
-                <span class="flex p-2 rounded-lg bg-brand-white">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-<path d="M12 9V11M12 15H12.01M5.07183 19H18.9282C20.4678 19 21.4301 17.3333 20.6603 16L13.7321 4C12.9623 2.66667 11.0378 2.66667 10.268 4L3.33978 16C2.56998 17.3333 3.53223 19 5.07183 19Z"
-      stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-            {% else %}
-                <div class="p-2 rounded-lg bg-brand-yellowBright shadow-lg sm:p-3">
-                <div class="flex items-center justify-between flex-wrap">
-                <div class="w-0 flex-1 flex items-center">
-                <span class="flex p-2 rounded-lg bg-brand-white">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                     xmlns="http://www.w3.org/2000/svg">
-<path d="M13 16H12V12H11M12 8H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-      stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-            {% endif %}
-        </span>
-        <p class="ml-3 font-medium text-white truncate">
-                                      <span class="hidden md:inline">
-                                        {{ message }}
-                                      </span>
+                    <div class="p-2 rounded-lg bg-brand-yellowBright shadow-lg sm:p-3">
+                        <div class="flex items-center justify-between flex-wrap">
+                            <div class="w-0 flex-1 flex items-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 16H12V12H11M12 8H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                          stroke="#111827" stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"/>
+                                </svg>
+                                </span>
+                                <p class="ml-3 font-medium text-white truncate">
+                                    {{ message }}
                                 </p>
-        </div>
+                            </div>
 
-        <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
+                            <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
                                 <label title="close" for="banneralert"
                                        class="cursor-pointer -mr-1 flex p-2 rounded-md
                                         focus:outline-none focus:ring-2 focus:ring-white">
                                     <span class="sr-only">Dismiss</span>
-                                    <!-- Heroicon name: outline/x -->
                                     <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -73,10 +32,10 @@
                                     </svg>
                                 </label>
                             </div>
-        </div>
-        </div>
-        </div>
-        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         {% endfor %}
     {% endif %}
 {% endwith %}

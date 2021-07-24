@@ -11,11 +11,11 @@
 
             <div class="mt-6">
                 <div class="mt-6 sm:max-w-xl">
-                    <h1 class="text-5xl font-extrabold text-black tracking-tight sm:text-5xl">
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-black tracking-tight sm:text-5xl">
                         {{ _('My sensors') }}
                     </h1>
                 </div>
-                <p class="mt-6 text-xl antialiased">
+                <p class="mt-6 text-xl ">
                     {{ _('All sensors assigned to your account can be found in this overview.') }}
                 </p>
             </div>
@@ -23,13 +23,14 @@
     </div>
     <div class="relative">
         <div class="mx-auto max-w-7xl px-4 md:0 mt-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                 {% for node in nodes %}
-                    <div class="rounded-lg shadow-md border-gray-300 border border-gray-200 hover:border-gray-400
-                    md:flex md:flex-col">
+                    <div class="border-gray-300 border border-gray-200 border-solid
+                    md:flex md:flex-col rounded-lg shadow-md">
                         <div class="px-6 py-6 md:flex-grow md:flex md:flex-col">
-                            <h3 class="text-3xl font-semibold text-gray-800 md:flex-grow">{{ node
+                            <h3 class="text-2xl font-semibold text-gray-800 md:flex-grow">{{ node
                             .name }}</h3>
+                            <div class="border border-b border-gray-200 mt-4"></div>
                             <div class="md:flex-grow-0">
                                 <div class="flex items-center mt-10 text-gray-700">
                                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg"
@@ -61,113 +62,38 @@
                                     <h4 class="px-2 text-sm">{{ _('Node ID') }}: {{ node.id }} </h4>
                                 </div>
                             </div>
-                            <div class="flex flex-row mt-10 justify-between gap-1 bg-gray-500">
-                                <a href="{{ url_for('personal.sensor_data', id=node.id) }}"
-                                   class="btn-small btn-small-secondary">{{ _
+                        </div>
+                        <div class="flex flex-row gap-2 bg-gray-50 p-6">
+                            <a href="{{ url_for('personal.sensor_data', id=node.id) }}"
+                               class="btn-small btn-small-secondary">{{ _
                                        ('Data') }}</a>
-                                <a href="{{ url_for('personal.sensor_settings', id=node.id) }}"
-                                   class="btn-small btn-small-secondary">{{ _
+                            <a href="{{ url_for('personal.sensor_settings', id=node.id) }}"
+                               class="btn-small btn-small-secondary">{{ _
                                        ('Settings') }} </a>
-                                <a href="{{ url_for('personal.sensor_transfer', id=node.id) }}"
-                                   class="btn-small btn-small-secondary">{{ _
+                            <a href="{{ url_for('personal.sensor_transfer', id=node.id) }}"
+                               class="btn-small btn-small-secondary">{{ _
                                        ('Transfer') }}</a>
-                                <a href="{{ url_for('personal.sensor_delete', id=node.id) }}"
-                                   class="btn-small btn-small-delete">{{ _ ('Delete') }}</a>
-                            </div>
+                            <a href="{{ url_for('personal.sensor_delete', id=node.id) }}"
+                               class="btn-small btn-small-delete">{{ _ ('Delete') }}</a>
                         </div>
                     </div>
                 {% endfor %}
-                <div class="w-48">
+                <div class="w-48 mx-auto my-auto">
                     <a href="{{ url_for('.sensor_register') }}">
                         <div class="relative shadow-md rounded-lg border-2 p-12
                         hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2
-                        focus:ring-brand-green border-gray-300 border-dashed text-center">
-                            <svg class="mx-auto h-12 w-12 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                        focus:ring-brand-green border-gray-300 border-dashed text-center text-gray-500 hover:text-brand-black">
+                            <svg class="mx-auto h-12 w-12" xmlns="http://www.w3.org/2000/svg"
                                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                       d="M12 4v16m8-8H4"/>
                             </svg>
-                            <span class="mt-2 block text-sm font-medium text-gray-900">{{ _('Register new sensor') }}</span>
+                            <span class="mt-2 block font-medium">{{ _('Register new
+                            sensor') }}</span>
                         </div>
                     </a>
                 </div>
             </div>
-
-            {#            <div class="sm:mx-auto sm:max-w-7xl px-6">#}
-            {#                <div class="flex flex-col">#}
-            {#                    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">#}
-            {#                        <div class="py-2 align-middle inline-block min-w-full">#}
-            {#                            <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">#}
-            {#                                <table class="min-w-full divide-y divide-gray-200">#}
-            {#                                    <thead class="bg-gray-50">#}
-            {#                                    <tr>#}
-            {#                                        <th scope="col"#}
-            {#                                            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">#}
-            {#                                            Node ID?#}
-            {#                                        </th>#}
-            {#                                        <th scope="col"#}
-            {#                                            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">#}
-            {#                                            {{ _('Name') }}#}
-            {#                                        </th>#}
-            {#                                        <th scope="col"#}
-            {#                                            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">#}
-            {#                                            {{ _('Sensor UID') }}#}
-            {#                                        </th>#}
-            {#                                        <th scope="col"#}
-            {#                                            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">#}
-            {#                                            {{ _('Created') }}#}
-            {#                                        </th>#}
-            {#                                        <th scope="col"#}
-            {#                                            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">#}
-            {#                                            {{ _('Last Update') }}#}
-            {#                                        </th>#}
-            {#                                        <th scope="col" class="relative px-6 py-3">#}
-            {#                                            <span class="sr-only">{{ _('Functions') }}</span>#}
-            {#                                        </th>#}
-            {#                                    </tr>#}
-            {#                                    </thead>#}
-            {#                                    <tbody>#}
-            {##}
-            {#                                    {% for node in nodes %}#}
-            {#                                        <tr class="bg-white">#}
-            {#                                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">#}
-            {#                                                {{ node.id }}#}
-            {#                                            </td>#}
-            {#                                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">#}
-            {#                                                {{ node.name }}#}
-            {#                                            </td>#}
-            {#                                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">#}
-            {#                                                {{ node.uid }}#}
-            {#                                            </td>#}
-            {#                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">#}
-            {#                                            {{ node.created }} UTC#}
-            {#                                        </td>#}
-            {#                                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">#}
-            {#                                                {{ node.modified }} UTC#}
-            {#                                            </td>#}
-            {#                                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm">#}
-            {#                                                <a href="{{ url_for('personal.sensor_data', id=node.id) }}"#}
-            {#                                                   class="btn-small btn-small-secondary">{{ _#}
-            {#                                       ('Data') }}</a>#}
-            {#                                                <a href="{{ url_for('personal.sensor_settings', id=node.id) }}"#}
-            {#                                                   class="btn-small btn-small-secondary">{{ _#}
-            {#                                       ('Settings') }} </a>#}
-            {#                                                <a href="{{ url_for('personal.sensor_transfer', id=node.id) }}"#}
-            {#                                                   class="btn-small btn-small-secondary">{{ _#}
-            {#                                       ('Hand#}
-            {#                over sensor') }}</a>#}
-            {#                                                <a href="{{ url_for('personal.sensor_delete', id=node.id) }}"#}
-            {#                                                   class="btn-small btn-small-delete">{{ _ ('Delete sensor') }}</a>#}
-            {#                                            </td>#}
-            {#                                        </tr>#}
-            {#                                    {% endfor %}#}
-            {#                                    </tbody>#}
-            {#                                </table>#}
-            {#                            </div>#}
-            {#                        </div>#}
-            {#                    </div>#}
-            {#                </div>#}
-            {#            </div>#}
         </div>
     </div>
     <div class="lg:relative lg:py-32"></div>

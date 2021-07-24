@@ -704,37 +704,6 @@ input::placeholder {
   line-height: 1.7142857;
 }
 
-.prose thead {
-  color: #111827;
-  font-weight: 600;
-  border-bottom-width: 1px;
-  border-bottom-color: #d1d5db;
-}
-
-.prose thead th {
-  vertical-align: bottom;
-  padding-right: 0.5714286em;
-  padding-bottom: 0.5714286em;
-  padding-left: 0.5714286em;
-}
-
-.prose tbody tr {
-  border-bottom-width: 1px;
-  border-bottom-color: #e5e7eb;
-}
-
-.prose tbody tr:last-child {
-  border-bottom-width: 0;
-}
-
-.prose tbody td {
-  vertical-align: top;
-  padding-top: 0.5714286em;
-  padding-right: 0.5714286em;
-  padding-bottom: 0.5714286em;
-  padding-left: 0.5714286em;
-}
-
 .prose {
   font-size: 1rem;
   line-height: 1.75;
@@ -801,22 +770,6 @@ input::placeholder {
 
 .prose h4 + * {
   margin-top: 0;
-}
-
-.prose thead th:first-child {
-  padding-left: 0;
-}
-
-.prose thead th:last-child {
-  padding-right: 0;
-}
-
-.prose tbody td:first-child {
-  padding-left: 0;
-}
-
-.prose tbody td:last-child {
-  padding-right: 0;
 }
 
 .prose > :first-child {
@@ -951,35 +904,6 @@ input::placeholder {
 .prose-lg table {
   font-size: 0.8888889em;
   line-height: 1.5;
-}
-
-.prose-lg thead th {
-  padding-right: 0.75em;
-  padding-bottom: 0.75em;
-  padding-left: 0.75em;
-}
-
-.prose-lg thead th:first-child {
-  padding-left: 0;
-}
-
-.prose-lg thead th:last-child {
-  padding-right: 0;
-}
-
-.prose-lg tbody td {
-  padding-top: 0.75em;
-  padding-right: 0.75em;
-  padding-bottom: 0.75em;
-  padding-left: 0.75em;
-}
-
-.prose-lg tbody td:first-child {
-  padding-left: 0;
-}
-
-.prose-lg tbody td:last-child {
-  padding-right: 0;
 }
 
 .prose-lg > :first-child {
@@ -1282,6 +1206,11 @@ input::placeholder {
   margin-bottom: 1rem;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -1322,6 +1251,10 @@ input::placeholder {
   margin-top: 4rem;
 }
 
+.-mt-1 {
+  margin-top: -0.25rem;
+}
+
 .-mt-2 {
   margin-top: -0.5rem;
 }
@@ -1360,10 +1293,6 @@ input::placeholder {
 
 .block {
   display: block;
-}
-
-.inline-block {
-  display: inline-block;
 }
 
 .flex {
@@ -1456,10 +1385,6 @@ input::placeholder {
 
 .w-full {
   width: 100%;
-}
-
-.min-w-full {
-  min-width: 100%;
 }
 
 .max-w-md {
@@ -1641,8 +1566,8 @@ input::placeholder {
   justify-content: space-between;
 }
 
-.gap-1 {
-  gap: 0.25rem;
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-6 {
@@ -1651,6 +1576,10 @@ input::placeholder {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-12 {
+  gap: 3rem;
 }
 
 .gap-x-3 {
@@ -1698,32 +1627,13 @@ input::placeholder {
   border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
 }
 
-.divide-y > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-y-reverse: 0;
-  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
-  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
-}
-
-.divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
-  --tw-divide-opacity: 1;
-  border-color: rgba(229, 231, 235, var(--tw-divide-opacity));
-}
-
 .overflow-hidden {
   overflow: hidden;
-}
-
-.overflow-x-auto {
-  overflow-x: auto;
 }
 
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.whitespace-nowrap {
   white-space: nowrap;
 }
 
@@ -1761,6 +1671,10 @@ input::placeholder {
 
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-solid {
+  border-style: solid;
 }
 
 .border-dashed {
@@ -1807,11 +1721,6 @@ input::placeholder {
   background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
 }
 
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
-}
-
 .bg-brand-white {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -1830,16 +1739,6 @@ input::placeholder {
 .bg-brand-yellowLight {
   --tw-bg-opacity: 1;
   background-color: rgba(253, 246, 237, var(--tw-bg-opacity));
-}
-
-.bg-brand-funcRed {
-  --tw-bg-opacity: 1;
-  background-color: rgba(233, 53, 89, var(--tw-bg-opacity));
-}
-
-.bg-brand-funcLime {
-  --tw-bg-opacity: 1;
-  background-color: rgba(95, 233, 53, var(--tw-bg-opacity));
 }
 
 .hover\:bg-brand-funcRed:hover {
@@ -1883,6 +1782,10 @@ input::placeholder {
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .p-12 {
@@ -1994,10 +1897,6 @@ input::placeholder {
   text-align: right;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -2026,11 +1925,6 @@ input::placeholder {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-4xl {
@@ -2151,9 +2045,9 @@ input::placeholder {
   color: rgba(233, 53, 89, var(--tw-text-opacity));
 }
 
-.text-brand-funcLime {
+.hover\:text-brand-black:hover {
   --tw-text-opacity: 1;
-  color: rgba(95, 233, 53, var(--tw-text-opacity));
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
 
 .hover\:text-brand-white:hover {
@@ -2166,8 +2060,8 @@ input::placeholder {
   color: rgba(233, 53, 89, var(--tw-text-opacity));
 }
 
-.antialiased {
-  -webkit-font-smoothing: antialiased;
+. {
+  -webkit-font-smoothing: ;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -2469,11 +2363,6 @@ input::placeholder {
     margin-right: auto;
   }
 
-  .sm\:-mx-6 {
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-  }
-
   .sm\:mt-0 {
     margin-top: 0px;
   }
@@ -2510,10 +2399,6 @@ input::placeholder {
     max-width: 64rem;
   }
 
-  .sm\:max-w-7xl {
-    max-width: 80rem;
-  }
-
   .sm\:flex-shrink-0 {
     flex-shrink: 0;
   }
@@ -2524,10 +2409,6 @@ input::placeholder {
 
   .sm\:rounded-md {
     border-radius: 0.375rem;
-  }
-
-  .sm\:rounded-lg {
-    border-radius: 0.5rem;
   }
 
   .sm\:border-l {
@@ -2611,6 +2492,14 @@ input::placeholder {
     margin-top: 0px;
   }
 
+  .md\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .md\:mt-7 {
+    margin-top: 1.75rem;
+  }
+
   .md\:inline {
     display: inline;
   }
@@ -2647,16 +2536,17 @@ input::placeholder {
     place-items: center;
   }
 
-  .md\:justify-end {
-    justify-content: flex-end;
-  }
-
   .md\:gap-6 {
     gap: 1.5rem;
   }
 
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -2684,11 +2574,6 @@ input::placeholder {
 
   .lg\:m-0 {
     margin: 0px;
-  }
-
-  .lg\:-mx-8 {
-    margin-left: -2rem;
-    margin-right: -2rem;
   }
 
   .lg\:flex {
