@@ -13,14 +13,28 @@
                         <div class="flex items-center justify-between flex-wrap text-brand-black {% if category == 'warning' or
                         category == 'danger' or category == 'success' %}text-brand-white{% endif %}">
                             <div class="w-0 flex-1 flex items-center">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="h-6 w-6 text-brand-black
+                                {% if category == 'warning' or category == 'danger' %}
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                         viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                                    </svg>
+                                {% elif category == 'success' %}
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                         viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                {% else %}
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="h-6 w-6 text-brand-black
 {% if category == 'warning' or category == 'danger' or category == 'success' %}  text-brand-white {% endif %}"
-                                     stroke="currentColor"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 16H12V12H11M12 8H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                                          stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"></path>
-                                </svg>
+                                         stroke="currentColor"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13 16H12V12H11M12 8H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                              stroke-width="2" stroke-linecap="round"
+                                              stroke-linejoin="round"></path>
+                                    </svg>{% endif %}
+
                                 <p class="ml-3 font-medium truncate">
                                     {{ message }}
                                 </p>
