@@ -1741,6 +1741,11 @@ input::placeholder {
   background-color: rgba(253, 246, 237, var(--tw-bg-opacity));
 }
 
+.bg-brand-funcRed {
+  --tw-bg-opacity: 1;
+  background-color: rgba(233, 53, 89, var(--tw-bg-opacity));
+}
+
 .hover\:bg-brand-funcRed:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(233, 53, 89, var(--tw-bg-opacity));
@@ -1840,11 +1845,6 @@ input::placeholder {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .py-12 {
@@ -2058,11 +2058,6 @@ input::placeholder {
 .hover\:text-brand-funcRed:hover {
   --tw-text-opacity: 1;
   color: rgba(233, 53, 89, var(--tw-text-opacity));
-}
-
-. {
-  -webkit-font-smoothing: ;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 *, ::before, ::after {
@@ -2540,8 +2535,17 @@ input::placeholder {
     gap: 1.5rem;
   }
 
+  .md\:p-6 {
+    padding: 1.5rem;
+  }
+
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .md\:text-5xl {

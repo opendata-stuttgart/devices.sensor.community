@@ -5,14 +5,17 @@
                 <input type="checkbox" class="hidden" id="banneralert">
                 <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
 
-                    <div class="p-2 rounded-lg bg-brand-yellowBright {% if category == 'warning' or category == 'danger' %} bg-brand-funcRed {% endif %}
+                    <div class="p-2 rounded-lg  {% if category == 'warning' or category ==
+                    'danger' %}bg-brand-funcRed{% elif category == 'success' %}bg-brand-green {% else %}
+                    bg-brand-yellowBright {% endif %}
                     shadow-lg
                     sm:p-3">
                         <div class="flex items-center justify-between flex-wrap text-brand-black {% if category == 'warning' or
-                        category == 'danger' %} text-brand-white {% endif %}">
+                        category == 'danger' or category == 'success' %}text-brand-white{% endif %}">
                             <div class="w-0 flex-1 flex items-center">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="h-6 w-6 text-brand-black
-{% if category == 'warning' or category == 'danger' %} text-brand-white {% endif %}" stroke="currentColor"
+{% if category == 'warning' or category == 'danger' or category == 'success' %}  text-brand-white {% endif %}"
+                                     stroke="currentColor"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13 16H12V12H11M12 8H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
                                           stroke-width="2" stroke-linecap="round"
@@ -28,7 +31,8 @@
                                        class="cursor-pointer -mr-1 flex p-2 rounded-md">
                                     <span class="sr-only">Dismiss</span>
                                     <svg class="h-6 w-6 text-brand-black
-{% if category == 'warning' or category == 'danger' %} text-brand-white {% endif %}" xmlns="http://www.w3.org/2000/svg"
+{% if category == 'warning' or category == 'danger' or category ==
+                    'success' %} text-brand-white {% endif %}" xmlns="http://www.w3.org/2000/svg"
                                          fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
