@@ -5,30 +5,34 @@
                 <input type="checkbox" class="hidden" id="banneralert">
                 <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
 
-                    <div class="p-2 rounded-lg bg-brand-yellowBright shadow-lg sm:p-3">
-                        <div class="flex items-center justify-between flex-wrap">
+                    <div class="p-2 rounded-lg bg-brand-yellowBright {% if category == 'warning' or category == 'danger' %} bg-brand-funcRed {% endif %}
+                    shadow-lg
+                    sm:p-3">
+                        <div class="flex items-center justify-between flex-wrap text-brand-black {% if category == 'warning' or
+                        category == 'danger' %} text-brand-white {% endif %}">
                             <div class="w-0 flex-1 flex items-center">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="h-6 w-6 text-brand-black
+{% if category == 'warning' or category == 'danger' %} text-brand-white {% endif %}" stroke="currentColor"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13 16H12V12H11M12 8H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                                          stroke="#111827" stroke-width="2" stroke-linecap="round"
-                                          stroke-linejoin="round"/>
+                                          stroke-width="2" stroke-linecap="round"
+                                          stroke-linejoin="round"></path>
                                 </svg>
-                                </span>
-                                <p class="ml-3 font-medium text-white truncate">
+                                <p class="ml-3 font-medium truncate">
                                     {{ message }}
                                 </p>
                             </div>
 
                             <div class="order-2 flex-shrink-0 sm:order-3 sm:ml-2">
                                 <label title="close" for="banneralert"
-                                       class="cursor-pointer -mr-1 flex p-2 rounded-md
-                                        focus:outline-none focus:ring-2 focus:ring-white">
+                                       class="cursor-pointer -mr-1 flex p-2 rounded-md">
                                     <span class="sr-only">Dismiss</span>
-                                    <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    <svg class="h-6 w-6 text-brand-black
+{% if category == 'warning' or category == 'danger' %} text-brand-white {% endif %}" xmlns="http://www.w3.org/2000/svg"
+                                         fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                              d="M6 18L18 6M6 6l12 12"/>
+                                              d="M6 18L18 6M6 6l12 12"></path>
                                     </svg>
                                 </label>
                             </div>
