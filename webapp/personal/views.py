@@ -1,17 +1,6 @@
 # encoding: utf-8
 
-"""
-Copyright (c) 2018, Maintainer: David Lackovic
-based on Ernesto Ruge https://github.com/ruhrmobil-E/meine-luftdaten/
-All rights reserved.
-Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
-2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
-3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-"""
-
-from flask import (Flask, Blueprint, render_template, current_app, flash, url_for, redirect, session)
+from flask import (Flask, Blueprint, request, render_template, current_app, flash, url_for, redirect, session)
 from flask_login import current_user, login_required
 from flask_mail import Message
 from flask_babelex import lazy_gettext as _
@@ -21,7 +10,7 @@ from datetime import datetime, timedelta
 import pytz
 import sqlalchemy.exc as exc
 
-from .forms import SensorGiveForm, SensorSettingsForm, SensorRegisterForm, SensorDeleteForm
+from .forms import SensorGiveForm, SensorSettingsForm, SensorRegisterForm, SensorDeleteForm, SensorAddForm
 from ..external_data.models import Node, SensorLocation, Sensor, SensorType
 from ..common.helpers import get_object_or_404, model_to_dict
 from ..extensions import mail, db
@@ -46,6 +35,13 @@ SENSOR_TYPES = {
     'NOISE': _('noise sensor'),
     'RADIATION': _('radiation sensor'),
 }
+
+
+@personal.route('/meine-luftdaten')
+@personal.route('/dashboard')
+@login_required
+def dashboard():
+    return render_template('meine-luftdaten.html')
 
 
 @personal.route('/my-sensors')
@@ -186,14 +182,14 @@ def sensor_data(id):
 def sensor_settings(id):
     node = get_object_or_404(Node, Node.id == id, Node.email == current_user.email)
     form = SensorSettingsForm(obj=node)
+    form_add_sensor = SensorAddForm()
 
-    if form.validate_on_submit():
+    if "update" in request.form and form.validate_on_submit():
         update_delta = timedelta(
             seconds=current_app.config['SENSOR_LOCATION_UPDATE_INTERVAL'])
 
         if node.location.modified > datetime.utcnow() - update_delta:
-            # This node's location has been modified recently, update it in
-            # place
+            # This node's location has been modified recently, update it in place
             form.populate_obj(node)
         else:
             old_location = node.location
@@ -204,7 +200,7 @@ def sensor_settings(id):
             new_d = model_to_dict(node.location, only_fields=location_fields)
             old_d = model_to_dict(old_location, only_fields=location_fields)
             if old_d == new_d:
-                # No location field has been changed, revert back to original
+                # No location field has been changed, revert to original
                 node.location = old_location
 
         db.session.commit()
@@ -212,7 +208,21 @@ def sensor_settings(id):
         flash(_('Settings saved successfully.'), 'success')
         return redirect(url_for('.sensor_list'))
 
-    return render_template('my-sensor-settings.html', node=node, form=form, types=current_app.config['SENSOR_TYPES'])
+    if "addSensor" in request.form and form_add_sensor.validate():
+        try:
+            st = SensorType.query.filter(SensorType.name == str(form_add_sensor.sensor_type.data)).first().id
+            sensor = Sensor(sensor_type_id=st, node_id=id, pin=form_add_sensor.pin.data)
+            db.session.add(sensor)
+            db.session.commit()
+
+            flash(_('Sensor successfully registered.'), 'success')
+            return redirect(url_for('.sensor_list'))
+        except exc.IntegrityError:
+            db.session.rollback()
+            flash(_('This sensor ID is already registered.'), 'warning')
+
+    return render_template('my-sensor-settings.html', node=node, form=form, formAddSensor=form_add_sensor,
+                           types=current_app.config['SENSOR_TYPES'])
 
 
 @personal.route('/sensors/register', methods=['GET', 'POST'])
@@ -286,3 +296,4 @@ def sensor_delete(id):
         db.session.commit()
         return render_template('my-sensor-delete-success.html', node=node)
     return render_template('my-sensor-delete.html', node=node, form=form)
+

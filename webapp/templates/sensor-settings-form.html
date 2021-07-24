@@ -1,5 +1,5 @@
 <div class="mt-10 sm:mt-0">
-    <div class="md:grid md:grid-cols-3 md:gap-6">
+    <div class="md:grid md:grid-cols-3 gap-6">
         <div class="md:col-span-1">
             <div class="px-4 sm:px-0">
                 <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Basic Information') }}</h3>
@@ -10,7 +10,6 @@
                 </p>
             </div>
         </div>
-
         <div class="mt-5 md:mt-0 md:col-span-2">
             <div class="shadow overflow-hidden sm:rounded-md">
                 <div class="px-4 py-5 bg-brand-white sm:p-6">
@@ -29,25 +28,21 @@
                         <div class="col-span-6">
                             {{ render_field(location.indoor) }}
                         </div>
-
                         <div class="col-span-3">
                             {{ render_field(location.street_name) }}
                         </div>
-
                         <div class="col-span-3">
                             {{ render_field(location.street_number) }}
                         </div>
 
                         <div class="col-span-6 md:col-span-2">
-                            {{ render_field(location.country) }}
+                            {{ render_field(location.postalcode) }}
                         </div>
-
                         <div class="col-span-6 md:col-span-2">
                             {{ render_field(location.city) }}
                         </div>
-
                         <div class="col-span-6 md:col-span-2">
-                            {{ render_field(location.postalcode) }}
+                            {{ render_field(location.country) }}
                         </div>
 
                         <div class="col-span-3">
@@ -75,197 +70,209 @@
             </div>
         </div>
     </div>
-</div>
-<div class="hidden sm:block" aria-hidden="true">
-    <div class="py-5">
-        <div class="border-t border-gray-200"></div>
-    </div>
-</div>
 
-<div class="mt-10 sm:mt-0">
-    <div class="md:grid md:grid-cols-3 md:gap-6">
-        <div class="md:col-span-1">
-            <div class="px-4 sm:px-0">
-                <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Additional Information') }} </h3>
-                <p class="mt-1 text-sm text-gray-600">
-                    Some information text
-                </p>
-            </div>
+    <div class="hidden sm:block" aria-hidden="true">
+        <div class="py-5">
+            <div class="border-t border-gray-200"></div>
         </div>
-        <div class="mt-5 md:mt-0 md:col-span-2">
-            <div class="shadow overflow-hidden sm:rounded-md">
-                <div class="px-4 py-5 bg-brand-white sm:p-6">
-                    <div class="grid grid-cols-6 gap-6">
-                        <div class="col-span-6">
-                            {{ render_field(form.exact_location) }}
-                        </div>
+    </div>
 
-                        <div class="col-span-6 md:col-span-3">
-                            {{ render_field(form.height, placeholder="7 m") }}
-                        </div>
+    <div class="mt-10 sm:mt-0">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="md:col-span-1">
+                <div class="px-4 sm:px-0">
+                    <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Additional Information') }} </h3>
+                    <p class="mt-1 text-sm text-gray-600">
+                        Some information text
+                    </p>
+                </div>
+            </div>
+            <div class="mt-5 md:mt-0 md:col-span-2">
+                <div class="shadow overflow-hidden sm:rounded-md">
+                    <div class="px-4 py-5 bg-brand-white sm:p-6">
+                        <div class="grid grid-cols-6 gap-6">
+                            <div class="col-span-6">
+                                {{ render_field(form.exact_location) }}
+                            </div>
 
-                        <div class="col-span-6 col-span-3">
-                            {{ render_field(form.sensor_position) }}
-                        </div>
+                            <div class="col-span-6 md:col-span-3">
+                                {{ render_field(form.height, placeholder="7 m") }}
+                            </div>
 
-                        <div class="col-span-6">
-                            {{ render_field(form.description) }}
+                            <div class="col-span-6 md:col-span-3">
+                                {{ render_field(form.sensor_position) }}
+                            </div>
+
+                            <div class="col-span-6">
+                                {{ render_field(form.description) }}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="hidden sm:block" aria-hidden="true">
-    <div class="py-5">
-        <div class="border-t border-gray-200"></div>
-    </div>
-</div>
-
-<div class="mt-10 sm:mt-0">
-    <div class="md:grid md:grid-cols-3 md:gap-6">
-        <div class="md:col-span-1">
-            <div class="px-4 sm:px-0">
-                <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Hardware configuration') }}</h3>
-                <p class="mt-1 text-sm text-gray-600">
-                    This is where you configure your sensor
-                </p>
-            </div>
+    <div class="hidden sm:block" aria-hidden="true">
+        <div class="py-5">
+            <div class="border-t border-gray-200"></div>
         </div>
-        <div class="mt-5 md:mt-0 md:col-span-2">
-            <div class="shadow overflow-hidden sm:rounded-md">
-                <div class="px-4 py-5 bg-brand-white sm:p-6">
-                    {% for sensor in form.sensors %}
-                        <div id="component-{{ loop.index0 }}" class="grid grid-cols-6 py-3">
-                            <div class="col-span-6 md:col-span-2">
-                                {{ sensor.sensor_type(class="bg-brand-white relative w-full border border-gray-300 rounded-md shadow-sm p-3 text-left  cursor-default focus:outline-none focus:ring-1 focus:ring-brand-green focus:border-brand-green sm:text-sm") }}</div>
-                            <div class="col-span-6 md:col-span-1">
-                                {{ sensor.pin( class='xpin-field input-field', required=False) }}
-                            </div>
-                            <div class="md:col-span-1">
-                            </div>
-                            <div class="remove-button col-span-6 md:col-span-2 mt-1"{% if request.path !=
+    </div>
+
+    <div class="mt-10 sm:mt-0">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="md:col-span-1">
+                <div class="px-4 sm:px-0">
+                    <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Hardware configuration') }}</h3>
+                    <p class="mt-1 text-sm text-gray-600">
+                        This is where you configure your sensor
+                    </p>
+                </div>
+            </div>
+            <div class="mt-5 md:mt-0 md:col-span-2">
+                <div class="shadow overflow-hidden sm:rounded-md">
+                    <div class="px-4 py-5 bg-brand-white sm:p-6">
+                        {% for sensor in form.sensors %}
+                            <div id="component-{{ loop.index0 }}" class="grid grid-cols-6 gap-6 py-3">
+                                <div class="col-span-6 md:col-span-2">
+                                    {{ sensor.sensor_type(class="bg-brand-white relative w-full border border-gray-300 rounded-md shadow-sm p-3 text-left  cursor-default focus:outline-none focus:ring-1 focus:ring-brand-green focus:border-brand-green sm:text-sm") }}</div>
+                                <div class="col-span-6 md:col-span-1">
+                                    {{ sensor.pin( class='xpin-field input-field', required=False) }}
+                                </div>
+                                <div class="md:col-span-1">
+                                </div>
+                                <div class="remove-button col-span-6 md:col-span-2 mt-1"{% if request.path !=
                             "/sensors/register" or
                             loop.first %}
-                                 style="display: none;" {% endif %}>
-                                <label for="sensors-{{ loop.index0 }}-remove"> </label>
-                                <input type="button" id="sensors-{{ loop.index0 }}-remove"
-                                       name="sensors-{{ loop.index0 }}-remove"
-                                       onclick="remove_component(this)"
-                                       value="{{ _('Remove component') }}"
-                                       class="btn-small btn-small-delete">
+                                     style="display: none;" {% endif %}>
+                                    <label for="sensors-{{ loop.index0 }}-remove"> </label>
+                                    <input type="button" id="sensors-{{ loop.index0 }}-remove"
+                                           name="sensors-{{ loop.index0 }}-remove"
+                                           onclick="remove_component(this)"
+                                           value="{{ _('Remove component') }}"
+                                           class="btn-small btn-small-delete">
+                                </div>
                             </div>
-                        </div>
-                    {% endfor %}
-                    {% if request.path == "/sensors/register" %}
-                        <div id="add_component_row" class="mt-2">
-                            <input type="button" value="{{ _('Add component') }}"
-                                   name="add_component_button"
-                                   id="add_component_button"
-                                   onclick="add_component();" class="btn-small btn-small-secondary">
-                        </div>
-                    {% endif %}
-                </div>
-                <div class="px-4 py-3 bg-gray-50 sm:px-6 flex ">
-                    <a type="submit" onclick="toggle_expert()" name="expert"
-                       class="btn-small btn-small-secondary mr-4">
-                        {{ _('Enable expert fields') }}
-                    </a>
+                        {% endfor %}
+                        {% if request.path == "/sensors/register" %}
+                            <div id="add_component_row" class="mt-2">
+                                <input type="button" value="{{ _('Add component') }}"
+                                       name="add_component_button"
+                                       id="add_component_button"
+                                       onclick="add_component();" class="btn-small btn-small-secondary">
+                            </div>
+                        {% endif %}
+                        {% if request.path != "/sensors/register" %}
+                            <div class="border border-b border-gray-200 my-4"></div>
+                            <div class="grid grid-cols-6 gap-y-6 gap-x-3" id="component-new">
+                                <div class="col-span-3">
+                                    {{ render_field(formAddSensor.sensor_type) }}
+                                </div>
+                                <div class="col-span-3">
+                                    {{ render_field(formAddSensor.pin, 'xpin-visible', required=False) }}
+                                </div>
+                                <input type="submit" name="addSensor" class="btn-small btn-small-secondary"
+                                       value="Add sensor">
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="px-4 py-3 bg-gray-50 sm:px-6 flex ">
+                        <a type="submit" onclick="toggle_expert()"
+                           class="btn-small btn-small-secondary mr-4">
+                            {{ _('Enable expert fields') }}
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="hidden sm:block" aria-hidden="true">
-    <div class="py-5">
+    <div class="hidden sm:block" aria-hidden="true">
+        <div class="py-5">
+        </div>
     </div>
-</div>
 
-<div class="mt-10 sm:mt-0">
-    <div class="md:grid md:grid-cols-3 md:gap-6">
-        <div class="md:col-span-1">
-            <div class="px-4 sm:px-0">
+    <div class="mt-10 sm:mt-0">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="md:col-span-1">
+                <div class="px-4 sm:px-0">
+                </div>
             </div>
-        </div>
-        <div class="overflow-hidden sm:rounded-md">
-            {{ form.submit(class="btn btn-primary") }}
-        </div>
+            <div class="overflow-hidden sm:rounded-md">
+                {{ form.submit(class="btn btn-primary") }}
+            </div>
 
+        </div>
     </div>
-</div>
-
-{{ form.csrf_token }}
-
-<script type="text/javascript">
-    let sensor_types = { {% for pin in types %}
-            "{{ pin }}": {{ types[pin] }},
-        {% endfor%}
-    };
-    let sensors = document.querySelectorAll('[id$="sensor_type"]');
-    for (i = 0; i < sensors.length; i++) {
-        sensors[i].onchange = function () {
-            document.getElementById(this.getAttribute('id').replace('sensor_type', 'pin')).value = sensor_types[this.value];
+    <script type="text/javascript">
+        var sensor_types = { {% for pin in types %}
+                "{{ pin }}": {{ types[pin] }},
+            {% endfor%}
         };
-        {% if  request.path == "/sensors/register" %}
-            document.getElementById(sensors[i].getAttribute('id').replace('sensor_type', 'pin')).value = sensor_types[sensors[i].value];
-        {% endif %}
-    }
-
-    function orderSelect($element) {
-        let selected_item = $element.selectedIndex;
-        let selected_lang = $element.options[selected_item].value;
-        let options = $element.getElementsByTagName('option'),
-            n_options = options.length,
-            temp = [],
-            parts,
-            i,
-            new_selected_item;
-
-        for (i = n_options; i--;) {
-            temp[i] = options[i].text + " || " + options[i].value;
+        var sensors = document.querySelectorAll('[id$="sensor_type"]');
+        for (i = 0; i < sensors.length; i++) {
+            sensors[i].onchange = function () {
+                document.getElementById(this.getAttribute('id').replace('sensor_type', 'pin')).value = sensor_types[this.value];
+            };
+            {% if  request.path == "/sensors/register" %}
+                document.getElementById(sensors[i].getAttribute('id').replace('sensor_type', 'pin')).value = sensor_types[sensors[i].value];
+            {% endif %}
         }
 
-        temp.sort();
+        function orderSelect($element) {
+            var selected_item = $element.selectedIndex;
+            var selected_lang = $element.options[selected_item].value;
+            var options = $element.getElementsByTagName('option'),
+                n_options = options.length,
+                temp = [],
+                parts,
+                i,
+                new_selected_item;
 
-        for (i = n_options; i--;) {
-            parts = temp[i].split(' || ');
+            for (i = n_options; i--;) {
+                temp[i] = options[i].text + " || " + options[i].value;
+            }
 
-            options[i].text = parts[0];
-            options[i].value = parts[1];
-            if (options[i].value === selected_lang) {
-                new_selected_item = i;
+            temp.sort();
+
+            for (i = n_options; i--;) {
+                parts = temp[i].split(' || ');
+
+                options[i].text = parts[0];
+                options[i].value = parts[1];
+                if (options[i].value == selected_lang) {
+                    new_selected_item = i;
+                }
+            }
+            $element.selectedIndex = new_selected_item;
+        }
+
+        orderSelect(document.getElementById('location-country'));
+
+        function toggle_expert() {
+            var fields = document.getElementsByClassName("xpin-field");
+            for (var i = 0; i < fields.length; i++) {
+                fields[i].classList.toggle('xpin-visible');
             }
         }
-        $element.selectedIndex = new_selected_item;
-    }
 
-    orderSelect(document.getElementById('location-country'));
-
-    function toggle_expert() {
-        let fields = document.getElementsByClassName("xpin-field");
-        for (var i = 0; i < fields.length; i++) {
-            fields[i].classList.toggle('xpin-visible');
+        function add_component() {
+            new_node = document.getElementById('component-0').cloneNode(true);
+            component_count = document.querySelectorAll('[id ^= component]').length;
+            new_node.innerHTML = new_node.innerHTML.replaceAll('sensors-0', 'sensors-' + component_count);
+            new_node.id = 'component-' + component_count;
+            new_node.getElementsByClassName('remove-button')[0].style = '';
+            button_node = document.getElementById('add_component_row');
+            button_node.parentNode.insertBefore(new_node, button_node);
+            return false;
         }
-    }
 
-    function add_component() {
-        new_node = document.getElementById('component-0').cloneNode(true);
-        component_count = document.querySelectorAll('[id ^= component]').length;
-        new_node.innerHTML = new_node.innerHTML.replaceAll('sensors-0', 'sensors-' + component_count);
-        new_node.id = 'component-' + component_count;
-        new_node.getElementsByClassName('remove-button')[0].style = '';
-        button_node = document.getElementById('add_component_row');
-        button_node.parentNode.insertBefore(new_node, button_node);
-        return false;
-    }
-
-    function remove_component(node) {
-        node.parentNode.parentNode.remove();
-        for (let i = 0; i < document.querySelectorAll('[ id ^= component]').length; i++) {
-            document.querySelectorAll('[ id ^= component]')[i].id = 'component-' + i;
-            document.querySelectorAll('[ id ^= component]')[i].innerHTML = document.querySelectorAll('[ id ^= component]')[i].innerHTML.replace(/sensors-(\d*)/g, 'sensors-' + i);
+        function remove_component(node) {
+            node.parentNode.parentNode.remove();
+            for (i = 0; i < document.querySelectorAll('[ id ^= component]').length; i++) {
+                document.querySelectorAll('[ id ^= component]')[i].id = 'component-' + i;
+                document.querySelectorAll('[ id ^= component]')[i].innerHTML = document.querySelectorAll('[ id ^= component]')[i].innerHTML.replace(/sensors-(\d*)/g, 'sensors-' + i);
+            }
+            return false;
         }
-        return false;
-    }
-</script>
+
+    </script>
+    {{ form.csrf_token }}

@@ -38,15 +38,15 @@ def default_country():
 class SensorLocationForm(FlaskForm):
     indoor = BooleanField(_("Indoor Sensor"), )
 
-    street_name = StringField(_('Street'), [RequiredIf(indoor=False, message=_('Please enter the street name.'))])
+    street_name = StringField(_('Street *'), [RequiredIf(indoor=False, message=_('Please enter the street name.'))])
     street_number = StringField(_('Street number'))
 
-    postalcode = StringField(_('Postal code'), [RequiredIf(indoor=False, message=_('Please enter the postal code.'))])
+    postalcode = StringField(_('Postal code *'), [RequiredIf(indoor=False, message=_('Please enter the postal code.'))])
 
-    city = StringField(_('City'), [RequiredIf(indoor=False, message=_('Please enter the city name.'))])
+    city = StringField(_('City *'), [RequiredIf(indoor=False, message=_('Please enter the city name.'))])
 
     country = SelectField(
-        _('Country'),
+        _('Country *'),
         [
             validators.InputRequired(
                 message=_('Please enter the country name.'),
@@ -165,7 +165,7 @@ class SensorSettingsForm(FlaskForm):
     )
     exact_location = BooleanField(
         _('Publish exact location'),
-        description=_('will reveal exact sensor location in public data and archives.'),
+        description=_('Reveal exact sensor location in public data and archives.'),
     )
     inactive = BooleanField(
         _('Inactive'),
@@ -173,6 +173,7 @@ class SensorSettingsForm(FlaskForm):
     )
     location = FormField(SensorLocationForm)
     sensors = FieldList(FormField(SensorForm), min_entries=1)
+
     description = TextAreaField(
         _('Short description of location'),
     )
@@ -192,7 +193,8 @@ class SensorRegisterForm(SensorSettingsForm):
         choices=[('esp8266-', 'esp8266'), ('esp32-', 'esp32'), ('raspi-', 'raspi'), ('respire-', 'respire'),
                  ('smogomierz-', 'smogomierz'), ('TTN-', 'TTN')],
         default='esp8266-',
-        description=_('Normally esp8266. If not, please check which board you own. Also in these cases the Sensor ID is the numeric part of the name only.')
+        description=_(
+            'Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or the Smogomierz sensor version need to change this accordingly. Also in these cases the Sensor ID is the numeric part of the name only.')
     )
 
 
@@ -218,3 +220,9 @@ class SensorGiveForm(FlaskForm):
 
 class SensorDeleteForm(FlaskForm):
     submit = SubmitField(_("Delete sensor"))
+
+
+class SensorAddForm(SensorForm):
+    sensors = FieldList(FormField(SensorForm), min_entries=1)
+    submit = SubmitField(_("Add sensor"))
+

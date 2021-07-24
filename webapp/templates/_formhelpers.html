@@ -22,7 +22,7 @@
             {% elif field.type == 'TextAreaField' %}
                 {{ field(class='form-textarea mt-1 block w-full border bg-gray-50 border-gray-300 rounded-md focus:ring-brand-green block w-full sm:text-sm border-gray-300 rounded-md') }}
                 {# Dropdown Field #}
-            {% elif field.type == 'SelectField' %}
+            {% elif field.type == 'SelectField' or field.type == 'QuerySelectField' %}
                 <div class="mt-1 flex rounded-md shadow-sm">
                     {{ field(class_="bg-brand-white relative w-full border border-gray-300 rounded-md shadow-sm p-2
         text-left  cursor-default focus:outline-none focus:ring-1 focus:ring-brand-green focus:border-brand-green
