@@ -30,5 +30,5 @@ def settings():
         db.session.commit()
         current_app.logger.info('%s updated his / her user data' % (current_user.email))
         flash(_('User data saved.'), 'success')
-        return redirect('/meine-luftdaten')
+        return redirect('/')
     return render_template('my-settings.html', form=form)
