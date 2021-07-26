@@ -32,7 +32,7 @@
     }
 
     .input-field {
-        @apply focus:ring-brand-green py-2 block w-full sm:text-sm border-gray-300 rounded-md placeholder-opacity-50 placeholder-gray-500
+        @apply focus:ring-brand-green py-1.5 block w-full text-base border-gray-300 rounded-md placeholder-opacity-50 placeholder-gray-500
     }
 
 }

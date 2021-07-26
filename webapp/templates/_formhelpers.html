@@ -1,8 +1,7 @@
 {% macro render_field(field, style="", class=None) %}
-    {# TODO: add dropdown #}
     <div class="pb-3 {% if field.errors %} text-brand-funcRed {% endif %}">
         {% if not field.type == 'BooleanField' %}
-            <label class="block text-sm font-medium text-gray-700">
+            <label class="block text-base font-medium text-gray-700">
                 {{ field.label }}
             </label>
         {% endif %}
@@ -11,38 +10,37 @@
             {% if field.type == 'BooleanField' %}
                 <div class="relative flex items-start">
                     <div class="flex items-center h-5">
-                        {{ field(class='focus:ring-brand-green h-7 w-7 text-indigo-600 border-gray-300 rounded') }}
+                        {{ field(class='focus:ring-brand-green h-6 w-6 text-brand-green border-gray-300 rounded') }}
                     </div>
-                    <div class="ml-3 text-sm">
+                    <div class="ml-3 text-base -mt-1">
                         {{ field.label(class="font-medium text-gray-700") }}
                         <span class="text-gray-500">{{ field.description }}</span>
                     </div>
                 </div>
                 {# Textarea #}
             {% elif field.type == 'TextAreaField' %}
-                {{ field(class='form-textarea mt-1 block w-full border bg-gray-50 border-gray-300 rounded-md focus:ring-brand-green block w-full sm:text-sm border-gray-300 rounded-md') }}
+                {{ field(class='form-textarea mt-1 p-3 block w-full text-base border bg-gray-50 border-gray-300
+                rounded-md
+                block w-full border-gray-300 rounded-md') }}
                 {# Dropdown Field #}
             {% elif field.type == 'SelectField' or field.type == 'QuerySelectField' %}
-                <div class="mt-1 flex rounded-md shadow-sm">
-                    {{ field(class_="bg-brand-white relative w-full border border-gray-300 rounded-md shadow-sm p-2
-        text-left  cursor-default focus:outline-none focus:ring-1 focus:ring-brand-green focus:border-brand-green
-        sm:text-sm", **kwargs) }}
+                <div class="mt-1 flex rounded-md shadow-base">
+                    {{ field(class_="bg-brand-white relative w-full border border-gray-300 rounded-md shadow-base p-2
+                    m-1.5 text-base text-left cursor-default", **kwargs) }}
                 </div>
             {% else %}
                 {# Everything else #}
-                <div class="mt-1 flex rounded-md shadow-sm">
+                <div class="mt-1 flex rounded-md shadow-base">
                     {% if style == "prefix" %}
-                        <span class="inline-flex items-center px-3 bg-gray-50 text-gray-500 text-sm">
+                        <span class="inline-flex items-center px-3 bg-gray-50 text-gray-500 text-base">
                     airRohr-
                   </span>
                     {% endif %}
                     {{ field(class="input-field" + (" is-invalid" if field.errors else ""), **kwargs) }}
                 </div>
-
-                    <small class="mt-2 text-xs text-gray-500">
-                        {{ field.description }}
-                    </small>
-
+                <small class="mt-2 text-xs text-gray-500">
+                    {{ field.description }}
+                </small>
                 {% if field.errors %}
                     <p class="text-brand-funcRed mt-2 text-xs text-gray-500">
                         {% for error in field.errors %}
