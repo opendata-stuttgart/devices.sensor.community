@@ -3,7 +3,6 @@
 from flask import (Flask, Blueprint, request, render_template, current_app, flash, url_for, redirect, session)
 from flask_login import current_user, login_required
 from flask_mail import Message
-from speaklater import is_lazy_string
 from flask_babelex import lazy_gettext as _
 import requests
 import dateutil.parser
@@ -36,13 +35,6 @@ SENSOR_TYPES = {
     'NOISE': _('noise sensor'),
     'RADIATION': _('radiation sensor'),
 }
-
-
-@personal.route('/meine-luftdaten')
-@personal.route('/dashboard')
-@login_required
-def dashboard():
-    return render_template('meine-luftdaten.html')
 
 
 @personal.route('/my-sensors')
@@ -208,7 +200,7 @@ def sensor_settings(id):
 
         db.session.commit()
         current_app.logger.info('%s updated node %s' % (current_user.email, id))
-        flash(is_lazy_string( _('Settings saved successfully.')), 'success')
+        flash(is_lazy_string(_('Settings saved successfully.')), 'success')
         return redirect(url_for('.sensor_list'))
 
     return render_template('my-sensor-settings.html', node=node, form=form, formAddSensor=form_add_sensor,
@@ -266,7 +258,8 @@ def sensor_transfer(id):
             '%s gave node %s to %s' % (current_user.email, id, form.email.data.lower()))
 
         db.session.commit()
-        return render_template('my-sensor-give-success.html', node=node)
+        flash(_('Sensor successfully transfered.'), 'success')
+        return render_template('my-sensors.html', nodes=current_user.nodes)
     return render_template('my-sensor-give.html', node=node, form=form)
 
 
@@ -284,6 +277,6 @@ def sensor_delete(id):
             '%s deleted node %s' % (current_user.email, id))
 
         db.session.commit()
-        return render_template('my-sensor-delete-success.html', node=node)
+        flash(_('Sensor successfully deleted.'), 'success')
+        return render_template('my-sensors.html', nodes=current_user.nodes)
     return render_template('my-sensor-delete.html', node=node, form=form)
-

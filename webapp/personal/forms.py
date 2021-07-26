@@ -37,12 +37,9 @@ def default_country():
 
 class SensorLocationForm(FlaskForm):
     indoor = BooleanField(_("Indoor Sensor"), )
-
     street_name = StringField(_('Street *'), [RequiredIf(indoor=False, message=_('Please enter the street name.'))])
     street_number = StringField(_('Street number'))
-
     postalcode = StringField(_('Postal code *'), [RequiredIf(indoor=False, message=_('Please enter the postal code.'))])
-
     city = StringField(_('City *'), [RequiredIf(indoor=False, message=_('Please enter the city name.'))])
 
     country = SelectField(
@@ -76,6 +73,7 @@ class SensorLocationForm(FlaskForm):
         ],
         description=_('No office space, but potential fine dust producers 1 = very little, 10 = very much.'),
     )
+
     oven_in_area = IntegerField(
         _('How many private stoves or fireplaces are within a 100m radius?'),
         [
@@ -91,6 +89,7 @@ class SensorLocationForm(FlaskForm):
         ],
         description=_('Does it smell very much like such smoke in your area? 1 = very little, 10 = very much.'),
     )
+
     traffic_in_area = IntegerField(
         _('How much traffic is there within a 100m radius?'),
         [
@@ -225,4 +224,3 @@ class SensorDeleteForm(FlaskForm):
 class SensorAddForm(SensorForm):
     sensors = FieldList(FormField(SensorForm), min_entries=1)
     submit = SubmitField(_("Add sensor"))
-

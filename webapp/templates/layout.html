@@ -8,10 +8,17 @@
             <meta name="description" content="{% block meta_description %}{% endblock %}"/>
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <meta property="og:title" content="Configure your air quality sensor yourself - Sensor.Community"/>
-            <meta property="og:type" content="website"/>
-            <meta property="og:url" content="https://sensor.community/"/>
-            <meta property="og:description" content="{{ _('Information and settings for the luftdaten project') }} ."/>
+            <!-- Open Graph / Facebook -->
+            <meta property="og:type" content="website">
+            <meta property="og:url" content="https://sensor.community">
+            <meta property="og:title" content="{{ _('Configure your air quality sensor yourself') }} - Sensor.Community">
+            <meta property="og:description" content="{{ _('Configure your air quality sensor yourself') }}">
+
+            <!-- Twitter -->
+            <meta property="twitter:card" content="summary_large_image">
+            <meta property="twitter:url" content="https://sensor.community">
+            <meta property="twitter:title" content="{{ _('Configure your air quality sensor yourself') }} - Sensor.Community">
+            <meta property="twitter:description" content="{{ _('Configure your air quality sensor yourself') }}">
 
             <link rel="manifest" href="/static/favicons/manifest.json">
             <link rel="shortcut icon" href="/static/favicons/favicon.ico">
