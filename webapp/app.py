@@ -134,11 +134,6 @@ def configure_hook(app):
 
 
 def configure_error_handlers(app):
-    @app.errorhandler(500)
-    def server_error_page(error):
-        # return Response.make_error_resp(msg=str(error), code=500)
-        return render_template("500.html")
-
     # @app.errorhandler(422)
     # def semantic_error(error):
     #     # return Response.make_error_resp(msg=str(error.description), code=422)
