@@ -53,6 +53,27 @@ Basic development environment file can be copied from `.flaskenv.dist`.
 
     flask run
 
+## Compile CSS
+install node packages
+
+```bash
+npm install
+```
+
+The project uses [Tailwind CSS](https://tailwindcss.com/), go and check out the [documentation](https://tailwindcss.com/docs) to get started. 
+
+
+```
+npm run watch
+```
+
+To get ready for production compile the final version
+
+```bash
+npm run build
+```
+
+
 ## Docker development
 To ease up development Docker container and relevant `docker-compose.yml`
 project file has been created. Following will start up basic development
