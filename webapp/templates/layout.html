@@ -36,7 +36,7 @@
         </div>
         {% include "footer.html" %}
         {% block scripts %}
-            <script type="text/javascript" src="/static/js/webapp.min.js"></script>
+            <script type="text/javascript" src="/static/js/webapp.min.js?v={{ config['PROJECT_VERSION'] }}"></script>
         {% endblock %}
     </body>
 </html>

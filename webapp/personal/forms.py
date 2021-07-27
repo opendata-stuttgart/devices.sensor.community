@@ -38,8 +38,8 @@ def default_country():
 class SensorLocationForm(FlaskForm):
     indoor = BooleanField(_("Indoor Sensor"), )
     street_name = StringField(_('Street *'), [RequiredIf(indoor=False, message=_('Please enter the street name.'))])
-    street_number = StringField(_('Street number'))
-    postalcode = StringField(_('Postal code *'), [RequiredIf(indoor=False, message=_('Please enter the postal code.'))])
+    street_number = StringField(_('Number'))
+    postalcode = StringField(_('Zip code *'), [RequiredIf(indoor=False, message=_('Please enter the postal code.'))])
     city = StringField(_('City *'), [RequiredIf(indoor=False, message=_('Please enter the city name.'))])
 
     country = SelectField(

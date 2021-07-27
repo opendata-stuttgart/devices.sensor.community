@@ -917,7 +917,7 @@ input::placeholder {
 .btn {
   display: inline-block;
   cursor: pointer;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   border-width: 1px;
   padding-left: 3rem;
   padding-right: 3rem;
@@ -1169,8 +1169,16 @@ input::placeholder {
   order: 2;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .col-span-3 {
   grid-column: span 3 / span 3;
+}
+
+.col-span-4 {
+  grid-column: span 4 / span 4;
 }
 
 .col-span-6 {
@@ -1890,6 +1898,10 @@ input::placeholder {
 
 .pb-8 {
   padding-bottom: 2rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .pb-24 {

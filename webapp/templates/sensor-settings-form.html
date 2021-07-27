@@ -28,17 +28,17 @@
                         <div class="col-span-6">
                             {{ render_field(location.indoor) }}
                         </div>
-                        <div class="col-span-3">
+                        <div class="col-span-4">
                             {{ render_field(location.street_name) }}
                         </div>
-                        <div class="col-span-3">
+                        <div class="col-span-2">
                             {{ render_field(location.street_number) }}
                         </div>
 
-                        <div class="col-span-6 md:col-span-2">
+                        <div class="col-span-2">
                             {{ render_field(location.postalcode) }}
                         </div>
-                        <div class="col-span-6 md:col-span-2">
+                        <div class="col-span-4 md:col-span-2">
                             {{ render_field(location.city) }}
                         </div>
                         <div class="col-span-6 md:col-span-2">
@@ -164,23 +164,23 @@
                         {% if request.path != "/sensors/register" %}
                             <div class="border border-b border-gray-200 my-4"></div>
                             <div class="grid grid-cols-6 gap-y-6 gap-x-3" id="component-new">
-                                <div class="col-span-6 md:col-span-1 mt-2 md:mt-7">
-                                    {{ _('Add Sensor') }}
+                                <div class="col-span-6 md:col-span-2 mt-2 md:mt-7">
+                                    {{ _('Add Component') }}
                                 </div>
                                 <div class="col-span-6 md:col-span-2">
                                     {{ render_field(formAddSensor.sensor_type) }}
                                 </div>
-                                <div class="col-span-6 md:col-span-2">
+                                <div class="col-span-6 md:col-span-1">
                                     {{ render_field(formAddSensor.pin, 'xpin-visible', required=False) }}
                                 </div>
                                 <div class="col-span-6 md:col-span-1 -mt-1 md:mt-6">
-                                <input type="submit" name="addSensor" class="btn-small btn-small-secondary"
-                                       value="Add sensor">
+                                    <input type="submit" name="addSensor" class="btn-small btn-small-secondary"
+                                           value="{{ _('Save') }}">
                                 </div>
                             </div>
                         {% endif %}
                     </div>
-                    <div class="px-4 py-3 bg-gray-50 sm:px-6 flex ">
+                    <div class="px-4 py-3 bg-gray-50 sm:px-6 flex">
                         <a type="submit" onclick="toggle_expert()"
                            class="btn-small btn-small-secondary mr-4">
                             {{ _('Enable expert fields') }}
@@ -202,11 +202,11 @@
                 </div>
             </div>
             <div class="overflow-hidden sm:rounded-md">
-                        {% if request.path == "/sensors/register" %}
-            {{ form.submit(class="btn btn-primary") }}
-        {% else %}
-            <input type="submit" name="update" class="btn btn-primary" value="Update settings">
-        {% endif %}
+                {% if request.path == "/sensors/register" %}
+                    {{ form.submit(class="btn btn-primary") }}
+                {% else %}
+                    <input type="submit" name="update" class="btn btn-primary" value="Update settings">
+                {% endif %}
             </div>
         </div>
     </div>
