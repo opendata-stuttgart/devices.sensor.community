@@ -3,42 +3,35 @@
 
 {% block content %}
     <div class="overflow-hidden lg:relative lg:py-12">
-        <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl">
-            <div class="mt-10">
-                <div class="mt-6">
-                    <div class="mt-6 sm:max-w-5xl">
-                        <h1 class="text-4xl font-extrabold text-black tracking-tight">
-                            {{ _('Delete sensor %(node_id)s', node_id=node.uid) }}
-                        </h1>
-                        <p class="mt-6 text-xl ">
-                            <p>{{ _('Warning! After deleting you have no more control over the sensor!') }}  </p>
-                            <p><strong>{{ _('Also the chipID of this sensor will remain blocked for a new
+    <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl">
+        <div class="mt-10">
+            <div class="mt-6">
+                <div class="mt-6 sm:max-w-5xl">
+                    <h1 class="text-4xl font-extrabold text-black tracking-tight">
+                        {{ _('Delete sensor %(node_id)s', node_id=node.uid) }}
+                    </h1>
+                    <p class="mt-6 text-xl ">
+                    <p>{{ _('Warning! After deleting you have no more control over the sensor!') }}  </p>
+                    <p><strong>{{ _('Also the chipID of this sensor will remain blocked for a new
                             registration!') }}  </strong></p>
-                            If not please return <a href="/my-sensors" class="form-control text-brand-funcRed">{{ _
+                    If not please return <a href="/my-sensors" class="form-control text-brand-funcRed">{{ _
                             ('back to my sensors') }}</a>
-                        </p>
-                    </div>
+                    </p>
                 </div>
-                <div class="max-w-7xl mx-auto lg:flex items-center">
-                    <div class="mt-8">
-                        <div class="flex">
-                            <div class="mt-3 rounded-md sm:mt-0 sm:flex-shrink-0">
-                                <a href="/my-sensors" class="w-full flex items-center
+            </div>
+            <div class="max-w-7xl mx-auto lg:flex items-center">
+                <div class="mt-8 md:flex gap-6">
+                    <a href="/my-sensors" class="w-full flex items-center
                                     justify-center py-3 px-5 border border-brand-green border-2
                      text-base font-medium rounded-md text-brand-white bg-brand-green focus:outline-none
                      focus:ring-2 focus:ring-offset-2">{{ ('Back to my sensors') }}</a>
-                            </div>
-                            <form method="POST" action="{{ url_for('.sensor_delete', id=node.id) }}">
-                                <div class="mt-3 rounded-md  sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                                    {{ form.submit(class="w-full flex items-center justify-center py-3 px-5 border-2
+                    <form method="POST" action="{{ url_for('.sensor_delete', id=node.id) }}">
+                        {{ form.submit(class="w-full flex items-center justify-center py-3 px-5 border-2 mt-8 md:mt-0
                                 text-base font-medium rounded-md text-brand-green border-brand-green bg-brand-white
                                  hover:bg-brand-funcRed hover:text-brand-white hover:border-brand-funcRed focus:outline-none
                      focus:ring-2 focus:ring-offset-2") }}
-                                </div>
-                                {{ form.csrf_token }}
-                            </form>
-                        </div>
-                    </div>
+                        {{ form.csrf_token }}
+                    </form>
                 </div>
             </div>
         </div>

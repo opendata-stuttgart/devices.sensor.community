@@ -167,13 +167,13 @@
                                 <div class="col-span-6 md:col-span-2 mt-2 md:mt-7">
                                     {{ _('Add Component') }}
                                 </div>
-                                <div class="col-span-6 md:col-span-2">
+                                <div class="col-span-3 md:col-span-2">
                                     {{ render_field(formAddSensor.sensor_type) }}
                                 </div>
-                                <div class="col-span-6 md:col-span-1">
+                                <div class="col-span-3 md:col-span-1">
                                     {{ render_field(formAddSensor.pin, 'xpin-visible', required=False) }}
                                 </div>
-                                <div class="col-span-6 md:col-span-1 -mt-1 md:mt-6">
+                                <div class="col-span-1 md:col-span-1 -mt-1 md:mt-6">
                                     <input type="submit" name="addSensor" class="btn-small btn-small-secondary"
                                            value="{{ _('Save') }}">
                                 </div>
