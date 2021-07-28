@@ -4,7 +4,7 @@
 
 
 {% block content %}
-    <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-32">
+    <div class="overflow-hidden lg:relative lg:py-32">
         <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid
         lg:grid-cols-2 lg:gap-24">
             <div class="mt-10">
@@ -16,34 +16,23 @@
                 </span>
                 </div>
                 <div class="mt-6 sm:max-w-xl">
-                    <h1 class="text-5xl font-extrabold text-black tracking-tight sm:text-5xl">
+                    <h1 class="text-4xl font-extrabold text-black tracking-tight">
                         {{ _('Configure your air quality sensor yourself') }}
                     </h1>
                     <div class="hidden md:inline">
                         <div class="hidden md:inline">
                             <p class="mt-6 text-xl ">
-                            {{ _('The main purpose of this page is to enable you, as the owner of a fine dust sensor, to configure the location and other parameters yourself.') }}
+                                {{ _('The main purpose of this page is to enable you, as the owner of a fine dust sensor, to configure the location and other parameters yourself.') }}
                             </p>
                             <p class="mt-6 text-xl ">
-                            {{ _('The city of the future belongs to its citizens. The digital tools, the Maker Movement and Citizen Science are leading to more and more people being given the opportunity to design the city themselves.') }}</p>
+                                {{ _('The city of the future belongs to its citizens. The digital tools, the Maker Movement and Citizen Science are leading to more and more people being given the opportunity to design the city themselves.') }}</p>
                             <br>
                             <p class="mt-6 text-xl  font-bold">{{ _('Code a difference: Use your skills to
                             improve your city!') }}</p>
                             <a href="https://sensor.community/de/" target="_blank" class="mt-6 text-xl
-                            text-brand-funcRed">{{ _('Find
-                                out more about Sensor.Community') }}</a>
+                            text-brand-funcRed">{{ _('Find out more about Sensor.Community') }}</a>
 
                         </div>
-                    </div>
-                </div>
-                <div class="mt-12 lg:mt-24 lg:hidden">
-                    <div class="flex items-center justify-center animate-bounce transition duration-100 ease-in-out cursor-pointer"
-                         type="button">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round"
-                                  stroke-width="2"></path>
-                        </svg>
                     </div>
                 </div>
             </div>
@@ -77,15 +66,16 @@
                                         </h2>
                                         <p class="mt-2 text-sm text-gray-600">
                                             {{ _('already have an account,') }}
-                                        <a href="/"
-                                           class="font-medium text-brand-funcRed">{{ _('go
+                                            <a href="/"
+                                               class="font-medium text-brand-funcRed">{{ _('go
                                            to login') }}</a>
                                         </p>
                                     </div>
 
                                     <div class="mt-8">
                                         <div class="mt-6">
-                                        <form action="{{ url_for_security('register') }}" method="POST" name="register_user_form"
+                                            <form action="{{ url_for_security('register') }}" method="POST"
+                                                  name="register_user_form"
                                                   class="space-y-6">
                                                 {{ register_user_form.hidden_tag() }}
                                                 <div class="space-y-1">
@@ -104,7 +94,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="flex items-center justify-between">
-                                                    <div class="text-sm">
+                                                    <div class="text-sm py-3">
                                                         <strong class="text-brand-funcRed text-sm">{{ _('Pleas wait up
                                                         to 30 min. Check your spam folder') }}</strong>
                                                     </div>

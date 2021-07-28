@@ -1,17 +1,16 @@
 {% extends "layout.html" %}
 
-
 {% block head %}
     {{ super() }}
     <meta name="robots" content="noindex">
 {% endblock %}
 
 {% block content %}
-    <div class="pt-8 overflow-hidden sm:pt-12 lg:relative">
+    <div class="overflow-hidden  lg:relative">
         <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl">
             <div class="mt-6">
                 <div class="mt-6 sm:max-w-xl">
-                    <h1 class="text-4xl md:text-5xl font-extrabold text-black tracking-tight sm:text-5xl">
+                    <h1 class="text-4xl md:text-4xl font-extrabold text-black tracking-tight">
                         {{ _('Data from Node') }} {{ node.uid }}
                     </h1>
                 </div>
@@ -23,7 +22,7 @@
             </div>
         </div>
     </div>
-    <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-12 bg-gradient-to-b from-brand-white to-gray-50">
+    <div class="overflow-hidden lg:relative lg:py-12 bg-gradient-to-b from-brand-white to-gray-50">
         <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl">
             {% for sensor in sensors %}
                 <h3 class="text-2xl font-semibold text-gray-800 md:flex-grow mt-8">{{ _(sensor['sensor_type_name']) }} {{ sensor['sensor_type_id'] }}</h3>

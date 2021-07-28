@@ -4,7 +4,7 @@
 
 
 {% block content %}
-    <div class="pt-8 overflow-hidden sm:pt-12 lg:relative lg:py-32">
+    <div class="overflow-hidden lg:relative lg:py-32">
         <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid
         lg:grid-cols-2 lg:gap-24">
             <div class="mt-10">
@@ -16,7 +16,7 @@
                 </span>
                 </div>
                 <div class="mt-6 sm:max-w-xl">
-                    <h1 class="text-5xl font-extrabold text-black tracking-tight sm:text-5xl">
+                    <h1 class="text-4xl font-extrabold text-black tracking-tight">
                         {{ _('Configure your air quality sensor yourself') }}
                     </h1>
                     <div class="hidden md:inline">
@@ -36,16 +36,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-12 lg:mt-24 lg:hidden">
-                    <div class="flex items-center justify-center animate-bounce transition duration-100 ease-in-out cursor-pointer"
-                         type="button">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                             xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round"
-                                  stroke-width="2"></path>
-                        </svg>
-                    </div>
-                </div>
+
             </div>
 
             <div class="sm:mx-auto sm:max-w-3xl sm:px-6">
@@ -98,7 +89,6 @@
                                                 <div>
                                                     <div class="mt-1">
                                                         {{ render_field_with_errors(login_user_form.password) }}
-
                                                     </div>
                                                 </div>
                                                 <div class="flex items-center justify-between">
@@ -108,11 +98,6 @@
                                                                class="ml-2 block text-sm text-gray-900">
                                                             {{ _('Remember me') }}
                                                         </label>
-                                                    </div>
-
-                                                    <div class="text-sm">
-                                                        <a href="{{ url_for_security('forgot_password') }}"
-                                                           class="font-medium text-brand-funcRed">{{ _('Password reminder') }}</a>
                                                     </div>
                                                 </div>
 

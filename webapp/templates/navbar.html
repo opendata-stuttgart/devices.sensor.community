@@ -37,9 +37,9 @@
                     <div class="flex">
                         {% with current_language = get_locale().language %}
                             <button type="button"
-                                    class="inline-flex justify-center w-full rounded-md shadow-sm
+                                    class="languageDropdownMobile inline-flex justify-center w-full rounded-md shadow-sm
                                 px-4 py-2 text-brand-white bg-brand-green text-sm font-light"
-                                    id="languageDropdown" aria-expanded="true" aria-haspopup="true">
+                                    aria-expanded="true" aria-haspopup="true">
                                 {{ config['LANGUAGES'].get(current_language) }}
                                 <svg id="" class="chevron -mr-1 ml-2 h-5 w-5 transform rotate-0"
                                      xmlns="http://www.w3.org/2000/svg"
@@ -51,8 +51,8 @@
                                 </svg>
                             </button>
 
-                            <div id="dropdown" class="hidden origin-top-right absolute right-0 w-36 mt-16 rounded-md
-                            shadow-lg bg-brand-white transform"
+                            <div class="dropdownMobile hidden origin-top-left absolute w-36 mt-14
+                            rounded-md shadow-lg bg-brand-white transform"
                                  role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
                                  tabindex="-1">
                             <div class="py-1" role="none">
@@ -74,41 +74,41 @@
                     </div>
                 </div>
                 <div class="flex justify-between font-semibold text-brand-white lg:hidden">
-                    <div class="flex">
-                        {% with current_language = get_locale().language %}
-                            <button type="button"
-                                    class="languageDropdown inline-flex justify-center w-full rounded-md shadow-sm
+                    {% with current_language = get_locale().language %}
+                        <button type="button"
+                                class="languageDropdown inline-flex justify-center w-full rounded-md shadow-sm
                                 px-4 py-2 text-brand-white bg-brand-green text-sm font-light"
-                                    aria-expanded="true" aria-haspopup="true">
-                                {{ config['LANGUAGES'].get(current_language) }}
-                                <svg class="chevron -mr-1 ml-2 h-5 w-5 transform rotate-0"
-                                     xmlns="http://www.w3.org/2000/svg"
-                                     viewBox="0 0 20 20"
-                                     fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                          clip-rule="evenodd"/>
-                                </svg>
-                            </button>
-                            <div class="dropdown hidden origin-top-right absolute right-0 w-40 mt-16 rounded-md
-                            shadow-lg bg-brand-white ring-1 ring-black ring-opacity-5 focus:outline-none transform"
-                                 role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
-                                 tabindex="-1">
-                            <div class="py-1" role="none">
-                                {% for code, name in config['LANGUAGES'].items()|sort() %}
-                                    <a href="?lang={{ code }}"
-                                       class="option text-gray-700 block px-4 py-2 text-sm {% if current_language ==
+                                aria-expanded="true" aria-haspopup="true">
+                            {{ config['LANGUAGES'].get(current_language) }}
+                            <svg id="" class="chevron -mr-1 ml-2 h-5 w-5 transform rotate-0"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 20 20"
+                                 fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                      clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+
+                        <div class="dropdown hidden origin-top-left absolute w-36 mt-14
+                            rounded-md shadow-lg bg-brand-white transform"
+                             role="menu" aria-orientation="vertical" aria-labelledby="menu-button"
+                             tabindex="-1">
+                        <div class="py-1" role="none">
+                            {% for code, name in config['LANGUAGES'].items()|sort() %}
+                                <a href="?lang={{ code }}"
+                                   class="option text-gray-700 block px-4 py-2 text-sm {% if current_language ==
                                        code %} active{% endif %}"
-                                       role="menuitem" tabindex="-1"
-                                       id="menu-item-0">{{ name }}</a>
-                                {% endfor %}
-                            </div>
-                        {% endwith %}
+                                   role="menuitem" tabindex="-1"
+                                   id="menu-item-0">{{ name }}</a>
+                            {% endfor %}
                         </div>
+                    {% endwith %}
                     </div>
 
                     <div class="m-1.5 mx-2 border-r-2 border-brand-white"></div>
-                    <div id="mobileMenuButton" class="inline-flex items-center justify-center p-2 rounded-md text-brand-white">
+                    <div id="mobileMenuButton"
+                         class="inline-flex items-center justify-center p-2 rounded-md text-brand-white">
                         <svg class="h-7 w-7">
                             <line id="top" x1="0" y1="2" x2="22" y2="2"></line>
                             <line id="middle" x1="0" y1="10" x2="22" y2="10"></line>
@@ -163,12 +163,9 @@
                     </span>
                             <span class="transform -rotate-45">&rarr;</span>
                         </a>
-
                         <a class="flex py-3 mr-2"
                            href="{lang}/sensors/">
-                    <span class="pl-2  text-base font-extralight">
-                        Map
-                    </span>
+                            <span class="pl-2  text-base font-extralight">Map</span>
                             <span class="transform -rotate-45">&rarr;</span>
                         </a>
                     </nav>
@@ -178,16 +175,17 @@
     </div>
 {% endblock %}
 
-<script type="text/javascript">
-    {# https://www.freecodecamp.org/news/how-to-create-a-dropdown-menu-with-css-and-javascript/  #}
 
+<script type="text/javascript">
     function toggleMenuDisplay(selector, className) {
         const menu = document.querySelector(selector);
-        const icon = document.querySelector('#languageDropdown .chevron');
+        const icon = document.querySelector('.languageDropdown .chevron');
+        const iconMobile = document.querySelector('.languageDropdownMobile .chevron');
         const mobileMenu = document.querySelector('#mobileMenuButton');
 
         toggleClass(menu, className);
         toggleSVGClass(icon, 'rotate-180');
+        toggleSVGClass(iconMobile, 'rotate-180');
     }
 
     function toggleClass(elem, className) {
@@ -210,10 +208,15 @@
 
     //get elements
     const dropdownTitle = document.querySelector('.languageDropdown');
+    const dropdownTitleMobile = document.querySelector('.languageDropdownMobile');
     const mobileMenu = document.querySelector('#mobileMenuButton');
 
     dropdownTitle.addEventListener('click', function () {
         toggleMenuDisplay('.dropdown', "hidden")
+        toggleMenuDisplay('.dropdownMobile', "hidden")
+    });
+    dropdownTitleMobile.addEventListener('click', function () {
+        toggleMenuDisplay('.dropdownMobile', "hidden")
     });
     mobileMenu.addEventListener('click', function () {
         toggleMenuDisplay("#mobileMenuButton", "open")
@@ -234,17 +237,5 @@
 
     #mobileMenuButton.open svg {
         transform: scale(1)
-    }
-
-    #mobileMenuButton.open #top {
-        transform: translate(5px, 3px) rotate(45deg)
-    }
-
-    #mobileMenuButton.open #middle {
-        opacity: 0;
-    }
-
-    #mobileMenuButton.open #bottom {
-        transform: translate(-10px, 7px) rotate(-45deg)
     }
 </style>
