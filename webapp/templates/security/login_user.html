@@ -30,8 +30,8 @@
                             <p class="mt-6 text-xl  font-bold">{{ _('Code a difference: Use your skills to
                             improve your city!') }}</p>
                             <a href="https://sensor.community/de/" target="_blank" class="mt-6 text-xl
-                            text-brand-funcRed">Find
-                                out more about Sensor.Community</a>
+                            text-brand-funcRed">{{ _('Find
+                                out more about Sensor.Community') }}</a>
 
                         </div>
                     </div>
@@ -68,14 +68,15 @@
 
                     <div class="relative sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
                         <div class="mt-24 rounded-2xl flex">
-                            <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20                      bg-gray-100">
+                            <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20
+                            bg-gray-100">
                                 <div class="mx-auto w-full max-w-sm">
                                     <div>
                                         <h2 class="text-3xl font-extrabold text-gray-900">
                                             {{ _('Sign in to your account') }}
                                         </h2>
                                         <p class="mt-2 text-sm text-gray-600">
-                                            or
+                                            {{ _('or') }}
                                             <a href="{{ url_for_security('register') }}"
                                                class="font-medium text-brand-funcRed">{{ _('create an account') }}</a>
                                         </p>
@@ -90,7 +91,7 @@
                                                 <div class="space-y-1">
                                                     <div class="mt-1">
                                                         {{ render_field_with_errors(login_user_form.email,
-                                                        type="email")}}
+                                                        type="email") }}
                                                     </div>
                                                 </div>
 
@@ -105,7 +106,7 @@
                                                         {{ login_user_form.remember }}
                                                         <label for="remember-me"
                                                                class="ml-2 block text-sm text-gray-900">
-                                                            Remember me
+                                                            {{ _('Remember me') }}
                                                         </label>
                                                     </div>
 
@@ -115,12 +116,9 @@
                                                     </div>
                                                 </div>
 
-                                                <div>
-                                                    <button type="submit">
-                                                        {{ render_field(login_user_form.submit) }}
-                                                    </button>
-
-                                                </div>
+                                                <button type="submit">
+                                                    {{ render_field(login_user_form.submit) }}
+                                                </button>
                                             </form>
                                         </div>
                                     </div>

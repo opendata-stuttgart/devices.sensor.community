@@ -55,8 +55,7 @@ module.exports = {
             },
         },
     },
-    variants: {
-    },
+    variants: {},
     plugins: [
         require('tailwindcss/colors'),
         require('@tailwindcss/forms'),

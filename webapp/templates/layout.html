@@ -20,8 +20,9 @@
             <meta property="twitter:title" content="{{ _('Configure your air quality sensor yourself') }} - Sensor.Community">
             <meta property="twitter:description" content="{{ _('Configure your air quality sensor yourself') }}">
 
+            <link rel="shortcut icon" href="/static/favicons/favicon.ico" type="image/x-icon">
             <link rel="manifest" href="/static/favicons/manifest.json">
-            <link rel="shortcut icon" href="/static/favicons/favicon.ico">
+
         {% endblock %}
 
         {% block styles %}
@@ -31,8 +32,8 @@
     <body>
         {% include "navbar.html" %}
         {% include "messages.html" %}
-        <div class="pt-8 pb-24">
-            {% block content %}{% endblock %}
+        <div class="my-24">
+        {% block content %}{% endblock %}
         </div>
         {% include "footer.html" %}
         {% block scripts %}
