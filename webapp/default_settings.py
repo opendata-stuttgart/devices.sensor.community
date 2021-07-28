@@ -102,7 +102,7 @@ SENSOR_TYPES = {
 
 # IDs of default SensorTypes assigned to node
 SENSOR_DEFAULT_SET = [
-    14, 9,
+    14, 17,
 ]
 
 # Update sensor location in-place if it has been modified earlier than N
