@@ -181,7 +181,7 @@ class SensorSettingsForm(FlaskForm):
 
 class SensorRegisterForm(SensorSettingsForm):
     sensor_id = StringField(
-        _('Sensor ID'), [
+        _('Chip ID'), [
             validators.InputRequired(),
             validators.Regexp('^[0-9a-fA-F]+$', message=_('Sensor ID may only contain digits and letters A to F')),
         ],
