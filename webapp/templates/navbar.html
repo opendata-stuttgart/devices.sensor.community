@@ -1,15 +1,14 @@
 {% block header %}
     <div class="bg-brand-green sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 lg:px-4 relative">
-            <div class="flex justify-between py-4 lg:justify-start lg:space-x-10 font-semibold text-brand-white">
+            <div class="flex justify-between py-5 lg:justify-start lg:space-x-10 font-semibold text-brand-white">
                 <div class="lg:w-0 lg:flex-1 justify-end">
                     <a class="block uppercase " href="/">
                         <img alt="sensor community logo" class="h-8 w-auto" src="/static/images/signet.svg">
                     </a>
                 </div>
                 <nav class="hidden lg:flex space-x-10">
-                    {% macro navbar_link(href, title=None, general=False) %}
-                        <a class="text-base leading-6 {% if href == request.endpoint and (general or request
+                    {% macro navbar_link(href, title=None, general=False) %}                        <a class="text-base leading-6 {% if href == request.endpoint and (general or request
                         .view_args == kwargs) %} {% endif %}"
                            href="{{ url_for(href, **kwargs) }}">
                             {% if not title %}{{ caller() }}{% else %}{{ title }}{% endif %}
