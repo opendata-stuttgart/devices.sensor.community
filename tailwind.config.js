@@ -3,8 +3,8 @@ const colors = require('tailwindcss/colors')
 module.exports = {
     purge: {
         enable: true,
-        purge: ['./webapp/templates/**/*.html'],
-        content: ["./webapp/templates/*.html"],
+        purge: ['./webapp/templates/*.html'],
+        content: ["./webapp/templates/*.html", "./webapp/templates/security/*.html"],
     },
     darkMode: false,
     theme: {

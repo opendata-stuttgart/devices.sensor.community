@@ -11,7 +11,7 @@ module.exports = {
         // only needed if you want to purge
         process.env.FLASK_PROD === 'production' ? require('autoprefixer') : null,
         purgecss({
-            content: ["./webapp/templates/*.html"],
+            content: ["./webapp/templates/*.html", "./webapp/templates/security/*.html"],
             defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
         })
     ]
