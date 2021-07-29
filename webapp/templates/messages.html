@@ -1,32 +1,33 @@
 {% with messages = get_flashed_messages(with_categories=true) %}
     {% if messages %}
         {% for category, message in messages %}
-            <div class="alert-banner inset-x-0 mt-5 transform ease-out duration-300 transition float">
+            <div class="alert-banner inset-x-0 transform transition ease-out duration-300 absolute mt-5 lg:mt-2
+            top-20 fixed z-10">
                 <input type="checkbox" class="hidden" id="banneralert">
                 <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
 
                     <div class="p-2 rounded-lg  {% if category == 'warning' or category ==
                     'danger' %}bg-brand-funcRed{% elif category == 'success' %}bg-brand-green {% else %}
                     bg-brand-yellowBright {% endif %}
-                    shadow-lg
-                    sm:p-3">
+                    shadow-lg">
                         <div class="flex items-center justify-between flex-wrap text-brand-black {% if category == 'warning' or
                         category == 'danger' or category == 'success' %}text-brand-white{% endif %}">
                             <div class="w-0 flex-1 flex items-center">
                                 {% if category == 'warning' or category == 'danger' %}
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                               d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
                                     </svg>
                                 {% elif category == 'success' %}
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 ml-2" fill="none"
                                          viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                               d="M5 13l4 4L19 7"/>
                                     </svg>
                                 {% else %}
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="h-6 w-6 text-brand-black
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="h-6 w-6 ml-2
+                                    text-brand-black
 {% if category == 'warning' or category == 'danger' or category == 'success' %}  text-brand-white {% endif %}"
                                          stroke="currentColor"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +45,7 @@
                                 <label title="close" for="banneralert"
                                        class="cursor-pointer -mr-1 flex p-2 rounded-md">
                                     <span class="sr-only">Dismiss</span>
-                                    <svg class="h-6 w-6 text-brand-black
+                                    <svg class="h-6 w-6 ml-2 text-brand-black
 {% if category == 'warning' or category == 'danger' or category ==
                     'success' %} text-brand-white {% endif %}" xmlns="http://www.w3.org/2000/svg"
                                          fill="none"
