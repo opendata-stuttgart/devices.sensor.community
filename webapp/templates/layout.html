@@ -32,9 +32,7 @@
     <body>
         {% include "navbar.html" %}
         {% include "messages.html" %}
-        <div class="my-16">
         {% block content %}{% endblock %}
-        </div>
         {% include "footer.html" %}
         {% block scripts %}
             <script type="text/javascript" src="/static/js/webapp.min.js?v={{ config['PROJECT_VERSION'] }}"></script>

@@ -17,9 +17,8 @@
                     {% endmacro %}
 
                     {% if current_user.is_authenticated %}
-                        {{ navbar_link('personal.sensor_list', _('My sensors')) }}
-                        {{ navbar_link('users.settings', _('Settings')) }}
-                        {{ navbar_link('security.change_password', _('Password change')) }}
+                        {{ navbar_link('personal.sensor_list', _('Sensors')) }}
+                        {{ navbar_link('users.settings', _('Account')) }}
                     {% endif %}
                     <div class="pr-40"></div>
                 </nav>
@@ -137,9 +136,8 @@
                         {% endmacro %}
 
                         {% if current_user.is_authenticated %}
-                            {{ navbar_link('personal.sensor_list', _('My sensors')) }}
-                            {{ navbar_link('users.settings', _('Settings')) }}
-                            {{ navbar_link('security.change_password', _('Password change')) }}
+                            {{ navbar_link('personal.sensor_list', _('Sensors')) }}
+                            {{ navbar_link('users.settings', _('Account')) }}
 
                             {% if current_user.is_authenticated %}
                                 {{ navbar_link('security.logout', _('Logout')) }}

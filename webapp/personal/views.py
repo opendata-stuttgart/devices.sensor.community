@@ -198,7 +198,7 @@ def sensor_settings(id):
 
         db.session.commit()
         current_app.logger.info('%s updated node %s' % (current_user.email, id))
-        flash(_('Settings saved successfully.'), 'success')
+        flash(_('Settings saved successfully'), 'success')
         return redirect(url_for('.sensor_list'))
 
     if "addSensor" in request.form and form_add_sensor.validate():
@@ -244,7 +244,7 @@ def sensor_register():
             return redirect(url_for('.sensor_list'))
         except exc.IntegrityError:
             db.session.rollback()
-            flash(_('This sensor ID is already registered.'), 'warning')
+            flash(_('This sensor ID is already registered'), 'warning')
 
     return render_template('sensor-register.html', node=None, form=form, types=current_app.config['SENSOR_TYPES'])
 
@@ -288,6 +288,6 @@ def sensor_delete(id):
             '%s deleted node %s' % (current_user.email, id))
 
         db.session.commit()
-        flash(_('Sensor successfully deleted.'), 'success')
+        flash(_('Sensor successfully deleted'), 'success')
         return render_template('my-sensors.html', nodes=current_user.nodes)
     return render_template('my-sensor-delete.html', node=node, form=form)
