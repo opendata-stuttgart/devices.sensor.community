@@ -2,12 +2,11 @@
 {% from "security/_macros.html" import render_field_with_errors, render_field %}
 {% from "_formhelpers.html" import render_submit %}
 
-
 {% block content %}
-    <div class="overflow-hidden lg:relative lg:py-32">
-        <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl lg:grid
+    <div class="overflow-hidden lg:relative py-16 lg:py-24">
+        <div class="mx-auto text-center md:text-left px-4 max-w-3xl px-6 lg:max-w-7xl lg:grid
         lg:grid-cols-2 lg:gap-24">
-            <div class="mt-5">
+            <div class="py-16 ">
                 <div class="inline-flex space-x-4">
                     <img alt="sensor community logo" class="h-8 w-auto"
                          src="/static/images/signet.svg">
@@ -20,89 +19,84 @@
                         {{ _('Configure your air quality sensor yourself') }}
                     </h1>
                     <div class="hidden md:inline">
-                        <div class="hidden md:inline">
-                            <p class="mt-6 text-xl ">
-                                {{ _('The main purpose of this page is to enable you, as the owner of a fine dust sensor, to configure the location and other parameters yourself.') }}
-                            </p>
-                            <p class="mt-6 text-xl ">
-                                {{ _('The city of the future belongs to its citizens. The digital tools, the Maker Movement and Citizen Science are leading to more and more people being given the opportunity to design the city themselves.') }}</p>
-                            <br>
-                            <p class="mt-6 text-xl  font-bold">{{ _('Code a difference: Use your skills to improve your city!') }}</p>
-                            <a href="https://sensor.community/de/" target="_blank" class="mt-6 text-xl
+                        <p class="mt-6 text-xl ">
+                            {{ _('The main purpose of this page is to enable you, as the owner of a fine dust sensor, to configure the location and other parameters yourself.') }}
+                        </p>
+                        <p class="mt-6 text-xl ">
+                            {{ _('The city of the future belongs to its citizens. The digital tools, the Maker Movement and Citizen Science are leading to more and more people being given the opportunity to design the city themselves.') }}</p>
+                        <br>
+                        <p class="mt-6 text-xl  font-bold">{{ _('Code a difference: Use your skills to improve your city!') }}</p>
+                        <a href="https://sensor.community/de/" target="_blank" class="mt-6 text-xl
                             text-brand-funcRed">{{ _('Find out more about Sensor.Community') }}</a>
-
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <div class="sm:mx-auto sm:max-w-3xl px-6">
-        <div class="lg:pt-24 sm:relative pb-0 lg:pb-24 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-            <div class="hidden lg:block">
-                <svg class="absolute top-8 right-1/2 -mr-3 lg:m-0 lg:left-0" fill="none" height="392"
-                     viewBox="0 0 404 392"
-                     width="404">
-                    <defs>
-                        <pattern height="20" id="837c3e70-6c3a-44e6-8854-cc48c737b659"
-                                 patternUnits="userSpaceOnUse"
-                                 width="20" x="0"
-                                 y="0">
-                            <rect class="text-gray-200" fill="currentColor" height="4" width="4" x="0" y="0"/>
-                        </pattern>
-                    </defs>
-                    <rect fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)" height="392" width="404"/>
-                </svg>
-            </div>
+            <div class="sm:mx-auto sm:max-w-3xl">
+                <div class="pt-0 lg:pt-16 sm:relative lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+                    <div class="hidden lg:block">
+                        <svg class="absolute top-8 right-1/2 -mr-3 lg:m-0 lg:left-0" fill="none" height="392"
+                             viewBox="0 0 404 392"
+                             width="404">
+                            <defs>
+                                <pattern height="20" id="837c3e70-6c3a-44e6-8854-cc48c737b659"
+                                         patternUnits="userSpaceOnUse"
+                                         width="20" x="0"
+                                         y="0">
+                                    <rect class="text-gray-200" fill="currentColor" height="4" width="4" x="0" y="0"/>
+                                </pattern>
+                            </defs>
+                            <rect fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)" height="392" width="404"/>
+                        </svg>
+                    </div>
 
-            <div class="relative sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
-                <div class="mt-40 rounded-2xl flex">
-                    <div class="flex-1 flex flex-col justify-center py-12 px-4 lg:flex-none lg:px-20
+                    <div class="relative sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
+                        <div class="mt-40 rounded-2xl flex">
+                            <div class="flex-1 flex flex-col justify-center py-12 px-4 lg:flex-none lg:px-16
                             bg-gray-100">
-                        <div class="mx-auto w-full max-w-sm">
-                            <div>
-                                <h2 class="text-3xl font-extrabold text-gray-900">
-                                    {{ _('Sign in to your account') }}
-                                </h2>
-                                <p class="mt-2 text-sm text-gray-600">
-                                    {{ _('or') }}
-                                    <a href="{{ url_for_security('register') }}"
-                                       class="font-medium text-brand-funcRed">{{ _('create an account') }}</a>
-                                </p>
-                            </div>
+                                <div class="mx-auto w-full">
+                                    <div>
+                                        <h2 class="text-3xl font-extrabold text-gray-900">
+                                            {{ _('Sign in to your account') }}
+                                        </h2>
+                                        <p class="mt-2 text-sm text-gray-600">
+                                            {{ _('or') }}
+                                            <a href="{{ url_for_security('register') }}"
+                                               class="font-medium text-brand-funcRed">{{ _('create an account') }}</a>
+                                        </p>
+                                    </div>
 
-                            <div class="mt-8">
-                                <div class="mt-6">
-                                    <form action="{{ url_for_security('login') }}" method="POST"
-                                          name="login_user_form"
-                                          class="space-y-6">
-                                        {{ login_user_form.hidden_tag() }}
-                                        <div class="space-y-1">
-                                            <div class="mt-1">
-                                                {{ render_field_with_errors(login_user_form.email,
+                                    <div class="mt-8">
+                                        <form action="{{ url_for_security('login') }}" method="POST"
+                                              name="login_user_form"
+                                              class="space-y-6">
+                                            {{ login_user_form.hidden_tag() }}
+                                            <div class="space-y-1">
+                                                <div class="mt-1">
+                                                    {{ render_field_with_errors(login_user_form.email,
                                                         type="email") }}
+                                                </div>
                                             </div>
-                                        </div>
 
-                                        <div>
-                                            <div class="mt-1">
-                                                {{ render_field_with_errors(login_user_form.password) }}
+                                            <div>
+                                                <div class="mt-1">
+                                                    {{ render_field_with_errors(login_user_form.password) }}
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="flex items-center justify-between">
-                                            <div class="flex items-center">
-                                                {{ login_user_form.remember }}
-                                                <label for="remember-me"
-                                                       class="ml-2 block text-sm text-gray-900">
-                                                    {{ _('Remember me') }}
-                                                </label>
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex items-center">
+                                                    {{ login_user_form.remember }}
+                                                    <label for="remember-me"
+                                                           class="ml-2 block text-sm text-gray-900">
+                                                        {{ _('Remember me') }}
+                                                    </label>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <button type="submit">
-                                            {{ render_field(login_user_form.submit) }}
-                                        </button>
-                                    </form>
+                                            <button type="submit">
+                                                {{ render_field(login_user_form.submit) }}
+                                            </button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>

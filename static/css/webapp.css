@@ -1420,6 +1420,10 @@ input::placeholder {
   max-width: 28rem;
 }
 
+.max-w-3xl {
+  max-width: 48rem;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
@@ -1916,6 +1920,10 @@ input::placeholder {
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
 }
 
 .pt-8 {
@@ -2731,6 +2739,11 @@ input::placeholder {
     padding-right: 2rem;
   }
 
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .lg\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -2756,16 +2769,12 @@ input::placeholder {
     padding-bottom: 8rem;
   }
 
-  .lg\:pt-24 {
-    padding-top: 6rem;
+  .lg\:pt-16 {
+    padding-top: 4rem;
   }
 
   .lg\:pt-32 {
     padding-top: 8rem;
-  }
-
-  .lg\:pb-24 {
-    padding-bottom: 6rem;
   }
 
   .lg\:pl-12 {

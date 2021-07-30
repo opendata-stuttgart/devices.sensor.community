@@ -113,5 +113,6 @@ SENSOR_LOCATION_UPDATE_INTERVAL = 60 * 60 * 24 * 3  # 3 days
 SENSOR_DEFAULT_OWNER = 17
 
 LANGUAGES = {
-    'en': 'English'
+    'en': 'English',
+    'de': 'German'
 }
