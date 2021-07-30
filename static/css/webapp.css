@@ -1412,10 +1412,6 @@ input::placeholder {
   min-width: 100%;
 }
 
-.max-w-sm {
-  max-width: 24rem;
-}
-
 .max-w-md {
   max-width: 28rem;
 }
@@ -1820,11 +1816,6 @@ input::placeholder {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
-.from-gray-50 {
-  --tw-gradient-from: #f9fafb;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(249, 250, 251, 0));
-}
-
 .from-brand-white {
   --tw-gradient-from: #FFFFFF;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
@@ -1932,10 +1923,6 @@ input::placeholder {
 
 .pr-40 {
   padding-right: 10rem;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
 }
 
 .pb-3 {
