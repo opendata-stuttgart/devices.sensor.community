@@ -288,11 +288,11 @@ msgstr "датчик температуры/ветра/CO₂ ppm"
 
 #: webapp/personal/views.py:47
 msgid "noise sensor"
-msgstr ""
+msgstr "датчик шума"
 
 #: webapp/personal/views.py:48
 msgid "radiation sensor"
-msgstr ""
+msgstr "датчик радиации"
 
 #: webapp/personal/views.py:219
 msgid "Settings saved successfully."
@@ -352,11 +352,11 @@ msgstr "Настрой свой сенсор"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
 msgid "Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
-msgstr ""
+msgstr "Поддержать Sensor.community на Betterplace.org"
 
 #: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
 msgid "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
-msgstr ""
+msgstr "Пожертовать для<br>Sensor.Community<br>на<br><span>Betterplace.org</span>"
 
 #: webapp/templates/index.html:16
 msgid "Configure Luftdaten"
@@ -602,19 +602,19 @@ msgstr "Обратно к моим сенсорам"
 #: webapp/templates/my-sensor-delete.html:8
 #, python-format
 msgid "Delete sensor %(node_id)s"
-msgstr ""
+msgstr "Удалить сенсор %(node_id)s"
 
 #: webapp/templates/my-sensor-delete.html:9
 msgid "Are you sure you want to delete this sensor?"
-msgstr ""
+msgstr "Уверены что хотите удалить этот сенсор?"
 
 #: webapp/templates/my-sensor-delete.html:10
 msgid "Warning! After deleting you have no more control over the sensor!"
-msgstr ""
+msgstr "Внимание! После удаления сенсора вы не сможете им управлять!"
 
 #: webapp/templates/my-sensor-delete.html:11
 msgid "Also the chipID of this sensor will remain blocked for a new registration!"
-msgstr ""
+msgstr "Также chipID данного сенсора будет заблокирован для повторной регистрации!"
 
 #: webapp/templates/my-sensor-give-success.html:13
 msgid "was handed over."
@@ -994,14 +994,17 @@ msgid ""
 "click <a name=\"expert\" onclick=\"toggle_expert()\" "
 "style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> to enable expert fields"
 msgstr ""
+"нажмите <a name=\"expert\" onclick=\"toggle_expert()\" "
+"style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> для отображения дополнительных настроек"
+
 
 #: webapp/templates/sensor-settings-form.html:34
 msgid "remove"
-msgstr ""
+msgstr "убрать"
 
 #: webapp/templates/sensor-settings-form.html:39
 msgid "add component"
-msgstr ""
+msgstr "добавить компонент"
 
 #: webapp/templates/sensor-settings-form.html:116
 msgid ""
@@ -1021,7 +1024,7 @@ msgstr "Найти введенный адрес"
 
 #: webapp/templates/sensor-settings-form.html:130
 msgid "Please check sensor position."
-msgstr ""
+msgstr "Пожалуйста проверьте расположение сенсора."
 
 #: webapp/templates/emails/recover.html:11
 #: webapp/templates/emails/register-existing.html:11
@@ -1050,6 +1053,9 @@ msgid ""
 "Sincerely,\n"
 "    Your Sensor.Community team"
 msgstr ""
+"С уважением,\n"
+"     Команда Sensor.Community"
+
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
