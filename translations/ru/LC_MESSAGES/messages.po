@@ -1213,7 +1213,7 @@ msgstr "Сохранить данные пользователя."
 
 #: webapp/users/forms.py:124
 msgid "Old Password"
-msgstr "Старый парол"
+msgstr "Старый пароль"
 
 #: webapp/users/forms.py:125
 msgid "New password"
