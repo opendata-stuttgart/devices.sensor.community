@@ -1,146 +1,287 @@
-<h2>{{ _('Basic Information') }} </h2>
+<div class="mt-10 sm:mt-0">
+    <div class="md:grid md:grid-cols-3 gap-6">
+        <div class="md:col-span-1">
+            <div class="px-4 sm:px-0">
+                <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Basic Information') }}</h3>
+                <p class="mt-1 text-sm text-gray-600">
+                    {{ _('This information <strong> won\'t be displayed publicly</strong>, location will be
+                    randomized.') }} <br> {{ _('Choose any name for the sensor, this is to help you distinguish between
+                    multiple sensors.') }}<br>
+                    {{ _('Only precise data can lead to precise evaluations with which we can also argue politically.
+                     Therefore please kept information up to date.') }}
+                </p>
+            </div>
+        </div>
+        <div class="mt-5 md:mt-0 md:col-span-2">
+            <div class="shadow overflow-hidden sm:rounded-md">
+                <div class="px-4 py-5 bg-brand-white sm:p-6">
+                    <div class="grid grid-cols-6 gap-6">
+                        <div class="col-span-6 sm:col-span-3">
+                            {{ render_field(form.name, placeholder="e.g. balcony sensor") }}
+                        </div>
 
-{{ render_field(form.name) }}
-{% if  request.path != "/sensors/register" %}
-{{ render_field(form.inactive) }}
-{% endif %}
-{% set location = form.location %}
-<div class="row">
-    {{ render_field(location.street_name, 'basic') }}
-    {{ render_field(location.street_number, 'basic') }}
-    {{ render_field(location.indoor, 'basic', 'col-md-2') }}
-</div>
+                        {% if  request.path != "/sensors/register" %}
+                            <div class="col-span-6">
+                                {{ render_field(form.inactive) }}
+                            </div>
+                        {% endif %}
 
-<div class="row">
-    {{ render_field(location.postalcode, 'basic', 'col-md-3') }}
-    {{ render_field(location.city, 'basic', 'col-md-5') }}
-    {{ render_field(location.country, 'basic') }}
-</div>
+                        {% set location = form.location %}
+                        <div class="col-span-6">
+                            {{ render_field(location.indoor) }}
+                        </div>
+                        <div class="col-span-4">
+                            {{ render_field(location.street_name) }}
+                        </div>
+                        <div class="col-span-2">
+                            {{ render_field(location.street_number) }}
+                        </div>
 
+                        <div class="col-span-2">
+                            {{ render_field(location.postalcode) }}
+                        </div>
+                        <div class="col-span-4 md:col-span-2">
+                            {{ render_field(location.city) }}
+                        </div>
+                        <div class="col-span-6 md:col-span-2">
+                            {{ render_field(location.country) }}
+                        </div>
 
-<h2>{{ _('Additional Information') }}  </h2>
-{{ render_field(form.exact_location) }}
-{{ render_field(form.height) }}
-{{ render_field(form.sensor_position) }}
-{{ render_field(form.description) }}
-<h2>{{ _('Hardware configuration') }}</h2>
-<small>({{ _('click <a name="expert" onclick="toggle_expert()" style="color:blue;"> &gt;&gt;here&lt;&lt; </a> to enable expert fields') }})<br /><br /></small>
-{% for sensor in form.sensors %}
-  <div class="row" id="component-{{ loop.index0 }}">
-    {{ render_field(sensor.sensor_type, 'basic') }}
-    {# this field needs to be renderer as optional in template, as it might be
-    autopopulated in form validation #}
-    {{ render_field(sensor.pin, 'basic', 'col-md-2 xpin-field', required=False) }}
-    <div class="form-group col-md-2 remove-button"{% if request.path != "/sensors/register" or loop.first %} style="display: none;"{% endif %}><label for="sensors-{{ loop.index0 }}-remove"> </label><input type="button" id="sensors-{{ loop.index0 }}-remove" name="sensors-{{ loop.index0 }}-remove" onclick="remove_component(this)" value="{{ _('remove') }}" class="form-control"></div>
-  </div>
-{% endfor %}
-{% if request.path == "/sensors/register" %}
-<div class="row" id="add_component_row">
-<input type="button" value="{{ _('add component') }}" name="add_component_button" id="add_component_button" onclick="add_component();">
-</div>
-{% endif %}
-<br/>
-<script type="text/javascript">
-var sensor_types = { {% for pin in types %}
-"{{ pin }}": {{ types[pin] }},
-{% endfor%}
-};
-var sensors = document.querySelectorAll('[id$="sensor_type"]');
-for (i=0;i<sensors.length;i++) {
-	sensors[i].onchange = function(){document.getElementById(this.getAttribute('id').replace('sensor_type','pin')).value = sensor_types[this.value];};
-{% if  request.path == "/sensors/register" %}
-	document.getElementById(sensors[i].getAttribute('id').replace('sensor_type','pin')).value = sensor_types[sensors[i].value];
-{% endif %}
-}
+                        <div class="col-span-3">
+                            {{ render_field(location.latitude) }}
+                        </div>
 
-function orderSelect($element) {
-    var selected_item = $element.selectedIndex;
-    var selected_lang = $element.options[selected_item].value;
-    var options   = $element.getElementsByTagName('option'),
-        n_options = options.length,
-        temp = [],
-        parts,
-        i,
-        new_selected_item;
+                        <div class="col-span-3">
+                            {{ render_field(location.longitude) }}
+                        </div>
 
-    for(i = n_options; i --;) {
-        temp[i] = options[i].text + " || " + options[i].value ; 
-    }
+                        <div class="col-span-6 mt-4">
+                            <button id="sensor-setting-use-address" type="button"
+                                    class="btn-small btn-small-primary">{{ _ ('Lookup entered address') }}
+                            </button>
+                        </div>
+                        <div class="col-span-6 bg-brand-yellowLight mt-4">
+                            <div id="sensor-settings-map" class="w-full h-56 overflow-hidden">
+                            </div>
+                        </div>
+                        <div class="col-span-6 mt-4">
+                            <p class="text-sm text-gray-500">{{ _('The system can also try to make a geoposition out of the address, but we would be happy if you would specify the position with the map below.') }} </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    temp.sort();
+    <div class="hidden sm:block" aria-hidden="true">
+        <div class="py-5">
+            <div class="border-t border-gray-200"></div>
+        </div>
+    </div>
 
-    for(i = n_options; i --;) {
-        parts = temp[i].split(' || ');
+    <div class="mt-10 sm:mt-0">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="md:col-span-1">
+                <div class="px-4 sm:px-0">
+                    <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Additional Information') }} </h3>
+                    <p class="mt-1 text-sm text-gray-600">
+                          {{ _('Metadata that helps us understand where the sensor is installed at the site.') }}
+                    </p>
+                </div>
+            </div>
+            <div class="mt-5 md:mt-0 md:col-span-2">
+                <div class="shadow overflow-hidden sm:rounded-md">
+                    <div class="px-4 py-5 bg-brand-white sm:p-6">
+                        <div class="grid grid-cols-6 gap-6">
+                            <div class="col-span-6">
+                                {{ render_field(form.exact_location) }}
+                            </div>
 
-        options[i].text  = parts[0];
-        options[i].value = parts[1]; 
-	if (options[i].value == selected_lang) {
-		new_selected_item = i;
+                            <div class="col-span-6 md:col-span-3">
+                                {{ render_field(form.height, placeholder="7 m") }}
+                            </div>
+
+                            <div class="col-span-6 md:col-span-3">
+                                {{ render_field(form.sensor_position) }}
+                            </div>
+
+                            <div class="col-span-6">
+                                {{ render_field(form.description) }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden sm:block" aria-hidden="true">
+        <div class="py-5">
+            <div class="border-t border-gray-200"></div>
+        </div>
+    </div>
+
+    <div class="mt-10 sm:mt-0">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="md:col-span-1">
+                <div class="px-4 sm:px-0">
+                    <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Hardware configuration') }}</h3>
+                    <p class="mt-1 text-sm text-gray-600">
+                        {{ _('This is where you configure your sensor.') }}
+                    </p>
+                </div>
+            </div>
+            <div class="mt-5 md:mt-0 md:col-span-2">
+                <div class="shadow overflow-hidden sm:rounded-md">
+                    <div class="px-4 py-5 bg-brand-white sm:p-6">
+                        {% for sensor in form.sensors %}
+                            <div id="component-{{ loop.index0 }}" class="grid grid-cols-6 gap-6 py-3">
+                                <div class="col-span-6 md:col-span-2">
+                                    {{ sensor.sensor_type(class="bg-brand-white relative w-full border border-gray-300 rounded-md shadow-sm p-3 text-left  cursor-default focus:outline-none focus:ring-1 focus:ring-brand-green focus:border-brand-green sm:text-sm") }}</div>
+                                <div class="col-span-6 md:col-span-1">
+                                    {{ sensor.pin( class='xpin-field input-field', required=False) }}
+                                </div>
+                                <div class="md:col-span-1">
+                                </div>
+                                <div class="remove-button col-span-6 md:col-span-2 mt-1"{% if request.path !=
+                            "/sensors/register" or
+                            loop.first %}
+                                     style="display: none;" {% endif %}>
+                                    <label for="sensors-{{ loop.index0 }}-remove"> </label>
+                                    <input type="button" id="sensors-{{ loop.index0 }}-remove"
+                                           name="sensors-{{ loop.index0 }}-remove"
+                                           onclick="remove_component(this)"
+                                           value="{{ _('Remove component') }}"
+                                           class="btn-small btn-small-delete">
+                                </div>
+                            </div>
+                        {% endfor %}
+                        {% if request.path == "/sensors/register" %}
+                            <div id="add_component_row" class="mt-2">
+                                <input type="button" value="{{ _('Add component') }}"
+                                       name="add_component_button"
+                                       id="add_component_button"
+                                       onclick="add_component();" class="btn-small btn-small-secondary">
+                            </div>
+                        {% endif %}
+                        {% if request.path != "/sensors/register" %}
+                            <div class="border border-b border-gray-200 my-4"></div>
+                            <div class="grid grid-cols-6 gap-y-6 gap-x-3" id="component-new">
+                                <div class="col-span-6 md:col-span-2 mt-2 md:mt-7">
+                                    {{ _('Add Component') }}
+                                </div>
+                                <div class="col-span-3 md:col-span-2">
+                                    {{ render_field(formAddSensor.sensor_type) }}
+                                </div>
+                                <div class="col-span-3 md:col-span-1">
+                                    {{ render_field(formAddSensor.pin, 'xpin-visible', required=False) }}
+                                </div>
+                                <div class="col-span-1 md:col-span-1 -mt-1 md:mt-6">
+                                    <input type="submit" name="addSensor" class="btn-small btn-small-secondary"
+                                           value="{{ _('Save') }}">
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                    <div class="px-4 py-3 bg-gray-50 sm:px-6 flex">
+                        <a type="submit" onclick="toggle_expert()"
+                           class="btn-small btn-small-secondary mr-4">
+                            {{ _('Enable expert fields') }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hidden sm:block" aria-hidden="true">
+        <div class="py-5">
+        </div>
+    </div>
+
+    <div class="mt-10 sm:mt-0">
+        <div class="md:grid md:grid-cols-3 md:gap-6">
+            <div class="md:col-span-1">
+                <div class="px-4 sm:px-0">
+                </div>
+            </div>
+            <div class="overflow-hidden sm:rounded-md">
+                {% if request.path == "/sensors/register" %}
+                    {{ form.submit(class="btn btn-primary") }}
+                {% else %}
+                    <input type="submit" name="update" class="btn btn-primary" value="Update settings">
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var sensor_types = { {% for pin in types %}
+                "{{ pin }}": {{ types[pin] }},
+            {% endfor%}
+        };
+        var sensors = document.querySelectorAll('[id$="sensor_type"]');
+        for (i = 0; i < sensors.length; i++) {
+            sensors[i].onchange = function () {
+                document.getElementById(this.getAttribute('id').replace('sensor_type', 'pin')).value = sensor_types[this.value];
+            };
+            {% if  request.path == "/sensors/register" %}
+                document.getElementById(sensors[i].getAttribute('id').replace('sensor_type', 'pin')).value = sensor_types[sensors[i].value];
+            {% endif %}
         }
-    }
-    $element.selectedIndex = new_selected_item;
-}
-orderSelect(document.getElementById('location-country'));
 
-function toggle_expert() {
-	var fields = document.getElementsByClassName("xpin-field");
-	for(var i = 0; i < fields.length; i++) {
-	   fields[i].classList.toggle('xpin-visible');
-	}
-}
+        function orderSelect($element) {
+            var selected_item = $element.selectedIndex;
+            var selected_lang = $element.options[selected_item].value;
+            var options = $element.getElementsByTagName('option'),
+                n_options = options.length,
+                temp = [],
+                parts,
+                i,
+                new_selected_item;
 
-function add_component() {
-    new_node = document.getElementById('component-0').cloneNode(true);
-    component_count = document.querySelectorAll('[id ^= component]').length;
-    new_node.innerHTML = new_node.innerHTML.replaceAll('sensors-0','sensors-' + component_count);
-    new_node.id='component-'+component_count;
-    new_node.getElementsByClassName('remove-button')[0].style = '';
-    button_node = document.getElementById('add_component_row');
-    button_node.parentNode.insertBefore(new_node,button_node);
-    return false;
-}
+            for (i = n_options; i--;) {
+                temp[i] = options[i].text + " || " + options[i].value;
+            }
 
-function remove_component(node) {
-	node.parentNode.parentNode.remove();
-	for (i=0; i < document.querySelectorAll('[ id ^= component]').length;i++) {
-		document.querySelectorAll('[ id ^= component]')[i].id = 'component-'+i;
-		document.querySelectorAll('[ id ^= component]')[i].innerHTML = document.querySelectorAll('[ id ^= component]')[i].innerHTML.replace(/sensors-(\d*)/g,'sensors-'+i);
-	}
-	return false;
-}
+            temp.sort();
 
-</script>
+            for (i = n_options; i--;) {
+                parts = temp[i].split(' || ');
 
-<div class="row">
-    <div class="col-md-12">
-        <p>{{ _('The more precise the data we have, the better we can evaluate the data and thus energize statements. The system can also try to make a geoposition out of the address, but we would be happy if you would specify the position with the map below.') }} </p>
-    </div>
-</div>
+                options[i].text = parts[0];
+                options[i].value = parts[1];
+                if (options[i].value == selected_lang) {
+                    new_selected_item = i;
+                }
+            }
+            $element.selectedIndex = new_selected_item;
+        }
 
-<div class="row">
-  {{ render_field(location.latitude, 'basic', 'col-md-4') }}
-  {{ render_field(location.longitude, 'basic', 'col-md-4') }}
-  <div class="col">
-    <label class="control-label">&nbsp;</label>
-    <button type="button" class="btn btn-default btn-block" id="sensor-setting-use-address">{{ _('Lookup entered address') }}</button>
-  </div>
-</div>
-<div class="row">
-    <div class="col-md-12" id="sensor-setting-location-not-found-msg" style="display: none; color: red">
-	{{ _('Please check sensor position.') }}
-    </div>
-</div>
+        orderSelect(document.getElementById('location-country'));
 
-<div class="row">
-    <div class="col-md-12">
-        <div id="sensor-settings-map"></div>
-    </div>
-</div>
+        function toggle_expert() {
+            var fields = document.getElementsByClassName("xpin-field");
+            for (var i = 0; i < fields.length; i++) {
+                fields[i].classList.toggle('xpin-visible');
+            }
+        }
 
-<div class="row m-3">
-    <div class="form-group col-md-6 offset-md-3">
-        {{ form.submit(class="form-control btn btn-primary") }}
-    </div>
-</div>
+        function add_component() {
+            new_node = document.getElementById('component-0').cloneNode(true);
+            component_count = document.querySelectorAll('[id ^= component]').length;
+            new_node.innerHTML = new_node.innerHTML.replaceAll('sensors-0', 'sensors-' + component_count);
+            new_node.id = 'component-' + component_count;
+            new_node.getElementsByClassName('remove-button')[0].style = '';
+            button_node = document.getElementById('add_component_row');
+            button_node.parentNode.insertBefore(new_node, button_node);
+            return false;
+        }
 
-{{ form.csrf_token }}
+        function remove_component(node) {
+            node.parentNode.parentNode.remove();
+            for (i = 0; i < document.querySelectorAll('[ id ^= component]').length; i++) {
+                document.querySelectorAll('[ id ^= component]')[i].id = 'component-' + i;
+                document.querySelectorAll('[ id ^= component]')[i].innerHTML = document.querySelectorAll('[ id ^= component]')[i].innerHTML.replace(/sensors-(\d*)/g, 'sensors-' + i);
+            }
+            return false;
+        }
+    </script>
+    {{ form.csrf_token }}

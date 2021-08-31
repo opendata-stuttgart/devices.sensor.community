@@ -2,10 +2,60 @@
 {% from "_formhelpers.html" import render_field %}
 
 {% block content %}
+    <div class="overflow-hidden lg:relative py-16">
+        <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl">
+            <div class="mt-6">
+                <div class="mt-6 sm:max-w-xl">
+                    <h1 class="text-4xl md:text-4xl font-extrabold text-black tracking-tight">
+                        {{ _('Sensor registration') }}
+                    </h1>
+                    <div class=" hidden md:inline">
+                        <p class="mt-6 text-xl ">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <form id="sensor-setting-form" action="{{ url_for('.sensor_register') }}" method="POST">
-        <h1>{{ _('Sensor registration') }}</h1>
-        {{ render_field(form.sensor_id) }}
-        {{ render_field(form.sensor_board) }}
-        {% include "sensor-settings-form.html" with context %}
+        <div class="overflow-hidden lg:relative lg:py-12 pt-8">
+            <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl">
+                <div class="md:grid md:grid-cols-3 md:gap-6">
+                    <div class="md:col-span-1">
+                        <div class="px-4 sm:px-0">
+                            <h3 class="text-lg font-medium leading-6 text-gray-900">{{ _('Sensor registration') }}</h3>
+                            <p class="mt-1 text-sm text-gray-600">
+                                {{ _('Users of ESP32 boards, Raspberry PI or Smogomierz sensor
+                                    <strong>just enter the numeric part of the name.</strong> ') }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-5 md:mt-0 md:col-span-2">
+                        <div class="shadow sm:rounded-md sm:overflow-hidden">
+                            <div class="px-4 py-5 bg-brand-white space-y-6 sm:p-6">
+                                <div class="grid grid-cols-6 gap-6">
+                                    <div class="col-span-6 sm:col-span-3">
+                                        {{ render_field(form.sensor_id, style="prefix", placeholder="15298") }}
+                                    </div>
+                                    <div class="col-span-6 sm:col-span-3">
+                                        {{ render_field(form.sensor_board) }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden sm:block" aria-hidden="true">
+                    <div class="py-5">
+                        <div class="border-t border-gray-200"></div>
+                    </div>
+                </div>
+
+                {% include "sensor-settings-form.html" with context %}
+            </div>
+        </div>
     </form>
+    <div class="pb-12"></div>
+
 {% endblock %}

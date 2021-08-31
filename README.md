@@ -26,13 +26,9 @@ Example for translation of a text with more than one line:
 If you don't have a Github account download the two files via the `Raw` button directly right over their source code. Send us your file with the translation to "tech (at) sensor.community".  
 
 ## Configuration file
-Default configuration settings (set from `webapp/default_settings.py`) are
-suitable for running in non-production Docker environment. If you need to
-override any configuration variables, you can create `webapp/config.py` file
-based off `webapp/config.py.dist`.
+The default configuration settings are set in`webapp/default_settings.py`. If you need to override any configuration variables, you can create `webapp/config.py` file based off `webapp/config.py.dist`.
 
-Additionally, when running outside of docker, `.flaskenv` file is required.
-Basic development environment file can be copied from `.flaskenv.dist`.
+Additionally, `.flaskenv` file is required. Basic development environment file can be copied from `.flaskenv.dist`.
 
 ## virtualenv setup
 
@@ -53,26 +49,24 @@ Basic development environment file can be copied from `.flaskenv.dist`.
 
     flask run
 
-## Docker development
-To ease up development Docker container and relevant `docker-compose.yml`
-project file has been created. Following will start up basic development
-environment including MySQL database with "external" schema and redis. Code reloads are active by default.
+## Compile CSS
+install node packages
 
-    docker-compose up
+```bash
+npm install
+```
 
-Web application is available on http://localhost:5000/
+The project uses [Tailwind CSS](https://tailwindcss.com/), go and check out the [documentation](https://tailwindcss.com/docs) to get started.
 
-To create new database migration:
+```
+npm run watch
+```
 
-    docker-compose run --rm web flask db migrate -m 'Short change summary'
+To get ready for production compile the final version
 
-Flask environment can be overriden by modifying `docker-compose.yml` only.
-
-### Gulp automatic rebuilds
-To start automatic CSS/JS rebuilds on change use this:
-
-    docker-compose run --rm gulp npm start
-
+```bash
+npm run build
+```
 
 ### Create new language
 ##### extract text and `lazy_gettext()` functions

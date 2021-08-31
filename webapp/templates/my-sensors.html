@@ -6,43 +6,91 @@
 {% endblock %}
 
 {% block content %}
-    <h1>{{ _('My sensors') }} <span class="betterplace"><a title="{{ _('Donate for Sensor.Community (Hardware, Software) now on Betterplace.org') }}" target="_blank" href="https://www.betterplace.org/de/projects/38071-fur-den-feinstaub-sensor-sds011-als-bastel-kit-spenden/">{{ _('Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>') }}</a></span></h1>
-    <p> {{ _('All sensors assigned to your account can be found in this overview.') }} </p>
-    <table class="table table-striped">
-        <thead>
-        <tr>
-            <th>#</th>
-            <th class="hidden-sm-down">{{ _('Sensor UID') }} </th>
-            <th>{{ _('Name') }} </th>
-            <th class="hidden-md-down">{{ _('Created') }} / <br/>{{ _('Last Update') }} </th>
-            <th class="text-right">{{ _('Functions') }}</th>
-        </tr>
-        </thead>
-        <tbody>
-        {% for node in nodes %}
-            <tr>
-                <td>{{ node.id }}</td>
-                <td class="hidden-sm-down">{{ node.uid }}</td>
-                <td>{{ node.name }}</td>
-                <td class="hidden-md-down">{{ node.created }} UTC <br />{{ node.modified }} UTC</td>
-                <td class="text-right">
-                    <a class="btn btn-sm btn-info" href="{{ url_for('personal.sensor_data', id=node.id) }}">{{ _('Data') }}</a>
-                    <a class="btn btn-sm btn-primary" href="{{ url_for('personal.sensor_settings', id=node.id) }}">{{ _('Settings') }} </a>
-                    <a class="btn btn-sm btn-warning" href="{{ url_for('personal.sensor_transfer', id=node.id) }}">{{ _('Hand over sensor') }}</a>
-                    <a class="btn btn-sm btn-warning" href="{{ url_for('personal.sensor_delete', id=node.id) }}">{{ _('Delete sensor') }}</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr><td colspan="5" class="text-muted text-center">{{ _('No sensors found') }}</td></tr>
-        {% endfor %}
-        <tfoot>
-            <tr>
-                <td colspan="5">
-                    <a href="{{ url_for('.sensor_register') }}" class="btn btn-primary btn-block offset-md-3 col-md-6">{{ _('Register new sensor') }}</a>
-                </td>
-            </tr>
-        </tfoot>
-        </tbody>
-    </table>
+    <div class="overflow-hidden lg:relative bg-gradient-to-b from-brand-white via-gray-50 to-brand-white py-16">
+        <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl">
+            <div class="mt-6">
+                <div class="mt-6 sm:max-w-xl">
+                    <h1 class="text-4xl md:text-4xl font-extrabold text-black tracking-tight">
+                        {{ _('My sensors') }}
+                    </h1>
+                </div>
+                <p class="mt-6 text-xl ">
+                    {{ _('All sensors assigned to your account can be found in this overview.') }}
+                </p>
+            </div>
+        </div>
+        <div class="pt-8 overflow-hidden lg:relative lg:py-12">
+            <div class="mx-auto text-left max-w-md px-4 sm:max-w-3xl lg:max-w-7xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {% for node in nodes %}
+                        <div class="border-gray-300 border border-gray-200 border-solid
+                    md:flex md:flex-col rounded-2xl shadow-md">
+                            <div class="p-6 md:flex-grow md:flex md:flex-col">
+                                <h3 class="text-2xl font-semibold text-gray-800 md:flex-grow">{{ node
+                            .name }}</h3>
+                                <div class="md:flex-grow-0">
+                                    <div class="flex items-center mt-10 text-gray-700">
+                                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg"
+                                             fill="none" viewBox="0
+                                     0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                        </svg>
+
+                                        <h4 class="px-2 text-sm">{{ _('Last Update') }}: {{ node.modified }} UTC</h4>
+                                    </div>
+
+                                    <div class="flex items-center mt-4 text-gray-700">
+                                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0
+                                  24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"/>
+                                        </svg>
+
+                                        <h4 class="px-2 text-sm flex flex-grow-0 flex-row"> {{ _('Chip ID') }}: {{ node.uid }}</h4>
+                                    </div>
+
+                                    <div class="flex items-center mt-4 text-gray-700">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                             viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                  d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                                        </svg>
+                                        <h4 class="px-2 text-sm">{{ _('Node ID') }}: {{ node.id }} </h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="gap-2 bg-gray-50 p-6 grid grid-cols-2 md:grid-cols-none md:flex-row md:flex">
+                                <a href="{{ url_for('personal.sensor_data', id=node.id) }}"
+                                   class="btn-small btn-small-secondary">{{ _('Data') }}</a>
+                                <a href="{{ url_for('personal.sensor_settings', id=node.id) }}"
+                                   class="btn-small btn-small-secondary">{{ _('Settings') }} </a>
+                                <a href="{{ url_for('personal.sensor_transfer', id=node.id) }}"
+                                   class="btn-small btn-small-secondary">{{ _('Transfer') }}</a>
+                                <a href="{{ url_for('personal.sensor_delete', id=node.id) }}"
+                                   class="btn-small btn-small-delete">{{ _('Delete') }}</a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    <div class="w-48 mx-auto my-auto">
+                        <a href="{{ url_for('.sensor_register') }}">
+                            <div class="relative shadow-md rounded-2xl border-2 p-12
+                        hover:border-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2
+                        focus:ring-brand-green border-gray-300 border-dashed text-center text-gray-500 hover:text-brand-black">
+                                <svg class="mx-auto h-12 w-12" xmlns="http://www.w3.org/2000/svg"
+                                     fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M12 4v16m8-8H4"/>
+                                </svg>
+                                <span class="mt-2 block font-medium">{{ _('Register new
+                            sensor') }}</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:relative lg:py-32"></div>
+    </div>
 
 {% endblock %}
