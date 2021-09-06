@@ -3,10 +3,10 @@
 {% from "_formhelpers.html" import render_submit %}
 
 {% block content %}
-    <div class="overflow-hidden lg:relative py-16 lg:py-24">
+    <div class="overflow-hidden lg:relative pt-16 lg:py-24">
         <div class="mx-auto text-center md:text-left px-4 max-w-3xl px-6 lg:max-w-7xl lg:grid
         lg:grid-cols-2 lg:gap-24">
-            <div class="py-16 ">
+            <div class="pt-16">
                 <div class="inline-flex space-x-4">
                     <img alt="sensor community logo" class="h-8 w-auto"
                          src="/static/images/signet.svg">
@@ -28,6 +28,16 @@
                         <p class="mt-6 text-xl  font-bold">{{ _('Code a difference: Use your skills to improve your city!') }}</p>
                         <a href="https://sensor.community/de/" target="_blank" class="mt-6 text-xl
                             text-brand-funcRed">{{ _('Find out more about Sensor.Community') }}</a>
+                    </div>
+                    <div class="mt-12 lg:hidden">
+                        <div class="flex items-center justify-center animate-bounce transition duration-100 ease-in-out cursor-pointer"
+                             type="button">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-width="2"></path>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,7 +61,7 @@
                     </div>
 
                     <div class="relative sm:mx-auto sm:max-w-3xl sm:px-0 lg:max-w-none lg:h-full lg:pl-12">
-                        <div class="mt-40 rounded-2xl flex">
+                        <div class="mt-16 md:mt-32 rounded-2xl flex">
                             <div class="flex-1 flex flex-col justify-center py-12 px-4 lg:flex-none lg:px-16
                             bg-gray-100">
                                 <div class="mx-auto w-full">
