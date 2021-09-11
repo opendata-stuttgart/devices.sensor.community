@@ -1746,6 +1746,11 @@ input::placeholder {
   border-style: dashed;
 }
 
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: rgba(243, 244, 246, var(--tw-border-opacity));
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
@@ -2061,6 +2066,11 @@ input::placeholder {
 .text-gray-200 {
   --tw-text-opacity: 1;
   color: rgba(229, 231, 235, var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgba(209, 213, 219, var(--tw-text-opacity));
 }
 
 .text-gray-400 {

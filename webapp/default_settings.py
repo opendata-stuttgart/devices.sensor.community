@@ -59,6 +59,7 @@ SQLALCHEMY_BINDS = {
     'external': 'mysql+pymysql://root:password@127.0.0.1:3306/external',
 }
 
+
 # Predefined sensor PINs
 SENSOR_TYPES = {
     1: "5",  # PPD42NS

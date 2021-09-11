@@ -23,13 +23,17 @@
             <div class="mx-auto text-left max-w-md px-4 sm:max-w-3xl lg:max-w-7xl">
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {% for node in nodes %}
-                        <div class="border-gray-300 border border-gray-200 border-solid
-                    md:flex md:flex-col rounded-2xl shadow-md">
+                        <div class="border {% if node.inactive == True %}
+                                border-dashed border-gray-100 {% else %} border-gray-200 border-solid {% endif %}
+                                md:flex md:flex-col rounded-2xl shadow-md">
                             <div class="p-6 md:flex-grow md:flex md:flex-col">
-                                <h3 class="text-2xl font-semibold text-gray-800 md:flex-grow">{{ node
-                            .name }}</h3>
+                                <h3 class="text-2xl font-semibold  {% if node.inactive == True %}
+                                text-gray-400 {% else %} text-gray-800 {% endif %}
+
+                                md:flex-grow">{{ node.name }}</h3>
                                 <div class="md:flex-grow-0">
-                                    <div class="flex items-center mt-10 text-gray-700">
+                                    <div class="flex items-center mt-10 {% if node.inactive == True %}
+                                text-gray-400 {% else %} text-gray-800 {% endif %}">
                                         <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg"
                                              fill="none" viewBox="0
                                      0 24 24" stroke="currentColor">
@@ -40,7 +44,8 @@
                                         <h4 class="px-2 text-sm">{{ _('Last Update') }}: {{ node.modified }} UTC</h4>
                                     </div>
 
-                                    <div class="flex items-center mt-4 text-gray-700">
+                                    <div class="flex items-center mt-4 {% if node.inactive == True %}
+                                text-gray-400 {% else %} text-gray-800 {% endif %}">
                                         <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0
                                   24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -50,7 +55,8 @@
                                         <h4 class="px-2 text-sm flex flex-grow-0 flex-row"> {{ _('Chip ID') }}: {{ node.uid }}</h4>
                                     </div>
 
-                                    <div class="flex items-center mt-4 text-gray-700">
+                                    <div class="flex items-center mt-4 {% if node.inactive == True %}
+                                text-gray-400 {% else %} text-gray-800 {% endif %}">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
                                              viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -58,17 +64,42 @@
                                         </svg>
                                         <h4 class="px-2 text-sm">{{ _('Node ID') }}: {{ node.id }} </h4>
                                     </div>
+
+                                    <div class="flex items-center mt-4 {% if node.inactive == True %}
+                                text-gray-400 {% else %} text-gray-800 {% endif %}">
+                                        {% if node.inactive == False %}
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                                 fill="currentColor">
+                                                <path fill-rule="evenodd"
+                                                      d="M5.05 3.636a1 1 0 010 1.414 7 7 0 000 9.9 1 1 0 11-1.414 1.414 9 9 0 010-12.728 1 1 0 011.414 0zm9.9 0a1 1 0 011.414 0 9 9 0 010 12.728 1 1 0 11-1.414-1.414 7 7 0 000-9.9 1 1 0 010-1.414zM7.879 6.464a1 1 0 010 1.414 3 3 0 000 4.243 1 1 0 11-1.415 1.414 5 5 0 010-7.07 1 1 0 011.415 0zm4.242 0a1 1 0 011.415 0 5 5 0 010 7.072 1 1 0 01-1.415-1.415 3 3 0 000-4.242 1 1 0 010-1.415zM10 9a1 1 0 011 1v.01a1 1 0 11-2 0V10a1 1 0 011-1z"
+                                                      clip-rule="evenodd"/>
+                                            </svg>
+                                        {% else %}
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
+                                                 fill="currentColor">
+                                                <path d="M3.707 2.293a1 1 0 00-1.414 1.414l6.921 6.922c.05.062.105.118.168.167l6.91 6.911a1 1 0 001.415-1.414l-.675-.675a9.001 9.001 0 00-.668-11.982A1 1 0 1014.95 5.05a7.002 7.002 0 01.657 9.143l-1.435-1.435a5.002 5.002 0 00-.636-6.294A1 1 0 0012.12 7.88c.924.923 1.12 2.3.587 3.415l-1.992-1.992a.922.922 0 00-.018-.018l-6.99-6.991zM3.238 8.187a1 1 0 00-1.933-.516c-.8 3-.025 6.336 2.331 8.693a1 1 0 001.414-1.415 6.997 6.997 0 01-1.812-6.762zM7.4 11.5a1 1 0 10-1.73 1c.214.371.48.72.795 1.035a1 1 0 001.414-1.414c-.191-.191-.35-.4-.478-.622z"/>
+                                            </svg>
+                                        {% endif %}
+
+                                        <h4 class="px-2 text-sm">{{ _('Inactive') }}: {{ node.inactive }} </h4>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="gap-2 bg-gray-50 p-6 grid grid-cols-2 md:grid-cols-none md:flex-row md:flex">
+                            <div class="gap-2 {% if node.inactive == True %}
+                                bg-gray-50 {% else %} bg-gray-100 {% endif %}  p-6 grid grid-cols-2
+                                md:grid-cols-none md:flex-row md:flex">
                                 <a href="{{ url_for('personal.sensor_data', id=node.id) }}"
-                                   class="btn-small btn-small-secondary">{{ _('Data') }}</a>
+                                   class="btn-small btn-small-secondary {% if node.inactive == True %}
+                                text-gray-300 {% else %} text-gray-800 {% endif %} ">{{ _('Data') }}</a>
                                 <a href="{{ url_for('personal.sensor_settings', id=node.id) }}"
-                                   class="btn-small btn-small-secondary">{{ _('Settings') }} </a>
+                                   class="btn-small btn-small-secondary {% if node.inactive == True %}
+                                text-gray-300 {% else %} text-gray-800 {% endif %} ">{{ _('Settings') }} </a>
                                 <a href="{{ url_for('personal.sensor_transfer', id=node.id) }}"
-                                   class="btn-small btn-small-secondary">{{ _('Transfer') }}</a>
+                                   class="btn-small btn-small-secondary {% if node.inactive == True %}
+                                text-gray-300 {% else %} text-gray-800 {% endif %}">{{ _('Transfer') }}</a>
                                 <a href="{{ url_for('personal.sensor_delete', id=node.id) }}"
-                                   class="btn-small btn-small-delete">{{ _('Delete') }}</a>
+                                   class="btn-small btn-small-delete {% if node.inactive == True %}
+                                text-gray-300 {% else %} text-gray-800 {% endif %}">{{ _('Delete') }}</a>
                             </div>
                         </div>
                     {% endfor %}
