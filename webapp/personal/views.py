@@ -199,7 +199,6 @@ def sensor_settings(id):
         db.session.commit()
         current_app.logger.info('%s updated node %s' % (current_user.email, id))
         flash(_('Settings saved successfully'), 'success')
-        return redirect(url_for('.sensor_list'))
 
     if "addSensor" in request.form and form_add_sensor.validate():
         try:
@@ -209,8 +208,6 @@ def sensor_settings(id):
             db.session.commit()
 
             flash(_('Component successfully registered'), 'success')
-            return render_template('my-sensor-settings.html', node=node, form=form, formAddSensor=form_add_sensor,
-                           types=current_app.config['SENSOR_TYPES'])
         except exc.IntegrityError:
             db.session.rollback()
             flash(_('Pin is already in use'), 'warning')
@@ -242,7 +239,6 @@ def sensor_register():
             db.session.commit()
 
             flash(_('Sensor successfully registered.'), 'success')
-            return redirect(url_for('.sensor_list'))
         except exc.IntegrityError:
             db.session.rollback()
             flash(_('This sensor ID is already registered'), 'warning')
