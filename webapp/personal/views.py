@@ -209,7 +209,8 @@ def sensor_settings(id):
             db.session.commit()
 
             flash(_('Component successfully registered'), 'success')
-            return redirect(url_for('.sensor_list'))
+            return render_template('my-sensor-settings.html', node=node, form=form, formAddSensor=form_add_sensor,
+                           types=current_app.config['SENSOR_TYPES'])
         except exc.IntegrityError:
             db.session.rollback()
             flash(_('Pin is already in use'), 'warning')
