@@ -24,7 +24,13 @@
                 <div class="hidden lg:flex items-center justify-end space-x-8 lg:flex-1 lg:w-0 z-50 -mt-2 text-sm">
                     <div class="flex">
                         <a href="https://sensor.community/" target="_blank" class="mr-1 font-light">
-                            Mainpage
+                             {{ _('Mainpage') }}
+                        </a>
+                        <span class="transform -rotate-45">&rarr;</span>
+                    </div>
+                    <div class="flex">
+                        <a href="https://sensor.community/en/donate/" target="_blank" class="mr-1 font-light">
+                             {{ _('Donate') }}
                         </a>
                         <span class="transform -rotate-45">&rarr;</span>
                     </div>
@@ -146,7 +152,7 @@
                         <hr class="my-3">
 
                         <a class="flex py-3 mr-2"
-                           href="{lang}/sensors/">
+                           href="https://github.com/opendata-stuttgart/" target="_blank">
                     <span class="pl-2 text-base font-extralight">
                         Github
                     </span>
@@ -154,14 +160,28 @@
                         </a>
 
                         <a class="flex py-3 mr-2"
-                           href="{lang}/sensors/">
+                           href="https://sensor.community/" target="_blank">
                     <span class="pl-2 text-base font-extralight">
-                        Mainpage
+                        {{ _('Mainpage') }}
+                    </span>
+                            <span class="transform -rotate-45">&rarr;</span>
+                        </a>
+                    <a class="flex py-3 mr-2"
+                           href="https://sensor.community/en/donate/" target="_blank">
+                    <span class="pl-2 text-base font-extralight">
+                        {{ _('Donate') }}
+                    </span>
+                            <span class="transform -rotate-45">&rarr;</span>
+                        </a>
+                    <a class="flex py-3 mr-2"
+                           href="https://forum.sensor.community/" target="_blank">
+                    <span class="pl-2 text-base font-extralight">
+                        {{ _('Forum') }}
                     </span>
                             <span class="transform -rotate-45">&rarr;</span>
                         </a>
                         <a class="flex py-3 mr-2"
-                           href="{lang}/sensors/">
+                           href="https://maps.sensor.community/#2/0.0/0.0" target="_blank">
                             <span class="pl-2  text-base font-extralight">Map</span>
                             <span class="transform -rotate-45">&rarr;</span>
                         </a>
