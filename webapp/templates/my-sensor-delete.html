@@ -14,17 +14,17 @@
                     <p>{{ _('Warning! After deleting you have no more control over the sensor!') }}  </p>
                     <p><strong>{{ _('Also the chipID of this sensor will remain blocked for a new
                             registration!') }}  </strong></p>
-                    If not please return <a href="/my-sensors" class="form-control text-brand-funcRed">{{ _
+                    If not please return <a href="/sensors" class="form-control text-brand-funcRed">{{ _
                             ('back to my sensors') }}</a>
                     </p>
                 </div>
             </div>
             <div class="max-w-7xl mx-auto lg:flex items-center">
                 <div class="mt-8 md:flex gap-6">
-                    <a href="/my-sensors" class="w-full flex items-center
-                                    justify-center py-3 px-5 border border-brand-green border-2
-                     text-base font-medium rounded-md text-brand-white bg-brand-green focus:outline-none
-                     focus:ring-2 focus:ring-offset-2">{{ ('Back to my sensors') }}</a>
+                    <a href="/sensors" class="w-full flex items-center justify-center py-3 px-5 border
+                    border-brand-green border-2 text-base font-medium rounded-md text-brand-white bg-brand-green focus:outline-none
+                     focus:ring-2 focus:ring-offset-2 hover:bg-brand-white hover:text-brand-green
+                     hover:border-brand-green focus:outline-none focus:ring-2 focus:ring-offset-2">{{ ('Back to my sensors') }}</a>
                     <form method="POST" action="{{ url_for('.sensor_delete', id=node.id) }}">
                         {{ form.submit(class="w-full flex items-center justify-center py-3 px-5 border-2 mt-8 md:mt-0
                                 text-base font-medium rounded-md text-brand-green border-brand-green bg-brand-white

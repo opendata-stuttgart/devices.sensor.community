@@ -4,11 +4,11 @@
 
 @layer components {
     .btn {
-        @apply border inline-block px-12 py-3 rounded-lg focus:ring focus:ring-offset-2 uppercase tracking-wider font-semibold text-sm cursor-pointer transition duration-300 ease-in-out;
+        @apply border inline-block px-12 py-2 rounded-lg focus:ring-1 focus:ring-offset-1 uppercase tracking-wider font-semibold text-sm cursor-pointer transition duration-300 ease-in-out;
     }
 
     .btn-primary {
-        @apply shadow-sm text-brand-white bg-brand-green hover:bg-brand-white hover:border-brand-green hover:text-brand-green-dark focus:ring-2 focus:ring-offset-1 focus:ring-brand-green;
+        @apply shadow-sm text-brand-white bg-brand-green hover:bg-brand-white hover:border-brand-green hover:text-brand-green-dark focus:ring-0 focus:ring-offset-0 focus:ring-brand-green;
     }
 
     .btn-secondary {
