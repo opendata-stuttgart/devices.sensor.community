@@ -2,41 +2,41 @@
 {% from "_formhelpers.html" import render_field %}
 
 {% block content %}
-    <div class="bg-gradient-to-b from-brand-white via-gray-50 to-brand-white">
-        <div class="overflow-hidden lg:relative lg:py-12">
-            <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl">
-                <div class="md:grid md:grid-cols-3 md:gap-6">
-                    <div class="md:col-span-3">
-                        <div class="px-4 sm:px-0">
-                            <h1 class="text-4xl font-extrabold text-black tracking-tight">
-                                {{ _('Transfer Sensor %(node_id)s', node_id=node.uid) }}
-                            </h1>
-                            <p class="mt-6 text-xl ">
-                                {{ _('This allows you to transfer sensors to another person. This is especially useful if you have ordered a sensor for a friend and want to transfer it to him or her.') }}
-                                If not please return <a href="/my-sensors" class="form-control text-brand-funcRed">{{ _
-                            ('back to my sensors') }}</a>
-                            </p>
-                        </div>
-                    </div>
+    <div class="overflow-hidden lg:relative">
+    <div class="mx-auto text-center md:text-left max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl py-16">
+        <div class="mt-10">
+            <div class="mt-6">
+                <div class="mt-6 sm:max-w-5xl">
+                    <h1 class="text-4xl md:text-4xl font-extrabold text-black tracking-tight">
+                        {{ _('Transfer Sensor %(node_id)s', node_id=node.uid) }}
+                    </h1>
+                    <p class="mt-6 text-base md:text-xl">
+                    <p>{{ _('Warning! After deleting you have no more control over the sensor!') }}  </p>
+                    <p>{{ _('This allows you to transfer sensors to another person. This is especially useful if you have ordered a sensor for a friend and want to transfer it to him or her.') }}
+                                {{ _('If not please return') }}
+                        <a href="/sensors" class="form-control text-brand-funcRed">{{ _('back to my sensors') }}</a>
+                    </p>
                 </div>
-                <div class="mt-12">
-                    <form method="POST" action="{{ url_for('.sensor_transfer', id=node.id) }}">
-                        <div class="grid grid-cols-6 gap-6">
-                            <div class="col-span-6 md:col-span-2">
+            </div>
+            <div class="max-w-7xl mx-auto lg:flex items-center">
+                <div class="mt-8 md:flex">
+                     <form method="POST" action="{{ url_for('.sensor_transfer', id=node.id) }}">
+                        <div class="md:flex grid gap-6">
+                            <div class="col-span-6 md:col-span-7">
                                 {{ form.email(class="input-field", placeholder="Email Adresse") }}
                             </div>
-                            <div class="col-span-6 md:col-span-4">
-                                {{ form.submit(class="btn btn-primary") }}
+                            <div class="col-span-6 md:col-span-5">
+                                {{ form.submit(class="w-full flex items-center
+                                    justify-center py-3 px-5 border border-brand-green border-2
+                     text-base font-medium rounded-md text-brand-white bg-brand-green focus:outline-none
+                     focus:ring-2 focus:ring-offset-2 hover:bg-brand-funcRed hover:text-brand-white hover:border-brand-funcRed focus:outline-none
+                     focus:ring-2 focus:ring-offset-2") }}
                             </div>
                         </div>
                         {{ form.csrf_token }}
                     </form>
-
                 </div>
             </div>
         </div>
     </div>
-
-
-
 {% endblock %}

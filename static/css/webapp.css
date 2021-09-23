@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.15 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -363,6 +363,14 @@ button,
 [role="button"] {
   cursor: pointer;
 }
+
+/**
+ * Override legacy focus reset from Normalize with modern Firefox focus styles.
+ *
+ * This is actually an improvement over the new defaults in Firefox in our testing,
+ * as it triggers the better focus styles even for links, which still use a dotted
+ * outline in Firefox by default.
+ */
 
 table {
   border-collapse: collapse;
@@ -922,8 +930,8 @@ input::placeholder {
   border-width: 1px;
   padding-left: 3rem;
   padding-right: 3rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 600;
@@ -933,9 +941,9 @@ input::placeholder {
 
 .btn:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-  --tw-ring-offset-width: 2px;
+  --tw-ring-offset-width: 1px;
 }
 
 .btn {
@@ -980,11 +988,11 @@ input::placeholder {
 
 .btn-primary:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(8, 73, 69, var(--tw-ring-opacity));
-  --tw-ring-offset-width: 1px;
+  --tw-ring-offset-width: 0px;
 }
 
 .btn-small {
@@ -1780,6 +1788,11 @@ input::placeholder {
   border-color: rgba(156, 163, 175, var(--tw-border-opacity));
 }
 
+.hover\:border-brand-green:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(8, 73, 69, var(--tw-border-opacity));
+}
+
 .hover\:border-brand-funcRed:hover {
   --tw-border-opacity: 1;
   border-color: rgba(233, 53, 89, var(--tw-border-opacity));
@@ -1823,6 +1836,11 @@ input::placeholder {
 .bg-brand-funcRed {
   --tw-bg-opacity: 1;
   background-color: rgba(233, 53, 89, var(--tw-bg-opacity));
+}
+
+.hover\:bg-brand-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
 .hover\:bg-brand-funcRed:hover {
@@ -1919,6 +1937,11 @@ input::placeholder {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-12 {
@@ -2140,6 +2163,11 @@ input::placeholder {
 .hover\:text-brand-white:hover {
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.hover\:text-brand-green:hover {
+  --tw-text-opacity: 1;
+  color: rgba(8, 73, 69, var(--tw-text-opacity));
 }
 
 .hover\:text-brand-funcRed:hover {
@@ -2567,8 +2595,12 @@ input::placeholder {
     grid-column: span 3 / span 3;
   }
 
-  .md\:col-span-4 {
-    grid-column: span 4 / span 4;
+  .md\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .md\:col-span-7 {
+    grid-column: span 7 / span 7;
   }
 
   .md\:mt-0 {
@@ -2605,10 +2637,6 @@ input::placeholder {
 
   .md\:flex-grow {
     flex-grow: 1;
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-3 {
@@ -2731,10 +2759,6 @@ input::placeholder {
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:justify-start {

@@ -37,14 +37,12 @@ SENSOR_TYPES = {
 }
 
 
-@personal.route('/my-sensors')
 @personal.route('/sensors')
 @login_required
 def sensor_list():
     return render_template('my-sensors.html', nodes=current_user.nodes)
 
 
-@personal.route('/my-sensor/<id>/data')
 @personal.route('/sensors/<id>/data')
 @login_required
 def sensor_data(id):
@@ -169,7 +167,6 @@ def sensor_data(id):
     return render_template('my-sensor-data.html', node=node, sensors=sensors)
 
 
-@personal.route('/my-sensor/<id>/settings', methods=['GET', 'POST'])
 @personal.route('/sensors/<id>/settings', methods=['GET', 'POST'])
 @login_required
 def sensor_settings(id):
@@ -198,7 +195,8 @@ def sensor_settings(id):
 
         db.session.commit()
         current_app.logger.info('%s updated node %s' % (current_user.email, id))
-        flash(_('Settings saved successfully'), 'success')
+        flash('Settings saved successfully', 'success')
+        return redirect(url_for('.sensor_list'))
 
     if "addSensor" in request.form and form_add_sensor.validate():
         try:
@@ -207,7 +205,9 @@ def sensor_settings(id):
             db.session.add(sensor)
             db.session.commit()
 
-            flash(_('Component successfully registered'), 'success')
+            flash('Component successfully registered', 'success')
+            return redirect(request.url+'#sensors')
+
         except exc.IntegrityError:
             db.session.rollback()
             flash(_('Pin is already in use'), 'warning')
@@ -238,7 +238,8 @@ def sensor_register():
             db.session.add(node)
             db.session.commit()
 
-            flash(_('Sensor successfully registered.'), 'success')
+            flash('Sensor successfully registered.', 'success')
+            return redirect(url_for('.sensor_list'))
         except exc.IntegrityError:
             db.session.rollback()
             flash(_('This sensor ID is already registered'), 'warning')
@@ -246,7 +247,6 @@ def sensor_register():
     return render_template('sensor-register.html', node=None, form=form, types=current_app.config['SENSOR_TYPES'])
 
 
-@personal.route('/my-sensor/<id>/give', methods=['GET', 'POST'])
 @personal.route('/sensors/<id>/transfer', methods=['GET', 'POST'])
 @login_required
 def sensor_transfer(id):
@@ -271,7 +271,6 @@ def sensor_transfer(id):
     return render_template('my-sensor-give.html', node=node, form=form)
 
 
-@personal.route('/my-sensor/<id>/delete', methods=['GET', 'POST'])
 @personal.route('/sensors/<id>/delete', methods=['GET', 'POST'])
 @login_required
 def sensor_delete(id):
