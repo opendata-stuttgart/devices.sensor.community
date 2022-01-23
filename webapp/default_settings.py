@@ -99,6 +99,7 @@ SENSOR_TYPES = {
     37: "1",  # SPS30
     38: "1",  # HM3301
     40: "17", # SCD30
+    41: "1",  # Next PM
 }
 
 # IDs of default SensorTypes assigned to node
