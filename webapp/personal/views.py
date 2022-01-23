@@ -139,6 +139,9 @@ def sensor_data(id):
         elif sensor.sensor_type_id == 36:
             sensor.sensor_type_name = SENSOR_TYPES["RADIATION"]
             sensor.sensor_type_id = 'Si22G'
+        elif sensor.sensor_type_id == 41:
+            sensor.sensor_type_name = SENSOR_TYPES["PM"]
+            sensor.sensor_type_id = 'NextPM'
 
         try:
             # sensor_request = requests.get('http://api.sensor.community/static/v1/sensor/%s/' % (sensor.id))
