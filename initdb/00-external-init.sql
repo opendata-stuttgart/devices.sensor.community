@@ -81,7 +81,8 @@ INSERT INTO `sensors_sensortype` (`id`, `created`, `modified`, `uid`, `name`, `m
 	(25, '2017-11-16 13:11:21', '2017-11-16 13:12:01', 'HPM', 'HPM', 'Honeywell', 'particulate matter, PM2.5, PM10'),
 	(26, '2018-01-30 16:59:14', '2018-01-30 16:59:14', 'SHT30', 'SHT30', 'Sensirion', ''),
 	(27, '2018-01-30 16:59:27', '2018-01-30 16:59:27', 'SHT31', 'SHT31', 'Sensirion', ''),
-	(28, '2018-01-30 16:59:41', '2018-01-30 16:59:41', 'SHT35', 'SHT35', 'Sensirion', '');
+	(28, '2018-01-30 16:59:41', '2018-01-30 16:59:41', 'SHT35', 'SHT35', 'Sensirion', ''),
+	(41, '2022-01-23 10:57:41', '2022-01-23 10:57:41', 'NextPM', 'NextPM', 'Groupe Tera', 'particulate matter, PM1, PM2.5, PM10');
 /*!40000 ALTER TABLE `sensors_sensortype` ENABLE KEYS */;
 
 -- Dumping structure for table feinstaub.sensors_sensorlocation
