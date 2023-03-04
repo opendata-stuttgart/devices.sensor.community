@@ -20,94 +20,98 @@ msgstr ""
 
 #: webapp/personal/forms.py:39
 msgid "Indoor Sensor"
-msgstr ""
+msgstr "Indoor-Sensor"
 
 #: webapp/personal/forms.py:40
 msgid "Street *"
-msgstr ""
+msgstr "Straße *"
 
 #: webapp/personal/forms.py:40
 msgid "Please enter the street name."
-msgstr ""
+msgstr "Bitte geben Sie den Straßennamen an."
 
 #: webapp/personal/forms.py:41
 msgid "Number"
-msgstr ""
+msgstr "Hausnummer"
 
 #: webapp/personal/forms.py:42
 msgid "Zip code *"
-msgstr ""
+msgstr "Postleitzahl *"
 
 #: webapp/personal/forms.py:42
 msgid "Please enter the postal code."
-msgstr ""
+msgstr "Bitte geben Sie die Postleitzahl an."
 
 #: webapp/personal/forms.py:43
 msgid "City *"
-msgstr ""
+msgstr "Ort *"
 
 #: webapp/personal/forms.py:43
 msgid "Please enter the city name."
-msgstr ""
+msgstr "Bitte geben Sie den Ort an."
 
 #: webapp/personal/forms.py:46
 msgid "Country *"
-msgstr ""
+msgstr "Land *"
 
 #: webapp/personal/forms.py:49 webapp/personal/forms.py:51
 msgid "Please enter the country name."
-msgstr ""
+msgstr "Bitte geben Sie ein Land an."
 
 #: webapp/personal/forms.py:56
 msgid "Latitude"
-msgstr ""
+msgstr "Geographischer Breitengrad"
 
 #: webapp/personal/forms.py:57
 msgid "Please enter the latitude."
-msgstr ""
+msgstr "Bitte geben Sie eine geographische Breite an."
 
 #: webapp/personal/forms.py:58
 msgid "Longitude"
-msgstr ""
+msgstr "Geographischer Längengrad."
 
 #: webapp/personal/forms.py:59
 msgid "Please enter the longitude."
-msgstr ""
+msgstr "Bitte geben Sie eine geographische Länge an."
 
 #: webapp/personal/forms.py:62
 msgid "How much industrial activity is there within a 100m radius?"
-msgstr ""
+msgstr "Wie viel verarbeitende Industrie befindet sich in 100m Radius?"
 
 #: webapp/personal/forms.py:71 webapp/personal/forms.py:87
 #: webapp/personal/forms.py:103
 msgid "Please enter the number between 1 and 10"
-msgstr ""
+msgstr "Bitte geben Sie einen Wert von 1 bis 10 an"
 
 #: webapp/personal/forms.py:74
 msgid ""
 "No office space, but potential fine dust producers 1 = very little, 10 = "
 "very much."
 msgstr ""
+"Nicht Büros, sondern potentielle Feinstaubquellen. 1 = sehr wenige, 10 = "
+"sehr viele"
 
 #: webapp/personal/forms.py:78
 msgid "How many private stoves or fireplaces are within a 100m radius?"
-msgstr ""
+msgstr "Wie viele private Öfen oder Kamine gibt es im Umkreis von 100 m?"
 
 #: webapp/personal/forms.py:90
 msgid ""
 "Does it smell very much like such smoke in your area? 1 = very little, 10"
 " = very much."
-msgstr ""
+msgstr "Riecht es sehr nach Rauch in der Umgebung? 1 = sehr wenig, 10 = sehr viel"
 
 #: webapp/personal/forms.py:94
 msgid "How much traffic is there within a 100m radius?"
-msgstr ""
+msgstr "Wie viel Verkehr gibt es in einem Umkreis von 100 Metern?"
 
 #: webapp/personal/forms.py:106
 msgid ""
 "How close are those roads? 1 = very little further away, 10 = a lot of "
 "traffic right on your doorstep."
 msgstr ""
+"Wie nah sind diese Straßen? 1 = sehr wenige weiter weg, 10 = Viel Verkehr"
+" direkt vor der Tür."
 
 #: webapp/personal/forms.py:119
 msgid "PIN"
@@ -119,31 +123,31 @@ msgstr ""
 
 #: webapp/personal/forms.py:123
 msgid "Sensor Type"
-msgstr ""
+msgstr "Sensortyp"
 
 #: webapp/personal/forms.py:136
 msgid "Personal sensor name"
-msgstr ""
+msgstr "Interner Name des Sensors"
 
 #: webapp/personal/forms.py:139
 msgid "Please enter the sensor name."
-msgstr ""
+msgstr "Bitte geben Sie einen Sensornamen an."
 
 #: webapp/personal/forms.py:142
 msgid "Only the sensor ID will be published."
-msgstr ""
+msgstr "Veröffentlicht wird nur die Sensor-UID."
 
 #: webapp/personal/forms.py:145
 msgid "Sensor level above ground (in cm)"
-msgstr ""
+msgstr "Höhe des Sensors über dem Boden (in cm)"
 
 #: webapp/personal/forms.py:152
 msgid "NOT height above sea level!"
-msgstr ""
+msgstr "NICHT die Höhe über Meeresspiegel!"
 
 #: webapp/personal/forms.py:155
 msgid "Sensor location relative to the traffic"
-msgstr ""
+msgstr "Sensorposition relativ zur Straße:"
 
 #: webapp/personal/forms.py:162
 msgid ""
@@ -152,32 +156,38 @@ msgid ""
 "irrelevant how big the street is, it is only about where the sensor is "
 "attached to the house."
 msgstr ""
+"1 = an der Hausrückseite, 10 = zur Straße hin. Die Größe der Straße ist "
+"hier nicht entscheidend."
 
 #: webapp/personal/forms.py:166
 msgid "Publish exact location"
-msgstr ""
+msgstr "Genaue Position veröffentlichen"
 
 #: webapp/personal/forms.py:167
 msgid "Reveal exact sensor location in public data and archives."
 msgstr ""
+"Es wird die genaue Sensorposition in den veröffentlichten Daten und im "
+"Archiv verwendet."
 
 #: webapp/personal/forms.py:170
 msgid "Inactive"
-msgstr ""
+msgstr "Inaktiv"
 
 #: webapp/personal/forms.py:171
 msgid ""
 "Mark sensor as inactive. No notifications will be sent when sensor goes "
 "offline."
 msgstr ""
+"Markiert den Sensor als inaktiv. Es werden keine Benachrichtigungen mehr "
+"versendet, wenn der Sensor keine Daten mehr liefert."
 
 #: webapp/personal/forms.py:177
 msgid "Short description of location"
-msgstr ""
+msgstr "Kurze Beschreibung des Standortes"
 
 #: webapp/personal/forms.py:179
 msgid "Save settings"
-msgstr ""
+msgstr "Einstellungen speichern"
 
 #: webapp/personal/forms.py:184 webapp/templates/my-sensors.html:50
 msgid "Chip ID"
@@ -185,11 +195,11 @@ msgstr ""
 
 #: webapp/personal/forms.py:186
 msgid "Sensor ID may only contain digits and letters A to F"
-msgstr ""
+msgstr "Die Sensor ID kann nur Zahlen und die Buchstaben A bis F enthalten"
 
 #: webapp/personal/forms.py:188
 msgid "The numeric part of the sensorname only"
-msgstr ""
+msgstr "Nur der numerische Teil des Sensornamen"
 
 #: webapp/personal/forms.py:191
 msgid "Sensor Board"
@@ -201,118 +211,122 @@ msgid ""
 "the Smogomierz sensor version need to change this accordingly. Also in "
 "these cases the Sensor ID is the numeric part of the name only."
 msgstr ""
+"Normalerweise sollte dies bei esp8266 bleiben. Nutzer von ESP32 Boards, "
+"Raspberry PI oder der Smogomierz-Sensor-Version müssen dieses Feld "
+"entsprechend ändern. Auch bei diesen Varianten wird in das Feld Sensor ID"
+" nur der numerische Teil des Namen eingetragen."
 
 #: webapp/personal/forms.py:202
 msgid "Recipient's e-mail address"
-msgstr ""
+msgstr "EMail Adresse des Empfängers"
 
 #: webapp/personal/forms.py:205
 msgid "Please enter e-mail address"
-msgstr ""
+msgstr "Bitte geben Sie eine EMail Adresse an"
 
 #: webapp/personal/forms.py:208
 msgid "Please enter correct e-mail address"
-msgstr ""
+msgstr "Bitte geben Sie eine korrekte EMail Adresse an"
 
 #: webapp/personal/forms.py:212
 msgid "Transfer sensor"
-msgstr ""
+msgstr "Sensor übergeben"
 
 #: webapp/personal/forms.py:217
 msgid "You can't transfer the sensor to yourself"
-msgstr ""
+msgstr "Sie können den Sensor nicht zu sich selbst übertragen"
 
 #: webapp/personal/forms.py:221
 msgid "Delete sensor"
-msgstr ""
+msgstr "Sensor löschen"
 
 #: webapp/personal/forms.py:226
 msgid "Add sensor"
-msgstr ""
+msgstr "Sensor hinzufügen"
 
 #: webapp/personal/views.py:21
 msgid "Fine dust 10 µm"
-msgstr ""
+msgstr "Feinstaub 10 µm"
 
 #: webapp/personal/views.py:22
 msgid "Fine dust 2.5 µm"
-msgstr ""
+msgstr "Feinstaub 2.5 µm"
 
 #: webapp/personal/views.py:23
 msgid "Humidity"
-msgstr ""
+msgstr "Luftfeuchtigkeit"
 
 #: webapp/personal/views.py:24
 msgid "Temperature"
-msgstr ""
+msgstr "Temperatur"
 
 #: webapp/personal/views.py:25
 msgid "Pressure"
-msgstr ""
+msgstr "Luftdruck"
 
 #: webapp/personal/views.py:26
 msgid "Pressure at sea level"
-msgstr ""
+msgstr "Luftdruck auf Meereshöhe"
 
 #: webapp/personal/views.py:30
 msgid "particulate matter sensor"
-msgstr ""
+msgstr "Feinstaub-Sensor"
 
 #: webapp/personal/views.py:31
 msgid "temperature/humidity sensor"
-msgstr ""
+msgstr "Temperatur/Luftfeuchte-Sensor"
 
 #: webapp/personal/views.py:32
 msgid "temperature/pressure sensor"
-msgstr ""
+msgstr "Temperatur/Luftdruck-Sensor"
 
 #: webapp/personal/views.py:33
 msgid "temperature/humidity/pressure sensor"
-msgstr ""
+msgstr "Temperatur/Luftfeuchte/Luftdruck-Sensor"
 
 #: webapp/personal/views.py:34
 msgid "temperature/humidity/CO₂ ppm sensor"
-msgstr ""
+msgstr "Temperatur/Luftfeuchte/CO₂ pp Sensor"
 
 #: webapp/personal/views.py:35
 msgid "noise sensor"
-msgstr ""
+msgstr "Lärm-Sensor"
 
 #: webapp/personal/views.py:36
 msgid "radiation sensor"
-msgstr ""
+msgstr "Strahlungssensor"
 
 #: webapp/personal/views.py:201
 msgid "Settings saved successfully"
-msgstr ""
+msgstr "Einstellungen erfolgreich gespeichert"
 
 #: webapp/personal/views.py:211
 msgid "Component successfully registered"
-msgstr ""
+msgstr "Komponente erfolgreich registriert"
 
 #: webapp/personal/views.py:215
 msgid "Pin is already in use"
-msgstr ""
+msgstr "Pin ist bereits in Benutzung"
 
 #: webapp/personal/views.py:243
 msgid "Sensor successfully registered."
-msgstr ""
+msgstr "Sensor erfolgreich registriert."
 
 #: webapp/personal/views.py:247
 msgid "This sensor ID is already registered"
-msgstr ""
+msgstr "Diese Sensor ID ist bereits registriert"
 
 #: webapp/personal/views.py:261
 msgid "A fine dust sensor was transferred to you"
-msgstr ""
+msgstr "Ein Feinstaubsensor wurde zu Ihnen übertragen"
 
 #: webapp/personal/views.py:272
 msgid "Sensor successfully transfered."
-msgstr ""
+msgstr "Der Sensor wurde erfolgreich übertragen"
 
 #: webapp/personal/views.py:291
 msgid "Sensor successfully deleted"
-msgstr ""
+msgstr "Der Sensor wurde erfolgreich gelöscht"
 
 #: webapp/templates/400.html:50
 msgid "Bad Request Error"
@@ -320,7 +334,7 @@ msgstr ""
 
 #: webapp/templates/400.html:51 webapp/templates/404.html:51
 msgid "Please check the URL in the address bar and try again."
-msgstr ""
+msgstr "Bitte prüfen Sie die URL in der Adressleiste und versuchen Sie es erneut."
 
 #: webapp/templates/400.html:53 webapp/templates/403.html:53
 #: webapp/templates/404.html:53
@@ -337,32 +351,32 @@ msgstr ""
 #: webapp/templates/400.html:59 webapp/templates/403.html:59
 #: webapp/templates/404.html:59
 msgid "Go back home"
-msgstr ""
+msgstr "Zurück zur Startseite"
 
 #: webapp/templates/400.html:63 webapp/templates/403.html:63
 #: webapp/templates/404.html:63
 msgid "Contact support"
-msgstr ""
+msgstr "Support kontaktieren"
 
 #: webapp/templates/403.html:50
 msgid "Forbidden"
-msgstr ""
+msgstr "Verboten"
 
 #: webapp/templates/403.html:51
 msgid "Please login first, befor entering the page."
-msgstr ""
+msgstr "Bitte melden Sie sich erst an, bevor Sie auf diese Seite zugreifen."
 
 #: webapp/templates/404.html:50
 msgid "Page not found"
-msgstr ""
+msgstr "Seite nicht gefunden"
 
 #: webapp/templates/footer.html:106
 msgid "Guides"
-msgstr ""
+msgstr "Anleitungen"
 
 #: webapp/templates/footer.html:111
 msgid "Donate"
-msgstr ""
+msgstr "Spenden"
 
 #: webapp/templates/footer.html:118
 msgid "Legal"
@@ -370,29 +384,29 @@ msgstr ""
 
 #: webapp/templates/footer.html:124 webapp/templates/imprint.html:8
 msgid "Imprint"
-msgstr ""
+msgstr "Impressum"
 
 #: webapp/templates/footer.html:130 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Datenschutz"
 
 #: webapp/templates/imprint.html:11
 msgid "Informations according to § 5 TMG"
-msgstr ""
+msgstr "Angaben gemäß § 5 TMG"
 
 #: webapp/templates/imprint.html:16
 msgid "Represented by:"
-msgstr ""
+msgstr "Vertreten durch:"
 
 #: webapp/templates/imprint.html:18
 msgid "Contact:"
-msgstr ""
+msgstr "Kontakt:"
 
 #: webapp/templates/imprint.html:23
 msgid ""
 "based on the concept and software\n"
 "                development of Ernesto Ruge"
-msgstr ""
+msgstr "basierend auf dem Konzept und der Softwareentwicklung von Ernesto Ruge:"
 
 #: webapp/templates/imprint.html:25
 msgid "Website of Ernesto Ruge:"
@@ -403,11 +417,11 @@ msgstr ""
 #: webapp/templates/layout.html:21 webapp/templates/security/login_user.html:20
 #: webapp/templates/security/register_user.html:20
 msgid "Configure your air quality sensor yourself"
-msgstr ""
+msgstr "Luftdaten-Sensor selbst konfigurieren"
 
 #: webapp/templates/my-sensor-data.html:14
 msgid "Data from Node"
-msgstr ""
+msgstr "Daten von Node"
 
 #: webapp/templates/my-sensor-data.html:18
 msgid ""
@@ -416,47 +430,51 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
+"Normalerweise sind jedem Node zwei Sensoren angeschlossen: der Feinstaubsensor"
+"und der Temperatur/Luftfeuchte-Sensor. Die Sensor Nr. kann auch gefunden werden"
 
 #: webapp/templates/my-sensor-data.html:20
 msgid "on the fine dust map"
-msgstr ""
+msgstr "auf der Feinstaub-Karte"
 
 #: webapp/templates/my-sensor-data.html:40
 msgid "show on map"
-msgstr ""
+msgstr "Auf der Karte anzeigen"
 
 #: webapp/templates/my-sensor-data.html:46
 msgid "Last updated:"
-msgstr ""
+msgstr "Letztes Update:"
 
 #: webapp/templates/my-sensor-data.html:61
 msgid "No current data are available for this sensor."
-msgstr ""
+msgstr "Aktuell sind keine Daten für diesen Sensor verfügbar."
 
 #: webapp/templates/my-sensor-delete.html:11
 #, python-format
 msgid "Delete sensor %(node_id)s"
-msgstr ""
+msgstr "Sensor %(node_id)s löschen"
 
 #: webapp/templates/my-sensor-delete.html:14
 msgid "Warning! After deleting you have no more control over the sensor!"
 msgstr ""
+"Achtung! Nach dem Löschen können Sie nicht mehr auf die hier "
+"gespeicherten Einstellungen zugreifen!"
 
 #: webapp/templates/my-sensor-delete.html:15
 msgid ""
 "Also the chipID of this sensor will remain blocked for a new\n"
 "                            registration!"
-msgstr ""
+msgstr "Ebenso wird die chipID für eine erneute Registrierung gesperrt!"
 
 #: webapp/templates/my-sensor-delete.html:18
 #: webapp/templates/my-sensor-give.html:17
 msgid "back to my sensors"
-msgstr ""
+msgstr "Zurück zu Meine Sensoren"
 
 #: webapp/templates/my-sensor-give.html:12
 #, python-format
 msgid "Transfer Sensor %(node_id)s"
-msgstr ""
+msgstr "Sensor %(node_id)s übergeben"
 
 #: webapp/templates/my-sensor-give.html:15
 msgid ""
@@ -505,55 +523,55 @@ msgstr ""
 
 #: webapp/templates/my-sensors.html:69
 msgid "Transfer"
-msgstr ""
+msgstr "Übertragen"
 
 #: webapp/templates/my-sensors.html:71
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: webapp/templates/my-sensors.html:85
 msgid ""
 "Register new\n"
 "                            sensor"
-msgstr ""
+msgstr "Neuen Sensor registrieren"
 
 #: webapp/templates/my-settings.html:16
 msgid "Account Settings"
-msgstr ""
+msgstr "Konto-Einstellungen"
 
 #: webapp/templates/my-settings.html:20
 msgid "Here you can change your settings."
-msgstr ""
+msgstr "Hier können Sie Ihre Einstellungen ändern."
 
 #: webapp/templates/my-settings.html:31
 msgid "Personal"
-msgstr ""
+msgstr "Persönlich"
 
 #: webapp/templates/my-settings.html:33
 msgid "Here you can change your name."
-msgstr ""
+msgstr "Hier können Sie Ihren Namen ändern."
 
 #: webapp/templates/my-settings.html:71 webapp/users/forms.py:35
 #: webapp/users/forms.py:61
 msgid "Password"
-msgstr ""
+msgstr "Passwort"
 
 #: webapp/templates/my-settings.html:74
 #: webapp/templates/security/change_password.html:30
 msgid "Please choose a long and unique password."
-msgstr ""
+msgstr "Bitte wählen Sie ein langes und eindeutiges Passwort."
 
 #: webapp/templates/navbar.html:19 webapp/templates/navbar.html:138
 msgid "Sensors"
-msgstr ""
+msgstr "Sensoren"
 
 #: webapp/templates/navbar.html:20 webapp/templates/navbar.html:139
 msgid "Account"
-msgstr ""
+msgstr "Konto"
 
 #: webapp/templates/navbar.html:70 webapp/templates/navbar.html:142
 msgid "Logout"
-msgstr ""
+msgstr "Abmelden"
 
 #: webapp/templates/privacy-policy.html:11
 msgid ""
@@ -674,7 +692,7 @@ msgstr ""
 
 #: webapp/templates/sensor-settings-form.html:60
 msgid "Lookup entered address"
-msgstr ""
+msgstr "Eingegebene Adresse suchen"
 
 #: webapp/templates/sensor-settings-form.html:68
 msgid ""
@@ -684,7 +702,7 @@ msgstr ""
 
 #: webapp/templates/sensor-settings-form.html:86
 msgid "Additional Information"
-msgstr ""
+msgstr "Zusätzliche Informationen"
 
 #: webapp/templates/sensor-settings-form.html:88
 msgid ""
@@ -694,7 +712,7 @@ msgstr ""
 
 #: webapp/templates/sensor-settings-form.html:127
 msgid "Hardware configuration"
-msgstr ""
+msgstr "Hardware Konfiguration"
 
 #: webapp/templates/sensor-settings-form.html:129
 msgid "This is where you configure your sensor."
@@ -702,19 +720,19 @@ msgstr ""
 
 #: webapp/templates/sensor-settings-form.html:153
 msgid "Remove component"
-msgstr ""
+msgstr "Komponente entfernen"
 
 #: webapp/templates/sensor-settings-form.html:160
 msgid "Add component"
-msgstr ""
+msgstr "Komponente hinzufügen"
 
 #: webapp/templates/sensor-settings-form.html:170
 msgid "Add Component"
-msgstr ""
+msgstr "Komponente hinzufügen"
 
 #: webapp/templates/sensor-settings-form.html:180
 msgid "Save"
-msgstr ""
+msgstr "Speichern"
 
 #: webapp/templates/sensor-settings-form.html:188
 msgid "Enable expert fields"
@@ -725,11 +743,11 @@ msgstr ""
 #: webapp/templates/emails/sensor-given.html:11
 #: webapp/templates/emails/sensor-registered.html:10
 msgid "Hello,"
-msgstr ""
+msgstr "Hallo,"
 
 #: webapp/templates/emails/recover.html:12
 msgid "to reset your password, please use the following URL:"
-msgstr ""
+msgstr "um das Passwort zurück zu setzen, nutzen Sie bitte folgende URL:"
 
 #: webapp/templates/emails/recover.html:13
 msgid ""
@@ -866,7 +884,7 @@ msgstr ""
 
 #: webapp/templates/security/reset_password.html:20
 msgid "Reset password"
-msgstr ""
+msgstr "Passwort zurücksetzen"
 
 #: webapp/templates/security/send_confirmation.html:5
 msgid "Resend confirmation instructions"
@@ -874,19 +892,19 @@ msgstr ""
 
 #: webapp/templates/security/send_login.html:5
 msgid "Login"
-msgstr ""
+msgstr "Anmelden"
 
 #: webapp/users/forms.py:11 webapp/users/forms.py:25
 msgid "E-Mail addresse"
-msgstr ""
+msgstr "EMail-Adresse"
 
 #: webapp/users/forms.py:14 webapp/users/forms.py:28 webapp/users/forms.py:50
 msgid "Please enter an e-mail address."
-msgstr ""
+msgstr "Bitte geben Sie eine EMail-Adresse an."
 
 #: webapp/users/forms.py:17 webapp/users/forms.py:31 webapp/users/forms.py:53
 msgid "Please enter a correct e-mail address."
-msgstr ""
+msgstr "Bitte geben Sie eine korrekte EMail-Adresse an."
 
 #: webapp/users/forms.py:21
 msgid "next"
@@ -894,15 +912,15 @@ msgstr ""
 
 #: webapp/users/forms.py:38 webapp/users/forms.py:64 webapp/users/forms.py:76
 msgid "Please enter a password."
-msgstr ""
+msgstr "Bitte geben Sie ein Passwort ein."
 
 #: webapp/users/forms.py:42 webapp/users/forms.py:81
 msgid "Stay logged in."
-msgstr ""
+msgstr "Angemeldet bleiben."
 
 #: webapp/users/forms.py:43
 msgid "login"
-msgstr ""
+msgstr "Anmelden"
 
 #: webapp/users/forms.py:47
 msgid "E-Mail address"
@@ -919,33 +937,33 @@ msgstr ""
 
 #: webapp/users/forms.py:73
 msgid "Password (repeat)"
-msgstr ""
+msgstr "Passwort wiederholen"
 
 #: webapp/users/forms.py:78
 msgid "Passwords must be identical."
-msgstr ""
+msgstr "Die Passwörter müssen identisch sein."
 
 #: webapp/users/forms.py:82
 msgid "Save Password"
-msgstr ""
+msgstr "Passwort speichern"
 
 #: webapp/users/forms.py:86
 msgid "First name"
-msgstr ""
+msgstr "Vorname"
 
 #: webapp/users/forms.py:87
 msgid "Last name"
-msgstr ""
+msgstr "Nachname"
 
 #: webapp/users/forms.py:88
 msgid "Save user data"
-msgstr ""
+msgstr "Nutzerdaten speichern"
 
 #: webapp/users/views.py:25
 msgid "User data saved"
-msgstr ""
+msgstr "Nutzerdaten gespeichert"
 
 #: webapp/users/views.py:27
 msgid "Password changed"
-msgstr ""
+msgstr "Passwort geändert"
 
