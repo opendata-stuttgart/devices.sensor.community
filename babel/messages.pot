@@ -1,14 +1,14 @@
 # Translations template for PROJECT.
-# Copyright (C) 2021 ORGANIZATION
+# Copyright (C) 2023 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-29 18:52+0200\n"
+"POT-Creation-Date: 2023-03-05 02:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,7 +160,7 @@ msgstr ""
 msgid "Reveal exact sensor location in public data and archives."
 msgstr ""
 
-#: webapp/personal/forms.py:170
+#: webapp/personal/forms.py:170 webapp/templates/my-sensors.html:89
 msgid "Inactive"
 msgstr ""
 
@@ -178,7 +178,7 @@ msgstr ""
 msgid "Save settings"
 msgstr ""
 
-#: webapp/personal/forms.py:184 webapp/templates/my-sensors.html:50
+#: webapp/personal/forms.py:184 webapp/templates/my-sensors.html:60
 msgid "Chip ID"
 msgstr ""
 
@@ -281,23 +281,11 @@ msgstr ""
 msgid "radiation sensor"
 msgstr ""
 
-#: webapp/personal/views.py:201
-msgid "Settings saved successfully"
-msgstr ""
-
-#: webapp/personal/views.py:211
-msgid "Component successfully registered"
-msgstr ""
-
-#: webapp/personal/views.py:215
+#: webapp/personal/views.py:216
 msgid "Pin is already in use"
 msgstr ""
 
-#: webapp/personal/views.py:243
-msgid "Sensor successfully registered."
-msgstr ""
-
-#: webapp/personal/views.py:247
+#: webapp/personal/views.py:248
 msgid "This sensor ID is already registered"
 msgstr ""
 
@@ -309,7 +297,7 @@ msgstr ""
 msgid "Sensor successfully transfered."
 msgstr ""
 
-#: webapp/personal/views.py:291
+#: webapp/personal/views.py:290
 msgid "Sensor successfully deleted"
 msgstr ""
 
@@ -329,7 +317,8 @@ msgid ""
 msgstr ""
 
 #: webapp/templates/400.html:55 webapp/templates/403.html:55
-#: webapp/templates/404.html:55 webapp/templates/security/register_user.html:33
+#: webapp/templates/404.html:55 webapp/templates/security/login_user.html:30
+#: webapp/templates/security/register_user.html:30
 msgid "Find out more about Sensor.Community"
 msgstr ""
 
@@ -359,7 +348,8 @@ msgstr ""
 msgid "Guides"
 msgstr ""
 
-#: webapp/templates/footer.html:111
+#: webapp/templates/footer.html:111 webapp/templates/navbar.html:33
+#: webapp/templates/navbar.html:172
 msgid "Donate"
 msgstr ""
 
@@ -399,8 +389,8 @@ msgstr ""
 
 #: webapp/templates/layout.html:4 webapp/templates/layout.html:14
 #: webapp/templates/layout.html:15 webapp/templates/layout.html:20
-#: webapp/templates/layout.html:21 webapp/templates/security/login_user.html:20
-#: webapp/templates/security/register_user.html:20
+#: webapp/templates/layout.html:21 webapp/templates/security/login_user.html:19
+#: webapp/templates/security/register_user.html:19
 msgid "Configure your air quality sensor yourself"
 msgstr ""
 
@@ -438,6 +428,7 @@ msgid "Delete sensor %(node_id)s"
 msgstr ""
 
 #: webapp/templates/my-sensor-delete.html:14
+#: webapp/templates/my-sensor-give.html:14
 msgid "Warning! After deleting you have no more control over the sensor!"
 msgstr ""
 
@@ -452,7 +443,7 @@ msgstr ""
 msgid "back to my sensors"
 msgstr ""
 
-#: webapp/templates/my-sensor-give.html:12
+#: webapp/templates/my-sensor-give.html:11
 #, python-format
 msgid "Transfer Sensor %(node_id)s"
 msgstr ""
@@ -462,6 +453,10 @@ msgid ""
 "This allows you to transfer sensors to another person. This is especially"
 " useful if you have ordered a sensor for a friend and want to transfer it"
 " to him or her."
+msgstr ""
+
+#: webapp/templates/my-sensor-give.html:16
+msgid "If not please return"
 msgstr ""
 
 #: webapp/templates/my-sensor-settings.html:11
@@ -486,31 +481,67 @@ msgstr ""
 msgid "All sensors assigned to your account can be found in this overview."
 msgstr ""
 
-#: webapp/templates/my-sensors.html:40
+#: webapp/templates/my-sensors.html:20
+msgid "Settings:"
+msgstr ""
+
+#: webapp/templates/my-sensors.html:20
+msgid ""
+"You have moved to another location, then update your\n"
+"                location. Or, add a new component to your kit."
+msgstr ""
+
+#: webapp/templates/my-sensors.html:22
+msgid "Transfer:"
+msgstr ""
+
+#: webapp/templates/my-sensors.html:22
+msgid ""
+"Build sensor for another person and transfer it to his account via "
+"transfer."
+msgstr ""
+
+#: webapp/templates/my-sensors.html:23
+msgid "Data:"
+msgstr ""
+
+#: webapp/templates/my-sensors.html:23
+msgid "View your last published sensor data."
+msgstr ""
+
+#: webapp/templates/my-sensors.html:24
+msgid "Delete:"
+msgstr ""
+
+#: webapp/templates/my-sensors.html:24
+msgid "At your own risk."
+msgstr ""
+
+#: webapp/templates/my-sensors.html:49
 msgid "Last Update"
 msgstr ""
 
-#: webapp/templates/my-sensors.html:59
+#: webapp/templates/my-sensors.html:70
 msgid "Node ID"
 msgstr ""
 
-#: webapp/templates/my-sensors.html:65
+#: webapp/templates/my-sensors.html:98
 msgid "Data"
 msgstr ""
 
-#: webapp/templates/my-sensors.html:67
+#: webapp/templates/my-sensors.html:101
 msgid "Settings"
 msgstr ""
 
-#: webapp/templates/my-sensors.html:69
+#: webapp/templates/my-sensors.html:104
 msgid "Transfer"
 msgstr ""
 
-#: webapp/templates/my-sensors.html:71
+#: webapp/templates/my-sensors.html:107
 msgid "Delete"
 msgstr ""
 
-#: webapp/templates/my-sensors.html:85
+#: webapp/templates/my-sensors.html:121
 msgid ""
 "Register new\n"
 "                            sensor"
@@ -542,16 +573,24 @@ msgstr ""
 msgid "Please choose a long and unique password."
 msgstr ""
 
-#: webapp/templates/navbar.html:19 webapp/templates/navbar.html:138
+#: webapp/templates/navbar.html:19 webapp/templates/navbar.html:144
 msgid "Sensors"
 msgstr ""
 
-#: webapp/templates/navbar.html:20 webapp/templates/navbar.html:139
+#: webapp/templates/navbar.html:20 webapp/templates/navbar.html:145
 msgid "Account"
 msgstr ""
 
-#: webapp/templates/navbar.html:70 webapp/templates/navbar.html:142
+#: webapp/templates/navbar.html:27 webapp/templates/navbar.html:165
+msgid "Mainpage"
+msgstr ""
+
+#: webapp/templates/navbar.html:76 webapp/templates/navbar.html:148
 msgid "Logout"
+msgstr ""
+
+#: webapp/templates/navbar.html:179
+msgid "Forum"
 msgstr ""
 
 #: webapp/templates/privacy-policy.html:11
@@ -636,11 +675,11 @@ msgid ""
 msgstr ""
 
 #: webapp/templates/sensor-register.html:10
-#: webapp/templates/sensor-register.html:28
+#: webapp/templates/sensor-register.html:27
 msgid "Sensor registration"
 msgstr ""
 
-#: webapp/templates/sensor-register.html:30
+#: webapp/templates/sensor-register.html:29
 msgid ""
 "Users of ESP32 boards, Raspberry PI or Smogomierz sensor\n"
 "                                    <strong>just enter the numeric part "
@@ -716,7 +755,7 @@ msgid "Save"
 msgstr ""
 
 #: webapp/templates/sensor-settings-form.html:188
-msgid "Enable expert fields"
+msgid "Expert fields"
 msgstr ""
 
 #: webapp/templates/emails/recover.html:10
@@ -792,79 +831,71 @@ msgid "Request password reset"
 msgstr ""
 
 #: webapp/templates/security/forgot_password.html:24
-#: webapp/templates/security/reset_password.html:24
 msgid ""
-"Trouble Logging In? Enter your email and we willl send you a link to get "
+"Trouble Logging In? Enter your email and we will send you a link to get "
 "back into your account."
 msgstr ""
 
-#: webapp/templates/security/login_user.html:25
-#: webapp/templates/security/register_user.html:25
+#: webapp/templates/security/login_user.html:23
+#: webapp/templates/security/register_user.html:23
 msgid ""
 "The main purpose of this page is to enable you, as the owner of a fine "
 "dust sensor, to configure the location and other parameters yourself."
 msgstr ""
 
-#: webapp/templates/security/login_user.html:28
-#: webapp/templates/security/register_user.html:28
+#: webapp/templates/security/login_user.html:26
+#: webapp/templates/security/register_user.html:26
 msgid ""
 "The city of the future belongs to its citizens. The digital tools, the "
 "Maker Movement and Citizen Science are leading to more and more people "
 "being given the opportunity to design the city themselves."
 msgstr ""
 
-#: webapp/templates/security/login_user.html:30
-#: webapp/templates/security/register_user.html:30
-msgid ""
-"Code a difference: Use your skills to\n"
-"                            improve your city!"
-msgstr ""
-
-#: webapp/templates/security/login_user.html:33
-msgid ""
-"Find\n"
-"                                out more about Sensor.Community"
-msgstr ""
-
-#: webapp/templates/security/login_user.html:67
-msgid "Sign in to your account"
+#: webapp/templates/security/login_user.html:28
+#: webapp/templates/security/register_user.html:28
+msgid "Code a difference: Use your skills to improve your city!"
 msgstr ""
 
 #: webapp/templates/security/login_user.html:70
+msgid "Sign in to your account"
+msgstr ""
+
+#: webapp/templates/security/login_user.html:73
 msgid "or"
 msgstr ""
 
-#: webapp/templates/security/login_user.html:72
+#: webapp/templates/security/login_user.html:75
 msgid "create an account"
 msgstr ""
 
-#: webapp/templates/security/login_user.html:99
+#: webapp/templates/security/login_user.html:101
 msgid "Remember me"
 msgstr ""
 
-#: webapp/templates/security/register_user.html:65
+#: webapp/templates/security/register_user.html:60
 msgid "Create your account"
 msgstr ""
 
-#: webapp/templates/security/register_user.html:68
+#: webapp/templates/security/register_user.html:63
 msgid "already have an account,"
 msgstr ""
 
-#: webapp/templates/security/register_user.html:70
-msgid ""
-"go\n"
-"                                           to login"
+#: webapp/templates/security/register_user.html:65
+msgid "go to login"
 msgstr ""
 
-#: webapp/templates/security/register_user.html:98
-msgid ""
-"Pleas wait up\n"
-"                                                        to 30 min. Check "
-"your spam folder"
+#: webapp/templates/security/register_user.html:91
+msgid "Please wait up to 30 min. Check your spam folder"
 msgstr ""
 
 #: webapp/templates/security/reset_password.html:20
 msgid "Reset password"
+msgstr ""
+
+#: webapp/templates/security/reset_password.html:24
+msgid ""
+"Trouble Logging In? Enter your email and we willl send you a link to get "
+"back into your account."
 msgstr ""
 
 #: webapp/templates/security/send_confirmation.html:5

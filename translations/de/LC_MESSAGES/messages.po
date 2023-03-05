@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-07-29 18:52+0200\n"
+"POT-Creation-Date: 2023-03-05 02:48+0100\n"
 "PO-Revision-Date: 2021-09-12 12:18+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -169,7 +169,7 @@ msgstr ""
 "Es wird die genaue Sensorposition in den veröffentlichten Daten und im "
 "Archiv verwendet."
 
-#: webapp/personal/forms.py:170
+#: webapp/personal/forms.py:170 webapp/templates/my-sensors.html:89
 msgid "Inactive"
 msgstr "Inaktiv"
 
@@ -189,7 +189,7 @@ msgstr "Kurze Beschreibung des Standortes"
 msgid "Save settings"
 msgstr "Einstellungen speichern"
 
-#: webapp/personal/forms.py:184 webapp/templates/my-sensors.html:50
+#: webapp/personal/forms.py:184 webapp/templates/my-sensors.html:60
 msgid "Chip ID"
 msgstr ""
 
@@ -296,23 +296,11 @@ msgstr "Lärm-Sensor"
 msgid "radiation sensor"
 msgstr "Strahlungssensor"
 
-#: webapp/personal/views.py:201
-msgid "Settings saved successfully"
-msgstr "Einstellungen erfolgreich gespeichert"
-
-#: webapp/personal/views.py:211
-msgid "Component successfully registered"
-msgstr "Komponente erfolgreich registriert"
-
-#: webapp/personal/views.py:215
+#: webapp/personal/views.py:216
 msgid "Pin is already in use"
 msgstr "Pin ist bereits in Benutzung"
 
-#: webapp/personal/views.py:243
-msgid "Sensor successfully registered."
-msgstr "Sensor erfolgreich registriert."
-
-#: webapp/personal/views.py:247
+#: webapp/personal/views.py:248
 msgid "This sensor ID is already registered"
 msgstr "Diese Sensor ID ist bereits registriert"
 
@@ -324,7 +312,7 @@ msgstr "Ein Feinstaubsensor wurde zu Ihnen übertragen"
 msgid "Sensor successfully transfered."
 msgstr "Der Sensor wurde erfolgreich übertragen"
 
-#: webapp/personal/views.py:291
+#: webapp/personal/views.py:290
 msgid "Sensor successfully deleted"
 msgstr "Der Sensor wurde erfolgreich gelöscht"
 
@@ -344,7 +332,8 @@ msgid ""
 msgstr ""
 
 #: webapp/templates/400.html:55 webapp/templates/403.html:55
-#: webapp/templates/404.html:55 webapp/templates/security/register_user.html:33
+#: webapp/templates/404.html:55 webapp/templates/security/login_user.html:30
+#: webapp/templates/security/register_user.html:30
 msgid "Find out more about Sensor.Community"
 msgstr ""
 
@@ -374,7 +363,8 @@ msgstr "Seite nicht gefunden"
 msgid "Guides"
 msgstr "Anleitungen"
 
-#: webapp/templates/footer.html:111
+#: webapp/templates/footer.html:111 webapp/templates/navbar.html:33
+#: webapp/templates/navbar.html:172
 msgid "Donate"
 msgstr "Spenden"
 
@@ -414,8 +404,8 @@ msgstr "Website von Ernesto Ruge:"
 
 #: webapp/templates/layout.html:4 webapp/templates/layout.html:14
 #: webapp/templates/layout.html:15 webapp/templates/layout.html:20
-#: webapp/templates/layout.html:21 webapp/templates/security/login_user.html:20
-#: webapp/templates/security/register_user.html:20
+#: webapp/templates/layout.html:21 webapp/templates/security/login_user.html:19
+#: webapp/templates/security/register_user.html:19
 msgid "Configure your air quality sensor yourself"
 msgstr "Luftdaten-Sensor selbst konfigurieren"
 
@@ -430,8 +420,9 @@ msgid ""
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
-"Normalerweise sind jedem Node zwei Sensoren angeschlossen: der Feinstaubsensor"
-"und der Temperatur/Luftfeuchte-Sensor. Die Sensor Nr. kann auch gefunden werden"
+"Normalerweise sind jedem Node zwei Sensoren angeschlossen: der "
+"Feinstaubsensorund der Temperatur/Luftfeuchte-Sensor. Die Sensor Nr. kann"
+" auch gefunden werden"
 
 #: webapp/templates/my-sensor-data.html:20
 msgid "on the fine dust map"
@@ -455,6 +446,7 @@ msgid "Delete sensor %(node_id)s"
 msgstr "Sensor %(node_id)s löschen"
 
 #: webapp/templates/my-sensor-delete.html:14
+#: webapp/templates/my-sensor-give.html:14
 msgid "Warning! After deleting you have no more control over the sensor!"
 msgstr ""
 "Achtung! Nach dem Löschen können Sie nicht mehr auf die hier "
@@ -471,7 +463,7 @@ msgstr "Ebenso wird die chipID für eine erneute Registrierung gesperrt!"
 msgid "back to my sensors"
 msgstr "Zurück zu Meine Sensoren"
 
-#: webapp/templates/my-sensor-give.html:12
+#: webapp/templates/my-sensor-give.html:11
 #, python-format
 msgid "Transfer Sensor %(node_id)s"
 msgstr "Sensor %(node_id)s übergeben"
@@ -482,9 +474,13 @@ msgid ""
 " useful if you have ordered a sensor for a friend and want to transfer it"
 " to him or her."
 msgstr ""
-"Dies erlaubt Ihnen, einen Sensor zu einer anderen Person zu übertragen."
-" Dies ist vor allem praktisch, wenn Sie einen Sensor für eine andere Person gebaut"
-" haben und diesen nun an die Person übertragen wollen."
+"Dies erlaubt Ihnen, einen Sensor zu einer anderen Person zu übertragen. "
+"Dies ist vor allem praktisch, wenn Sie einen Sensor für eine andere "
+"Person gebaut haben und diesen nun an die Person übertragen wollen."
+
+#: webapp/templates/my-sensor-give.html:16
+msgid "If not please return"
+msgstr "Wenn nicht, übertragen sie den Sensor bitte zurück"
 
 #: webapp/templates/my-sensor-settings.html:11
 #, python-format
@@ -499,10 +495,10 @@ msgid ""
 "important that the basic information is\n"
 "                            always kept up to date."
 msgstr ""
-"Bitte beachten Sie, dass nur genaue Daten zu präzisen Auswertungen führen können mit "
-"welchen\n"
-" dann politisch argumentiert werden kann. Deshalb ist es "
-"wichtig, dass die grundlegenden Informationen\n"
+"Bitte beachten Sie, dass nur genaue Daten zu präzisen Auswertungen führen"
+" können mit welchen\n"
+" dann politisch argumentiert werden kann. Deshalb ist es wichtig, dass "
+"die grundlegenden Informationen\n"
 "Immer aktuell gehalten werden."
 
 #: webapp/templates/my-sensors.html:14
@@ -511,33 +507,78 @@ msgstr "Meine Sensoren"
 
 #: webapp/templates/my-sensors.html:18
 msgid "All sensors assigned to your account can be found in this overview."
-msgstr "In dieser Übersicht finden Sie alle Sensoren, die Ihrem Account zugeordnet sind."
+msgstr ""
+"In dieser Übersicht finden Sie alle Sensoren, die Ihrem Account "
+"zugeordnet sind."
 
-#: webapp/templates/my-sensors.html:40
+#: webapp/templates/my-sensors.html:20
+#, fuzzy
+msgid "Settings:"
+msgstr "Einstellungen"
+
+#: webapp/templates/my-sensors.html:20
+msgid ""
+"You have moved to another location, then update your\n"
+"                location. Or, add a new component to your kit."
+msgstr ""
+"Wenn sich die Position des Sensors geändert hat, können "
+"Sie diese hier aktualisieren. Oder Sie können eine neue Komponente"
+"zu Ihren Sensor hinzufügen."
+
+#: webapp/templates/my-sensors.html:22
+#, fuzzy
+msgid "Transfer:"
+msgstr "Übertragen:"
+
+#: webapp/templates/my-sensors.html:22
+msgid ""
+"Build sensor for another person and transfer it to his account via "
+"transfer."
+msgstr "Übertragen Sie einen Sensor an eine andere Person."
+
+#: webapp/templates/my-sensors.html:23
+#, fuzzy
+msgid "Data:"
+msgstr "Daten:"
+
+#: webapp/templates/my-sensors.html:23
+msgid "View your last published sensor data."
+msgstr "Zeigt die letzten veröffentlichten Sensordaten an."
+
+#: webapp/templates/my-sensors.html:24
+#, fuzzy
+msgid "Delete:"
+msgstr "Löschen"
+
+#: webapp/templates/my-sensors.html:24
+msgid "At your own risk."
+msgstr ""
+
+#: webapp/templates/my-sensors.html:49
 msgid "Last Update"
 msgstr "Letztes Update"
 
-#: webapp/templates/my-sensors.html:59
+#: webapp/templates/my-sensors.html:70
 msgid "Node ID"
 msgstr ""
 
-#: webapp/templates/my-sensors.html:65
+#: webapp/templates/my-sensors.html:98
 msgid "Data"
 msgstr "Daten"
 
-#: webapp/templates/my-sensors.html:67
+#: webapp/templates/my-sensors.html:101
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: webapp/templates/my-sensors.html:69
+#: webapp/templates/my-sensors.html:104
 msgid "Transfer"
 msgstr "Übertragen"
 
-#: webapp/templates/my-sensors.html:71
+#: webapp/templates/my-sensors.html:107
 msgid "Delete"
 msgstr "Löschen"
 
-#: webapp/templates/my-sensors.html:85
+#: webapp/templates/my-sensors.html:121
 msgid ""
 "Register new\n"
 "                            sensor"
@@ -569,17 +610,25 @@ msgstr "Passwort"
 msgid "Please choose a long and unique password."
 msgstr "Bitte wählen Sie ein langes und eindeutiges Passwort."
 
-#: webapp/templates/navbar.html:19 webapp/templates/navbar.html:138
+#: webapp/templates/navbar.html:19 webapp/templates/navbar.html:144
 msgid "Sensors"
 msgstr "Sensoren"
 
-#: webapp/templates/navbar.html:20 webapp/templates/navbar.html:139
+#: webapp/templates/navbar.html:20 webapp/templates/navbar.html:145
 msgid "Account"
 msgstr "Konto"
 
-#: webapp/templates/navbar.html:70 webapp/templates/navbar.html:142
+#: webapp/templates/navbar.html:27 webapp/templates/navbar.html:165
+msgid "Mainpage"
+msgstr ""
+
+#: webapp/templates/navbar.html:76 webapp/templates/navbar.html:148
 msgid "Logout"
 msgstr "Abmelden"
+
+#: webapp/templates/navbar.html:179
+msgid "Forum"
+msgstr ""
 
 #: webapp/templates/privacy-policy.html:11
 msgid ""
@@ -663,18 +712,18 @@ msgid ""
 msgstr ""
 
 #: webapp/templates/sensor-register.html:10
-#: webapp/templates/sensor-register.html:28
+#: webapp/templates/sensor-register.html:27
 msgid "Sensor registration"
 msgstr "Sensorregistrierung"
 
-#: webapp/templates/sensor-register.html:30
+#: webapp/templates/sensor-register.html:29
 msgid ""
 "Users of ESP32 boards, Raspberry PI or Smogomierz sensor\n"
 "                                    <strong>just enter the numeric part "
 "of the name.</strong> "
 msgstr ""
-"Nutzer eines ESP32, Raspberry PI oder Smogomierz Sensors"
-" <strong>geben nur den numerischen Teil des Names an.</strong>"
+"Nutzer eines ESP32, Raspberry PI oder Smogomierz Sensors <strong>geben "
+"nur den numerischen Teil des Names an.</strong>"
 
 #: webapp/templates/sensor-settings-form.html:5
 msgid "Basic Information"
@@ -686,8 +735,8 @@ msgid ""
 "will be\n"
 "                    randomized."
 msgstr ""
-"Diese Informationen <strong> werden nicht veröffentlicht</strong>,""
-" die Position wird verschleiert."
+"Diese Informationen <strong> werden nicht veröffentlicht</strong>,\" die "
+"Position wird verschleiert."
 
 #: webapp/templates/sensor-settings-form.html:8
 msgid ""
@@ -749,7 +798,7 @@ msgid "Save"
 msgstr "Speichern"
 
 #: webapp/templates/sensor-settings-form.html:188
-msgid "Enable expert fields"
+msgid "Expert fields"
 msgstr ""
 
 #: webapp/templates/emails/recover.html:10
@@ -799,7 +848,8 @@ msgid ""
 "them: "
 msgstr ""
 "Ein Sensor wurde auf Sie übertragen. Bitte melden Sie sich mit dieser "
-"Email-Adresse an, um Daten und Einstellungen zu übernehmen oder zu ändern "
+"Email-Adresse an, um Daten und Einstellungen zu übernehmen oder zu ändern"
+" "
 
 #: webapp/templates/emails/sensor-given.html:14
 msgid ""
@@ -814,16 +864,17 @@ msgid ""
 "a fine dust sensor has been registered for you. Please log in with this "
 "mail address to take in or change data and settings: "
 msgstr ""
-"ein Feinstaubsensor wurde auf Ihre EMail-Adresse angemeldet.  Bitte melden "
-"Sie sich mit dieser EMail-Adress an, um Daten und Einstellungen zu übernehmen oder zu ändern:"
+"ein Feinstaubsensor wurde auf Ihre EMail-Adresse angemeldet.  Bitte "
+"melden Sie sich mit dieser EMail-Adress an, um Daten und Einstellungen zu"
+" übernehmen oder zu ändern:"
 
 #: webapp/templates/emails/sensor-registered.html:13
 msgid ""
 "If the sensor was registered for you by mistake, please report this to "
 "tech@sensor.community."
 msgstr ""
-"Wenn ein Sensor fälschlicherweise auf Sie angemeldet wurde, melden "
-"Sie dies an tech@sensor.community.""
+"Wenn ein Sensor fälschlicherweise auf Sie angemeldet wurde, melden Sie "
+"dies an tech@sensor.community.\""
 
 #: webapp/templates/security/change_password.html:17
 #: webapp/templates/security/change_password.html:29
@@ -835,91 +886,91 @@ msgid "Request password reset"
 msgstr "Passwort zurücksetzen lassen"
 
 #: webapp/templates/security/forgot_password.html:24
-#: webapp/templates/security/reset_password.html:24
+#, fuzzy
 msgid ""
-"Trouble Logging In? Enter your email and we willl send you a link to get "
+"Trouble Logging In? Enter your email and we will send you a link to get "
 "back into your account."
-msgstr "Probleme mit der Anmeldung? Tragen Sie Ihre EMail-Adresse ein und "
-"wir senden Ihnen einen Link zum Setzen eines neuen Passworts."
+msgstr ""
+"Probleme mit der Anmeldung? Tragen Sie Ihre EMail-Adresse ein und wir "
+"senden Ihnen einen Link zum Setzen eines neuen Passworts."
 
-#: webapp/templates/security/login_user.html:25
-#: webapp/templates/security/register_user.html:25
+#: webapp/templates/security/login_user.html:23
+#: webapp/templates/security/register_user.html:23
 msgid ""
 "The main purpose of this page is to enable you, as the owner of a fine "
 "dust sensor, to configure the location and other parameters yourself."
 msgstr ""
-"Der Zweck dieser Seite ist es, Ihnen als Besitzers eines unserer Sensoren "
-"selbst die Konfiguration der Position und anderer Parameter zu ermöglichen."
+"Der Zweck dieser Seite ist es, Ihnen als Besitzers eines unserer Sensoren"
+" selbst die Konfiguration der Position und anderer Parameter zu "
+"ermöglichen."
 
-#: webapp/templates/security/login_user.html:28
-#: webapp/templates/security/register_user.html:28
+#: webapp/templates/security/login_user.html:26
+#: webapp/templates/security/register_user.html:26
 msgid ""
 "The city of the future belongs to its citizens. The digital tools, the "
 "Maker Movement and Citizen Science are leading to more and more people "
 "being given the opportunity to design the city themselves."
 msgstr ""
-"Die Stadt der Zukunft gehört den Bürgern. Digitale Tools, die Maker Bewegung "
-"und Citizen Science ermöglichen es mehr und mehr Bürgern, Ihre Stadt selbst "
-"zu gestalten."
+"Die Stadt der Zukunft gehört den Bürgern. Digitale Tools, die Maker "
+"Bewegung und Citizen Science ermöglichen es mehr und mehr Bürgern, Ihre "
+"Stadt selbst zu gestalten."
 
-#: webapp/templates/security/login_user.html:30
-#: webapp/templates/security/register_user.html:30
-msgid ""
-"Code a difference: Use your skills to\n"
-"                            improve your city!"
-msgstr "Code a difference: Nutzen Sie Ihre Fähigkeiten\n
-" um Ihre Stadt zu verbessern!""
+#: webapp/templates/security/login_user.html:28
+#: webapp/templates/security/register_user.html:28
+#, fuzzy
+msgid "Code a difference: Use your skills to improve your city!"
+msgstr ""
+"Code a difference: Nutzen Sie Ihre Fähigkeiten\\ um Ihre Stadt zu "
+"verbessern!\""
 
-#: webapp/templates/security/login_user.html:33
-msgid ""
-"Find\n"
-"                                out more about Sensor.Community"
-msgstr "Erfahren Sie mehr über Sensor.Community"
-
-#: webapp/templates/security/login_user.html:67
+#: webapp/templates/security/login_user.html:70
 msgid "Sign in to your account"
 msgstr "Anmelden"
 
-#: webapp/templates/security/login_user.html:70
+#: webapp/templates/security/login_user.html:73
 msgid "or"
 msgstr "oder"
 
-#: webapp/templates/security/login_user.html:72
+#: webapp/templates/security/login_user.html:75
 msgid "create an account"
 msgstr "Konto erstellen"
 
-#: webapp/templates/security/login_user.html:99
+#: webapp/templates/security/login_user.html:101
 msgid "Remember me"
 msgstr "Merken"
 
-#: webapp/templates/security/register_user.html:65
+#: webapp/templates/security/register_user.html:60
 msgid "Create your account"
 msgstr "Erstellen Sie ihr Konto"
 
-#: webapp/templates/security/register_user.html:68
+#: webapp/templates/security/register_user.html:63
 msgid "already have an account,"
 msgstr ""
 
-#: webapp/templates/security/register_user.html:70
-msgid ""
-"go\n"
-"                                           to login"
-msgstr ""
+#: webapp/templates/security/register_user.html:65
+#, fuzzy
+msgid "go to login"
+msgstr "Anmelden"
 
-#: webapp/templates/security/register_user.html:98
-msgid ""
-"Pleas wait up\n"
-"                                                        to 30 min. Check "
-"your spam folder"
-msgstr "Bitte warten sie bis zu 30 Minuten. Prüfen Sie auch Ihren Spamordner""
+#: webapp/templates/security/register_user.html:91
+msgid "Please wait up to 30 min. Check your spam folder"
+msgstr ""
 
 #: webapp/templates/security/reset_password.html:20
 msgid "Reset password"
 msgstr "Passwort zurücksetzen"
 
+#: webapp/templates/security/reset_password.html:24
+msgid ""
+"Trouble Logging In? Enter your email and we willl send you a link to get "
+"back into your account."
+msgstr ""
+"Probleme mit der Anmeldung? Tragen Sie Ihre EMail-Adresse ein und wir "
+"senden Ihnen einen Link zum Setzen eines neuen Passworts."
+
 #: webapp/templates/security/send_confirmation.html:5
 msgid "Resend confirmation instructions"
-msgstr "Bestätigungsmail noch einmal senden""
+msgstr "Bestätigungsmail noch einmal senden\""
 
 #: webapp/templates/security/send_login.html:5
 msgid "Login"
@@ -997,4 +1048,32 @@ msgstr "Nutzerdaten gespeichert"
 #: webapp/users/views.py:27
 msgid "Password changed"
 msgstr "Passwort geändert"
+
+#~ msgid "Settings saved successfully"
+#~ msgstr "Einstellungen erfolgreich gespeichert"
+
+#~ msgid "Component successfully registered"
+#~ msgstr "Komponente erfolgreich registriert"
+
+#~ msgid "Sensor successfully registered."
+#~ msgstr "Sensor erfolgreich registriert."
+
+#~ msgid "Enable expert fields"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Find\n"
+#~ "                                out more about Sensor.Community"
+#~ msgstr "Erfahren Sie mehr über Sensor.Community"
+
+#~ msgid ""
+#~ "go\n"
+#~ "                                           to login"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pleas wait up\n"
+#~ "                                                        to "
+#~ "30 min. Check your spam folder"
+#~ msgstr "Bitte warten sie bis zu 30 Minuten. Prüfen Sie auch Ihren Spamordner\""
 

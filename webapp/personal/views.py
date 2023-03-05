@@ -144,8 +144,8 @@ def sensor_data(id):
             sensor.sensor_type_id = 'NextPM'
 
         try:
-            # sensor_request = requests.get('http://api.sensor.community/static/v1/sensor/%s/' % (sensor.id))
-            sensor_request = requests.get('http://127.0.0.1/v1/sensor/%s/' % (sensor.id))
+            sensor_request = requests.get('http://data.sensor.community/airrohr/v1/sensor/%s/' % (sensor.id))
+            # sensor_request = requests.get('http://127.0.0.1/v1/sensor/%s/' % (sensor.id))
             sensor_request.raise_for_status()
             sensor_request = sensor_request.json()
             if not sensor_request:

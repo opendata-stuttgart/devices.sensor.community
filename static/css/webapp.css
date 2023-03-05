@@ -1,4 +1,4 @@
-/*! tailwindcss v2.2.15 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -185,6 +185,11 @@ button,
 Remove the inner border and padding in Firefox.
 */
 
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
 /**
 Restore the focus styles unset by the previous rule.
 */
@@ -206,6 +211,11 @@ Add the correct vertical alignment in Chrome and Firefox.
 Correct the cursor style of increment and decrement buttons in Safari.
 */
 
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
 /**
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
@@ -215,10 +225,19 @@ Correct the cursor style of increment and decrement buttons in Safari.
 Remove the inner padding in Chrome and Safari on macOS.
 */
 
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
 /**
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Change font properties to 'inherit' in Safari.
 */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
 
 /*
 Interactive
@@ -345,11 +364,6 @@ img {
 }
 
 input::-moz-placeholder {
-  opacity: 1;
-  color: #9ca3af;
-}
-
-input:-ms-input-placeholder {
   opacity: 1;
   color: #9ca3af;
 }
@@ -484,6 +498,7 @@ img {
   padding-left: 0.75rem;
   font-size: 1rem;
   line-height: 1.5rem;
+  --tw-shadow: 0 0 #0000;
 }
 
 [type='text']:focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='time']:focus, [multiple]:focus {
@@ -495,7 +510,7 @@ img {
   --tw-ring-color: #2563eb;
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   border-color: #2563eb;
 }
 
@@ -504,14 +519,17 @@ input::-moz-placeholder {
   opacity: 1;
 }
 
-input:-ms-input-placeholder {
+input::placeholder {
   color: #6b7280;
   opacity: 1;
 }
 
-input::placeholder {
-  color: #6b7280;
-  opacity: 1;
+::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+
+::-webkit-date-and-time-value {
+  min-height: 1.5em;
 }
 
 [multiple] {
@@ -536,7 +554,6 @@ input::placeholder {
   background-origin: border-box;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   flex-shrink: 0;
   height: 1rem;
@@ -545,6 +562,7 @@ input::placeholder {
   background-color: #fff;
   border-color: #6b7280;
   border-width: 1px;
+  --tw-shadow: 0 0 #0000;
 }
 
 [type='checkbox'] {
@@ -560,7 +578,7 @@ input::placeholder {
   --tw-ring-color: #2563eb;
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
 }
 
 [type='checkbox']:checked {
@@ -1108,12 +1126,6 @@ input::placeholder {
   --tw-placeholder-opacity: 0.5;
 }
 
-.input-field:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(107, 114, 128, var(--tw-placeholder-opacity));
-  --tw-placeholder-opacity: 0.5;
-}
-
 .input-field::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(107, 114, 128, var(--tw-placeholder-opacity));
@@ -1437,7 +1449,6 @@ input::placeholder {
 }
 
 .max-w-max {
-  max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
 }
@@ -1493,22 +1504,9 @@ input::placeholder {
   --tw-rotate: -45deg;
 }
 
-@-webkit-keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes spin {
   to {
     transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes ping {
-  75%, 100% {
-    transform: scale(2);
-    opacity: 0;
   }
 }
 
@@ -1519,49 +1517,26 @@ input::placeholder {
   }
 }
 
-@-webkit-keyframes pulse {
-  50% {
-    opacity: .5;
-  }
-}
-
 @keyframes pulse {
   50% {
     opacity: .5;
   }
 }
 
-@-webkit-keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
 @keyframes bounce {
   0%, 100% {
     transform: translateY(-25%);
-    -webkit-animation-timing-function: cubic-bezier(0.8,0,1,1);
-            animation-timing-function: cubic-bezier(0.8,0,1,1);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
   }
 
   50% {
     transform: none;
-    -webkit-animation-timing-function: cubic-bezier(0,0,0.2,1);
-            animation-timing-function: cubic-bezier(0,0,0.2,1);
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
   }
 }
 
 .animate-bounce {
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
 }
 
 .cursor-default {
@@ -2180,11 +2155,6 @@ input::placeholder {
   color: rgba(156, 163, 175, var(--tw-placeholder-opacity));
 }
 
-.placeholder-gray-400:-ms-input-placeholder {
-  --tw-placeholder-opacity: 1;
-  color: rgba(156, 163, 175, var(--tw-placeholder-opacity));
-}
-
 .placeholder-gray-400::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-placeholder-opacity));
@@ -2297,27 +2267,13 @@ input::placeholder {
 /*Banner open/load animation*/
 
 .alert-banner {
-  -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*Banner close animation*/
 
 .alert-banner input:checked ~ * {
-  -webkit-animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-
-@-webkit-keyframes slide-in-top {
-  0% {
-    transform: translateY(-1000px);
-    opacity: 0
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1
-  }
 }
 
 @keyframes slide-in-top {
@@ -2329,18 +2285,6 @@ input::placeholder {
   100% {
     transform: translateY(0);
     opacity: 1
-  }
-}
-
-@-webkit-keyframes slide-out-top {
-  0% {
-    transform: translateY(0);
-    opacity: 1
-  }
-
-  100% {
-    transform: translateY(-1000px);
-    opacity: 0
   }
 }
 
@@ -2356,18 +2300,6 @@ input::placeholder {
   }
 }
 
-@-webkit-keyframes slide-in-bottom {
-  0% {
-    transform: translateY(1000px);
-    opacity: 0
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1
-  }
-}
-
 @keyframes slide-in-bottom {
   0% {
     transform: translateY(1000px);
@@ -2377,18 +2309,6 @@ input::placeholder {
   100% {
     transform: translateY(0);
     opacity: 1
-  }
-}
-
-@-webkit-keyframes slide-out-bottom {
-  0% {
-    transform: translateY(0);
-    opacity: 1
-  }
-
-  100% {
-    transform: translateY(1000px);
-    opacity: 0
   }
 }
 
@@ -2404,18 +2324,6 @@ input::placeholder {
   }
 }
 
-@-webkit-keyframes slide-in-right {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1
-  }
-}
-
 @keyframes slide-in-right {
   0% {
     transform: translateX(1000px);
@@ -2425,18 +2333,6 @@ input::placeholder {
   100% {
     transform: translateX(0);
     opacity: 1
-  }
-}
-
-@-webkit-keyframes fade-out-right {
-  0% {
-    transform: translateX(0);
-    opacity: 1
-  }
-
-  100% {
-    transform: translateX(50px);
-    opacity: 0
   }
 }
 

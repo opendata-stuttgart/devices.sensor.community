@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-05-13 20:49+0000\n"
+"POT-Creation-Date: 2023-03-05 02:48+0100\n"
 "PO-Revision-Date: 2019-04-17 19:14+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: fr\n"
@@ -16,74 +16,78 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.6.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: webapp/personal/forms.py:39
 msgid "Indoor Sensor"
 msgstr "Notranji senzor"
 
-#: webapp/personal/forms.py:41
-msgid "Street"
+#: webapp/personal/forms.py:40
+#, fuzzy
+msgid "Street *"
 msgstr "Ulica"
 
-#: webapp/personal/forms.py:41
+#: webapp/personal/forms.py:40
 msgid "Please enter the street name."
 msgstr "Vnesite ime ulice."
 
-#: webapp/personal/forms.py:42
-msgid "Street number"
+#: webapp/personal/forms.py:41
+#, fuzzy
+msgid "Number"
 msgstr "Številka ulice"
 
-#: webapp/personal/forms.py:44
-msgid "Postal code"
-msgstr "Poštna številka"
+#: webapp/personal/forms.py:42
+msgid "Zip code *"
+msgstr ""
 
-#: webapp/personal/forms.py:44
+#: webapp/personal/forms.py:42
 msgid "Please enter the postal code."
 msgstr "Vnesite poštno številko."
 
-#: webapp/personal/forms.py:46
-msgid "City"
+#: webapp/personal/forms.py:43
+#, fuzzy
+msgid "City *"
 msgstr "Mesto"
 
-#: webapp/personal/forms.py:46
+#: webapp/personal/forms.py:43
 msgid "Please enter the city name."
 msgstr "Vnesite ime mesta."
 
-#: webapp/personal/forms.py:49
-msgid "Country"
+#: webapp/personal/forms.py:46
+#, fuzzy
+msgid "Country *"
 msgstr "Država"
 
-#: webapp/personal/forms.py:52 webapp/personal/forms.py:54
+#: webapp/personal/forms.py:49 webapp/personal/forms.py:51
 msgid "Please enter the country name."
 msgstr "Vnesite ime države."
 
-#: webapp/personal/forms.py:59
+#: webapp/personal/forms.py:56
 msgid "Latitude"
 msgstr "Zemljepisna širina"
 
-#: webapp/personal/forms.py:60
+#: webapp/personal/forms.py:57
 msgid "Please enter the latitude."
 msgstr "Vnesite zemljepisno širino."
 
-#: webapp/personal/forms.py:61
+#: webapp/personal/forms.py:58
 msgid "Longitude"
 msgstr "Zemljepisna dolžina"
 
-#: webapp/personal/forms.py:62
+#: webapp/personal/forms.py:59
 msgid "Please enter the longitude."
 msgstr "Vnesite zemljepisno dolžino."
 
-#: webapp/personal/forms.py:65
+#: webapp/personal/forms.py:62
 msgid "How much industrial activity is there within a 100m radius?"
 msgstr "Koliko industrijske dejavnosti je v polmeru 100 m?"
 
-#: webapp/personal/forms.py:74 webapp/personal/forms.py:89
-#: webapp/personal/forms.py:104
+#: webapp/personal/forms.py:71 webapp/personal/forms.py:87
+#: webapp/personal/forms.py:103
 msgid "Please enter the number between 1 and 10"
 msgstr "Vnesite številko med 1 in 10"
 
-#: webapp/personal/forms.py:77
+#: webapp/personal/forms.py:74
 msgid ""
 "No office space, but potential fine dust producers 1 = very little, 10 = "
 "very much."
@@ -91,11 +95,11 @@ msgstr ""
 "Ni pisarniških prostorov, vendar so možni proizvajalci finega prahu 1 = "
 "zelo malo, 10 = zelo veliko."
 
-#: webapp/personal/forms.py:80
+#: webapp/personal/forms.py:78
 msgid "How many private stoves or fireplaces are within a 100m radius?"
 msgstr "Koliko zasebnih peči ali kaminov je v polmeru 100 m?"
 
-#: webapp/personal/forms.py:92
+#: webapp/personal/forms.py:90
 msgid ""
 "Does it smell very much like such smoke in your area? 1 = very little, 10"
 " = very much."
@@ -103,11 +107,11 @@ msgstr ""
 "Ali na vašem območju zelo diši po takšnem dimu? 1 = zelo malo, 10 = zelo "
 "močno."
 
-#: webapp/personal/forms.py:95
+#: webapp/personal/forms.py:94
 msgid "How much traffic is there within a 100m radius?"
 msgstr "Koliko prometa je v polmeru 100 m?"
 
-#: webapp/personal/forms.py:107
+#: webapp/personal/forms.py:106
 msgid ""
 "How close are those roads? 1 = very little further away, 10 = a lot of "
 "traffic right on your doorstep."
@@ -115,43 +119,43 @@ msgstr ""
 "Kako blizu so te ceste? 1 = zelo majhna oddaljenost, 10 = veliko prometa "
 "tik pred vašim pragom."
 
-#: webapp/personal/forms.py:118
+#: webapp/personal/forms.py:119
 msgid "PIN"
 msgstr "PIN"
 
-#: webapp/personal/forms.py:119
+#: webapp/personal/forms.py:120
 msgid "For special use only"
 msgstr "Samo za posebno uporabo"
 
-#: webapp/personal/forms.py:122
+#: webapp/personal/forms.py:123
 msgid "Sensor Type"
 msgstr "Tip senzorja"
 
-#: webapp/personal/forms.py:135
+#: webapp/personal/forms.py:136
 msgid "Personal sensor name"
 msgstr "Ime osebnega senzorja"
 
-#: webapp/personal/forms.py:138
+#: webapp/personal/forms.py:139
 msgid "Please enter the sensor name."
 msgstr "Vnesite ime senzorja."
 
-#: webapp/personal/forms.py:141
+#: webapp/personal/forms.py:142
 msgid "Only the sensor ID will be published."
 msgstr "Objavljen bo samo ID senzorja."
 
-#: webapp/personal/forms.py:144
+#: webapp/personal/forms.py:145
 msgid "Sensor level above ground (in cm)"
 msgstr "Nivo senzorja nad tlemi (v cm)"
 
-#: webapp/personal/forms.py:151
+#: webapp/personal/forms.py:152
 msgid "NOT height above sea level!"
 msgstr "NE nadmorska višina!"
 
-#: webapp/personal/forms.py:154
+#: webapp/personal/forms.py:155
 msgid "Sensor location relative to the traffic"
 msgstr "Lokacija senzorja glede na promet"
 
-#: webapp/personal/forms.py:161
+#: webapp/personal/forms.py:162
 msgid ""
 "1 = on the garden side, very well shielded from all streets, 10 = the "
 "sensor is on a house wall directly on the street. With this value it is "
@@ -162,19 +166,19 @@ msgstr ""
 "je na steni hiše neposredno ob ulici. Pri tej vrednosti ni pomembno, kako"
 " velika je ulica, pomembno je le, kje je senzor pritrjen na hišo."
 
-#: webapp/personal/forms.py:164
+#: webapp/personal/forms.py:166
 msgid "Publish exact location"
 msgstr "Objavite točno lokacijo"
 
-#: webapp/personal/forms.py:165
+#: webapp/personal/forms.py:167
 msgid "Reveal exact sensor location in public data and archives."
 msgstr "Razkritje natančne lokacije senzorja v javnih podatkih in arhivih."
 
-#: webapp/personal/forms.py:168
+#: webapp/personal/forms.py:170 webapp/templates/my-sensors.html:89
 msgid "Inactive"
 msgstr "Neaktivno"
 
-#: webapp/personal/forms.py:169
+#: webapp/personal/forms.py:171
 msgid ""
 "Mark sensor as inactive. No notifications will be sent when sensor goes "
 "offline."
@@ -182,31 +186,31 @@ msgstr ""
 "Senzor označite kot neaktiven. Ko je senzor izključen iz omrežja, ne bodo"
 " poslana nobena obvestila."
 
-#: webapp/personal/forms.py:174
+#: webapp/personal/forms.py:177
 msgid "Short description of location"
 msgstr "Kratek opis lokacije"
 
-#: webapp/personal/forms.py:176
+#: webapp/personal/forms.py:179
 msgid "Save settings"
 msgstr "Shranjevanje nastavitev"
 
-#: webapp/personal/forms.py:181
-msgid "Sensor ID"
-msgstr "ID senzorja"
+#: webapp/personal/forms.py:184 webapp/templates/my-sensors.html:60
+msgid "Chip ID"
+msgstr ""
 
-#: webapp/personal/forms.py:183
+#: webapp/personal/forms.py:186
 msgid "Sensor ID may only contain digits and letters A to F"
 msgstr "ID senzorja lahko vsebuje samo številke in črke od A do F."
 
-#: webapp/personal/forms.py:185
+#: webapp/personal/forms.py:188
 msgid "The numeric part of the sensorname only"
 msgstr "Samo številčni del imena senzorja"
 
-#: webapp/personal/forms.py:188
+#: webapp/personal/forms.py:191
 msgid "Sensor Board"
 msgstr "Plošča za senzorje"
 
-#: webapp/personal/forms.py:191
+#: webapp/personal/forms.py:195
 msgid ""
 "Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
 "the Smogomierz sensor version need to change this accordingly. Also in "
@@ -216,423 +220,268 @@ msgstr ""
 "različice senzorja Smogomierz morajo to ustrezno spremeniti. Tudi v teh "
 "primerih je ID senzorja samo številčni del imena."
 
-#: webapp/personal/forms.py:196
+#: webapp/personal/forms.py:202
 msgid "Recipient's e-mail address"
 msgstr "e-poštni naslov prejemnika"
 
-#: webapp/personal/forms.py:199
+#: webapp/personal/forms.py:205
 msgid "Please enter e-mail address"
 msgstr "Vnesite e-poštni naslov"
 
-#: webapp/personal/forms.py:202
+#: webapp/personal/forms.py:208
 msgid "Please enter correct e-mail address"
 msgstr "Vnesite pravilen e-poštni naslov"
 
-#: webapp/personal/forms.py:206
+#: webapp/personal/forms.py:212
 msgid "Transfer sensor"
 msgstr "Senzor za prenos"
 
-#: webapp/personal/forms.py:211
+#: webapp/personal/forms.py:217
 msgid "You can't transfer the sensor to yourself"
 msgstr "Senzorja ne morete prenesti nase"
 
-#: webapp/personal/forms.py:214 webapp/templates/my-sensors.html:32
+#: webapp/personal/forms.py:221
 msgid "Delete sensor"
 msgstr "Brisanje senzorja"
 
-#: webapp/personal/views.py:33
+#: webapp/personal/forms.py:226
+#, fuzzy
+msgid "Add sensor"
+msgstr "Moji senzorji"
+
+#: webapp/personal/views.py:21
 msgid "Fine dust 10 µm"
 msgstr "Droben prah 10 µm"
 
-#: webapp/personal/views.py:34
+#: webapp/personal/views.py:22
 msgid "Fine dust 2.5 µm"
 msgstr "Droben prah 2,5 µm"
 
-#: webapp/personal/views.py:35
+#: webapp/personal/views.py:23
 msgid "Humidity"
 msgstr "Vlaga"
 
-#: webapp/personal/views.py:36
+#: webapp/personal/views.py:24
 msgid "Temperature"
 msgstr "Temperatura"
 
-#: webapp/personal/views.py:37
+#: webapp/personal/views.py:25
 msgid "Pressure"
 msgstr "Tlak"
 
-#: webapp/personal/views.py:38
+#: webapp/personal/views.py:26
 msgid "Pressure at sea level"
 msgstr "Tlak na morski gladini"
 
-#: webapp/personal/views.py:42
+#: webapp/personal/views.py:30
 msgid "particulate matter sensor"
 msgstr "senzor delcev"
 
-#: webapp/personal/views.py:43
+#: webapp/personal/views.py:31
 msgid "temperature/humidity sensor"
 msgstr "senzor temperature in vlage"
 
-#: webapp/personal/views.py:44
+#: webapp/personal/views.py:32
 msgid "temperature/pressure sensor"
 msgstr "temperaturno-tlačni senzor"
 
-#: webapp/personal/views.py:45
+#: webapp/personal/views.py:33
 msgid "temperature/humidity/pressure sensor"
 msgstr "senzor temperature/vlage/tlaka"
 
-#: webapp/personal/views.py:46
+#: webapp/personal/views.py:34
 msgid "temperature/humidity/CO₂ ppm sensor"
 msgstr "senzor temperature/vlage/CO₂ ppm"
 
-#: webapp/personal/views.py:47
+#: webapp/personal/views.py:35
 msgid "noise sensor"
 msgstr ""
 
-#: webapp/personal/views.py:48
+#: webapp/personal/views.py:36
 msgid "radiation sensor"
 msgstr ""
 
-#: webapp/personal/views.py:219
-msgid "Settings saved successfully."
-msgstr "Nastavitve so bile uspešno shranjene."
+#: webapp/personal/views.py:216
+msgid "Pin is already in use"
+msgstr ""
 
-#: webapp/personal/views.py:247
-msgid "Sensor successfully registered."
-msgstr "Senzor je bil uspešno registriran."
-
-#: webapp/personal/views.py:251
-msgid "This sensor ID is already registered."
+#: webapp/personal/views.py:248
+#, fuzzy
+msgid "This sensor ID is already registered"
 msgstr "Ta ID senzorja je že registriran."
 
-#: webapp/personal/views.py:265
+#: webapp/personal/views.py:261
 msgid "A fine dust sensor was transferred to you"
 msgstr "Senzor za droben prah je bil prenesen na vas"
 
-#: webapp/templates/401.html:8
-msgid "Access prohibited"
-msgstr "Dostop je prepovedan"
+#: webapp/personal/views.py:272
+#, fuzzy
+msgid "Sensor successfully transfered."
+msgstr "Senzor je bil uspešno registriran."
 
-#: webapp/templates/401.html:9
-msgid "You may not access this page. Maybe "
-msgstr "Do te strani ne smete dostopati. Morda"
+#: webapp/personal/views.py:290
+#, fuzzy
+msgid "Sensor successfully deleted"
+msgstr "Senzor je bil uspešno registriran."
 
-#: webapp/templates/401.html:9
-msgid "you must first log in?"
-msgstr "se morate najprej prijaviti?"
+#: webapp/templates/400.html:50
+msgid "Bad Request Error"
+msgstr ""
 
-#: webapp/templates/imprint.html:8 webapp/templates/layout.html:110
+#: webapp/templates/400.html:51 webapp/templates/404.html:51
+msgid "Please check the URL in the address bar and try again."
+msgstr ""
+
+#: webapp/templates/400.html:53 webapp/templates/403.html:53
+#: webapp/templates/404.html:53
+msgid ""
+"If you landed by accident here, then check out our main page to find some"
+" information."
+msgstr ""
+
+#: webapp/templates/400.html:55 webapp/templates/403.html:55
+#: webapp/templates/404.html:55 webapp/templates/security/login_user.html:30
+#: webapp/templates/security/register_user.html:30
+msgid "Find out more about Sensor.Community"
+msgstr ""
+
+#: webapp/templates/400.html:59 webapp/templates/403.html:59
+#: webapp/templates/404.html:59
+msgid "Go back home"
+msgstr ""
+
+#: webapp/templates/400.html:63 webapp/templates/403.html:63
+#: webapp/templates/404.html:63
+msgid "Contact support"
+msgstr ""
+
+#: webapp/templates/403.html:50
+msgid "Forbidden"
+msgstr ""
+
+#: webapp/templates/403.html:51
+msgid "Please login first, befor entering the page."
+msgstr ""
+
+#: webapp/templates/404.html:50
+msgid "Page not found"
+msgstr ""
+
+#: webapp/templates/footer.html:106
+msgid "Guides"
+msgstr ""
+
+#: webapp/templates/footer.html:111 webapp/templates/navbar.html:33
+#: webapp/templates/navbar.html:172
+msgid "Donate"
+msgstr ""
+
+#: webapp/templates/footer.html:118
+msgid "Legal"
+msgstr ""
+
+#: webapp/templates/footer.html:124 webapp/templates/imprint.html:8
 msgid "Imprint"
 msgstr "Odtis"
 
-#: webapp/templates/imprint.html:14
-msgid "Informations according to § 5 TMG"
-msgstr "Informacije v skladu s § 5 TMG"
-
-#: webapp/templates/imprint.html:21
-msgid "Represented by:"
-msgstr "Zastopa ga:"
-
-#: webapp/templates/imprint.html:26
-msgid "Contact:"
-msgstr "Kontaktna oseba:"
-
-#: webapp/templates/imprint.html:32
-msgid "based on the concept and software development of Ernesto Ruge:"
-msgstr "temelji na konceptu in razvoju programske opreme Ernesta Rugeja:"
-
-#: webapp/templates/imprint.html:34
-msgid "Contact: Website of Ernesto Ruge:"
-msgstr "Kontaktna oseba: Spletna stran Ernesto Ruge:"
-
-#: webapp/templates/index.html:6 webapp/templates/register-minimal.html:13
-msgid "Configure air quality sensor yourself"
-msgstr "Sami konfigurirajte senzor kakovosti zraka"
-
-#: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid "Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
-msgstr ""
-"Donacija za Sensor.Community (strojna in programska oprema) zdaj na "
-"Betterplace.org"
-
-#: webapp/templates/index.html:7 webapp/templates/my-sensors.html:9
-msgid "Donate for<br>Sensor.Community<br>now on<br><span>Betterplace.org</span>"
-msgstr ""
-"Donacija za<br>Sensor.Community<br>tudi "
-"na&lt<br><span>Betterplace.org</span>"
-
-#: webapp/templates/index.html:16
-msgid "Configure Luftdaten"
-msgstr "Konfiguracija podatkov o zraku"
-
-#: webapp/templates/index.html:17
-msgid ""
-"The main purpose of this page is to enable you, as the owner of a fine "
-"dust sensor, to configure the location and other parameters yourself."
-msgstr ""
-"Glavni namen te strani je, da lahko kot lastnik senzorja za fini prah "
-"sami konfigurirate lokacijo in druge parametre."
-
-#: webapp/templates/index.html:18
-#, python-format
-msgid "Click here to <a href=\"%(login_url)s\">log in</a>."
-msgstr "Kliknite tukaj za <a href=\"%(login_url)s\">prijavo</a>."
-
-#: webapp/templates/index.html:20
-#, python-format
-msgid ""
-"General information can be found at <a "
-"href=\"%(home_url)s\">Sensor.Community</a> - formerly known as "
-"Luftdaten.info, as well as the <a href=\"%(manual_url)s\">building "
-"instructions</a>.\n"
-"            Sensor data can be found on <a href=\"%(map_url)s\">the fine "
-"dust map</a> or <a href=\"%(archive_url)s\">be downloaded as CSVs</a>."
-msgstr ""
-"Splošne informacije so na voljo na <a "
-"href=\"%(home_url)s\">Sensor.Community</a> - prej znan kot "
-"Luftdaten.info, kot tudi <a href=\"%(manual_url)s\">navodila za "
-"gradnjo</a>.\n"
-"            Podatki senzorjev so na voljo na <a "
-"href=\"%(map_url)s\">karti drobnega prahu</a> ali <a "
-"href=\"%(archive_url)s\">se lahko prenesejo kot CSV</a>."
-
-#: webapp/templates/index.html:32
-msgid "Join us!"
-msgstr "Pridružite se nam!"
-
-#: webapp/templates/index.html:33
-msgid ""
-"The city of the future belongs to its citizens. The digital tools, the "
-"Maker Movement and Citizen Science are leading to more and more people "
-"being given the opportunity to design the city themselves."
-msgstr ""
-"Mesto prihodnosti pripada njegovim prebivalcem. Digitalna orodja, gibanje"
-" Maker Movement in državljanska znanost vodijo k temu, da vse več ljudi "
-"dobiva priložnost, da sami oblikujejo mesto."
-
-#: webapp/templates/index.html:35
-msgid "About the project"
-msgstr "O projektu"
-
-#: webapp/templates/index.html:36
-msgid ""
-"The OK Lab Stuttgart is part of the program Code for Germany of the Open "
-"Knowledge Foundation Germany. The aim of the program is to promote "
-"developments in the areas of transparency, Open Data and Citizen Science."
-msgstr ""
-"OK Lab Stuttgart je del programa Code for Germany nemške fundacije Open "
-"Knowledge Foundation Germany. Cilj programa je spodbujati razvoj na "
-"področjih preglednosti, odprtih podatkov in državljanske znanosti."
-
-#: webapp/templates/index.html:37
-msgid ""
-"Regional groups consisting of designers, developers, journalists and "
-"others meet regularly in Labs. They develop apps that inform, positively "
-"shape and support society and make the work of administrations and "
-"authorities more transparent."
-msgstr ""
-"Regionalne skupine, ki jih sestavljajo oblikovalci, razvijalci, novinarji"
-" in drugi, se redno srečujejo v laboratorijih. Razvijajo aplikacije, ki "
-"obveščajo, pozitivno oblikujejo in podpirajo družbo ter povečujejo "
-"preglednost dela uprav in organov."
-
-#: webapp/templates/index.html:38
-msgid "Code a difference: Use your skills to improve your city!"
-msgstr "Označite razliko: Uporabite svoje spretnosti za izboljšanje svojega mesta!"
-
-#: webapp/templates/invalid-email.html:8
-msgid "Unknown email address"
-msgstr "Neznani e-poštni naslov"
-
-#: webapp/templates/invalid-email.html:9
-msgid "There are no sensors stored under this e-mail address."
-msgstr "Pod tem e-poštnim naslovom ni shranjenih nobenih senzorjev."
-
-#: webapp/templates/invalid-email.html:10
-msgid ""
-"If you are of the opinion that you have a sensor at this mail address, "
-"please send us an e-mail. Send an email to"
-msgstr ""
-"Če menite, da imate senzor na tem poštnem naslovu, nam pošljite e-pošto. "
-"Pošljite e-poštno sporočilo na naslov"
-
-#: webapp/templates/layout.html:4
-msgid "user configuration"
-msgstr "konfiguracija uporabnika"
-
-#: webapp/templates/layout.html:14
-msgid "Information and settings for the luftdaten project"
-msgstr "Informacije in nastavitve za projekt luftdaten"
-
-#: webapp/templates/layout.html:55
-msgid "Home"
-msgstr "Domov"
-
-#: webapp/templates/layout.html:58 webapp/templates/my-sensors.html:9
-msgid "My sensors"
-msgstr "Moji senzorji"
-
-#: webapp/templates/layout.html:59 webapp/templates/meine-luftdaten.html:20
-#: webapp/templates/my-password.html:10 webapp/templates/my-sensors.html:30
-#: webapp/templates/my-settings.html:13
-msgid "Settings"
-msgstr "Nastavitve"
-
-#: webapp/templates/layout.html:60
-msgid "Password change"
-msgstr "Sprememba gesla"
-
-#: webapp/templates/layout.html:63
-msgid "Massimporter"
-msgstr "Massimporter"
-
-#: webapp/templates/layout.html:69 webapp/templates/meine-luftdaten.html:24
-msgid "Logout"
-msgstr "Odjava"
-
-#: webapp/templates/layout.html:71 webapp/templates/security/login_user.html:7
-#: webapp/templates/security/send_login.html:5
-msgid "Login"
-msgstr "Prijava"
-
-#: webapp/templates/layout.html:72 webapp/templates/security/login_user.html:17
-#: webapp/templates/security/register_user.html:5
-msgid "Register"
-msgstr "Register"
-
-#: webapp/templates/layout.html:111 webapp/templates/privacy-policy.html:8
+#: webapp/templates/footer.html:130 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
 msgstr "Pravilnik o zasebnosti"
 
-#: webapp/templates/login-with-password.html:68
-msgid "Back to e-mail login"
-msgstr "Nazaj na prijavo v e-pošto"
+#: webapp/templates/imprint.html:11
+msgid "Informations according to § 5 TMG"
+msgstr "Informacije v skladu s § 5 TMG"
 
-#: webapp/templates/login-with-password.html:69
-msgid "Password Reset"
-msgstr "Ponastavitev gesla"
+#: webapp/templates/imprint.html:16
+msgid "Represented by:"
+msgstr "Zastopa ga:"
 
-#: webapp/templates/login.html:12
-msgid "Configure air data sensor yourself"
-msgstr "Samostojno konfiguriranje senzorja podatkov o zraku"
+#: webapp/templates/imprint.html:18
+msgid "Contact:"
+msgstr "Kontaktna oseba:"
 
-#: webapp/templates/meine-luftdaten.html:11
-msgid "Meine Luftdaten"
-msgstr "Moji podatki o zraku"
+#: webapp/templates/imprint.html:23
+#, fuzzy
+msgid ""
+"based on the concept and software\n"
+"                development of Ernesto Ruge"
+msgstr "temelji na konceptu in razvoju programske opreme Ernesta Rugeja:"
 
-#: webapp/templates/meine-luftdaten.html:11
-msgid "Your personal area."
-msgstr "Vaše osebno področje."
+#: webapp/templates/imprint.html:25
+#, fuzzy
+msgid "Website of Ernesto Ruge:"
+msgstr "Kontaktna oseba: Spletna stran Ernesto Ruge:"
 
-#: webapp/templates/meine-luftdaten.html:18
-msgid "Sensors"
-msgstr "Senzorji"
+#: webapp/templates/layout.html:4 webapp/templates/layout.html:14
+#: webapp/templates/layout.html:15 webapp/templates/layout.html:20
+#: webapp/templates/layout.html:21 webapp/templates/security/login_user.html:19
+#: webapp/templates/security/register_user.html:19
+#, fuzzy
+msgid "Configure your air quality sensor yourself"
+msgstr "Sami konfigurirajte senzor kakovosti zraka"
 
-#: webapp/templates/meine-luftdaten.html:19
-msgid "View and change sensor data and settings."
-msgstr "Ogled in spreminjanje podatkov in nastavitev senzorja."
-
-#: webapp/templates/meine-luftdaten.html:21
-msgid "View and change data, notification settings and passwords."
-msgstr "Ogled in spreminjanje podatkov, nastavitev obvestil in gesel."
-
-#: webapp/templates/meine-luftdaten.html:22 webapp/users/forms.py:46
-#: webapp/users/forms.py:93
-msgid "Password"
-msgstr "Geslo"
-
-#: webapp/templates/meine-luftdaten.html:23
-msgid "Change password."
-msgstr "Spremenite geslo."
-
-#: webapp/templates/meine-luftdaten.html:25
-msgid "Logout."
-msgstr "Odjava."
-
-#: webapp/templates/my-password.html:11
-msgid "Change your password."
-msgstr "Spremenite geslo."
-
-#: webapp/templates/my-sensor-data.html:8
+#: webapp/templates/my-sensor-data.html:14
 msgid "Data from Node"
 msgstr "Podatki iz vozlišča"
 
-#: webapp/templates/my-sensor-data.html:9
+#: webapp/templates/my-sensor-data.html:18
 msgid ""
 "Typically, two sensors are attached to each node: the fine dust sensor "
 "and the\n"
 "                        Humidity and temperature sensor. The sensor "
 "number can also be found"
 msgstr ""
-"Običajno sta na vsako vozlišče "
-"priključena dva senzorja: senzor finega "
+"Običajno sta na vsako vozlišče priključena dva senzorja: senzor finega "
 "prahu\n"
-"                        ter senzor vlažnosti "
-"in temperature. Številko senzorja lahko "
-"najdete tudi"
+"                        ter senzor vlažnosti in temperature. Številko "
+"senzorja lahko najdete tudi"
 
-#: webapp/templates/my-sensor-data.html:11
-msgid "on the fine dust map again"
+#: webapp/templates/my-sensor-data.html:20
+#, fuzzy
+msgid "on the fine dust map"
 msgstr "na zemljevidu drobnega prahu"
 
-#: webapp/templates/my-sensor-data.html:19
+#: webapp/templates/my-sensor-data.html:40
 msgid "show on map"
 msgstr "Prikaži na zemljevidu"
 
-#: webapp/templates/my-sensor-data.html:25
+#: webapp/templates/my-sensor-data.html:46
 msgid "Last updated:"
 msgstr "Nazadnje posodobljeno:"
 
-#: webapp/templates/my-sensor-data.html:39
+#: webapp/templates/my-sensor-data.html:61
 msgid "No current data are available for this sensor."
 msgstr "Trenutni podatki za ta senzor niso na voljo."
 
-#: webapp/templates/my-sensor-delete-success.html:13
-#: webapp/templates/my-sensor-give-success.html:13
-msgid "Sensor"
-msgstr "Senzor"
-
-#: webapp/templates/my-sensor-delete-success.html:13
-msgid "was deleted."
-msgstr "je bil izbrisan."
-
-#: webapp/templates/my-sensor-delete-success.html:14
-#: webapp/templates/my-sensor-delete.html:23
-#: webapp/templates/my-sensor-give-success.html:15
-#: webapp/templates/my-sensor-give.html:24
-msgid "Back to my sensors"
-msgstr "Nazaj k mojim senzorjem"
-
-#: webapp/templates/my-sensor-delete.html:8
+#: webapp/templates/my-sensor-delete.html:11
 #, python-format
 msgid "Delete sensor %(node_id)s"
 msgstr "Nazaj k mojim senzorjem"
 
-#: webapp/templates/my-sensor-delete.html:9
-msgid "Are you sure you want to delete this sensor?"
-msgstr "Ste prepričani, da želite izbrisati ta senzor?"
-
-#: webapp/templates/my-sensor-delete.html:10
+#: webapp/templates/my-sensor-delete.html:14
+#: webapp/templates/my-sensor-give.html:14
 msgid "Warning! After deleting you have no more control over the sensor!"
 msgstr "Opozorilo! Po izbrisu nimate več nadzora nad senzorjem!"
 
-#: webapp/templates/my-sensor-delete.html:11
-msgid "Also the chipID of this sensor will remain blocked for a new registration!"
+#: webapp/templates/my-sensor-delete.html:15
+#, fuzzy
+msgid ""
+"Also the chipID of this sensor will remain blocked for a new\n"
+"                            registration!"
 msgstr "Tudi čipID tega senzorja bo ostal blokiran za novo registracijo!"
 
-#: webapp/templates/my-sensor-give-success.html:13
-msgid "was handed over."
-msgstr "je bila izročena."
+#: webapp/templates/my-sensor-delete.html:18
+#: webapp/templates/my-sensor-give.html:17
+#, fuzzy
+msgid "back to my sensors"
+msgstr "Nazaj k mojim senzorjem"
 
-#: webapp/templates/my-sensor-give-success.html:14
-msgid "An e-mail was sent to the new owner"
-msgstr "Novemu lastniku je bilo poslano e-poštno sporočilo"
+#: webapp/templates/my-sensor-give.html:11
+#, fuzzy, python-format
+msgid "Transfer Sensor %(node_id)s"
+msgstr "Nazaj k mojim senzorjem"
 
-#: webapp/templates/my-sensor-give.html:8
-#, python-format
-msgid "Sensor %(node_id)s hand over"
-msgstr "Novemu lastniku je bilo poslano e-poštno sporočilo"
-
-#: webapp/templates/my-sensor-give.html:9
+#: webapp/templates/my-sensor-give.html:15
 msgid ""
 "This allows you to transfer sensors to another person. This is especially"
 " useful if you have ordered a sensor for a friend and want to transfer it"
@@ -641,109 +490,192 @@ msgstr ""
 "Tako lahko senzorje prenesete na drugo osebo. To je še posebej uporabno, "
 "če ste senzor naročili za prijatelja in ga želite prenesti nanj."
 
-#: webapp/templates/my-sensor-give.html:10
-msgid "Warning! After the transfer you have no more control over the sensor!"
-msgstr "Opozorilo! Po prenosu nimate več nadzora nad senzorjem!"
+#: webapp/templates/my-sensor-give.html:16
+msgid "If not please return"
+msgstr ""
 
-#: webapp/templates/my-sensor-settings.html:6
-#, python-format
-msgid "Settings of Node %(node_id)s"
+#: webapp/templates/my-sensor-settings.html:11
+#, fuzzy, python-format
+msgid "Settings of your %(node_id)s"
 msgstr "Nastavitve vozlišča %(node_id)s"
 
-#: webapp/templates/my-sensor-settings.html:7
+#: webapp/templates/my-sensor-settings.html:14
 msgid ""
-"With this form you can keep the data of the sensor up to date. Please "
-"note that only precise data can lead to precise evaluations with which we"
-" can also argue politically. It is therefore important that the basic "
-"sensor data is always kept up to date."
+"Please note that only precise data can lead to precise evaluations with "
+"which we\n"
+"                            can also argue politically. Therefore it is "
+"important that the basic information is\n"
+"                            always kept up to date."
 msgstr ""
-"S tem obrazcem lahko posodobite podatke senzorja. Upoštevajte, da lahko "
-"le na podlagi natančnih podatkov dobimo natančne ocene, s katerimi lahko "
-"tudi politično argumentiramo. Zato je pomembno, da so osnovni podatki "
-"senzorja vedno posodobljeni."
 
-#: webapp/templates/my-sensors.html:10
+#: webapp/templates/my-sensors.html:14
+msgid "My sensors"
+msgstr "Moji senzorji"
+
+#: webapp/templates/my-sensors.html:18
 msgid "All sensors assigned to your account can be found in this overview."
 msgstr "Vsi senzorji, dodeljeni vašemu računu, so na voljo v tem pregledu."
 
-#: webapp/templates/my-sensors.html:15
-msgid "Sensor UID"
-msgstr "UID senzorja"
+#: webapp/templates/my-sensors.html:20
+#, fuzzy
+msgid "Settings:"
+msgstr "Nastavitve"
 
-#: webapp/templates/my-sensors.html:16
-msgid "Name"
-msgstr "Ime"
+#: webapp/templates/my-sensors.html:20
+msgid ""
+"You have moved to another location, then update your\n"
+"                location. Or, add a new component to your kit."
+msgstr ""
 
-#: webapp/templates/my-sensors.html:17
-msgid "Created"
-msgstr "Ustvarjeno"
+#: webapp/templates/my-sensors.html:22
+msgid "Transfer:"
+msgstr ""
 
-#: webapp/templates/my-sensors.html:17
+#: webapp/templates/my-sensors.html:22
+msgid ""
+"Build sensor for another person and transfer it to his account via "
+"transfer."
+msgstr ""
+
+#: webapp/templates/my-sensors.html:23
+#, fuzzy
+msgid "Data:"
+msgstr "Podatki"
+
+#: webapp/templates/my-sensors.html:23
+msgid "View your last published sensor data."
+msgstr ""
+
+#: webapp/templates/my-sensors.html:24
+#, fuzzy
+msgid "Delete:"
+msgstr "je bil izbrisan."
+
+#: webapp/templates/my-sensors.html:24
+msgid "At your own risk."
+msgstr ""
+
+#: webapp/templates/my-sensors.html:49
 msgid "Last Update"
 msgstr "Zadnja posodobitev"
 
-#: webapp/templates/my-sensors.html:18
-msgid "Functions"
-msgstr "Funkcije"
+#: webapp/templates/my-sensors.html:70
+msgid "Node ID"
+msgstr ""
 
-#: webapp/templates/my-sensors.html:29
+#: webapp/templates/my-sensors.html:98
 msgid "Data"
 msgstr "Podatki"
 
-#: webapp/templates/my-sensors.html:31
-msgid "Hand over sensor"
-msgstr "Senzor iz roke v roko"
+#: webapp/templates/my-sensors.html:101
+msgid "Settings"
+msgstr "Nastavitve"
 
-#: webapp/templates/my-sensors.html:36
-msgid "No sensors found"
-msgstr "Senzorji niso bili najdeni"
+#: webapp/templates/my-sensors.html:104
+#, fuzzy
+msgid "Transfer"
+msgstr "Senzor za prenos"
 
-#: webapp/templates/my-sensors.html:41
-msgid "Register new sensor"
-msgstr "Registracija novega senzorja"
+#: webapp/templates/my-sensors.html:107
+#, fuzzy
+msgid "Delete"
+msgstr "je bil izbrisan."
 
-#: webapp/templates/my-settings.html:14
+#: webapp/templates/my-sensors.html:121
+msgid ""
+"Register new\n"
+"                            sensor"
+msgstr ""
+
+#: webapp/templates/my-settings.html:16
+#, fuzzy
+msgid "Account Settings"
+msgstr "Shranjevanje nastavitev"
+
+#: webapp/templates/my-settings.html:20
 msgid "Here you can change your settings."
 msgstr "Tu lahko spremenite nastavitve."
 
-#: webapp/templates/privacy-policy.html:13
+#: webapp/templates/my-settings.html:31
+msgid "Personal"
+msgstr ""
+
+#: webapp/templates/my-settings.html:33
+#, fuzzy
+msgid "Here you can change your name."
+msgstr "Tu lahko spremenite nastavitve."
+
+#: webapp/templates/my-settings.html:71 webapp/users/forms.py:35
+#: webapp/users/forms.py:61
+msgid "Password"
+msgstr "Geslo"
+
+#: webapp/templates/my-settings.html:74
+#: webapp/templates/security/change_password.html:30
+msgid "Please choose a long and unique password."
+msgstr ""
+
+#: webapp/templates/navbar.html:19 webapp/templates/navbar.html:144
+msgid "Sensors"
+msgstr "Senzorji"
+
+#: webapp/templates/navbar.html:20 webapp/templates/navbar.html:145
+msgid "Account"
+msgstr ""
+
+#: webapp/templates/navbar.html:27 webapp/templates/navbar.html:165
+msgid "Mainpage"
+msgstr ""
+
+#: webapp/templates/navbar.html:76 webapp/templates/navbar.html:148
+msgid "Logout"
+msgstr "Odjava"
+
+#: webapp/templates/navbar.html:179
+msgid "Forum"
+msgstr ""
+
+#: webapp/templates/privacy-policy.html:11
+#, fuzzy
 msgid ""
-"<p>The operators of these pages take the protection of your personal data"
-" very seriously. We treat your personal data confidentially and according"
-" to the legal data protection regulations as well as this data protection"
-" explanation.</p>\n"
-"                    <p>The use of our website is generally possible "
+"<div>The operators of these pages take the protection of your personal "
+"data very seriously. We treat\n"
+"            your personal data confidentially and according to the legal "
+"data protection regulations as well as this data protection "
+"explanation.</div>\n"
+"                    <div>The use of our website is generally possible "
 "without providing personal data. Insofar as personal data (e.g. name, "
 "address or e-mail addresses) is collected on our pages, this is always "
 "done on a voluntary basis as far as possible. This data will not be "
-"passed on to third parties without your express consent.</p>\n"
-"                    <p>We would like to point out that data transmission "
-"via the Internet (e.g. communication via e-mail) may have security gaps. "
-"A complete protection of the data against the access by third is not "
-"possible.</p>\n"
+"passed on to third parties without your express consent.</div>\n"
+"                    <div>We would like to point out that data "
+"transmission via the Internet (e.g. communication via e-mail) may have "
+"security gaps. A complete protection of the data against the access by "
+"third is not possible.</div>\n"
 "                    <h2>Information, deletion, blocking</h2>\n"
-"                    <p>You have the right at any time to free information"
-" about your stored personal data, their origin and recipient and the "
-"purpose of data processing as well as a right to correction, blocking or "
-"deletion of this data. You can contact us at any time at the address "
-"given in the imprint for this and other questions on the subject of "
-"personal data.</p>\n"
+"                    <div>You have the right at any time to free "
+"information about your stored personal data, their origin and recipient "
+"and the purpose of data processing as well as a right to correction, "
+"blocking or deletion of this data. You can contact us at any time at the "
+"address given in the imprint for this and other questions on the subject "
+"of personal data.</div>\n"
 "                    <h2>Cookies</h2>\n"
-"                    <p>Some of the Internet pages use so-called cookies. "
-"Cookies do not damage your computer and do not contain viruses. Cookies "
-"serve to make our offer more user-friendly, more effective and safer. "
-"Cookies are small text files that are stored on your computer by your "
-"browser.</p>\n"
-"                    <p>Most of the cookies we use are so-called \"session"
-" cookies\". They are automatically deleted at the end of your visit. "
-"Other cookies remain stored on your terminal until you delete them. These"
-" cookies enable us to recognize your browser during your next visit.</p>"
+"                    <div>Some of the Internet pages use so-called "
+"cookies. Cookies do not damage your computer and do not contain viruses. "
+"Cookies serve to make our offer more user-friendly, more effective and "
+"safer. Cookies are small text files that are stored on your computer by "
+"your browser.</div>\n"
+"                    <div>Most of the cookies we use are so-called "
+"\"session cookies\". They are automatically deleted at the end of your "
+"visit. Other cookies remain stored on your terminal until you delete "
+"them. These cookies enable us to recognize your browser during your next "
+"visit.</div>\n"
 "\n"
-"                \n"
 "                    <h2>Account and sensor data</h2>\n"
-"                    <p>The measurement data of the sensors are collected "
-"on the server of the Sensor.Community and are publicly accessible to the "
-"company. The following information will be published:</p>\n"
+"                    <div>The measurement data of the sensors are "
+"collected on the server of the Sensor.Community and are publicly "
+"accessible to the company. The following information will be "
+"published:</div>\n"
 "                    <ul>\n"
 "                        <li>The anonymized geoposition (longitude and "
 "latitude) rounded to approx. 100 m.</li>\n"
@@ -753,17 +685,17 @@ msgid ""
 "                        <li>The sensor height</li>\n"
 "                        <li>The description as text</li>\n"
 "                    </ul>\n"
-"                    <p>The following additional data will be stored for "
-"internal processing, but will not be published:</p>\n"
+"                    <div>The following additional data will be stored for"
+" internal processing, but will not be published:</div>\n"
 "                    <ul>\n"
 "                        <li>The postal address of the sensor</li>\n"
 "                        <li>The e-mail address</li>\n"
 "                        <li>Your first and last name</li>\n"
 "                    </ul>\n"
 "                    <h2>Server log files</h2>\n"
-"                    <p>The provider of the pages automatically collects "
-"and stores information in so-called server log files, which your browser "
-"automatically transmits to us. These are:</p>\n"
+"                    <div>The provider of the pages automatically collects"
+" and stores information in so-called server log files, which your browser"
+" automatically transmits to us. These are:</div>\n"
 "                    <ul>\n"
 "                        <li>Browser type / browser version</li>\n"
 "                        <li>used operating system</li>\n"
@@ -771,17 +703,17 @@ msgid ""
 "                        <li>Hostname of the accessing computer</li>\n"
 "                        <li>Time of the server request</li>\n"
 "                    </ul>\n"
-"                    <p>These data cannot be assigned to specific persons."
-" This data will not be merged with other data sources. We reserve the "
-"right to subsequently check this data if we become aware of concrete "
-"indications of illegal use.</p>\n"
+"                    <div>These data cannot be assigned to specific "
+"persons. This data will not be merged with other data sources. We reserve"
+" the right to subsequently check this data if we become aware of concrete"
+" indications of illegal use.</div>\n"
 "                    <h2>Contradiction advertising mails</h2>\n"
-"                    <p>We hereby object to the use of contact data "
+"                    <div>We hereby object to the use of contact data "
 "published within the scope of the imprint obligation to send unsolicited "
 "advertising and information material. The operators of this website "
 "expressly reserve the right to take legal action against unsolicited "
-"mailing or e-mailing of spam and other similar advertising materials.</p>"
-"\n"
+"mailing or e-mailing of spam and other similar advertising "
+"materials.</div>\n"
 "                    "
 msgstr ""
 "<p>Upravljavci teh strani zelo resno jemljejo varstvo vaših osebnih "
@@ -859,180 +791,116 @@ msgstr ""
 "drugega podobnega reklamnega gradiva.</p>\n"
 "                     "
 
-#: webapp/templates/recover-fail.html:13
-msgid "Set password Error"
-msgstr "Nastavitev gesla Napaka"
-
-#: webapp/templates/recover-fail.html:14
-msgid ""
-"Unfortunately the link is not correct. Either it is too old, or it was "
-"not copied completely. Please try again."
-msgstr ""
-"Žal povezava ni pravilna. Bodisi je prestara bodisi ni bila v celoti "
-"kopirana. Poskusite znova."
-
-#: webapp/templates/recover-mail-sent-again.html:13
-#: webapp/templates/recover-mail-sent.html:13
-msgid "Mail sent"
-msgstr "Poslana pošta"
-
-#: webapp/templates/recover-mail-sent-again.html:14
-msgid "Please look into your mailbox to reset your password."
-msgstr "Če želite ponastaviti geslo, poglejte v svoj poštni predal."
-
-#: webapp/templates/recover-mail-sent.html:14
-msgid ""
-"Your account was not active yet. Please look into your mailbox to reset "
-"your password and activate your account."
-msgstr ""
-"Vaš račun še ni bil aktiven. Preverite svoj poštni predal, da ponastavite"
-" geslo in aktivirate svoj račun."
-
-#: webapp/templates/recover-set-password.html:14
-msgid "Set password"
-msgstr "Nastavitev gesla"
-
-#: webapp/templates/recover.html:14
-msgid "Forgot Passwort?"
-msgstr "Ste pozabili geslo?"
-
-#: webapp/templates/register-existing-wait-for-mail.html:13
-msgid "Activation required"
-msgstr "Potrebna je aktivacija"
-
-#: webapp/templates/register-existing-wait-for-mail.html:14
-msgid ""
-"Since you are logging in for the first time, your e-mail address must be "
-"confirmed. Please look in your mailbox to get access to your sensors."
-msgstr ""
-"Ker se prijavljate prvič, morate potrditi svoj e-poštni naslov. Za dostop"
-" do svojih senzorjev poiščite svoj poštni predal."
-
-#: webapp/templates/register-minimal.html:25
-msgid "Registration"
-msgstr "Registracija"
-
-#: webapp/templates/sensor-import-status.html:13
-msgid "Sensor Mass Import: Status"
-msgstr "Uvoz mase senzorja: stanje"
-
-#: webapp/templates/sensor-import-status.html:14
-msgid ""
-"You can see all current imports in this overview. Click on Reload to "
-"update the status."
-msgstr ""
-"V tem pregledu si lahko ogledate vse trenutne uvoze. Če želite posodobiti"
-" stanje, kliknite Ponovno naložiti."
-
-#: webapp/templates/sensor-import-status.html:18
-msgid "ID"
-msgstr "ID"
-
-#: webapp/templates/sensor-import-status.html:19
-msgid "Data (Start)"
-msgstr "Podatki (začetek)"
-
-#: webapp/templates/sensor-import.html:15
-msgid "Sensor mass importer"
-msgstr "Uvoznik mase senzorja"
-
-#: webapp/templates/sensor-import.html:16
-msgid ""
-"With this form new nodes can be imported in masses. One node per line is "
-"expected in the following format:"
-msgstr ""
-"S tem obrazcem lahko množično uvažate nova vozlišča. V vsaki vrstici se "
-"pričakuje eno vozlišče v naslednji obliki:"
-
-#: webapp/templates/sensor-import.html:18
-msgid ""
-"123456 is the ID of the ESP8266 board, the e-mail is the address of the "
-"future\n"
-"                            of the owner. If this is not fixed, only the "
-"Node-ID can be specified, which is\n"
-"                            E-mail must then be added later."
-msgstr ""
-"123456 je ID plošče ESP8266, e-pošta je naslov prihodnosti lastnika. Če "
-"to\n"
-"                            ni določeno, je mogoče navesti samo Node-ID "
-"(ID vozlišča), ki ga je treba\n"
-"                            pozneje dodati."
-
-#: webapp/templates/sensor-import.html:21
-msgid ""
-"If an email address has been specified, the owner will be notified with "
-"an email about their\n"
-"                            new sensor."
-msgstr ""
-"Če je bil naveden e-poštni naslov, bo lastnik o novem senzorju obveščen z"
-"\n"
-"                            e-poštnim sporočilom."
-
-#: webapp/templates/sensor-register.html:6
+#: webapp/templates/sensor-register.html:10
+#: webapp/templates/sensor-register.html:27
 msgid "Sensor registration"
 msgstr "Registracija senzorja"
 
-#: webapp/templates/sensor-settings-form.html:1
+#: webapp/templates/sensor-register.html:29
+msgid ""
+"Users of ESP32 boards, Raspberry PI or Smogomierz sensor\n"
+"                                    <strong>just enter the numeric part "
+"of the name.</strong> "
+msgstr ""
+
+#: webapp/templates/sensor-settings-form.html:5
 msgid "Basic Information"
 msgstr "Osnovne informacije"
 
-#: webapp/templates/sensor-settings-form.html:21
-msgid "Additional Information"
-msgstr "Dodatne informacije"
-
-#: webapp/templates/sensor-settings-form.html:26
-msgid "Hardware configuration"
-msgstr "Konfiguracija strojne opreme"
-
-#: webapp/templates/sensor-settings-form.html:27
+#: webapp/templates/sensor-settings-form.html:7
 msgid ""
-"click <a name=\"expert\" onclick=\"toggle_expert()\" "
-"style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> to enable expert fields"
+"This information <strong> won't be displayed publicly</strong>, location "
+"will be\n"
+"                    randomized."
 msgstr ""
-"kliknite &lt;a name=\"expert\" onclick=\"toggle_expert()\" "
-"style=\"color:blue;\"&gt; &amp;gt;&amp;gt;here&amp;lt;&amp;lt; &lt;a&gt;,"
-" da omogočite strokovna polja"
 
-#: webapp/templates/sensor-settings-form.html:34
-msgid "remove"
-msgstr "odstranite"
-
-#: webapp/templates/sensor-settings-form.html:39
-msgid "add component"
-msgstr "dodajanje komponente"
-
-#: webapp/templates/sensor-settings-form.html:116
+#: webapp/templates/sensor-settings-form.html:8
 msgid ""
-"The more precise the data we have, the better we can evaluate the data "
-"and thus energize statements. The system can also try to make a "
-"geoposition out of the address, but we would be happy if you would "
-"specify the position with the map below."
+"Choose any name for the sensor, this is to help you distinguish between\n"
+"                    multiple sensors."
+msgstr ""
+
+#: webapp/templates/sensor-settings-form.html:10
+#, fuzzy
+msgid ""
+"Only precise data can lead to precise evaluations with which we can also "
+"argue politically.\n"
+"                     Therefore please kept information up to date."
+msgstr ""
+"S tem obrazcem lahko posodobite podatke senzorja. Upoštevajte, da lahko "
+"le na podlagi natančnih podatkov dobimo natančne ocene, s katerimi lahko "
+"tudi politično argumentiramo. Zato je pomembno, da so osnovni podatki "
+"senzorja vedno posodobljeni."
+
+#: webapp/templates/sensor-settings-form.html:60
+msgid "Lookup entered address"
+msgstr "Iskanje vnesenega naslova"
+
+#: webapp/templates/sensor-settings-form.html:68
+#, fuzzy
+msgid ""
+"The system can also try to make a geoposition out of the address, but we "
+"would be happy if you would specify the position with the map below."
 msgstr ""
 "Natančnejši kot so podatki, ki jih imamo, bolje jih lahko ovrednotimo in "
 "s tem spodbudimo izjave. Sistem lahko iz naslova poskuša določiti tudi "
 "geoposelitev, vendar bomo veseli, če boste položaj določili s spodnjim "
 "zemljevidom."
 
-#: webapp/templates/sensor-settings-form.html:125
-msgid "Lookup entered address"
-msgstr "Iskanje vnesenega naslova"
+#: webapp/templates/sensor-settings-form.html:86
+msgid "Additional Information"
+msgstr "Dodatne informacije"
 
-#: webapp/templates/sensor-settings-form.html:130
-msgid "Please check sensor position."
-msgstr "Preverite položaj senzorja."
+#: webapp/templates/sensor-settings-form.html:88
+msgid ""
+"Metadata that helps us understand where the sensor is installed at the "
+"site."
+msgstr ""
 
-#: webapp/templates/emails/recover.html:11
+#: webapp/templates/sensor-settings-form.html:127
+msgid "Hardware configuration"
+msgstr "Konfiguracija strojne opreme"
+
+#: webapp/templates/sensor-settings-form.html:129
+#, fuzzy
+msgid "This is where you configure your sensor."
+msgstr "Tu lahko spremenite nastavitve."
+
+#: webapp/templates/sensor-settings-form.html:153
+#, fuzzy
+msgid "Remove component"
+msgstr "dodajanje komponente"
+
+#: webapp/templates/sensor-settings-form.html:160
+#, fuzzy
+msgid "Add component"
+msgstr "dodajanje komponente"
+
+#: webapp/templates/sensor-settings-form.html:170
+#, fuzzy
+msgid "Add Component"
+msgstr "dodajanje komponente"
+
+#: webapp/templates/sensor-settings-form.html:180
+msgid "Save"
+msgstr ""
+
+#: webapp/templates/sensor-settings-form.html:188
+msgid "Expert fields"
+msgstr ""
+
+#: webapp/templates/emails/recover.html:10
 #: webapp/templates/emails/register-existing.html:11
 #: webapp/templates/emails/sensor-given.html:11
-#: webapp/templates/emails/sensor-registered.html:11
+#: webapp/templates/emails/sensor-registered.html:10
 msgid "Hello,"
 msgstr "Pozdravljeni,"
 
-#: webapp/templates/emails/recover.html:13
+#: webapp/templates/emails/recover.html:12
 msgid "to reset your password, please use the following URL:"
 msgstr "za ponastavitev gesla uporabite naslednji URL:"
 
-#: webapp/templates/emails/recover.html:14
+#: webapp/templates/emails/recover.html:13
 msgid ""
 "If you have not requested a new password on Sensor.Community, you can "
 "ignore this e-mail."
@@ -1040,13 +908,14 @@ msgstr ""
 "Če v Sensor.Community niste zahtevali novega gesla, tega e-poštnega "
 "sporočila ne upoštevajte."
 
-#: webapp/templates/emails/recover.html:15
+#: webapp/templates/emails/recover.html:14
 #: webapp/templates/emails/register-existing.html:15
 #: webapp/templates/emails/sensor-given.html:15
-#: webapp/templates/emails/sensor-registered.html:15
+#: webapp/templates/emails/sensor-registered.html:14
+#, fuzzy
 msgid ""
 "Sincerely,\n"
-"    Your Sensor.Community team"
+"            Your Sensor.Community team"
 msgstr ""
 "S spoštovanjem,\n"
 "    vaša ekipa Sensor.Community"
@@ -1084,7 +953,7 @@ msgstr ""
 "Če ste senzor prejeli po pomoti, to sporočite na naslov "
 "tech@sensor.community."
 
-#: webapp/templates/emails/sensor-registered.html:13
+#: webapp/templates/emails/sensor-registered.html:12
 msgid ""
 "a fine dust sensor has been registered for you. Please log in with this "
 "mail address to take in or change data and settings: "
@@ -1092,7 +961,7 @@ msgstr ""
 "za vas je bilo registrirano tipalo za fini prah. Če želite vnesti ali "
 "spremeniti podatke in nastavitve, se prijavite s tem e-poštnim naslovom:"
 
-#: webapp/templates/emails/sensor-registered.html:14
+#: webapp/templates/emails/sensor-registered.html:13
 msgid ""
 "If the sensor was registered for you by mistake, please report this to "
 "tech@sensor.community."
@@ -1100,121 +969,524 @@ msgstr ""
 "Če je bil senzor pomotoma registriran za vas, to sporočite na naslov "
 "tech@sensor.community."
 
-#: webapp/templates/security/change_password.html:5
+#: webapp/templates/security/change_password.html:17
+#: webapp/templates/security/change_password.html:29
 msgid "Change password"
 msgstr "Sprememba gesla"
 
-#: webapp/templates/security/forgot_password.html:5
-msgid "Send password reset instructions"
-msgstr "Pošlji navodila za ponastavitev gesla"
+#: webapp/templates/security/forgot_password.html:20
+#, fuzzy
+msgid "Request password reset"
+msgstr "Novo geslo (ponovitev)"
 
-#: webapp/templates/security/login_user.html:18
-msgid "Password reminder"
-msgstr "Opominjanje na geslo"
+#: webapp/templates/security/forgot_password.html:24
+msgid ""
+"Trouble Logging In? Enter your email and we will send you a link to get "
+"back into your account."
+msgstr ""
 
-#: webapp/templates/security/register_user.html:17
-msgid "please wait up to 30 min to receive the mail and check your spam folder"
+#: webapp/templates/security/login_user.html:23
+#: webapp/templates/security/register_user.html:23
+msgid ""
+"The main purpose of this page is to enable you, as the owner of a fine "
+"dust sensor, to configure the location and other parameters yourself."
+msgstr ""
+"Glavni namen te strani je, da lahko kot lastnik senzorja za fini prah "
+"sami konfigurirate lokacijo in druge parametre."
+
+#: webapp/templates/security/login_user.html:26
+#: webapp/templates/security/register_user.html:26
+msgid ""
+"The city of the future belongs to its citizens. The digital tools, the "
+"Maker Movement and Citizen Science are leading to more and more people "
+"being given the opportunity to design the city themselves."
+msgstr ""
+"Mesto prihodnosti pripada njegovim prebivalcem. Digitalna orodja, gibanje"
+" Maker Movement in državljanska znanost vodijo k temu, da vse več ljudi "
+"dobiva priložnost, da sami oblikujejo mesto."
+
+#: webapp/templates/security/login_user.html:28
+#: webapp/templates/security/register_user.html:28
+msgid "Code a difference: Use your skills to improve your city!"
+msgstr "Označite razliko: Uporabite svoje spretnosti za izboljšanje svojega mesta!"
+
+#: webapp/templates/security/login_user.html:70
+msgid "Sign in to your account"
+msgstr ""
+
+#: webapp/templates/security/login_user.html:73
+msgid "or"
+msgstr ""
+
+#: webapp/templates/security/login_user.html:75
+msgid "create an account"
+msgstr ""
+
+#: webapp/templates/security/login_user.html:101
+msgid "Remember me"
+msgstr ""
+
+#: webapp/templates/security/register_user.html:60
+msgid "Create your account"
+msgstr ""
+
+#: webapp/templates/security/register_user.html:63
+msgid "already have an account,"
+msgstr ""
+
+#: webapp/templates/security/register_user.html:65
+#, fuzzy
+msgid "go to login"
+msgstr "prijava"
+
+#: webapp/templates/security/register_user.html:91
+#, fuzzy
+msgid "Please wait up to 30 min. Check your spam folder"
 msgstr ""
 "počakajte do 30 minut, da prejmete pošto, in preverite mapo za neželeno "
 "pošto."
 
-#: webapp/templates/security/reset_password.html:5
+#: webapp/templates/security/reset_password.html:20
 msgid "Reset password"
 msgstr "Ponastavitev gesla"
+
+#: webapp/templates/security/reset_password.html:24
+msgid ""
+"Trouble Logging In? Enter your email and we willl send you a link to get "
+"back into your account."
+msgstr ""
 
 #: webapp/templates/security/send_confirmation.html:5
 msgid "Resend confirmation instructions"
 msgstr "Ponovno pošljite navodila za potrditev"
 
-#: webapp/users/forms.py:22 webapp/users/forms.py:36 webapp/users/forms.py:58
-#: webapp/users/forms.py:79
+#: webapp/templates/security/send_login.html:5
+msgid "Login"
+msgstr "Prijava"
+
+#: webapp/users/forms.py:11 webapp/users/forms.py:25
 msgid "E-Mail addresse"
 msgstr "E-poštni naslov"
 
-#: webapp/users/forms.py:25 webapp/users/forms.py:39 webapp/users/forms.py:61
-#: webapp/users/forms.py:82
+#: webapp/users/forms.py:14 webapp/users/forms.py:28 webapp/users/forms.py:50
 msgid "Please enter an e-mail address."
 msgstr "Vnesite e-poštni naslov."
 
-#: webapp/users/forms.py:28 webapp/users/forms.py:42 webapp/users/forms.py:64
-#: webapp/users/forms.py:85
+#: webapp/users/forms.py:17 webapp/users/forms.py:31 webapp/users/forms.py:53
 msgid "Please enter a correct e-mail address."
 msgstr "Vnesite pravilen e-poštni naslov."
 
-#: webapp/users/forms.py:32
+#: webapp/users/forms.py:21
 msgid "next"
 msgstr "naslednji"
 
-#: webapp/users/forms.py:49 webapp/users/forms.py:96 webapp/users/forms.py:108
-#: webapp/users/forms.py:136
+#: webapp/users/forms.py:38 webapp/users/forms.py:64 webapp/users/forms.py:76
 msgid "Please enter a password."
 msgstr "Vnesite geslo."
 
-#: webapp/users/forms.py:53 webapp/users/forms.py:113
+#: webapp/users/forms.py:42 webapp/users/forms.py:81
 msgid "Stay logged in."
 msgstr "Ostanite prijavljeni."
 
-#: webapp/users/forms.py:54
+#: webapp/users/forms.py:43
 msgid "login"
 msgstr "prijava"
 
-#: webapp/users/forms.py:68
-msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>."
-msgstr "Strinjam se s <a href=\"/privacy-policy\">Politiko zasebnosti</a>."
+#: webapp/users/forms.py:47
+#, fuzzy
+msgid "E-Mail address"
+msgstr "E-poštni naslov"
 
-#: webapp/users/forms.py:71
-msgid "Please agree to the privacy policy."
-msgstr "Strinjajte se s pravilnikom o zasebnosti."
-
-#: webapp/users/forms.py:75
-msgid "register"
-msgstr "register"
-
-#: webapp/users/forms.py:89
+#: webapp/users/forms.py:57
 msgid "Password request via email"
 msgstr "Zahteva za geslo prek e-pošte"
 
-#: webapp/users/forms.py:101 webapp/users/forms.py:130
+#: webapp/users/forms.py:69
 #, python-format
 msgid "Password must consist of at least %s letters."
 msgstr "Geslo mora biti sestavljeno iz vsaj %s črk."
 
-#: webapp/users/forms.py:105
+#: webapp/users/forms.py:73
 msgid "Password (repeat)"
 msgstr "Geslo (ponovitev)"
 
-#: webapp/users/forms.py:110 webapp/users/forms.py:137
+#: webapp/users/forms.py:78
 msgid "Passwords must be identical."
 msgstr "Gesla morajo biti enaka."
 
-#: webapp/users/forms.py:114 webapp/users/forms.py:140
+#: webapp/users/forms.py:82
 msgid "Save Password"
 msgstr "Shrani geslo"
 
-#: webapp/users/forms.py:118
+#: webapp/users/forms.py:86
 msgid "First name"
 msgstr "Ime in priimek"
 
-#: webapp/users/forms.py:119
+#: webapp/users/forms.py:87
 msgid "Last name"
 msgstr "Priimek"
 
-#: webapp/users/forms.py:120
-msgid "Save user data."
+#: webapp/users/forms.py:88
+#, fuzzy
+msgid "Save user data"
 msgstr "Shranjevanje uporabniških podatkov."
 
-#: webapp/users/forms.py:124
-msgid "Old Password"
-msgstr "Staro geslo"
-
-#: webapp/users/forms.py:125
-msgid "New password"
-msgstr "Novo geslo"
-
-#: webapp/users/forms.py:134
-msgid "New password (repeat)"
-msgstr "Novo geslo (ponovitev)"
-
-#: webapp/users/views.py:38
-msgid "User data saved."
+#: webapp/users/views.py:25
+#, fuzzy
+msgid "User data saved"
 msgstr "Shranjeni uporabniški podatki."
+
+#: webapp/users/views.py:27
+#, fuzzy
+msgid "Password changed"
+msgstr "Sprememba gesla"
+
+#~ msgid "Postal code"
+#~ msgstr "Poštna številka"
+
+#~ msgid "Sensor ID"
+#~ msgstr "ID senzorja"
+
+#~ msgid "Settings saved successfully."
+#~ msgstr "Nastavitve so bile uspešno shranjene."
+
+#~ msgid "Access prohibited"
+#~ msgstr "Dostop je prepovedan"
+
+#~ msgid "You may not access this page. Maybe "
+#~ msgstr "Do te strani ne smete dostopati. Morda"
+
+#~ msgid "you must first log in?"
+#~ msgstr "se morate najprej prijaviti?"
+
+#~ msgid "Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
+#~ msgstr ""
+#~ "Donacija za Sensor.Community (strojna in "
+#~ "programska oprema) zdaj na Betterplace.org"
+
+#~ msgid ""
+#~ "Donate for<br>Sensor.Community<br>now "
+#~ "on<br><span>Betterplace.org</span>"
+#~ msgstr ""
+#~ "Donacija za<br>Sensor.Community<br>tudi "
+#~ "na&lt<br><span>Betterplace.org</span>"
+
+#~ msgid "Configure Luftdaten"
+#~ msgstr "Konfiguracija podatkov o zraku"
+
+#~ msgid "Click here to <a href=\"%(login_url)s\">log in</a>."
+#~ msgstr "Kliknite tukaj za <a href=\"%(login_url)s\">prijavo</a>."
+
+#~ msgid ""
+#~ "General information can be found at "
+#~ "<a href=\"%(home_url)s\">Sensor.Community</a> - "
+#~ "formerly known as Luftdaten.info, as "
+#~ "well as the <a "
+#~ "href=\"%(manual_url)s\">building instructions</a>.\n"
+#~ "            Sensor data can be found "
+#~ "on <a href=\"%(map_url)s\">the fine dust "
+#~ "map</a> or <a href=\"%(archive_url)s\">be "
+#~ "downloaded as CSVs</a>."
+#~ msgstr ""
+#~ "Splošne informacije so na voljo na "
+#~ "<a href=\"%(home_url)s\">Sensor.Community</a> - prej"
+#~ " znan kot Luftdaten.info, kot tudi <a"
+#~ " href=\"%(manual_url)s\">navodila za gradnjo</a>.\n"
+#~ ""
+#~ "            Podatki senzorjev so na "
+#~ "voljo na <a href=\"%(map_url)s\">karti "
+#~ "drobnega prahu</a> ali <a "
+#~ "href=\"%(archive_url)s\">se lahko prenesejo kot "
+#~ "CSV</a>."
+
+#~ msgid "Join us!"
+#~ msgstr "Pridružite se nam!"
+
+#~ msgid "About the project"
+#~ msgstr "O projektu"
+
+#~ msgid ""
+#~ "The OK Lab Stuttgart is part of"
+#~ " the program Code for Germany of "
+#~ "the Open Knowledge Foundation Germany. "
+#~ "The aim of the program is to "
+#~ "promote developments in the areas of "
+#~ "transparency, Open Data and Citizen "
+#~ "Science."
+#~ msgstr ""
+#~ "OK Lab Stuttgart je del programa "
+#~ "Code for Germany nemške fundacije Open"
+#~ " Knowledge Foundation Germany. Cilj "
+#~ "programa je spodbujati razvoj na "
+#~ "področjih preglednosti, odprtih podatkov in"
+#~ " državljanske znanosti."
+
+#~ msgid ""
+#~ "Regional groups consisting of designers, "
+#~ "developers, journalists and others meet "
+#~ "regularly in Labs. They develop apps "
+#~ "that inform, positively shape and "
+#~ "support society and make the work "
+#~ "of administrations and authorities more "
+#~ "transparent."
+#~ msgstr ""
+#~ "Regionalne skupine, ki jih sestavljajo "
+#~ "oblikovalci, razvijalci, novinarji in drugi,"
+#~ " se redno srečujejo v laboratorijih. "
+#~ "Razvijajo aplikacije, ki obveščajo, pozitivno"
+#~ " oblikujejo in podpirajo družbo ter "
+#~ "povečujejo preglednost dela uprav in "
+#~ "organov."
+
+#~ msgid "Unknown email address"
+#~ msgstr "Neznani e-poštni naslov"
+
+#~ msgid "There are no sensors stored under this e-mail address."
+#~ msgstr "Pod tem e-poštnim naslovom ni shranjenih nobenih senzorjev."
+
+#~ msgid ""
+#~ "If you are of the opinion that "
+#~ "you have a sensor at this mail "
+#~ "address, please send us an e-mail. "
+#~ "Send an email to"
+#~ msgstr ""
+#~ "Če menite, da imate senzor na tem"
+#~ " poštnem naslovu, nam pošljite e-pošto. "
+#~ "Pošljite e-poštno sporočilo na naslov"
+
+#~ msgid "user configuration"
+#~ msgstr "konfiguracija uporabnika"
+
+#~ msgid "Information and settings for the luftdaten project"
+#~ msgstr "Informacije in nastavitve za projekt luftdaten"
+
+#~ msgid "Home"
+#~ msgstr "Domov"
+
+#~ msgid "Massimporter"
+#~ msgstr "Massimporter"
+
+#~ msgid "Register"
+#~ msgstr "Register"
+
+#~ msgid "Back to e-mail login"
+#~ msgstr "Nazaj na prijavo v e-pošto"
+
+#~ msgid "Password Reset"
+#~ msgstr "Ponastavitev gesla"
+
+#~ msgid "Configure air data sensor yourself"
+#~ msgstr "Samostojno konfiguriranje senzorja podatkov o zraku"
+
+#~ msgid "Meine Luftdaten"
+#~ msgstr "Moji podatki o zraku"
+
+#~ msgid "Your personal area."
+#~ msgstr "Vaše osebno področje."
+
+#~ msgid "View and change sensor data and settings."
+#~ msgstr "Ogled in spreminjanje podatkov in nastavitev senzorja."
+
+#~ msgid "View and change data, notification settings and passwords."
+#~ msgstr "Ogled in spreminjanje podatkov, nastavitev obvestil in gesel."
+
+#~ msgid "Change password."
+#~ msgstr "Spremenite geslo."
+
+#~ msgid "Logout."
+#~ msgstr "Odjava."
+
+#~ msgid "Change your password."
+#~ msgstr "Spremenite geslo."
+
+#~ msgid "Sensor"
+#~ msgstr "Senzor"
+
+#~ msgid "Are you sure you want to delete this sensor?"
+#~ msgstr "Ste prepričani, da želite izbrisati ta senzor?"
+
+#~ msgid "was handed over."
+#~ msgstr "je bila izročena."
+
+#~ msgid "An e-mail was sent to the new owner"
+#~ msgstr "Novemu lastniku je bilo poslano e-poštno sporočilo"
+
+#~ msgid "Sensor %(node_id)s hand over"
+#~ msgstr "Novemu lastniku je bilo poslano e-poštno sporočilo"
+
+#~ msgid "Warning! After the transfer you have no more control over the sensor!"
+#~ msgstr "Opozorilo! Po prenosu nimate več nadzora nad senzorjem!"
+
+#~ msgid "Sensor UID"
+#~ msgstr "UID senzorja"
+
+#~ msgid "Name"
+#~ msgstr "Ime"
+
+#~ msgid "Created"
+#~ msgstr "Ustvarjeno"
+
+#~ msgid "Functions"
+#~ msgstr "Funkcije"
+
+#~ msgid "Hand over sensor"
+#~ msgstr "Senzor iz roke v roko"
+
+#~ msgid "No sensors found"
+#~ msgstr "Senzorji niso bili najdeni"
+
+#~ msgid "Register new sensor"
+#~ msgstr "Registracija novega senzorja"
+
+#~ msgid "Set password Error"
+#~ msgstr "Nastavitev gesla Napaka"
+
+#~ msgid ""
+#~ "Unfortunately the link is not correct."
+#~ " Either it is too old, or it"
+#~ " was not copied completely. Please "
+#~ "try again."
+#~ msgstr ""
+#~ "Žal povezava ni pravilna. Bodisi je "
+#~ "prestara bodisi ni bila v celoti "
+#~ "kopirana. Poskusite znova."
+
+#~ msgid "Mail sent"
+#~ msgstr "Poslana pošta"
+
+#~ msgid "Please look into your mailbox to reset your password."
+#~ msgstr "Če želite ponastaviti geslo, poglejte v svoj poštni predal."
+
+#~ msgid ""
+#~ "Your account was not active yet. "
+#~ "Please look into your mailbox to "
+#~ "reset your password and activate your"
+#~ " account."
+#~ msgstr ""
+#~ "Vaš račun še ni bil aktiven. "
+#~ "Preverite svoj poštni predal, da "
+#~ "ponastavite geslo in aktivirate svoj "
+#~ "račun."
+
+#~ msgid "Set password"
+#~ msgstr "Nastavitev gesla"
+
+#~ msgid "Forgot Passwort?"
+#~ msgstr "Ste pozabili geslo?"
+
+#~ msgid "Activation required"
+#~ msgstr "Potrebna je aktivacija"
+
+#~ msgid ""
+#~ "Since you are logging in for the"
+#~ " first time, your e-mail address must"
+#~ " be confirmed. Please look in your"
+#~ " mailbox to get access to your "
+#~ "sensors."
+#~ msgstr ""
+#~ "Ker se prijavljate prvič, morate "
+#~ "potrditi svoj e-poštni naslov. Za dostop"
+#~ " do svojih senzorjev poiščite svoj "
+#~ "poštni predal."
+
+#~ msgid "Registration"
+#~ msgstr "Registracija"
+
+#~ msgid "Sensor Mass Import: Status"
+#~ msgstr "Uvoz mase senzorja: stanje"
+
+#~ msgid ""
+#~ "You can see all current imports in"
+#~ " this overview. Click on Reload to"
+#~ " update the status."
+#~ msgstr ""
+#~ "V tem pregledu si lahko ogledate "
+#~ "vse trenutne uvoze. Če želite posodobiti"
+#~ " stanje, kliknite Ponovno naložiti."
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Data (Start)"
+#~ msgstr "Podatki (začetek)"
+
+#~ msgid "Sensor mass importer"
+#~ msgstr "Uvoznik mase senzorja"
+
+#~ msgid ""
+#~ "With this form new nodes can be"
+#~ " imported in masses. One node per "
+#~ "line is expected in the following "
+#~ "format:"
+#~ msgstr ""
+#~ "S tem obrazcem lahko množično uvažate"
+#~ " nova vozlišča. V vsaki vrstici se"
+#~ " pričakuje eno vozlišče v naslednji "
+#~ "obliki:"
+
+#~ msgid ""
+#~ "123456 is the ID of the ESP8266"
+#~ " board, the e-mail is the address "
+#~ "of the future\n"
+#~ "                            of the owner. If"
+#~ " this is not fixed, only the "
+#~ "Node-ID can be specified, which is"
+#~ "\n"
+#~ "                            E-mail must then be added later."
+#~ msgstr ""
+#~ "123456 je ID plošče ESP8266, e-pošta "
+#~ "je naslov prihodnosti lastnika. Če to"
+#~ "\n"
+#~ "                            ni določeno, je "
+#~ "mogoče navesti samo Node-ID (ID "
+#~ "vozlišča), ki ga je treba\n"
+#~ "                            pozneje dodati."
+
+#~ msgid ""
+#~ "If an email address has been "
+#~ "specified, the owner will be notified"
+#~ " with an email about their\n"
+#~ "                            new sensor."
+#~ msgstr ""
+#~ "Če je bil naveden e-poštni naslov, "
+#~ "bo lastnik o novem senzorju obveščen "
+#~ "z\n"
+#~ "                            e-poštnim sporočilom."
+
+#~ msgid ""
+#~ "click <a name=\"expert\" onclick=\"toggle_expert()\""
+#~ " style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> "
+#~ "to enable expert fields"
+#~ msgstr ""
+#~ "kliknite &lt;a name=\"expert\" "
+#~ "onclick=\"toggle_expert()\" style=\"color:blue;\"&gt; "
+#~ "&amp;gt;&amp;gt;here&amp;lt;&amp;lt; &lt;a&gt;, da "
+#~ "omogočite strokovna polja"
+
+#~ msgid "remove"
+#~ msgstr "odstranite"
+
+#~ msgid "Please check sensor position."
+#~ msgstr "Preverite položaj senzorja."
+
+#~ msgid "Send password reset instructions"
+#~ msgstr "Pošlji navodila za ponastavitev gesla"
+
+#~ msgid "Password reminder"
+#~ msgstr "Opominjanje na geslo"
+
+#~ msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>."
+#~ msgstr "Strinjam se s <a href=\"/privacy-policy\">Politiko zasebnosti</a>."
+
+#~ msgid "Please agree to the privacy policy."
+#~ msgstr "Strinjajte se s pravilnikom o zasebnosti."
+
+#~ msgid "register"
+#~ msgstr "register"
+
+#~ msgid "Old Password"
+#~ msgstr "Staro geslo"
+
+#~ msgid "New password"
+#~ msgstr "Novo geslo"
+
