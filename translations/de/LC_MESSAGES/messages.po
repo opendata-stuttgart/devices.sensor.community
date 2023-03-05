@@ -410,7 +410,7 @@ msgstr "basierend auf dem Konzept und der Softwareentwicklung von Ernesto Ruge:"
 
 #: webapp/templates/imprint.html:25
 msgid "Website of Ernesto Ruge:"
-msgstr ""
+msgstr "Website von Ernesto Ruge:"
 
 #: webapp/templates/layout.html:4 webapp/templates/layout.html:14
 #: webapp/templates/layout.html:15 webapp/templates/layout.html:20
@@ -482,11 +482,14 @@ msgid ""
 " useful if you have ordered a sensor for a friend and want to transfer it"
 " to him or her."
 msgstr ""
+"Dies erlaubt Ihnen, einen Sensor zu einer anderen Person zu übertragen."
+" Dies ist vor allem praktisch, wenn Sie einen Sensor für eine andere Person gebaut"
+" haben und diesen nun an die Person übertragen wollen."
 
 #: webapp/templates/my-sensor-settings.html:11
 #, python-format
 msgid "Settings of your %(node_id)s"
-msgstr ""
+msgstr "Einstellungen ihrer %(node_id)s"
 
 #: webapp/templates/my-sensor-settings.html:14
 msgid ""
@@ -496,18 +499,23 @@ msgid ""
 "important that the basic information is\n"
 "                            always kept up to date."
 msgstr ""
+"Bitte beachten Sie, dass nur genaue Daten zu präzisen Auswertungen führen können mit "
+"welchen\n"
+" dann politisch argumentiert werden kann. Deshalb ist es "
+"wichtig, dass die grundlegenden Informationen\n"
+"Immer aktuell gehalten werden."
 
 #: webapp/templates/my-sensors.html:14
 msgid "My sensors"
-msgstr ""
+msgstr "Meine Sensoren"
 
 #: webapp/templates/my-sensors.html:18
 msgid "All sensors assigned to your account can be found in this overview."
-msgstr ""
+msgstr "In dieser Übersicht finden Sie alle Sensoren, die Ihrem Account zugeordnet sind."
 
 #: webapp/templates/my-sensors.html:40
 msgid "Last Update"
-msgstr ""
+msgstr "Letztes Update"
 
 #: webapp/templates/my-sensors.html:59
 msgid "Node ID"
@@ -515,11 +523,11 @@ msgstr ""
 
 #: webapp/templates/my-sensors.html:65
 msgid "Data"
-msgstr ""
+msgstr "Daten"
 
 #: webapp/templates/my-sensors.html:67
 msgid "Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 #: webapp/templates/my-sensors.html:69
 msgid "Transfer"
@@ -657,7 +665,7 @@ msgstr ""
 #: webapp/templates/sensor-register.html:10
 #: webapp/templates/sensor-register.html:28
 msgid "Sensor registration"
-msgstr ""
+msgstr "Sensorregistrierung"
 
 #: webapp/templates/sensor-register.html:30
 msgid ""
@@ -665,10 +673,12 @@ msgid ""
 "                                    <strong>just enter the numeric part "
 "of the name.</strong> "
 msgstr ""
+"Nutzer eines ESP32, Raspberry PI oder Smogomierz Sensors"
+" <strong>geben nur den numerischen Teil des Names an.</strong>"
 
 #: webapp/templates/sensor-settings-form.html:5
 msgid "Basic Information"
-msgstr ""
+msgstr "Grundlegende Informationen"
 
 #: webapp/templates/sensor-settings-form.html:7
 msgid ""
@@ -676,12 +686,16 @@ msgid ""
 "will be\n"
 "                    randomized."
 msgstr ""
+"Diese Informationen <strong> werden nicht veröffentlicht</strong>,""
+" die Position wird verschleiert."
 
 #: webapp/templates/sensor-settings-form.html:8
 msgid ""
 "Choose any name for the sensor, this is to help you distinguish between\n"
 "                    multiple sensors."
 msgstr ""
+"Geben Sie einen Namen für den Sensor an. Dies hilft Ihnen, zwischen\n"
+" unterschiedlichen Sensoren zu unterscheiden."
 
 #: webapp/templates/sensor-settings-form.html:10
 msgid ""
@@ -716,7 +730,7 @@ msgstr "Hardware Konfiguration"
 
 #: webapp/templates/sensor-settings-form.html:129
 msgid "This is where you configure your sensor."
-msgstr ""
+msgstr "Hier konfigurieren Sie ihren Sensor."
 
 #: webapp/templates/sensor-settings-form.html:153
 msgid "Remove component"
