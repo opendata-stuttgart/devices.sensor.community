@@ -789,6 +789,8 @@ msgid ""
 "If you have not created an account on Sensor.Community, you can ignore "
 "this e-mail."
 msgstr ""
+"Sollten Sie kein Konto auf Sensor.Community erstellt haben, ignorieren "
+"Sie bitte diese EMail."
 
 #: webapp/templates/emails/sensor-given.html:13
 msgid ""
@@ -796,40 +798,49 @@ msgid ""
 "log in with this mail address to take data and settings or to change "
 "them: "
 msgstr ""
+"Ein Sensor wurde auf Sie übertragen. Bitte melden Sie sich mit dieser "
+"Email-Adresse an, um Daten und Einstellungen zu übernehmen oder zu ändern "
 
 #: webapp/templates/emails/sensor-given.html:14
 msgid ""
 "If you have received a sensor by mistake, please report this at "
 "tech@sensor.community."
 msgstr ""
+"Sollte ein Sensor fälschlicherweise auf Sie übertragen worden sein, "
+"melden Sie dies bitte an tech@sensor.community."
 
 #: webapp/templates/emails/sensor-registered.html:12
 msgid ""
 "a fine dust sensor has been registered for you. Please log in with this "
 "mail address to take in or change data and settings: "
 msgstr ""
+"ein Feinstaubsensor wurde auf Ihre EMail-Adresse angemeldet.  Bitte melden "
+"Sie sich mit dieser EMail-Adress an, um Daten und Einstellungen zu übernehmen oder zu ändern:"
 
 #: webapp/templates/emails/sensor-registered.html:13
 msgid ""
 "If the sensor was registered for you by mistake, please report this to "
 "tech@sensor.community."
 msgstr ""
+"Wenn ein Sensor fälschlicherweise auf Sie angemeldet wurde, melden "
+"Sie dies an tech@sensor.community.""
 
 #: webapp/templates/security/change_password.html:17
 #: webapp/templates/security/change_password.html:29
 msgid "Change password"
-msgstr ""
+msgstr "Passwort ändern"
 
 #: webapp/templates/security/forgot_password.html:20
 msgid "Request password reset"
-msgstr ""
+msgstr "Passwort zurücksetzen lassen"
 
 #: webapp/templates/security/forgot_password.html:24
 #: webapp/templates/security/reset_password.html:24
 msgid ""
 "Trouble Logging In? Enter your email and we willl send you a link to get "
 "back into your account."
-msgstr ""
+msgstr "Probleme mit der Anmeldung? Tragen Sie Ihre EMail-Adresse ein und "
+"wir senden Ihnen einen Link zum Setzen eines neuen Passworts."
 
 #: webapp/templates/security/login_user.html:25
 #: webapp/templates/security/register_user.html:25
@@ -837,6 +848,8 @@ msgid ""
 "The main purpose of this page is to enable you, as the owner of a fine "
 "dust sensor, to configure the location and other parameters yourself."
 msgstr ""
+"Der Zweck dieser Seite ist es, Ihnen als Besitzers eines unserer Sensoren "
+"selbst die Konfiguration der Position und anderer Parameter zu ermöglichen."
 
 #: webapp/templates/security/login_user.html:28
 #: webapp/templates/security/register_user.html:28
@@ -845,39 +858,43 @@ msgid ""
 "Maker Movement and Citizen Science are leading to more and more people "
 "being given the opportunity to design the city themselves."
 msgstr ""
+"Die Stadt der Zukunft gehört den Bürgern. Digitale Tools, die Maker Bewegung "
+"und Citizen Science ermöglichen es mehr und mehr Bürgern, Ihre Stadt selbst "
+"zu gestalten."
 
 #: webapp/templates/security/login_user.html:30
 #: webapp/templates/security/register_user.html:30
 msgid ""
 "Code a difference: Use your skills to\n"
 "                            improve your city!"
-msgstr ""
+msgstr "Code a difference: Nutzen Sie Ihre Fähigkeiten\n
+" um Ihre Stadt zu verbessern!""
 
 #: webapp/templates/security/login_user.html:33
 msgid ""
 "Find\n"
 "                                out more about Sensor.Community"
-msgstr ""
+msgstr "Erfahren Sie mehr über Sensor.Community"
 
 #: webapp/templates/security/login_user.html:67
 msgid "Sign in to your account"
-msgstr ""
+msgstr "Anmelden"
 
 #: webapp/templates/security/login_user.html:70
 msgid "or"
-msgstr ""
+msgstr "oder"
 
 #: webapp/templates/security/login_user.html:72
 msgid "create an account"
-msgstr ""
+msgstr "Konto erstellen"
 
 #: webapp/templates/security/login_user.html:99
 msgid "Remember me"
-msgstr ""
+msgstr "Merken"
 
 #: webapp/templates/security/register_user.html:65
 msgid "Create your account"
-msgstr ""
+msgstr "Erstellen Sie ihr Konto"
 
 #: webapp/templates/security/register_user.html:68
 msgid "already have an account,"
@@ -894,7 +911,7 @@ msgid ""
 "Pleas wait up\n"
 "                                                        to 30 min. Check "
 "your spam folder"
-msgstr ""
+msgstr "Bitte warten sie bis zu 30 Minuten. Prüfen Sie auch Ihren Spamordner""
 
 #: webapp/templates/security/reset_password.html:20
 msgid "Reset password"
@@ -902,7 +919,7 @@ msgstr "Passwort zurücksetzen"
 
 #: webapp/templates/security/send_confirmation.html:5
 msgid "Resend confirmation instructions"
-msgstr ""
+msgstr "Bestätigungsmail noch einmal senden""
 
 #: webapp/templates/security/send_login.html:5
 msgid "Login"
@@ -922,7 +939,7 @@ msgstr "Bitte geben Sie eine korrekte EMail-Adresse an."
 
 #: webapp/users/forms.py:21
 msgid "next"
-msgstr ""
+msgstr "nächste"
 
 #: webapp/users/forms.py:38 webapp/users/forms.py:64 webapp/users/forms.py:76
 msgid "Please enter a password."
@@ -938,16 +955,16 @@ msgstr "Anmelden"
 
 #: webapp/users/forms.py:47
 msgid "E-Mail address"
-msgstr ""
+msgstr "EMail-Adresse"
 
 #: webapp/users/forms.py:57
 msgid "Password request via email"
-msgstr ""
+msgstr "Passwort-Anfrage via EMail"
 
 #: webapp/users/forms.py:69
 #, python-format
 msgid "Password must consist of at least %s letters."
-msgstr ""
+msgstr "Das Passwort muss mindestens %s Zeichen lang sein."
 
 #: webapp/users/forms.py:73
 msgid "Password (repeat)"
