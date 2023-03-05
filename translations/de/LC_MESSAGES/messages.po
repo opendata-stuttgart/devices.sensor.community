@@ -335,7 +335,7 @@ msgstr ""
 #: webapp/templates/404.html:55 webapp/templates/security/login_user.html:30
 #: webapp/templates/security/register_user.html:30
 msgid "Find out more about Sensor.Community"
-msgstr ""
+msgstr "Erfahren Sie mehr über Sensor.Community"
 
 #: webapp/templates/400.html:59 webapp/templates/403.html:59
 #: webapp/templates/404.html:59
@@ -370,7 +370,7 @@ msgstr "Spenden"
 
 #: webapp/templates/footer.html:118
 msgid "Legal"
-msgstr ""
+msgstr "Rechtliches"
 
 #: webapp/templates/footer.html:124 webapp/templates/imprint.html:8
 msgid "Imprint"
@@ -552,7 +552,7 @@ msgstr "Löschen"
 
 #: webapp/templates/my-sensors.html:24
 msgid "At your own risk."
-msgstr ""
+msgstr "Auf eigene Gefahr"
 
 #: webapp/templates/my-sensors.html:49
 msgid "Last Update"
@@ -620,7 +620,7 @@ msgstr "Konto"
 
 #: webapp/templates/navbar.html:27 webapp/templates/navbar.html:165
 msgid "Mainpage"
-msgstr ""
+msgstr "Homepage des Projekts"
 
 #: webapp/templates/navbar.html:76 webapp/templates/navbar.html:148
 msgid "Logout"
@@ -710,6 +710,77 @@ msgid ""
 "materials.</div>\n"
 "                    "
 msgstr ""
+"<div>DIe Betrieber dieser Seite nehmen den Schutz Ihrer personenbezogenen "
+"Daten sehr ernst. Wir behandeln Ihre persönlichen Daten vertraulich und "
+"gemäß den gesetzlichen Vorgaben.</div>\n"
+"                    <div>Die Nutzung der Website ist grundsätzlich ohne "
+"Angabe persönlicher Daten möglich. Sofern die Angabe von persönlichen "
+"Daten (z.B. Name, Adresse oder EMail-Adresse) gewünscht wird, ist dies "
+"auf freiwilliger Basis soweit möglich. Diese Daten werden nicht ohne Ihre "
+"ausdrückliche Zustimmung an Dritte weitergegeben.</div>"
+"<div>Wir möchten darauf hinweisen, dass die Datenübertragung über das "
+"Internet (z.B. die Kommunikation via EMail) Sicherheitslücken aufweisen "
+"kann. Ein absoluter Schutz der Daten gegen den Zugriff durch Dritte ist "
+"nicht möglich.</div>"
+"                    <h2>Information, Löschung, Sperrung</h2>\n"
+"<div>Sie haben jederzeit das Recht, Informationen zu den von uns über Sie "
+"gespeicherten Daten, deren Herkunft und mögliche Eppfänger anzufordern, "
+"als auch die Korrektur, Löschung oder Sperrung dieser dieser Daten zu "
+"verlangen. Sie können uns hierfür und für andere, Ihre persönlichen Daten "
+"betreffenden Fragen, jederzeit über die im Impressum angegebene "
+"Adresse kontaktieren</div>
+"                    <h2>Cookies</h2>\n"
+"<div>Einige Seiten nutzen sogenannte Cookies. Cookies beschädigen nicht "
+"Ihren Computer und enthalten keine Viren. Cookies dienen dazu, unsere Seiten "
+"benutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine "
+"Textdateien, die auf Ihrem Computer von Ihrem Browser gespeichert werden.
+"</div>\n"
+"<div>Wir nutzen möglichst sogenannte Session-Cookies, welche am Ende Ihrer "
+"Browsersitzung gelöscht werden. Andere Cookies bleiben gespeichert, bis sie "
+"von Ihnen gelöscht werden. Diese Cookies erlauben es uns, Ihren Browser "
+"bei Ihrem nächsten Besuch dieser Seiten wiederzuerkennen.</div>\n"
+"                    <h2>Benutzerkonto und Sensordaten</h2>\n"
+"<div>Die gemessenen Daten der Sensoren werden an die Server von Sensor.Community "
+"übertragen und öffentlich zugänglich veröffentlicht. Die folgenden Daten werden "
+"dabei veröffentlicht:</div>\n"
+"                    <ul>\n"
+"                        <li>Die anonymisierte Geoposition (geographische Länge "
+" und Breite) gerundet auf ca. 100m.longitude and </li>\n"
+"                        <li>die ID Ihres Sensors</li>\n"
+"                        <li>die angegebenen numerischen Beschreibungen der 
+"Umgebung</li>"
+"                        <li>Die Sensorhöhe</li>\n"
+"                        <li>Die Beschreibung als Text</li>\n"
+"                    </ul>\n"
+"<div>Die folgenden Daten werden für die interne Verarbeitung gespeichert, "
+"jedoch nicht veröffentlicht:</div>"
+"                    <ul>\n"
+"                        <li>Die postalische Adresse des Sensors</li>\n"
+"                        <li>die EMail-Adresse</li>\n"
+"                        <li>Ihr Vor- und Nachname</li>\n"
+"                    </ul>\n"
+"                    <h2>Server-Log-Files</h2>\n"
+"<div>Der Provider der Seiten erhebt und speichert automatisch Informationen "
+"in so genannten Server-Log-Files, die Ihr Browser automatisch an uns "
+"übermittelt. Dies sind:"
+"<ul>"
+"    <li>Browsertyp / Browserversion</li>"
+"    <li>verwendetes Betriebssystem</li>"
+"    <li>Referrer URL</li>"
+"    <li>Hostname des zugreifenden Rechners</li>"
+"    <li>Uhrzeit der Serveranfrage</li>"
+"</ul>"
+"Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung "
+"dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Wir behalten "
+"uns vor, diese Daten nachträglich zu prüfen, wenn uns konkrete Anhaltspunkte "
+für eine rechtswidrige Nutzung bekannt werden.</div>"
+"                    <h2>Widerspruch Werbe-Mails</h2>\n"
+"<div>Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten "
+"Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung "
+"und Informationsmaterialien wird hiermit widersprochen. Die Betreiber der "
+"Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der "
+"unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor."
+"</div>\n"
 
 #: webapp/templates/sensor-register.html:10
 #: webapp/templates/sensor-register.html:27
@@ -817,6 +888,8 @@ msgid ""
 "If you have not requested a new password on Sensor.Community, you can "
 "ignore this e-mail."
 msgstr ""
+"Wenn Sie kein neues Passwort für Sensor.Connunity angefordert haben, "
+"könnenen Sie diese Mail ignorieren.""
 
 #: webapp/templates/emails/recover.html:14
 #: webapp/templates/emails/register-existing.html:15
@@ -826,12 +899,17 @@ msgid ""
 "Sincerely,\n"
 "            Your Sensor.Community team"
 msgstr ""
+"Freundliche Grüße,\n"
+"Ihr Team von Sensor.Community"
 
 #: webapp/templates/emails/register-existing.html:13
 msgid ""
 "in order to manage your sensor in the future, we have created an account "
 "for you. Please enter a password under the following link: "
 msgstr ""
+"damit Sie Ihren Sensor in Zukunft selbst verwalten können, wurde ein Konto "
+"erstellt für Sie erstellt. Bitte geben Sie dafür ein Passwort an über "
+"folgenden Link: "
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
@@ -945,7 +1023,7 @@ msgstr "Erstellen Sie ihr Konto"
 
 #: webapp/templates/security/register_user.html:63
 msgid "already have an account,"
-msgstr ""
+msgstr "hat bereits ein Konto,"
 
 #: webapp/templates/security/register_user.html:65
 #, fuzzy
@@ -954,7 +1032,7 @@ msgstr "Anmelden"
 
 #: webapp/templates/security/register_user.html:91
 msgid "Please wait up to 30 min. Check your spam folder"
-msgstr ""
+msgstr "Bitte warten Sie bis zu 30 Minuten. Prüfen Sie Ihren Spam-Ordner"
 
 #: webapp/templates/security/reset_password.html:20
 msgid "Reset password"
