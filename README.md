@@ -97,7 +97,7 @@ replace the `country_code` with the language to be translated, e.g. `pt` for Por
     venv/bin/pybabel compile -d ./translations/
     venv/bin/pybabel compile -d ./translations/ -D flask_security
     
-##### extend the `default_settgings.py`
+##### extend the `default_settings.py`
 in line 111 extend the object with the new language. Please add in the previous line a comma at the end.
 ```python
 LANGUAGES = {
