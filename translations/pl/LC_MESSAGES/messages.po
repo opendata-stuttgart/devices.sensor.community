@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-03-05 02:48+0100\n"
+"POT-Creation-Date: 2023-03-08 23:45+0100\n"
 "PO-Revision-Date: 2019-05-05 14:10+0200\n"
 "Last-Translator: Piotr Dobrowolski <admin@tastycode.pl>\n"
 "Language: pl_PL\n"
@@ -365,6 +365,42 @@ msgstr ""
 msgid "Page not found"
 msgstr ""
 
+#: webapp/templates/footer.html:12
+msgid ""
+"Making the world a better place through community driven, open "
+"environmental data."
+msgstr ""
+
+#: webapp/templates/footer.html:56
+msgid "Important Links"
+msgstr ""
+
+#: webapp/templates/footer.html:62
+msgid "Maps"
+msgstr ""
+
+#: webapp/templates/footer.html:74
+#, fuzzy
+msgid "Archive"
+msgstr "Nieaktywny"
+
+#: webapp/templates/footer.html:80 webapp/templates/navbar.html:27
+#: webapp/templates/navbar.html:165
+msgid "Mainpage"
+msgstr ""
+
+#: webapp/templates/footer.html:87
+msgid "Support"
+msgstr ""
+
+#: webapp/templates/footer.html:93
+msgid "Knowledge"
+msgstr ""
+
+#: webapp/templates/footer.html:99 webapp/templates/navbar.html:179
+msgid "Forum"
+msgstr ""
+
 #: webapp/templates/footer.html:106
 msgid "Guides"
 msgstr ""
@@ -385,6 +421,18 @@ msgstr "Impressum"
 #: webapp/templates/footer.html:130 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
 msgstr "Polityka prywatności"
+
+#: webapp/templates/footer.html:136
+msgid "Firmware License"
+msgstr ""
+
+#: webapp/templates/footer.html:142
+msgid "DB Contents License"
+msgstr ""
+
+#: webapp/templates/footer.html:148
+msgid "Photos License"
+msgstr ""
 
 #: webapp/templates/imprint.html:11
 msgid "Informations according to § 5 TMG"
@@ -617,17 +665,9 @@ msgstr "Moje czujniki"
 msgid "Account"
 msgstr ""
 
-#: webapp/templates/navbar.html:27 webapp/templates/navbar.html:165
-msgid "Mainpage"
-msgstr ""
-
 #: webapp/templates/navbar.html:76 webapp/templates/navbar.html:148
 msgid "Logout"
 msgstr "Wyloguj"
-
-#: webapp/templates/navbar.html:179
-msgid "Forum"
-msgstr ""
 
 #: webapp/templates/privacy-policy.html:11
 msgid ""
@@ -1489,4 +1529,10 @@ msgstr "Zmiana hasła"
 
 #~ msgid "New password"
 #~ msgstr "Nowe hasło"
+
+#~ msgid "Guides"
+#~ msgstr ""
+
+#~ msgid "Legal"
+#~ msgstr ""
 

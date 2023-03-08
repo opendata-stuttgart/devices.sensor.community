@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-03-05 02:48+0100\n"
+"POT-Creation-Date: 2023-03-08 23:45+0100\n"
 "PO-Revision-Date: 2021-09-12 12:18+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -359,6 +359,45 @@ msgstr "Bitte melden Sie sich erst an, bevor Sie auf diese Seite zugreifen."
 msgid "Page not found"
 msgstr "Seite nicht gefunden"
 
+#: webapp/templates/footer.html:12
+msgid ""
+"Making the world a better place through community driven, open "
+"environmental data."
+msgstr ""
+"Die Welt zu einem besseren Ort machen mit gemeinschaftsbasierten, "
+"offenen Umweltdaten."
+
+#: webapp/templates/footer.html:56
+msgid "Important Links"
+msgstr "Wichtige Links"
+
+#: webapp/templates/footer.html:62
+msgid "Maps"
+msgstr "Karte"
+
+#: webapp/templates/footer.html:74
+#, fuzzy
+msgid "Archive"
+msgstr "Archiv"
+
+#: webapp/templates/footer.html:80 webapp/templates/navbar.html:27
+#: webapp/templates/navbar.html:165
+msgid "Mainpage"
+msgstr "Homepage des Projekts"
+
+#: webapp/templates/footer.html:87
+#, fuzzy
+msgid "Support"
+msgstr "Support kontaktieren"
+
+#: webapp/templates/footer.html:93
+msgid "Knowledge"
+msgstr ""
+
+#: webapp/templates/footer.html:99 webapp/templates/navbar.html:179
+msgid "Forum"
+msgstr ""
+
 #: webapp/templates/footer.html:106
 msgid "Guides"
 msgstr "Anleitungen"
@@ -370,7 +409,7 @@ msgstr "Spenden"
 
 #: webapp/templates/footer.html:118
 msgid "Legal"
-msgstr "Rechtliches"
+msgstr ""
 
 #: webapp/templates/footer.html:124 webapp/templates/imprint.html:8
 msgid "Imprint"
@@ -379,6 +418,18 @@ msgstr "Impressum"
 #: webapp/templates/footer.html:130 webapp/templates/privacy-policy.html:8
 msgid "Privacy Policy"
 msgstr "Datenschutz"
+
+#: webapp/templates/footer.html:136
+msgid "Firmware License"
+msgstr "Firmware Lizenz"
+
+#: webapp/templates/footer.html:142
+msgid "DB Contents License"
+msgstr ""
+
+#: webapp/templates/footer.html:148
+msgid "Photos License"
+msgstr "Foto Lizenz"
 
 #: webapp/templates/imprint.html:11
 msgid "Informations according to § 5 TMG"
@@ -521,9 +572,9 @@ msgid ""
 "You have moved to another location, then update your\n"
 "                location. Or, add a new component to your kit."
 msgstr ""
-"Wenn sich die Position des Sensors geändert hat, können "
-"Sie diese hier aktualisieren. Oder Sie können eine neue Komponente"
-"zu Ihren Sensor hinzufügen."
+"Wenn sich die Position des Sensors geändert hat, können Sie diese hier "
+"aktualisieren. Oder Sie können eine neue Komponentezu Ihren Sensor "
+"hinzufügen."
 
 #: webapp/templates/my-sensors.html:22
 #, fuzzy
@@ -618,17 +669,9 @@ msgstr "Sensoren"
 msgid "Account"
 msgstr "Konto"
 
-#: webapp/templates/navbar.html:27 webapp/templates/navbar.html:165
-msgid "Mainpage"
-msgstr "Homepage des Projekts"
-
 #: webapp/templates/navbar.html:76 webapp/templates/navbar.html:148
 msgid "Logout"
 msgstr "Abmelden"
-
-#: webapp/templates/navbar.html:179
-msgid "Forum"
-msgstr ""
 
 #: webapp/templates/privacy-policy.html:11
 msgid ""
@@ -710,77 +753,69 @@ msgid ""
 "materials.</div>\n"
 "                    "
 msgstr ""
-"<div>DIe Betrieber dieser Seite nehmen den Schutz Ihrer personenbezogenen "
-"Daten sehr ernst. Wir behandeln Ihre persönlichen Daten vertraulich und "
+"<div>DIe Betrieber dieser Seite nehmen den Schutz Ihrer personenbezogenen"
+" Daten sehr ernst. Wir behandeln Ihre persönlichen Daten vertraulich und "
 "gemäß den gesetzlichen Vorgaben.</div>\n"
 "                    <div>Die Nutzung der Website ist grundsätzlich ohne "
 "Angabe persönlicher Daten möglich. Sofern die Angabe von persönlichen "
 "Daten (z.B. Name, Adresse oder EMail-Adresse) gewünscht wird, ist dies "
-"auf freiwilliger Basis soweit möglich. Diese Daten werden nicht ohne Ihre "
-"ausdrückliche Zustimmung an Dritte weitergegeben.</div>"
-"<div>Wir möchten darauf hinweisen, dass die Datenübertragung über das "
-"Internet (z.B. die Kommunikation via EMail) Sicherheitslücken aufweisen "
-"kann. Ein absoluter Schutz der Daten gegen den Zugriff durch Dritte ist "
-"nicht möglich.</div>"
+"auf freiwilliger Basis soweit möglich. Diese Daten werden nicht ohne Ihre"
+" ausdrückliche Zustimmung an Dritte weitergegeben.</div><div>Wir möchten "
+"darauf hinweisen, dass die Datenübertragung über das Internet (z.B. die "
+"Kommunikation via EMail) Sicherheitslücken aufweisen kann. Ein absoluter "
+"Schutz der Daten gegen den Zugriff durch Dritte ist nicht möglich.</div>"
 "                    <h2>Information, Löschung, Sperrung</h2>\n"
-"<div>Sie haben jederzeit das Recht, Informationen zu den von uns über Sie "
-"gespeicherten Daten, deren Herkunft und mögliche Eppfänger anzufordern, "
+"<div>Sie haben jederzeit das Recht, Informationen zu den von uns über Sie"
+" gespeicherten Daten, deren Herkunft und mögliche Eppfänger anzufordern, "
 "als auch die Korrektur, Löschung oder Sperrung dieser dieser Daten zu "
-"verlangen. Sie können uns hierfür und für andere, Ihre persönlichen Daten "
-"betreffenden Fragen, jederzeit über die im Impressum angegebene "
-"Adresse kontaktieren</div>
-"                    <h2>Cookies</h2>\n"
+"verlangen. Sie können uns hierfür und für andere, Ihre persönlichen Daten"
+" betreffenden Fragen, jederzeit über die im Impressum angegebene Adresse "
+"kontaktieren</div                    <h2>Cookies</h2>\n"
 "<div>Einige Seiten nutzen sogenannte Cookies. Cookies beschädigen nicht "
-"Ihren Computer und enthalten keine Viren. Cookies dienen dazu, unsere Seiten "
-"benutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine "
-"Textdateien, die auf Ihrem Computer von Ihrem Browser gespeichert werden.
-"</div>\n"
-"<div>Wir nutzen möglichst sogenannte Session-Cookies, welche am Ende Ihrer "
-"Browsersitzung gelöscht werden. Andere Cookies bleiben gespeichert, bis sie "
-"von Ihnen gelöscht werden. Diese Cookies erlauben es uns, Ihren Browser "
-"bei Ihrem nächsten Besuch dieser Seiten wiederzuerkennen.</div>\n"
+"Ihren Computer und enthalten keine Viren. Cookies dienen dazu, unsere "
+"Seiten benutzerfreundlicher, effektiver und sicherer zu machen. Cookies "
+"sind kleine Textdateien, die auf Ihrem Computer von Ihrem Browser "
+"gespeichert werden</div>\n"
+"<div>Wir nutzen möglichst sogenannte Session-Cookies, welche am Ende "
+"Ihrer Browsersitzung gelöscht werden. Andere Cookies bleiben gespeichert,"
+" bis sie von Ihnen gelöscht werden. Diese Cookies erlauben es uns, Ihren "
+"Browser bei Ihrem nächsten Besuch dieser Seiten wiederzuerkennen.</div>\n"
 "                    <h2>Benutzerkonto und Sensordaten</h2>\n"
-"<div>Die gemessenen Daten der Sensoren werden an die Server von Sensor.Community "
-"übertragen und öffentlich zugänglich veröffentlicht. Die folgenden Daten werden "
-"dabei veröffentlicht:</div>\n"
+"<div>Die gemessenen Daten der Sensoren werden an die Server von "
+"Sensor.Community übertragen und öffentlich zugänglich veröffentlicht. Die"
+" folgenden Daten werden dabei veröffentlicht:</div>\n"
 "                    <ul>\n"
-"                        <li>Die anonymisierte Geoposition (geographische Länge "
-" und Breite) gerundet auf ca. 100m.longitude and </li>\n"
+"                        <li>Die anonymisierte Geoposition (geographische "
+"Länge  und Breite) gerundet auf ca. 100m.longitude and </li>\n"
 "                        <li>die ID Ihres Sensors</li>\n"
-"                        <li>die angegebenen numerischen Beschreibungen der 
-"Umgebung</li>"
-"                        <li>Die Sensorhöhe</li>\n"
+"                        <li>die angegebenen numerischen Beschreibungen "
+"deUmgebung</li>                        <li>Die Sensorhöhe</li>\n"
 "                        <li>Die Beschreibung als Text</li>\n"
 "                    </ul>\n"
-"<div>Die folgenden Daten werden für die interne Verarbeitung gespeichert, "
-"jedoch nicht veröffentlicht:</div>"
-"                    <ul>\n"
+"<div>Die folgenden Daten werden für die interne Verarbeitung gespeichert,"
+" jedoch nicht veröffentlicht:</div>                    <ul>\n"
 "                        <li>Die postalische Adresse des Sensors</li>\n"
 "                        <li>die EMail-Adresse</li>\n"
 "                        <li>Ihr Vor- und Nachname</li>\n"
 "                    </ul>\n"
 "                    <h2>Server-Log-Files</h2>\n"
-"<div>Der Provider der Seiten erhebt und speichert automatisch Informationen "
-"in so genannten Server-Log-Files, die Ihr Browser automatisch an uns "
-"übermittelt. Dies sind:"
-"<ul>"
-"    <li>Browsertyp / Browserversion</li>"
-"    <li>verwendetes Betriebssystem</li>"
-"    <li>Referrer URL</li>"
-"    <li>Hostname des zugreifenden Rechners</li>"
-"    <li>Uhrzeit der Serveranfrage</li>"
-"</ul>"
-"Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung "
-"dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Wir behalten "
-"uns vor, diese Daten nachträglich zu prüfen, wenn uns konkrete Anhaltspunkte "
-für eine rechtswidrige Nutzung bekannt werden.</div>"
-"                    <h2>Widerspruch Werbe-Mails</h2>\n"
+"<div>Der Provider der Seiten erhebt und speichert automatisch "
+"Informationen in so genannten Server-Log-Files, die Ihr Browser "
+"automatisch an uns übermittelt. Dies sind:<ul>    <li>Browsertyp / "
+"Browserversion</li>    <li>verwendetes Betriebssystem</li>    "
+"<li>Referrer URL</li>    <li>Hostname des zugreifenden Rechners</li>    "
+"<li>Uhrzeit der Serveranfrage</li></ul>Diese Daten sind nicht bestimmten "
+"Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen "
+"Datenquellen wird nicht vorgenommen. Wir behalten uns vor, diese Daten "
+"nachträglich zu prüfen, wenn uns konkrete Anhaltspunkte für eine "
+"rechtswidrige Nutzung bekannt werden.</div>                    "
+"<h2>Widerspruch Werbe-Mails</h2>\n"
 "<div>Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten "
-"Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung "
-"und Informationsmaterialien wird hiermit widersprochen. Die Betreiber der "
-"Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der "
-"unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor."
-"</div>\n"
+"Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung"
+" und Informationsmaterialien wird hiermit widersprochen. Die Betreiber "
+"der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der "
+"unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, "
+"vor.</div>\n"
 
 #: webapp/templates/sensor-register.html:10
 #: webapp/templates/sensor-register.html:27
@@ -889,7 +924,7 @@ msgid ""
 "ignore this e-mail."
 msgstr ""
 "Wenn Sie kein neues Passwort für Sensor.Connunity angefordert haben, "
-"könnenen Sie diese Mail ignorieren.""
+"könnenen Sie diese Mail ignorieren.\""
 
 #: webapp/templates/emails/recover.html:14
 #: webapp/templates/emails/register-existing.html:15
@@ -907,9 +942,9 @@ msgid ""
 "in order to manage your sensor in the future, we have created an account "
 "for you. Please enter a password under the following link: "
 msgstr ""
-"damit Sie Ihren Sensor in Zukunft selbst verwalten können, wurde ein Konto "
-"erstellt für Sie erstellt. Bitte geben Sie dafür ein Passwort an über "
-"folgenden Link: "
+"damit Sie Ihren Sensor in Zukunft selbst verwalten können, wurde ein "
+"Konto erstellt für Sie erstellt. Bitte geben Sie dafür ein Passwort an "
+"über folgenden Link: "
 
 #: webapp/templates/emails/register-existing.html:14
 msgid ""
@@ -1154,4 +1189,10 @@ msgstr "Passwort geändert"
 #~ "                                                        to "
 #~ "30 min. Check your spam folder"
 #~ msgstr "Bitte warten sie bis zu 30 Minuten. Prüfen Sie auch Ihren Spamordner\""
+
+#~ msgid "Guides"
+#~ msgstr "Anleitungen"
+
+#~ msgid "Legal"
+#~ msgstr "Rechtliches"
 
