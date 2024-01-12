@@ -1,0 +1,1550 @@
+# <language> translations for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-03-08 23:45+0100\n"
+"PO-Revision-Date: 2019-04-17 19:14+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: webapp/personal/forms.py:39
+msgid "Indoor Sensor"
+msgstr "Sensor interno"
+
+#: webapp/personal/forms.py:40
+#, fuzzy
+msgid "Street *"
+msgstr "Rua"
+
+#: webapp/personal/forms.py:40
+msgid "Please enter the street name."
+msgstr "Por favor, insira o nome da rua."
+
+#: webapp/personal/forms.py:41
+#, fuzzy
+msgid "Number"
+msgstr "Número"
+
+#: webapp/personal/forms.py:42
+msgid "Zip code *"
+msgstr "CEP"
+
+#: webapp/personal/forms.py:42
+msgid "Please enter the postal code."
+msgstr "Por favor, introduza o código postal."
+
+#: webapp/personal/forms.py:43
+#, fuzzy
+msgid "City *"
+msgstr "Cidade"
+
+#: webapp/personal/forms.py:43
+msgid "Please enter the city name."
+msgstr "Por favor, insira o nome da cidade."
+
+#: webapp/personal/forms.py:46
+#, fuzzy
+msgid "Country *"
+msgstr "País"
+
+#: webapp/personal/forms.py:49 webapp/personal/forms.py:51
+msgid "Please enter the country name."
+msgstr "Por favor, insira o nome do país."
+
+#: webapp/personal/forms.py:56
+msgid "Latitude"
+msgstr "Latitude"
+
+#: webapp/personal/forms.py:57
+msgid "Please enter the latitude."
+msgstr "Por favor, insira a latitude."
+
+#: webapp/personal/forms.py:58
+msgid "Longitude"
+msgstr "Longitude"
+
+#: webapp/personal/forms.py:59
+msgid "Please enter the longitude."
+msgstr "Por favor, insira a longitude."
+
+#: webapp/personal/forms.py:62
+msgid "How much industrial activity is there within a 100m radius?"
+msgstr "Quanta atividade industrial existe num raio de 100m?"
+
+#: webapp/personal/forms.py:71 webapp/personal/forms.py:87
+#: webapp/personal/forms.py:103
+msgid "Please enter the number between 1 and 10"
+msgstr "Por favor insira o número entre 1 e 10"
+
+#: webapp/personal/forms.py:74
+msgid ""
+"No office space, but potential fine dust producers 1 = very little, 10 = "
+"very much."
+msgstr ""
+"Sem espaço de escritório, mas potenciais produtores de pó fino 1 = muito "
+"pouco, 10 = muito."
+
+#: webapp/personal/forms.py:78
+msgid "How many private stoves or fireplaces are within a 100m radius?"
+msgstr "Quantos fogões ou lareiras privadas existem num raio de 100m?"
+
+#: webapp/personal/forms.py:90
+msgid ""
+"Does it smell very much like such smoke in your area? 1 = very little, 10"
+" = very much."
+msgstr "Cheira a cigarro na sua área? 1 = muito pouco, 10 = muito."
+
+#: webapp/personal/forms.py:94
+msgid "How much traffic is there within a 100m radius?"
+msgstr "Qual é a quantidade de tráfego num raio de 100m?"
+
+#: webapp/personal/forms.py:106
+msgid ""
+"How close are those roads? 1 = very little further away, 10 = a lot of "
+"traffic right on your doorstep."
+msgstr ""
+"A que distância estão essas estradas? 1 = muito pouco mais longe, 10 = "
+"muito trânsito mesmo à sua porta."
+
+#: webapp/personal/forms.py:119
+msgid "PIN"
+msgstr "PIN"
+
+#: webapp/personal/forms.py:120
+msgid "For special use only"
+msgstr "Apenas para uso especial"
+
+#: webapp/personal/forms.py:123
+msgid "Sensor Type"
+msgstr "Tipo de sensor"
+
+#: webapp/personal/forms.py:136
+msgid "Personal sensor name"
+msgstr "Nome do sensor pessoal"
+
+#: webapp/personal/forms.py:139
+msgid "Please enter the sensor name."
+msgstr "Por favor, insira o nome do sensor."
+
+#: webapp/personal/forms.py:142
+msgid "Only the sensor ID will be published."
+msgstr "Apenas o ID do sensor será publicado."
+
+#: webapp/personal/forms.py:145
+msgid "Sensor level above ground (in cm)"
+msgstr "Nível do sensor acima do solo (em cm)"
+
+#: webapp/personal/forms.py:152
+msgid "NOT height above sea level!"
+msgstr "NÃO levantar acima do nível do mar!"
+
+#: webapp/personal/forms.py:155
+msgid "Sensor location relative to the traffic"
+msgstr "Localização do sensor em relação ao tráfego"
+
+#: webapp/personal/forms.py:162
+msgid ""
+"1 = on the garden side, very well shielded from all streets, 10 = the "
+"sensor is on a house wall directly on the street. With this value it is "
+"irrelevant how big the street is, it is only about where the sensor is "
+"attached to the house."
+msgstr ""
+"1 = no lado do jardim, muito bem protegido de todas as ruas, 10 = o "
+"sensor está num muro de uma casa directamente na rua. Com este valor é "
+"irrelevante o tamanho da rua, trata-se apenas do local onde o sensor está"
+" ligado à casa."
+
+#: webapp/personal/forms.py:166
+msgid "Publish exact location"
+msgstr "Publicar a localização exata"
+
+#: webapp/personal/forms.py:167
+msgid "Reveal exact sensor location in public data and archives."
+msgstr "Revelar a localização exacta do sensor em dados e arquivos públicos."
+
+#: webapp/personal/forms.py:170 webapp/templates/my-sensors.html:89
+msgid "Inactive"
+msgstr "Inactivo"
+
+#: webapp/personal/forms.py:171
+msgid ""
+"Mark sensor as inactive. No notifications will be sent when sensor goes "
+"offline."
+msgstr ""
+"Marcar o sensor como inativo. Não serão enviadas notificações quando o "
+"sensor ficar off-line."
+
+#: webapp/personal/forms.py:177
+msgid "Short description of location"
+msgstr "Breve descrição da localização"
+
+#: webapp/personal/forms.py:179
+msgid "Save settings"
+msgstr "Salvar configurações"
+
+#: webapp/personal/forms.py:184 webapp/templates/my-sensors.html:60
+msgid "Chip ID"
+msgstr "Chip ID"
+
+#: webapp/personal/forms.py:186
+msgid "Sensor ID may only contain digits and letters A to F"
+msgstr "O ID do sensor só pode conter dígitos e letras de A a F"
+
+#: webapp/personal/forms.py:188
+msgid "The numeric part of the sensorname only"
+msgstr "Apenas a parte numérica do sensororname"
+
+#: webapp/personal/forms.py:191
+msgid "Sensor Board"
+msgstr "Placa de sensores"
+
+#: webapp/personal/forms.py:195
+msgid ""
+"Normally this should be esp8266. Users of ESP32 boards, Raspberry PI or "
+"the Smogomierz sensor version need to change this accordingly. Also in "
+"these cases the Sensor ID is the numeric part of the name only."
+msgstr ""
+"Normalmente isto deve ser esp8266. Os utilizadores de placas ESP32, "
+"Raspberry PI ou a versão do sensor Smogomierz precisam de alterar isto em"
+" conformidade. Também nestes casos, o ID do sensor é apenas a parte "
+"numérica do nome."
+
+#: webapp/personal/forms.py:202
+msgid "Recipient's e-mail address"
+msgstr "Endereço de E-mail do destinatário"
+
+#: webapp/personal/forms.py:205
+msgid "Please enter e-mail address"
+msgstr "Por favor insira o endereço de e-mail"
+
+#: webapp/personal/forms.py:208
+msgid "Please enter correct e-mail address"
+msgstr "Por favor insira o endereço de e-mail correcto"
+
+#: webapp/personal/forms.py:212
+msgid "Transfer sensor"
+msgstr "Sensor de transferência"
+
+#: webapp/personal/forms.py:217
+msgid "You can't transfer the sensor to yourself"
+msgstr "Não se pode transferir o sensor para você mesmo"
+
+#: webapp/personal/forms.py:221
+msgid "Delete sensor"
+msgstr "Apagar sensor"
+
+#: webapp/personal/forms.py:226
+#, fuzzy
+msgid "Add sensor"
+msgstr "Adicionar sensores"
+
+#: webapp/personal/views.py:21
+msgid "Fine dust 10 µm"
+msgstr "Pó fino 10 µm"
+
+#: webapp/personal/views.py:22
+msgid "Fine dust 2.5 µm"
+msgstr "Pó fino 2,5 µm"
+
+#: webapp/personal/views.py:23
+msgid "Humidity"
+msgstr "Humidade"
+
+#: webapp/personal/views.py:24
+msgid "Temperature"
+msgstr "Temperatura"
+
+#: webapp/personal/views.py:25
+msgid "Pressure"
+msgstr "Pressão"
+
+#: webapp/personal/views.py:26
+msgid "Pressure at sea level"
+msgstr "Pressão ao nível do mar"
+
+#: webapp/personal/views.py:30
+msgid "particulate matter sensor"
+msgstr "sensor de partículas em suspensão"
+
+#: webapp/personal/views.py:31
+msgid "temperature/humidity sensor"
+msgstr "sensor de temperatura/humidade"
+
+#: webapp/personal/views.py:32
+msgid "temperature/pressure sensor"
+msgstr "sensor de temperatura/pressão"
+
+#: webapp/personal/views.py:33
+msgid "temperature/humidity/pressure sensor"
+msgstr "sensor de temperatura/humidade/pressão"
+
+#: webapp/personal/views.py:34
+msgid "temperature/humidity/CO₂ ppm sensor"
+msgstr "sensor de temperatura/humidade/CO₂ ppm"
+
+#: webapp/personal/views.py:35
+msgid "noise sensor"
+msgstr "sensor de barulho"
+
+#: webapp/personal/views.py:36
+msgid "radiation sensor"
+msgstr "sensor de radiaçao"
+
+#: webapp/personal/views.py:216
+msgid "Pin is already in use"
+msgstr "Pin já está em uso"
+
+#: webapp/personal/views.py:248
+#, fuzzy
+msgid "This sensor ID is already registered"
+msgstr "Este ID de sensor já está registrado."
+
+#: webapp/personal/views.py:261
+msgid "A fine dust sensor was transferred to you"
+msgstr "Foi transferido para você um sensor de poeira fina"
+
+#: webapp/personal/views.py:272
+#, fuzzy
+msgid "Sensor successfully transfered."
+msgstr "Sensor registrado com sucesso."
+
+#: webapp/personal/views.py:290
+#, fuzzy
+msgid "Sensor successfully deleted"
+msgstr "Sensor apagado com sucesso."
+
+#: webapp/templates/400.html:50
+msgid "Bad Request Error"
+msgstr "Erro de Requisição"
+
+#: webapp/templates/400.html:51 webapp/templates/404.html:51
+msgid "Please check the URL in the address bar and try again."
+msgstr "Por favor verifique a barra de endereço e tente novamente"
+
+#: webapp/templates/400.html:53 webapp/templates/403.html:53
+#: webapp/templates/404.html:53
+msgid ""
+"If you landed by accident here, then check out our main page to find some"
+" information."
+msgstr "Se você chegou aqui por acidente, então veja a nossa pagina principal e obtenha mais informações "
+
+#: webapp/templates/400.html:55 webapp/templates/403.html:55
+#: webapp/templates/404.html:55 webapp/templates/security/login_user.html:30
+#: webapp/templates/security/register_user.html:30
+msgid "Find out more about Sensor.Community"
+msgstr ""
+
+#: webapp/templates/400.html:59 webapp/templates/403.html:59
+#: webapp/templates/404.html:59
+msgid "Go back home"
+msgstr "Voltar para pagina inicial"
+
+#: webapp/templates/400.html:63 webapp/templates/403.html:63
+#: webapp/templates/404.html:63
+msgid "Contact support"
+msgstr "Contactar suporte"
+
+#: webapp/templates/403.html:50
+msgid "Forbidden"
+msgstr "Proibido"
+
+#: webapp/templates/403.html:51
+msgid "Please login first, before entering the page."
+msgstr "Por favor faça login"
+
+#: webapp/templates/404.html:50
+msgid "Page not found"
+msgstr "Pagina nao encontrada"
+
+#: webapp/templates/footer.html:12
+msgid ""
+"Making the world a better place through community driven, open "
+"environmental data."
+msgstr ""
+
+#: webapp/templates/footer.html:56
+msgid "Important Links"
+msgstr "Links important"
+
+#: webapp/templates/footer.html:62
+msgid "Maps"
+msgstr "Mapas"
+
+#: webapp/templates/footer.html:74
+#, fuzzy
+msgid "Archive"
+msgstr "Inativos"
+
+#: webapp/templates/footer.html:80 webapp/templates/navbar.html:27
+#: webapp/templates/navbar.html:165
+msgid "Mainpage"
+msgstr "Pagina principal"
+
+#: webapp/templates/footer.html:87
+msgid "Support"
+msgstr "Suporte"
+
+#: webapp/templates/footer.html:93
+msgid "Knowledge"
+msgstr "Conhecimento"
+
+#: webapp/templates/footer.html:99 webapp/templates/navbar.html:179
+msgid "Forum"
+msgstr "Fórum"
+
+#: webapp/templates/footer.html:106
+msgid "Guides"
+msgstr "Guias"
+
+#: webapp/templates/footer.html:111 webapp/templates/navbar.html:33
+#: webapp/templates/navbar.html:172
+msgid "Donate"
+msgstr "Doe"
+
+#: webapp/templates/footer.html:118
+msgid "Legal"
+msgstr "Legal"
+
+#: webapp/templates/footer.html:124 webapp/templates/imprint.html:8
+msgid "Imprint"
+msgstr "Impressão"
+
+#: webapp/templates/footer.html:130 webapp/templates/privacy-policy.html:8
+msgid "Privacy Policy"
+msgstr "Política de Privacidade"
+
+#: webapp/templates/footer.html:136
+msgid "Firmware License"
+msgstr "Licença de Firmware"
+
+#: webapp/templates/footer.html:142
+msgid "DB Contents License"
+msgstr ""
+
+#: webapp/templates/footer.html:148
+msgid "Photos License"
+msgstr ""
+
+#: webapp/templates/imprint.html:11
+msgid "Informations according to § 5 TMG"
+msgstr "Informações de acordo com § 5 TMG"
+
+#: webapp/templates/imprint.html:16
+msgid "Represented by:"
+msgstr "Representado por:"
+
+#: webapp/templates/imprint.html:18
+msgid "Contact:"
+msgstr "Contato:"
+
+#: webapp/templates/imprint.html:23
+#, fuzzy
+msgid ""
+"based on the concept and software\n"
+"                development of Ernesto Ruge"
+msgstr "com base no conceito e desenvolvimento de software de Ernesto Ruge:"
+
+#: webapp/templates/imprint.html:25
+#, fuzzy
+msgid "Website of Ernesto Ruge:"
+msgstr "Contato: Website de Ernesto Ruge:"
+
+#: webapp/templates/layout.html:4 webapp/templates/layout.html:14
+#: webapp/templates/layout.html:15 webapp/templates/layout.html:20
+#: webapp/templates/layout.html:21 webapp/templates/security/login_user.html:19
+#: webapp/templates/security/register_user.html:19
+#, fuzzy
+msgid "Configure your air quality sensor yourself"
+msgstr "Configure você mesmo o sensor de qualidade do ar"
+
+#: webapp/templates/my-sensor-data.html:14
+msgid "Data from Node"
+msgstr "Dados do Nó"
+
+#: webapp/templates/my-sensor-data.html:18
+msgid ""
+"Typically, two sensors are attached to each node: the fine dust sensor "
+"and the\n"
+"                        Humidity and temperature sensor. The sensor "
+"number can also be found"
+msgstr ""
+"Tipicamente, dois sensores são ligados a cada nó: o sensor de poeira fina"
+" e o sensor de humidade e temperatura. O número do sensor também pode ser"
+" encontrado"
+
+#: webapp/templates/my-sensor-data.html:20
+#, fuzzy
+msgid "on the fine dust map"
+msgstr "no mapa do pó fino novamente"
+
+#: webapp/templates/my-sensor-data.html:40
+msgid "show on map"
+msgstr "mostrar no mapa"
+
+#: webapp/templates/my-sensor-data.html:46
+msgid "Last updated:"
+msgstr "Última atualização:"
+
+#: webapp/templates/my-sensor-data.html:61
+msgid "No current data are available for this sensor."
+msgstr "Não estão disponíveis dados atuais para este sensor."
+
+#: webapp/templates/my-sensor-delete.html:11
+#, python-format
+msgid "Delete sensor %(node_id)s"
+msgstr "Voltar aos meus sensores"
+
+#: webapp/templates/my-sensor-delete.html:14
+#: webapp/templates/my-sensor-give.html:14
+msgid "Warning! After deleting you have no more control over the sensor!"
+msgstr "Advertência! Depois de apagar o sensor, não terá mais controle sobre ele!"
+
+#: webapp/templates/my-sensor-delete.html:15
+#, fuzzy
+msgid ""
+"Also the chipID of this sensor will remain blocked for a new\n"
+"                            registration!"
+msgstr "Também o chipID deste sensor permanecerá bloqueado para um novo registro!"
+
+#: webapp/templates/my-sensor-delete.html:18
+#: webapp/templates/my-sensor-give.html:17
+#, fuzzy
+msgid "back to my sensors"
+msgstr "Voltar aos meus sensores"
+
+#: webapp/templates/my-sensor-give.html:11
+#, fuzzy, python-format
+msgid "Transfer Sensor %(node_id)s"
+msgstr "Transferir sensores"
+
+#: webapp/templates/my-sensor-give.html:15
+msgid ""
+"This allows you to transfer sensors to another person. This is especially"
+" useful if you have ordered a sensor for a friend and want to transfer it"
+" to him or her."
+msgstr ""
+"Isto permite a transferência de sensores para outra pessoa. Isto é "
+"especialmente útil se tiver encomendado um sensor para um amigo e quiser "
+"transferi-lo para ele ou ela."
+
+#: webapp/templates/my-sensor-give.html:16
+msgid "If not please return"
+msgstr "Se nao por favor retorne"
+
+#: webapp/templates/my-sensor-settings.html:11
+#, fuzzy, python-format
+msgid "Settings of your %(node_id)s"
+msgstr "Definições do Nó %(node_id)s"
+
+#: webapp/templates/my-sensor-settings.html:14
+msgid ""
+"Please note that only precise data can lead to precise evaluations with "
+"which we\n"
+"                            can also argue politically. Therefore it is "
+"important that the basic information is\n"
+"                            always kept up to date."
+msgstr ""
+
+#: webapp/templates/my-sensors.html:14
+msgid "My sensors"
+msgstr "Meus sensores"
+
+#: webapp/templates/my-sensors.html:18
+msgid "All sensors assigned to your account can be found in this overview."
+msgstr ""
+"Todos os sensores atribuídos à sua conta podem ser encontrados nesta "
+"visão geral."
+
+#: webapp/templates/my-sensors.html:20
+#, fuzzy
+msgid "Settings:"
+msgstr "Configurações"
+
+#: webapp/templates/my-sensors.html:20
+msgid ""
+"You have moved to another location, then update your\n"
+"                location. Or, add a new component to your kit."
+msgstr ""
+
+#: webapp/templates/my-sensors.html:22
+msgid "Transfer:"
+msgstr "Transferencia"
+
+#: webapp/templates/my-sensors.html:22
+msgid ""
+"Build sensor for another person and transfer it to his account via "
+"transfer."
+msgstr ""
+
+#: webapp/templates/my-sensors.html:23
+#, fuzzy
+msgid "Data:"
+msgstr "Dados"
+
+#: webapp/templates/my-sensors.html:23
+msgid "View your last published sensor data."
+msgstr "Veja os dados do ultimo sensor publicado"
+
+#: webapp/templates/my-sensors.html:24
+#, fuzzy
+msgid "Delete:"
+msgstr "foi apagado."
+
+#: webapp/templates/my-sensors.html:24
+msgid "At your own risk."
+msgstr "Por seu risco"
+
+#: webapp/templates/my-sensors.html:49
+msgid "Last Update"
+msgstr "Última Atualização"
+
+#: webapp/templates/my-sensors.html:70
+msgid "Node ID"
+msgstr ""
+
+#: webapp/templates/my-sensors.html:98
+msgid "Data"
+msgstr "Dados"
+
+#: webapp/templates/my-sensors.html:101
+msgid "Settings"
+msgstr "Configurações"
+
+#: webapp/templates/my-sensors.html:104
+#, fuzzy
+msgid "Transfer"
+msgstr "Transferência"
+
+#: webapp/templates/my-sensors.html:107
+#, fuzzy
+msgid "Delete"
+msgstr "Apagar"
+
+#: webapp/templates/my-sensors.html:121
+msgid ""
+"Register new\n"
+"                            sensor"
+msgstr "Registrar novo"
+
+#: webapp/templates/my-settings.html:16
+#, fuzzy
+msgid "Account Settings"
+msgstr "Configurações da Conta"
+
+#: webapp/templates/my-settings.html:20
+msgid "Here you can change your settings."
+msgstr "Aqui pode alterar as suas configurações."
+
+#: webapp/templates/my-settings.html:31
+msgid "Personal"
+msgstr "Pessoal"
+
+#: webapp/templates/my-settings.html:33
+#, fuzzy
+msgid "Here you can change your name."
+msgstr "Aqui pode alterar o seu nome."
+
+#: webapp/templates/my-settings.html:71 webapp/users/forms.py:35
+#: webapp/users/forms.py:61
+msgid "Password"
+msgstr "Senha"
+
+#: webapp/templates/my-settings.html:74
+#: webapp/templates/security/change_password.html:30
+msgid "Please choose a long and unique password."
+msgstr "Por favor escolha uma senha longa e única"
+
+#: webapp/templates/navbar.html:19 webapp/templates/navbar.html:144
+msgid "Sensors"
+msgstr "Sensores"
+
+#: webapp/templates/navbar.html:20 webapp/templates/navbar.html:145
+msgid "Account"
+msgstr "Conta"
+
+#: webapp/templates/navbar.html:76 webapp/templates/navbar.html:148
+msgid "Logout"
+msgstr "Sair"
+
+#: webapp/templates/privacy-policy.html:11
+#, fuzzy
+msgid ""
+"<div>The operators of these pages take the protection of your personal "
+"data very seriously. We treat\n"
+"            your personal data confidentially and according to the legal "
+"data protection regulations as well as this data protection "
+"explanation.</div>\n"
+"                    <div>The use of our website is generally possible "
+"without providing personal data. Insofar as personal data (e.g. name, "
+"address or e-mail addresses) is collected on our pages, this is always "
+"done on a voluntary basis as far as possible. This data will not be "
+"passed on to third parties without your express consent.</div>\n"
+"                    <div>We would like to point out that data "
+"transmission via the Internet (e.g. communication via e-mail) may have "
+"security gaps. A complete protection of the data against the access by "
+"third is not possible.</div>\n"
+"                    <h2>Information, deletion, blocking</h2>\n"
+"                    <div>You have the right at any time to free "
+"information about your stored personal data, their origin and recipient "
+"and the purpose of data processing as well as a right to correction, "
+"blocking or deletion of this data. You can contact us at any time at the "
+"address given in the imprint for this and other questions on the subject "
+"of personal data.</div>\n"
+"                    <h2>Cookies</h2>\n"
+"                    <div>Some of the Internet pages use so-called "
+"cookies. Cookies do not damage your computer and do not contain viruses. "
+"Cookies serve to make our offer more user-friendly, more effective and "
+"safer. Cookies are small text files that are stored on your computer by "
+"your browser.</div>\n"
+"                    <div>Most of the cookies we use are so-called "
+"\"session cookies\". They are automatically deleted at the end of your "
+"visit. Other cookies remain stored on your terminal until you delete "
+"them. These cookies enable us to recognize your browser during your next "
+"visit.</div>\n"
+"\n"
+"                    <h2>Account and sensor data</h2>\n"
+"                    <div>The measurement data of the sensors are "
+"collected on the server of the Sensor.Community and are publicly "
+"accessible to the company. The following information will be "
+"published:</div>\n"
+"                    <ul>\n"
+"                        <li>The anonymized geoposition (longitude and "
+"latitude) rounded to approx. 100 m.</li>\n"
+"                        <li>The ID of your ESP8266 NodeMCU board</li>\n"
+"                        <li>The given numerical description of the "
+"environment</li>\n"
+"                        <li>The sensor height</li>\n"
+"                        <li>The description as text</li>\n"
+"                    </ul>\n"
+"                    <div>The following additional data will be stored for"
+" internal processing, but will not be published:</div>\n"
+"                    <ul>\n"
+"                        <li>The postal address of the sensor</li>\n"
+"                        <li>The e-mail address</li>\n"
+"                        <li>Your first and last name</li>\n"
+"                    </ul>\n"
+"                    <h2>Server log files</h2>\n"
+"                    <div>The provider of the pages automatically collects"
+" and stores information in so-called server log files, which your browser"
+" automatically transmits to us. These are:</div>\n"
+"                    <ul>\n"
+"                        <li>Browser type / browser version</li>\n"
+"                        <li>used operating system</li>\n"
+"                        <li>Referrer URL</li>\n"
+"                        <li>Hostname of the accessing computer</li>\n"
+"                        <li>Time of the server request</li>\n"
+"                    </ul>\n"
+"                    <div>These data cannot be assigned to specific "
+"persons. This data will not be merged with other data sources. We reserve"
+" the right to subsequently check this data if we become aware of concrete"
+" indications of illegal use.</div>\n"
+"                    <h2>Contradiction advertising mails</h2>\n"
+"                    <div>We hereby object to the use of contact data "
+"published within the scope of the imprint obligation to send unsolicited "
+"advertising and information material. The operators of this website "
+"expressly reserve the right to take legal action against unsolicited "
+"mailing or e-mailing of spam and other similar advertising "
+"materials.</div>\n"
+"                    "
+msgstr ""
+"<p>Os operadores destas páginas levam muito a sério a protecção dos seus "
+"dados pessoais. Tratamos os seus dados pessoais confidencialmente e de "
+"acordo com os regulamentos legais de protecção de dados, bem como esta "
+"explicação de protecção de dados.</p>\n"
+"                    <p>O uso do nosso sítio web é geralmente possível sem"
+" o fornecimento de dados pessoais. Na medida em que os dados pessoais "
+"(por exemplo, nome, morada ou endereços de e-mail) são recolhidos nas "
+"nossas páginas, isto é sempre feito numa base voluntária, na medida do "
+"possível. Estes dados não serão transmitidos a terceiros sem o seu "
+"consentimento expresso.</p>\n"
+"                    <p> Gostaríamos de salientar que a transmissão de "
+"dados via Internet (por exemplo, comunicação via e-mail) pode ter lacunas"
+" de segurança. Uma protecção completa dos dados contra o acesso de "
+"terceiros não é possível.</p>\n"
+"                    <h2>Informação, eliminação, bloqueio</h2>\n"
+"                    <p>Você tem o direito de, a qualquer momento, "
+"libertar informações sobre os seus dados pessoais armazenados, a sua "
+"origem e destinatário e a finalidade do processamento de dados, bem como "
+"um direito à correcção, bloqueio ou eliminação desses dados. Pode "
+"contactar-nos em qualquer altura no endereço indicado no impresso para "
+"esta e outras questões sobre o assunto dos dados pessoais.</p>\n"
+"                    <h2>Cookies</h2>\n"
+"                    <p>algumas das páginas da Internet utilizam os "
+"chamados cookies. Os cookies não danificam o seu computador e não contêm "
+"vírus. Os cookies servem para tornar a nossa oferta mais fácil de "
+"utilizar, mais eficaz e mais segura. Os cookies são pequenos ficheiros de"
+" texto que são armazenados no seu computador pelo seu browser.</p>\n"
+"                    <p>A maior parte dos cookies que utilizamos são os "
+"chamados \"cookies de sessão\". São automaticamente apagados no final da "
+"sua visita. Outros cookies permanecem armazenados no seu terminal até que"
+" os apague. Estes cookies permitem-nos reconhecer o seu navegador durante"
+" a sua próxima visita.</p>\n"
+"                \n"
+"                    <h2>Dados de conta e sensor</h2>\n"
+"                    <p>Os dados de medição dos sensores são recolhidos no"
+" servidor do Sensor.Community e são acessíveis ao público pela empresa. "
+"As seguintes informações serão publicadas:</p>\n"
+"                    <ul>\n"
+"                        <li>A geoposição anónima (longitude e latitude) "
+"arredondada para aproximadamente 100 m.</li>\n"
+"                        <li>O ID da sua placa ESP8266 NodeMCU</li>\n"
+"                        <li>A descrição numérica dada do ambiente</li>\n"
+"                        <li>A altura do sensor</li>\n"
+"                        <li>A descrição como texto</li>\n"
+"                    </ul>\n"
+"                    <p>Os seguintes dados adicionais serão armazenados "
+"para processamento interno, mas não serão publicados:</p>\n"
+"                    <ul>\n"
+"                        <li>O endereço postal do sensor</li>\n"
+"                        <li>O endereço de e-mail</li>\n"
+"                        <li>Seu primeiro e último nome</li>\n"
+"                    </ul>\n"
+"                    <h2>Fichas de registo do servidor</h2>\n"
+"                    <p>O fornecedor das páginas recolhe e armazena "
+"automaticamente informações nos chamados ficheiros de registo do "
+"servidor, que o seu browser nos transmite automaticamente. Estes são:</p>"
+"\n"
+"                    <ul>\n"
+"                        <li>Tipo de navegador / versão do navegador</li>\n"
+"                        <li> sistema operativo usado</li>\n"
+"                        <li>Referrer URL</li>\n"
+"                        <li>Nome do computador de acesso</li>\n"
+"                        <li>Tempo do pedido do servidor</li>\n"
+"                    </ul>\n"
+"                    <p>Estes dados não podem ser atribuídos a pessoas "
+"específicas. Estes dados não serão fundidos com outras fontes de dados. "
+"Reservamo-nos o direito de verificar posteriormente estes dados se "
+"tivermos conhecimento de indicações concretas de utilização ilegal.</p>\n"
+"                    <h2>Mails publicitários de comércio</h2>\n"
+"                    <p>P>Pomos objecções à utilização de dados de "
+"contacto publicados no âmbito da obrigação de impressão de enviar "
+"material publicitário e informativo não solicitado. Os operadores deste "
+"website reservam-se expressamente o direito de tomar medidas legais "
+"contra correio não solicitado ou envio por e-mail de spam e outros "
+"materiais publicitários semelhantes.</p>\n"
+"                    "
+
+#: webapp/templates/sensor-register.html:10
+#: webapp/templates/sensor-register.html:27
+msgid "Sensor registration"
+msgstr "Registo do sensor"
+
+#: webapp/templates/sensor-register.html:29
+msgid ""
+"Users of ESP32 boards, Raspberry PI or Smogomierz sensor\n"
+"                                    <strong>just enter the numeric part "
+"of the name.</strong> "
+msgstr ""
+
+#: webapp/templates/sensor-settings-form.html:5
+msgid "Basic Information"
+msgstr "Informação básica"
+
+#: webapp/templates/sensor-settings-form.html:7
+msgid ""
+"This information <strong> won't be displayed publicly</strong>, location "
+"will be\n"
+"                    randomized."
+msgstr ""
+
+#: webapp/templates/sensor-settings-form.html:8
+msgid ""
+"Choose any name for the sensor, this is to help you distinguish between\n"
+"                    multiple sensors."
+msgstr ""
+
+#: webapp/templates/sensor-settings-form.html:10
+#, fuzzy
+msgid ""
+"Only precise data can lead to precise evaluations with which we can also "
+"argue politically.\n"
+"                     Therefore please kept information up to date."
+msgstr ""
+"Com este formulário, pode manter os dados do sensor actualizados. Note "
+"que apenas dados precisos podem levar a avaliações precisas com as quais "
+"também podemos argumentar politicamente. Por conseguinte, é importante "
+"que os dados básicos do sensor sejam sempre mantidos actualizados."
+
+#: webapp/templates/sensor-settings-form.html:60
+msgid "Lookup entered address"
+msgstr "Endereço de pesquisa introduzido"
+
+#: webapp/templates/sensor-settings-form.html:68
+#, fuzzy
+msgid ""
+"The system can also try to make a geoposition out of the address, but we "
+"would be happy if you would specify the position with the map below."
+msgstr ""
+"Quanto mais precisos forem os dados de que dispomos, melhor poderemos "
+"avaliar os dados e assim energizar as declarações. O sistema pode também "
+"tentar fazer uma geoposição a partir do endereço, mas ficaríamos felizes "
+"se especificasse a posição com o mapa abaixo."
+
+#: webapp/templates/sensor-settings-form.html:86
+msgid "Additional Information"
+msgstr "Informação adicional"
+
+#: webapp/templates/sensor-settings-form.html:88
+msgid ""
+"Metadata that helps us understand where the sensor is installed at the "
+"site."
+msgstr ""
+
+#: webapp/templates/sensor-settings-form.html:127
+msgid "Hardware configuration"
+msgstr "Configuração de hardware"
+
+#: webapp/templates/sensor-settings-form.html:129
+#, fuzzy
+msgid "This is where you configure your sensor."
+msgstr "Aqui pode configurar seu sensor."
+
+#: webapp/templates/sensor-settings-form.html:153
+#, fuzzy
+msgid "Remove component"
+msgstr "remover componente"
+
+#: webapp/templates/sensor-settings-form.html:160
+#, fuzzy
+msgid "Add component"
+msgstr "adicionar componente"
+
+#: webapp/templates/sensor-settings-form.html:170
+#, fuzzy
+msgid "Add Component"
+msgstr "adicionar componente"
+
+#: webapp/templates/sensor-settings-form.html:180
+msgid "Save"
+msgstr "Salvar"
+
+#: webapp/templates/sensor-settings-form.html:188
+msgid "Expert fields"
+msgstr "Campos avançados"
+
+#: webapp/templates/emails/recover.html:10
+#: webapp/templates/emails/register-existing.html:11
+#: webapp/templates/emails/sensor-given.html:11
+#: webapp/templates/emails/sensor-registered.html:10
+msgid "Hello,"
+msgstr "Olá,"
+
+#: webapp/templates/emails/recover.html:12
+msgid "to reset your password, please use the following URL:"
+msgstr "para redefinir a sua senha, utilize por favor o seguinte URL:"
+
+#: webapp/templates/emails/recover.html:13
+msgid ""
+"If you have not requested a new password on Sensor.Community, you can "
+"ignore this e-mail."
+msgstr ""
+"Se não solicitou uma nova senha no Sensor.Community, pode ignorar"
+" este e-mail."
+
+#: webapp/templates/emails/recover.html:14
+#: webapp/templates/emails/register-existing.html:15
+#: webapp/templates/emails/sensor-given.html:15
+#: webapp/templates/emails/sensor-registered.html:14
+#, fuzzy
+msgid ""
+"Sincerely,\n"
+"            Your Sensor.Community team"
+msgstr "Atenciosamente, a sua equipa Sensor.Community"
+
+#: webapp/templates/emails/register-existing.html:13
+msgid ""
+"in order to manage your sensor in the future, we have created an account "
+"for you. Please enter a password under the following link: "
+msgstr ""
+"a fim de gerir o seu sensor no futuro, criámos uma conta para você. Por "
+"favor, introduza uma senha no seguinte link:"
+
+#: webapp/templates/emails/register-existing.html:14
+msgid ""
+"If you have not created an account on Sensor.Community, you can ignore "
+"this e-mail."
+msgstr ""
+"Se não tiver criado uma conta no Sensor.Community, pode ignorar este "
+"e-mail."
+
+#: webapp/templates/emails/sensor-given.html:13
+msgid ""
+"a particulate matter sensor has been handed over to your control. Please "
+"log in with this mail address to take data and settings or to change "
+"them: "
+msgstr ""
+"um sensor de partículas em suspensão foi entregue ao seu controle. Por "
+"favor, inicie sessão com este endereço de E-mail para obter dados e "
+"configurações ou para os alterar:"
+
+#: webapp/templates/emails/sensor-given.html:14
+msgid ""
+"If you have received a sensor by mistake, please report this at "
+"tech@sensor.community."
+msgstr ""
+"Se tiver recebido um sensor por engano, por favor informe-o em "
+"tech@sensor.community."
+
+#: webapp/templates/emails/sensor-registered.html:12
+msgid ""
+"a fine dust sensor has been registered for you. Please log in with this "
+"mail address to take in or change data and settings: "
+msgstr ""
+"um sensor de poeira fina foi registado para você. Por favor, inicie sessão "
+"com este endereço de E-mail para receber ou alterar dados e "
+"configurações:"
+
+#: webapp/templates/emails/sensor-registered.html:13
+msgid ""
+"If the sensor was registered for you by mistake, please report this to "
+"tech@sensor.community."
+msgstr ""
+"Se o sensor foi registado para você por engano, por favor comunique isto a "
+"tech@sensor.community."
+
+#: webapp/templates/security/change_password.html:17
+#: webapp/templates/security/change_password.html:29
+msgid "Change password"
+msgstr "Alterar senha"
+
+#: webapp/templates/security/forgot_password.html:20
+#, fuzzy
+msgid "Request password reset"
+msgstr "Solicitar alteração de senha"
+
+#: webapp/templates/security/forgot_password.html:24
+msgid ""
+"Trouble Logging In? Enter your email and we will send you a link to get "
+"back into your account."
+msgstr ""
+
+#: webapp/templates/security/login_user.html:23
+#: webapp/templates/security/register_user.html:23
+msgid ""
+"The main purpose of this page is to enable you, as the owner of a fine "
+"dust sensor, to configure the location and other parameters yourself."
+msgstr ""
+"O principal objetivo desta página é permitir-lhe, como proprietário de "
+"um sensor de poeira fina, configurar você mesmo a localização e outros "
+"parâmetros."
+
+#: webapp/templates/security/login_user.html:26
+#: webapp/templates/security/register_user.html:26
+msgid ""
+"The city of the future belongs to its citizens. The digital tools, the "
+"Maker Movement and Citizen Science are leading to more and more people "
+"being given the opportunity to design the city themselves."
+msgstr ""
+"A cidade do futuro pertence aos seus cidadãos. As ferramentas digitais, o"
+" Movimento dos Criadores e a Ciência Cidadã estão a levar a que cada vez "
+"mais pessoas tenham a oportunidade de conceber a própria cidade."
+
+#: webapp/templates/security/login_user.html:28
+#: webapp/templates/security/register_user.html:28
+msgid "Code a difference: Use your skills to improve your city!"
+msgstr ""
+"Codificar uma diferença: Use as suas capacidades para melhorar a sua "
+"cidade!"
+
+#: webapp/templates/security/login_user.html:70
+msgid "Sign in to your account"
+msgstr "Entrar na sua conta"
+
+#: webapp/templates/security/login_user.html:73
+msgid "or"
+msgstr "ou"
+
+#: webapp/templates/security/login_user.html:75
+msgid "create an account"
+msgstr "Criar uma conta"
+
+#: webapp/templates/security/login_user.html:101
+msgid "Remember me"
+msgstr "Lembrar-me"
+
+#: webapp/templates/security/register_user.html:60
+msgid "Create your account"
+msgstr "Criar sua conta"
+
+#: webapp/templates/security/register_user.html:63
+msgid "already have an account,"
+msgstr "já existe uma conta"
+
+#: webapp/templates/security/register_user.html:65
+#, fuzzy
+msgid "go to login"
+msgstr "vá para login"
+
+#: webapp/templates/security/register_user.html:91
+#, fuzzy
+msgid "Please wait up to 30 min. Check your spam folder"
+msgstr "aguarde até 30 min para receber o e-mail e verifique a sua pasta de spam"
+
+#: webapp/templates/security/reset_password.html:20
+msgid "Reset password"
+msgstr "Redefinir senha"
+
+#: webapp/templates/security/reset_password.html:24
+msgid ""
+"Trouble Logging In? Enter your email and we willl send you a link to get "
+"back into your account."
+msgstr ""
+
+#: webapp/templates/security/send_confirmation.html:5
+msgid "Resend confirmation instructions"
+msgstr "Reenviar instruções de confirmação"
+
+#: webapp/templates/security/send_login.html:5
+msgid "Login"
+msgstr "Login"
+
+#: webapp/users/forms.py:11 webapp/users/forms.py:25
+msgid "E-Mail addresse"
+msgstr "E-Mail do destinatário"
+
+#: webapp/users/forms.py:14 webapp/users/forms.py:28 webapp/users/forms.py:50
+msgid "Please enter an e-mail address."
+msgstr "Por favor introduza um endereço de E-mail."
+
+#: webapp/users/forms.py:17 webapp/users/forms.py:31 webapp/users/forms.py:53
+msgid "Please enter a correct e-mail address."
+msgstr "Por favor, introduza um endereço de E-mail correto."
+
+#: webapp/users/forms.py:21
+msgid "next"
+msgstr "próximo"
+
+#: webapp/users/forms.py:38 webapp/users/forms.py:64 webapp/users/forms.py:76
+msgid "Please enter a password."
+msgstr "Por favor introduza uma senha."
+
+#: webapp/users/forms.py:42 webapp/users/forms.py:81
+msgid "Stay logged in."
+msgstr "Permanecer logado."
+
+#: webapp/users/forms.py:43
+msgid "login"
+msgstr "login"
+
+#: webapp/users/forms.py:47
+#, fuzzy
+msgid "E-Mail address"
+msgstr "Endereço de E-mail"
+
+#: webapp/users/forms.py:57
+msgid "Password request via email"
+msgstr "Pedido de senha via e-mail"
+
+#: webapp/users/forms.py:69
+#, python-format
+msgid "Password must consist of at least %s letters."
+msgstr "A senha deve conter pelo menos %s letras."
+
+#: webapp/users/forms.py:73
+msgid "Password (repeat)"
+msgstr "Senha (repetir)"
+
+#: webapp/users/forms.py:78
+msgid "Passwords must be identical."
+msgstr "As senhas devem ser idênticas."
+
+#: webapp/users/forms.py:82
+msgid "Save Password"
+msgstr "Salvar senha"
+
+#: webapp/users/forms.py:86
+msgid "First name"
+msgstr "Primeiro nome"
+
+#: webapp/users/forms.py:87
+msgid "Last name"
+msgstr "Sobrenome"
+
+#: webapp/users/forms.py:88
+#, fuzzy
+msgid "Save user data"
+msgstr "Guardar dados do usuário."
+
+#: webapp/users/views.py:25
+#, fuzzy
+msgid "User data saved"
+msgstr "Dados do usuário salvos."
+
+#: webapp/users/views.py:27
+#, fuzzy
+msgid "Password changed"
+msgstr "Mudança de senha"
+
+#~ msgid "Postal code"
+#~ msgstr "Código postal"
+
+#~ msgid "Sensor ID"
+#~ msgstr "Identificação do sensor"
+
+#~ msgid "Settings saved successfully."
+#~ msgstr "Definições salvas com sucesso."
+
+#~ msgid "Access prohibited"
+#~ msgstr "Acesso proibido"
+
+#~ msgid "You may not access this page. Maybe "
+#~ msgstr "Não pode aceder a esta página. Talvez"
+
+#~ msgid "you must first log in?"
+#~ msgstr "tem primeiro de iniciar sessão?"
+
+#~ msgid "Donate for Sensor.Community (Hardware, Software) now on Betterplace.org"
+#~ msgstr ""
+#~ "Doação para Sensor.Community (Hardware, "
+#~ "Software) agora em Betterplace.org"
+
+#~ msgid ""
+#~ "Donate for<br>Sensor.Community<br>now "
+#~ "on<br><span>Betterplace.org</span>"
+#~ msgstr "Doar para<br>Sensor.Community<br>now on<br><span>Betterplace.org<span>"
+
+#~ msgid "Configure Luftdaten"
+#~ msgstr "Configurar dados aéreos"
+
+#~ msgid "Click here to <a href=\"%(login_url)s\">log in</a>."
+#~ msgstr "Clique aqui para <a href=\"%(login_url)s\">log in</a>."
+
+#~ msgid ""
+#~ "General information can be found at "
+#~ "<a href=\"%(home_url)s\">Sensor.Community</a> - "
+#~ "formerly known as Luftdaten.info, as "
+#~ "well as the <a "
+#~ "href=\"%(manual_url)s\">building instructions</a>.\n"
+#~ "            Sensor data can be found "
+#~ "on <a href=\"%(map_url)s\">the fine dust "
+#~ "map</a> or <a href=\"%(archive_url)s\">be "
+#~ "downloaded as CSVs</a>."
+#~ msgstr ""
+#~ "Informação geral pode ser encontrada em"
+#~ " <a href=\"%(home_url)s\">Sensor.Community</a> - "
+#~ "anteriormente conhecido como Luftdaten.info, "
+#~ "bem como o <a href=\"%(manual_url)s\"> "
+#~ "instruções de construção</a>.\n"
+#~ "            Os dados dos sensores podem"
+#~ " ser encontrados em <a "
+#~ "href=\"%(map_url)s\">o mapa do pó fino</a> "
+#~ "ou <a href=\"%(archive_url)s\">ser descarregados "
+#~ "como CSVs</a>."
+
+#~ msgid "Join us!"
+#~ msgstr "Junte-se a nós!"
+
+#~ msgid "About the project"
+#~ msgstr "Sobre o projeto"
+
+#~ msgid ""
+#~ "The OK Lab Stuttgart is part of"
+#~ " the program Code for Germany of "
+#~ "the Open Knowledge Foundation Germany. "
+#~ "The aim of the program is to "
+#~ "promote developments in the areas of "
+#~ "transparency, Open Data and Citizen "
+#~ "Science."
+#~ msgstr ""
+#~ "O OK Lab Stuttgart faz parte do"
+#~ " código do programa para a Alemanha"
+#~ " da Open Knowledge Foundation Germany. "
+#~ "O objectivo do programa é promover "
+#~ "desenvolvimentos nas áreas da transparência,"
+#~ " Dados Abertos e Ciência Cidadã."
+
+#~ msgid ""
+#~ "Regional groups consisting of designers, "
+#~ "developers, journalists and others meet "
+#~ "regularly in Labs. They develop apps "
+#~ "that inform, positively shape and "
+#~ "support society and make the work "
+#~ "of administrations and authorities more "
+#~ "transparent."
+#~ msgstr ""
+#~ "Grupos regionais constituídos por designers,"
+#~ " criadores, jornalistas e outros reúnem-"
+#~ "se regularmente nos laboratórios. Desenvolvem"
+#~ " aplicações que informam, moldam e "
+#~ "apoiam positivamente a sociedade e "
+#~ "tornam o trabalho das administrações e"
+#~ " autoridades mais transparente."
+
+#~ msgid "Unknown email address"
+#~ msgstr "Endereço de E-mail desconhecido"
+
+#~ msgid "There are no sensors stored under this e-mail address."
+#~ msgstr "Não há sensores armazenados sob este endereço de E-mail."
+
+#~ msgid ""
+#~ "If you are of the opinion that "
+#~ "you have a sensor at this mail "
+#~ "address, please send us an e-mail. "
+#~ "Send an email to"
+#~ msgstr ""
+#~ "Se é da opinião que tem um "
+#~ "sensor neste endereço de correio, "
+#~ "envie-nos por favor um e-mail. "
+#~ "Envie-nos um e-mail para"
+
+#~ msgid "user configuration"
+#~ msgstr "configurações do usuário"
+
+#~ msgid "Information and settings for the luftdaten project"
+#~ msgstr "Informação e configurações para o projecto luftdaten"
+
+#~ msgid "Home"
+#~ msgstr "Início"
+
+#~ msgid "Massimporter"
+#~ msgstr "Importador em massa"
+
+#~ msgid "Register"
+#~ msgstr "Registre-se"
+
+#~ msgid "Back to e-mail login"
+#~ msgstr "Voltar ao e-mail de login"
+
+#~ msgid "Password Reset"
+#~ msgstr "Redefinição de senha"
+
+#~ msgid "Configure air data sensor yourself"
+#~ msgstr "Configure você mesmo o sensor de dados aéreos"
+
+#~ msgid "Meine Luftdaten"
+#~ msgstr "Os meus dados aéreos"
+
+#~ msgid "Your personal area."
+#~ msgstr "A sua área pessoal."
+
+#~ msgid "View and change sensor data and settings."
+#~ msgstr "Ver e alterar dados e configurações dos sensores."
+
+#~ msgid "View and change data, notification settings and passwords."
+#~ msgstr "Ver e alterar dados, definições de notificação e palavras-passe."
+
+#~ msgid "Change password."
+#~ msgstr "Alterar senha."
+
+#~ msgid "Logout."
+#~ msgstr "Sair."
+
+#~ msgid "Change your password."
+#~ msgstr "Altere a sua senha."
+
+#~ msgid "Sensor"
+#~ msgstr "Sensor"
+
+#~ msgid "Are you sure you want to delete this sensor?"
+#~ msgstr "Tem certeza de que quer apagar este sensor?"
+
+#~ msgid "was handed over."
+#~ msgstr "foi entregue."
+
+#~ msgid "An e-mail was sent to the new owner"
+#~ msgstr "Foi enviado um e-mail para o novo proprietário"
+
+#~ msgid "Sensor %(node_id)s hand over"
+#~ msgstr "Sensor foi entregue para o novo proprietário"
+
+#~ msgid "Warning! After the transfer you have no more control over the sensor!"
+#~ msgstr ""
+#~ "Advertência! Após a transferência, não "
+#~ "terá mais controlo sobre o sensor!"
+
+#~ msgid "Sensor UID"
+#~ msgstr "UID do sensor"
+
+#~ msgid "Name"
+#~ msgstr "Nome"
+
+#~ msgid "Created"
+#~ msgstr "Criado em"
+
+#~ msgid "Functions"
+#~ msgstr "Funções"
+
+#~ msgid "Hand over sensor"
+#~ msgstr "Entregue o sensor"
+
+#~ msgid "No sensors found"
+#~ msgstr "Não foram encontrados sensores"
+
+#~ msgid "Register new sensor"
+#~ msgstr "Registar novo sensor"
+
+#~ msgid "Set password Error"
+#~ msgstr "Definir erro de senha"
+
+#~ msgid ""
+#~ "Unfortunately the link is not correct."
+#~ " Either it is too old, or it"
+#~ " was not copied completely. Please "
+#~ "try again."
+#~ msgstr ""
+#~ "Infelizmente, a ligação não está "
+#~ "correcta. Ou é demasiado antiga, ou "
+#~ "não foi copiada completamente. Por "
+#~ "favor, tente novamente."
+
+#~ msgid "Mail sent"
+#~ msgstr "Correio enviado"
+
+#~ msgid "Please look into your mailbox to reset your password."
+#~ msgstr ""
+#~ "Por favor, consulte a sua caixa de"
+#~ " correio para redefinir a sua "
+#~ "palavra-passe."
+
+#~ msgid ""
+#~ "Your account was not active yet. "
+#~ "Please look into your mailbox to "
+#~ "reset your password and activate your"
+#~ " account."
+#~ msgstr ""
+#~ "A sua conta ainda não estava "
+#~ "activa. Por favor, consulte a sua "
+#~ "caixa de correio para redefinir a "
+#~ "sua palavra-passe e activar a sua"
+#~ " conta."
+
+#~ msgid "Set password"
+#~ msgstr "Definir senha"
+
+#~ msgid "Forgot Passwort?"
+#~ msgstr "Esqueceu da Senha?"
+
+#~ msgid "Activation required"
+#~ msgstr "Ativação necessária"
+
+#~ msgid ""
+#~ "Since you are logging in for the"
+#~ " first time, your e-mail address must"
+#~ " be confirmed. Please look in your"
+#~ " mailbox to get access to your "
+#~ "sensors."
+#~ msgstr ""
+#~ "Uma vez que está a iniciar a "
+#~ "sessão pela primeira vez, o seu "
+#~ "endereço de correio electrónico deve ser"
+#~ " confirmado. Por favor, procure na "
+#~ "sua caixa de correio para ter "
+#~ "acesso aos seus sensores."
+
+#~ msgid "Registration"
+#~ msgstr "Inscrição"
+
+#~ msgid "Sensor Mass Import: Status"
+#~ msgstr "Importação em massa de sensores: Estado"
+
+#~ msgid ""
+#~ "You can see all current imports in"
+#~ " this overview. Click on Reload to"
+#~ " update the status."
+#~ msgstr ""
+#~ "Pode ver todas as importações actuais"
+#~ " nesta visão geral. Clique em "
+#~ "Recarregar para actualizar o estado."
+
+#~ msgid "ID"
+#~ msgstr "ID"
+
+#~ msgid "Data (Start)"
+#~ msgstr "Dados (Início)"
+
+#~ msgid "Sensor mass importer"
+#~ msgstr "Importador de massa de sensores"
+
+#~ msgid ""
+#~ "With this form new nodes can be"
+#~ " imported in masses. One node per "
+#~ "line is expected in the following "
+#~ "format:"
+#~ msgstr ""
+#~ "Com esta forma, novos nós podem "
+#~ "ser importados em massa. É esperado "
+#~ "um nó por linha no seguinte "
+#~ "formato:"
+
+#~ msgid ""
+#~ "123456 is the ID of the ESP8266"
+#~ " board, the e-mail is the address "
+#~ "of the future\n"
+#~ "                            of the owner. If"
+#~ " this is not fixed, only the "
+#~ "Node-ID can be specified, which is"
+#~ "\n"
+#~ "                            E-mail must then be added later."
+#~ msgstr ""
+#~ "123456 é o ID do quadro ESP8266,"
+#~ " o e-mail é o endereço de "
+#~ "e-mail do futuro do proprietário. Se "
+#~ "este não for fixo, apenas o "
+#~ "Node-ID pode ser especificado, que é"
+#~ " o e-mail deve então ser acrescentado"
+#~ " mais tarde."
+
+#~ msgid ""
+#~ "If an email address has been "
+#~ "specified, the owner will be notified"
+#~ " with an email about their\n"
+#~ "                            new sensor."
+#~ msgstr ""
+#~ "Se tiver sido especificado um endereço"
+#~ " de e-mail, o proprietário será "
+#~ "notificado com um e-mail sobre o "
+#~ "seu novo sensor."
+
+#~ msgid ""
+#~ "click <a name=\"expert\" onclick=\"toggle_expert()\""
+#~ " style=\"color:blue;\"> &gt;&gt;here&lt;&lt; </a> "
+#~ "to enable expert fields"
+#~ msgstr ""
+#~ "click <a name=\"expert\" onclick=\"toggle_expert()\""
+#~ " style=\"color:blue;\"> &gt;&gt;aqui&lt;&lt; </a> "
+#~ "para activar campos de expert"
+
+#~ msgid "remove"
+#~ msgstr "remover"
+
+#~ msgid "Please check sensor position."
+#~ msgstr "Por favor verificar a posição do sensor."
+
+#~ msgid "Send password reset instructions"
+#~ msgstr "Enviar instruções de redefinição de senha"
+
+#~ msgid "Password reminder"
+#~ msgstr "Lembrete de senha"
+
+#~ msgid "I agree to the <a href=\"/privacy-policy\">Privacy policy</a>."
+#~ msgstr "Concordo com a <a href=\"/privacy-policy\">Política de privacidade</a>."
+
+#~ msgid "Please agree to the privacy policy."
+#~ msgstr "Por favor, aceite a política de privacidade."
+
+#~ msgid "register"
+#~ msgstr "registrar"
+
+#~ msgid "Old Password"
+#~ msgstr "Senha antiga"
+
+#~ msgid "New password"
+#~ msgstr "Nova Senha"
+
+#~ msgid "Guides"
+#~ msgstr "Guias"
+
+#~ msgid "Legal"
+#~ msgstr "Legal"
+
